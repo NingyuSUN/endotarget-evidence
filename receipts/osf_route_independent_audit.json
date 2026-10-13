@@ -1,0 +1,48 @@
+{
+  "status": "PASS_INGESTION_AUDIT_ONLY",
+  "primary_annotation_rows": 177351,
+  "unique_barcodes": 177351,
+  "bad_barcode_sample_prefixes": 0,
+  "clinical_donors": 23,
+  "source_gene_rows": 34727,
+  "canonical_gene_rows": 34600,
+  "mapping_changed_rows": 1794,
+  "structural_count_checks": [
+    {
+      "population": "Main::stromal",
+      "population_id": "P005",
+      "genes": 34600,
+      "donors": 23,
+      "fractional_entries": 109514,
+      "invalid_entries": 0,
+      "coverage_50_donors": 23,
+      "cases": 12,
+      "controls": 11,
+      "minimum_cells": 2467,
+      "total_cells": 160191
+    },
+    {
+      "population": "Derived::fibroblasts",
+      "population_id": "P077",
+      "genes": 34600,
+      "donors": 23,
+      "fractional_entries": 109305,
+      "invalid_entries": 0,
+      "coverage_50_donors": 23,
+      "cases": 12,
+      "controls": 11,
+      "minimum_cells": 2273,
+      "total_cells": 156171
+    }
+  ],
+  "cells_with_author_DEG_flag_false": 14939,
+  "clinical_original_publisher_byte_equivalence": "NOT VERIFIED",
+  "biological_validation": false,
+  "raw_RDS_loaded": false,
+  "disease_models_run": 0,
+  "source_UMI_resummation": "NOT RUN: raw RNA object not downloaded; compared available pseudobulk totals with per-cell nCount_RNA metadata",
+  "runtime": {
+    "interpreter": "/usr/bin/python3",
+    "stdlib_only": true
+  }
+}

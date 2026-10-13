@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "biological_analysis": false,
+  "synthetic_donors": 23,
+  "synthetic_cells": 1035,
+  "source_genes": 60,
+  "canonical_genes": 59,
+  "unchanged_completed_checkpoints_reused": true,
+  "independent_all_population_sums_match": true,
+  "fractional_estimates_preserved": true,
+  "fixture_directory": "qa/synthetic_aggregation_cv2w5pdh",
+  "elapsed_s": 2.1246025562286377
+}

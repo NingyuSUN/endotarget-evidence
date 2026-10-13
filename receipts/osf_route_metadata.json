@@ -1,0 +1,66 @@
+{
+  "retrieved_utc": "2026-10-13T07:19:15.510178+00:00",
+  "files": [
+    {
+      "path": "data/input_routes/osf/node.json",
+      "url": "https://api.osf.io/v2/nodes/yjm7h/",
+      "final_url": "https://api.osf.io/v2/nodes/yjm7h/",
+      "status": 200,
+      "bytes": 6484,
+      "sha256": "97c3e5a2c25fa2ca083d9ee08504e97dae4f4d79eff23fc10c33a967ee83a072"
+    },
+    {
+      "path": "data/input_routes/osf/providers.json",
+      "url": "https://api.osf.io/v2/nodes/yjm7h/files/",
+      "final_url": "https://api.osf.io/v2/nodes/yjm7h/files/",
+      "status": 200,
+      "bytes": 947,
+      "sha256": "9b82fbb53b0add10c10cdc7d5a4f5dd454c5fd9478fe48a00c286b217ffcb626"
+    },
+    {
+      "path": "data/input_routes/osf/children.json",
+      "url": "https://api.osf.io/v2/nodes/yjm7h/children/",
+      "final_url": "https://api.osf.io/v2/nodes/yjm7h/children/",
+      "status": 200,
+      "bytes": 128,
+      "sha256": "337a5845bf62ccbe2bee6d47834c9d6317bc033ab935af60bc66d75c688ef71a"
+    },
+    {
+      "url": "https://api.osf.io/v2/nodes/yjm7h/license/",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "path": "data/input_routes/osf/files.json",
+      "url": "https://api.osf.io/v2/nodes/yjm7h/files/osfstorage/?page[size]=100",
+      "bytes": 8276,
+      "sha256": "7c6b68b7278b93c1bbd3c262e66081157371794201190af5fcf8ec8e99842eb7",
+      "redirect_origin_and_path": "https://api.osf.io/v2/nodes/yjm7h/files/osfstorage/",
+      "temporary_public_signed_redirect_query_omitted": true
+    },
+    {
+      "path": "data/input_routes/osf/license_definition.json",
+      "url": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96a/",
+      "final_url": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96a/",
+      "bytes": 13121,
+      "sha256": "32fb3d7b32be0843803f96424fe7739f69574481211a2d323e16f8da8536c635"
+    },
+    {
+      "path": "data/input_routes/osf/OSF_PUBLIC_RELEASE_DATASET_RATIONALE_MANIFEST.csv",
+      "url": "https://osf.io/download/nwqub/",
+      "bytes": 256194,
+      "sha256": "e5686e754e10361dbfc09291003d94958b20a66dbafd433e9bc37617a1d42e6b",
+      "osf_sha256_match": true,
+      "redirect_origin_and_path": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/e5686e754e10361dbfc09291003d94958b20a66dbafd433e9bc37617a1d42e6b",
+      "temporary_public_signed_redirect_query_omitted": true
+    },
+    {
+      "path": "data/input_routes/osf/README.md",
+      "url": "https://osf.io/download/p2gz8/",
+      "bytes": 6386,
+      "sha256": "cf0a3da572d7542454aa7226caa77286274e6c383a5601cd9d2df37815b72e4c",
+      "osf_sha256_match": true,
+      "redirect_origin_and_path": "https://storage.googleapis.com/cos-osf-prod-files-us-east1/cf0a3da572d7542454aa7226caa77286274e6c383a5601cd9d2df37815b72e4c",
+      "temporary_public_signed_redirect_query_omitted": true
+    }
+  ]
+}

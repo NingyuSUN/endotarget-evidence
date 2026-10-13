@@ -1,0 +1,56 @@
+{
+  "verified_utc": "2026-10-13T07:37:16.103817+00:00",
+  "role": "sol61_streaming_input_route",
+  "server": "SRV01:/home/analyst/te",
+  "source_node": "https://osf.io/yjm7h/",
+  "source_archive_url": "https://osf.io/download/feukh/",
+  "source_archive_size_bytes": 601984856,
+  "source_archive_sha256_OSF_declared": "63de832fdb5da21b6f88624423774e4a9b8b1bf8a3706e5cf182e92605832941",
+  "full_archive_hash_independently_verified": false,
+  "total_saved_download_wire_bytes": 17545330,
+  "total_saved_decoded_bytes": 21171803,
+  "limits": {
+    "member_bytes_max": 20971520,
+    "total_bytes_max": 104857600
+  },
+  "source_code_license": "OSF node CC BY 4.0 author-created material only; third-party original rights retained",
+  "fixture_command": "mkdir -p data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/qa && /home/analyst/miniconda3/bin/python data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/scripts/test_aggregation.py > receipts/osf_route_fixture_test.json",
+  "fixture_packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.1",
+    "scipy": "1.15.3"
+  },
+  "real_RDS_downloaded": false,
+  "real_RDS_deserialized": false,
+  "disease_effect_files_opened_or_used": false,
+  "unopened_MOESM4_downloaded_before_tighter_parent_instruction": true,
+  "archived_licensed_code_adopted_into_project_pipeline": false,
+  "known_remaining_issues": [
+    "Source original IDs irreversibly collapsed in exported pseudobulk: 50groups with 127netrows lost; source mapping retained.",
+    "Linux ru_maxrss KiB vs author macOS bytes makes existing guard ineffective on Linux;35GiB ceiling also exceeds31GiBRAM.",
+    "rds_stream parser fixtures not rerun locally; author historical proof retained.",
+    "Original publisher MOESM3 byte equivalence not verified."
+  ],
+  "bounded_fetch_issues": [
+    {
+      "issue": "OSF node/license convenience endpoint HTTP404",
+      "resolution": "Fetched node relationship license URL;CCBY4verified"
+    },
+    {
+      "issue": "Direct saved signed-GCS redirect HTTP400",
+      "resolution": "Stable OSF download URL with per-request exactContent-Range works"
+    },
+    {
+      "issue": "Trailing documentation ZIP member extraction assertions failed",
+      "resolution": "Optional docs not required for licensedsource/countaudit; no unverifiedbytes saved"
+    },
+    {
+      "issue": "System Python missing numpy",
+      "resolution": "Used existing Miniconda readonly; no packageinstall"
+    },
+    {
+      "issue": "Synthetic fixture emitsAllNaNmitochondrialwarning",
+      "resolution": "Synthetic fixture deliberately lacks mitochondrialannotations; 23donorresummation/fractionalchecksPASS"
+    }
+  ]
+}

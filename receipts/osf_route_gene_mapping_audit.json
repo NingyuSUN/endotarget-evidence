@@ -1,0 +1,52 @@
+{
+  "path": "/home/analyst/te/data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/SOURCE_GENE_MAPPING.csv",
+  "schema": [
+    "source_row",
+    "source_gene",
+    "canonical_gene",
+    "mapping_rule",
+    "mapping_candidates"
+  ],
+  "source_rows": 34727,
+  "canonical_groups": 34600,
+  "single_source_groups": 34550,
+  "multi_source_groups": 50,
+  "source_rows_in_multi_groups": 177,
+  "source_Ensembl_rows_total": 9499,
+  "single_source_groups_with_Ensembl_ID": 9349,
+  "single_source_Ensembl_with_version": 9349,
+  "single_source_nonEnsembl_feature_ID_or_symbol": 25201,
+  "single_source_changed_Ensembl_to_canonical": 1376,
+  "single_source_nonEnsembl_changed": 267,
+  "single_source_nonEnsembl_unchanged": 24934,
+  "all_changed_nonEnsembl_source_symbols": 268,
+  "source_IDs_with_pipe": 0,
+  "source_IDs_with_version_dot": 9499,
+  "singleton_mapping_rule_counts": {
+    "author-supplied gene symbol or retained source identifier": 25201,
+    "unresolved or multi-symbol Ensembl ID retained, not forced into panel": 7973,
+    "unambiguous stable Ensembl to symbol, org.Hs.eg.db 3.22.0": 1365,
+    "Exact source Ensembl gene ID and version in release107 legacy annotation; unique symbol; org.Hs.eg.db unresolved": 11
+  },
+  "conservative_1_to_1_route": "PROPOSED only;34,550source feature IDs, subsetEnsemblstableIDs; no scientificinputsmodified",
+  "canonical_collapsed_counts_cannot_deconvolve": true,
+  "proposed_drop_impact": [
+    {
+      "population": "Main::stromal",
+      "min_dropped_fraction": 0.0009298418758489072,
+      "max_dropped_fraction": 0.0016131357200521086,
+      "total_dropped_estimated_UMIs": 1165114.255821729,
+      "total_estimated_UMIs": 966839442.5035447
+    },
+    {
+      "population": "Derived::fibroblasts",
+      "min_dropped_fraction": 0.0009312640192838616,
+      "max_dropped_fraction": 0.0016208751903405178,
+      "total_dropped_estimated_UMIs": 1137634.4324656972,
+      "total_estimated_UMIs": 942374116.1738799
+    }
+  ],
+  "nonEnsembl_noncase_changes": [],
+  "code_static_inspection": "aggregate and final reexport stack untouched per-donor float64 source sums; np.unique on canonical labels + np.add.at collapse, then CSV; no normalization, rounding or expression-based feature selection.",
+  "mapping_static_inspection": "uppercase author symbols; stripEnsemblversion only for lookup then org.Hs.eg.db3.22.0 unambiguoussymbol; unresolvedIDsretain original version; exactversionrelease107 supplement for unresolved; frozen aliases supported. Saved mapping preserves originalsourceID."
+}
