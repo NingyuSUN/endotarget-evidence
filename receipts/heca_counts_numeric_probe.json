@@ -1,0 +1,272 @@
+{
+  "source_url": "https://cellgeni.cog.sanger.ac.uk/vento/reproductivecellatlas/endometriumAtlasV2_nuclei.h5ad",
+  "source_size": 8739186814,
+  "initial_cache_bytes": 209715200,
+  "additional_probe_budget_bytes": 10485760,
+  "status": "bounded_numeric_and_geometry_verified",
+  "selected_obs_rows": 52744,
+  "nnz_selected": 171669473,
+  "probes": [
+    {
+      "start": 0,
+      "n": 1024,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "min": 0.9338017702102661,
+      "max": 4.633901119232178,
+      "head": [
+        0.9338017702102661,
+        0.9338017702102661,
+        1.4081356525421143,
+        0.9338017702102661,
+        0.9338017702102661,
+        0.9338017702102661,
+        0.9338017702102661,
+        1.4081356525421143,
+        0.9338017702102661,
+        0.9338017702102661
+      ],
+      "sha256": "2ff6710562c6ab1b99d9ab08cb50530ffd69f56220e84b10dd7f07f3c698b077"
+    },
+    {
+      "start": 525663023,
+      "n": 1024,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "min": 0.8819595575332642,
+      "max": 3.9505248069763184,
+      "head": [
+        0.8819595575332642,
+        0.8819595575332642,
+        0.8819595575332642,
+        0.8819595575332642,
+        0.8819595575332642,
+        0.8819595575332642,
+        0.8819595575332642,
+        0.8819595575332642,
+        1.3431929349899292,
+        0.8819595575332642
+      ],
+      "sha256": "853cfd018f2d096d97c0af32835b7a15591032bb12cfa1dca8ac6a57571b9df7"
+    },
+    {
+      "start": 1051325022,
+      "n": 1024,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "min": 1.2652226686477661,
+      "max": 5.067145824432373,
+      "head": [
+        1.2652226686477661,
+        1.2652226686477661,
+        2.155435085296631,
+        1.2652226686477661,
+        1.2652226686477661,
+        1.2652226686477661,
+        1.2652226686477661,
+        1.2652226686477661,
+        1.2652226686477661,
+        1.8062808513641357
+      ],
+      "sha256": "34823885063078b3dd21b9c05bd4f039ac8c01a18515ab5602bae468bc142af6"
+    }
+  ],
+  "row_totals": [
+    {
+      "obs_row": 1,
+      "nnz": 2282,
+      "sum": 3244.932313323021,
+      "author_obs_n_counts": 4967.0,
+      "matches": false,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "indices_in_bounds": true,
+      "unique_gene_indices": true
+    },
+    {
+      "obs_row": 2,
+      "nnz": 2071,
+      "sum": 3348.2735137939453,
+      "author_obs_n_counts": 3064.0,
+      "matches": false,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "indices_in_bounds": true,
+      "unique_gene_indices": true
+    },
+    {
+      "obs_row": 13,
+      "nnz": 2330,
+      "sum": 3463.2698628902435,
+      "author_obs_n_counts": 3870.0,
+      "matches": false,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "indices_in_bounds": true,
+      "unique_gene_indices": true
+    },
+    {
+      "obs_row": 14,
+      "nnz": 4124,
+      "sum": 4400.34864449501,
+      "author_obs_n_counts": 8269.0,
+      "matches": false,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "indices_in_bounds": true,
+      "unique_gene_indices": true
+    },
+    {
+      "obs_row": 15,
+      "nnz": 2272,
+      "sum": 3347.2162663936615,
+      "author_obs_n_counts": 4385.0,
+      "matches": false,
+      "finite": true,
+      "nonnegative": true,
+      "integer": false,
+      "indices_in_bounds": true,
+      "unique_gene_indices": true
+    }
+  ],
+  "indptr_path": "data/metadata/heca_h5/heca_count_probe/X_indptr.npy",
+  "indptr_sha256": "1d2aea8c49fa90ee099f84e60036d4ea2e8a6a005ade8307a2dae8c911b5347f",
+  "selected_chunk_geometry": {
+    "data": {
+      "selected_chunks": 15955,
+      "all_chunks": 16384,
+      "selected_chunk_storage_bytes": 4095201760,
+      "full_storage_bytes": 4205314048
+    },
+    "indices": {
+      "selected_chunks": 15955,
+      "all_chunks": 16384,
+      "selected_chunk_storage_bytes": 4095201760,
+      "full_storage_bytes": 4205314048
+    }
+  },
+  "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+  "network": {
+    "new_bytes": 3145728,
+    "wall_seconds": 20.345460414886475,
+    "source_cache_bytes": 212860928,
+    "peak_RSS_KiB": 71612,
+    "range_responses": [
+      {
+        "start": 8411938816,
+        "end": 8412200959,
+        "bytes": 262144,
+        "sha256": "61d4ed08df8aeda6ddfa0208a07d43f986499a5ac03b989e219eeabbed714ab0",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 1.676
+      },
+      {
+        "start": 8412200960,
+        "end": 8412463103,
+        "bytes": 262144,
+        "sha256": "ecb54f710b4e0492b45f48137c082aa17d5c91fa615b43db2785b0ccf0a9fc3c",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.454
+      },
+      {
+        "start": 8412463104,
+        "end": 8412725247,
+        "bytes": 262144,
+        "sha256": "ffb38f992f4b0140a81a3b95a9d3aef7d6b7e1fa76da63a34e09fd05f9d46c1f",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.234
+      },
+      {
+        "start": 8412725248,
+        "end": 8412987391,
+        "bytes": 262144,
+        "sha256": "1be24fdb35bbbb1dba1be82e31a950fcb498b8338d5611c6852e12c5ff94e93c",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.234
+      },
+      {
+        "start": 8412987392,
+        "end": 8413249535,
+        "bytes": 262144,
+        "sha256": "431fa68f9e82107f2fb8830c4382e5ff29238cc505b166554d1a95b5d7b45c99",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.235
+      },
+      {
+        "start": 262144,
+        "end": 524287,
+        "bytes": 262144,
+        "sha256": "f5cfb4781e9969183ecabffa464bd42ca37b05e0f0fe1f6f56f57dffdf702600",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.234
+      },
+      {
+        "start": 2102657024,
+        "end": 2102919167,
+        "bytes": 262144,
+        "sha256": "c4bd03628c18112f816a0ae9d4ff168bbb2923ccfa60618ffb30f35c91e9a45f",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.233
+      },
+      {
+        "start": 2102919168,
+        "end": 2103181311,
+        "bytes": 262144,
+        "sha256": "b981e2abb2f659f438bc4d6106b8d560e1a6ed0ef131fe354f193458febdd4aa",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.233
+      },
+      {
+        "start": 4205576192,
+        "end": 4205838335,
+        "bytes": 262144,
+        "sha256": "d1962139e35257d8b8e2e0776bc73f3f60f5ec4f75dba6cdc852345b523def82",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.241
+      },
+      {
+        "start": 4206100480,
+        "end": 4206362623,
+        "bytes": 262144,
+        "sha256": "01c42d41b8116c9f266001b805a301316776704ba6dcdf852e6c90cbc7a24808",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.246
+      },
+      {
+        "start": 8436842496,
+        "end": 8437104639,
+        "bytes": 262144,
+        "sha256": "0586005fe834faaccd1b23c3bb8ca05f67a46f1d1fed02b81b1474c4ae1829d8",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.233
+      },
+      {
+        "start": 8438415360,
+        "end": 8438677503,
+        "bytes": 262144,
+        "sha256": "9ea217400adb0f540d5248b0c96e9c7b0642a7d939ac1a2950cacf3d411ba848",
+        "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+        "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+        "seconds": 0.233
+      }
+    ]
+  }
+}

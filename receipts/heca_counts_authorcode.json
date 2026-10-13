@@ -1,0 +1,23 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/ventolab/HECA-Human-Endometrial-Cell-Atlas/244c282c20c3efd53707e3eb9f58bbd1cbd56ad7/main_analysis/rna1_load_nuclei_Mareckova.ipynb",
+    "bytes": 3479581,
+    "sha256": "5ccac0c28ba5d101308edd9f9722f9ad235203a43080126bb59bbd0f24b207b6",
+    "wall_seconds": 0.872,
+    "outputs_inspected": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ventolab/HECA-Human-Endometrial-Cell-Atlas/244c282c20c3efd53707e3eb9f58bbd1cbd56ad7/main_analysis/rna2_integration-scVI_nuclei.ipynb",
+    "bytes": 3964808,
+    "sha256": "d96ede043d392c755bd2de829fd65b581f361016e61926c1e7d8be6888d36d31",
+    "wall_seconds": 0.874,
+    "outputs_inspected": false
+  },
+  {
+    "url": "https://raw.githubusercontent.com/ventolab/HECA-Human-Endometrial-Cell-Atlas/244c282c20c3efd53707e3eb9f58bbd1cbd56ad7/main_analysis/rna3_clustering_nuclei.ipynb",
+    "bytes": 10130764,
+    "sha256": "f8b149ffd892433f97025bbdf8e25bd990d0037f7017afa5a1ada67c074ee77c",
+    "wall_seconds": 1.504,
+    "outputs_inspected": false
+  }
+]

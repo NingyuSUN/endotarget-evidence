@@ -1,0 +1,3242 @@
+{
+  "var": {
+    "attrs": {
+      "_index": "_index",
+      "column-order": [
+        "gene_ids-0",
+        "feature_types-0",
+        "n_cells-0",
+        "gene_ids-1",
+        "feature_types-1",
+        "n_cells-1",
+        "gene_ids-10",
+        "feature_types-10",
+        "n_cells-10",
+        "gene_ids-11",
+        "feature_types-11",
+        "n_cells-11",
+        "gene_ids-12",
+        "feature_types-12",
+        "n_cells-12",
+        "gene_ids-13",
+        "feature_types-13",
+        "n_cells-13",
+        "gene_ids-14",
+        "feature_types-14",
+        "n_cells-14",
+        "gene_ids-15",
+        "feature_types-15",
+        "n_cells-15",
+        "gene_ids-16",
+        "feature_types-16",
+        "n_cells-16",
+        "gene_ids-17",
+        "feature_types-17",
+        "n_cells-17",
+        "gene_ids-18",
+        "feature_types-18",
+        "n_cells-18",
+        "gene_ids-19",
+        "feature_types-19",
+        "n_cells-19",
+        "gene_ids-2",
+        "feature_types-2",
+        "n_cells-2",
+        "gene_ids-20",
+        "feature_types-20",
+        "n_cells-20",
+        "gene_ids-21",
+        "feature_types-21",
+        "n_cells-21",
+        "gene_ids-22",
+        "feature_types-22",
+        "n_cells-22",
+        "gene_ids-23",
+        "feature_types-23",
+        "n_cells-23",
+        "gene_ids-24",
+        "feature_types-24",
+        "n_cells-24",
+        "gene_ids-25",
+        "feature_types-25",
+        "n_cells-25",
+        "gene_ids-26",
+        "feature_types-26",
+        "n_cells-26",
+        "gene_ids-27",
+        "feature_types-27",
+        "n_cells-27",
+        "gene_ids-28",
+        "feature_types-28",
+        "n_cells-28",
+        "gene_ids-29",
+        "feature_types-29",
+        "n_cells-29",
+        "gene_ids-3",
+        "feature_types-3",
+        "n_cells-3",
+        "gene_ids-30",
+        "feature_types-30",
+        "n_cells-30",
+        "gene_ids-31",
+        "feature_types-31",
+        "n_cells-31",
+        "gene_ids-32",
+        "feature_types-32",
+        "n_cells-32",
+        "gene_ids-33",
+        "feature_types-33",
+        "n_cells-33",
+        "gene_ids-34",
+        "feature_types-34",
+        "n_cells-34",
+        "gene_ids-35",
+        "feature_types-35",
+        "n_cells-35",
+        "gene_ids-36",
+        "feature_types-36",
+        "n_cells-36",
+        "gene_ids-37",
+        "feature_types-37",
+        "n_cells-37",
+        "gene_ids-38",
+        "feature_types-38",
+        "n_cells-38",
+        "gene_ids-39",
+        "feature_types-39",
+        "n_cells-39",
+        "gene_ids-4",
+        "feature_types-4",
+        "n_cells-4",
+        "gene_ids-40",
+        "feature_types-40",
+        "n_cells-40",
+        "gene_ids-41",
+        "feature_types-41",
+        "n_cells-41",
+        "gene_ids-42",
+        "feature_types-42",
+        "n_cells-42",
+        "gene_ids-43",
+        "feature_types-43",
+        "n_cells-43",
+        "gene_ids-44",
+        "feature_types-44",
+        "n_cells-44",
+        "gene_ids-45",
+        "feature_types-45",
+        "n_cells-45",
+        "gene_ids-46",
+        "feature_types-46",
+        "n_cells-46",
+        "gene_ids-47",
+        "feature_types-47",
+        "n_cells-47",
+        "gene_ids-48",
+        "feature_types-48",
+        "n_cells-48",
+        "gene_ids-49",
+        "feature_types-49",
+        "n_cells-49",
+        "gene_ids-5",
+        "feature_types-5",
+        "n_cells-5",
+        "gene_ids-50",
+        "feature_types-50",
+        "n_cells-50",
+        "gene_ids-6",
+        "feature_types-6",
+        "n_cells-6",
+        "gene_ids-7",
+        "feature_types-7",
+        "n_cells-7",
+        "gene_ids-8",
+        "feature_types-8",
+        "n_cells-8",
+        "gene_ids-9",
+        "feature_types-9",
+        "n_cells-9",
+        "MT",
+        "n_cells_by_counts",
+        "mean_counts",
+        "pct_dropout_by_counts",
+        "total_counts",
+        "n_cells",
+        "highly_variable",
+        "highly_variable_rank",
+        "means",
+        "variances",
+        "variances_norm",
+        "highly_variable_nbatches"
+      ],
+      "encoding-type": "dataframe",
+      "encoding-version": "0.1.0"
+    },
+    "columns": {
+      "MT": {
+        "shape": [
+          33578
+        ],
+        "dtype": "bool",
+        "chunks": null,
+        "head": [
+          false,
+          false,
+          false
+        ]
+      },
+      "_index": {
+        "shape": [
+          33578
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "A1BG",
+          "A1BG-AS1",
+          "A1CF"
+        ]
+      },
+      "feature_types-0": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-1": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-10": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-11": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          1
+        ]
+      },
+      "feature_types-12": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-13": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-14": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-15": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-16": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-17": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-18": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-19": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-2": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-20": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-21": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-22": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-23": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-24": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-25": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-26": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-27": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-28": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-29": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-3": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-30": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-31": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-32": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          1
+        ]
+      },
+      "feature_types-33": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-34": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-35": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-36": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-37": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-38": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          1
+        ]
+      },
+      "feature_types-39": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          1
+        ]
+      },
+      "feature_types-4": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-40": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          1
+        ]
+      },
+      "feature_types-41": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-42": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-43": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-44": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-45": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-46": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-47": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-48": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-49": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-5": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-50": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-6": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-7": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-8": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "feature_types-9": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int8",
+        "chunks": null,
+        "head": [
+          0,
+          0,
+          0
+        ]
+      },
+      "gene_ids-0": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4947,
+          25430,
+          8604
+        ]
+      },
+      "gene_ids-1": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5039,
+          26809,
+          8785
+        ]
+      },
+      "gene_ids-10": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4996,
+          26183,
+          8702
+        ]
+      },
+      "gene_ids-11": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4946,
+          24647,
+          28445
+        ]
+      },
+      "gene_ids-12": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4983,
+          25623,
+          8668
+        ]
+      },
+      "gene_ids-13": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5012,
+          26161,
+          8723
+        ]
+      },
+      "gene_ids-14": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5007,
+          26577,
+          8729
+        ]
+      },
+      "gene_ids-15": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4957,
+          24944,
+          8614
+        ]
+      },
+      "gene_ids-16": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5013,
+          26417,
+          8743
+        ]
+      },
+      "gene_ids-17": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5016,
+          26786,
+          8750
+        ]
+      },
+      "gene_ids-18": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4998,
+          25470,
+          8687
+        ]
+      },
+      "gene_ids-19": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4954,
+          25032,
+          8626
+        ]
+      },
+      "gene_ids-2": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4982,
+          25975,
+          8673
+        ]
+      },
+      "gene_ids-20": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5018,
+          26814,
+          8744
+        ]
+      },
+      "gene_ids-21": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5006,
+          26574,
+          8722
+        ]
+      },
+      "gene_ids-22": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4949,
+          25281,
+          8621
+        ]
+      },
+      "gene_ids-23": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4978,
+          25575,
+          8667
+        ]
+      },
+      "gene_ids-24": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4986,
+          25960,
+          8682
+        ]
+      },
+      "gene_ids-25": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5000,
+          26351,
+          8707
+        ]
+      },
+      "gene_ids-26": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5010,
+          26592,
+          8734
+        ]
+      },
+      "gene_ids-27": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5005,
+          26555,
+          8730
+        ]
+      },
+      "gene_ids-28": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5006,
+          26337,
+          8721
+        ]
+      },
+      "gene_ids-29": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5004,
+          26301,
+          8714
+        ]
+      },
+      "gene_ids-3": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4988,
+          26353,
+          8706
+        ]
+      },
+      "gene_ids-30": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5004,
+          26203,
+          8710
+        ]
+      },
+      "gene_ids-31": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5009,
+          26632,
+          8724
+        ]
+      },
+      "gene_ids-32": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4801,
+          22423,
+          25301
+        ]
+      },
+      "gene_ids-33": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5002,
+          26260,
+          8717
+        ]
+      },
+      "gene_ids-34": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4990,
+          25761,
+          8688
+        ]
+      },
+      "gene_ids-35": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4984,
+          25571,
+          8673
+        ]
+      },
+      "gene_ids-36": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4974,
+          25396,
+          8649
+        ]
+      },
+      "gene_ids-37": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4844,
+          23077,
+          8381
+        ]
+      },
+      "gene_ids-38": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4810,
+          22101,
+          24998
+        ]
+      },
+      "gene_ids-39": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4737,
+          20370,
+          22442
+        ]
+      },
+      "gene_ids-4": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4995,
+          26352,
+          8710
+        ]
+      },
+      "gene_ids-40": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4804,
+          22364,
+          25245
+        ]
+      },
+      "gene_ids-41": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4919,
+          24542,
+          8559
+        ]
+      },
+      "gene_ids-42": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5033,
+          26686,
+          8780
+        ]
+      },
+      "gene_ids-43": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5020,
+          26637,
+          8753
+        ]
+      },
+      "gene_ids-44": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5010,
+          26281,
+          8737
+        ]
+      },
+      "gene_ids-45": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4997,
+          26183,
+          8722
+        ]
+      },
+      "gene_ids-46": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5002,
+          25919,
+          8715
+        ]
+      },
+      "gene_ids-47": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4975,
+          25133,
+          8644
+        ]
+      },
+      "gene_ids-48": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4973,
+          25586,
+          8665
+        ]
+      },
+      "gene_ids-49": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4983,
+          25538,
+          8677
+        ]
+      },
+      "gene_ids-5": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4991,
+          25767,
+          8683
+        ]
+      },
+      "gene_ids-50": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5015,
+          26190,
+          8733
+        ]
+      },
+      "gene_ids-6": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4943,
+          24432,
+          8606
+        ]
+      },
+      "gene_ids-7": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4928,
+          24494,
+          8564
+        ]
+      },
+      "gene_ids-8": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          5001,
+          26072,
+          8709
+        ]
+      },
+      "gene_ids-9": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int16",
+        "chunks": null,
+        "head": [
+          4999,
+          26149,
+          8712
+        ]
+      },
+      "highly_variable": {
+        "shape": [
+          33578
+        ],
+        "dtype": "bool",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "highly_variable_nbatches": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int64",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "highly_variable_rank": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float32",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "mean_counts": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float32",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "means": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "n_cells": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int64",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "n_cells-0": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          327.0,
+          395.0,
+          39.0
+        ]
+      },
+      "n_cells-1": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1740.0,
+          1140.0,
+          31.0
+        ]
+      },
+      "n_cells-10": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1200.0,
+          957.0,
+          18.0
+        ]
+      },
+      "n_cells-11": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          587.0,
+          404.0,
+          NaN
+        ]
+      },
+      "n_cells-12": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1545.0,
+          641.0,
+          10.0
+        ]
+      },
+      "n_cells-13": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1236.0,
+          801.0,
+          3.0
+        ]
+      },
+      "n_cells-14": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1951.0,
+          1261.0,
+          39.0
+        ]
+      },
+      "n_cells-15": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          976.0,
+          462.0,
+          6.0
+        ]
+      },
+      "n_cells-16": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          3041.0,
+          1268.0,
+          15.0
+        ]
+      },
+      "n_cells-17": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1976.0,
+          1247.0,
+          28.0
+        ]
+      },
+      "n_cells-18": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          2956.0,
+          657.0,
+          7.0
+        ]
+      },
+      "n_cells-19": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          577.0,
+          228.0,
+          11.0
+        ]
+      },
+      "n_cells-2": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          711.0,
+          606.0,
+          35.0
+        ]
+      },
+      "n_cells-20": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          669.0,
+          787.0,
+          46.0
+        ]
+      },
+      "n_cells-21": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          803.0,
+          832.0,
+          41.0
+        ]
+      },
+      "n_cells-22": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          770.0,
+          468.0,
+          10.0
+        ]
+      },
+      "n_cells-23": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          455.0,
+          398.0,
+          11.0
+        ]
+      },
+      "n_cells-24": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          856.0,
+          632.0,
+          40.0
+        ]
+      },
+      "n_cells-25": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          580.0,
+          401.0,
+          103.0
+        ]
+      },
+      "n_cells-26": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1183.0,
+          1025.0,
+          32.0
+        ]
+      },
+      "n_cells-27": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          854.0,
+          693.0,
+          36.0
+        ]
+      },
+      "n_cells-28": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          696.0,
+          593.0,
+          47.0
+        ]
+      },
+      "n_cells-29": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1226.0,
+          759.0,
+          42.0
+        ]
+      },
+      "n_cells-3": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1167.0,
+          962.0,
+          50.0
+        ]
+      },
+      "n_cells-30": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1236.0,
+          1028.0,
+          18.0
+        ]
+      },
+      "n_cells-31": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          971.0,
+          1066.0,
+          29.0
+        ]
+      },
+      "n_cells-32": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          96.0,
+          187.0,
+          NaN
+        ]
+      },
+      "n_cells-33": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          908.0,
+          759.0,
+          20.0
+        ]
+      },
+      "n_cells-34": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          844.0,
+          603.0,
+          13.0
+        ]
+      },
+      "n_cells-35": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          432.0,
+          519.0,
+          16.0
+        ]
+      },
+      "n_cells-36": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          350.0,
+          350.0,
+          15.0
+        ]
+      },
+      "n_cells-37": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          107.0,
+          108.0,
+          6.0
+        ]
+      },
+      "n_cells-38": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          129.0,
+          244.0,
+          NaN
+        ]
+      },
+      "n_cells-39": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          33.0,
+          55.0,
+          NaN
+        ]
+      },
+      "n_cells-4": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1273.0,
+          1100.0,
+          38.0
+        ]
+      },
+      "n_cells-40": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          89.0,
+          110.0,
+          NaN
+        ]
+      },
+      "n_cells-41": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          443.0,
+          578.0,
+          7.0
+        ]
+      },
+      "n_cells-42": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          2568.0,
+          1229.0,
+          16.0
+        ]
+      },
+      "n_cells-43": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1532.0,
+          1519.0,
+          11.0
+        ]
+      },
+      "n_cells-44": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          871.0,
+          1018.0,
+          16.0
+        ]
+      },
+      "n_cells-45": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1803.0,
+          1426.0,
+          17.0
+        ]
+      },
+      "n_cells-46": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1009.0,
+          655.0,
+          47.0
+        ]
+      },
+      "n_cells-47": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          308.0,
+          446.0,
+          5.0
+        ]
+      },
+      "n_cells-48": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          814.0,
+          480.0,
+          24.0
+        ]
+      },
+      "n_cells-49": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          457.0,
+          576.0,
+          21.0
+        ]
+      },
+      "n_cells-5": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          953.0,
+          895.0,
+          23.0
+        ]
+      },
+      "n_cells-50": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          620.0,
+          853.0,
+          14.0
+        ]
+      },
+      "n_cells-6": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          629.0,
+          848.0,
+          5.0
+        ]
+      },
+      "n_cells-7": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          397.0,
+          695.0,
+          4.0
+        ]
+      },
+      "n_cells-8": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          1761.0,
+          1167.0,
+          16.0
+        ]
+      },
+      "n_cells-9": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head": [
+          2694.0,
+          1576.0,
+          17.0
+        ]
+      },
+      "n_cells_by_counts": {
+        "shape": [
+          33578
+        ],
+        "dtype": "int64",
+        "chunks": null,
+        "head": [
+          51068,
+          37362,
+          1088
+        ]
+      },
+      "pct_dropout_by_counts": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "total_counts": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float32",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "variances": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "variances_norm": {
+        "shape": [
+          33578
+        ],
+        "dtype": "float64",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      }
+    }
+  },
+  "var/__categories": {
+    "attrs": {},
+    "columns": {
+      "feature_types-0": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-1": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-10": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-11": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-12": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-13": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-14": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-15": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-16": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-17": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-18": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-19": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-2": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-20": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-21": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-22": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-23": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-24": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-25": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-26": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-27": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-28": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-29": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-3": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-30": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-31": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-32": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-33": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-34": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-35": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-36": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-37": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-38": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-39": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-4": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-40": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-41": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-42": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-43": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-44": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-45": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-46": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-47": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-48": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-49": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-5": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-50": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-6": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-7": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-8": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "feature_types-9": {
+        "shape": [
+          2
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "Gene Expression",
+          "nan"
+        ]
+      },
+      "gene_ids-0": {
+        "shape": [
+          29428
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-1": {
+        "shape": [
+          31229
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-10": {
+        "shape": [
+          30441
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-11": {
+        "shape": [
+          28446
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-12": {
+        "shape": [
+          29697
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-13": {
+        "shape": [
+          30393
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-14": {
+        "shape": [
+          30937
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-15": {
+        "shape": [
+          28797
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-16": {
+        "shape": [
+          30678
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-17": {
+        "shape": [
+          31206
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-18": {
+        "shape": [
+          29440
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-19": {
+        "shape": [
+          28904
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-2": {
+        "shape": [
+          30166
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-20": {
+        "shape": [
+          31249
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-21": {
+        "shape": [
+          30906
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-22": {
+        "shape": [
+          29239
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-23": {
+        "shape": [
+          29638
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-24": {
+        "shape": [
+          30116
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-25": {
+        "shape": [
+          30627
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-26": {
+        "shape": [
+          30954
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-27": {
+        "shape": [
+          30929
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-28": {
+        "shape": [
+          30636
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-29": {
+        "shape": [
+          30579
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-3": {
+        "shape": [
+          30638
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-30": {
+        "shape": [
+          30422
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-31": {
+        "shape": [
+          31002
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-32": {
+        "shape": [
+          25302
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000419",
+          "ENSG00000000457"
+        ]
+      },
+      "gene_ids-33": {
+        "shape": [
+          30493
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-34": {
+        "shape": [
+          29802
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-35": {
+        "shape": [
+          29536
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-36": {
+        "shape": [
+          29364
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-37": {
+        "shape": [
+          26267
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-38": {
+        "shape": [
+          24999
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-39": {
+        "shape": [
+          22443
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-4": {
+        "shape": [
+          30662
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-40": {
+        "shape": [
+          25246
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-41": {
+        "shape": [
+          28268
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-42": {
+        "shape": [
+          31060
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-43": {
+        "shape": [
+          31032
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-44": {
+        "shape": [
+          30535
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-45": {
+        "shape": [
+          30413
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-46": {
+        "shape": [
+          30043
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-47": {
+        "shape": [
+          29049
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000419",
+          "ENSG00000000457"
+        ]
+      },
+      "gene_ids-48": {
+        "shape": [
+          29648
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-49": {
+        "shape": [
+          29573
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-5": {
+        "shape": [
+          29901
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-50": {
+        "shape": [
+          30433
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-6": {
+        "shape": [
+          28182
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-7": {
+        "shape": [
+          28228
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head_error": "150 MiB aggregate source cap"
+      },
+      "gene_ids-8": {
+        "shape": [
+          30289
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      },
+      "gene_ids-9": {
+        "shape": [
+          30428
+        ],
+        "dtype": "object",
+        "chunks": null,
+        "head": [
+          "ENSG00000000003",
+          "ENSG00000000005",
+          "ENSG00000000419"
+        ]
+      }
+    }
+  },
+  "X/data": {
+    "error": "150 MiB aggregate source cap"
+  },
+  "X/indices": {
+    "error": "150 MiB aggregate source cap"
+  },
+  "X/indptr": [
+    0,
+    3302,
+    5584,
+    7655,
+    9545,
+    13457,
+    15510,
+    18648,
+    25598,
+    28486
+  ]
+}

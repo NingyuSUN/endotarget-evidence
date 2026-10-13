@@ -1,0 +1,79 @@
+{
+  "method_proposed": "expm1(log_normalized_X)*obs_original_n_counts/10000;nearest_integer_proposal_requires_explicit_method_decision",
+  "source_notebook": "main_analysis/rna3_clustering_nuclei.ipynb code cell20 at pinned244c282c20c3efd53707e3eb9f58bbd1cbd56ad7",
+  "new_network_bytes": 0,
+  "rows": [
+    {
+      "obs_row": 1,
+      "nonzero_values": 2282,
+      "normalization_target_assumption": 10000,
+      "nearest_integer_distance_max": 3.483158232597816e-05,
+      "nearest_integer_distance_median": 1.9564738051869313e-08,
+      "raw_estimate_sum": 4967.000231913735,
+      "nearest_sum": 4967.0,
+      "author_original_n_counts": 4967.0,
+      "nearest_sum_equals_original_total": true,
+      "reconstructed_log_float32_matches_fraction": 0.9951796669588081,
+      "zero_or_negative_reconstructed": 0,
+      "status": "FIVE_ROW_FEASIBILITY_ONLY_NOT_ACCEPTED_COUNTS"
+    },
+    {
+      "obs_row": 2,
+      "nonzero_values": 2071,
+      "normalization_target_assumption": 10000,
+      "nearest_integer_distance_max": 1.6665306645791134e-05,
+      "nearest_integer_distance_median": 7.986650829572284e-08,
+      "raw_estimate_sum": 3064.000264923169,
+      "nearest_sum": 3064.0,
+      "author_original_n_counts": 3064.0,
+      "nearest_sum_equals_original_total": true,
+      "reconstructed_log_float32_matches_fraction": 0.21004345726702076,
+      "zero_or_negative_reconstructed": 0,
+      "status": "FIVE_ROW_FEASIBILITY_ONLY_NOT_ACCEPTED_COUNTS"
+    },
+    {
+      "obs_row": 13,
+      "nonzero_values": 2330,
+      "normalization_target_assumption": 10000,
+      "nearest_integer_distance_max": 2.6599212617384183e-05,
+      "nearest_integer_distance_median": 4.621457527775874e-08,
+      "raw_estimate_sum": 3870.0000304777823,
+      "nearest_sum": 3870.0,
+      "author_original_n_counts": 3870.0,
+      "nearest_sum_equals_original_total": true,
+      "reconstructed_log_float32_matches_fraction": 0.9888412017167382,
+      "zero_or_negative_reconstructed": 0,
+      "status": "FIVE_ROW_FEASIBILITY_ONLY_NOT_ACCEPTED_COUNTS"
+    },
+    {
+      "obs_row": 14,
+      "nonzero_values": 4124,
+      "normalization_target_assumption": 10000,
+      "nearest_integer_distance_max": 0.0001044786893089622,
+      "nearest_integer_distance_median": 2.4890689731549287e-08,
+      "raw_estimate_sum": 8269.00004060585,
+      "nearest_sum": 8269.0,
+      "author_original_n_counts": 8269.0,
+      "nearest_sum_equals_original_total": true,
+      "reconstructed_log_float32_matches_fraction": 0.997090203685742,
+      "zero_or_negative_reconstructed": 0,
+      "status": "FIVE_ROW_FEASIBILITY_ONLY_NOT_ACCEPTED_COUNTS"
+    },
+    {
+      "obs_row": 15,
+      "nonzero_values": 2272,
+      "normalization_target_assumption": 10000,
+      "nearest_integer_distance_max": 2.2936904144899017e-05,
+      "nearest_integer_distance_median": 2.345089411548429e-08,
+      "raw_estimate_sum": 4385.000153766741,
+      "nearest_sum": 4385.0,
+      "author_original_n_counts": 4385.0,
+      "nearest_sum_equals_original_total": true,
+      "reconstructed_log_float32_matches_fraction": 0.9977992957746479,
+      "zero_or_negative_reconstructed": 0,
+      "status": "FIVE_ROW_FEASIBILITY_ONLY_NOT_ACCEPTED_COUNTS"
+    }
+  ],
+  "full_dataset_reconstruction_verified": false,
+  "counts_accepted": false
+}
