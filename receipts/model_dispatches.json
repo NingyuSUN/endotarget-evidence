@@ -38,6 +38,48 @@
       "reasoning_effort": "medium",
       "status": "completed",
       "result": "Read-only runtime inventory; no container executed"
+    },
+    {
+      "task": "/root/astra_m0_final_review",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "reviewed_head": "6c8f975ebbb35bdd23506cdf39888af3333c5ebf",
+      "findings": [
+        "P2 total streaming deadline",
+        "P2 scratch directory clean checkout"
+      ],
+      "scientific_validation": false
+    },
+    {
+      "task": "/root/astra_metadata_implementation",
+      "turn": "scoped_fix_followup",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commit": "0290d997e73e9e5ec6e8e4f1be4d116d4b8ccd63",
+      "tests_passed": 24,
+      "clean_snapshot_tests_passed": 24,
+      "real_source_refetched": false
+    },
+    {
+      "task": "/root/astra_m0_final_review",
+      "turn": "scoped_rereview",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "reviewed_head": "0290d997e73e9e5ec6e8e4f1be4d116d4b8ccd63",
+      "result": "scratch addressed; timer exception residual identified"
+    },
+    {
+      "task": "/root/astra_metadata_implementation",
+      "turn": "minimal_exception_correction",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commit": "7acb418639242d505bcba98efefffcd9985b1c98",
+      "tests_passed": 25,
+      "final_adjudication": "lead inspected diff, verified code hashes and ran fresh committed code25/25; no additional independent rereview"
     }
   ]
 }

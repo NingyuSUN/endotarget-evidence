@@ -2,7 +2,7 @@
 
 **Public single-cell evidence for prioritizing endometriosis research targets.**
 
-Status: **M0 IMPLEMENTATION IN PROGRESS — 2026-10-13.** The project runs on SRV01 under /home/analyst/te. Bounded public-metadata retrieval and audit implementation have started. Scientific readiness remains NOT PASSED: no expression matrices analyzed, target rankings computed, container workflow executed, or AWS job run. This server has a local Git repository; no GitHub repository has been published.
+Status: **METADATA AUDIT IMPLEMENTED; M0 SCIENTIFIC GATE OPEN — 2026-10-13.** The project runs on SRV01 under /home/analyst/te. Bounded public-metadata retrieval and audit implementation have started. Scientific readiness remains NOT PASSED: no expression matrices analyzed, target rankings computed, container workflow executed, or AWS job run. This server has a local Git repository; no GitHub repository has been published.
 
 [中文说明](README.zh-CN.md) · [Research protocol](docs/RESEARCH_PROTOCOL.md) · [Data sources and gates](docs/DATA_SOURCES.md)
 
@@ -64,7 +64,7 @@ python3 -m unittest discover -s tests -v
 python3 scripts/m0_metadata.py
 ```
 
-The real audit and 22 boundary tests passed. Validated cached files are reused with original retrieval provenance. See [audit summary](reports/m0_metadata_summary.md) and [readiness JSON](reports/m0_metadata_readiness.json). Successful metadata execution leaves Stage 0 OPEN until clinical, cell, count and resource gates pass.
+The real audit passed; the current 25-test suite passed both in the working project and a clean code snapshot. Validated cached files are reused with original retrieval provenance. See [audit summary](reports/m0_metadata_summary.md) and [readiness JSON](reports/m0_metadata_readiness.json). The downloader is a Unix main-thread CLI, as used on SRV01. See [review fixes](reports/m0_metadata_review_fixes.md). Successful metadata execution leaves Stage 0 OPEN until clinical, cell, count and resource gates pass.
 
 ## Repository contents today
 
