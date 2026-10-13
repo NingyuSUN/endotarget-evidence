@@ -88,7 +88,7 @@
   "source_primary_lineage_cells": 150788,
   "minimum_primary_lineage_cells": 2273,
   "annotation_limit": "Pinned HGNC approved named-gene universe, not full Ensembl feature annotation; unknown and ambiguous features explicitly excluded",
-  "lineage_limit": "NOT RUN: public compact P077 is donor-lineage aggregation and cannot independently validate every cell label; inherited author annotation limitation retained",
+  "lineage_limit": "Limited fixed-panel donor-pseudobulk descriptive plausibility audit executed; see docs/MARKER_AUDIT_DECISION.md and reports/lineage_marker_audit.md. No independent per-cell reannotation or anatomical purity proof.",
   "clinical_source_limit": "archived primary clinical supplement publisher byte equivalence not independently verified",
   "disease_effects_computed": false,
   "network_gene_universe_frozen": false,
@@ -97,7 +97,7 @@
     "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/PRIMARY_CELL_ANNOTATION_MANIFEST.csv.gz": "22337617e58095ccd04f6ad54deefb9242e1f948a2d506c68e033a36bedc35c0",
     "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
     "docs/PRE_EFFECT_METHOD_DECISIONS.md": "ea28d759c1bdd35d58744416f8739edf27f3d701a3531da844583f3e7f786fd5",
-    "config/discovery_lineage.json": "0a5678cd15b4af50dfc5eefebc7d976683a4d966df302e9246cc624cb0b586e3",
+    "config/discovery_lineage.json": "868ba258cdc8b5911aba63f3e352dfc0f7ebe96f5da420b9707957faa9839645",
     "config/gene_mapping_reference.json": "4901512306fa5070ca68e5717ef516d55694c3cd6550f6a28c9cb8e0bb20e0d7",
     "config/gene_mapping_policy.json": "0a55a0fd71f9485f6026a4693b2becd6c4aeb557cc7a76cb61084fbfb7a79940",
     "manifests/final_discovery_clinical_selected.tsv": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d"

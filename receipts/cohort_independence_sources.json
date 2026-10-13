@@ -7,8 +7,8 @@
       "sha256": "d28b8499e0eff07ea2ea29f1b6a6429d6e05ce65a099e72b4cc4185899367874",
       "doi": "10.1038/s41588-024-01873-w",
       "method_paragraphs": [
-        "Superficial endometrial samples collected for the Mareckova et al. dataset came from four studies: (1) Endometriosis Oxford (ENDOX), (2) Fibroids and Endometriosis Oxford (FENOX), (3) the Sanger Human Cell Atlasing Project and (4) the Immunology and Subfertility study. Both ENDOX (REC: 09/H0604/58) and FENOX (REC: 17/SC/0664) obtained ethical approval from the Central University Research Ethics Committee, University of Oxford. Yorkshire & The Humber–Leeds East Research Ethics Committee approved the Sanger Human Cell Atlasing Project (REC: 19/YH/0441). The Immunology of Subfertility study (REC: 08/H0606/94) was approved by the Oxford Research Ethics Committee C. In all instances, written, informed consent was provided by study participants before obtaining tissue samples and phenotypic data.",
-        "Only individuals during their reproductive years were recruited and were considered as having ‘natural cycles’ only if they had not taken any hormonal treatment at least 3 months before sample collection. Donors with endometrial cancer were excluded. In addition, we aimed to exclude patients with other benign uterine/endometrial pathologies (that is, fibroids, polyps, adenomyosis, hyperplasia). However, in some cases (n = 15), later histological evaluations revealed the presence of these pathologies (Supplementary Table 1). Patients taking part in the ENDOX and FENOX studies (n = 69) were undergoing laparoscopic surgery for suspected endometriosis or infertility reasons at the John Radcliffe Hospital, Oxford. At the beginning of surgery, a pipelle biopsy of the endometrium was taken and the presence/absence of endometriosis, including endometriosis stage as per the revised American Society for Reproductive Medicine (rASRM stages I–IV), was assigned upon surgical evaluation during the laparoscopy. Four additional control samples (that is, samples from donors without endometriosis) came from the Sanger Cell Atlasing Project study (n = 3) and the Immunology of Subfertility study (n = 1). Absence of endometriosis was determined based on the clinical and medical history of the patients. For the Sanger Cell Atlasing Project, patients attended a coil clinic for contraceptive reasons. During the coil insertion procedure, a biopsy of the endometrium was taken in an outpatient setting. For the Immunology and Subfertility study, patients were undergoing in vitro fertilization and an endometrial biopsy was taken in an outpatient setting one cycle before the patient became pregnant and had a live birth."
+        "Superficial endometrial samples collected for the Mareckova et al. dataset came from four studies: (1) Endometriosis Oxford (ENDOX), (2) Fibroids and Endometriosis Oxford (FENOX), (3) the Sanger Human Cell Atlasing Project and (4) the Immunology and Subfertility study. Both ENDOX (REC: 09/H0604/58) and FENOX (REC: 17/SC/0664) obtained ethical approval from the Central University Research Ethics Committee, University of Oxford. Yorkshire & The Humber\u2013Leeds East Research Ethics Committee approved the Sanger Human Cell Atlasing Project (REC: 19/YH/0441). The Immunology of Subfertility study (REC: 08/H0606/94) was approved by the Oxford Research Ethics Committee C. In all instances, written, informed consent was provided by study participants before obtaining tissue samples and phenotypic data.",
+        "Only individuals during their reproductive years were recruited and were considered as having \u2018natural cycles\u2019 only if they had not taken any hormonal treatment at least 3 months before sample collection. Donors with endometrial cancer were excluded. In addition, we aimed to exclude patients with other benign uterine/endometrial pathologies (that is, fibroids, polyps, adenomyosis, hyperplasia). However, in some cases (n = 15), later histological evaluations revealed the presence of these pathologies (Supplementary Table 1). Patients taking part in the ENDOX and FENOX studies (n = 69) were undergoing laparoscopic surgery for suspected endometriosis or infertility reasons at the John Radcliffe Hospital, Oxford. At the beginning of surgery, a pipelle biopsy of the endometrium was taken and the presence/absence of endometriosis, including endometriosis stage as per the revised American Society for Reproductive Medicine (rASRM stages I\u2013IV), was assigned upon surgical evaluation during the laparoscopy. Four additional control samples (that is, samples from donors without endometriosis) came from the Sanger Cell Atlasing Project study (n = 3) and the Immunology of Subfertility study (n = 1). Absence of endometriosis was determined based on the clinical and medical history of the patients. For the Sanger Cell Atlasing Project, patients attended a coil clinic for contraceptive reasons. During the coil insertion procedure, a biopsy of the endometrium was taken in an outpatient setting. For the Immunology and Subfertility study, patients were undergoing in vitro fertilization and an endometrial biopsy was taken in an outpatient setting one cycle before the patient became pregnant and had a live birth."
       ]
     },
     "discovery": {
@@ -16,14 +16,187 @@
       "sha256": "fb09a4f9bbe895ff683187260d0a797749bc3920d50f5005c1d66ed6bdf743b7",
       "doi": "10.1038/s41467-026-73020-4",
       "method_paragraphs": [
-        "All procedures involving human participants were conducted in accordance with the ethical standards of the Swiss Ethics Committee and the 1964 Declaration of Helsinki and its later amendments. The study was approved by the Swiss Ethics Committee (KEK-BE 01780, 2019). Donors provided written informed consent prior to inclusion and participated without receiving compensation. Inclusion criteria for this study included a minimum age of 18 years and scheduled laparoscopic surgery for indications, such as symptoms of endometriosis, tubal ligation, salpingectomy, hysterectomy, idiopathic infertility, pelvic pain or other gynecological pathologies as part of their planned clinical treatment. Donors with pre-existing inflammatory diseases, malignancy, pregnancy, lactation or the onset of the last period more than 35 days before the surgery were excluded. Donors without endometriosis but with adenomyosis were excluded. Donors filled out a pain questionnaire before laparoscopy. Immediately before surgery, an endometrial biopsy was obtained using Pipelle-de-Cornier (Laboratoire CCD, 1103000) and peripheral blood was taken with an S-Monovette tube (Sarstedt, 04.1926.001). During laparoscopy, each donor’s pelvic cavity was visually inspected for endometriotic lesions. Endometriosis was confirmed for each endometriosis patient in this study by histopathological evaluation."
+        "All procedures involving human participants were conducted in accordance with the ethical standards of the Swiss Ethics Committee and the 1964 Declaration of Helsinki and its later amendments. The study was approved by the Swiss Ethics Committee (KEK-BE 01780, 2019). Donors provided written informed consent prior to inclusion and participated without receiving compensation. Inclusion criteria for this study included a minimum age of 18 years and scheduled laparoscopic surgery for indications, such as symptoms of endometriosis, tubal ligation, salpingectomy, hysterectomy, idiopathic infertility, pelvic pain or other gynecological pathologies as part of their planned clinical treatment. Donors with pre-existing inflammatory diseases, malignancy, pregnancy, lactation or the onset of the last period more than 35 days before the surgery were excluded. Donors without endometriosis but with adenomyosis were excluded. Donors filled out a pain questionnaire before laparoscopy. Immediately before surgery, an endometrial biopsy was obtained using Pipelle-de-Cornier (Laboratoire CCD, 1103000) and peripheral blood was taken with an S-Monovette tube (Sarstedt, 04.1926.001). During laparoscopy, each donor\u2019s pelvic cavity was visually inspected for endometriotic lesions. Endometriosis was confirmed for each endometriosis patient in this study by histopathological evaluation."
       ]
     }
   },
-  "classification": "distinct_recruitment_frameworks_supported; selected-donor cell mapping pending",
+  "classification": "distinct_recruitment_frameworks_supported; final_selected_22_discovery_and_22_HECA_new_nuclei_provenance_crosswalk_verified",
   "limitations": [
-    "Public donor IDs are study-local, so disjoint strings alone cannot prove independence.",
+    "Public donor IDs are study-local; disjoint strings alone cannot prove independence.",
     "No cross-study genotype/person linkage is available.",
-    "No claim of selected-cohort independence before HECA new-nuclei subset and clinical crosswalk are verified."
-  ]
+    "Recruitment dates and exact recruiting sub-study for each HECA donor are not established by the inspected public fields.",
+    "Shared Tan/reference annotation methodology does not imply shared participants and does not supply independent lineage-label validation."
+  ],
+  "updated_at": "2026-10-13T08:48:40.046261+00:00",
+  "selected_cohorts": {
+    "discovery": {
+      "ledger_path": "manifests/final_discovery_clinical_selected.tsv",
+      "ledger_sha256": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d",
+      "unique_donors": 22,
+      "original_donor_ids": [
+        "sample70",
+        "sample71",
+        "sample76",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample123",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ],
+      "original_sample_ids": [
+        "sample70",
+        "sample71",
+        "sample76",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample123",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ],
+      "assay": "scRNA_seq",
+      "accession": "GSE266265",
+      "GSM_ids": [
+        "GSM8244071",
+        "GSM8244072",
+        "GSM8244077",
+        "GSM8244080",
+        "GSM8244081",
+        "GSM8244082",
+        "GSM8244087",
+        "GSM8244088",
+        "GSM8244089",
+        "GSM8244090",
+        "GSM8244098",
+        "GSM8244102",
+        "GSM8244103",
+        "GSM8244104",
+        "GSM8244106",
+        "GSM8244108",
+        "GSM8244115",
+        "GSM8244117",
+        "GSM8244118",
+        "GSM8244122",
+        "GSM8244126",
+        "GSM8244127"
+      ],
+      "primary_lineage_cells": 150788,
+      "clinical_workbook_sha256": [
+        "5749f05690ffc1c7b6ff7492eba047b5870610c3f6387a47d7342e67538bce69"
+      ],
+      "archived_workbook_limit": "OSF manifest and ZIP integrity verified; primary-publisher byte equivalence not independently verified"
+    },
+    "heca": {
+      "ledger_path": "manifests/final_heca_clinical_selected.tsv",
+      "ledger_sha256": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc",
+      "unique_donors": 22,
+      "original_donor_ids": [
+        "EX0045",
+        "EX0288",
+        "EX0540",
+        "EX0795",
+        "FX0011",
+        "FX0052",
+        "FX0060",
+        "FX1097",
+        "FX1101",
+        "FX1104",
+        "FX1119",
+        "FX1125",
+        "FX1129",
+        "FX1136",
+        "FX1146",
+        "FX1150",
+        "FX1160",
+        "FX1236",
+        "FX9005",
+        "FX9020",
+        "FX9024",
+        "FX9027"
+      ],
+      "original_sample_ids": [
+        "UA_Endo12449300_EX0045",
+        "UA_Endo12449299_EX0288",
+        "UA_Endo11282193_EX0540",
+        "UA_Endo12296823_EX0795",
+        "UA_Endo11460961_FX0011",
+        "UA_Endo11173480_FX0052",
+        "UA_Endo12269811_FX0060",
+        "UA_Endo11460961_FX1097",
+        "UA_Endo10281926_FX1101",
+        "UA_Endo11596522_FX1104",
+        "UA_Endo12296823_FX1119",
+        "UA_Endo12296824_FX1125",
+        "UA_Endo12061705_FX1129",
+        "UA_Endo12449301_FX1136",
+        "UA_Endo11282193_FX1146",
+        "UA_Endo12449301_FX1150",
+        "UA_Endo12449298_FX1160",
+        "UA_Endo11596521_FX1236",
+        "UA_Endo11596522_FX9005",
+        "UA_Endo12061703_FX9020",
+        "UA_Endo12061704_FX9024",
+        "UA_Endo12449300_FX9027"
+      ],
+      "assay": "newly_generated_snRNA_seq",
+      "accession": "E-MTAB-14039",
+      "study_original_values": [
+        "Marecckovaa"
+      ],
+      "selected_library_ids": [
+        "UA_Endo12449300",
+        "UA_Endo12449299",
+        "UA_Endo11282193",
+        "UA_Endo12296823",
+        "UA_Endo11460961",
+        "UA_Endo11173480",
+        "UA_Endo12269811",
+        "UA_Endo11460961",
+        "UA_Endo10281926",
+        "UA_Endo11596522",
+        "UA_Endo12296823",
+        "UA_Endo12296824",
+        "UA_Endo12061705",
+        "UA_Endo12449301",
+        "UA_Endo11282193",
+        "UA_Endo12449301",
+        "UA_Endo12449298",
+        "UA_Endo11596521",
+        "UA_Endo11596522",
+        "UA_Endo12061703",
+        "UA_Endo12061704",
+        "UA_Endo12449300"
+      ],
+      "author_deconvolution_Donor_matches": true,
+      "primary_nuclei": 52744,
+      "repeated_library_rule": "one eligible library per donor; largest frozen primary-lineage nucleus count, tie lexicographic library ID; biopsy relation unknown, no sum"
+    }
+  }
 }

@@ -1,0 +1,14 @@
+{
+  "reason": "authorized lineage source attribution and limited marker-audit scope qualification only",
+  "prepare_script_sha256": "b59378263c2a21669915ef178e8c5d5befd30b2385a0f35b8d16e1c18cf9e6a3",
+  "before": {
+    "data/processed/discovery/source_counts.tsv.gz": "6c4857147bf0c9bf628cb124af0154a1c614736102cc364a677f80155acfa954",
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067"
+  },
+  "after": {
+    "data/processed/discovery/source_counts.tsv.gz": "6c4857147bf0c9bf628cb124af0154a1c614736102cc364a677f80155acfa954",
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067"
+  },
+  "counts_unchanged": true,
+  "prepare_reruns_this_refresh": 1
+}

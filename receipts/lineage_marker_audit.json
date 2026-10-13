@@ -1,0 +1,227 @@
+{
+  "created_utc": "2026-10-13T08:51:00.718898+00:00",
+  "audit": "fixed-panel descriptive population plausibility only",
+  "script_sha256": "32a2ef4ab6fbdeb8af75e5d62f14e37a82a3b570d5dc3de5057fc5c02d4ead9c",
+  "panel_freeze_receipt_sha256": "376f3987c29c8302c3fd8fb864a0109d2d7ff2a6e11b2259aa5d4a67592f07b6",
+  "input_sha256": {
+    "config/lineage_marker_panel.json": "8c790a2a6d7997d20cd6c0c2c48902fdb1d2f54796792191b44fe8a36ebcc861",
+    "data/reference/gene_annotation/hgnc_complete_set_2026-10-06.tsv": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d",
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067",
+    "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/pseudobulk/P005.csv.gz": "d3dc4330792d637de8398658f14bba6f6f6a1bafaf1a7d244ff24004bd637686",
+    "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/pseudobulk/P077.csv.gz": "2725fed18c32e7acece542ffe2fff5dae823722b57ff5d70dfa67800ef768015",
+    "manifests/discovery_features_mapping.tsv": "41a1d85d2e66376f8129d5e02d18da377b6dd206213202c25aa38f9dd5eaf6ff",
+    "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/SOURCE_GENE_MAPPING.csv": "e69c67b1032f1af2653499653c4403af2e383c6cf5779f07087df2eca62d6fb0",
+    "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/PRIMARY_CELL_ANNOTATION_MANIFEST.csv.gz": "22337617e58095ccd04f6ad54deefb9242e1f948a2d506c68e033a36bedc35c0",
+    "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/DONOR_CELLTYPE_MANIFEST.csv": "ef4d58f438df100ad4d1a613c89db0bbd39b4cb2bba8b6d23ae518d7d91ac316",
+    "config/discovery_lineage.json": "868ba258cdc8b5911aba63f3e352dfc0f7ebe96f5da420b9707957faa9839645"
+  },
+  "disease_columns_consumed": false,
+  "new_cell_or_donor_exclusions": false,
+  "DE_or_disease_comparisons": false,
+  "CPM_denominator": {
+    "formula": "1e6 * gene estimated_or_integer_count / sum_all_retained_stable_gene_counts_for_same_donor_and_population",
+    "denominator": "all rows in that population's mapped retained stable-gene matrix, not only the panel and not cell number",
+    "equal_weight": "compute donor CPM first; cohort summary gives each donor weight1/n regardless cell number or total counts",
+    "summary": [
+      "donor_count",
+      "positive_count_donors",
+      "mean_CPM",
+      "median_CPM",
+      "Q1_CPM",
+      "Q3_CPM",
+      "minimum_CPM",
+      "maximum_CPM"
+    ],
+    "between_cohorts": "scRNA and snRNA differ in capture and compartment; no cross-cohort calibration or purity inference"
+  },
+  "coverage": {
+    "discovery/primary_fibroblast": {
+      "donors": 22,
+      "features": 26109,
+      "total_count_min": "6401666.58228964298496689732",
+      "total_count_max": "85717176.37586623941220358"
+    },
+    "discovery/source_mural_remainder": {
+      "donors": 22,
+      "features": 26109,
+      "total_count_min": "234215.8305364094922830400000",
+      "total_count_max": "3394366.18529442529287334"
+    }
+  },
+  "comparator": {
+    "status": "available_exact_checks_passed",
+    "all_source_features": 34600,
+    "all_source_donors": 23,
+    "all_source_pairs_nonnegative": 795800,
+    "selected_donors": 22,
+    "retained_stable_features": 26109,
+    "exact_P077_prepared_value_match": true,
+    "exact_selected_retained_mass_conservation": true,
+    "source_stromal_label_census": {
+      "eF2": 121228,
+      "eF3": 1648,
+      "dS1-myofibroblast": 4107,
+      "Prv-STEAP4": 2579,
+      "dS2": 16355,
+      "eF1": 3540,
+      "VSMC": 558,
+      "Prv-MYH11": 685,
+      "eF4-CXCL14": 2856,
+      "fib C7": 6058,
+      "Prv-CCL19": 198,
+      "fib C7-SFRP2": 17,
+      "dS3": 110,
+      "dS4": 245,
+      "fib C7 secretory": 6,
+      "fib C7 secretory_late": 1
+    },
+    "exact_P005_P077_cell_membership_match": true,
+    "selected_mural_cells": 3883,
+    "selected_mass": [
+      {
+        "donor_id": "sample70",
+        "P005_total": "16022780.0288004144663835431116",
+        "P077_total": "15788564.1982640049741005031116",
+        "remainder_total": "234215.8305364094922830400000"
+      },
+      {
+        "donor_id": "sample71",
+        "P005_total": "7034351.09952066853186257067",
+        "P077_total": "6401666.58228964298496689732",
+        "remainder_total": "632684.51723102554689567335"
+      },
+      {
+        "donor_id": "sample76",
+        "P005_total": "51216400.374016673725112878",
+        "P077_total": "50405467.524984980573375978",
+        "remainder_total": "810932.849031693151736900"
+      },
+      {
+        "donor_id": "sample82",
+        "P005_total": "45301492.7174055764428648297",
+        "P077_total": "44539152.7819049223544958297",
+        "remainder_total": "762339.9355006540883690000"
+      },
+      {
+        "donor_id": "sample83",
+        "P005_total": "16052343.70996570716193796",
+        "P077_total": "14854048.938025929224134764505",
+        "remainder_total": "1198294.771939777937803195495"
+      },
+      {
+        "donor_id": "sample84",
+        "P005_total": "48803456.80331077907340551",
+        "P077_total": "47977247.23676735344810441",
+        "remainder_total": "826209.56654342562530110"
+      },
+      {
+        "donor_id": "sample91",
+        "P005_total": "24981120.216271811801314592",
+        "P077_total": "23747148.830171816352890694",
+        "remainder_total": "1233971.386099995448423898"
+      },
+      {
+        "donor_id": "sample94",
+        "P005_total": "64376182.1034733538822911895371",
+        "P077_total": "63508604.0216921490478008895371",
+        "remainder_total": "867578.0817812048344903000000"
+      },
+      {
+        "donor_id": "sample95",
+        "P005_total": "22269916.3878440668286248937",
+        "P077_total": "20947292.2149228682245204037",
+        "remainder_total": "1322624.1729211986041044900"
+      },
+      {
+        "donor_id": "sample96",
+        "P005_total": "38310387.364575183237557724437",
+        "P077_total": "37022966.011629559044184064437",
+        "remainder_total": "1287421.352945624193373660000"
+      },
+      {
+        "donor_id": "sample106",
+        "P005_total": "27223942.58318659037665686",
+        "P077_total": "26754364.947343232883656436",
+        "remainder_total": "469577.635843357493000424"
+      },
+      {
+        "donor_id": "sample110",
+        "P005_total": "52343304.24627780269744738",
+        "P077_total": "51793157.33940912539567378",
+        "remainder_total": "550146.90686867730177360"
+      },
+      {
+        "donor_id": "sample111",
+        "P005_total": "89111542.56116066470507692",
+        "P077_total": "85717176.37586623941220358",
+        "remainder_total": "3394366.18529442529287334"
+      },
+      {
+        "donor_id": "sample112",
+        "P005_total": "69288284.82728159863688491",
+        "P077_total": "66683108.68348550004124981",
+        "remainder_total": "2605176.14379609859563510"
+      },
+      {
+        "donor_id": "sample114",
+        "P005_total": "58785835.1992007289358022813",
+        "P077_total": "57415601.4069815399715190113",
+        "remainder_total": "1370233.7922191889642832700"
+      },
+      {
+        "donor_id": "sample116",
+        "P005_total": "56733292.87747141551759754",
+        "P077_total": "55338366.81204946236561554",
+        "remainder_total": "1394926.06542195315198200"
+      },
+      {
+        "donor_id": "sample123",
+        "P005_total": "37099959.2960919367095976489",
+        "P077_total": "36518443.8094631965830816989",
+        "remainder_total": "581515.4866287401265159500"
+      },
+      {
+        "donor_id": "sample125",
+        "P005_total": "37468706.35815163654134635",
+        "P077_total": "36854604.54715437166058985",
+        "remainder_total": "614101.81099726488075650"
+      },
+      {
+        "donor_id": "sample126",
+        "P005_total": "44513834.833560483171368538",
+        "P077_total": "43228798.618127207129898938",
+        "remainder_total": "1285036.215433276041469600"
+      },
+      {
+        "donor_id": "sample130",
+        "P005_total": "49271578.25460119043907054",
+        "P077_total": "48806941.77144957280436334",
+        "remainder_total": "464636.48315161763470720"
+      },
+      {
+        "donor_id": "sample134",
+        "P005_total": "29826958.899735327213219077",
+        "P077_total": "28984148.629309444698863077",
+        "remainder_total": "842810.270425882514356000"
+      },
+      {
+        "donor_id": "sample135",
+        "P005_total": "44842287.20263068621415788",
+        "P077_total": "44068879.15203884263102078",
+        "remainder_total": "773408.05059184358313710"
+      }
+    ]
+  },
+  "selftests": [
+    "equal_donor_weighting",
+    "fractional_decimal_subtraction",
+    "negative_remainder_rejection",
+    "positive_count_denominator",
+    "duplicate_donor_header_rejection",
+    "missing_feature_not_observed_zero"
+  ],
+  "outputs": {
+    "reports/lineage_marker_audit_donors.tsv": "08ff619f8438f5c5ef0d801290069528a451c663dfdfe28755fcb440a59a21d7",
+    "reports/lineage_marker_audit_summary.tsv": "9f516c1b14b6e943548a6ce3d2d2bd6ddefb1a15a09f34dcfca2435f8361253e"
+  }
+}

@@ -50,6 +50,8 @@
       "CCL19"
     ]
   },
-  "independent_marker_expression_audit": "NOT RUN: public compact P077 is donor-lineage aggregation and cannot independently validate every cell label; inherited author annotation limitation retained",
-  "author_reference_dependency": "Tan reference annotation methodology shared with related published atlas; not proof of independent label validation"
+  "independent_marker_expression_audit": "Limited fixed-panel donor-pseudobulk descriptive plausibility audit executed; see docs/MARKER_AUDIT_DECISION.md and reports/lineage_marker_audit.md. No independent per-cell reannotation or anatomical purity proof.",
+  "author_reference_dependency": "Tan reference annotation methodology shared with related published atlas; not proof of independent label validation",
+  "author_crosswalk_source_qualification": "secondary_OSF_grouping_of_original_author_labels; not a dedicated primary-publication author crosswalk",
+  "author_crosswalk_creator_level": "OSF secondary reanalysis project; inherited refined labels originate from discovery authors"
 }

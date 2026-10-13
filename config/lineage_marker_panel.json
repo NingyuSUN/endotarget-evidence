@@ -1,0 +1,190 @@
+{
+  "status": "FIXED_BEFORE_MARKER_VALUES_NO_DISEASE_EFFECTS",
+  "version": "1.0",
+  "purpose": "Limited population-level plausibility audit of inherited source lineage labels; not independent per-cell reannotation",
+  "markers": [
+    {
+      "symbol": "DCN",
+      "category": "stromal_ECM_context",
+      "rationale": "General fibroblast/extracellular-matrix context; not endometrium-specific and not exclusive cell identity markers.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "LUM",
+      "category": "stromal_ECM_context",
+      "rationale": "General fibroblast/extracellular-matrix context; not endometrium-specific and not exclusive cell identity markers.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "COL1A1",
+      "category": "stromal_ECM_context",
+      "rationale": "General fibroblast/extracellular-matrix context; not endometrium-specific and not exclusive cell identity markers.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "COL1A2",
+      "category": "stromal_ECM_context",
+      "rationale": "General fibroblast/extracellular-matrix context; not endometrium-specific and not exclusive cell identity markers.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "PDGFRA",
+      "category": "stromal_ECM_context",
+      "rationale": "General fibroblast/extracellular-matrix context; not endometrium-specific and not exclusive cell identity markers.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "PRL",
+      "category": "decidual_state_context",
+      "rationale": "Decidual state context; proliferative donors need not express these. Absence is not a lineage failure.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "IGFBP1",
+      "category": "decidual_state_context",
+      "rationale": "Decidual state context; proliferative donors need not express these. Absence is not a lineage failure.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "C7",
+      "category": "inherited_fibroblast_label_context",
+      "rationale": "Names occur in retained original author fibroblast labels; neither defines pure endometrial origin alone.",
+      "evidence_basis": "cached_original_labels_and_discovery_methods_Sec20"
+    },
+    {
+      "symbol": "CXCL14",
+      "category": "inherited_fibroblast_label_context",
+      "rationale": "Names occur in retained original author fibroblast labels; neither defines pure endometrial origin alone.",
+      "evidence_basis": "cached_original_labels_and_discovery_methods_Sec20"
+    },
+    {
+      "symbol": "RGS5",
+      "category": "mural_contractile_context",
+      "rationale": "Mural/contractile context; ACTA2/TAGLN can occur in retained myofibroblasts, and none is an automatic exclusion marker.",
+      "evidence_basis": "standard_lineage_rationale_MYH11_also_original_mural_label"
+    },
+    {
+      "symbol": "PDGFRB",
+      "category": "mural_contractile_context",
+      "rationale": "Mural/contractile context; ACTA2/TAGLN can occur in retained myofibroblasts, and none is an automatic exclusion marker.",
+      "evidence_basis": "standard_lineage_rationale_MYH11_also_original_mural_label"
+    },
+    {
+      "symbol": "MYH11",
+      "category": "mural_contractile_context",
+      "rationale": "Mural/contractile context; ACTA2/TAGLN can occur in retained myofibroblasts, and none is an automatic exclusion marker.",
+      "evidence_basis": "standard_lineage_rationale_MYH11_also_original_mural_label"
+    },
+    {
+      "symbol": "ACTA2",
+      "category": "mural_contractile_context",
+      "rationale": "Mural/contractile context; ACTA2/TAGLN can occur in retained myofibroblasts, and none is an automatic exclusion marker.",
+      "evidence_basis": "standard_lineage_rationale_MYH11_also_original_mural_label"
+    },
+    {
+      "symbol": "TAGLN",
+      "category": "mural_contractile_context",
+      "rationale": "Mural/contractile context; ACTA2/TAGLN can occur in retained myofibroblasts, and none is an automatic exclusion marker.",
+      "evidence_basis": "standard_lineage_rationale_MYH11_also_original_mural_label"
+    },
+    {
+      "symbol": "EPCAM",
+      "category": "epithelial_context",
+      "rationale": "Epithelial context; signal may reflect ambient RNA, mixed aggregates or shared expression and cannot estimate cell fraction.",
+      "evidence_basis": "standard_lineage_rationale_EPCAM_supported_cached_HECA_Sec4"
+    },
+    {
+      "symbol": "KRT8",
+      "category": "epithelial_context",
+      "rationale": "Epithelial context; signal may reflect ambient RNA, mixed aggregates or shared expression and cannot estimate cell fraction.",
+      "evidence_basis": "standard_lineage_rationale_EPCAM_supported_cached_HECA_Sec4"
+    },
+    {
+      "symbol": "KRT18",
+      "category": "epithelial_context",
+      "rationale": "Epithelial context; signal may reflect ambient RNA, mixed aggregates or shared expression and cannot estimate cell fraction.",
+      "evidence_basis": "standard_lineage_rationale_EPCAM_supported_cached_HECA_Sec4"
+    },
+    {
+      "symbol": "PECAM1",
+      "category": "endothelial_context",
+      "rationale": "Endothelial context, interpreted jointly and without a purity threshold.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "VWF",
+      "category": "endothelial_context",
+      "rationale": "Endothelial context, interpreted jointly and without a purity threshold.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "PTPRC",
+      "category": "immune_context",
+      "rationale": "Leukocyte/myeloid context; no cell reclassification or contamination-percentage inference.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "LST1",
+      "category": "immune_context",
+      "rationale": "Leukocyte/myeloid context; no cell reclassification or contamination-percentage inference.",
+      "evidence_basis": "standard_lineage_biological_rationale"
+    },
+    {
+      "symbol": "HOXA13",
+      "category": "cervical_context",
+      "rationale": "HECA paper links HOXA13+ mesenchymal and KRT5+ epithelial populations to likely cervical contamination; one gene alone does not establish tissue origin.",
+      "evidence_basis": "cached_HECA_article_Sec3_and_ExtendedDataFig1"
+    },
+    {
+      "symbol": "KRT5",
+      "category": "cervical_context",
+      "rationale": "HECA paper links HOXA13+ mesenchymal and KRT5+ epithelial populations to likely cervical contamination; one gene alone does not establish tissue origin.",
+      "evidence_basis": "cached_HECA_article_Sec3_and_ExtendedDataFig1"
+    }
+  ],
+  "interpretation_rules": {
+    "no_expression_based_cell_or_donor_exclusion": true,
+    "no_disease_column_consumption": true,
+    "no_group_comparisons_pvalues_or_DE": true,
+    "no_pass_fail_purity_threshold": true,
+    "missing_feature": "unavailable, never zero",
+    "phase_markers": "context only, not required to be expressed in proliferative donors",
+    "aggregate_signal": "cannot distinguish intrinsic expression, ambient RNA, doublets, minority cells or incorrect labels",
+    "source_marker_methods": "Inherited author DotPlot verification is not repeated here; standard biological rationale is not falsely attributed as a specific list in the cached paper"
+  },
+  "CPM": {
+    "formula": "1e6 * gene estimated_or_integer_count / sum_all_retained_stable_gene_counts_for_same_donor_and_population",
+    "denominator": "all rows in that population's mapped retained stable-gene matrix, not only the panel and not cell number",
+    "equal_weight": "compute donor CPM first; cohort summary gives each donor weight1/n regardless cell number or total counts",
+    "summary": [
+      "donor_count",
+      "positive_count_donors",
+      "mean_CPM",
+      "median_CPM",
+      "Q1_CPM",
+      "Q3_CPM",
+      "minimum_CPM",
+      "maximum_CPM"
+    ],
+    "between_cohorts": "scRNA and snRNA differ in capture and compartment; no cross-cohort calibration or purity inference"
+  },
+  "optional_comparator": {
+    "source": "already_cached_P005_stromal_minus_P077_fibroblast",
+    "conditions": [
+      "identical unique canonical featureIDs and donor IDs",
+      "P005>=P077 for every source feature/donor under exact Decimal subtraction",
+      "source annotation main stroma partitioned by fixed fibroblast/mural labels",
+      "accepted feature mapping to same26,109 stable-gene universe",
+      "per-donor mapped totals reconcile exactly"
+    ],
+    "on_failure": "report comparator unavailable and reason; no clipping, rescaling or source mutation",
+    "interpretation": "source-defined mural remainder, not independent purified cell reference"
+  },
+  "source_paths": [
+    "data/reference/discovery_article.xml#Sec20",
+    "data/reference/heca_article.xml#Sec3,Sec4,ExtendedDataFig1",
+    "config/discovery_lineage_crosswalk.tsv"
+  ],
+  "reference_config": "config/gene_mapping_reference.json",
+  "optional_heca": "same frozen panel, ungrouped donor summaries, only after stable raw-count matrix becomes available"
+}

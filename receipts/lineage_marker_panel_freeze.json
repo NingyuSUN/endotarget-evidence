@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-13T08:40:50.759374+00:00",
+  "stage": "panel_frozen_before_marker_value_inspection",
+  "panel_markers": 23,
+  "sha256": {
+    "config/lineage_marker_panel.json": "8c790a2a6d7997d20cd6c0c2c48902fdb1d2f54796792191b44fe8a36ebcc861",
+    "docs/MARKER_AUDIT_DECISION.md": "ce66483fa1c175dc7507bd989da8fb2f84ec0787cb11e85b299b445de9ac4438"
+  },
+  "no_disease_results_used": true
+}
