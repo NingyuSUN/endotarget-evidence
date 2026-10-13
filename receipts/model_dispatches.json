@@ -115,6 +115,45 @@
       "status": "completed",
       "commit": "c6242be63671e4b9b13ddd986e2e499575db2347",
       "result": "H5metadata312246nuclei/68samples/63genotypes; authorcrosswalk68of68; noexpressionmatrixread"
+    },
+    {
+      "task": "/root/astra_clinical_gate_mapping",
+      "turn": "clinical_finalization_and_fixed_marker_audit",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commits": [
+        "d1545f420994e69090284c1df3535f4f42a7ba89",
+        "7ff187b0adea741cb10852bebaf30b24bc0aa8ca",
+        "c1654ac10bc047b84d51fbd861163badc752e161"
+      ],
+      "result": "Final donor clinical gates, fixed 23-marker descriptive audit, selected-cohort provenance crosswalk; not cell purity or independent participant identity validation"
+    },
+    {
+      "task": "/root/sol61_streaming_input_route",
+      "turn": "actual_discovery_counts_and_direct_channel_network",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commits": [
+        "697e00e0d478b44826ceecb4b7eb949995d5960c",
+        "9d83c1e36f738dba15ceb69b7603a7cfc6b48d3f",
+        "3dc7b1af3563cd80367f54281d5f928781b0e2cc"
+      ],
+      "result": "Discovery counts preserved and mapped; STRING direct experiments/database channels replayed and mapped to stable genes; no disease ranking"
+    },
+    {
+      "task": "/root/sol61_heca_h5_metadata",
+      "turn": "reject_normalized_X_and_prepare_public_raw_counts",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commits": [
+        "c2fe3763ee3f596c2da3a1782a89d04802d07474",
+        "c0e6d0be3972aeff2e5be86d4203899f4747a18b"
+      ],
+      "result": "Rejected normalized H5 X as count input; 22 public raw archives and 52744 selected nuclei aggregated, validated with source difference retained; no inverse reconstruction or disease analysis"
     }
-  ]
+  ],
+  "updated_utc": "2026-10-13T09:34:01.408380+00:00"
 }

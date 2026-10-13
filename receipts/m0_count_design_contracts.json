@@ -1,0 +1,296 @@
+{
+  "checked_utc": "2026-10-13T09:05:22.992012+00:00",
+  "status": "COUNT_DESIGN_CONTRACTS_PASS_NOT_FULL_M0",
+  "scientific_m0_passed": false,
+  "scientific_effects_computed": false,
+  "cohorts": {
+    "discovery": {
+      "counts": {
+        "genes": 26109,
+        "donors": 22,
+        "donor_order": [
+          "sample70",
+          "sample71",
+          "sample76",
+          "sample82",
+          "sample83",
+          "sample84",
+          "sample91",
+          "sample94",
+          "sample95",
+          "sample96",
+          "sample106",
+          "sample110",
+          "sample111",
+          "sample112",
+          "sample114",
+          "sample116",
+          "sample123",
+          "sample125",
+          "sample126",
+          "sample130",
+          "sample134",
+          "sample135"
+        ],
+        "fractional_entries": 80418,
+        "library_totals": {
+          "sample70": "15788564.19826400497410050311",
+          "sample71": "6401666.58228964298496689732",
+          "sample76": "50405467.524984980573375978",
+          "sample82": "44539152.7819049223544958297",
+          "sample83": "14854048.93802592922413476450",
+          "sample84": "47977247.23676735344810441",
+          "sample91": "23747148.830171816352890694",
+          "sample94": "63508604.02169214904780088954",
+          "sample95": "20947292.2149228682245204037",
+          "sample96": "37022966.01162955904418406444",
+          "sample106": "26754364.947343232883656436",
+          "sample110": "51793157.33940912539567378",
+          "sample111": "85717176.37586623941220358",
+          "sample112": "66683108.68348550004124981",
+          "sample114": "57415601.4069815399715190113",
+          "sample116": "55338366.81204946236561554",
+          "sample123": "36518443.8094631965830816989",
+          "sample125": "36854604.54715437166058985",
+          "sample126": "43228798.618127207129898938",
+          "sample130": "48806941.77144957280436334",
+          "sample134": "28984148.629309444698863077",
+          "sample135": "44068879.15203884263102078"
+        },
+        "integer_required": false
+      },
+      "groups": {
+        "ENDO": 12,
+        "non-ENDO": 10
+      },
+      "design": {
+        "rank": 12,
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture_batch:batch12_vs_batch11",
+          "capture_batch:batch13_vs_batch11",
+          "capture_batch:batch14_vs_batch11",
+          "capture_batch:batch15_vs_batch11",
+          "capture_batch:batch16_vs_batch11",
+          "capture_batch:batch17_vs_batch11",
+          "capture_batch:batch18_vs_batch11",
+          "capture_batch:batch19_vs_batch11",
+          "adenomyosis"
+        ],
+        "residual_df": 10,
+        "donors": 22
+      },
+      "status": "COUNT_DESIGN_CONTRACT_PASS",
+      "normalization": "none",
+      "clinical_path": "manifests/final_discovery_clinical_selected.tsv",
+      "counts_path": "data/processed/discovery/counts_stable.tsv.gz"
+    },
+    "heca": {
+      "counts": {
+        "genes": 26125,
+        "donors": 22,
+        "donor_order": [
+          "EX0045",
+          "EX0288",
+          "EX0540",
+          "EX0795",
+          "FX0011",
+          "FX0052",
+          "FX0060",
+          "FX1097",
+          "FX1101",
+          "FX1104",
+          "FX1119",
+          "FX1125",
+          "FX1129",
+          "FX1136",
+          "FX1146",
+          "FX1150",
+          "FX1160",
+          "FX1236",
+          "FX9005",
+          "FX9020",
+          "FX9024",
+          "FX9027"
+        ],
+        "fractional_entries": 0,
+        "library_totals": {
+          "EX0045": "21027316",
+          "EX0288": "8005358",
+          "EX0540": "12546966",
+          "EX0795": "3986665",
+          "FX0011": "16158128",
+          "FX0052": "44675364",
+          "FX0060": "6331222",
+          "FX1097": "33693089",
+          "FX1101": "27567447",
+          "FX1104": "26482274",
+          "FX1119": "1387077",
+          "FX1125": "5164598",
+          "FX1129": "3055123",
+          "FX1136": "7638544",
+          "FX1146": "26497542",
+          "FX1150": "20325625",
+          "FX1160": "4245092",
+          "FX1236": "35207180",
+          "FX9005": "19470664",
+          "FX9020": "11202535",
+          "FX9024": "11105258",
+          "FX9027": "6534427"
+        },
+        "integer_required": true
+      },
+      "groups": {
+        "ENDO": 15,
+        "non-ENDO": 7
+      },
+      "design": {
+        "rank": 10,
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "library_group_Lane:42058_vs_20",
+          "library_group_Lane:42196_vs_20",
+          "library_group_Lane:43103_vs_20",
+          "library_group_Lane:43281_vs_20",
+          "library_group_Lane:43937_vs_20",
+          "library_group_Lane:43996_vs_20",
+          "adenomyosis"
+        ],
+        "residual_df": 12,
+        "donors": 22
+      },
+      "status": "COUNT_DESIGN_CONTRACT_PASS",
+      "normalization": "none",
+      "clinical_path": "manifests/final_heca_clinical_selected.tsv",
+      "counts_path": "data/processed/heca/counts_stable.tsv.gz"
+    }
+  },
+  "failures": [],
+  "scope": "Structural count and clinical-design interfaces, not source biological validation or full M0",
+  "label_blind_gene_coverage": {
+    "shared_stable_ids": 21585,
+    "discovery_only_ids": 4524,
+    "heca_only_ids": 4540,
+    "interpretation": "ID availability only; not expression filtering or the comparative graph universe"
+  },
+  "verified_inputs": [
+    {
+      "path": "config/discovery_lineage.json",
+      "bytes": 2726,
+      "sha256": "868ba258cdc8b5911aba63f3e352dfc0f7ebe96f5da420b9707957faa9839645"
+    },
+    {
+      "path": "config/gene_mapping_policy.json",
+      "bytes": 1642,
+      "sha256": "0a55a0fd71f9485f6026a4693b2becd6c4aeb557cc7a76cb61084fbfb7a79940"
+    },
+    {
+      "path": "config/gene_mapping_reference.json",
+      "bytes": 1328,
+      "sha256": "4901512306fa5070ca68e5717ef516d55694c3cd6550f6a28c9cb8e0bb20e0d7"
+    },
+    {
+      "path": "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/PRIMARY_CELL_ANNOTATION_MANIFEST.csv.gz",
+      "bytes": 10378488,
+      "sha256": "22337617e58095ccd04f6ad54deefb9242e1f948a2d506c68e033a36bedc35c0"
+    },
+    {
+      "path": "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/SOURCE_GENE_MAPPING.csv",
+      "bytes": 3079462,
+      "sha256": "e69c67b1032f1af2653499653c4403af2e383c6cf5779f07087df2eca62d6fb0"
+    },
+    {
+      "path": "data/metadata/heca_h5/heca_count_probe/original_obs_n_counts.npy",
+      "bytes": 1249112,
+      "sha256": "e6887afd3a2500fbfc2d37f5d2ea55cea3e73e4361c79bb9f6153463be072c98"
+    },
+    {
+      "path": "data/metadata/heca_h5/obs_selected.tsv",
+      "bytes": 81940811,
+      "sha256": "835c0d9aaf4dcc3b89183ad03c94f171bd9b7ca4aa736ed1e6c29cf3704932ef"
+    },
+    {
+      "path": "data/processed/discovery/counts_stable.tsv.gz",
+      "bytes": 1301852,
+      "sha256": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067"
+    },
+    {
+      "path": "data/processed/heca/counts_stable.tsv.gz",
+      "bytes": 808112,
+      "sha256": "77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0"
+    },
+    {
+      "path": "docs/PRE_EFFECT_METHOD_DECISIONS.md",
+      "bytes": 6859,
+      "sha256": "ea28d759c1bdd35d58744416f8739edf27f3d701a3531da844583f3e7f786fd5"
+    },
+    {
+      "path": "manifests/discovery_clinical_candidates.tsv",
+      "bytes": 27308,
+      "sha256": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7"
+    },
+    {
+      "path": "manifests/final_discovery_clinical_selected.tsv",
+      "bytes": 5423,
+      "sha256": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d"
+    },
+    {
+      "path": "manifests/final_heca_clinical_selected.tsv",
+      "bytes": 11065,
+      "sha256": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc"
+    },
+    {
+      "path": "receipts/discovery_counts_preparation.json",
+      "bytes": 4950,
+      "sha256": "a2e2614c7bd3d21ae67534c58bc4932c20d1ffc4e0b2b081d3ad7e258aaeb361"
+    },
+    {
+      "path": "receipts/heca_counts_preparation.json",
+      "bytes": 18528,
+      "sha256": "8be6e1b3e1e3d3fac67b50b3ceaccd343ee35fac492ac21a98819bc272ed9ce7"
+    },
+    {
+      "path": "reports/final_clinical_design_discovery_primary.tsv",
+      "bytes": 1930,
+      "sha256": "cfde21f83223ca3ba74f9f1e0b330aea98ca2341f4efe47348d6fa6f5f99241c"
+    },
+    {
+      "path": "reports/final_clinical_design_heca_primary.tsv",
+      "bytes": 1643,
+      "sha256": "e8eaf603af32950b6b329ba7f0501c23d25f9cb22e6177fd76609adee44a638b"
+    },
+    {
+      "path": "reports/heca_counts_raw_inventory.json",
+      "bytes": 6318,
+      "sha256": "be61359a3c7692466ef86dc558e37e4a37dffe0b859fb068c1b26f04e72df71c"
+    },
+    {
+      "path": "scripts/audit_m0_contracts.py",
+      "bytes": 8901,
+      "sha256": "3545a9c5ab66cd81b7c0f4e10e108ca694070ffa3dbcf8c766548f2a50d3ee5b"
+    },
+    {
+      "path": "scripts/prepare_discovery_counts.py",
+      "bytes": 14131,
+      "sha256": "b59378263c2a21669915ef178e8c5d5befd30b2385a0f35b8d16e1c18cf9e6a3"
+    },
+    {
+      "path": "scripts/prepare_heca_counts.py",
+      "bytes": 23664,
+      "sha256": "c8685a2ff40709821c63671aa4406b1bd032c0f5f45dccb96478b17c649423f6"
+    },
+    {
+      "path": "work/final_clinical/heca_primary_h5_obs_indices.npy",
+      "bytes": 422080,
+      "sha256": "d02ed9b8cee2c789c4f7aec7a3792a8f9444307163531933b632845cecf864ef"
+    }
+  ],
+  "runtime": {
+    "python": "3.10.16",
+    "numpy": "2.2.6"
+  }
+}

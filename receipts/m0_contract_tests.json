@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-10-13T08:53:09.543364+00:00",
+  "host": "SRV01",
+  "project": "/home/analyst/te",
+  "command": "envs/m0-h5/bin/python -m unittest discover -s tests -p test_m0_contracts.py -v",
+  "tests_run": 5,
+  "exit_code": 0,
+  "checks": [
+    "fractional discovery preserved and rejected for declared-integer HECA",
+    "donor column swap rejected",
+    "nonfinite negative and duplicate gene rejected",
+    "duplicate biological donor rejected",
+    "perfect disease-batch confounding rejected"
+  ],
+  "initial_failure": "test scratch parent tmp/ missing; fixed by creating project-local parent in setUp; all five rerun passed",
+  "synthetic_fixture_only": true,
+  "scientific_validation": false
+}

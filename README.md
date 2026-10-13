@@ -2,84 +2,55 @@
 
 **Public single-cell evidence for prioritizing endometriosis research targets.**
 
-Status: **METADATA AUDIT IMPLEMENTED; M0 SCIENTIFIC GATE OPEN — 2026-10-13.** The project runs on SRV01 under /home/analyst/te. Bounded public-metadata retrieval and audit implementation have started. Scientific readiness remains NOT PASSED: no expression matrices analyzed, target rankings computed, container workflow executed, or AWS job run. This server has a local Git repository; no GitHub repository has been published.
+Status: **TWO-COHORT COUNT/DESIGN AUDIT PASSED; DISEASE ANALYSIS NOT YET RUN — 2026-10-13.**
+All project downloads and runs are on SRV01 under `/home/analyst/te`. Real donor count matrices, clinical designs, a fixed marker audit and a gene-network reference are available. No target rankings, external disease-effect replication, Nextflow/container run or AWS deployment is claimed. This is a server-local Git repository; it has not been published to GitHub.
 
-[中文说明](README.zh-CN.md) · [Research protocol](docs/RESEARCH_PROTOCOL.md) · [Data sources and gates](docs/DATA_SOURCES.md)
+[中文](README.zh-CN.md) · [Protocol](docs/RESEARCH_PROTOCOL.md) · [Actual input provenance](docs/INPUT_PROVENANCE.md)
 
 ## Research question
 
-Which disease-associated expression changes in **eutopic endometrial stromal cells** reproduce in an independent study, and which genes warrant further research when public genetic evidence, contradictory findings, and intervention uncertainty are considered?
+Which expression changes in **eutopic endometrial stromal fibroblasts** reproduce across independently recruited endometriosis studies, and which genes merit further research after genetic evidence, contradictions and uncertain intervention direction are considered?
 
-The intended decision is a short, justified research shortlist. Expression differences alone do not establish a causal target, an inhibition/activation strategy, or therapeutic efficacy.
+The planned comparison is expression-only ranking, degree-only ranking and network propagation on the same discovery-defined graph universe. The endpoint is cross-study transcriptomic replication. It is not therapeutic target accuracy, a trained GNN or a foundation model, and it does not require the graph method to win.
 
-## Why this project
+## Real inputs prepared
 
-This project connects reproductive biology and omics research with computational target assessment. Its planned contribution is a transparent cross-study analysis, a controlled graph-method comparison, and evidence dossiers that a biological research team can inspect. It is a retrospective public-data reanalysis, not a claim of a newly invented algorithm or a blinded prospective study.
+| Input | People and primary cells/nuclei | Stable named genes | Evidence |
+|---|---|---:|---|
+| [GSE266265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265), using documented [secondary OSF donor sums](https://doi.org/10.17605/OSF.IO/YJM7H) | 22 people: 12 ENDO, 10 non-ENDO; 150,788 cells | 26,109 | [Discovery count audit](reports/discovery_counts_preparation.md); original fractional Alevin estimates retained |
+| Newly generated [HECA E-MTAB-14039 nuclei](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-14039) | 22 people: 15 ENDO, 7 non-ENDO; 52,744 selected nuclei | 26,125 | [HECA count audit](reports/heca_counts_preparation.md); all selected barcodes matched to 22 public integer-count archives |
+| Human STRING 12.5 direct experimental/database evidence | 159,312 gene-level edges; 14,554 nodes | Background only | [Gene mapping audit](reports/string_gene_reference_audit.md); final expression-induced universe not constructed |
 
-## Bounded first release
+Both cohorts use the author-adjudicated proliferative phase and source-qualified hormone eligibility. The smaller histology-conflict-excluded HECA sensitivity has only three controls and is not estimable under the fixed minimum. Controls may have other gynecological conditions; they are not all healthy volunteers.
 
-- One disease, one primary stromal lineage, one discovery study and one independent replication study.
-- Donor-level differential expression and explicit menstrual-phase/treatment controls.
-- Three ranking baselines: expression evidence, network degree, and network propagation.
-- Public human-genetic evidence as a separate evidence layer, followed by 3–5 candidate dossiers; report fewer if the evidence does not justify that many.
-- Nextflow, containers, a documented SRV01 execution, optional AWS portability instructions, and an English report for biologists are implementation deliverables. Actual execution was moved to SRV01 by the user; it supplies no AWS execution evidence.
+There are 21,585 shared stable gene IDs before expression filtering. Missing IDs remain missing; external availability does not filter discovery candidates. The [clinical/design audit](reports/final_clinical_gate_report.md), [source independence ledger](reports/cohort_independence_audit.md) and [fixed marker audit](reports/lineage_marker_audit.md) retain source and interpretation limits. Source-level independence is supported by distinct recruitment frameworks; no genotype identity check or independent cell reannotation is claimed.
 
-```mermaid
-flowchart LR
-    A[Public counts and donor metadata] --> B[Data and independence gates]
-    B --> C[Discovery: donor-level stromal analysis]
-    C --> D[Freeze gene rankings and evaluation]
-    D --> E[Independent cohort replication]
-    E --> F[Genetic evidence and contradictions]
-    F --> G[Research target dossiers]
-```
+## What is verified, and what remains
 
-## Candidate inputs
+- Count values, donor order, gene uniqueness, source hashes and model rank were checked on the actual prepared matrices. Discovery has residual degrees of freedom 10; HECA has 12. This is mathematical estimability, not evidence of power or absence of confounding.
+- The fixed 23-marker audit is descriptive and does not change eligibility. Markers are not exclusive, and pseudobulk abundance is not cell purity.
+- The HECA H5 expression layer was rejected because it is normalized/log-transformed. Public unnormalized matrices provide the accepted counts. A 9,607-UMI excess over the author's saved H5 totals (0.00266% of raw totals) remains recorded; gene filtering explains part, with the full cause not proven.
+- All 63 integrated software tests passed on the populated SRV01 project. [Receipt](receipts/m0_integrated_tests.json). This is not a clean container execution or scientific validation.
+- Next: freeze the statistical software/filtering implementation, run discovery, freeze the three rankings and directions, then run external replication, sensitivities, genetic evidence dossiers and a biology report.
 
-| Role | Source | Current evidence |
-|---|---|---|
-| Discovery | [GSE266265](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265) | Public endometrial scRNA-seq; catalog reports 60 donors. Large RDS import and count-layer checks remain open. |
-| Replication | [HECA / E-MTAB-14039](https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-14039), newly generated nuclei | Public author portal exists. The eligible donor subset, raw-count layer and provenance must pass audit. |
-| Genetic context | [GCST90205183](https://www.ebi.ac.uk/gwas/studies/GCST90205183) and the originating study's public gene-mapping evidence | Association-to-gene mapping must retain its evidence type. No de novo MR/colocalization in v1. |
+The original full discovery RDS was not re-imported. The graph maps protein preferred names to HGNC genes; sequence/genome-release equivalence is not established. The analysis is retrospective, not blinded or preregistered.
 
-These are candidate inputs, not an analysis-ready manifest. The complete audit and known limitations are in [DATA_SOURCES.md](docs/DATA_SOURCES.md).
+## Executed checks
 
-## What the graph comparison measures
-
-Can network propagation rank genes whose disease-associated expression changes transfer to another cohort better than expression-only and connectivity-only rankings? The endpoint measures **cross-study transcriptomic reproducibility**, not therapeutic target accuracy. Network propagation is a graph baseline; it is not a trained GNN or a foundation model.
-
-## Results and reproducibility
-
-**No scientific results are available yet.** The SRV01 implementation plan, [resource gate](docs/RESOURCE_FEASIBILITY.md), runtime status, and [preliminary scientific readiness](reports/m0_scientific_readiness.md) distinguish actual checks from pending analysis. Metadata/software test results do not validate a therapeutic target.
-
-Planned evidence: donor/exclusion flowchart; cross-cohort effect plots; three-method comparison; sensitivity/failure analysis; 3–5 evidence dossiers; a two-page biology brief; exact input/software/run receipts.
-
-## Executed metadata-audit entry point
-
-On SRV01 only:
+These commands apply to the **existing populated SRV01 project**; a clean-install Nextflow entry point is still being implemented.
 
 ```bash
 cd /home/analyst/te
-python3 -m unittest discover -s tests -v
-python3 scripts/m0_metadata.py
+envs/m0-h5/bin/python -m unittest discover -s tests -v
+envs/m0-h5/bin/python scripts/audit_m0_contracts.py
 ```
 
-The real audit passed; the current 25-test suite passed both in the working project and a clean code snapshot. Validated cached files are reused with original retrieval provenance. See [audit summary](reports/m0_metadata_summary.md) and [readiness JSON](reports/m0_metadata_readiness.json). The downloader is a Unix main-thread CLI, as used on SRV01. See [review fixes](reports/m0_metadata_review_fixes.md). Successful metadata execution leaves Stage 0 OPEN until clinical, cell, count and resource gates pass.
+The contract command writes a hash snapshot and validates the prepared count/design interfaces. It does not compute disease effects or independently decide all scientific gates. Data, environments, large outputs and caches are ignored by Git.
 
-## Repository contents today
+## Intended delivery
 
-```text
-README.md / README.zh-CN.md
-docs/{RESEARCH_PROTOCOL,DATA_SOURCES}.md
-manifests/source_inventory.csv
-templates/{TARGET_DOSSIER,BIOLOGY_BRIEF}.md
-receipts/metadata_audit_2026-10-13.json   # actual small metadata audit only
-```
+A donor/exclusion flowchart, complete gene-level effect tables, three-method comparison, uncertainty and failure analysis, up to five traceable evidence dossiers, and an English biology brief. Public genetics from [GCST90205183](https://www.ebi.ac.uk/gwas/studies/GCST90205183) remains a separate evidence layer after ranking freeze; no new wet experiment or de novo causal claim is required.
 
-This is the working project root on SRV01. The listing above preserves the original design package; implementation records additionally live in scripts/, tests/, reports/ and receipts/. Scientific modules remain gated; no empty success placeholders are provided.
+Nextflow and actual container execution remain engineering deliverables. Docker is installed but the current account cannot access its daemon; see the verified access explanation. AWS is only an unexecuted portability guide. No cloud resource has been created.
 
-## Data use and attribution
-
-All scientific inputs must be publicly obtainable without private-data agreements or new experiments. Download from original providers; do not commit patient-level matrices or redistribute third-party resources by default. Record source terms individually. A publication's open-access license does not automatically establish the license of every dataset or dependency. A code license must be selected before software publication; this design does not relicense source material.
-
-See [the source register](docs/DATA_SOURCES.md) for original studies.
+Source terms are recorded separately; this project does not relicense third-party material or redistribute patient-level matrices by default.

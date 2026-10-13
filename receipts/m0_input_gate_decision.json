@@ -1,0 +1,61 @@
+{
+  "adjudicated_utc": "2026-10-13T09:27:54.107289+00:00",
+  "decision": "M0_INPUT_FEASIBILITY_PASS_WITH_DOCUMENTED_LIMITS",
+  "adjudicator": "root source-based integration; not a model consensus or external scientific certification",
+  "input_feasibility_gate_passed": true,
+  "ready_for_statistical_workflow_implementation": true,
+  "ready_for_disease_effect_execution": false,
+  "next_execution_prerequisite": "Freeze exact statistical software, expression filtering, model and null-bin implementation; verify workflow before disease inference",
+  "scientific_validation": false,
+  "external_replication_complete": false,
+  "disease_effects_computed": false,
+  "target_rankings_computed": false,
+  "container_executed": false,
+  "AWS_executed": false,
+  "cohorts": {
+    "discovery": {
+      "ENDO": 12,
+      "non_ENDO": 10,
+      "cells": 150788,
+      "stable_genes": 26109
+    },
+    "HECA": {
+      "ENDO": 15,
+      "non_ENDO": 7,
+      "nuclei": 52744,
+      "stable_genes": 26125
+    }
+  },
+  "shared_stable_gene_ids": 21585,
+  "shared_IDs_define_candidate_universe": false,
+  "source_independence": "distinct recruitment frameworks and selected provenance crosswalk; not genomic identity proof",
+  "lineage_validation": "fixed descriptive population-marker audit; inherited labels, no cell reannotation or purity estimate",
+  "count_difference_limit": "HECA raw minus saved H5 total=9607/360765431UMIs;1359 attributed by global feature absence;8248 not directly attributed;counts preserved",
+  "nonestimable_sensitivities": [
+    "HECA histology conflict exclusion:3controls<5",
+    "discovery strict phase plus adenomyosis-free:7cases<8"
+  ],
+  "software_tests_passed": 63,
+  "evidence_sha256": {
+    "docs/RESEARCH_PROTOCOL.md": "cdcb1c8bc672c3924373cbd38b9ab57e3c1cf350934ba562ca218ba1470e9fe1",
+    "docs/PRE_EFFECT_METHOD_DECISIONS.md": "ea28d759c1bdd35d58744416f8739edf27f3d701a3531da844583f3e7f786fd5",
+    "docs/MARKER_AUDIT_DECISION.md": "ce66483fa1c175dc7507bd989da8fb2f84ec0787cb11e85b299b445de9ac4438",
+    "docs/INPUT_PROVENANCE.md": "a77d395e539a154e94280ac779bcdcfe16a765004a16458a3241a0afd1fd0950",
+    "docs/M0_INPUT_GATE.md": "408319553c9e7a07888e4a818d062edc1c667a52329003d32885fc4a702024a1",
+    "receipts/m0_count_design_contracts.json": "95e0a684f6239344d29ff5c8e2e12eff0ecdbff589ef2a8b64ecaadb78d3b9bc",
+    "receipts/final_clinical_gate.json": "5e76afa4fbc9388ed2e15042bfdad22a7fb72004695c18aaa20050dd48512e82",
+    "receipts/final_clinical_validation.json": "56ef34acb268de0847427c46c209a151e77889095092da481eac5db741a572c5",
+    "receipts/discovery_counts_preparation.json": "a2e2614c7bd3d21ae67534c58bc4932c20d1ffc4e0b2b081d3ad7e258aaeb361",
+    "receipts/discovery_counts_validation.json": "3b7869edac5b583eb2c3b57e016ff3107e5017a3f6a39fa9f4561ce689679dba",
+    "receipts/heca_counts_preparation.json": "8be6e1b3e1e3d3fac67b50b3ceaccd343ee35fac492ac21a98819bc272ed9ce7",
+    "receipts/heca_counts_validation.json": "583697038484ac0c7cace58bfb531c30d1db1440a3bb4122198147ccca7b21d7",
+    "receipts/heca_counts_filter_difference_probe.json": "402e3234b401b00342b1d26597ebeee08a40b96689a59ccfc1775632079f3155",
+    "receipts/cohort_independence_sources.json": "fdc8826278198a755da17eea6037f96b8379e8502dd95e7da01caece01daa65c",
+    "receipts/lineage_marker_audit.json": "71187dde34dec5135535d55fdfa8575dda5ad3a99e590958de2f678644f10353",
+    "receipts/lineage_marker_heca_extension.json": "b3bffc906ab472e40cbe804d35b436a9531b7ab63bd249e4083c784f8b0590e4",
+    "receipts/string_reference_download.json": "60c3aca9dd738c4d2837614f0aff14b15159e58a189caefb259965330139dceb",
+    "receipts/string_gene_mapping.json": "e1a7fb1858cd71af5da33253bd1a35936188a1efdc857d7947869e3c73da51df",
+    "receipts/m0_integrated_tests.json": "895e48a594d67ec8ee9d8b09dc9def81e79b7ecb0027efbba1e61c03abd1abb0",
+    "manifests/m0_count_design_inputs.lock.tsv": "6f2d7c1af20721dd560c47cabe5c4650620b3634d3909245ce75e14feb60442a"
+  }
+}
