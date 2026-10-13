@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-13T10:47:32.874471+00:00",
+  "host": "SRV01",
+  "jobs": [
+    {
+      "job": "bootstrap",
+      "runner_pid": 2609123,
+      "status_file": "work/execution/bootstrap_status.json"
+    },
+    {
+      "job": "lodo",
+      "runner_pid": 2609124,
+      "status_file": "work/execution/lodo_status.json"
+    }
+  ],
+  "runner_sha256": "a5cb5d6195d0db62bb39c2f36e11ee4ee37fe098c5ee79f4b3b305bbc918ae90",
+  "pre_run_implementation_freeze_sha256": "e28db1a5f4100b3f2e844b5d49615fe7168f91e01a177f6fcc60029342887990",
+  "resource_bound": "4 bootstrap processes plus 1 serial LODO; numerical threads1 each; 36cores ~29GiBavailable"
+}

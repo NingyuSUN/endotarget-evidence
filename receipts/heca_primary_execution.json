@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETED_NATIVE_SRV01",
+  "created_utc": "2026-10-13T10:47:32.715073+00:00",
+  "cohort": "heca",
+  "launch_command": "source scripts/statistical_runtime_env.sh && nextflow -C replication.config -log logs/heca_primary.log run replication.nf -profile srv01 -params-file config/replication_run.json -with-trace logs/heca_primary_trace.tsv",
+  "git_head": "024a2a9d8316e64b60f6b50c8332b22e46b46011",
+  "implementation_freeze_sha256": "e28db1a5f4100b3f2e844b5d49615fe7168f91e01a177f6fcc60029342887990",
+  "trace": [
+    {
+      "task_id": "1",
+      "hash": "9e/afd849",
+      "native_id": "2607017",
+      "name": "HECA_DONOR_DE (heca)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:45:49.259",
+      "duration": "13.4s",
+      "realtime": "12.7s",
+      "%cpu": "97.3%",
+      "peak_rss": "178.5 MB",
+      "peak_vmem": "595.7 MB",
+      "rchar": "118.1 MB",
+      "wchar": "20.6 MB"
+    },
+    {
+      "task_id": "2",
+      "hash": "c3/b93249",
+      "native_id": "2608270",
+      "name": "EVALUATE_REPLICATION (fixed_lists_and_nulls)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:46:02.906",
+      "duration": "4.5s",
+      "realtime": "3.7s",
+      "%cpu": "100.4%",
+      "peak_rss": "108 MB",
+      "peak_vmem": "127.3 MB",
+      "rchar": "120.4 MB",
+      "wchar": "132.4 KB"
+    }
+  ],
+  "output_sha256": {
+    "work/statistical/heca_primary/evaluation/dossier_pool.tsv": "2f31cf38db9d4086249eb3a1f794e4f2e47a70b974925d45c3aef1622d19d4cc",
+    "work/statistical/heca_primary/evaluation/bootstrap_interface.tsv": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+    "work/statistical/heca_primary/evaluation/null_summary.json": "ffc4d86ff269f63345b4454b72416cf519d3068f73b0da24c3c935d460441a32",
+    "work/statistical/heca_primary/evaluation/selected_genes.tsv": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+    "work/statistical/heca_primary/evaluation/dossier_selection.tsv": "d246cdcdb4ed87ae0cf0dfa0ba529069d5d67f04dff00c74346857e49d9957fa",
+    "work/statistical/heca_primary/evaluation/summary.json": "bb44ae312ccabe52d9b1da23db20b32ddeac5d0b84605e76c88fcf0e24afe14b",
+    "work/statistical/heca_primary/evaluation/null_sets.tsv": "c8dc028443f496fcbaee3ab36be418960d18ae386647fe4f2fa2d6593bea426b",
+    "work/statistical/heca_primary/evaluation/provenance.json": "cb720faff633bf2660018656c56520a68cfdea3f80ecfdbf1c2f1b3d79943679",
+    "work/statistical/heca_primary/de/model.rds": "10306b806a875d9bb42f699bfcc8851d39c3282d4705f5f7d215775364daa174",
+    "work/statistical/heca_primary/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/statistical/heca_primary/de/normalization.tsv": "0a7789b20efde7188d00685f789e96be7e7eb4647f206c5715ce3695a80e0275",
+    "work/statistical/heca_primary/de/de_fitted.tsv": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+    "work/statistical/heca_primary/de/expression_filter.tsv": "73a3b6a27320d0f08df6bd8746df57c4e6f540e8649e9a3fa01025eb9f254b0e",
+    "work/statistical/heca_primary/de/design.tsv": "205f6b014e23066a811244f5d7afae3e0cad520faa9e5d1f3e6d1e4a5b175509",
+    "work/statistical/heca_primary/de/de_all.tsv": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+    "work/statistical/heca_primary/de/provenance.json": "e84a468eb71d6e7c0614c37a25faecd7e0dfab5e17360299f5eb6b36df52bf46"
+  },
+  "container_execution": false,
+  "AWS_execution": false,
+  "therapeutic_validation": false
+}

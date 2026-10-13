@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-10-13T11:22:21.935583+00:00",
+  "status": "PASS_DELIVERY_INTEGRITY_NOT_BIOLOGICAL_OR_CONTAINER_VALIDATION",
+  "host": "SRV01",
+  "project_root": "/home/analyst/te",
+  "git_head_before_integrated_commit": "70f18ed62f05ba0b340ce9b5466897ce95d8cd0d",
+  "freeze_artifact_entries": [
+    43,
+    74,
+    95
+  ],
+  "hash_map_checks": {
+    "receipts/statistical_pre_effect_freeze.json:artifacts": 43,
+    "receipts/discovery_rank_freeze.json:artifacts": 74,
+    "receipts/replication_implementation_freeze.json:artifacts": 95,
+    "receipts/heca_primary_execution.json:output_sha256": 16,
+    "receipts/real_resampling_execution.json:artifacts_sha256": 8,
+    "receipts/replication_report.json:output_sha256": 11,
+    "receipts/replication_v2_report.json:input_sha256": 50,
+    "receipts/replication_v2_report.json:output_sha256": 11,
+    "receipts/clinical_sensitivity_execution.json:input_sha256": 6,
+    "receipts/clinical_sensitivity_execution.json:output_sha256": 9,
+    "receipts/clinical_sensitivity_tests.json:code_sha256": 5,
+    "receipts/clinical_sensitivity_tests.json:log_sha256": 8,
+    "receipts/stromal_composition.json:input_sha256": 10,
+    "receipts/stromal_composition.json:outputs_sha256": 4,
+    "receipts/genetic_evidence_execution.json:file_hashes": 7,
+    "receipts/container_recipe_v1.json:protected_sha256": 6,
+    "receipts/container_recipe_v1.json:recipe_sha256": 4
+  },
+  "unique_files_hashed": 196,
+  "hash_mismatches": [],
+  "local_markdown_links_checked": 37,
+  "broken_local_links": [],
+  "current_report_builder_matches_v2_receipt": true,
+  "software_tests": {
+    "full_python_tests": 147,
+    "status": "PASS",
+    "focused_R": "PASS",
+    "source_receipt": "receipts/clinical_sensitivity_tests.json",
+    "method": "verified current source/log hashes and successful final suite receipt; no unnecessary repeat after documentation-only edits"
+  },
+  "actual_results": {
+    "HECA_donors": 22,
+    "HECA_tested_genes": 17643,
+    "HECA_BH_significant": 0,
+    "bootstrap_completed": 500,
+    "bootstrap_valid": 487,
+    "bootstrap_invalid": 13,
+    "bootstrap_G1_minus_B0_interval": [
+      -0.3894736842105263,
+      0.08684210526315783
+    ],
+    "discovery_LODO_valid": 22,
+    "clinical_models_fit": 3,
+    "clinical_not_estimable": 2
+  },
+  "visual_QA": {
+    "v2_figures": [
+      "counts",
+      "scatter",
+      "lodo",
+      "bootstrap"
+    ],
+    "root_review": "All four actual PNGs visually inspected earlier in this execution round; no visible clipping or title/caption overlap",
+    "v1_preserved": true
+  },
+  "delivery_sha256": {
+    "README.md": "d73153d84255856c794640814c9c43a4b522c88b64e0aab8099dabea4588273e",
+    "README.zh-CN.md": "f084154b11f8878422b8340ed70a017b431449263b9ed0474be23f80b48f9732",
+    "reports/biology_report_zh.md": "baed31af8014029f6ea6715fd3a32aae066763d7b550edf72c01a71c9153b699",
+    "docs/EXTERNAL_ANALYSIS_CHECKPOINT.md": "e3e75e20e70f3b77dec7e2084c8e1aa4c454d14e9748d5beb5db05cd47c6e622",
+    "docs/AWS_DEPLOYMENT.md": "bc72a2cd6daf0d6bad38f19ed02170843cc0f29e3456dcdfd355284bd2d8bbc4",
+    "docs/CONTAINER_BUILD.md": "9fd563bb045d93ddfa0bef5c9f2939c39d1f471f5037c9b65c873ee7ca42fd8f",
+    "receipts/statistical_pre_effect_freeze.json": "8ae5baaf46068fb8587b7f81465a6c1028de3a1b55dcca91c162b6559ab91430",
+    "receipts/discovery_rank_freeze.json": "642332e970df9cca45616c6f53444f9e834b79d8ded01b40d673e1f8c64ee143",
+    "receipts/replication_implementation_freeze.json": "e28db1a5f4100b3f2e844b5d49615fe7168f91e01a177f6fcc60029342887990",
+    "receipts/heca_primary_execution.json": "358db8268a3ac20ea3d1e4bec287ffc2cc79019acc2f3322a0b32d2783e1e3b6",
+    "receipts/real_resampling_execution.json": "aaf3945f7ff5dcec51d559af34e04e98a51ed23050891f25e1764634a64f1f2b",
+    "receipts/replication_report.json": "f857855a0e3eb02e5af4fc03943e8c299d4c94dbaf282179c35128f3276e27f8",
+    "receipts/replication_v2_report.json": "e3ba7f9c625e5d669016ef1ab8133d8f6a75380a4014136e9924692b5ec09585",
+    "receipts/clinical_sensitivity_execution.json": "8c1be9356c5d65d073ff79b6961683f7e173845286437040f8b8d253baa4fda2",
+    "receipts/clinical_sensitivity_tests.json": "bbcc8a46215e33a57597c7c70ff298bca844896c31470c1333074f1989861ea8",
+    "receipts/stromal_composition.json": "5e7f2704e2f1cd67015d64eda772d8a2d2615e5cbf2d259fd881432ca7074865",
+    "receipts/genetic_evidence_execution.json": "780f72aff909892bce5cad09639865927e4f0f83804485ef7785776fd104d940",
+    "receipts/container_recipe_v1.json": "3b9c587b4a7bf7bb93940451a3c34f475c17a1afe1a31d49ff80abd6a83c549c"
+  },
+  "container_build": false,
+  "container_execution": false,
+  "AWS_execution": false,
+  "GitHub_push": false,
+  "limitations": [
+    "Report/table integrity does not establish independent biological truth or efficacy",
+    "Only conditional external donor uncertainty quantified; not full discovery/annotation uncertainty",
+    "Docker account access pending; daemon health not determined"
+  ]
+}

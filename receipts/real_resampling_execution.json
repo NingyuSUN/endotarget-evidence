@@ -1,0 +1,104 @@
+{
+  "status": "COMPLETED_NATIVE_SRV01",
+  "created_utc": "2026-10-13T11:00:09.121266+00:00",
+  "bootstrap": {
+    "total_required": 500,
+    "completed": 500,
+    "valid": 487,
+    "invalid": 13,
+    "interval_suppressed": false,
+    "interval": [
+      -0.3894736842105263,
+      0.08684210526315783
+    ],
+    "quantile_type": 7,
+    "valid_only_conditioning": true,
+    "scientific_validation": false,
+    "binding_sha256": "84d64d4c07d60fc3810e144d2c187e425b4735f5f858f6d6c80a7c53fcb93fe0",
+    "failure_reasons": {
+      "design not full rank; nonconstant nuisance cannot be dropped": 13
+    },
+    "synthetic": false
+  },
+  "lodo": {
+    "total_folds": 22,
+    "valid_folds": 22,
+    "failed_folds": 0,
+    "failed_folds_replaced": false,
+    "binding_sha256": "046d4ad5043f09414a0f9c068f339c5295a7904f53d9bb24fe0f98f9d7a8dc40",
+    "synthetic": false,
+    "scientific_validation": false,
+    "metrics_meaning": "fixed20_retention_and_intersection_over_union_discovery_stability"
+  },
+  "donor_exclusion_stability": {
+    "B0": {
+      "valid_folds": 22,
+      "retained_of20_median": 14.5,
+      "retained_of20_min": 6,
+      "retained_of20_max": 20
+    },
+    "B1": {
+      "valid_folds": 22,
+      "retained_of20_median": 20.0,
+      "retained_of20_min": 20,
+      "retained_of20_max": 20
+    },
+    "G1": {
+      "valid_folds": 22,
+      "retained_of20_median": 19.5,
+      "retained_of20_min": 16,
+      "retained_of20_max": 20
+    }
+  },
+  "bootstrap_checksums_verified": 500,
+  "lodo_output_checksums_verified": true,
+  "launcher_status": {
+    "bootstrap": {
+      "job": "bootstrap",
+      "command": [
+        "Rscript",
+        "scripts/resample_donor_models.R",
+        "--mode",
+        "bootstrap",
+        "--output-dir",
+        "work/statistical/bootstrap",
+        "--workers",
+        "4"
+      ],
+      "started_utc": "2026-10-13T10:47:32.942916+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-10-13T10:58:26.459530+00:00"
+    },
+    "lodo": {
+      "job": "lodo",
+      "command": [
+        "python",
+        "scripts/run_discovery_lodo.py",
+        "--output-dir",
+        "work/statistical/discovery_lodo"
+      ],
+      "started_utc": "2026-10-13T10:47:32.947134+00:00",
+      "status": "COMPLETED",
+      "exit_code": 0,
+      "finished_utc": "2026-10-13T10:54:38.734144+00:00"
+    }
+  },
+  "resources": {
+    "bootstrap": "\tCommand being timed: \"Rscript scripts/resample_donor_models.R --mode bootstrap --output-dir work/statistical/bootstrap --workers 4\"\n\tUser time (seconds): 2498.10\n\tSystem time (seconds): 103.26\n\tPercent of CPU this job got: 398%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 10:53.51\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 205632\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 18129735\n\tVoluntary context switches: 7070\n\tInvoluntary context switches: 7400\n\tSwaps: 0\n\tFile system inputs: 0\n\tFile system outputs: 9776\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+    "lodo": "\tCommand being timed: \"python scripts/run_discovery_lodo.py --output-dir work/statistical/discovery_lodo\"\n\tUser time (seconds): 410.99\n\tSystem time (seconds): 14.98\n\tPercent of CPU this job got: 100%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 7:05.78\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 184204\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 2\n\tMinor (reclaiming a frame) page faults: 1484989\n\tVoluntary context switches: 19954\n\tInvoluntary context switches: 1632\n\tSwaps: 0\n\tFile system inputs: 392\n\tFile system outputs: 1535984\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n"
+  },
+  "artifacts_sha256": {
+    "work/statistical/bootstrap/summary.json": "e4fdf0caf11a133605a1bf303f529aaa381bdcb8b4b10d2436055e85e49556fa",
+    "work/statistical/bootstrap/paired_differences.tsv": "d35ddb121cd14e5bba30874d34b13858daa613eab8fc6a87c97fa3b28ae32c65",
+    "work/statistical/bootstrap/draw_freeze.json": "f75c7188d24e74148ebaf29d708a5cc250a80f2b1f6797152c9465a43a1b1f21",
+    "work/statistical/bootstrap/binding.rds": "84d64d4c07d60fc3810e144d2c187e425b4735f5f858f6d6c80a7c53fcb93fe0",
+    "work/statistical/bootstrap/draw_ledger.tsv": "d8acafec27faf1ef48a81b20034470399d3e34bd60a6d565f0f34db3c2abc3bd",
+    "work/statistical/discovery_lodo/summary.json": "86b2fb44d49f42da495592c924e1d22f4404dc0c3c3c32a96d3f528b37cc91b1",
+    "work/statistical/discovery_lodo/fold_metrics.tsv": "cd4a6fdc04c79373c0f71388a6c8f33fd69926bc3b6df793cf3e59ce9e0fc9bc",
+    "work/statistical/discovery_lodo/binding.json": "046d4ad5043f09414a0f9c068f339c5295a7904f53d9bb24fe0f98f9d7a8dc40"
+  },
+  "container_execution": false,
+  "therapeutic_validation": false,
+  "interpretation": "conditional external uncertainty only; interval includes zero; stable ranking does not establish transcriptomic replication"
+}
