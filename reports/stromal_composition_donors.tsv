@@ -1,0 +1,419 @@
+cohort	donor_id	selected_sample_id	disease	source_label_field	source_subtype_label	cells	primary_cells	proportion_primary	availability
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	dS1-myofibroblast	161	4680	0.034401709401709404	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	dS2	516	4680	0.11025641025641025	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	dS3	0	4680	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	dS4	0	4680	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	eF1	87	4680	0.01858974358974359	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	eF2	3583	4680	0.7655982905982905	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	eF3	54	4680	0.011538461538461539	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	eF4-CXCL14	27	4680	0.0057692307692307696	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	fib C7	251	4680	0.05363247863247863	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	fib C7 secretory	0	4680	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	4680	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample70	sample70	non-ENDO	AnnotationRefined	fib C7-SFRP2	1	4680	0.00021367521367521368	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	dS1-myofibroblast	55	2273	0.024197096348438186	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	dS2	225	2273	0.09898812142542895	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	dS3	0	2273	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	dS4	0	2273	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	eF1	44	2273	0.01935767707875055	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	eF2	1596	2273	0.7021557413110426	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	eF3	17	2273	0.007479102507699076	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	eF4-CXCL14	59	2273	0.025956885173779146	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	fib C7	277	2273	0.12186537615486141	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	fib C7 secretory	0	2273	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	2273	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample71	sample71	non-ENDO	AnnotationRefined	fib C7-SFRP2	0	2273	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	dS1-myofibroblast	192	7752	0.02476780185758514	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	dS2	758	7752	0.097781217750258	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	dS3	0	7752	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	dS4	0	7752	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	eF1	123	7752	0.01586687306501548	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	eF2	6350	7752	0.8191434468524251	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	eF3	60	7752	0.007739938080495356	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	eF4-CXCL14	89	7752	0.011480908152734778	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	fib C7	179	7752	0.02309081527347781	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	fib C7 secretory	0	7752	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	fib C7 secretory_late	0	7752	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample76	sample76	ENDO	AnnotationRefined	fib C7-SFRP2	1	7752	0.00012899896800825592	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	dS1-myofibroblast	169	7303	0.02314117485964672	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	dS2	752	7303	0.10297138162399014	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	dS3	4	7303	0.0005477201150212241	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	dS4	0	7303	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	eF1	57	7303	0.007805011639052444	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	eF2	5507	7303	0.7540736683554704	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	eF3	51	7303	0.006983431466520608	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	eF4-CXCL14	512	7303	0.07010817472271669	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	fib C7	251	7303	0.034369437217581816	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	fib C7 secretory	0	7303	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	7303	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample82	sample82	non-ENDO	AnnotationRefined	fib C7-SFRP2	0	7303	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	dS1-myofibroblast	222	3701	0.059983788165360714	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	dS2	472	3701	0.12753309916238853	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	dS3	6	3701	0.0016211834639286678	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	dS4	0	3701	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	eF1	229	3701	0.06187516887327749	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	eF2	2481	3701	0.6703593623345042	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	eF3	73	3701	0.019724398811132127	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	eF4-CXCL14	66	3701	0.01783301810321535	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	fib C7	151	3701	0.04079978384220481	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	fib C7 secretory	1	3701	0.0002701972439881113	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	fib C7 secretory_late	0	3701	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample83	sample83	ENDO	AnnotationRefined	fib C7-SFRP2	0	3701	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	dS1-myofibroblast	116	6604	0.01756511205330103	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	dS2	669	6604	0.10130224106602059	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	dS3	0	6604	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	dS4	0	6604	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	eF1	74	6604	0.011205330102967898	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	eF2	5545	6604	0.8396426408237432	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	eF3	51	6604	0.007722592368261659	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	eF4-CXCL14	62	6604	0.00938824954572986	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	fib C7	85	6604	0.0128709872804361	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	fib C7 secretory	0	6604	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	fib C7 secretory_late	0	6604	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample84	sample84	ENDO	AnnotationRefined	fib C7-SFRP2	2	6604	0.0003028467595396729	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	dS1-myofibroblast	306	5190	0.058959537572254334	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	dS2	476	5190	0.09171483622350675	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	dS3	31	5190	0.005973025048169557	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	dS4	15	5190	0.002890173410404624	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	eF1	1039	5190	0.2001926782273603	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	eF2	2652	5190	0.5109826589595375	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	eF3	284	5190	0.054720616570327556	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	eF4-CXCL14	62	5190	0.011946050096339113	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	fib C7	320	5190	0.06165703275529865	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	fib C7 secretory	2	5190	0.0003853564547206166	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	fib C7 secretory_late	0	5190	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample91	sample91	ENDO	AnnotationRefined	fib C7-SFRP2	3	5190	0.0005780346820809249	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	dS1-myofibroblast	139	6714	0.020703008638665477	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	dS2	391	6714	0.05823652070300864	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	dS3	0	6714	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	dS4	0	6714	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	eF1	104	6714	0.015490020851951147	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	eF2	5892	6714	0.8775692582663092	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	eF3	35	6714	0.005212987786714328	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	eF4-CXCL14	97	6714	0.014447423294608281	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	fib C7	56	6714	0.008340780458742925	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	fib C7 secretory	0	6714	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	fib C7 secretory_late	0	6714	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample94	sample94	ENDO	AnnotationRefined	fib C7-SFRP2	0	6714	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	dS1-myofibroblast	142	5397	0.026310913470446545	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	dS2	485	5397	0.08986473967018714	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	dS3	0	5397	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	dS4	2	5397	0.00037057624606262737	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	eF1	101	5397	0.018714100426162682	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	eF2	4016	5397	0.7441171020937558	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	eF3	81	5397	0.01500833796553641	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	eF4-CXCL14	165	5397	0.030572540300166758	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	fib C7	403	5397	0.07467111358161942	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	fib C7 secretory	0	5397	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	5397	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample95	sample95	non-ENDO	AnnotationRefined	fib C7-SFRP2	2	5397	0.00037057624606262737	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	dS1-myofibroblast	172	6427	0.026762097401587054	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	dS2	821	6427	0.12774233701571494	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	dS3	2	6427	0.00031118717908822156	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	dS4	0	6427	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	eF1	94	6427	0.014625797417146414	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	eF2	4791	6427	0.7454488875058347	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	eF3	47	6427	0.007312898708573207	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	eF4-CXCL14	167	6427	0.0259841294538665	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	fib C7	331	6427	0.05150147813910067	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	fib C7 secretory	1	6427	0.00015559358954411078	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	6427	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample96	sample96	non-ENDO	AnnotationRefined	fib C7-SFRP2	1	6427	0.00015559358954411078	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	dS1-myofibroblast	148	8801	0.016816270878309284	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	dS2	804	8801	0.09135325531189638	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	dS3	5	8801	0.0005681172594023407	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	dS4	0	8801	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	eF1	77	8801	0.008749005794796046	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	eF2	6884	8801	0.7821838427451426	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	eF3	76	8801	0.008635382342915578	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	eF4-CXCL14	219	8801	0.02488353596182252	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	fib C7	587	8801	0.0666969662538348	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	fib C7 secretory	1	8801	0.00011362345188046812	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	fib C7 secretory_late	0	8801	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample106	sample106	ENDO	AnnotationRefined	fib C7-SFRP2	0	8801	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	dS1-myofibroblast	200	7498	0.026673779674579887	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	dS2	627	7498	0.08362229927980795	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	dS3	1	7498	0.00013336889837289943	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	dS4	0	7498	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	eF1	75	7498	0.010002667377967457	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	eF2	6237	7498	0.8318218191517738	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	eF3	63	7498	0.008402240597492665	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	eF4-CXCL14	71	7498	0.009469191784475861	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	fib C7	223	7498	0.029741264337156573	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	fib C7 secretory	0	7498	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	7498	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample110	sample110	non-ENDO	AnnotationRefined	fib C7-SFRP2	1	7498	0.00013336889837289943	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	dS1-myofibroblast	370	9236	0.040060632308358594	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	dS2	1039	9236	0.11249458640103942	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	dS3	1	9236	0.00010827197921177999	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	dS4	0	9236	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	eF1	172	9236	0.01862278042442616	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	eF2	7451	9236	0.8067345171069727	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	eF3	57	9236	0.00617150281507146	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	eF4-CXCL14	60	9236	0.0064963187527068	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	fib C7	84	9236	0.009094846253789519	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	fib C7 secretory	0	9236	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	fib C7 secretory_late	0	9236	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample111	sample111	ENDO	AnnotationRefined	fib C7-SFRP2	2	9236	0.00021654395842355997	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	dS1-myofibroblast	146	8053	0.018129889482180552	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	dS2	1156	8053	0.14354898795479945	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	dS3	1	8053	0.00012417732522041475	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	dS4	0	8053	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	eF1	116	8053	0.014404569725568112	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	eF2	6168	8053	0.7659257419595182	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	eF3	51	8053	0.006333043586241152	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	eF4-CXCL14	157	8053	0.019495840059605116	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	fib C7	258	8053	0.03203774990686701	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	fib C7 secretory	0	8053	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	8053	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample112	sample112	non-ENDO	AnnotationRefined	fib C7-SFRP2	0	8053	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	dS1-myofibroblast	289	8770	0.03295324971493729	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	dS2	1226	8770	0.13979475484606613	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	dS3	8	8770	0.0009122006841505131	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	dS4	1	8770	0.00011402508551881414	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	eF1	190	8770	0.021664766248574687	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	eF2	6679	8770	0.7615735461801596	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	eF3	88	8770	0.010034207525655644	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	eF4-CXCL14	53	8770	0.00604332953249715	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	fib C7	235	8770	0.026795895096921322	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	fib C7 secretory	1	8770	0.00011402508551881414	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	8770	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample114	sample114	non-ENDO	AnnotationRefined	fib C7-SFRP2	0	8770	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	dS1-myofibroblast	144	8471	0.01699917365128084	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	dS2	591	8471	0.06976744186046512	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	dS3	1	8471	0.00011804981702278361	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	dS4	0	8471	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	eF1	132	8471	0.015582575847007438	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	eF2	7210	8471	0.8511391807342699	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	eF3	64	8471	0.007555188289458151	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	eF4-CXCL14	100	8471	0.011804981702278361	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	fib C7	229	8471	0.027033408098217446	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	fib C7 secretory	0	8471	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	8471	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample116	sample116	non-ENDO	AnnotationRefined	fib C7-SFRP2	0	8471	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	dS1-myofibroblast	124	6893	0.01798926447120267	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	dS2	725	6893	0.10517916727114464	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	dS3	0	6893	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	dS4	0	6893	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	eF1	53	6893	0.0076889598143043665	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	eF2	5655	6893	0.8203975047149282	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	eF3	63	6893	0.009139706949078775	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	eF4-CXCL14	24	6893	0.003481793123458581	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	fib C7	249	6893	0.03612360365588278	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	fib C7 secretory	0	6893	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	fib C7 secretory_late	0	6893	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample123	sample123	non-ENDO	AnnotationRefined	fib C7-SFRP2	0	6893	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	dS1-myofibroblast	139	6235	0.022293504410585405	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	dS2	414	6235	0.06639935846030473	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	dS3	0	6235	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	dS4	0	6235	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	eF1	96	6235	0.015396952686447474	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	eF2	5148	6235	0.8256615878107458	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	eF3	45	6235	0.007217321571772253	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	eF4-CXCL14	181	6235	0.029029671210906174	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	fib C7	210	6235	0.03368083400160385	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	fib C7 secretory	0	6235	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	fib C7 secretory_late	0	6235	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample125	sample125	ENDO	AnnotationRefined	fib C7-SFRP2	2	6235	0.00032076984763432237	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	dS1-myofibroblast	212	7640	0.02774869109947644	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	dS2	1155	7640	0.1511780104712042	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	dS3	6	7640	0.0007853403141361257	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	dS4	0	7640	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	eF1	196	7640	0.025654450261780103	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	eF2	5595	7640	0.7323298429319371	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	eF3	85	7640	0.01112565445026178	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	eF4-CXCL14	84	7640	0.01099476439790576	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	fib C7	307	7640	0.04018324607329843	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	fib C7 secretory	0	7640	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	fib C7 secretory_late	0	7640	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample126	sample126	ENDO	AnnotationRefined	fib C7-SFRP2	0	7640	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	dS1-myofibroblast	159	8069	0.01970504399553848	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	dS2	929	8069	0.11513198661544181	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	dS3	0	8069	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	dS4	0	8069	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	eF1	69	8069	0.008551245507497831	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	eF2	6240	8069	0.7733300285041517	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	eF3	87	8069	0.01078200520510596	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	eF4-CXCL14	125	8069	0.015491386788945346	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	fib C7	460	8069	0.05700830338331887	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	fib C7 secretory	0	8069	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	fib C7 secretory_late	0	8069	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample130	sample130	ENDO	AnnotationRefined	fib C7-SFRP2	0	8069	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	dS1-myofibroblast	176	7294	0.024129421442281328	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	dS2	619	7294	0.08486427200438716	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	dS3	0	7294	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	dS4	0	7294	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	eF1	155	7294	0.02125034274746367	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	eF2	5761	7294	0.789827255278311	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	eF3	79	7294	0.010830819851933095	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	eF4-CXCL14	185	7294	0.025363312311488896	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	fib C7	317	7294	0.04346037839319989	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	fib C7 secretory	0	7294	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	fib C7 secretory_late	0	7294	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample134	sample134	ENDO	AnnotationRefined	fib C7-SFRP2	2	7294	0.00027419797093501506	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	dS1-myofibroblast	154	7787	0.019776550661358673	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	dS2	591	7787	0.07589572364196738	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	dS3	1	7787	0.0001284191601386927	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	dS4	0	7787	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	eF1	146	7787	0.018749197380249133	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	eF2	6367	7787	0.8176447926030563	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	eF3	51	7787	0.006549377167073328	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	eF4-CXCL14	240	7787	0.030820598433286245	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	fib C7	237	7787	0.03043534095287017	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	fib C7 secretory	0	7787	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	fib C7 secretory_late	0	7787	0.0	observed_source_label; zero_count_is_observed_zero
+discovery	sample135	sample135	ENDO	AnnotationRefined	fib C7-SFRP2	0	7787	0.0	observed_source_label; zero_count_is_observed_zero
+heca	EX0045	UA_Endo12449300_EX0045	ENDO	celltype	eStromal_MMPs	39	2862	0.013626834381551363	observed_source_label; zero_count_is_observed_zero
+heca	EX0045	UA_Endo12449300_EX0045	ENDO	celltype	eStromal	2298	2862	0.8029350104821803	observed_source_label; zero_count_is_observed_zero
+heca	EX0045	UA_Endo12449300_EX0045	ENDO	celltype	eStromal_cycling	351	2862	0.12264150943396226	observed_source_label; zero_count_is_observed_zero
+heca	EX0045	UA_Endo12449300_EX0045	ENDO	celltype	dStromal_early	73	2862	0.025506638714185886	observed_source_label; zero_count_is_observed_zero
+heca	EX0045	UA_Endo12449300_EX0045	ENDO	celltype	dStromal_mid	65	2862	0.022711390635918937	observed_source_label; zero_count_is_observed_zero
+heca	EX0045	UA_Endo12449300_EX0045	ENDO	celltype	dStromal_late	36	2862	0.012578616352201259	observed_source_label; zero_count_is_observed_zero
+heca	EX0045	UA_Endo12449300_EX0045	ENDO	celltype	Fibroblast_basalis	0	2862	0.0	observed_source_label; zero_count_is_observed_zero
+heca	EX0288	UA_Endo12449299_EX0288	ENDO	celltype	eStromal_MMPs	4	925	0.004324324324324324	observed_source_label; zero_count_is_observed_zero
+heca	EX0288	UA_Endo12449299_EX0288	ENDO	celltype	eStromal	751	925	0.8118918918918919	observed_source_label; zero_count_is_observed_zero
+heca	EX0288	UA_Endo12449299_EX0288	ENDO	celltype	eStromal_cycling	93	925	0.10054054054054054	observed_source_label; zero_count_is_observed_zero
+heca	EX0288	UA_Endo12449299_EX0288	ENDO	celltype	dStromal_early	38	925	0.04108108108108108	observed_source_label; zero_count_is_observed_zero
+heca	EX0288	UA_Endo12449299_EX0288	ENDO	celltype	dStromal_mid	23	925	0.024864864864864864	observed_source_label; zero_count_is_observed_zero
+heca	EX0288	UA_Endo12449299_EX0288	ENDO	celltype	dStromal_late	16	925	0.017297297297297298	observed_source_label; zero_count_is_observed_zero
+heca	EX0288	UA_Endo12449299_EX0288	ENDO	celltype	Fibroblast_basalis	0	925	0.0	observed_source_label; zero_count_is_observed_zero
+heca	EX0540	UA_Endo11282193_EX0540	ENDO	celltype	eStromal_MMPs	15	2077	0.007221954742416947	observed_source_label; zero_count_is_observed_zero
+heca	EX0540	UA_Endo11282193_EX0540	ENDO	celltype	eStromal	1609	2077	0.7746750120365913	observed_source_label; zero_count_is_observed_zero
+heca	EX0540	UA_Endo11282193_EX0540	ENDO	celltype	eStromal_cycling	366	2077	0.17621569571497353	observed_source_label; zero_count_is_observed_zero
+heca	EX0540	UA_Endo11282193_EX0540	ENDO	celltype	dStromal_early	25	2077	0.01203659123736158	observed_source_label; zero_count_is_observed_zero
+heca	EX0540	UA_Endo11282193_EX0540	ENDO	celltype	dStromal_mid	43	2077	0.020702936928261917	observed_source_label; zero_count_is_observed_zero
+heca	EX0540	UA_Endo11282193_EX0540	ENDO	celltype	dStromal_late	19	2077	0.0091478093403948	observed_source_label; zero_count_is_observed_zero
+heca	EX0540	UA_Endo11282193_EX0540	ENDO	celltype	Fibroblast_basalis	0	2077	0.0	observed_source_label; zero_count_is_observed_zero
+heca	EX0795	UA_Endo12296823_EX0795	ENDO	celltype	eStromal_MMPs	6	468	0.01282051282051282	observed_source_label; zero_count_is_observed_zero
+heca	EX0795	UA_Endo12296823_EX0795	ENDO	celltype	eStromal	352	468	0.7521367521367521	observed_source_label; zero_count_is_observed_zero
+heca	EX0795	UA_Endo12296823_EX0795	ENDO	celltype	eStromal_cycling	72	468	0.15384615384615385	observed_source_label; zero_count_is_observed_zero
+heca	EX0795	UA_Endo12296823_EX0795	ENDO	celltype	dStromal_early	27	468	0.057692307692307696	observed_source_label; zero_count_is_observed_zero
+heca	EX0795	UA_Endo12296823_EX0795	ENDO	celltype	dStromal_mid	9	468	0.019230769230769232	observed_source_label; zero_count_is_observed_zero
+heca	EX0795	UA_Endo12296823_EX0795	ENDO	celltype	dStromal_late	2	468	0.004273504273504274	observed_source_label; zero_count_is_observed_zero
+heca	EX0795	UA_Endo12296823_EX0795	ENDO	celltype	Fibroblast_basalis	0	468	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX0011	UA_Endo11460961_FX0011	non-ENDO	celltype	eStromal_MMPs	139	2395	0.05803757828810021	observed_source_label; zero_count_is_observed_zero
+heca	FX0011	UA_Endo11460961_FX0011	non-ENDO	celltype	eStromal	1784	2395	0.7448851774530272	observed_source_label; zero_count_is_observed_zero
+heca	FX0011	UA_Endo11460961_FX0011	non-ENDO	celltype	eStromal_cycling	349	2395	0.14572025052192067	observed_source_label; zero_count_is_observed_zero
+heca	FX0011	UA_Endo11460961_FX0011	non-ENDO	celltype	dStromal_early	71	2395	0.02964509394572025	observed_source_label; zero_count_is_observed_zero
+heca	FX0011	UA_Endo11460961_FX0011	non-ENDO	celltype	dStromal_mid	12	2395	0.005010438413361169	observed_source_label; zero_count_is_observed_zero
+heca	FX0011	UA_Endo11460961_FX0011	non-ENDO	celltype	dStromal_late	40	2395	0.016701461377870562	observed_source_label; zero_count_is_observed_zero
+heca	FX0011	UA_Endo11460961_FX0011	non-ENDO	celltype	Fibroblast_basalis	0	2395	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX0052	UA_Endo11173480_FX0052	non-ENDO	celltype	eStromal_MMPs	34	6544	0.00519559902200489	observed_source_label; zero_count_is_observed_zero
+heca	FX0052	UA_Endo11173480_FX0052	non-ENDO	celltype	eStromal	5921	6544	0.9047982885085575	observed_source_label; zero_count_is_observed_zero
+heca	FX0052	UA_Endo11173480_FX0052	non-ENDO	celltype	eStromal_cycling	293	6544	0.04477383863080685	observed_source_label; zero_count_is_observed_zero
+heca	FX0052	UA_Endo11173480_FX0052	non-ENDO	celltype	dStromal_early	166	6544	0.025366748166259168	observed_source_label; zero_count_is_observed_zero
+heca	FX0052	UA_Endo11173480_FX0052	non-ENDO	celltype	dStromal_mid	60	6544	0.009168704156479218	observed_source_label; zero_count_is_observed_zero
+heca	FX0052	UA_Endo11173480_FX0052	non-ENDO	celltype	dStromal_late	70	6544	0.010696821515892421	observed_source_label; zero_count_is_observed_zero
+heca	FX0052	UA_Endo11173480_FX0052	non-ENDO	celltype	Fibroblast_basalis	0	6544	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX0060	UA_Endo12269811_FX0060	ENDO	celltype	eStromal_MMPs	17	1110	0.015315315315315315	observed_source_label; zero_count_is_observed_zero
+heca	FX0060	UA_Endo12269811_FX0060	ENDO	celltype	eStromal	840	1110	0.7567567567567568	observed_source_label; zero_count_is_observed_zero
+heca	FX0060	UA_Endo12269811_FX0060	ENDO	celltype	eStromal_cycling	179	1110	0.16126126126126125	observed_source_label; zero_count_is_observed_zero
+heca	FX0060	UA_Endo12269811_FX0060	ENDO	celltype	dStromal_early	31	1110	0.027927927927927927	observed_source_label; zero_count_is_observed_zero
+heca	FX0060	UA_Endo12269811_FX0060	ENDO	celltype	dStromal_mid	27	1110	0.024324324324324326	observed_source_label; zero_count_is_observed_zero
+heca	FX0060	UA_Endo12269811_FX0060	ENDO	celltype	dStromal_late	16	1110	0.014414414414414415	observed_source_label; zero_count_is_observed_zero
+heca	FX0060	UA_Endo12269811_FX0060	ENDO	celltype	Fibroblast_basalis	0	1110	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1097	UA_Endo11460961_FX1097	ENDO	celltype	eStromal_MMPs	46	4867	0.009451407437846723	observed_source_label; zero_count_is_observed_zero
+heca	FX1097	UA_Endo11460961_FX1097	ENDO	celltype	eStromal	3983	4867	0.818368604890076	observed_source_label; zero_count_is_observed_zero
+heca	FX1097	UA_Endo11460961_FX1097	ENDO	celltype	eStromal_cycling	541	4867	0.11115677008424081	observed_source_label; zero_count_is_observed_zero
+heca	FX1097	UA_Endo11460961_FX1097	ENDO	celltype	dStromal_early	96	4867	0.019724676392027945	observed_source_label; zero_count_is_observed_zero
+heca	FX1097	UA_Endo11460961_FX1097	ENDO	celltype	dStromal_mid	84	4867	0.01725909184302445	observed_source_label; zero_count_is_observed_zero
+heca	FX1097	UA_Endo11460961_FX1097	ENDO	celltype	dStromal_late	117	4867	0.024039449352784056	observed_source_label; zero_count_is_observed_zero
+heca	FX1097	UA_Endo11460961_FX1097	ENDO	celltype	Fibroblast_basalis	0	4867	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1101	UA_Endo10281926_FX1101	ENDO	celltype	eStromal_MMPs	41	4657	0.008803951041442989	observed_source_label; zero_count_is_observed_zero
+heca	FX1101	UA_Endo10281926_FX1101	ENDO	celltype	eStromal	3167	4657	0.6800515353231694	observed_source_label; zero_count_is_observed_zero
+heca	FX1101	UA_Endo10281926_FX1101	ENDO	celltype	eStromal_cycling	1125	4657	0.24157182735666738	observed_source_label; zero_count_is_observed_zero
+heca	FX1101	UA_Endo10281926_FX1101	ENDO	celltype	dStromal_early	154	4657	0.033068499033712694	observed_source_label; zero_count_is_observed_zero
+heca	FX1101	UA_Endo10281926_FX1101	ENDO	celltype	dStromal_mid	123	4657	0.026411853124328966	observed_source_label; zero_count_is_observed_zero
+heca	FX1101	UA_Endo10281926_FX1101	ENDO	celltype	dStromal_late	47	4657	0.010092334120678548	observed_source_label; zero_count_is_observed_zero
+heca	FX1101	UA_Endo10281926_FX1101	ENDO	celltype	Fibroblast_basalis	0	4657	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1104	UA_Endo11596522_FX1104	non-ENDO	celltype	eStromal_MMPs	56	4801	0.011664236617371381	observed_source_label; zero_count_is_observed_zero
+heca	FX1104	UA_Endo11596522_FX1104	non-ENDO	celltype	eStromal	3429	4801	0.7142262028744012	observed_source_label; zero_count_is_observed_zero
+heca	FX1104	UA_Endo11596522_FX1104	non-ENDO	celltype	eStromal_cycling	820	4801	0.17079775046865237	observed_source_label; zero_count_is_observed_zero
+heca	FX1104	UA_Endo11596522_FX1104	non-ENDO	celltype	dStromal_early	287	4801	0.05977921266402833	observed_source_label; zero_count_is_observed_zero
+heca	FX1104	UA_Endo11596522_FX1104	non-ENDO	celltype	dStromal_mid	123	4801	0.025619662570297855	observed_source_label; zero_count_is_observed_zero
+heca	FX1104	UA_Endo11596522_FX1104	non-ENDO	celltype	dStromal_late	86	4801	0.017912934805248908	observed_source_label; zero_count_is_observed_zero
+heca	FX1104	UA_Endo11596522_FX1104	non-ENDO	celltype	Fibroblast_basalis	0	4801	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1119	UA_Endo12296823_FX1119	non-ENDO	celltype	eStromal_MMPs	11	203	0.054187192118226604	observed_source_label; zero_count_is_observed_zero
+heca	FX1119	UA_Endo12296823_FX1119	non-ENDO	celltype	eStromal	130	203	0.6403940886699507	observed_source_label; zero_count_is_observed_zero
+heca	FX1119	UA_Endo12296823_FX1119	non-ENDO	celltype	eStromal_cycling	32	203	0.15763546798029557	observed_source_label; zero_count_is_observed_zero
+heca	FX1119	UA_Endo12296823_FX1119	non-ENDO	celltype	dStromal_early	21	203	0.10344827586206896	observed_source_label; zero_count_is_observed_zero
+heca	FX1119	UA_Endo12296823_FX1119	non-ENDO	celltype	dStromal_mid	4	203	0.019704433497536946	observed_source_label; zero_count_is_observed_zero
+heca	FX1119	UA_Endo12296823_FX1119	non-ENDO	celltype	dStromal_late	5	203	0.024630541871921183	observed_source_label; zero_count_is_observed_zero
+heca	FX1119	UA_Endo12296823_FX1119	non-ENDO	celltype	Fibroblast_basalis	0	203	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1125	UA_Endo12296824_FX1125	ENDO	celltype	eStromal_MMPs	10	723	0.013831258644536652	observed_source_label; zero_count_is_observed_zero
+heca	FX1125	UA_Endo12296824_FX1125	ENDO	celltype	eStromal	424	723	0.5864453665283541	observed_source_label; zero_count_is_observed_zero
+heca	FX1125	UA_Endo12296824_FX1125	ENDO	celltype	eStromal_cycling	210	723	0.29045643153526973	observed_source_label; zero_count_is_observed_zero
+heca	FX1125	UA_Endo12296824_FX1125	ENDO	celltype	dStromal_early	41	723	0.056708160442600276	observed_source_label; zero_count_is_observed_zero
+heca	FX1125	UA_Endo12296824_FX1125	ENDO	celltype	dStromal_mid	28	723	0.03872752420470263	observed_source_label; zero_count_is_observed_zero
+heca	FX1125	UA_Endo12296824_FX1125	ENDO	celltype	dStromal_late	10	723	0.013831258644536652	observed_source_label; zero_count_is_observed_zero
+heca	FX1125	UA_Endo12296824_FX1125	ENDO	celltype	Fibroblast_basalis	0	723	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1129	UA_Endo12061705_FX1129	ENDO	celltype	eStromal_MMPs	388	507	0.7652859960552268	observed_source_label; zero_count_is_observed_zero
+heca	FX1129	UA_Endo12061705_FX1129	ENDO	celltype	eStromal	27	507	0.05325443786982249	observed_source_label; zero_count_is_observed_zero
+heca	FX1129	UA_Endo12061705_FX1129	ENDO	celltype	eStromal_cycling	7	507	0.013806706114398421	observed_source_label; zero_count_is_observed_zero
+heca	FX1129	UA_Endo12061705_FX1129	ENDO	celltype	dStromal_early	29	507	0.05719921104536489	observed_source_label; zero_count_is_observed_zero
+heca	FX1129	UA_Endo12061705_FX1129	ENDO	celltype	dStromal_mid	25	507	0.04930966469428008	observed_source_label; zero_count_is_observed_zero
+heca	FX1129	UA_Endo12061705_FX1129	ENDO	celltype	dStromal_late	31	507	0.0611439842209073	observed_source_label; zero_count_is_observed_zero
+heca	FX1129	UA_Endo12061705_FX1129	ENDO	celltype	Fibroblast_basalis	0	507	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1136	UA_Endo12449301_FX1136	ENDO	celltype	eStromal_MMPs	1027	1110	0.9252252252252252	observed_source_label; zero_count_is_observed_zero
+heca	FX1136	UA_Endo12449301_FX1136	ENDO	celltype	eStromal	26	1110	0.023423423423423424	observed_source_label; zero_count_is_observed_zero
+heca	FX1136	UA_Endo12449301_FX1136	ENDO	celltype	eStromal_cycling	4	1110	0.0036036036036036037	observed_source_label; zero_count_is_observed_zero
+heca	FX1136	UA_Endo12449301_FX1136	ENDO	celltype	dStromal_early	7	1110	0.006306306306306306	observed_source_label; zero_count_is_observed_zero
+heca	FX1136	UA_Endo12449301_FX1136	ENDO	celltype	dStromal_mid	11	1110	0.00990990990990991	observed_source_label; zero_count_is_observed_zero
+heca	FX1136	UA_Endo12449301_FX1136	ENDO	celltype	dStromal_late	35	1110	0.03153153153153153	observed_source_label; zero_count_is_observed_zero
+heca	FX1136	UA_Endo12449301_FX1136	ENDO	celltype	Fibroblast_basalis	0	1110	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1146	UA_Endo11282193_FX1146	non-ENDO	celltype	eStromal_MMPs	9	4521	0.0019907100199071004	observed_source_label; zero_count_is_observed_zero
+heca	FX1146	UA_Endo11282193_FX1146	non-ENDO	celltype	eStromal	3756	4521	0.8307896483078965	observed_source_label; zero_count_is_observed_zero
+heca	FX1146	UA_Endo11282193_FX1146	non-ENDO	celltype	eStromal_cycling	551	4521	0.12187569121875691	observed_source_label; zero_count_is_observed_zero
+heca	FX1146	UA_Endo11282193_FX1146	non-ENDO	celltype	dStromal_early	57	4521	0.012607830126078301	observed_source_label; zero_count_is_observed_zero
+heca	FX1146	UA_Endo11282193_FX1146	non-ENDO	celltype	dStromal_mid	90	4521	0.019907100199071003	observed_source_label; zero_count_is_observed_zero
+heca	FX1146	UA_Endo11282193_FX1146	non-ENDO	celltype	dStromal_late	58	4521	0.012829020128290201	observed_source_label; zero_count_is_observed_zero
+heca	FX1146	UA_Endo11282193_FX1146	non-ENDO	celltype	Fibroblast_basalis	0	4521	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1150	UA_Endo12449301_FX1150	ENDO	celltype	eStromal_MMPs	2742	2995	0.915525876460768	observed_source_label; zero_count_is_observed_zero
+heca	FX1150	UA_Endo12449301_FX1150	ENDO	celltype	eStromal	73	2995	0.024373956594323874	observed_source_label; zero_count_is_observed_zero
+heca	FX1150	UA_Endo12449301_FX1150	ENDO	celltype	eStromal_cycling	2	2995	0.000667779632721202	observed_source_label; zero_count_is_observed_zero
+heca	FX1150	UA_Endo12449301_FX1150	ENDO	celltype	dStromal_early	45	2995	0.015025041736227046	observed_source_label; zero_count_is_observed_zero
+heca	FX1150	UA_Endo12449301_FX1150	ENDO	celltype	dStromal_mid	33	2995	0.011018363939899833	observed_source_label; zero_count_is_observed_zero
+heca	FX1150	UA_Endo12449301_FX1150	ENDO	celltype	dStromal_late	100	2995	0.0333889816360601	observed_source_label; zero_count_is_observed_zero
+heca	FX1150	UA_Endo12449301_FX1150	ENDO	celltype	Fibroblast_basalis	0	2995	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1160	UA_Endo12449298_FX1160	ENDO	celltype	eStromal_MMPs	74	528	0.14015151515151514	observed_source_label; zero_count_is_observed_zero
+heca	FX1160	UA_Endo12449298_FX1160	ENDO	celltype	eStromal	341	528	0.6458333333333334	observed_source_label; zero_count_is_observed_zero
+heca	FX1160	UA_Endo12449298_FX1160	ENDO	celltype	eStromal_cycling	51	528	0.09659090909090909	observed_source_label; zero_count_is_observed_zero
+heca	FX1160	UA_Endo12449298_FX1160	ENDO	celltype	dStromal_early	48	528	0.09090909090909091	observed_source_label; zero_count_is_observed_zero
+heca	FX1160	UA_Endo12449298_FX1160	ENDO	celltype	dStromal_mid	10	528	0.01893939393939394	observed_source_label; zero_count_is_observed_zero
+heca	FX1160	UA_Endo12449298_FX1160	ENDO	celltype	dStromal_late	4	528	0.007575757575757576	observed_source_label; zero_count_is_observed_zero
+heca	FX1160	UA_Endo12449298_FX1160	ENDO	celltype	Fibroblast_basalis	0	528	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX1236	UA_Endo11596521_FX1236	ENDO	celltype	eStromal_MMPs	166	3518	0.04718590108015918	observed_source_label; zero_count_is_observed_zero
+heca	FX1236	UA_Endo11596521_FX1236	ENDO	celltype	eStromal	2971	3518	0.8445139283683911	observed_source_label; zero_count_is_observed_zero
+heca	FX1236	UA_Endo11596521_FX1236	ENDO	celltype	eStromal_cycling	181	3518	0.05144968732234224	observed_source_label; zero_count_is_observed_zero
+heca	FX1236	UA_Endo11596521_FX1236	ENDO	celltype	dStromal_early	27	3518	0.007674815235929506	observed_source_label; zero_count_is_observed_zero
+heca	FX1236	UA_Endo11596521_FX1236	ENDO	celltype	dStromal_mid	56	3518	0.015918135304150087	observed_source_label; zero_count_is_observed_zero
+heca	FX1236	UA_Endo11596521_FX1236	ENDO	celltype	dStromal_late	33	3518	0.009380329732802728	observed_source_label; zero_count_is_observed_zero
+heca	FX1236	UA_Endo11596521_FX1236	ENDO	celltype	Fibroblast_basalis	84	3518	0.023877202956225127	observed_source_label; zero_count_is_observed_zero
+heca	FX9005	UA_Endo11596522_FX9005	ENDO	celltype	eStromal_MMPs	27	3672	0.007352941176470588	observed_source_label; zero_count_is_observed_zero
+heca	FX9005	UA_Endo11596522_FX9005	ENDO	celltype	eStromal	2781	3672	0.7573529411764706	observed_source_label; zero_count_is_observed_zero
+heca	FX9005	UA_Endo11596522_FX9005	ENDO	celltype	eStromal_cycling	636	3672	0.17320261437908496	observed_source_label; zero_count_is_observed_zero
+heca	FX9005	UA_Endo11596522_FX9005	ENDO	celltype	dStromal_early	94	3672	0.02559912854030501	observed_source_label; zero_count_is_observed_zero
+heca	FX9005	UA_Endo11596522_FX9005	ENDO	celltype	dStromal_mid	84	3672	0.02287581699346405	observed_source_label; zero_count_is_observed_zero
+heca	FX9005	UA_Endo11596522_FX9005	ENDO	celltype	dStromal_late	50	3672	0.013616557734204794	observed_source_label; zero_count_is_observed_zero
+heca	FX9005	UA_Endo11596522_FX9005	ENDO	celltype	Fibroblast_basalis	0	3672	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX9020	UA_Endo12061703_FX9020	ENDO	celltype	eStromal_MMPs	1246	1755	0.7099715099715099	observed_source_label; zero_count_is_observed_zero
+heca	FX9020	UA_Endo12061703_FX9020	ENDO	celltype	eStromal	340	1755	0.19373219373219372	observed_source_label; zero_count_is_observed_zero
+heca	FX9020	UA_Endo12061703_FX9020	ENDO	celltype	eStromal_cycling	25	1755	0.014245014245014245	observed_source_label; zero_count_is_observed_zero
+heca	FX9020	UA_Endo12061703_FX9020	ENDO	celltype	dStromal_early	47	1755	0.02678062678062678	observed_source_label; zero_count_is_observed_zero
+heca	FX9020	UA_Endo12061703_FX9020	ENDO	celltype	dStromal_mid	42	1755	0.023931623931623933	observed_source_label; zero_count_is_observed_zero
+heca	FX9020	UA_Endo12061703_FX9020	ENDO	celltype	dStromal_late	55	1755	0.03133903133903134	observed_source_label; zero_count_is_observed_zero
+heca	FX9020	UA_Endo12061703_FX9020	ENDO	celltype	Fibroblast_basalis	0	1755	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX9024	UA_Endo12061704_FX9024	non-ENDO	celltype	eStromal_MMPs	9	1644	0.005474452554744526	observed_source_label; zero_count_is_observed_zero
+heca	FX9024	UA_Endo12061704_FX9024	non-ENDO	celltype	eStromal	1270	1644	0.7725060827250608	observed_source_label; zero_count_is_observed_zero
+heca	FX9024	UA_Endo12061704_FX9024	non-ENDO	celltype	eStromal_cycling	251	1644	0.152676399026764	observed_source_label; zero_count_is_observed_zero
+heca	FX9024	UA_Endo12061704_FX9024	non-ENDO	celltype	dStromal_early	47	1644	0.028588807785888078	observed_source_label; zero_count_is_observed_zero
+heca	FX9024	UA_Endo12061704_FX9024	non-ENDO	celltype	dStromal_mid	30	1644	0.01824817518248175	observed_source_label; zero_count_is_observed_zero
+heca	FX9024	UA_Endo12061704_FX9024	non-ENDO	celltype	dStromal_late	37	1644	0.022506082725060828	observed_source_label; zero_count_is_observed_zero
+heca	FX9024	UA_Endo12061704_FX9024	non-ENDO	celltype	Fibroblast_basalis	0	1644	0.0	observed_source_label; zero_count_is_observed_zero
+heca	FX9027	UA_Endo12449300_FX9027	non-ENDO	celltype	eStromal_MMPs	3	862	0.0034802784222737818	observed_source_label; zero_count_is_observed_zero
+heca	FX9027	UA_Endo12449300_FX9027	non-ENDO	celltype	eStromal	684	862	0.7935034802784223	observed_source_label; zero_count_is_observed_zero
+heca	FX9027	UA_Endo12449300_FX9027	non-ENDO	celltype	eStromal_cycling	126	862	0.14617169373549885	observed_source_label; zero_count_is_observed_zero
+heca	FX9027	UA_Endo12449300_FX9027	non-ENDO	celltype	dStromal_early	17	862	0.019721577726218097	observed_source_label; zero_count_is_observed_zero
+heca	FX9027	UA_Endo12449300_FX9027	non-ENDO	celltype	dStromal_mid	21	862	0.024361948955916472	observed_source_label; zero_count_is_observed_zero
+heca	FX9027	UA_Endo12449300_FX9027	non-ENDO	celltype	dStromal_late	11	862	0.012761020881670533	observed_source_label; zero_count_is_observed_zero
+heca	FX9027	UA_Endo12449300_FX9027	non-ENDO	celltype	Fibroblast_basalis	0	862	0.0	observed_source_label; zero_count_is_observed_zero

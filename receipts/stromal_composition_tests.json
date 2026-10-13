@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-10-13T11:01:18.791287+00:00",
+  "host": "SRV01",
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_stromal_composition.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "output": "test_complete_grid_uses_primary_denominator_and_real_zero (test_stromal_composition.CompositionTests) ... ok\ntest_duplicate_selected_cell_is_rejected (test_stromal_composition.CompositionTests) ... ok\ntest_equal_donor_weighting_differs_from_pooled_cells (test_stromal_composition.CompositionTests) ... ok\ntest_exact_donor_denominator_drift_fails (test_stromal_composition.CompositionTests) ... ok\ntest_missing_label_remains_visible_and_not_inferred (test_stromal_composition.CompositionTests) ... ok\ntest_repeated_donor_in_selected_ledger_is_rejected (test_stromal_composition.CompositionTests) ... ok\ntest_unselected_library_and_lowQC_are_not_counted (test_stromal_composition.CompositionTests) ... ok\ntest_wrong_donor_crosswalk_is_rejected (test_stromal_composition.CompositionTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nOK\n",
+  "tests_run": 8,
+  "scientific_validation": false,
+  "preimplementation_attempt": {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_stromal_composition.py",
+      "-v"
+    ],
+    "exit_code": 1,
+    "reason": "test module import failed because scripts/summarize_stromal_composition.py did not yet exist"
+  },
+  "real_output_table_validation": {
+    "44_unique_donors": true,
+    "all_per_donor_proportions_sum_to_one": true,
+    "all_per_donor_counts_conserved": true,
+    "cohort_cell_denominators": true,
+    "complete_grids": true
+  },
+  "test_sha256": "bf78a11efbb97e190ab133e83edf3f4f96b56a046ef4f5545c68df097e65d926",
+  "script_sha256": "81f3520bdd5a6a2342d85f7f5f56441fec3dda0087dd394a3e6de68b2e54405d"
+}
