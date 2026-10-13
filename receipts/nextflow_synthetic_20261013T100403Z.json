@@ -1,0 +1,922 @@
+{
+  "status": "PASS",
+  "data_kind": "synthetic",
+  "utc": "2026-10-13T10:04:03.976592+00:00",
+  "hostname": "SRV01",
+  "project": "/home/analyst/te",
+  "fixture": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9",
+  "fixture_sha256": "a5b4b82d62f327557db1ac733d7a1fd236200c041c4faa304db5ab5ea9da026c",
+  "freeze_sha256": "a2068fa572cb8e8083c98898f518d1c949a338de9c5f945b822e37b2c20679d9",
+  "freeze_phase": "SYNTHETIC_TEST_ONLY_NOT_A_SCIENTIFIC_FREEZE",
+  "frozen_artifacts": {
+    "main.nf": "3790a6f647565b91334e51686c450100542575b671398bf4c0e281ec1f7da422",
+    "nextflow.config": "4d8c79071f053b9ae894230feaa619a629e33f6717f74d02a0887d425af40214",
+    "scripts/fit_donor_de.R": "e68c80e3c2d37ec260a814890d5c7f2fdbad5033b95c22c30b53811e289be07c",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "scripts/sample_matched_nulls.py": "587092a1f2b2a8915759df67eaf23d4c2d4a18232c9308cac7afd6b2fff90ba5",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6",
+    "requirements/statistical-runtime.yml": "51e78370e2a5495a33a6272c5a8159d9233a07fd851d28086da79b8d1b4b8269",
+    "receipts/runtime_statistics_install.json": "5a65eda490112f6cd34722796294baf5be4adf80f5af79350b29f31090c6c527",
+    "receipts/runtime_statistics_R_smoke.json": "4f3aa34a5dc48bf9fb7470dce1e2eadca0ef7f1a9ca134cf1feddb8535cabece",
+    "work/synthetic/20261013T100312Z-439d82d9/counts.tsv.gz": "4ed0c916ffdfdbd24bb996cb86076b67b65a16d5e53fd63a9d336490f75ffd26",
+    "work/synthetic/20261013T100312Z-439d82d9/design.tsv": "f4d0e33953af4304a0da031df3bd4282ecf093d92263cf8d8b60b12e26c9394d",
+    "work/synthetic/20261013T100312Z-439d82d9/clinical.tsv": "0f4f8893784308e35ce60a139a41735ed2f5c4a2a772b7bf1997f81e58169ed0",
+    "work/synthetic/20261013T100312Z-439d82d9/edges.tsv.gz": "4b19d1b5237a44c474da9b35f2760c88b2df1524d37bbb520e3b0b58e0892359"
+  },
+  "fixture_summary": {
+    "data_kind": "synthetic",
+    "seed": 42,
+    "genes": 1500,
+    "donors": 20,
+    "non_ENDO": 10,
+    "ENDO": 10,
+    "scope": "flow_mechanics_only_not_real_disease_or_target_validation"
+  },
+  "first_trace": [
+    {
+      "task_id": "1",
+      "hash": "e1/b93a8e",
+      "native_id": "2584413",
+      "name": "DONOR_DE (discovery)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:03:20.280",
+      "duration": "3s",
+      "realtime": "2.8s",
+      "%cpu": "87.5%",
+      "peak_rss": "122.4 MB",
+      "peak_vmem": "555.9 MB",
+      "rchar": "11.7 MB",
+      "wchar": "1.3 MB"
+    },
+    {
+      "task_id": "2",
+      "hash": "df/f25b9d",
+      "native_id": "2584824",
+      "name": "RANK_TARGETS (B0_B1_G1)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:03:23.347",
+      "duration": "872ms",
+      "realtime": "667ms",
+      "%cpu": "100.9%",
+      "peak_rss": "3.1 MB",
+      "peak_vmem": "10.8 MB",
+      "rchar": "6.3 MB",
+      "wchar": "811 KB"
+    },
+    {
+      "task_id": "3",
+      "hash": "b4/712038",
+      "native_id": "2584997",
+      "name": "MATCHED_NULLS (matched_nulls)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:03:24.284",
+      "duration": "1.6s",
+      "realtime": "1.4s",
+      "%cpu": "100.4%",
+      "peak_rss": "45 MB",
+      "peak_vmem": "239 MB",
+      "rchar": "9 MB",
+      "wchar": "2 MB"
+    }
+  ],
+  "resume_trace": [
+    {
+      "task_id": "1",
+      "hash": "e1/b93a8e",
+      "native_id": "2584413",
+      "name": "DONOR_DE (discovery)",
+      "status": "CACHED",
+      "exit": "0",
+      "submit": "2026-10-13 19:03:20.280",
+      "duration": "3s",
+      "realtime": "2.8s",
+      "%cpu": "87.5%",
+      "peak_rss": "122.4 MB",
+      "peak_vmem": "555.9 MB",
+      "rchar": "11.7 MB",
+      "wchar": "1.3 MB"
+    },
+    {
+      "task_id": "2",
+      "hash": "df/f25b9d",
+      "native_id": "2584824",
+      "name": "RANK_TARGETS (B0_B1_G1)",
+      "status": "CACHED",
+      "exit": "0",
+      "submit": "2026-10-13 19:03:23.347",
+      "duration": "872ms",
+      "realtime": "667ms",
+      "%cpu": "100.9%",
+      "peak_rss": "3.1 MB",
+      "peak_vmem": "10.8 MB",
+      "rchar": "6.3 MB",
+      "wchar": "811 KB"
+    },
+    {
+      "task_id": "3",
+      "hash": "b4/712038",
+      "native_id": "2584997",
+      "name": "MATCHED_NULLS (matched_nulls)",
+      "status": "CACHED",
+      "exit": "0",
+      "submit": "2026-10-13 19:03:24.284",
+      "duration": "1.6s",
+      "realtime": "1.4s",
+      "%cpu": "100.4%",
+      "peak_rss": "45 MB",
+      "peak_vmem": "239 MB",
+      "rchar": "9 MB",
+      "wchar": "2 MB"
+    }
+  ],
+  "all_three_processes_completed": true,
+  "all_three_processes_cached_on_resume": true,
+  "changed_frozen_input_rejected_before_tasks": true,
+  "missing_freeze_rejected": true,
+  "synthetic_freeze_cannot_authorize_production": true,
+  "omitted_required_code_rejected_before_tasks": true,
+  "resume_outputs_byte_identical": true,
+  "donor_model_audit": {
+    "n_donors": 20,
+    "input_genes": 1500,
+    "rank": 3,
+    "residual_df": 17,
+    "non_ENDO": 10,
+    "ENDO": 10
+  },
+  "ranking_counts": {
+    "discovery_expressed_genes": 1500,
+    "finite_discovery_fit_genes": 1500,
+    "reference_edges": 1500,
+    "induced_edges": 1500,
+    "final_universe_genes": 1500,
+    "excluded_induced_zero_degree": 0
+  },
+  "null_status": {
+    "schema_version": 1,
+    "status": "SYNTHETIC_TEST_ONLY_NOT_A_SCIENTIFIC_FREEZE",
+    "completed_utc": "2026-10-13T10:03:25.828126+00:00",
+    "inputs": {
+      "discovery_de": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/e1/b93a8ecec5294d5827ac0076859327/de/de_fitted.tsv",
+        "sha256": "c45d3cac2c13f6378838bfe66568506283ec4fbea009e170287432e069cbfdc6"
+      },
+      "universe.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/universe.tsv",
+        "sha256": "5445f2752af877662d611693af999cd34f08430d5f71187e095dac36d1bec740"
+      },
+      "induced_edges.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/induced_edges.tsv",
+        "sha256": "860ddd76c8ae57a92e9f7c88926d10aabf54779cfd94ac2d953a9fac1fa08368"
+      },
+      "provenance.json": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/provenance.json",
+        "sha256": "49400c35c22a2c8f89a2a4479ebd2b7f856195ed0666afd2d9258f80bcafdd8b"
+      },
+      "B0.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/B0.tsv",
+        "sha256": "05f9e0203c7b2d97c075a19f03528e13cdfdd953f75dc70509f6653bed2436d4"
+      },
+      "B0_top20.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/B0_top20.tsv",
+        "sha256": "5e62c27c0b6d50e02c0cba616d11f7a30e5a4acd09208b4e6f423811de1df73c"
+      },
+      "B1.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/B1.tsv",
+        "sha256": "bfdb395b13cffb5bda7f80ff010055498651d99cc2559ea51942be591dc8f9f0"
+      },
+      "B1_top20.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/B1_top20.tsv",
+        "sha256": "704120a28ac765e70aa8f8aaf03ce2dfda1f0032a1248cd408fce5b49e77722f"
+      },
+      "G1.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/G1.tsv",
+        "sha256": "cdbc887aa46c6681af2ff1047a649e0f43ac3ae6d8e8f3130f0c26352e29cbf1"
+      },
+      "G1_top20.tsv": {
+        "path": "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/nfwork/df/f25b9d933403b746c40a77b40b1e6c/ranking/G1_top20.tsv",
+        "sha256": "a8582574415516b4329e71a756712343b3a9373ec3f763e6b76864f8740de034"
+      },
+      "configuration": {
+        "path": "/home/analyst/te/config/statistical_analysis.json",
+        "sha256": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a"
+      },
+      "implementation": {
+        "path": "/home/analyst/te/scripts/sample_matched_nulls.py",
+        "sha256": "587092a1f2b2a8915759df67eaf23d4c2d4a18232c9308cac7afd6b2fff90ba5"
+      }
+    },
+    "software": {
+      "python": "3.10.22",
+      "numpy": "2.2.6",
+      "executable": "/home/analyst/te/envs/statistical-runtime/bin/python"
+    },
+    "algorithm": {
+      "n_sets": 200,
+      "k": 20,
+      "seed": 42,
+      "rng": "numpy_PCG64",
+      "method_order": [
+        "B0",
+        "B1",
+        "G1"
+      ],
+      "expression": "rowMeans_edgeR_cpm_log_TRUE_prior_count_0.5_normalized_lib_sizes_TRUE",
+      "degree": "weighted_degree_in_frozen_discovery_induced_U",
+      "bins_per_axis": 5,
+      "quantile_type": 7,
+      "collapse_duplicate_quantile_boundaries": true,
+      "boundary_assignment": "internal_cutpoints_equal_values_go_lower",
+      "joint_bins": true,
+      "pool": "U_excluding_own_method_top20",
+      "external_mask_used_for_sampling": false,
+      "discovery_sign_for_each_sampled_gene": true,
+      "within_set_replacement": false,
+      "between_set_reuse": true,
+      "bin_failure_policy": "entire_method_null_not_estimable_no_merging_no_rescue",
+      "descriptive_only": true
+    },
+    "methods": {
+      "B0": {
+        "status": "ESTIMABLE",
+        "reason": null,
+        "requested_sets": 200,
+        "sampled_sets": 200,
+        "genes_per_set": 20,
+        "bins": [
+          {
+            "expression_bin": 1,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 83,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 46,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 88,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 5,
+            "demand": 0,
+            "available": 39,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 89,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 2,
+            "demand": 1,
+            "available": 42,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 87,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 5,
+            "demand": 1,
+            "available": 36,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 1,
+            "demand": 1,
+            "available": 81,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 47,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 3,
+            "demand": 1,
+            "available": 83,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 5,
+            "demand": 0,
+            "available": 43,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 1,
+            "demand": 1,
+            "available": 83,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 46,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 3,
+            "demand": 2,
+            "available": 86,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 37,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 5,
+            "demand": 0,
+            "available": 45,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 1,
+            "demand": 4,
+            "available": 88,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 2,
+            "demand": 1,
+            "available": 31,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 3,
+            "demand": 3,
+            "available": 78,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 4,
+            "demand": 2,
+            "available": 43,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 5,
+            "demand": 3,
+            "available": 47,
+            "insufficient": false
+          }
+        ],
+        "excluded_own_top20": [
+          "ENSG00000000097",
+          "ENSG00000000250",
+          "ENSG00000000394",
+          "ENSG00000000396",
+          "ENSG00000000534",
+          "ENSG00000000612",
+          "ENSG00000000623",
+          "ENSG00000000661",
+          "ENSG00000000734",
+          "ENSG00000000756",
+          "ENSG00000000777",
+          "ENSG00000000799",
+          "ENSG00000000817",
+          "ENSG00000000845",
+          "ENSG00000001130",
+          "ENSG00000001219",
+          "ENSG00000001256",
+          "ENSG00000001310",
+          "ENSG00000001344",
+          "ENSG00000001460"
+        ],
+        "candidate_pool_genes": 1480
+      },
+      "B1": {
+        "status": "ESTIMABLE",
+        "reason": null,
+        "requested_sets": 200,
+        "sampled_sets": 200,
+        "genes_per_set": 20,
+        "bins": [
+          {
+            "expression_bin": 1,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 83,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 46,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 88,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 5,
+            "demand": 5,
+            "available": 34,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 89,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 43,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 87,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 5,
+            "demand": 4,
+            "available": 33,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 82,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 47,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 84,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 5,
+            "demand": 2,
+            "available": 41,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 84,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 46,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 88,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 37,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 5,
+            "demand": 5,
+            "available": 40,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 92,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 32,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 81,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 45,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 5,
+            "demand": 4,
+            "available": 46,
+            "insufficient": false
+          }
+        ],
+        "excluded_own_top20": [
+          "ENSG00000000007",
+          "ENSG00000000014",
+          "ENSG00000000021",
+          "ENSG00000000028",
+          "ENSG00000000035",
+          "ENSG00000000042",
+          "ENSG00000000049",
+          "ENSG00000000056",
+          "ENSG00000000063",
+          "ENSG00000000070",
+          "ENSG00000000077",
+          "ENSG00000000084",
+          "ENSG00000000091",
+          "ENSG00000000098",
+          "ENSG00000000105",
+          "ENSG00000000112",
+          "ENSG00000000119",
+          "ENSG00000000126",
+          "ENSG00000000133",
+          "ENSG00000000140"
+        ],
+        "candidate_pool_genes": 1480
+      },
+      "G1": {
+        "status": "ESTIMABLE",
+        "reason": null,
+        "requested_sets": 200,
+        "sampled_sets": 200,
+        "genes_per_set": 20,
+        "bins": [
+          {
+            "expression_bin": 1,
+            "degree_bin": 1,
+            "demand": 0,
+            "available": 83,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 46,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 88,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 1,
+            "degree_bin": 5,
+            "demand": 0,
+            "available": 39,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 1,
+            "demand": 1,
+            "available": 88,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 2,
+            "demand": 1,
+            "available": 42,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 3,
+            "demand": 0,
+            "available": 87,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 2,
+            "degree_bin": 5,
+            "demand": 1,
+            "available": 36,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 1,
+            "demand": 1,
+            "available": 81,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 47,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 3,
+            "demand": 1,
+            "available": 83,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 3,
+            "degree_bin": 5,
+            "demand": 0,
+            "available": 43,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 1,
+            "demand": 1,
+            "available": 83,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 2,
+            "demand": 0,
+            "available": 46,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 3,
+            "demand": 3,
+            "available": 85,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 4,
+            "demand": 0,
+            "available": 37,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 4,
+            "degree_bin": 5,
+            "demand": 1,
+            "available": 44,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 1,
+            "demand": 2,
+            "available": 90,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 2,
+            "demand": 1,
+            "available": 31,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 3,
+            "demand": 2,
+            "available": 79,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 4,
+            "demand": 2,
+            "available": 43,
+            "insufficient": false
+          },
+          {
+            "expression_bin": 5,
+            "degree_bin": 5,
+            "demand": 3,
+            "available": 47,
+            "insufficient": false
+          }
+        ],
+        "excluded_own_top20": [
+          "ENSG00000000097",
+          "ENSG00000000107",
+          "ENSG00000000238",
+          "ENSG00000000250",
+          "ENSG00000000394",
+          "ENSG00000000396",
+          "ENSG00000000534",
+          "ENSG00000000623",
+          "ENSG00000000647",
+          "ENSG00000000734",
+          "ENSG00000000756",
+          "ENSG00000000777",
+          "ENSG00000000817",
+          "ENSG00000000845",
+          "ENSG00000001130",
+          "ENSG00000001132",
+          "ENSG00000001219",
+          "ENSG00000001310",
+          "ENSG00000001344",
+          "ENSG00000001460"
+        ],
+        "candidate_pool_genes": 1480
+      }
+    },
+    "outputs": {
+      "B0_null_membership.tsv": {
+        "sha256": "7ec939bb155c1bef579c4f3d81d00a565a0d46df2d2dd2d33f3a44cf712652fe",
+        "bytes": 318525
+      },
+      "B1_null_membership.tsv": {
+        "sha256": "fbd6913895183d236827e469958182366fc88714fcf771d8bc5e4451c56bba7c",
+        "bytes": 301603
+      },
+      "G1_null_membership.tsv": {
+        "sha256": "948aab53a16b80a6d540eb06e63eaaa7f97ceb6a9b417f27e18bc6f66683bc38",
+        "bytes": 317843
+      },
+      "all_U_directions.tsv": {
+        "sha256": "60b7481d065e4e13ce447cbe93ee760be1ee29d83b911e2a18002e6819844dac",
+        "bytes": 58020
+      },
+      "bin_demands.tsv": {
+        "sha256": "1e74c624843e97a24ddda8832d4926fe35a2cd0c4b6a3c598555c390d1364646",
+        "bytes": 1413
+      },
+      "boundaries.json": {
+        "sha256": "c8b849632b89ab3e4a1bdde5305e1ed3e0a2e7201f7f9530ba27160a4e238650",
+        "bytes": 449
+      },
+      "null_memberships.tsv": {
+        "sha256": "2d016e3cf1558613cf95733f091d05d87fdcfc39f0d86de460f01795d0d51533",
+        "bytes": 937745
+      },
+      "universe_bins.tsv": {
+        "sha256": "127d828644b778c25b6645a405b2bd2a7c2088251c7cc6f7fedfe009deda027a",
+        "bytes": 108375
+      }
+    },
+    "universe_genes": 1500,
+    "external_data_used": false,
+    "complete_external_freeze": false,
+    "scientific_validation": false,
+    "interpretation": "descriptive_expression_degree_sensitivity_not_permutation_p_value_or_causal_control"
+  },
+  "scientific_validation": false,
+  "real_cohort_effects_computed": false,
+  "docker_execution_verified": false,
+  "AWS_execution_verified": false,
+  "command": "bash tests/smoke_nextflow.sh",
+  "verification_replay_command": "bash tests/smoke_nextflow.sh --verify-only /home/analyst/te/work/synthetic/20261013T100312Z-439d82d9",
+  "first_verification_failure": {
+    "cause": "harness expected synthetic but R explicitly emits synthetic_test_only",
+    "resolution": "correct verifier label and reverify preserved completed/cached outputs without recomputation",
+    "processes_already_successful": true
+  },
+  "python": "3.10.22",
+  "nextflow_version": "N E X T F L O W\n      version 25.10.2 build 10555\n      created 28-11-2025 19:24 UTC (29-11-2025 04:24 JDT)\n      cite doi:10.1038/nbt.3820\n      http://nextflow.io"
+}
