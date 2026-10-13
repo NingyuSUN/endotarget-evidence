@@ -1,0 +1,76 @@
+{
+  "status": "READ_ONLY_REVIEW_COMPLETE_NO_NEW_SUBSTANTIVE_FINDINGS",
+  "source_commit": "f9ec70d9d466622cfeb97d32445ae616d18d8a9e",
+  "reviewer": {
+    "agent": "/root/astra_delivery_audit",
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "high",
+    "scope": "Current sources and small existing output tables; independent arithmetic, no new model fitting"
+  },
+  "requirements": [
+    {
+      "name": "donor_level_discovery_and_source_separated_replication",
+      "status": "VERIFIED_WITH_REPORTED_LIMITATIONS",
+      "evidence": "17733/17643 tested genes; 0 BH q<0.05 in each; source separation distinguished from genotype-confirmed individual non-overlap"
+    },
+    {
+      "name": "three_frozen_baselines",
+      "status": "VERIFIED",
+      "evidence": "Top20 agree/evaluable/selected B0=14/20/20 B1=3/13/20 G1=6/19/20; top50=36/49/50,16/35/50,26/47/50; unfilled missing outcomes"
+    },
+    {
+      "name": "uncertainty_and_stability",
+      "status": "VERIFIED",
+      "evidence": "Recomputed 500 draws, 487 valid, 13 singular; type7 interval[-0.3894736842,0.0868421053]; each method22LODO median retention14.5/20/19.5"
+    },
+    {
+      "name": "clinical_and_composition",
+      "status": "VERIFIED_WITH_REPORTED_LIMITATIONS",
+      "evidence": "3 actual fits,2 not estimable; HECA equal-donor MMPs means23.97396% cases,2.00043% controls; descriptive, not causal"
+    },
+    {
+      "name": "separate_genetics_and_dossiers",
+      "status": "VERIFIED_WITH_REPORTED_LIMITATIONS",
+      "evidence": "40 genes,39 unavailable,SKIDA1 limited annotations from one underlying publication; only inconclusive PARP9 dossier"
+    },
+    {
+      "name": "native_Nextflow_and_biology_report",
+      "status": "VERIFIED",
+      "evidence": "HECA trace two stages COMPLETED exit0; report matches existing outputs and explicit limitations"
+    },
+    {
+      "name": "actual_container_build_and_execution",
+      "status": "NOT_VERIFIED_NOT_EXECUTED",
+      "evidence": "Required goal milestone outstanding; static configuration is insufficient"
+    },
+    {
+      "name": "AWS",
+      "status": "DOCUMENTED_UNEXECUTED_OPTIONAL",
+      "evidence": "Guide required as documentation only; no cloud execution claim"
+    }
+  ],
+  "substantive_new_findings": [],
+  "audit_judgment": "Reported absence of significant cross-study supported shortlist and lack of G1 superiority are consistent with inspected evidence; interval includes zero, not equivalence proof.",
+  "scientific_validation": false,
+  "therapeutic_validation": false,
+  "goal_complete": false,
+  "evidence_sha256": {
+    "reports/biology_report_zh.md": "baed31af8014029f6ea6715fd3a32aae066763d7b550edf72c01a71c9153b699",
+    "reports/replication_v2_results.md": "5f8c750f553c564a5b128ac69c78ab94ff60246299951392628b210729b75d5f",
+    "reports/clinical_sensitivity_report.md": "29d572a1e7d229fa0dd497fad41fcb49d4643b4168cef6473aaf7775d8c59d60",
+    "reports/stromal_composition.md": "fcadde3732a89954ad94d580110ad26c1e6829b7a827b647307b0e6ea3a56b0c",
+    "reports/genetic_evidence_report.md": "37cc93a0a56d550fc1e7dad4a62dec96d54f1d96fd16da45d4d9e47def9375db",
+    "receipts/scientific_delivery_verification.json": "2f551212474bfc56d51961cc1e1356a8da2a402f0b8c2786a0a99e489967b16a",
+    "work/statistical/discovery_primary/de/de_all.tsv": "b1da2ff253f154e23f0b9276ecf45d9c2a1645b08b2fbbedb1fc4552a00c4e94",
+    "work/statistical/heca_primary/de/de_all.tsv": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+    "work/statistical/heca_primary/evaluation/selected_genes.tsv": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+    "work/statistical/bootstrap/paired_differences.tsv": "d35ddb121cd14e5bba30874d34b13858daa613eab8fc6a87c97fa3b28ae32c65",
+    "work/statistical/discovery_lodo/fold_metrics.tsv": "cd4a6fdc04c79373c0f71388a6c8f33fd69926bc3b6df793cf3e59ce9e0fc9bc",
+    "reports/clinical_sensitivity_scenarios.tsv": "19907dadfe476376f86f9fe521d040932650d14bfd8a99f94380e94c8fd51b43",
+    "reports/stromal_composition_groups.tsv": "2a78203cecb0915c6048a46df350ca0ab077b140fbe3bc9426986e7fc2581971",
+    "reports/genetic_evidence_summary.tsv": "9fda084c329efbd96be1e21867b7f4fb2e7959fbb7538a555c5ec3c3613ba42f",
+    "work/statistical/heca_primary/evaluation/dossier_selection.tsv": "d246cdcdb4ed87ae0cf0dfa0ba529069d5d67f04dff00c74346857e49d9957fa",
+    "logs/heca_primary_trace.tsv": "672cfebb2d2458f5041a92e43f468edfdc22fd837484e212eb6cb65796e803b3"
+  },
+  "created_utc": "2026-10-13T11:30:35.925706+00:00"
+}
