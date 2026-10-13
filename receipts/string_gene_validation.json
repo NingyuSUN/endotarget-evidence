@@ -1,0 +1,32 @@
+{
+  "status": "PASS_REFERENCE_ENGINEERING_ONLY",
+  "requested_model_config": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high"
+  },
+  "policy_frozen_before_mapping_utc": "2026-10-13T08:47:38.235607+00:00",
+  "policy_sha256": "5fd43b6f039a95285b3836a8251c7c2f9466c0c62256608a5492c21e5f740bc2",
+  "tests": {
+    "command": "python3 -m unittest discover -s tests -p test_string_gene_mapping.py -v",
+    "before_implementation": "6failures due missing implementation; logs/string_gene_tests_red.log",
+    "after_implementation": "6testsPASS; logs/string_gene_tests_green.log",
+    "hand_computed_edge_count_conservation": "5source=2excluded endpoints+1loop+1duplicatecollapse+1output",
+    "hand_computed_weight_conservation": "4.000source=1.600endpointexcluded+0.800loop+0.700duplicatecollapseloss+0.900output"
+  },
+  "real_edge_count_and_weight_conservation": true,
+  "output_roundtrip": true,
+  "original_protein_graph_sha256_preserved": "803cb3f406f33a81857c0759878485c41f018a5442b493d14f598b5b71808e09",
+  "code_sha256": "db6e90fa6ff469c0d3588edf9b66d97a5412887a5c0e181913a69b242a2ca730",
+  "tests_sha256": "646a687e3fcae8f7ed6a67094fe497f8498c324608534b9e05e38338cc784d29",
+  "new_downloads": 0,
+  "disease_effects_computed": false,
+  "expression_inputs_used_for_mapping": false,
+  "TSV_format_fix": {
+    "cause": "successfulcrosswalkrowsemptyfinalexcluded_reasonfieldcausedgittrailingtabchecks",
+    "resolution": "includedrowsnowexplicitnot_excluded; preservepriorcrosswalkinignoredprovenancefolder",
+    "preserved_prior_crosswalk": "data/reference/string/provenance/string_protein_gene_crosswalk_before_tsv_format.tsv",
+    "preserved_prior_crosswalk_sha256": "f973d26897c7aad84ae1c975137d517ba01036a8a2c0f771b26c21b588159fee",
+    "gene_edge_output_sha256_unchanged": true,
+    "targeted_tests_after_format_fix": "6PASS"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "status": "NAME_BASED_GENE_REFERENCE_PREPARED_NOT_EXPRESSION_UNIVERSE_OR_RANKING",
+  "requested_model_config": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high"
+  },
+  "config_frozen_at_utc": "2026-10-13T08:47:38.235607+00:00",
+  "run_finished_utc": "2026-10-13T08:56:08.327316+00:00",
+  "configuration_path": "config/network_gene_mapping.json",
+  "configuration_sha256": "5fd43b6f039a95285b3836a8251c7c2f9466c0c62256608a5492c21e5f740bc2",
+  "code_sha256": "db6e90fa6ff469c0d3588edf9b66d97a5412887a5c0e181913a69b242a2ca730",
+  "inputs": {
+    "protein_info": {
+      "path": "data/reference/string/9606.protein.info.v12.5.txt.gz",
+      "sha256": "144de4b0d98c6a7dfde6ddc2591cf88657f27b989eadff4f501450c3ed1f0f1c"
+    },
+    "protein_edges": {
+      "path": "data/reference/string/direct_evidence_protein_edges.tsv.gz",
+      "sha256": "803cb3f406f33a81857c0759878485c41f018a5442b493d14f598b5b71808e09"
+    },
+    "HGNC": {
+      "path": "data/reference/gene_annotation/hgnc_complete_set_2026-10-06.tsv",
+      "sha256": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d"
+    }
+  },
+  "original_protein_graph_preserved": true,
+  "outputs": [
+    {
+      "path": "data/reference/string/direct_evidence_gene_edges.tsv.gz",
+      "bytes": 845640,
+      "sha256": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033"
+    },
+    {
+      "path": "manifests/string_protein_gene_crosswalk.tsv",
+      "bytes": 2165201,
+      "sha256": "0a5c33a0441d4e2e78f3108e9bf633593222b6c7ea14cf4c11dae24b60771fea"
+    },
+    {
+      "path": "manifests/string_gene_mapping_statistics.json",
+      "bytes": 1532,
+      "sha256": "7f5aab3f473b0133879b134ae19c80970dca542c0da431b73c713938a85e947e"
+    }
+  ],
+  "statistics": {
+    "mapping": {
+      "source_protein_info_rows": 19699,
+      "mapping_decisions": {
+        "include": 19301,
+        "exclude_unmapped": 382,
+        "exclude_no_stable_target": 15,
+        "exclude_ambiguous": 1
+      },
+      "included_proteins": 19301,
+      "unique_mapped_genes": 19297,
+      "genes_with_multiple_proteins": 4,
+      "maximum_proteins_per_gene": 2,
+      "included_mapping_methods": {
+        "exact_HGNC_approved_symbol": 18820,
+        "exact_unique_HGNC_previous_symbol": 481
+      }
+    },
+    "edges": {
+      "source_protein_edges": 161548,
+      "endpoint_excluded_edges": 2236,
+      "gene_self_loops_excluded": 0,
+      "eligible_nonloop_protein_edges": 159312,
+      "source_weight_sum": "139296.265",
+      "endpoint_excluded_weight_sum": "1852.205",
+      "gene_self_loop_weight_sum": "0",
+      "eligible_nonloop_weight_sum": "137444.060",
+      "output_gene_edges": 159312,
+      "output_gene_nodes": 14554,
+      "output_gene_weight_sum": "137444.060",
+      "duplicate_gene_edges_collapsed": 0,
+      "duplicate_collapse_weight_loss": "0.000",
+      "endpoint_exclusion_reasons": {
+        "exclude_unmapped": 2178,
+        "exclude_ambiguous": 46,
+        "exclude_no_stable_target": 12
+      },
+      "endpoint_exclusion_reason_weight_sums": {
+        "exclude_unmapped": "1806.811",
+        "exclude_ambiguous": "35.794",
+        "exclude_no_stable_target": "9.600"
+      }
+    },
+    "weight_sum_units": "sum of operational direct evidence weights, not count, probability, independent evidence or biological effect",
+    "exact_edge_count_and_weight_conservation": true
+  },
+  "runtime_wall_seconds": 9.475907802581787,
+  "peak_RSS_bytes": 374185984,
+  "network_downloads": 0,
+  "disease_inputs_used": false,
+  "expression_inputs_used": false,
+  "induced_gene_universe_frozen": false,
+  "sequence_or_genome_release_equivalence_verified": false,
+  "mapping_limit": "ENSP->STRINGsourcepreferred_name->HGNCnamebasedmapping; genome release and sequence identity not verified"
+}

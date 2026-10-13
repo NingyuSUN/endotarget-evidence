@@ -1,0 +1,46 @@
+{
+  "mapping": {
+    "source_protein_info_rows": 19699,
+    "mapping_decisions": {
+      "include": 19301,
+      "exclude_unmapped": 382,
+      "exclude_no_stable_target": 15,
+      "exclude_ambiguous": 1
+    },
+    "included_proteins": 19301,
+    "unique_mapped_genes": 19297,
+    "genes_with_multiple_proteins": 4,
+    "maximum_proteins_per_gene": 2,
+    "included_mapping_methods": {
+      "exact_HGNC_approved_symbol": 18820,
+      "exact_unique_HGNC_previous_symbol": 481
+    }
+  },
+  "edges": {
+    "source_protein_edges": 161548,
+    "endpoint_excluded_edges": 2236,
+    "gene_self_loops_excluded": 0,
+    "eligible_nonloop_protein_edges": 159312,
+    "source_weight_sum": "139296.265",
+    "endpoint_excluded_weight_sum": "1852.205",
+    "gene_self_loop_weight_sum": "0",
+    "eligible_nonloop_weight_sum": "137444.060",
+    "output_gene_edges": 159312,
+    "output_gene_nodes": 14554,
+    "output_gene_weight_sum": "137444.060",
+    "duplicate_gene_edges_collapsed": 0,
+    "duplicate_collapse_weight_loss": "0.000",
+    "endpoint_exclusion_reasons": {
+      "exclude_unmapped": 2178,
+      "exclude_ambiguous": 46,
+      "exclude_no_stable_target": 12
+    },
+    "endpoint_exclusion_reason_weight_sums": {
+      "exclude_unmapped": "1806.811",
+      "exclude_ambiguous": "35.794",
+      "exclude_no_stable_target": "9.600"
+    }
+  },
+  "weight_sum_units": "sum of operational direct evidence weights, not count, probability, independent evidence or biological effect",
+  "exact_edge_count_and_weight_conservation": true
+}

@@ -1,0 +1,15 @@
+{
+  "status": "ID_ONLY_COVERAGE_NO_EXPRESSION_FILTER",
+  "discovery_accepted_source_IDs": 26109,
+  "discovery_IDs_with_name_mapped_STRING_protein_info": 17476,
+  "discovery_IDs_in_unfiltered_gene_background_nodes": 13701,
+  "discovery_IDs_absent_from_unfiltered_gene_background_nodes": 12408,
+  "discovery_mapping_path": "manifests/discovery_features_mapping.tsv",
+  "discovery_mapping_sha256": "41a1d85d2e66376f8129d5e02d18da377b6dd206213202c25aa38f9dd5eaf6ff",
+  "gene_background_sha256": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033",
+  "expression_values_read": false,
+  "disease_effects_read": false,
+  "graph_filtered_on_discovery_expression": false,
+  "induced_gene_universe_frozen": false,
+  "limitation": "ID coverage only; background edges not filtered by counts/expression, genes missing reference cannot be treated as biologically negative"
+}
