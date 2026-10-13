@@ -1,0 +1,299 @@
+{
+  "status": "METADATA_SCENARIOS_ONLY_M0_NOT_PASSED",
+  "source_rows_nonempty_id": 67,
+  "atlas_geo_matched": 60,
+  "IHC_rows_excluded": 7,
+  "GEO_clinical_disease_and_grade_matches": 60,
+  "exact_age_available": 60,
+  "explicit_hormone_FALSE": 60,
+  "scenarios": {
+    "author_proliferative": {
+      "n": 28,
+      "groups": {
+        "ENDO": 15,
+        "non-ENDO": 13
+      },
+      "minimum_8_per_group_numerically_met": true,
+      "IDs": [
+        "sample70",
+        "sample71",
+        "sample73",
+        "sample76",
+        "sample81",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample108",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample115",
+        "sample116",
+        "sample119",
+        "sample121",
+        "sample123",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ],
+      "age_range_by_group": {
+        "ENDO": [
+          22,
+          42
+        ],
+        "non-ENDO": [
+          25,
+          43
+        ]
+      }
+    },
+    "exclude_minor_clinical_flags_PROPOSED": {
+      "n": 23,
+      "groups": {
+        "ENDO": 12,
+        "non-ENDO": 11
+      },
+      "minimum_8_per_group_numerically_met": true,
+      "IDs": [
+        "sample70",
+        "sample71",
+        "sample73",
+        "sample76",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample123",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ],
+      "age_range_by_group": {
+        "ENDO": [
+          22,
+          40
+        ],
+        "non-ENDO": [
+          25,
+          40
+        ]
+      }
+    },
+    "also_quarantine_disease_inconsistency_PROPOSED": {
+      "n": 22,
+      "groups": {
+        "ENDO": 12,
+        "non-ENDO": 10
+      },
+      "minimum_8_per_group_numerically_met": true,
+      "IDs": [
+        "sample70",
+        "sample71",
+        "sample76",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample123",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ],
+      "age_range_by_group": {
+        "ENDO": [
+          22,
+          40
+        ],
+        "non-ENDO": [
+          25,
+          40
+        ]
+      }
+    },
+    "also_quarantine_phase_histology_conflict_PROPOSED": {
+      "n": 20,
+      "groups": {
+        "ENDO": 11,
+        "non-ENDO": 9
+      },
+      "minimum_8_per_group_numerically_met": true,
+      "IDs": [
+        "sample70",
+        "sample71",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ],
+      "age_range_by_group": {
+        "ENDO": [
+          22,
+          40
+        ],
+        "non-ENDO": [
+          25,
+          40
+        ]
+      }
+    },
+    "additionally_exclude_adenomyosis_SENSITIVITY_NOT_PRIMARY": {
+      "n": 16,
+      "groups": {
+        "ENDO": 7,
+        "non-ENDO": 9
+      },
+      "minimum_8_per_group_numerically_met": false,
+      "IDs": [
+        "sample70",
+        "sample71",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample125",
+        "sample130",
+        "sample134"
+      ],
+      "age_range_by_group": {
+        "ENDO": [
+          22,
+          35
+        ],
+        "non-ENDO": [
+          25,
+          40
+        ]
+      }
+    }
+  },
+  "minor_flagged_proliferative": [
+    {
+      "id": "sample81",
+      "condition": "endometrial polyp"
+    },
+    {
+      "id": "sample108",
+      "condition": "endometritis"
+    },
+    {
+      "id": "sample115",
+      "condition": "cervicitis"
+    },
+    {
+      "id": "sample119",
+      "condition": "endometrial polyp"
+    },
+    {
+      "id": "sample121",
+      "condition": "endometrial intraepithelial neoplasm"
+    }
+  ],
+  "disease_inconsistencies": [
+    "sample73"
+  ],
+  "phase_histology_conflicts": [
+    "sample76",
+    "sample108",
+    "sample121",
+    "sample123"
+  ],
+  "clinical_phase_rule_disagreement": [
+    "sample81"
+  ],
+  "secondary23_ids_match_minor_filtered_scenario": true,
+  "batch_cross_tab_conservative": {
+    "batch11": {
+      "non-ENDO": 2
+    },
+    "batch12": {
+      "non-ENDO": 1
+    },
+    "batch13": {
+      "ENDO": 2
+    },
+    "batch14": {
+      "ENDO": 2,
+      "non-ENDO": 2
+    },
+    "batch15": {
+      "ENDO": 1
+    },
+    "batch16": {
+      "ENDO": 1,
+      "non-ENDO": 3
+    },
+    "batch17": {
+      "non-ENDO": 1
+    },
+    "batch18": {
+      "ENDO": 2
+    },
+    "batch19": {
+      "ENDO": 3
+    }
+  },
+  "sequencing_cross_tab_conservative": {
+    "first": {
+      "ENDO": 5,
+      "non-ENDO": 5
+    },
+    "second": {
+      "ENDO": 6,
+      "non-ENDO": 4
+    }
+  },
+  "cell_lineage_counts_checked": false,
+  "design_matrix_checked": false,
+  "no_expression_effects": true
+}

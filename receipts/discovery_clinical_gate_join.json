@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-13T07:39:39.658983+00:00",
+  "command": "python3 scripts/discovery_clinical_gate.py",
+  "source_workbook": "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_PUBLISHED_SCREEN/sources/41467_2026_73020_MOESM3_ESM.xlsx",
+  "source_sha256": "5749f05690ffc1c7b6ff7492eba047b5870610c3f6387a47d7342e67538bce69",
+  "source_columns_read": {
+    "A": "Patient sample ID",
+    "B": "endometriosis status",
+    "C": "endometriosis grade",
+    "D": "Deep Infiltrating Endometriosis",
+    "E": "Endometrioma",
+    "F": "Peritoneal",
+    "G": "Adenomyosis",
+    "H": "Patient.age",
+    "I": "Hormonal treatment/IUD",
+    "O": "Menstrual cycle day (Base 1)",
+    "P": "Progesterone in serum (nmol/L)",
+    "R": "pathologist HE evaluation",
+    "T": "MenstrualCyclePhase",
+    "U": "10x capturing batch",
+    "V": "sequencing batch",
+    "W": "Minor exclusion criteria logical",
+    "X": "Minor exclusion criteria detail"
+  },
+  "sheet": "Sheet1",
+  "excluded_columns": "symptoms_and_pseudotime_and_published_analysis_inclusion_flags_not_used",
+  "publisher_byte_equivalence": "NOT_VERIFIED",
+  "archived_source_status": "OSF_manifest_SHA256_and_member_CRC_verified_by_source_retrieval",
+  "inputs": [
+    {
+      "path": "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_PUBLISHED_SCREEN/sources/41467_2026_73020_MOESM3_ESM.xlsx",
+      "sha256": "5749f05690ffc1c7b6ff7492eba047b5870610c3f6387a47d7342e67538bce69"
+    },
+    {
+      "path": "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/PRIMARY_CLINICAL_MANIFEST.csv",
+      "sha256": "28e9ae6f5e30e0f489e1d3b8ade3582a71e0a319b483758f17b51dddb7246ae5"
+    },
+    {
+      "path": "reports/clinical_gate_discovery_gsm.tsv",
+      "sha256": "c927b0c52cb39a50237a64bddb9381438ed13f8ab2bd2e98bb1f2b00119c9afe"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "manifests/discovery_clinical_candidates.tsv",
+      "sha256": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7"
+    },
+    {
+      "path": "reports/discovery_clinical_gate_summary.json",
+      "sha256": "8136da336760e51788117276c6c252e0a3b2142302a89371082d2d03d4a113fd"
+    }
+  ],
+  "source_workbook_unchanged": true,
+  "script_sha256": "dbc0e4d5ffd594bb80436f7dc60a8f116879747eb953bf78e38838f5dd4f48b1"
+}

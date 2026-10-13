@@ -1,0 +1,25 @@
+{
+  "status": "PASS_EXTRACTION_ONLY",
+  "checks": [
+    "exact60GSM_unique_join",
+    "source_workbook_hash_unchanged",
+    "deterministic_output_replay",
+    "disease_inconsistency_preserved",
+    "phase_conflicts_preserved",
+    "minor_clinical_exclusions_preserved",
+    "20_candidate_scenario_11_cases_9_controls",
+    "adenomyosis_free_sensitivity_fails_minimum",
+    "final_eligibility_NOT_VERIFIED"
+  ],
+  "outputs_sha256": {
+    "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
+    "reports/discovery_clinical_gate_summary.json": "8136da336760e51788117276c6c252e0a3b2142302a89371082d2d03d4a113fd"
+  },
+  "not_checked": [
+    "cell_counts",
+    "raw_count_layer",
+    "model_design",
+    "independent_replication",
+    "biological_effects"
+  ]
+}
