@@ -80,6 +80,41 @@
       "commit": "7acb418639242d505bcba98efefffcd9985b1c98",
       "tests_passed": 25,
       "final_adjudication": "lead inspected diff, verified code hashes and ran fresh committed code25/25; no additional independent rereview"
+    },
+    {
+      "task": "/root/sol61_public_supplements",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "status": "completed_with_download_failures",
+      "commit": "01e64a5f60023cc2d515c9a70870cd93fdae1a0c",
+      "result": "0of2 direct clinical workbooks recovered; bounded failures preserved, no DE tables read"
+    },
+    {
+      "task": "/root/astra_clinical_gate_mapping",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commits": [
+        "fbbbad45d11f2df9bd643decca1261b1f3c40cca",
+        "3baf76370de52c4f5663fe323f876aed534c44b4"
+      ],
+      "result": "60of60 discoveryclinicalGSMjoin; officialHECAmetadata retrieved; bounded pre-effect independentmethodrecommendations returned"
+    },
+    {
+      "task": "/root/sol61_streaming_input_route",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commit": "8675c4496f7ca1b0265caab6eb5cae94a508a5be",
+      "result": "Range-fetched OSF licensedreader+small realcounts+archivedclinicaltable; mappingirreversibility audited; actualsourceRDSnotrerun"
+    },
+    {
+      "task": "/root/sol61_heca_h5_metadata",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commit": "c6242be63671e4b9b13ddd986e2e499575db2347",
+      "result": "H5metadata312246nuclei/68samples/63genotypes; authorcrosswalk68of68; noexpressionmatrixread"
     }
   ]
 }

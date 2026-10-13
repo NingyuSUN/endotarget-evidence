@@ -1,5 +1,8 @@
 # Resource gate — 2026-10-13
 
+**Historical audit; current checkpoint:** see CURRENT_STATE.md. A later metadata environment, compact count route and author-confirmed donor crosswalk now exist. Original complete-file constraints still apply; no container has run.
+
+
 Status: OPEN / full-input path not demonstrated. This is a capacity calculation, not an observed out-of-memory failure.
 
 SRV01 project filesystem had 69,935,509,504 free bytes (65.13 GiB) at the recorded probe. The host has approximately 31 GiB total RAM. Preserve at least 20 GiB free disk for the existing server.

@@ -1,0 +1,821 @@
+{
+  "status": "PROPOSED_INPUTS_NOT_FROZEN",
+  "numpy_version": "2.2.6",
+  "source_sha256": {
+    "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
+    "data/input_routes/osf/independent_donor_coverage.csv": "82909d1289e475e4c2806a7370049a0de765a11a78e7111fa3885c43ae35b132"
+  },
+  "selected_ids": [
+    "sample70",
+    "sample71",
+    "sample76",
+    "sample82",
+    "sample83",
+    "sample84",
+    "sample91",
+    "sample94",
+    "sample95",
+    "sample96",
+    "sample106",
+    "sample110",
+    "sample111",
+    "sample112",
+    "sample114",
+    "sample116",
+    "sample123",
+    "sample125",
+    "sample126",
+    "sample130",
+    "sample134",
+    "sample135"
+  ],
+  "models": {
+    "author_adjudicated_phase22": [
+      {
+        "terms": [
+          "age",
+          "capture"
+        ],
+        "n": 22,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 12
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11"
+        ],
+        "rank": 11,
+        "n_columns": 11,
+        "full_rank": true,
+        "residual_df": 11,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 2.4683271832718328,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "adenomyosis"
+        ],
+        "n": 22,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 12
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "adenomyosis"
+        ],
+        "rank": 12,
+        "n_columns": 12,
+        "full_rank": true,
+        "residual_df": 10,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 1.9517916554266705,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing"
+        ],
+        "n": 22,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 12
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 4,
+        "n_columns": 4,
+        "full_rank": true,
+        "residual_df": 18,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 5.162127556493754,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing",
+          "adenomyosis"
+        ],
+        "n": 22,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 12
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first",
+          "adenomyosis"
+        ],
+        "rank": 5,
+        "n_columns": 5,
+        "full_rank": true,
+        "residual_df": 17,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 4.375428464590648,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "sequencing"
+        ],
+        "n": 22,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 12
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 11,
+        "n_columns": 12,
+        "full_rank": false,
+        "residual_df": 11,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 2.4683271832718328,
+        "count_minimum_pass": true,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age"
+        ],
+        "n": 22,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 12
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years"
+        ],
+        "rank": 3,
+        "n_columns": 3,
+        "full_rank": true,
+        "residual_df": 19,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 5.169954617023246,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      }
+    ],
+    "strict_histology_concordance20": [
+      {
+        "terms": [
+          "age",
+          "capture"
+        ],
+        "n": 20,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 11
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11"
+        ],
+        "rank": 11,
+        "n_columns": 11,
+        "full_rank": true,
+        "residual_df": 9,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 1.6465517241379306,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "adenomyosis"
+        ],
+        "n": 20,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 11
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "adenomyosis"
+        ],
+        "rank": 12,
+        "n_columns": 12,
+        "full_rank": true,
+        "residual_df": 8,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 1.1635841836734693,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing"
+        ],
+        "n": 20,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 11
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 4,
+        "n_columns": 4,
+        "full_rank": true,
+        "residual_df": 16,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 4.7517963411946225,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing",
+          "adenomyosis"
+        ],
+        "n": 20,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 11
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first",
+          "adenomyosis"
+        ],
+        "rank": 5,
+        "n_columns": 5,
+        "full_rank": true,
+        "residual_df": 15,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 3.934890687455449,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "sequencing"
+        ],
+        "n": 20,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 11
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 11,
+        "n_columns": 12,
+        "full_rank": false,
+        "residual_df": 9,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 1.6465517241379313,
+        "count_minimum_pass": true,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age"
+        ],
+        "n": 20,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 11
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years"
+        ],
+        "rank": 3,
+        "n_columns": 3,
+        "full_rank": true,
+        "residual_df": 17,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 4.8187875477880935,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      }
+    ],
+    "author_phase_adenomyosis_free18": [
+      {
+        "terms": [
+          "age",
+          "capture"
+        ],
+        "n": 18,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 8
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11"
+        ],
+        "rank": 11,
+        "n_columns": 11,
+        "full_rank": true,
+        "residual_df": 7,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 1.5811988616150836,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "adenomyosis"
+        ],
+        "n": 18,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 8
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "adenomyosis"
+        ],
+        "rank": 11,
+        "n_columns": 12,
+        "full_rank": false,
+        "residual_df": 7,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 1.5811988616150836,
+        "count_minimum_pass": true,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing"
+        ],
+        "n": 18,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 8
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 4,
+        "n_columns": 4,
+        "full_rank": true,
+        "residual_df": 14,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 4.367508333924392,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing",
+          "adenomyosis"
+        ],
+        "n": 18,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 8
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first",
+          "adenomyosis"
+        ],
+        "rank": 4,
+        "n_columns": 5,
+        "full_rank": false,
+        "residual_df": 14,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 4.367508333924392,
+        "count_minimum_pass": true,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "sequencing"
+        ],
+        "n": 18,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 8
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 11,
+        "n_columns": 12,
+        "full_rank": false,
+        "residual_df": 7,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 1.581198861615084,
+        "count_minimum_pass": true,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age"
+        ],
+        "n": 18,
+        "groups": {
+          "non-ENDO": 10,
+          "ENDO": 8
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years"
+        ],
+        "rank": 3,
+        "n_columns": 3,
+        "full_rank": true,
+        "residual_df": 15,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 4.41627939726799,
+        "count_minimum_pass": true,
+        "structural_gate_pass": true,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      }
+    ],
+    "strict_phase_adenomyosis_free16": [
+      {
+        "terms": [
+          "age",
+          "capture"
+        ],
+        "n": 16,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 7
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11"
+        ],
+        "rank": 11,
+        "n_columns": 11,
+        "full_rank": true,
+        "residual_df": 5,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 0.6651332183247078,
+        "count_minimum_pass": false,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "adenomyosis"
+        ],
+        "n": 16,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 7
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "adenomyosis"
+        ],
+        "rank": 11,
+        "n_columns": 12,
+        "full_rank": false,
+        "residual_df": 5,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 0.6651332183247076,
+        "count_minimum_pass": false,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing"
+        ],
+        "n": 16,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 7
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 4,
+        "n_columns": 4,
+        "full_rank": true,
+        "residual_df": 12,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 3.9344177761110064,
+        "count_minimum_pass": false,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "sequencing",
+          "adenomyosis"
+        ],
+        "n": 16,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 7
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "sequencing:second_vs_first",
+          "adenomyosis"
+        ],
+        "rank": 4,
+        "n_columns": 5,
+        "full_rank": false,
+        "residual_df": 12,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 3.9344177761110064,
+        "count_minimum_pass": false,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age",
+          "capture",
+          "sequencing"
+        ],
+        "n": 16,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 7
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years",
+          "capture:batch12_vs_batch11",
+          "capture:batch13_vs_batch11",
+          "capture:batch14_vs_batch11",
+          "capture:batch15_vs_batch11",
+          "capture:batch16_vs_batch11",
+          "capture:batch17_vs_batch11",
+          "capture:batch18_vs_batch11",
+          "capture:batch19_vs_batch11",
+          "sequencing:second_vs_first"
+        ],
+        "rank": 11,
+        "n_columns": 12,
+        "full_rank": false,
+        "residual_df": 5,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 0.6651332183247076,
+        "count_minimum_pass": false,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      },
+      {
+        "terms": [
+          "age"
+        ],
+        "n": 16,
+        "groups": {
+          "non-ENDO": 9,
+          "ENDO": 7
+        },
+        "columns": [
+          "intercept",
+          "ENDO_minus_non_ENDO",
+          "age_centered_years"
+        ],
+        "rank": 3,
+        "n_columns": 3,
+        "full_rank": true,
+        "residual_df": 13,
+        "disease_contrast_identifiable": true,
+        "disease_information_unweighted": 3.9361958958441114,
+        "count_minimum_pass": false,
+        "structural_gate_pass": false,
+        "scope": "metadata-only algebra; not scientific validation, not frozen model"
+      }
+    ]
+  },
+  "batch_overlap": {
+    "10x capturing batch": {
+      "batch11": {
+        "non-ENDO": 2
+      },
+      "batch12": {
+        "ENDO": 1,
+        "non-ENDO": 1
+      },
+      "batch13": {
+        "ENDO": 2
+      },
+      "batch14": {
+        "ENDO": 2,
+        "non-ENDO": 2
+      },
+      "batch15": {
+        "ENDO": 1
+      },
+      "batch16": {
+        "non-ENDO": 3,
+        "ENDO": 1
+      },
+      "batch17": {
+        "non-ENDO": 1
+      },
+      "batch18": {
+        "non-ENDO": 1,
+        "ENDO": 2
+      },
+      "batch19": {
+        "ENDO": 3
+      }
+    },
+    "sequencing batch": {
+      "first": {
+        "non-ENDO": 5,
+        "ENDO": 6
+      },
+      "second": {
+        "non-ENDO": 5,
+        "ENDO": 6
+      }
+    }
+  },
+  "coverage": {
+    "cells_min": 2273,
+    "all_22_meet_50": true
+  },
+  "validation": {
+    "GSM_disease_coverage_join": "PASS",
+    "perfect_confounding_guard": "PASS",
+    "minimum_donor_guard": "PASS"
+  },
+  "interpretation": "Rank and residual degrees of freedom assess estimability, not biological validity, power, or removal of residual confounding. Sequencing batch is nested in capture batch here. No disease effects computed."
+}

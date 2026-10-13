@@ -1,5 +1,8 @@
 # Public data and readiness audit
 
+**Historical audit; current checkpoint:** see CURRENT_STATE.md. A later metadata environment, compact count route and author-confirmed donor crosswalk now exist. Original complete-file constraints still apply; no container has run.
+
+
 Checked: 2026-10-13. Labels: **VERIFIED** = source record or directly inspected metadata; **PROPOSED** = project choice; **NOT VERIFIED** = not yet inspected or executed. Public catalog presence alone does not make data analysis-ready.
 
 ## 1. Discovery: GSE266265

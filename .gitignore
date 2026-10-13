@@ -14,3 +14,6 @@ __pycache__/
 *.fastq*
 *.bam
 *.cram
+envs/
+cache/
+tmp/

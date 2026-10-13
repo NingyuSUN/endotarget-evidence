@@ -1,6 +1,9 @@
 # Research protocol — design v0.1
 
-Date: 2026-10-13. Status: **PROPOSED, not preregistered or executed**. This protocol was drafted after reading public study descriptions. It is a retrospective analysis with a planned freeze before computing external disease effects, not a blinded validation claim.
+Date: 2026-10-13. Status: **PROPOSED, not preregistered or executed**.
+
+Pre-effect implementation clarifications are adopted in [PRE_EFFECT_METHOD_DECISIONS.md](PRE_EFFECT_METHOD_DECISIONS.md): use author-adjudicated proliferative phase consistently across cohorts, retain source-qualified hormone evidence, declare pathology/batch handling and reversible compact-count ingestion. These supersede tentative clinical scenarios; the complete M0 and ranking freezes remain incomplete. No disease effects have been computed.
+ This protocol was drafted after reading public study descriptions. It is a retrospective analysis with a planned freeze before computing external disease effects, not a blinded validation claim.
 
 ## 1. Decision and scope
 

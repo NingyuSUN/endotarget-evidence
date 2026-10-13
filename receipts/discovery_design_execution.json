@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-10-13T07:59:00.704757+00:00",
+  "host": "SRV01",
+  "command": "envs/m0-h5/bin/python scripts/discovery_design_audit.py",
+  "exit_code": 0,
+  "python_compile_pass": true,
+  "source_hashes": {
+    "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
+    "data/input_routes/osf/independent_donor_coverage.csv": "82909d1289e475e4c2806a7370049a0de765a11a78e7111fa3885c43ae35b132"
+  },
+  "validation": {
+    "GSM_disease_coverage_join": "PASS",
+    "perfect_confounding_guard": "PASS",
+    "minimum_donor_guard": "PASS"
+  },
+  "primary_candidate_design": {
+    "terms": [
+      "age",
+      "capture",
+      "adenomyosis"
+    ],
+    "n": 22,
+    "groups": {
+      "non-ENDO": 10,
+      "ENDO": 12
+    },
+    "columns": [
+      "intercept",
+      "ENDO_minus_non_ENDO",
+      "age_centered_years",
+      "capture:batch12_vs_batch11",
+      "capture:batch13_vs_batch11",
+      "capture:batch14_vs_batch11",
+      "capture:batch15_vs_batch11",
+      "capture:batch16_vs_batch11",
+      "capture:batch17_vs_batch11",
+      "capture:batch18_vs_batch11",
+      "capture:batch19_vs_batch11",
+      "adenomyosis"
+    ],
+    "rank": 12,
+    "n_columns": 12,
+    "full_rank": true,
+    "residual_df": 10,
+    "disease_contrast_identifiable": true,
+    "disease_information_unweighted": 1.9517916554266705,
+    "count_minimum_pass": true,
+    "structural_gate_pass": true,
+    "scope": "metadata-only algebra; not scientific validation, not frozen model"
+  },
+  "disease_effects_read_or_computed": false,
+  "script_sha256": "205cd2593b7239c6c0f7b6297872e0402cf2238647cc21a762ebc2c3463d759d"
+}
