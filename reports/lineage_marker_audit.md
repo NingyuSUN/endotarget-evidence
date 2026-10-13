@@ -1,14 +1,14 @@
 # Fixed-panel lineage plausibility audit
 
-**Executed, descriptive only:** the fixed 23-marker panel was assessed for the 22 discovery donor fibroblast pseudobulks. The same 22 donors' source-defined mural remainder was available after exact checks. The aggregate pattern is broadly consistent with the inherited fibroblast boundary, while residual signals and shared marker expression prevent any claim of anatomical purity or independent cell reannotation. No disease labels, group effects, p-values, target rankings or new exclusion rules were used.
+**Executed, descriptive only:** the unchanged fixed 23-marker panel was assessed for the 22 discovery donor fibroblast pseudobulks and 22 HECA donor stromal-fibroblast pseudobulks. The same 22 donors' source-defined mural remainder was available after exact checks. The aggregate pattern is broadly consistent with the inherited fibroblast boundary, while residual signals and shared marker expression prevent any claim of anatomical purity or independent cell reannotation. No disease labels, group effects, p-values, target rankings or new exclusion rules were used.
 
 ## What was measured
 
-The panel and interpretation were fixed at 2026-10-13T08:40:50Z before marker-value inspection (receipts/lineage_marker_panel_freeze.json). Each donor's CPM is one million times the marker's count divided by the sum of **all 26,109 retained stable-gene counts in that donor and population**. Every donor then has equal weight. These are relative RNA abundances, not percent cells or purity. Discovery's original fractional estimated UMIs remain unrounded.
+The panel and interpretation were fixed at 2026-10-13T08:40:50Z before marker-value inspection (receipts/lineage_marker_panel_freeze.json). Each donor's CPM is one million times the marker's count divided by the sum of **all retained stable-gene counts in that donor and population (26,109 discovery; 26,125 HECA)**. Every donor then has equal weight. These are relative RNA abundances, not percent cells or purity. Discovery's original fractional estimated UMIs remain unrounded. HECA uses genuine downloaded integer UMIs, without inverse reconstruction; no count input was changed by this audit.
 
-All 23 markers map uniquely to the pinned HGNC stable IDs and are present in both population matrices. Each summary below covers 22 donors. Quartiles use the inclusive sample-quantile convention; full donor values, mean, median, quartiles, nonzero-count denominators and ranges are in lineage_marker_audit_donors.tsv and lineage_marker_audit_summary.tsv. An absent feature would be reported unavailable, never replaced by zero.
+All 23 markers map uniquely to the pinned HGNC stable IDs and are present in all three population matrices. Each summary below covers 22 donors. Quartiles use the inclusive sample-quantile convention; full donor values, mean, median, quartiles, nonzero-count denominators and ranges are in lineage_marker_audit_donors.tsv and lineage_marker_audit_summary.tsv. An absent feature would be reported unavailable, never replaced by zero.
 
-## All predeclared markers
+## Discovery: all predeclared markers
 
 | Marker | Primary fibroblast median CPM [Q1,Q3] | Source mural remainder median CPM [Q1,Q3] |
 |---|---:|---:|
@@ -52,9 +52,45 @@ Every one of the 34,600 canonical source features across all 23 original compact
 
 This is a remainder of the same secondary OSF aggregation of inherited author labels, not an independent purified cell reference. Exact arithmetic and membership checks establish compatibility, not biological purity. Full counts/identifiers, input/output hashes and validation results are in receipts/lineage_marker_audit.json.
 
+## HECA: same frozen panel, no disease grouping
+
+The 22 HECA donors contribute 52,744 previously selected nuclei. All 23 panel genes are available in the 26,125-gene matrix. The denominator remains each donor's full retained-gene count total, and every donor has equal summary weight. These snRNA abundances are not calibrated to discovery scRNA values: different assays, tissue compartments, populations and retained-gene universes prevent a cross-cohort purity comparison.
+
+| Marker | HECA median CPM [Q1,Q3] | Nonzero donors / 22 | Range CPM |
+|---|---:|---:|---:|
+| DCN | 212.69 [184.55, 291.12] | 22/22 | 159.53–804.73 |
+| LUM | 100.93 [68.92, 135.39] | 22/22 | 49.67–773.45 |
+| COL1A1 | 1825.58 [1156.35, 2817.60] | 22/22 | 581.08–4154.51 |
+| COL1A2 | 1261.10 [934.70, 1729.40] | 22/22 | 674.80–2482.15 |
+| PDGFRA | 254.98 [207.96, 313.26] | 22/22 | 168.03–781.04 |
+| PRL | 0.26 [0.16, 0.33] | 19/22 | 0.00–0.65 |
+| IGFBP1 | 0.00 [0.00, 0.62] | 9/22 | 0.00–26.51 |
+| C7 | 1.99 [1.66, 3.58] | 22/22 | 0.44–23.32 |
+| CXCL14 | 1.17 [0.56, 2.09] | 22/22 | 0.11–30.98 |
+| RGS5 | 7.21 [5.68, 8.09] | 22/22 | 4.45–12.98 |
+| PDGFRB | 112.86 [87.90, 151.76] | 22/22 | 72.74–518.95 |
+| MYH11 | 21.17 [18.31, 31.13] | 22/22 | 11.19–51.84 |
+| ACTA2 | 54.87 [51.53, 74.46] | 22/22 | 38.94–263.49 |
+| TAGLN | 23.75 [18.32, 32.05] | 22/22 | 9.53–757.09 |
+| EPCAM | 43.87 [35.74, 52.93] | 22/22 | 26.19–74.52 |
+| KRT8 | 14.38 [12.36, 23.84] | 22/22 | 3.56–33.59 |
+| KRT18 | 27.73 [19.38, 40.49] | 22/22 | 5.06–60.88 |
+| PECAM1 | 3.35 [2.60, 5.14] | 22/22 | 2.16–8.64 |
+| VWF | 5.20 [3.64, 7.51] | 22/22 | 2.51–10.47 |
+| PTPRC | 12.76 [8.61, 20.29] | 22/22 | 4.00–41.37 |
+| LST1 | 1.73 [1.29, 2.23] | 22/22 | 0.58–4.43 |
+| HOXA13 | 1.80 [0.86, 4.06] | 20/22 | 0.00–12.52 |
+| KRT5 | 0.32 [0.00, 1.02] | 14/22 | 0.00–3.02 |
+
+DCN, LUM, COL1A1, COL1A2 and PDGFRA have recorded counts in all 22 donors, supporting broad stromal/fibroblast population plausibility. Mural/contractile signals also remain: MYH11 median 21.17 CPM, ACTA2 54.87, TAGLN 23.75 with a 9.53–757.09 range. The visible donor variability is preserved, without treating it as disease association or removing a donor.
+
+Nonzero epithelial, endothelial and immune context signals remain (EPCAM median 43.87 CPM; PTPRC 12.76). HOXA13 is nonzero in 20/22 donors, median 1.80 CPM and maximum 12.52; KRT5 is nonzero in 14/22, median 0.32 and maximum 3.02. Excluding the source HOXA13-labelled cluster therefore does not imply zero HOXA13 expression in every retained nucleus. Aggregation cannot separate shared expression, ambient RNA, minority cells, doublets or misannotation. The assay supplies no purity fraction or independent anatomical proof.
+
+PRL is nonzero in 19/22 and IGFBP1 in 9/22; low/absent decidual markers are compatible with the predeclared proliferative context and trigger no rephasing. No new threshold or eligibility change follows from any of these observations. The bounded marker follow-up is complete; source identity, independent per-cell validation and purity limitations remain explicit rather than being converted into a scientific validation pass.
+
 ## Gate meaning and remaining limits
 
-The executed audit completes the agreed **limited population-level interpretation** of the protocol's fixed broad-lineage marker check for discovery. Independent cell-level lineage validation, anatomical purity and disease-specific cell-mixture effects remain unestablished. Those limitations must be carried into interpretation; no new cell exclusions or outcome-guided thresholds are justified by this audit. The replication marker check remains pending until the HECA integer-count stable matrix is ready; the same frozen panel and disease-blind script can process it via --heca-counts.
+The executed audit completes the agreed **limited population-level interpretation** of the protocol's fixed broad-lineage marker check for both cohorts. Independent cell-level lineage validation, anatomical purity and disease-specific cell-mixture effects remain unestablished. Those limitations must be carried into interpretation; no new cell exclusions or outcome-guided thresholds are justified by this audit. The replication check has now been executed with the same unchanged script and frozen panel using --heca-counts. The final HECA count SHA256 is 77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0. All original discovery/mural table rows are byte-for-byte preserved (receipts/lineage_marker_heca_extension.json).
 
 The source crosswalk is now explicitly qualified in config/discovery_lineage.json as secondary OSF grouping of original author labels. The unchanged discovery preparation script was rerun once to refresh its receipt, and both source-count and stable-count SHA256 hashes were unchanged (receipts/lineage_config_receipt_refresh.json). Source-level participant independence for the final 22+22 ledgers is supported in cohort_independence_audit.md, with no genotype proof claimed.
 

@@ -1,0 +1,31 @@
+{
+  "before": {
+    "reports/lineage_marker_audit_donors.tsv": {
+      "sha256": "08ff619f8438f5c5ef0d801290069528a451c663dfdfe28755fcb440a59a21d7",
+      "lines": 1013
+    },
+    "reports/lineage_marker_audit_summary.tsv": {
+      "sha256": "9f516c1b14b6e943548a6ce3d2d2bd6ddefb1a15a09f34dcfca2435f8361253e",
+      "lines": 47
+    },
+    "unchanged_script_sha256": "32a2ef4ab6fbdeb8af75e5d62f14e37a82a3b570d5dc3de5057fc5c02d4ead9c"
+  },
+  "completed_utc": "2026-10-13T09:22:31.863851+00:00",
+  "heca_input": "data/processed/heca/counts_stable.tsv.gz",
+  "heca_sha256": "77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0",
+  "unchanged_script": true,
+  "unchanged_frozen_panel_and_decision": true,
+  "discovery_and_mural_original_rows_byte_identical": true,
+  "added_heca_donors": 22,
+  "added_heca_marker_rows": 506,
+  "all_summary_rows": 69,
+  "all_donor_marker_rows": 1518,
+  "no_disease_group_columns_or_DE": true,
+  "no_new_exclusions_or_thresholds": true,
+  "outputs": {
+    "reports/lineage_marker_audit.md": "3e9051f93601703cca8ae0be126bab1961abeed60846872ae01fd8736fab6544",
+    "reports/lineage_marker_audit_donors.tsv": "beacd0269ce61d0f832113172b0d27c527e84b46f4196eb10135e085607f3918",
+    "reports/lineage_marker_audit_summary.tsv": "6c4e7bfe2eae92b702bb4fedf04f4769b1643b6b901a92ad317b80b0979919db",
+    "receipts/lineage_marker_audit.json": "71187dde34dec5135535d55fdfa8575dda5ad3a99e590958de2f678644f10353"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-10-13T08:51:00.718898+00:00",
+  "created_utc": "2026-10-13T09:20:02.022993+00:00",
   "audit": "fixed-panel descriptive population plausibility only",
   "script_sha256": "32a2ef4ab6fbdeb8af75e5d62f14e37a82a3b570d5dc3de5057fc5c02d4ead9c",
   "panel_freeze_receipt_sha256": "376f3987c29c8302c3fd8fb864a0109d2d7ff2a6e11b2259aa5d4a67592f07b6",
@@ -13,7 +13,8 @@
     "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/SOURCE_GENE_MAPPING.csv": "e69c67b1032f1af2653499653c4403af2e383c6cf5779f07087df2eca62d6fb0",
     "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/PRIMARY_CELL_ANNOTATION_MANIFEST.csv.gz": "22337617e58095ccd04f6ad54deefb9242e1f948a2d506c68e033a36bedc35c0",
     "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/DONOR_CELLTYPE_MANIFEST.csv": "ef4d58f438df100ad4d1a613c89db0bbd39b4cb2bba8b6d23ae518d7d91ac316",
-    "config/discovery_lineage.json": "868ba258cdc8b5911aba63f3e352dfc0f7ebe96f5da420b9707957faa9839645"
+    "config/discovery_lineage.json": "868ba258cdc8b5911aba63f3e352dfc0f7ebe96f5da420b9707957faa9839645",
+    "data/processed/heca/counts_stable.tsv.gz": "77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0"
   },
   "disease_columns_consumed": false,
   "new_cell_or_donor_exclusions": false,
@@ -46,6 +47,12 @@
       "features": 26109,
       "total_count_min": "234215.8305364094922830400000",
       "total_count_max": "3394366.18529442529287334"
+    },
+    "heca/primary_stromal_fibroblast": {
+      "donors": 22,
+      "features": 26125,
+      "total_count_min": "1387077",
+      "total_count_max": "44675364"
     }
   },
   "comparator": {
@@ -221,7 +228,7 @@
     "missing_feature_not_observed_zero"
   ],
   "outputs": {
-    "reports/lineage_marker_audit_donors.tsv": "08ff619f8438f5c5ef0d801290069528a451c663dfdfe28755fcb440a59a21d7",
-    "reports/lineage_marker_audit_summary.tsv": "9f516c1b14b6e943548a6ce3d2d2bd6ddefb1a15a09f34dcfca2435f8361253e"
+    "reports/lineage_marker_audit_donors.tsv": "beacd0269ce61d0f832113172b0d27c527e84b46f4196eb10135e085607f3918",
+    "reports/lineage_marker_audit_summary.tsv": "6c4e7bfe2eae92b702bb4fedf04f4769b1643b6b901a92ad317b80b0979919db"
   }
 }
