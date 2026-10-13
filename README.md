@@ -2,7 +2,7 @@
 
 **Public single-cell evidence for prioritizing endometriosis research targets.**
 
-Status: **DESIGN ONLY — 2026-10-13.** Data sources have been checked at the publication/catalog level. No expression matrices have been analyzed, no targets have been selected, no models or cloud jobs have run, and no remote repository has been created in this round.
+Status: **M0 IMPLEMENTATION IN PROGRESS — 2026-10-13.** The project runs on SRV01 under /home/analyst/te. Bounded public-metadata retrieval and audit implementation have started. Scientific readiness remains NOT PASSED: no expression matrices analyzed, target rankings computed, container workflow executed, or AWS job run. This server has a local Git repository; no GitHub repository has been published.
 
 [中文说明](README.zh-CN.md) · [Research protocol](docs/RESEARCH_PROTOCOL.md) · [Data sources and gates](docs/DATA_SOURCES.md)
 
@@ -22,7 +22,7 @@ This project connects reproductive biology and omics research with computational
 - Donor-level differential expression and explicit menstrual-phase/treatment controls.
 - Three ranking baselines: expression evidence, network degree, and network propagation.
 - Public human-genetic evidence as a separate evidence layer, followed by 3–5 candidate dossiers; report fewer if the evidence does not justify that many.
-- Nextflow, containers, one documented AWS execution, and an English report for biologists are implementation deliverables, not completed capabilities.
+- Nextflow, containers, a documented SRV01 execution, optional AWS portability instructions, and an English report for biologists are implementation deliverables. Actual execution was moved to SRV01 by the user; it supplies no AWS execution evidence.
 
 ```mermaid
 flowchart LR
@@ -50,9 +50,21 @@ Can network propagation rank genes whose disease-associated expression changes t
 
 ## Results and reproducibility
 
-**No scientific results are available yet.** There are no performance badges, example target scores, completed-run commands, or deployment claims in this design release. Planned commands and artifact contracts are explicitly marked in the engineering design.
+**No scientific results are available yet.** The SRV01 implementation plan, [resource gate](docs/RESOURCE_FEASIBILITY.md), runtime status, and [preliminary scientific readiness](reports/m0_scientific_readiness.md) distinguish actual checks from pending analysis. Metadata/software test results do not validate a therapeutic target.
 
 Planned evidence: donor/exclusion flowchart; cross-cohort effect plots; three-method comparison; sensitivity/failure analysis; 3–5 evidence dossiers; a two-page biology brief; exact input/software/run receipts.
+
+## Executed metadata-audit entry point
+
+On SRV01 only:
+
+```bash
+cd /home/analyst/te
+python3 -m unittest discover -s tests -v
+python3 scripts/m0_metadata.py
+```
+
+The real audit and 22 boundary tests passed. Validated cached files are reused with original retrieval provenance. See [audit summary](reports/m0_metadata_summary.md) and [readiness JSON](reports/m0_metadata_readiness.json). Successful metadata execution leaves Stage 0 OPEN until clinical, cell, count and resource gates pass.
 
 ## Repository contents today
 
@@ -64,7 +76,7 @@ templates/{TARGET_DOSSIER,BIOLOGY_BRIEF}.md
 receipts/metadata_audit_2026-10-13.json   # actual small metadata audit only
 ```
 
-This folder can become the root of a repository named `endo-target-evidence`. The planned code layout is documented rather than represented by empty or nonfunctional modules.
+This is the working project root on SRV01. The listing above preserves the original design package; implementation records additionally live in scripts/, tests/, reports/ and receipts/. Scientific modules remain gated; no empty success placeholders are provided.
 
 ## Data use and attribution
 

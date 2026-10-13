@@ -13,6 +13,31 @@
       "status": "completed",
       "evidence": "spawn_agent call configured explicitly; returned canonical task name",
       "result": "M0 not passed; cell donor mapping and clinical/count/resource gates open"
+    },
+    {
+      "task": "/root/sol61_metadata_implementation",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "attempts": 2,
+      "status": "capacity_error_before_execution",
+      "error": "Selected model is at capacity. Please try a different model."
+    },
+    {
+      "task": "/root/astra_metadata_implementation",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "reason": "Reassignment within user permitted model set after two capacity errors",
+      "commit": "9fc08952fee4413ca260a90f59b773c5a196230d",
+      "tests_passed": 22,
+      "scientific_stage0_passed": false
+    },
+    {
+      "task": "/root/sol61_runtime_inventory",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "status": "completed",
+      "result": "Read-only runtime inventory; no container executed"
     }
   ]
 }

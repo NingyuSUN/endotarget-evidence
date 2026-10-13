@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "method": "bounded urllib fetch of individual XLSX",
+  "attempt_date": "2026-10-13",
+  "host": "SRV01",
+  "source_host": "static-content.springer-cdn.com",
+  "attempted_files": [
+    "41467_2026_73020_MOESM3_ESM.xlsx",
+    "41588_2024_1873_MOESM3_ESM.xlsx"
+  ],
+  "error": "Name or service not known",
+  "meaning": "No individual supplementary workbook retrieved by this route; source validity not adjudicated from a DNS failure."
+}

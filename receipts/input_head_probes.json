@@ -1,0 +1,38 @@
+[
+  {
+    "name": "discovery_rds",
+    "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE266nnn/GSE266265/suppl/GSE266265_EndoAtlas.rds",
+    "checked_utc": "2026-10-13T06:38:37Z",
+    "probe_only": true,
+    "http_status": 200,
+    "headers": {
+      "Content-Length": "41729517596",
+      "Content-Type": "application/octet-stream\t",
+      "Last-Modified": "Thu, 06 Mar 2025 21:17:27 GMT",
+      "ETag": null,
+      "Accept-Ranges": "bytes"
+    },
+    "range_status": 206,
+    "content_range": "bytes 0-15/41729517596",
+    "prefix_hex": "1f8b08000000000000039c9d75b4af55",
+    "bytes_read": 16
+  },
+  {
+    "name": "replication_h5ad",
+    "url": "https://cellgeni.cog.sanger.ac.uk/vento/reproductivecellatlas/endometriumAtlasV2_nuclei.h5ad",
+    "checked_utc": "2026-10-13T06:38:44Z",
+    "probe_only": true,
+    "http_status": 200,
+    "headers": {
+      "Content-Length": "8739186814",
+      "Content-Type": "application/x-hdf",
+      "Last-Modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "ETag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "Accept-Ranges": "bytes"
+    },
+    "range_status": 206,
+    "content_range": "bytes 0-15/8739186814",
+    "prefix_hex": "894844460d0a1a0a0000000000080800",
+    "bytes_read": 16
+  }
+]

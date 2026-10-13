@@ -1,0 +1,58 @@
+{
+  "checked_utc": "2026-10-13T06:36:38Z",
+  "hostname": "SRV01",
+  "project_root": "/home/analyst/te",
+  "disk_usage_bytes": {
+    "total": 502392610816,
+    "used": 406861729792,
+    "free": 69935509504
+  },
+  "meminfo": {
+    "MemTotal": "32726004 kB",
+    "MemAvailable": "30923004 kB",
+    "SwapTotal": "2097148 kB",
+    "SwapFree": "1522584 kB"
+  },
+  "observations": {
+    "identity": {
+      "command": [
+        "id"
+      ],
+      "exit_code": 0,
+      "stdout": "uid=1003(analyst) gid=1004(analyst) groups=1004(analyst),27(sudo)\n",
+      "stderr": ""
+    },
+    "docker_socket": {
+      "command": [
+        "stat",
+        "-c",
+        "%A %U %G %n",
+        "/var/run/docker.sock"
+      ],
+      "exit_code": 0,
+      "stdout": "srw-rw---- root docker /var/run/docker.sock\n",
+      "stderr": ""
+    },
+    "docker_group": {
+      "command": [
+        "getent",
+        "group",
+        "docker"
+      ],
+      "exit_code": 0,
+      "stdout": "docker:x:999:websys\n",
+      "stderr": ""
+    },
+    "docker_version": {
+      "command": [
+        "docker",
+        "version",
+        "--format",
+        "client={{.Client.Version}} server={{if .Server}}{{.Server.Version}}{{end}}"
+      ],
+      "exit_code": 1,
+      "stdout": "client=29.0.1 server=\n",
+      "stderr": "permission denied while trying to connect to the docker API at unix:///var/run/docker.sock\n"
+    }
+  }
+}

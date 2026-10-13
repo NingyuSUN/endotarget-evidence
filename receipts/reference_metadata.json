@@ -1,0 +1,16 @@
+[
+  {
+    "file": "data/reference/discovery_article.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385355/fullTextXML",
+    "bytes": 218408,
+    "sha256": "fb09a4f9bbe895ff683187260d0a797749bc3920d50f5005c1d66ed6bdf743b7",
+    "retrieved_utc": "2026-10-13T06:31:53Z"
+  },
+  {
+    "file": "data/reference/heca_article.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11387200/fullTextXML",
+    "bytes": 263171,
+    "sha256": "d28b8499e0eff07ea2ea29f1b6a6429d6e05ce65a099e72b4cc4185899367874",
+    "retrieved_utc": "2026-10-13T06:31:56Z"
+  }
+]

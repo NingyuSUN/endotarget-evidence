@@ -1,0 +1,14 @@
+{
+  "status": "full_input_resource_gate_not_passed",
+  "free_bytes_at_probe": 69935509504,
+  "reserve_bytes": 21474836480,
+  "original_file_bytes": {
+    "discovery_rds": 41729517596,
+    "replication_h5ad": 8739186814
+  },
+  "full_inputs_total_bytes": 50468704410,
+  "free_after_full_inputs_bytes": 19466805094,
+  "reserve_met_before_any_conversion": false,
+  "memory_feasibility": "NOT_VERIFIED; discovery RDS is gzip compressed, whole-object import may exceed 31GiB host RAM",
+  "decision": "Do not fetch full inputs together or import discovery RDS; first find public subset/count export or revise resource plan. No raw FASTQ expansion."
+}

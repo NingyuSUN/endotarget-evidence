@@ -103,6 +103,6 @@ Every dossier records: expression evidence, cell-state specificity, genetic supp
 
 Scientific delivery: external analysis and failure assessment are reported for all prespecified lists; candidate/negative dossiers are traceable; uncertainty and unresolved evidence are explicit. No requirement that G1 win or a drug target be discovered.
 
-Engineering delivery: inputs, transformations, software and outputs are traceable; meaningful boundary tests and a real Nextflow/container run pass; cloud execution has a receipt. These checks demonstrate reproducibility, not therapeutic validity.
+Engineering delivery: inputs, transformations, software and outputs are traceable; meaningful boundary tests and a real Nextflow/container run pass; execution on the user-selected SRV01 server has a receipt. AWS remains an optional deployment guide and has not been executed. These checks demonstrate reproducibility, not therapeutic validity.
 
 A failed Stage 0 can complete a feasibility milestone but **does not complete the proposed cross-study scientific project**. Record remaining work honestly and revise before launching a substitute analysis.

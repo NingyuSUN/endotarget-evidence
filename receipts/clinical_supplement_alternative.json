@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385355/supplementaryFiles",
+    "selected_member": "41467_2026_73020_MOESM3_ESM.xlsx",
+    "attempt_utc": "2026-10-13T06:34:58Z",
+    "limit_bytes": 25000000,
+    "status": "failed",
+    "error": "package exceeds limit"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11387200/supplementaryFiles",
+    "selected_member": "41588_2024_1873_MOESM3_ESM.xlsx",
+    "attempt_utc": "2026-10-13T06:37:37Z",
+    "limit_bytes": 25000000,
+    "status": "failed",
+    "error": "The read operation timed out"
+  }
+]
