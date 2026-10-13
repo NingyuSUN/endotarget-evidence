@@ -1,0 +1,29 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "completed_utc": "2026-10-13T10:53:40Z",
+  "unit_tests": 9,
+  "test_command": [
+    "envs/m0-h5/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_replication_report.py",
+    "-v"
+  ],
+  "test_log": "test_50_failures_permits_conditional_interval (test_replication_report.ReportingBoundaryTests) ... ok\ntest_51_failures_suppresses_interval (test_replication_report.ReportingBoundaryTests) ... ok\ntest_false_summary_counts_rejected (test_replication_report.ReportingBoundaryTests) ... ok\ntest_missing_fold_cannot_disappear (test_replication_report.ReportingBoundaryTests) ... ok\ntest_no_forced_supported_dossier (test_replication_report.ReportingBoundaryTests) ... ok\ntest_nonfinite_is_unavailable (test_replication_report.ReportingBoundaryTests) ... ok\ntest_one_failed_lodo_fold_preserved (test_replication_report.ReportingBoundaryTests) ... ok\ntest_retention_has_fixed20_denominator (test_replication_report.ReportingBoundaryTests) ... ok\ntest_suppressed_interval_cannot_be_reported (test_replication_report.ReportingBoundaryTests) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.040s\n\nOK\n",
+  "smoke": "work/synthetic/report_builder/smoke_v2_receipt.json",
+  "smoke_sha256": "71b1f2da6b226bc3a6cd4761674e910121c80008c83dd535389d04d1fb1246fa",
+  "smoke_figures": 4,
+  "overwrite_rejected_without_change": true,
+  "synthetic_output_escape_rejected": true,
+  "scientific_validation": false,
+  "real_models_run_by_builder": false,
+  "code_sha256": {
+    "scripts/build_replication_report.py": "7d6ed86dfae900f9473455896eb8a9c9dd6477b3d43e4549b5a04d1aeedbac1c",
+    "scripts/plot_replication.R": "deb4726da028db5de609482c63c37af08342a65d811251abb094bcc411e3ac00",
+    "tests/test_replication_report.py": "120ebe3d72d886bf65f03cd2ce0dfc16efcc3777601eed2365faee1394f38c89"
+  }
+}
