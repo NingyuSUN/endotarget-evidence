@@ -1,0 +1,26 @@
+{
+  "status": "P2_FIXED_WITH_TARGETED_VERIFICATION",
+  "created_utc": "2026-10-13T10:45:08.486807+00:00",
+  "finding": "edited parseable bootstrap checkpoint could silently change final interval",
+  "repair": "per-draw SHA sidecars plus fixed-family, counts, original denominators, rates and paired-difference validation",
+  "parent_fresh_command": "source scripts/statistical_runtime_env.sh && Rscript tests/test_resampling.R",
+  "parent_exit_code": 0,
+  "parent_output": "RESAMPLING_TESTS_PASS toy_fit_elapsed 0.521 \n",
+  "negative_resume": {
+    "case": "syntactically_valid_draw_edit",
+    "rejected": true,
+    "exit_code": 1,
+    "output": "read_bootstrap_checkpoint(path, fingerprint, r, mask, length(family)) \u3067\u30a8\u30e9\u30fc: \n  bootstrap checkpoint checksum mismatch\n\u547c\u3073\u51fa\u3057: resampling_main -> lapply -> FUN -> read_bootstrap_checkpoint\n\u5b9f\u884c\u304c\u505c\u6b62\u3055\u308c\u307e\u3057\u305f \n"
+  },
+  "artifacts_sha256": {
+    "scripts/resample_donor_models.R": "04a922a7dd13fa96a8eab1b1f8eac8c4929bb9cd78f4ece8b333ca7cd79f01a6",
+    "tests/test_resampling.R": "9e8fa3ba0db88156f6f62160af483985be95efd8d689d5f3dc6f2e24ddaf65e1",
+    "receipts/resampling_tests.json": "2c803d3fe5f7486d572c8c4cbc6a05186a4ad91957a3ef2cdb713832b1457360",
+    "receipts/replication_independent_review.json": "80ae555e2b9e63713711cc6e1eb676bceb329490396e050c16db0177278a2e53",
+    "logs/replication_root_resampling_adjudication.log": "a3ef176a68ae55c812a3230e1b7aef1a6049690b148f8d48256ee9847f25ba53",
+    "logs/resampling_negative_syntactically_valid_draw_edit.log": "4d12e1b9e3d6d2a4059a91505b7f221308ab422ccba86b1a893a656d3150d687"
+  },
+  "adjudication": "Parent inspected repair source and reran targeted contracts; original Astra audit predates this fix and is not represented as a second review",
+  "scientific_validation": false,
+  "real_external_effects_computed": false
+}

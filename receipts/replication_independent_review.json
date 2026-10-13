@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "completed_utc": "2026-10-13T10:40:37.315984+00:00",
+  "reviewer": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "identity_source": "orchestrator-dispatched agent configuration",
+    "agent": "astra_replication_review"
+  },
+  "host": "SRV01",
+  "project": "/home/analyst/te",
+  "status": "COMPLETED_WITH_ONE_ACCEPTED_P2_FIX_PENDING",
+  "reviewed_sha256": {
+    "scripts/evaluate_replication.py": "76464563522a7f7ef33eea66ba95c4f727ee5b23c8207ea1f794e904a47038b0",
+    "scripts/resample_donor_models.R": "6c5191cddcaae085349d94db6f640c4c3fbd892dd34d6a58ad7931edf9aad14c",
+    "scripts/run_discovery_lodo.py": "fc85be383ff76661217e70f6d3d1e110a58189600cd5d2d807ba583397160b77",
+    "replication.nf": "3b06ec4c3aa01a10cd02334ec48d0d99deaa898299eec85faefd71b3a579295e",
+    "replication.config": "87a1afa33c51043b82da0be28d7a5e5786559163155257c7e562b40afc2fc501",
+    "docs/STATISTICAL_IMPLEMENTATION_DECISIONS.md": "0c75d1d4ffa1c05ae77b0a34f9a843bbcd3559876d00e00e066d06cf822c0b80",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "docs/REPLICATION_EVALUATION.md": "90d7d4bcbe96a3ef9ba054149c113e7c532074451b072791a0216e66355e513d",
+    "docs/RESAMPLING.md": "738f52b300375d7c14ccf1ba8ab2ea57894d14074400de63fd72d2525f5a364a"
+  },
+  "scope": "Independent pre-external scientific/correctness code audit; source read-only; bounded existing invented-data tests; metadata-only column-space comparison. No real external effects calculated or read.",
+  "checks": [
+    {
+      "command": "source scripts/statistical_runtime_env.sh && Rscript tests/test_resampling.R",
+      "exit_code": 0,
+      "result": "RESAMPLING_TESTS_PASS; identical-input fixed-family effect/t/BH parity; toy fixed fit 0.522 seconds"
+    },
+    {
+      "command": "source scripts/statistical_runtime_env.sh && python -m unittest discover -s tests -p test_lodo.py -v",
+      "exit_code": 0,
+      "tests": 4,
+      "result": "PASS; 0.191 seconds"
+    },
+    {
+      "command": "source scripts/statistical_runtime_env.sh && python -m unittest discover -s tests -p test_replication_evaluation.py -v",
+      "exit_code": 0,
+      "tests": 19,
+      "result": "PASS; 1.586 seconds"
+    },
+    {
+      "command": "R metadata-only: read final clinical and locked design for each cohort; rebuild_resample_design; compare qr.resid(qr(locked),rebuilt) and reverse; require max absolute residual below 1e-10",
+      "exit_code": 0,
+      "result": {
+        "discovery_rank": 12,
+        "discovery_max_projection_residual": 1.461088e-15,
+        "heca_rank": 10,
+        "heca_max_projection_residual": 2.399811e-15,
+        "effects_computed": false
+      }
+    }
+  ],
+  "finding": {
+    "priority": "P2",
+    "file": "scripts/resample_donor_models.R",
+    "lines": [
+      225,
+      227,
+      244
+    ],
+    "issue": "Existing replicate JSON is checked only for binding hash, replicate index and non-null valid; stored rates/difference are then trusted. Parseable checkpoint corruption can silently alter the final bootstrap interval despite unchanged input/ledger hashes.",
+    "recommendation": "Bind per-replicate output checksum and validate fixed denominators/counts/rates/difference when resuming; reject changed or inconsistent checkpoints.",
+    "status": "ACCEPTED_BY_OWNER_AND_ROOT_FIX_PENDING_AT_REVIEW_CLOSE",
+    "planned_fix": "Owner reports checksum sidecar and rate/count/denominator checks plus edited-JSON negative test and fresh synthetic reruns.",
+    "fixed_code_rereviewed": false
+  },
+  "other_conclusions": [
+    "No additional important scientific/correctness finding in reviewed snapshot.",
+    "Fixed external family, original masks, shared draws, top20/top50 union invalidation, no redraw and >50/500 interval suppression align with adopted contract.",
+    "Discovery LODO refilters, rebuilds graph/ranks, and retains fixed20/union overlap denominators.",
+    "No external-effect-driven change to discovery lists, directions or null membership found."
+  ],
+  "limitations": [
+    "Only exact reviewed hashes above are covered; later owner fixes are not approved by this receipt.",
+    "Root must adjudicate the pending fix using negative-test evidence before real effects.",
+    "Did not independently run all500bootstrap or all22LODO end-to-end jobs; owner is responsible for those receipts.",
+    "Nextflow code inspected; integrated execution is root responsibility.",
+    "Synthetic success is implementation evidence, not scientific replication or biological validity.",
+    "Initial guessed test_evaluate_replication.py glob matched zero tests and is not counted; exact test_replication_evaluation.py was then run successfully.",
+    "No source edits, Git index changes or commits by reviewer; only this requested receipt was written."
+  ]
+}
