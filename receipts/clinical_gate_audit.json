@@ -1,0 +1,57 @@
+{
+  "generated_utc": "2026-10-13T07:25:52.253643+00:00",
+  "host_expected": "SRV01",
+  "project_root": "/home/analyst/te",
+  "command": "python3 scripts/clinical_gate_audit.py",
+  "inputs": [
+    {
+      "path": "data/metadata/E-MTAB-14039.sdrf.txt",
+      "sha256": "cdcd25f5519b3ddac7b68a41140ae577b929a856c35732e598fc95fcb0bbf36b",
+      "bytes": 61604
+    },
+    {
+      "path": "data/metadata/E-MTAB-14039.json",
+      "sha256": "0d91686fe91ff2223c85821e5ac511fd4d254762c953ed40e0dd594d0f57abdb",
+      "bytes": 174654
+    },
+    {
+      "path": "data/metadata/GSE266265_family.soft.gz",
+      "sha256": "2b73147d402f758b00fe74c578600ed6a678448e546b3f65e178ca36852c41b7",
+      "bytes": 8459
+    },
+    {
+      "path": "data/reference/discovery_article.xml",
+      "sha256": "fb09a4f9bbe895ff683187260d0a797749bc3920d50f5005c1d66ed6bdf743b7",
+      "bytes": 218408
+    },
+    {
+      "path": "data/reference/heca_article.xml",
+      "sha256": "d28b8499e0eff07ea2ea29f1b6a6429d6e05ce65a099e72b4cc4185899367874",
+      "bytes": 263171
+    }
+  ],
+  "outputs": [
+    {
+      "path": "manifests/clinical_candidates.tsv",
+      "sha256": "8d5af35b31c656e7df57a99fbba540a9ee14e1d564ac9760133127a06e5757bb",
+      "bytes": 13611
+    },
+    {
+      "path": "reports/clinical_gate_sdrf_rows.tsv",
+      "sha256": "496afb6568afa1700f59dfe17fe27cd3199594a8913056b828317720a28daf0b",
+      "bytes": 9620
+    },
+    {
+      "path": "reports/clinical_gate_discovery_gsm.tsv",
+      "sha256": "c927b0c52cb39a50237a64bddb9381438ed13f8ab2bd2e98bb1f2b00119c9afe",
+      "bytes": 35661
+    },
+    {
+      "path": "reports/clinical_gate_summary.json",
+      "sha256": "73eb3a481c7b18cbaa2d798264351679012863fdee71073c86c35b6aeef8c1a9",
+      "bytes": 1074
+    }
+  ],
+  "script_sha256": "66b119fa6a9fe0f316309bf6d8a0ba7b9e1b372dbf473545c6c067cc50d9aa76",
+  "clinical_xlsx_join": "not_in_this_source_only_pass"
+}

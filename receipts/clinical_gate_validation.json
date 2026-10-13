@@ -1,0 +1,28 @@
+{
+  "status": "PASS_EXTRACTION_ONLY",
+  "checks": [
+    "deterministic_output_replay",
+    "22_unique_candidate_declared_ids",
+    "16_case_6_normal_candidates",
+    "68_nuclei_source_rows",
+    "60_unique_GSM",
+    "candidate_line_provenance_join",
+    "identity_conflict_retained",
+    "repeat_relationship_unknown",
+    "age_hormone_unknown_retained",
+    "final_eligibility_not_verified"
+  ],
+  "outputs_sha256": {
+    "manifests/clinical_candidates.tsv": "8d5af35b31c656e7df57a99fbba540a9ee14e1d564ac9760133127a06e5757bb",
+    "reports/clinical_gate_sdrf_rows.tsv": "496afb6568afa1700f59dfe17fe27cd3199594a8913056b828317720a28daf0b",
+    "reports/clinical_gate_discovery_gsm.tsv": "c927b0c52cb39a50237a64bddb9381438ed13f8ab2bd2e98bb1f2b00119c9afe",
+    "reports/clinical_gate_summary.json": "73eb3a481c7b18cbaa2d798264351679012863fdee71073c86c35b6aeef8c1a9"
+  },
+  "not_validated": [
+    "barcode_demultiplex_identity",
+    "clinical_eligibility",
+    "cell_minima",
+    "model_design",
+    "biological_validity"
+  ]
+}

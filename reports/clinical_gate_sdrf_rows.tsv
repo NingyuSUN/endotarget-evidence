@@ -1,0 +1,69 @@
+sdrf_line	source_name	source_suffix_literal	declared_individual	library_id	disease	phase	phase_fine	source_suffix_matches_individual	biostudies_declared_record_match	source
+7	UA_Endo10281925_FX1101	FX1101	FX1101	UA_Endo10281925	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+8	UA_Endo10281926_FX1101	FX1101	FX1101	UA_Endo10281926	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+17	UA_Endo11173480_FX0052	FX0052	FX0052	UA_Endo11173480	normal	Secretory	Secretory	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+18	UA_Endo11173480_FX1205	FX1205	FX1205	UA_Endo11173480	endometriosis	Secretory	Secretory	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+19	UA_Endo11173481_FX9022	FX9022	FX9022	UA_Endo11173481	endometriosis	Secretory	Secretory Mid	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+20	UA_Endo11173482_FX9011	FX9011	FX9011	UA_Endo11173482	normal	Secretory	Secretory Mid	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+21	UA_Endo11282193_EX0540	EX0540	FX1146	UA_Endo11282193	normal	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+22	UA_Endo11282193_FX1146	FX1146	EX0540	UA_Endo11282193	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+23	UA_Endo11460960_EX0366	EX0366	FX1100	UA_Endo11460960	endometriosis	Secretory	Secretory Mid	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+24	UA_Endo11460960_FX1100	FX1100	EX0366	UA_Endo11460960	endometriosis	Secretory	Secretory Mid	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+25	UA_Endo11460961_FX0011	FX0011	FX1097	UA_Endo11460961	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+26	UA_Endo11460961_FX1097	FX1097	FX0011	UA_Endo11460961	normal	Secretory	Secretory Early	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+27	UA_Endo11460962_FX1141	FX1141	FX1170	UA_Endo11460962	endometriosis	Secretory	Secretory	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+28	UA_Endo11460962_FX1170	FX1170	FX1141	UA_Endo11460962	normal	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+29	UA_Endo11460963_FX1215	FX1215	FX9006	UA_Endo11460963	endometriosis	Secretory	Secretory Early	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+30	UA_Endo11460963_FX9006	FX9006	FX1215	UA_Endo11460963	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+31	UA_Endo11596521_FX1236	FX1236	FX1236	UA_Endo11596521	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+32	UA_Endo11596522_FX1104	FX1104	FX9005	UA_Endo11596522	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+33	UA_Endo11596522_FX9005	FX9005	FX1104	UA_Endo11596522	normal	Proliferative	Proliferative Late	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+34	UA_Endo12061415_FX1158	FX1158	FX1223	UA_Endo12061415	endometriosis	Secretory	Secretory Early	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+35	UA_Endo12061415_FX1223	FX1223	FX1158	UA_Endo12061415	endometriosis	Menstrual	Menstrual	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+36	UA_Endo12061703_FX0056	FX0056	FX9020	UA_Endo12061703	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+37	UA_Endo12061703_FX9020	FX9020	FX0056	UA_Endo12061703	endometriosis	Menstrual	Menstrual	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+38	UA_Endo12061704_FX1163	FX1163	FX9024	UA_Endo12061704	normal	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+39	UA_Endo12061704_FX9024	FX9024	FX1163	UA_Endo12061704	endometriosis	Secretory	Secretory	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+40	UA_Endo12061705_FX1129	FX1129	FX1129	UA_Endo12061705	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+41	UA_Endo12061705_FX9009	FX9009	FX9009	UA_Endo12061705	normal	Menstrual	Menstrual	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+42	UA_Endo12269810_FX0033	FX0033	FX0033	UA_Endo12269810	endometriosis	Secretory	Secretory	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+43	UA_Endo12269810_FX1106	FX1106	FX1106	UA_Endo12269810	normal	Secretory	Secretory Mid	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+44	UA_Endo12269811_FX0022	FX0022	FX0022	UA_Endo12269811	endometriosis	Menstrual	Menstrual	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+45	UA_Endo12269811_FX0060	FX0060	FX0060	UA_Endo12269811	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+46	UA_Endo12269813_FX1233	FX1233	FX1233	UA_Endo12269813	endometriosis	Secretory	Secretory	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+47	UA_Endo12269814_EX0661	EX0661	EX0661	UA_Endo12269814	endometriosis	Secretory	Secretory Mid	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+48	UA_Endo12269814_EX0789	EX0789	EX0789	UA_Endo12269814	endometriosis	Secretory	Secretory Mid	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+49	UA_Endo12296823_EX0795	EX0795	EX0795	UA_Endo12296823	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+50	UA_Endo12296823_FX1119	FX1119	FX1119	UA_Endo12296823	normal	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+51	UA_Endo12296824_FX1125	FX1125	FX1125	UA_Endo12296824	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+52	UA_Endo12296824_FX9008	FX9008	FX9008	UA_Endo12296824	normal	Secretory	Secretory	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+53	UA_Endo12449298_FX1156	FX1156	FX1160	UA_Endo12449298	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+54	UA_Endo12449298_FX1160	FX1160	FX1156	UA_Endo12449298	endometriosis	Secretory	Secretory Mid	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+55	UA_Endo12449299_EX0277	EX0277	EX0277	UA_Endo12449299	endometriosis	Secretory	Secretory	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+56	UA_Endo12449299_EX0288	EX0288	EX0288	UA_Endo12449299	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+57	UA_Endo12449300_EX0045	EX0045	EX0045	UA_Endo12449300	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+58	UA_Endo12449300_FX9027	FX9027	FX9027	UA_Endo12449300	normal	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+59	UA_Endo12449301_FX1136	FX1136	FX1150	UA_Endo12449301	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+60	UA_Endo12449301_FX1150	FX1150	FX1136	UA_Endo12449301	endometriosis	Proliferative	Proliferative	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+61	UA_Endo12604667_FX0028	FX0028	FX1130	UA_Endo12604667	endometriosis	Secretory	Secretory Early	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+62	UA_Endo12604667_FX1130	FX1130	FX0028	UA_Endo12604667	normal	Secretory	Secretory	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+63	UA_Endo12604668_FX9016	FX9016	FX9016	UA_Endo12604668	normal	Unknown	Unknown	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+71	UA_Endo12821480_FX1074	FX1074	FX1122	UA_Endo12821480	normal	Hormones	Hormones	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+72	UA_Endo12821480_FX1122	FX1122	FX1074	UA_Endo12821480	endometriosis	Hormones	Hormones	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+73	UA_Endo12821481_FX1111	FX1111	FX9007	UA_Endo12821481	normal	Hormones	Hormones	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+74	UA_Endo12821481_FX9007	FX9007	FX1111	UA_Endo12821481	endometriosis	Hormones	Hormones	False	True	data/metadata/E-MTAB-14039.sdrf.txt
+75	UA_Endo12821482_FX0024	FX0024	FX0024	UA_Endo12821482	endometriosis	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+76	UA_Endo12821483_FX1080	FX1080	FX1080	UA_Endo12821483	endometriosis	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+77	UA_Endo12821484_FX9010	FX9010	FX9010	UA_Endo12821484	normal	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+78	UA_Endo12821485_FX0065	FX0065	FX0065	UA_Endo12821485	endometriosis	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+79	UA_Endo12821487_FX1191	FX1191	FX1191	UA_Endo12821487	endometriosis	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+80	UA_Endo12821488_FX9018	FX9018	FX9018	UA_Endo12821488	normal	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+81	UA_Endo12865960_FX1170	FX1170	FX1170	UA_Endo12865960	endometriosis	Secretory	Secretory	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+82	UA_Endo12865960_FX9013	FX9013	FX9013	UA_Endo12865960	endometriosis	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+83	UA_Endo12865961_FX9006	FX9006	FX9006	UA_Endo12865961	endometriosis	Secretory	Secretory Early	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+84	UA_Endo12865961_FX9014	FX9014	FX9014	UA_Endo12865961	endometriosis	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+85	UA_Endo12865962_FX1236	FX1236	FX1236	UA_Endo12865962	endometriosis	Proliferative	Proliferative	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+86	UA_Endo12865962_FX9012	FX9012	FX9012	UA_Endo12865962	endometriosis	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+87	UA_Endo12865963_FX1087	FX1087	FX1087	UA_Endo12865963	endometriosis	Secretory	Secretory Mid	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+88	UA_Endo12865963_FX9021	FX9021	FX9021	UA_Endo12865963	normal	Hormones	Hormones	True	True	data/metadata/E-MTAB-14039.sdrf.txt
+89	UA_Endo12865966_FX1223	FX1223	FX1223	UA_Endo12865966	endometriosis	Secretory	Secretory Early	True	True	data/metadata/E-MTAB-14039.sdrf.txt

@@ -1,0 +1,43 @@
+{
+  "status": "M0_OPEN_NOT_PASSED",
+  "scope": "existing_metadata_only_before_clinical_XLSX_join",
+  "n_sdrf_records": 103,
+  "n_nuclei_records": 68,
+  "n_declared_nuclei_individuals": 63,
+  "candidate_declared_ids": 22,
+  "candidate_groups": {
+    "endometriosis": 16,
+    "normal": 6
+  },
+  "candidate_records": 24,
+  "candidate_suffix_mismatch_records": 12,
+  "candidate_ids_with_suffix_mismatch": 12,
+  "nuclei_suffix_mismatch_records": 28,
+  "biostudies_nuclei_matches": 68,
+  "candidate_repeated_ids": [
+    "FX1101",
+    "FX1236"
+  ],
+  "candidate_exact_age_available": 0,
+  "candidate_donor_hormone_available": 0,
+  "geo_samples": 60,
+  "geo_groups": {
+    "No Endometriosis": 25,
+    "Endometriosis": 35
+  },
+  "geo_characteristic_keys": [
+    "Sex",
+    "endometriosis grade",
+    "endometriosis status",
+    "tissue"
+  ],
+  "geo_phase_available": 0,
+  "geo_age_available": 0,
+  "prohibitions": [
+    "no_expression_read",
+    "no_disease_effects",
+    "no_source_suffix_reassignment",
+    "no_age_midpoint_imputation",
+    "no_hormone_inference_from_phase"
+  ]
+}
