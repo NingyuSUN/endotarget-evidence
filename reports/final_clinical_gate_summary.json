@@ -1,0 +1,881 @@
+{
+  "status": "CLINICAL_SAMPLE_AND_DESIGN_GATE_EXECUTED_NOT_FULL_M0",
+  "selection_rule": "among clinically eligible libraries with >=50 primary nuclei choose largest primary nucleus count then lexical library_id then sample_id; no summing across unknown biopsy relation",
+  "primary_labels": [
+    "eStromal_MMPs",
+    "eStromal",
+    "eStromal_cycling",
+    "dStromal_early",
+    "dStromal_mid",
+    "dStromal_late",
+    "Fibroblast_basalis"
+  ],
+  "original_h5_obs_rows": 312246,
+  "selected_heca_samples": [
+    "UA_Endo12449300_EX0045",
+    "UA_Endo12449299_EX0288",
+    "UA_Endo11282193_EX0540",
+    "UA_Endo12296823_EX0795",
+    "UA_Endo11460961_FX0011",
+    "UA_Endo11173480_FX0052",
+    "UA_Endo12269811_FX0060",
+    "UA_Endo11460961_FX1097",
+    "UA_Endo10281926_FX1101",
+    "UA_Endo11596522_FX1104",
+    "UA_Endo12296823_FX1119",
+    "UA_Endo12296824_FX1125",
+    "UA_Endo12061705_FX1129",
+    "UA_Endo12449301_FX1136",
+    "UA_Endo11282193_FX1146",
+    "UA_Endo12449301_FX1150",
+    "UA_Endo12449298_FX1160",
+    "UA_Endo11596521_FX1236",
+    "UA_Endo11596522_FX9005",
+    "UA_Endo12061703_FX9020",
+    "UA_Endo12061704_FX9024",
+    "UA_Endo12449300_FX9027"
+  ],
+  "selected_heca_donors": [
+    "EX0045",
+    "EX0288",
+    "EX0540",
+    "EX0795",
+    "FX0011",
+    "FX0052",
+    "FX0060",
+    "FX1097",
+    "FX1101",
+    "FX1104",
+    "FX1119",
+    "FX1125",
+    "FX1129",
+    "FX1136",
+    "FX1146",
+    "FX1150",
+    "FX1160",
+    "FX1236",
+    "FX9005",
+    "FX9020",
+    "FX9024",
+    "FX9027"
+  ],
+  "selected_heca_primary_nuclei": 52744,
+  "selected_primary_min_nuclei": 203,
+  "repeat_losses": [
+    {
+      "donor_id": "FX1101",
+      "selected_sample": "UA_Endo10281926_FX1101",
+      "selected_primary_nuclei": 4657,
+      "excluded_samples": [
+        "UA_Endo10281925_FX1101"
+      ],
+      "excluded_primary_nuclei": 2619,
+      "excluded_total_nuclei": 9830,
+      "relation": "NOT_VERIFIED"
+    },
+    {
+      "donor_id": "FX1236",
+      "selected_sample": "UA_Endo11596521_FX1236",
+      "selected_primary_nuclei": 3518,
+      "excluded_samples": [
+        "UA_Endo12865962_FX1236"
+      ],
+      "excluded_primary_nuclei": 122,
+      "excluded_total_nuclei": 748,
+      "relation": "NOT_VERIFIED"
+    }
+  ],
+  "excluded_low_count_candidates": [
+    {
+      "donor_id": "FX1215",
+      "count": 0,
+      "fine_phase": "Proliferative"
+    }
+  ],
+  "mixed_phase_exclusions": [
+    {
+      "donor_id": "FX1141",
+      "phase_fine": "Proliferative Menstrual",
+      "primary_nuclei": 45
+    }
+  ],
+  "clinical_source_duplicate_conflicts": [
+    "FX1158"
+  ],
+  "hormone_coding": {
+    "proliferative_samples": 26,
+    "proliferative_explicit_drug_conflicts": 0,
+    "missing_not_relabelled_negative": true,
+    "basis": "adopted_study_defined_natural_cycle_group"
+  },
+  "heca_technical_field_interpretation": {
+    "Lane": "literal author library metadata grouping used categorically; physical sequencing lane/date semantics not asserted",
+    "library_id": "individual capture/library identifiers, not automatically a multi-donor technical batch",
+    "processing": "Frozen constant",
+    "kit_and_preparation_nested": {
+      "kit_original": {
+        "levels_per_Lane": {
+          "20": [
+            "3' v3.1"
+          ],
+          "42058": [
+            "3' v3.0"
+          ],
+          "42196": [
+            "3' v3.0"
+          ],
+          "43103": [
+            "3' v3.0"
+          ],
+          "43281": [
+            "3' v3.0"
+          ],
+          "43937": [
+            "3' v3.0"
+          ],
+          "43996": [
+            "3' v3.0"
+          ]
+        },
+        "nested_in_Lane": true
+      },
+      "preparation_Treatment_original": {
+        "levels_per_Lane": {
+          "20": [
+            "Percoll"
+          ],
+          "42058": [
+            "Mixed"
+          ],
+          "42196": [
+            "None"
+          ],
+          "43103": [
+            "None"
+          ],
+          "43281": [
+            "None"
+          ],
+          "43937": [
+            "None"
+          ],
+          "43996": [
+            "None"
+          ]
+        },
+        "nested_in_Lane": true
+      }
+    }
+  },
+  "heca_batch_disease_crosstab": {
+    "20": {
+      "ENDO": 1
+    },
+    "42058": {
+      "non-ENDO": 1
+    },
+    "42196": {
+      "non-ENDO": 1,
+      "ENDO": 1
+    },
+    "43103": {
+      "ENDO": 1,
+      "non-ENDO": 1
+    },
+    "43281": {
+      "non-ENDO": 2,
+      "ENDO": 4
+    },
+    "43937": {
+      "ENDO": 3,
+      "non-ENDO": 1
+    },
+    "43996": {
+      "ENDO": 5,
+      "non-ENDO": 1
+    }
+  },
+  "heca_pathology_crosstab": {
+    "C": {
+      "non-ENDO": 4
+    },
+    "E": {
+      "ENDO": 10
+    },
+    "E + A": {
+      "ENDO": 1
+    },
+    "E + A + F": {
+      "ENDO": 1
+    },
+    "E + A + P": {
+      "ENDO": 1
+    },
+    "E + F": {
+      "ENDO": 1
+    },
+    "E + H": {
+      "ENDO": 1
+    },
+    "F + P": {
+      "non-ENDO": 1
+    },
+    "P": {
+      "non-ENDO": 2
+    }
+  },
+  "designs": {
+    "heca_primary": {
+      "n": 22,
+      "groups": {
+        "ENDO": 15,
+        "non-ENDO": 7
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "library_group_Lane:42058_vs_20",
+        "library_group_Lane:42196_vs_20",
+        "library_group_Lane:43103_vs_20",
+        "library_group_Lane:43281_vs_20",
+        "library_group_Lane:43937_vs_20",
+        "library_group_Lane:43996_vs_20",
+        "adenomyosis"
+      ],
+      "rank": 10,
+      "n_columns": 10,
+      "residual_df": 12,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 5,
+      "donor_minimum_pass": true,
+      "structural_gate_pass": true,
+      "disease_information_unweighted": 2.9125093075204767,
+      "categorical_levels": {
+        "library_group_Lane": [
+          "20",
+          "42058",
+          "42196",
+          "43103",
+          "43281",
+          "43937",
+          "43996"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": false,
+      "donor_order": [
+        "EX0045",
+        "EX0288",
+        "EX0540",
+        "EX0795",
+        "FX0011",
+        "FX0052",
+        "FX0060",
+        "FX1097",
+        "FX1101",
+        "FX1104",
+        "FX1119",
+        "FX1125",
+        "FX1129",
+        "FX1136",
+        "FX1146",
+        "FX1150",
+        "FX1160",
+        "FX1236",
+        "FX9005",
+        "FX9020",
+        "FX9024",
+        "FX9027"
+      ]
+    },
+    "heca_strict_histology_conflict_exclusion": {
+      "n": 13,
+      "groups": {
+        "ENDO": 10,
+        "non-ENDO": 3
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "library_group_Lane:43103_vs_20",
+        "library_group_Lane:43281_vs_20",
+        "library_group_Lane:43937_vs_20",
+        "library_group_Lane:43996_vs_20",
+        "adenomyosis"
+      ],
+      "rank": 8,
+      "n_columns": 8,
+      "residual_df": 5,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 5,
+      "donor_minimum_pass": false,
+      "structural_gate_pass": false,
+      "disease_information_unweighted": 0.7267879548306148,
+      "categorical_levels": {
+        "library_group_Lane": [
+          "20",
+          "43103",
+          "43281",
+          "43937",
+          "43996"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": false,
+      "donor_order": [
+        "EX0045",
+        "FX0060",
+        "FX1101",
+        "FX1125",
+        "FX1129",
+        "FX1136",
+        "FX1146",
+        "FX1150",
+        "FX1160",
+        "FX9005",
+        "FX9020",
+        "FX9024",
+        "FX9027"
+      ]
+    },
+    "heca_adenomyosis_free": {
+      "n": 19,
+      "groups": {
+        "ENDO": 12,
+        "non-ENDO": 7
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "library_group_Lane:42058_vs_20",
+        "library_group_Lane:42196_vs_20",
+        "library_group_Lane:43103_vs_20",
+        "library_group_Lane:43281_vs_20",
+        "library_group_Lane:43937_vs_20",
+        "library_group_Lane:43996_vs_20"
+      ],
+      "rank": 9,
+      "n_columns": 9,
+      "residual_df": 10,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 5,
+      "donor_minimum_pass": true,
+      "structural_gate_pass": true,
+      "disease_information_unweighted": 2.708410452365315,
+      "categorical_levels": {
+        "library_group_Lane": [
+          "20",
+          "42058",
+          "42196",
+          "43103",
+          "43281",
+          "43937",
+          "43996"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": true,
+      "donor_order": [
+        "EX0045",
+        "EX0288",
+        "EX0795",
+        "FX0011",
+        "FX0052",
+        "FX1097",
+        "FX1101",
+        "FX1104",
+        "FX1119",
+        "FX1125",
+        "FX1129",
+        "FX1136",
+        "FX1146",
+        "FX1150",
+        "FX1160",
+        "FX9005",
+        "FX9020",
+        "FX9024",
+        "FX9027"
+      ]
+    },
+    "discovery_primary": {
+      "n": 22,
+      "groups": {
+        "non-ENDO": 10,
+        "ENDO": 12
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "capture_batch:batch12_vs_batch11",
+        "capture_batch:batch13_vs_batch11",
+        "capture_batch:batch14_vs_batch11",
+        "capture_batch:batch15_vs_batch11",
+        "capture_batch:batch16_vs_batch11",
+        "capture_batch:batch17_vs_batch11",
+        "capture_batch:batch18_vs_batch11",
+        "capture_batch:batch19_vs_batch11",
+        "adenomyosis"
+      ],
+      "rank": 12,
+      "n_columns": 12,
+      "residual_df": 10,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 8,
+      "donor_minimum_pass": true,
+      "structural_gate_pass": true,
+      "disease_information_unweighted": 1.9517916554266705,
+      "categorical_levels": {
+        "capture_batch": [
+          "batch11",
+          "batch12",
+          "batch13",
+          "batch14",
+          "batch15",
+          "batch16",
+          "batch17",
+          "batch18",
+          "batch19"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": false,
+      "donor_order": [
+        "sample70",
+        "sample71",
+        "sample76",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample123",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ]
+    },
+    "discovery_strict_histology_conflict_exclusion": {
+      "n": 20,
+      "groups": {
+        "non-ENDO": 9,
+        "ENDO": 11
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "capture_batch:batch12_vs_batch11",
+        "capture_batch:batch13_vs_batch11",
+        "capture_batch:batch14_vs_batch11",
+        "capture_batch:batch15_vs_batch11",
+        "capture_batch:batch16_vs_batch11",
+        "capture_batch:batch17_vs_batch11",
+        "capture_batch:batch18_vs_batch11",
+        "capture_batch:batch19_vs_batch11",
+        "adenomyosis"
+      ],
+      "rank": 12,
+      "n_columns": 12,
+      "residual_df": 8,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 8,
+      "donor_minimum_pass": true,
+      "structural_gate_pass": true,
+      "disease_information_unweighted": 1.1635841836734693,
+      "categorical_levels": {
+        "capture_batch": [
+          "batch11",
+          "batch12",
+          "batch13",
+          "batch14",
+          "batch15",
+          "batch16",
+          "batch17",
+          "batch18",
+          "batch19"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": false,
+      "donor_order": [
+        "sample70",
+        "sample71",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample91",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample111",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample125",
+        "sample126",
+        "sample130",
+        "sample134",
+        "sample135"
+      ]
+    },
+    "discovery_adenomyosis_free": {
+      "n": 18,
+      "groups": {
+        "non-ENDO": 10,
+        "ENDO": 8
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "capture_batch:batch12_vs_batch11",
+        "capture_batch:batch13_vs_batch11",
+        "capture_batch:batch14_vs_batch11",
+        "capture_batch:batch15_vs_batch11",
+        "capture_batch:batch16_vs_batch11",
+        "capture_batch:batch17_vs_batch11",
+        "capture_batch:batch18_vs_batch11",
+        "capture_batch:batch19_vs_batch11"
+      ],
+      "rank": 11,
+      "n_columns": 11,
+      "residual_df": 7,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 8,
+      "donor_minimum_pass": true,
+      "structural_gate_pass": true,
+      "disease_information_unweighted": 1.5811988616150836,
+      "categorical_levels": {
+        "capture_batch": [
+          "batch11",
+          "batch12",
+          "batch13",
+          "batch14",
+          "batch15",
+          "batch16",
+          "batch17",
+          "batch18",
+          "batch19"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": true,
+      "donor_order": [
+        "sample70",
+        "sample71",
+        "sample76",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample123",
+        "sample125",
+        "sample130",
+        "sample134"
+      ]
+    },
+    "discovery_strict_and_adenomyosis_free": {
+      "n": 16,
+      "groups": {
+        "non-ENDO": 9,
+        "ENDO": 7
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "capture_batch:batch12_vs_batch11",
+        "capture_batch:batch13_vs_batch11",
+        "capture_batch:batch14_vs_batch11",
+        "capture_batch:batch15_vs_batch11",
+        "capture_batch:batch16_vs_batch11",
+        "capture_batch:batch17_vs_batch11",
+        "capture_batch:batch18_vs_batch11",
+        "capture_batch:batch19_vs_batch11"
+      ],
+      "rank": 11,
+      "n_columns": 11,
+      "residual_df": 5,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 8,
+      "donor_minimum_pass": false,
+      "structural_gate_pass": false,
+      "disease_information_unweighted": 0.6651332183247078,
+      "categorical_levels": {
+        "capture_batch": [
+          "batch11",
+          "batch12",
+          "batch13",
+          "batch14",
+          "batch15",
+          "batch16",
+          "batch17",
+          "batch18",
+          "batch19"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": true,
+      "donor_order": [
+        "sample70",
+        "sample71",
+        "sample82",
+        "sample83",
+        "sample84",
+        "sample94",
+        "sample95",
+        "sample96",
+        "sample106",
+        "sample110",
+        "sample112",
+        "sample114",
+        "sample116",
+        "sample125",
+        "sample130",
+        "sample134"
+      ]
+    },
+    "heca_primary_threshold_30": {
+      "n": 22,
+      "groups": {
+        "ENDO": 15,
+        "non-ENDO": 7
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "library_group_Lane:42058_vs_20",
+        "library_group_Lane:42196_vs_20",
+        "library_group_Lane:43103_vs_20",
+        "library_group_Lane:43281_vs_20",
+        "library_group_Lane:43937_vs_20",
+        "library_group_Lane:43996_vs_20",
+        "adenomyosis"
+      ],
+      "rank": 10,
+      "n_columns": 10,
+      "residual_df": 12,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 5,
+      "donor_minimum_pass": true,
+      "structural_gate_pass": true,
+      "disease_information_unweighted": 2.9125093075204767,
+      "categorical_levels": {
+        "library_group_Lane": [
+          "20",
+          "42058",
+          "42196",
+          "43103",
+          "43281",
+          "43937",
+          "43996"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": false,
+      "donor_order": [
+        "EX0045",
+        "EX0288",
+        "EX0540",
+        "EX0795",
+        "FX0011",
+        "FX0052",
+        "FX0060",
+        "FX1097",
+        "FX1101",
+        "FX1104",
+        "FX1119",
+        "FX1125",
+        "FX1129",
+        "FX1136",
+        "FX1146",
+        "FX1150",
+        "FX1160",
+        "FX1236",
+        "FX9005",
+        "FX9020",
+        "FX9024",
+        "FX9027"
+      ]
+    },
+    "heca_primary_threshold_100": {
+      "n": 22,
+      "groups": {
+        "ENDO": 15,
+        "non-ENDO": 7
+      },
+      "columns": [
+        "intercept",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "library_group_Lane:42058_vs_20",
+        "library_group_Lane:42196_vs_20",
+        "library_group_Lane:43103_vs_20",
+        "library_group_Lane:43281_vs_20",
+        "library_group_Lane:43937_vs_20",
+        "library_group_Lane:43996_vs_20",
+        "adenomyosis"
+      ],
+      "rank": 10,
+      "n_columns": 10,
+      "residual_df": 12,
+      "full_rank": true,
+      "disease_identifiable": true,
+      "minimum_per_group": 5,
+      "donor_minimum_pass": true,
+      "structural_gate_pass": true,
+      "disease_information_unweighted": 2.9125093075204767,
+      "categorical_levels": {
+        "library_group_Lane": [
+          "20",
+          "42058",
+          "42196",
+          "43103",
+          "43281",
+          "43937",
+          "43996"
+        ]
+      },
+      "adenomyosis_constant_column_omitted": false,
+      "donor_order": [
+        "EX0045",
+        "EX0288",
+        "EX0540",
+        "EX0795",
+        "FX0011",
+        "FX0052",
+        "FX0060",
+        "FX1097",
+        "FX1101",
+        "FX1104",
+        "FX1119",
+        "FX1125",
+        "FX1129",
+        "FX1136",
+        "FX1146",
+        "FX1150",
+        "FX1160",
+        "FX1236",
+        "FX9005",
+        "FX9020",
+        "FX9024",
+        "FX9027"
+      ]
+    }
+  },
+  "negative_guard_library_dummy_design": {
+    "n": 22,
+    "groups": {
+      "ENDO": 15,
+      "non-ENDO": 7
+    },
+    "columns": [
+      "intercept",
+      "ENDO_minus_non_ENDO",
+      "age_centered_years",
+      "library_id:UA_Endo11173480_vs_UA_Endo10281926",
+      "library_id:UA_Endo11282193_vs_UA_Endo10281926",
+      "library_id:UA_Endo11460961_vs_UA_Endo10281926",
+      "library_id:UA_Endo11596521_vs_UA_Endo10281926",
+      "library_id:UA_Endo11596522_vs_UA_Endo10281926",
+      "library_id:UA_Endo12061703_vs_UA_Endo10281926",
+      "library_id:UA_Endo12061704_vs_UA_Endo10281926",
+      "library_id:UA_Endo12061705_vs_UA_Endo10281926",
+      "library_id:UA_Endo12269811_vs_UA_Endo10281926",
+      "library_id:UA_Endo12296823_vs_UA_Endo10281926",
+      "library_id:UA_Endo12296824_vs_UA_Endo10281926",
+      "library_id:UA_Endo12449298_vs_UA_Endo10281926",
+      "library_id:UA_Endo12449299_vs_UA_Endo10281926",
+      "library_id:UA_Endo12449300_vs_UA_Endo10281926",
+      "library_id:UA_Endo12449301_vs_UA_Endo10281926",
+      "adenomyosis"
+    ],
+    "rank": 19,
+    "n_columns": 19,
+    "residual_df": 3,
+    "full_rank": true,
+    "disease_identifiable": true,
+    "minimum_per_group": 5,
+    "donor_minimum_pass": true,
+    "structural_gate_pass": false,
+    "disease_information_unweighted": 1.8744427934621102,
+    "categorical_levels": {
+      "library_id": [
+        "UA_Endo10281926",
+        "UA_Endo11173480",
+        "UA_Endo11282193",
+        "UA_Endo11460961",
+        "UA_Endo11596521",
+        "UA_Endo11596522",
+        "UA_Endo12061703",
+        "UA_Endo12061704",
+        "UA_Endo12061705",
+        "UA_Endo12269811",
+        "UA_Endo12296823",
+        "UA_Endo12296824",
+        "UA_Endo12449298",
+        "UA_Endo12449299",
+        "UA_Endo12449300",
+        "UA_Endo12449301"
+      ]
+    },
+    "adenomyosis_constant_column_omitted": false,
+    "donor_order": [
+      "EX0045",
+      "EX0288",
+      "EX0540",
+      "EX0795",
+      "FX0011",
+      "FX0052",
+      "FX0060",
+      "FX1097",
+      "FX1101",
+      "FX1104",
+      "FX1119",
+      "FX1125",
+      "FX1129",
+      "FX1136",
+      "FX1146",
+      "FX1150",
+      "FX1160",
+      "FX1236",
+      "FX9005",
+      "FX9020",
+      "FX9024",
+      "FX9027"
+    ]
+  },
+  "no_expression_read": true,
+  "scientific_validation": false,
+  "pending_other_M0_gates": [
+    "external_raw_counts",
+    "common_gene_IDs",
+    "lineage_crosswalk_final_integration",
+    "cohort_independence_integration",
+    "network_and_ranking_freeze"
+  ]
+}

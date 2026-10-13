@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-13T08:20:32.235321+00:00",
+  "command": "envs/m0-h5/bin/python scripts/final_clinical_gate.py",
+  "numpy_version": "2.2.6",
+  "script_sha256": "bb63aa92565c5cfa5d0ebe48378d2d8eab3a1df3de776016abe40dbdccf58179",
+  "input_hashes": {
+    "data/metadata/heca_h5/obs_selected.tsv": "835c0d9aaf4dcc3b89183ad03c94f171bd9b7ca4aa736ed1e6c29cf3704932ef",
+    "reports/heca_h5_sample_crosswalk.tsv": "8cc208521214745bbb80db40861c1a731ffb13dc4fd489a8f21e59ce782380d8",
+    "data/metadata/heca_author/metadata-donors.csv": "9c8c5e501c65a457d76927a8e1691ce8c099d94d05fc6c85ec2aa344cf6efa07",
+    "data/metadata/heca_author/metadata-libraries.csv": "82d6a06a41f0f0277ecb2fcb9352296cca857246632e6216c4fb5623f06a3dc9",
+    "data/metadata/heca_author/metadata-libraries_deconvoluted.csv": "d03958ca56dda803530312af4b4a32cf063333d07d86207f034185fbce072e2b",
+    "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
+    "data/input_routes/osf/independent_donor_coverage.csv": "82909d1289e475e4c2806a7370049a0de765a11a78e7111fa3885c43ae35b132",
+    "docs/PRE_EFFECT_METHOD_DECISIONS.md": "ea28d759c1bdd35d58744416f8739edf27f3d701a3531da844583f3e7f786fd5"
+  },
+  "output_hashes": {
+    "manifests/final_heca_clinical_samples.tsv": "75c301e79d1e470bd21105e8d16afa83a52ff395bf1673e23f39863d5be9c1d4",
+    "manifests/final_heca_clinical_donors.tsv": "7ab8dc6e318fa0763cdd62cdd4821b172d17a08694a7f3b9f5e39c6829e3445f",
+    "manifests/final_heca_clinical_selected.tsv": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc",
+    "manifests/final_discovery_clinical_selected.tsv": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d",
+    "reports/final_clinical_gate_summary.json": "8b541d0507d4ca1c91ed7e93d1fe347426e779f83701832c8017500c4cc92250",
+    "work/final_clinical/heca_primary_h5_obs_indices.npy": "d02ed9b8cee2c789c4f7aec7a3792a8f9444307163531933b632845cecf864ef"
+  },
+  "h5_indices_zero_based": true,
+  "index_order": "ascending original H5 obs order, no header",
+  "index_count": 52744,
+  "clinical_and_design_checks_pass": true,
+  "M0_pass": false
+}
