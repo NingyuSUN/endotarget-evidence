@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "status": "NOT_BUILT_NOT_RUN",
+  "created_utc": "2026-10-13T11:10:53.096861+00:00",
+  "base_repository": "mambaorg/micromamba",
+  "base_tag": "2.3.2",
+  "platform": "linux/amd64",
+  "index_digest": "sha256:ce2026639d612fbe837a35ca9d513292a8d776a24a5e6c82cccf9dddf45ad3d2",
+  "base_manifest_digest": "sha256:955819619f303e2aa1dc1ba89beefe7f326a378b3d0782a4a0d28b1cf11b68b6",
+  "registry_index_bytes": 2364,
+  "registry_verification": "API index digest header matches SHA256 computed from JSON; amd64 child manifest selected",
+  "static_checks": {
+    "required_pins_present": [
+      "r-base-4.4.3-",
+      "bioconductor-limma-3.62.1-",
+      "bioconductor-edger-4.4.0-",
+      "r-statmod-1.5.2-",
+      "r-jsonlite-2.0.0-",
+      "python-3.10.22-",
+      "numpy-2.2.6-",
+      "scipy-1.15.2-",
+      "openjdk-21.0.10-",
+      "nextflow-25.10.2-"
+    ],
+    "protected_hashes_unchanged": true,
+    "build": false,
+    "container_run": false,
+    "nextflow_container_run": false,
+    "nextflow_config_parse": {
+      "discovery": {
+        "exit_code": 0,
+        "runOptions": [
+          "docker.runOptions = '--user 1003:1004 --read-only --tmpfs /tmp:rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004 -e TMPDIR=/tmp -e HOME=/tmp -e XDG_CACHE_HOME=/tmp/.cache -v /home/analyst/te:/home/analyst/te:ro'"
+        ],
+        "read_only_inputs": true
+      },
+      "replication": {
+        "exit_code": 0,
+        "runOptions": [
+          "docker.runOptions = '--user 1003:1004 --read-only --tmpfs /tmp:rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004 -e TMPDIR=/tmp -e HOME=/tmp -e XDG_CACHE_HOME=/tmp/.cache -v /home/analyst/te:/home/analyst/te:ro'"
+        ],
+        "read_only_inputs": true
+      },
+      "root_uid_rejected": {
+        "exit_code": 1,
+        "expected_message_present": true
+      }
+    },
+    "kind": "Configuration parsing only; no workflow/task/container launched",
+    "dockerfile_structure": {
+      "single_copy_explicit_lock_only": true,
+      "exact_base_platform_manifest": true,
+      "install_prefix_opt_endo": true,
+      "context_allowlist_only": true,
+      "no_world_writable_permission_change": true
+    }
+  },
+  "protected_sha256": {
+    "main.nf": "3790a6f647565b91334e51686c450100542575b671398bf4c0e281ec1f7da422",
+    "nextflow.config": "4d8c79071f053b9ae894230feaa619a629e33f6717f74d02a0887d425af40214",
+    "replication.nf": "3b06ec4c3aa01a10cd02334ec48d0d99deaa898299eec85faefd71b3a579295e",
+    "replication.config": "87a1afa33c51043b82da0be28d7a5e5786559163155257c7e562b40afc2fc501",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6"
+  },
+  "recipe_sha256": {
+    "containers/statistics/Dockerfile": "60f35f65af0155de1b3ca94c5572c3a426f69e290c8886fd8f51107cd9d9a563",
+    "containers/statistics/.dockerignore": "b1a1a73f1fe6928cc7b995f466708e729dcdef843dfa8fd519509e7648a60b8a",
+    "conf/statistics_container.config": "819e49b9b94ecd32bf0b75de736e95f50eb5c1b2683fadd5f84259c58402499e",
+    "docs/CONTAINER_BUILD.md": "9fd563bb045d93ddfa0bef5c9f2939c39d1f471f5037c9b65c873ee7ca42fd8f"
+  },
+  "blocker": "Docker account access denied in prior observation; no new daemon query or privilege change",
+  "limitations": [
+    "No scientific or ingestion tests",
+    "Image not built or run",
+    "New overlay not covered by old freezes",
+    "Real accessible registry manifest required for frozen Nextflow docker mode"
+  ],
+  "corrected_issue": "-C ignores -c; replication overlay parsed with -C replication.config,conf/statistics_container.config"
+}
