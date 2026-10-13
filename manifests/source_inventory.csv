@@ -1,0 +1,7 @@
+source_id,role,accession,source_url,verification_level,scientific_data_downloaded,readiness,checked_on
+discovery_geo,discovery,GSE266265,https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265,catalog_and_primary_paper,false,counts_and_eligibility_unverified,2026-10-13
+replication_study,replication,E-MTAB-14039,https://www.ebi.ac.uk/biostudies/arrayexpress/studies/E-MTAB-14039,catalog_and_primary_paper,false,counts_and_donor_join_unverified,2026-10-13
+replication_sdrf,metadata,E-MTAB-14039,https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/E-MTAB-14039.sdrf.txt,tabular_metadata_inspected,true,cell_metadata_reconciliation_required,2026-10-13
+replication_h5ad,replication,E-MTAB-14039,https://cellgeni.cog.sanger.ac.uk/vento/reproductivecellatlas/endometriumAtlasV2_nuclei.h5ad,anonymous_head_only,false,count_layer_unverified,2026-10-13
+genetics,gene_evidence,GCST90205183,https://www.ebi.ac.uk/gwas/studies/GCST90205183,catalog_and_primary_paper,false,public_mapping_tables_to_audit,2026-10-13
+network,graph,STRING_human,https://string-db.org/cgi/help?subpage=api,documentation_only,false,version_channels_and_terms_to_pin,2026-10-13

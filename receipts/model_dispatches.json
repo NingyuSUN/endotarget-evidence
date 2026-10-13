@@ -1,0 +1,18 @@
+{
+  "record_type": "orchestrator_dispatch_configuration_not_backend_attestation",
+  "date": "2026-10-13",
+  "allowed_models": [
+    "gpt-6-astra",
+    "gpt-6.1-sol"
+  ],
+  "dispatches": [
+    {
+      "task": "/root/astra_m0_gate_review",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "evidence": "spawn_agent call configured explicitly; returned canonical task name",
+      "result": "M0 not passed; cell donor mapping and clinical/count/resource gates open"
+    }
+  ]
+}

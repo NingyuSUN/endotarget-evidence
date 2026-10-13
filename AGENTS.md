@@ -1,0 +1,3 @@
+# EndoTarget execution rules
+
+All project downloads, environments, tests and scientific runs occur on SRV01 under /home/analyst/te. Use only gpt-6-astra and gpt-6.1-sol for delegated reasoning. Never use another model as fallback. Never modify unrelated projects or host security settings. Large downloads require a measured disk/memory plan. No inference until the research protocol gates pass. Public data only. Do not commit raw data, credentials, large objects or caches. Commit intentional changes with a concise Chinese message; do not push without explicit authorization. Keep scientific readiness distinct from software tests. Read docs/SRV01_EXECUTION_PLAN.md and docs/RESEARCH_PROTOCOL.md before changes.

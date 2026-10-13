@@ -1,0 +1,69 @@
+{
+  "status": "METADATA_ONLY_EXPRESSION_NOT_ANALYZED",
+  "source_url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/E-MTAB-14039.sdrf.txt",
+  "audited_utc": "2026-10-13T06:09:50.313464+00:00",
+  "source_bytes": 61604,
+  "source_sha256": "cdcd25f5519b3ddac7b68a41140ae577b929a856c35732e598fc95fcb0bbf36b",
+  "library_rows_all_assays": 103,
+  "nuclei_donors": 63,
+  "deduplication_key": "Characteristics[individual] within Characteristics[10x technology] == snRNAseq",
+  "within_nuclei_donor_disease_phase_conflicts": 0,
+  "donor_strata": [
+    {
+      "disease": "endometriosis",
+      "phase": "Hormones",
+      "donors": 9
+    },
+    {
+      "disease": "endometriosis",
+      "phase": "Menstrual",
+      "donors": 3
+    },
+    {
+      "disease": "endometriosis",
+      "phase": "Proliferative",
+      "donors": 16
+    },
+    {
+      "disease": "endometriosis",
+      "phase": "Secretory",
+      "donors": 16
+    },
+    {
+      "disease": "normal",
+      "phase": "Hormones",
+      "donors": 5
+    },
+    {
+      "disease": "normal",
+      "phase": "Menstrual",
+      "donors": 1
+    },
+    {
+      "disease": "normal",
+      "phase": "Proliferative",
+      "donors": 6
+    },
+    {
+      "disease": "normal",
+      "phase": "Secretory",
+      "donors": 6
+    },
+    {
+      "disease": "normal",
+      "phase": "Unknown",
+      "donors": 1
+    }
+  ],
+  "proliferative_pre_qc": {
+    "endometriosis": 16,
+    "normal_label": 6
+  },
+  "limitations": [
+    "Cell-to-donor mapping not read",
+    "Stromal cell counts not read",
+    "Clinical eligibility not fully checked",
+    "A normal metadata label does not certify absence of other pathology",
+    "No expression matrix downloaded; no disease effect or target ranking calculated"
+  ]
+}

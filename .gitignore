@@ -1,0 +1,16 @@
+data/
+work/
+logs/
+.venv/
+.env
+.env.*
+__pycache__/
+*.pyc
+.pytest_cache/
+.nextflow*
+.superpowers/
+*.rds
+*.h5ad
+*.fastq*
+*.bam
+*.cram
