@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "status": "ADOPTED_PRE_EFFECT_IMPLEMENTATION",
+  "protocol": "docs/RESEARCH_PROTOCOL.md",
+  "decisions": "docs/STATISTICAL_IMPLEMENTATION_DECISIONS.md",
+  "input": {
+    "gene_id_column": "gene_id",
+    "counts_nonnegative_finite": true,
+    "discovery_integer_required": false,
+    "heca_integer_required": true,
+    "round_counts": false,
+    "donor_order": "exact_clinical_and_design_order"
+  },
+  "normalization": {
+    "function": "edgeR::calcNormFactors",
+    "method": "TMM",
+    "ref_column": null,
+    "logratio_trim": 0.3,
+    "sum_trim": 0.05,
+    "do_weighting": true,
+    "p": 0.75,
+    "recompute_lib_sizes_after_filter": true,
+    "A_cutoff": -10000000000
+  },
+  "voom": {
+    "function": "limma::voom",
+    "normalize_method": "none",
+    "span": 0.5,
+    "adaptive_span": false,
+    "block": null,
+    "correlation": null,
+    "weights": null,
+    "plot": false,
+    "save_plot": true
+  },
+  "fit": {
+    "function": "limma::lmFit",
+    "method": "ls",
+    "coefficient": "ENDO_minus_non_ENDO",
+    "primary_design": "locked_numeric_tsv",
+    "min_residual_df": 5,
+    "rank_tolerance": 1e-07
+  },
+  "ebayes": {
+    "function": "limma::eBayes",
+    "proportion": 0.01,
+    "stdev_coef_lim": [
+      0.1,
+      4
+    ],
+    "trend": false,
+    "robust": true,
+    "winsor_tail_p": [
+      0.05,
+      0.1
+    ],
+    "legacy": true,
+    "span": null
+  },
+  "testing": {
+    "alternative": "two_sided",
+    "adjust_method": "BH",
+    "family": "all_cohort_expression_pass_genes",
+    "adjust_n": "full_family_size_including_failed_gene_fits",
+    "alpha": 0.05,
+    "logFC_unit": "log2",
+    "direction_zero_tolerance": 0,
+    "confidence_level": 0.95
+  },
+  "cohorts": {
+    "discovery": {
+      "batch_column": "capture_batch",
+      "cell_column": "primary_lineage_cells",
+      "primary_design": "reports/final_clinical_design_discovery_primary.tsv",
+      "minimum_per_group": 8,
+      "integer_counts": false
+    },
+    "heca": {
+      "batch_column": "library_group_Lane",
+      "cell_column": "primary_nuclei",
+      "primary_design": "reports/final_clinical_design_heca_primary.tsv",
+      "minimum_per_group": 5,
+      "integer_counts": true
+    }
+  },
+  "design": {
+    "disease_reference": "non-ENDO",
+    "disease_case": "ENDO",
+    "age_column": "age",
+    "age_center": "cohort_arithmetic_mean_years",
+    "adenomyosis_column": "adenomyosis",
+    "batch_type": "categorical",
+    "min_cells": 50,
+    "constant_covariate_policy": "drop_only_constant_nuisance_with_receipt_in_subsets",
+    "collinear_covariate_policy": "fail_no_selective_drop",
+    "unused_batch_levels": "drop_and_rebuild_treatment_contrasts_in_resamples"
+  },
+  "bootstrap": {
+    "n": 500,
+    "seed": 42,
+    "rng": "R_Mersenne-Twister_Inversion_Rejection",
+    "stratify": "disease",
+    "replace": true,
+    "fixed_discovery_lists": true,
+    "fixed_discovery_directions": true,
+    "fixed_external_gene_family": true,
+    "fixed_original_external_evaluability": true,
+    "refilter": false,
+    "renormalize": true,
+    "refit_voom": true,
+    "refit_ebayes": true,
+    "paired_same_draw_all_methods": true,
+    "min_residual_df": 5,
+    "unique_donor_minimum_applies": false,
+    "invalid_fraction_suppresses_interval_gt": 0.1,
+    "interval": "percentile",
+    "quantile_type": 7,
+    "confidence_level": 0.95,
+    "redraw_invalid": false
+  },
+  "lodo": {
+    "all_discovery_donors": true,
+    "refilter": true,
+    "renormalize": true,
+    "rebuild_design": true,
+    "rebuild_induced_graph": true,
+    "seed_recomputed": true,
+    "retain_baseline_as_reference": true,
+    "failed_fold_policy": "report_not_estimable_no_replacement"
+  },
+  "null": {
+    "n_sets": 200,
+    "k": 20,
+    "seed": 42,
+    "rng": "numpy_PCG64",
+    "method_order": [
+      "B0",
+      "B1",
+      "G1"
+    ],
+    "expression": "rowMeans_edgeR_cpm_log_TRUE_prior_count_0.5_normalized_lib_sizes_TRUE",
+    "degree": "weighted_degree_in_frozen_discovery_induced_U",
+    "bins_per_axis": 5,
+    "quantile_type": 7,
+    "collapse_duplicate_quantile_boundaries": true,
+    "boundary_assignment": "internal_cutpoints_equal_values_go_lower",
+    "joint_bins": true,
+    "pool": "U_excluding_own_method_top20",
+    "external_mask_used_for_sampling": false,
+    "discovery_sign_for_each_sampled_gene": true,
+    "within_set_replacement": false,
+    "between_set_reuse": true,
+    "bin_failure_policy": "entire_method_null_not_estimable_no_merging_no_rescue",
+    "descriptive_only": true
+  },
+  "external_evaluation": {
+    "direction_evaluable": "present_expression_pass_finite_logFC_t_p_and_nonzero_discovery_and_external_sign",
+    "no_refill": true,
+    "minimum_top20_evaluable": 16,
+    "missing_bounds_denominator": 20,
+    "superiority_guard": "no_claim_if_coverage_limited_or_G1minusB0_missing_bounds_include_zero",
+    "primary_contrast": "G1_minus_B0_top20_concordance"
+  },
+  "runtime": {
+    "version_receipt_required_before_effects": true,
+    "exact_versions": "record_actual_environment_not_web_latest",
+    "missing_adaptive_span_argument": "allowed_only_if_installed_voom_is_fixed_span_and_receipted",
+    "missing_legacy_argument": "allowed_only_if_installed_eBayes_is_legacy_algorithm_and_receipted",
+    "missing_other_configured_argument": "fail"
+  },
+  "filtering": {
+    "function": "edgeR::filterByExpr",
+    "group_column": "disease",
+    "design": null,
+    "lib_size": "colSums_all_accepted_genes_before_filter",
+    "min_count": 10,
+    "min_total_count": 15,
+    "large_n": 10,
+    "min_prop": 0.7,
+    "primary_min_donors": {
+      "discovery": 10,
+      "heca": 7
+    },
+    "keep_lib_sizes": false
+  },
+  "minimum_residual_df": 5,
+  "disease_coefficient": "ENDO_minus_non_ENDO"
+}

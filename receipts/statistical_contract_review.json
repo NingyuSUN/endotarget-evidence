@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-13T09:48:10.949370+00:00",
+  "status": "PRE_EFFECT_CONTRACT_ADOPTED_IMPLEMENTATION_REVIEW_FIXES_REPORTED",
+  "configured_reviewer_model": "gpt-6-astra",
+  "configured_reasoning": "high",
+  "backend_identity_independently_attested": false,
+  "cohort_effects_computed_by_this_task": false,
+  "schema_consistency_checks": "PASS",
+  "source_scope": "protocol and primary official edgeR/limma manuals, metadata and code only",
+  "files": {
+    "docs/STATISTICAL_IMPLEMENTATION_DECISIONS.md": "0c75d1d4ffa1c05ae77b0a34f9a843bbcd3559876d00e00e066d06cf822c0b80",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "scripts/donor_de_lib.R": "47b91f2729ffd2fdb996ba4319fe6d3c354b097ab76997d39d9e72f19d1a88c0",
+    "scripts/fit_donor_de.R": "a921ba027d80d9f554e8fcef8fa5ce2b9d80c03247f1c34c5638df2d132868ab"
+  },
+  "R_code_review": {
+    "full_tested_family_BH": "PASS_READ_ONLY",
+    "numeric_core_matches_contract": "PASS_READ_ONLY",
+    "remaining_requested_checks": [
+      "clinical cell threshold in standalone input validator",
+      "numeric nuisance design consistency with intended primary design or metadata",
+      "semantic mandatory discovery freeze artifacts including null freeze",
+      "warnings and effective filter thresholds in receipt"
+    ]
+  },
+  "sources": [
+    "https://bioconductor.org/packages/release/bioc/manuals/edgeR/man/edgeR.pdf",
+    "https://bioconductor.org/packages/release/bioc/manuals/limma/man/limma.pdf",
+    "https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/limmaWorkflow.html"
+  ],
+  "limitations": [
+    "No disease effects or biological validation executed",
+    "Runtime smoke is synthetic and separately receipted",
+    "Implementation findings were reported to integrator; this receipt does not claim their repairs complete"
+  ]
+}
