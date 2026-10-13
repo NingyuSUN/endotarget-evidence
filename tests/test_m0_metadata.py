@@ -8,6 +8,11 @@ from pathlib import Path
 from unittest.mock import patch
 from scripts import m0_metadata as m
 
+SCRATCH = Path(__file__).resolve().parents[1]/"work"
+
+def setUpModule():
+    SCRATCH.mkdir(parents=True, exist_ok=True)
+
 D = "Characteristics[individual]"
 A = "Characteristics[10x technology]"
 C = "Characteristics[disease]"
@@ -69,23 +74,23 @@ class FetchBoundaries(unittest.TestCase):
         with self.assertRaises(ValueError):
             m.validate_payload(b'{"accno":"E-MTAB-999","section":{}}', "biostudies_json")
     def test_over_limit_stream_fails(self):
-        with tempfile.TemporaryDirectory(dir="work") as td:
+        with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
             out = Path(td)/"x.part"
             with self.assertRaises(ValueError):
                 m.stream_to_part(io.BytesIO(b"x"*20), out, 10)
             self.assertFalse(out.exists())
     def test_stream_success_hash_and_bytes(self):
-        with tempfile.TemporaryDirectory(dir="work") as td:
+        with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
             out = Path(td)/"x.part"
             size, sha = m.stream_to_part(io.BytesIO(b"hello"), out, 10)
             self.assertEqual((size,sha),(5,hashlib.sha256(b"hello").hexdigest()))
             self.assertEqual(out.read_bytes(), b"hello")
     def test_non_https_url_rejected(self):
-        with tempfile.TemporaryDirectory(dir="work") as td:
+        with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
             with self.assertRaises(ValueError):
                 m.fetch_one({"id":"x","url":"http://example.com","kind":"biostudies_json","filename":"x.json"}, Path(td))
     def test_cache_hash_mismatch_fails(self):
-        with tempfile.TemporaryDirectory(dir="work") as td:
+        with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
             root = Path(td)
             (root/"data/metadata").mkdir(parents=True)
             (root/"receipts").mkdir()
@@ -94,7 +99,7 @@ class FetchBoundaries(unittest.TestCase):
             with self.assertRaises(ValueError):
                 m.fetch_one({"id":"x","url":"https://example.com","kind":"biostudies_json","filename":"x.json"}, root)
     def test_valid_cache_reused_without_network(self):
-        with tempfile.TemporaryDirectory(dir="work") as td:
+        with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
             root = Path(td)
             (root/"data/metadata").mkdir(parents=True)
             (root/"receipts").mkdir()
@@ -106,7 +111,7 @@ class FetchBoundaries(unittest.TestCase):
             with patch("urllib.request.OpenerDirector.open", side_effect=AssertionError("network")):
                 self.assertEqual(m.fetch_one({"id":"x","url":"https://example.com","kind":"biostudies_json","filename":"x.json"}, root)["status"], "reused_validated")
     def test_refresh_changed_source_preserves_original(self):
-        with tempfile.TemporaryDirectory(dir="work") as td:
+        with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
             root = Path(td)
             (root/"data/metadata").mkdir(parents=True)
             (root/"receipts").mkdir()
@@ -152,6 +157,62 @@ class SoftBoundaries(unittest.TestCase):
         import gzip
         with self.assertRaises(ValueError):
             m.validate_payload(gzip.compress(b"^SERIES = GSE1\n!Series_title = Wrong\n"),"geo_soft_gz")
+
+
+class DeadlineRegression(unittest.TestCase):
+    def test_trickling_http_read_is_interrupted(self):
+        import http.client
+        import socket
+        import threading
+        import time
+        reader, writer = socket.socketpair()
+        writer.sendall(b"HTTP/1.1 200 OK\r\nContent-Length: 30\r\n\r\n")
+        stop = threading.Event()
+        def trickle():
+            try:
+                for _ in range(30):
+                    if stop.wait(0.01):
+                        break
+                    writer.sendall(b"x")
+            except OSError:
+                pass
+        thread = threading.Thread(target=trickle)
+        thread.start()
+        response = http.client.HTTPResponse(reader)
+        response.begin()
+        try:
+            with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
+                part = Path(td)/"slow.part"
+                start = time.monotonic()
+                with patch.object(m, "TOTAL_TIMEOUT", 0.05):
+                    with self.assertRaises(TimeoutError):
+                        m.stream_to_part(response, part, 100)
+                elapsed = time.monotonic()-start
+                self.assertLess(elapsed, 0.20, "A single trickling read exceeded the overall deadline")
+                self.assertFalse(part.exists())
+        finally:
+            stop.set()
+            response.close()
+            reader.close()
+            writer.close()
+            thread.join(timeout=1)
+
+    def test_overall_deadline_includes_open(self):
+        import time
+        def slow_open(*args, **kwargs):
+            time.sleep(0.30)
+            response = io.BytesIO(b'{"accno":"E-MTAB-14039","section":{}}')
+            response.headers = {}
+            response.geturl = lambda: "https://example.com"
+            return response
+        with tempfile.TemporaryDirectory(dir=SCRATCH) as td:
+            start = time.monotonic()
+            with patch.object(m, "TOTAL_TIMEOUT", 0.05):
+                with patch("urllib.request.OpenerDirector.open", side_effect=slow_open):
+                    with self.assertRaises(TimeoutError):
+                        m.fetch_one({"id":"slow","url":"https://example.com","kind":"biostudies_json","filename":"x.json"},Path(td))
+            self.assertLess(time.monotonic()-start,0.20)
+            self.assertFalse((Path(td)/"data/metadata/x.json").exists())
 
 if __name__ == "__main__":
     unittest.main()

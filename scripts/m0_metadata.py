@@ -10,7 +10,8 @@ import json
 import os
 import re
 import ssl
-import time
+import signal
+from contextlib import contextmanager, nullcontext
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -98,28 +99,44 @@ def validate_payload(data, kind):
         return {"accession":"GSE266265", "representation":"official HTML record; no per-donor eligibility inferred"}
     raise ValueError("Unknown metadata type")
 
-def stream_to_part(response, part, limit=MAX_BYTES):
+@contextmanager
+def overall_deadline(seconds):
+    """Interrupt blocking open/read on the SRV01 Unix main-thread CLI."""
+    if signal.getitimer(signal.ITIMER_REAL)[0]:
+        raise RuntimeError("Refusing to replace an existing process alarm")
+    previous_handler = signal.getsignal(signal.SIGALRM)
+    def expired(signum, frame):
+        raise TimeoutError("Download exceeded overall deadline")
+    signal.signal(signal.SIGALRM, expired)
+    try:
+        signal.setitimer(signal.ITIMER_REAL, seconds)
+        yield
+    finally:
+        signal.setitimer(signal.ITIMER_REAL, 0)
+        signal.signal(signal.SIGALRM, previous_handler)
+
+def stream_to_part(response, part, limit=MAX_BYTES, *, enforce_deadline=True):
     if not 0 < limit <= MAX_BYTES:
         raise ValueError("Invalid streaming limit")
     size = 0
     digest = hashlib.sha256()
-    started = time.monotonic()
+    # fetch_one supplies its own deadline covering both open and read.
+    guard = overall_deadline(TOTAL_TIMEOUT) if enforce_deadline else nullcontext()
     # x mode leaves preexisting partial files untouched.
     with part.open("xb") as handle:
         try:
-            while True:
-                if time.monotonic() - started > TOTAL_TIMEOUT:
-                    raise TimeoutError("Download exceeded total streaming deadline")
-                chunk = response.read(min(65536, limit-size+1))
-                if not chunk:
-                    break
-                size += len(chunk)
-                if size > limit:
-                    raise ValueError("Download exceeds byte limit")
-                handle.write(chunk)
-                digest.update(chunk)
-            handle.flush()
-            os.fsync(handle.fileno())
+            with guard:
+                while True:
+                    chunk = response.read(min(65536, limit-size+1))
+                    if not chunk:
+                        break
+                    size += len(chunk)
+                    if size > limit:
+                        raise ValueError("Download exceeds byte limit")
+                    handle.write(chunk)
+                    digest.update(chunk)
+                handle.flush()
+                os.fsync(handle.fileno())
         except BaseException:
             handle.close()
             part.unlink()
@@ -158,15 +175,16 @@ def fetch_one(source, root, refresh=False):
         urllib.request.HTTPSHandler(context=ssl.create_default_context()), HTTPSOnlyRedirect())
     request = urllib.request.Request(url, headers={"User-Agent":"EndoTarget-MetadataAudit/0.1", "Accept-Encoding":"identity"})
     try:
-        with opener.open(request, timeout=TIMEOUT) as response:
-            final_url = response.geturl()
-            if urllib.parse.urlsplit(final_url).scheme != "https":
-                raise ValueError("Final URL is not HTTPS")
-            length = response.headers.get("Content-Length")
-            if length is not None and int(length) > MAX_BYTES:
-                raise ValueError("Content-Length exceeds byte limit")
-            size, sha = stream_to_part(response, part)
-            content_type = response.headers.get("Content-Type")
+        with overall_deadline(TOTAL_TIMEOUT):
+            with opener.open(request, timeout=TIMEOUT) as response:
+                final_url = response.geturl()
+                if urllib.parse.urlsplit(final_url).scheme != "https":
+                    raise ValueError("Final URL is not HTTPS")
+                length = response.headers.get("Content-Length")
+                if length is not None and int(length) > MAX_BYTES:
+                    raise ValueError("Content-Length exceeds byte limit")
+                size, sha = stream_to_part(response, part, enforce_deadline=False)
+                content_type = response.headers.get("Content-Type")
         schema = validate_payload(part.read_bytes(), source["kind"])
     except BaseException:
         # Do not delete a stale .part we did not create.
@@ -185,7 +203,7 @@ def fetch_one(source, root, refresh=False):
     receipt = dict(source, url=url, final_url=final_url, bytes=size, sha256=sha,
                    retrieved_utc=utc(), content_type=content_type, schema=schema,
                    https_certificate_verification=True, byte_limit=MAX_BYTES,
-                   socket_timeout_seconds=TIMEOUT, stream_deadline_seconds=TOTAL_TIMEOUT,
+                   socket_timeout_seconds=TIMEOUT, overall_deadline_seconds=TOTAL_TIMEOUT,
                    path=str(target), status="downloaded")
     if old is not None:
         if sha == old["sha256"]:

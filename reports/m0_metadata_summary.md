@@ -6,7 +6,7 @@ All downloads, code, tests and audit execution occurred on SRV01 in /home/analys
 
 Sources: SDRF from source_inventory.csv, BioStudies JSON from docs/DATA_SOURCES.md; official GEO canonical record initially rejected as a CAPTCHA response. The parent authorized the standard accession-derived official HTTPS FTP family SOFT alternate, which was then actually fetched and validated. Exact original/resolved URLs, UTC, bytes and SHA256 are in receipts and manifests/inputs.lock.tsv.
 
-Downloads use HTTPS certificate verification, HTTPS-only redirects, a 30-second socket timeout, 120-second streaming deadline, <=10 MiB compressed transfers and <=10 MiB decompressed SOFT. Exclusive .part files are validated then atomically renamed. Existing metadata requires matching hash, bytes, type and URL to be reused. --refresh preserves original pins and saves a changed payload separately, returning failure. This source-change behavior was unit-tested; no actual upstream change is claimed. Rejected diagnostic payloads are preserved remotely with receipts.
+Downloads use HTTPS certificate verification, HTTPS-only redirects, a 30-second socket timeout, 120-second overall network deadline (enforced by the independent-review fix; see m0_metadata_review_fixes.md), <=10 MiB compressed transfers and <=10 MiB decompressed SOFT. Exclusive .part files are validated then atomically renamed. Existing metadata requires matching hash, bytes, type and URL to be reused. --refresh preserves original pins and saves a changed payload separately, returning failure. This source-change behavior was unit-tested; no actual upstream change is claimed. Rejected diagnostic payloads are preserved remotely with receipts.
 
 ## VERIFIED actual results
 
@@ -65,3 +65,6 @@ Main outputs:
 NOT VERIFIED: donor-cell joins; >=50 eligible stromal cells/nuclei per donor; hormone/clinical exclusion; raw counts; age/batch design; independent donor provenance; resource feasibility; source terms. Discovery >=8/group and replication >=5/group apply after all exclusions and final design checks. No threshold changed. Stage 0 cannot pass from this audit alone.
 
 Task 2 must resolve the clinical and cell mapping and safe import path before scientific inference. Engineering test success is not scientific/clinical/target validation. No new user decision is needed for this bounded milestone. YELLOW: understanding not yet assessed; explain why 103 libraries, 63 nuclei donor units and 22 phase/disease candidates answer different questions.
+
+## Independent review follow-up
+Two engineering findings were fixed: interruptible overall fetch timeout and self-created project-local test scratch. Final suite now has 24 passing tests, also passing in a clean tracked-code snapshot. See m0_metadata_review_fixes.md and receipts/m0_metadata_review_evidence.json. Earlier receipts remain historical evidence; no scientific readiness changed.
