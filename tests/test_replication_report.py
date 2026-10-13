@@ -1,5 +1,7 @@
 """Boundary checks for reporting, using invented counts only; never fit a model."""
 import importlib.util, json, tempfile, unittest
+from unittest.mock import patch
+import contextlib, io
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 if ROOT.name=="work": ROOT=ROOT.parent
@@ -52,6 +54,18 @@ class ReportingBoundaryTests(unittest.TestCase):
         pool=[dict(gene_id="fixtureB",B0_rank=2,dossier_category="inconclusive"),dict(gene_id="fixtureA",B0_rank=1,dossier_category="inconclusive")]
         selected=mod.dossier_choices(pool)
         self.assertEqual([r["gene_id"] for r in selected],["fixtureA"])
+    def test_default_main_final_receipt(self):
+        with patch("sys.argv", ["build_replication_report.py"]), patch.object(mod,"build",return_value={}) as build, contextlib.redirect_stdout(io.StringIO()):
+            mod.main()
+        self.assertEqual(build.call_args.args[0].receipt,"receipts/replication_report.json")
+    def test_default_main_partial_receipt(self):
+        with patch("sys.argv", ["build_replication_report.py","--partial"]), patch.object(mod,"build",return_value={}) as build, contextlib.redirect_stdout(io.StringIO()):
+            mod.main()
+        self.assertEqual(build.call_args.args[0].receipt,"receipts/replication_draft_report.json")
+    def test_explicit_receipt_override_preserved(self):
+        with patch("sys.argv", ["build_replication_report.py","--partial","--receipt","work/synthetic/custom_receipt.json"]), patch.object(mod,"build",return_value={}) as build, contextlib.redirect_stdout(io.StringIO()):
+            mod.main()
+        self.assertEqual(build.call_args.args[0].receipt,"work/synthetic/custom_receipt.json")
     def test_nonfinite_is_unavailable(self):
         self.assertIsNone(mod.num("nan")); self.assertIsNone(mod.num("inf")); self.assertEqual(mod.num("0"),0)
 if __name__=="__main__": unittest.main()

@@ -1,0 +1,48 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "completed_utc": "2026-10-13T10:58:11Z",
+  "unit_tests": 12,
+  "test_command": [
+    "envs/m0-h5/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_replication_report.py",
+    "-v"
+  ],
+  "test_log": "test_50_failures_permits_conditional_interval (test_replication_report.ReportingBoundaryTests) ... ok\ntest_51_failures_suppresses_interval (test_replication_report.ReportingBoundaryTests) ... ok\ntest_default_main_final_receipt (test_replication_report.ReportingBoundaryTests) ... ok\ntest_default_main_partial_receipt (test_replication_report.ReportingBoundaryTests) ... ok\ntest_explicit_receipt_override_preserved (test_replication_report.ReportingBoundaryTests) ... ok\ntest_false_summary_counts_rejected (test_replication_report.ReportingBoundaryTests) ... ok\ntest_missing_fold_cannot_disappear (test_replication_report.ReportingBoundaryTests) ... ok\ntest_no_forced_supported_dossier (test_replication_report.ReportingBoundaryTests) ... ok\ntest_nonfinite_is_unavailable (test_replication_report.ReportingBoundaryTests) ... ok\ntest_one_failed_lodo_fold_preserved (test_replication_report.ReportingBoundaryTests) ... ok\ntest_retention_has_fixed20_denominator (test_replication_report.ReportingBoundaryTests) ... ok\ntest_suppressed_interval_cannot_be_reported (test_replication_report.ReportingBoundaryTests) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.048s\n\nOK\n",
+  "observed_before_fix": {
+    "default_final_receipt": "None",
+    "default_partial_receipt": "None",
+    "failing_focused_tests": 2
+  },
+  "after_fix": {
+    "default_final_receipt": "receipts/replication_report.json",
+    "default_partial_receipt": "receipts/replication_draft_report.json",
+    "explicit_override_preserved": true
+  },
+  "source_ruling": "docs/REMAINING_SCIENTIFIC_WORK.md",
+  "threshold_equivalence": "30/50/100 retain same22+22 donors; reuse primary, not independent evidence",
+  "age_availability": "44/44 complete; no missing-age conditional unadjusted refit required",
+  "smoke": {
+    "report": "work/synthetic/report_builder/smoke_integration_fixed/replication_draft_results.md",
+    "receipt": "work/synthetic/report_builder/smoke_integration_fixed_receipt.json",
+    "pending": [
+      "bootstrap",
+      "discovery LODO"
+    ],
+    "figures": 4
+  },
+  "smoke_sha256": "7d1fcfe29ac8e8bea46dcee774a00c2ea22451ed0885328b7e97921aaa5f0201",
+  "overwrite_rejected": true,
+  "scientific_validation": false,
+  "real_models_run": false,
+  "real_report_generated": false,
+  "code_sha256": {
+    "scripts/build_replication_report.py": "10d982d8a9af3680eb809bf8809d631e41ccf4448ec9829a6250538dcce5896a",
+    "tests/test_replication_report.py": "26ad25bab19168b47a3041d41c58febb49fa096b046a39b35784fc398c3542a4"
+  }
+}

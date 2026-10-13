@@ -187,7 +187,7 @@ def build(args):
     require(args.partial or not pending, "Resampling pending; use --partial for an explicitly unfinished draft")
     if not args.synthetic_test:
         validate_resampling_binding(args.bootstrap,args.lodo,bs,ls,de,ev,ranking,freeze_path,track)
-        track("docs/CURRENT_STATE.md"); track("reports/discovery_primary_results.md")
+        track("docs/CURRENT_STATE.md"); track("docs/REMAINING_SCIENTIFIC_WORK.md"); track("reports/discovery_primary_results.md")
     external_rows = rows(track(de/"de_all.tsv")); external_index = unique(external_rows)
     significant = sum(num(r["adj.P.Val"]) is not None and float(r["adj.P.Val"])<.05 for r in external_rows)
     require(len(external_rows) == external["tested_family_size"] and significant == external["significant_BH05"], "External full-family size/significance mismatch")
@@ -256,7 +256,7 @@ def build(args):
                   "- 特异性、矛盾与干预 / Specificity, contradictions and intervention: 单个基因的细胞状态特异性未独立建立；"+("精确反向与原发现方向冲突，未经多重校正区间不能等同显著q。" if category=="strongly_conflicting" else "当前证据范围内未建立遗传机制矛盾；这不是证明不存在矛盾。")+"干预方向未知，关联不能指导增加或抑制基因。",
                   f"- 研究建议 / Recommendation: {rec}；"+("可作为组织/状态适用性与扰动实验的候选，尚未完成这些实验。" if category=="supported_same_direction" else "先解决表达不一致、精度或缺失证据；不作药物或临床建议。")]
     lines += ["","## 仍未解决与执行边界 / Limits and execution","",
-              "尚需细胞状态/亚型、30/100细胞阈值、相位判定与周期日等预设敏感性；这些分析未在本报告构建步骤运行。来源可分离不等于已经证明所有历史供者彼此独立。遗传注释只覆盖预设论文；不能称为2026全面证据综述。",
+              "临床敏感性、细胞状态组成及相位/周期日来源说明属于另外的进行中交付，见[剩余科学工作审计](../docs/REMAINING_SCIENTIFIC_WORK.md)；本报告只完成已列出的主分析复核和供者敏感性，不宣称全研究完成。30/50/100细胞阈值保留相同的22+22位供者、相同库及设计，因此复用主结果，不进行三个重复拟合，也不将阈值等价称为三份独立验证。44/44位供者年龄完整，没有因年龄缺失排除人；原方案的缺失年龄条件不触发额外无年龄调整拟合，但年龄完整不证明不存在其他混杂。来源可分离不等于已经证明所有历史供者彼此独立。遗传注释只覆盖预设论文；不能称为2026全面证据综述。",
               "","源数据限制：发现复用OSF作者二级汇总，保留Alevin估计小数计数；完整源RDS没有重算。HECA52,744个核的原始计数与保存H5总计数差9,607/360,765,431（0.00266%），其中1,359可由全局缺失特征解释、8,248尚未直接归因，未修正以强行吻合。继承的相位/细胞标签和标记表达支持群体合理性，不能证明纯度或独立重注释。来源分离不等于基因型证实个体非重叠。",
               "","本步骤只读取已有模型/评价结果并生成图文，没有重新拟合、重排或下载。实际环境为SRV01原生运行；Docker与AWS尚未执行，不能称为容器或云验证。测试、哈希和生成图形成功只证明工程可复现，不证明生物学、治疗或临床有效。",
               "","YELLOW — 理解尚未评估 / Understanding not yet assessed：需能解释供者分母、缺失范围、完整家族q、固定名单重采样与发现逐人留出的不同、不显著与无效应的区别、遗传映射与干预因果的区别。",
@@ -321,6 +321,8 @@ def main():
     p.add_argument("--partial",action="store_true")
     p.add_argument("--synthetic-test",action="store_true")
     args=p.parse_args()
+    if args.receipt is None:
+        args.receipt="receipts/replication_draft_report.json" if args.partial else "receipts/replication_report.json"
     try: print(json.dumps(build(args),ensure_ascii=False))
     except (ValueError,KeyError,FileNotFoundError) as e: p.exit(1,str(e)+"\n")
 if __name__=="__main__": main()
