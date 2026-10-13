@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "completed_utc": "2026-10-13T09:57:37.749472+00:00",
+  "host": "SRV01",
+  "project_root": "/home/analyst/te",
+  "tests_run": 12,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "test_matched_nulls.MatchingTests.test_duplicate_boundaries_identical_values_not_split",
+    "test_matched_nulls.MatchingTests.test_exact_200_sets_20_unique_own_exclusions_own_direction",
+    "test_matched_nulls.MatchingTests.test_invalid_inputs_fail_instead_of_repair",
+    "test_matched_nulls.MatchingTests.test_joint_occupancies_every_draw_not_only_margins",
+    "test_matched_nulls.MatchingTests.test_no_effect_sign_or_t_or_external_fields_select_memberships",
+    "test_matched_nulls.MatchingTests.test_one_scarce_bin_fails_entire_method_no_retry_or_refill",
+    "test_matched_nulls.MatchingTests.test_rng_separately_reinitialized_stable_sorted_candidates",
+    "test_matched_nulls.MatchingTests.test_type7_hand_boundaries_and_equal_goes_lower",
+    "test_matched_nulls.OutputTests.test_changed_discovery_source_fails_before_any_output",
+    "test_matched_nulls.OutputTests.test_cli_archives_all_bins_directions_hashes_and_no_external",
+    "test_matched_nulls.OutputTests.test_config_drift_rejected_and_cli_has_no_sampling_override",
+    "test_matched_nulls.OutputTests.test_production_rejects_synthetic_rank_and_changed_rank_or_de"
+  ],
+  "command": "source scripts/statistical_runtime_env.sh && python -m unittest discover -s tests -p test_matched_nulls.py -v",
+  "actual_runner": "same unittest discovery via TextTestRunner to capture this receipt",
+  "software": {
+    "python": "3.10.22",
+    "numpy": "2.2.6",
+    "executable": "/home/analyst/te/envs/statistical-runtime/bin/python"
+  },
+  "source_sha256": {
+    "scripts/sample_matched_nulls.py": "587092a1f2b2a8915759df67eaf23d4c2d4a18232c9308cac7afd6b2fff90ba5",
+    "tests/test_matched_nulls.py": "c60d22708924084933df69759ce50dfb0ca7ab4c2c05755f5f4289d6abff3c5d",
+    "docs/NULL_SAMPLING.md": "24fa9cfec01542d1537640834c6503ea58cf1f1cc515fc49dc29b5a7265ca7d9",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6"
+  },
+  "first_failure_before_implementation": {
+    "exit_code": 1,
+    "reason": "ModuleNotFoundError: No module named sample_matched_nulls"
+  },
+  "corrected_test_failure": {
+    "reason": "Literal 0.2 boundary assertion versus type7 interpolation 0.20000000000000018",
+    "resolution": "Test-only absolute tolerance 1e-15; production cutpoints and bins unchanged"
+  },
+  "data_scope": "WHOLLY_SYNTHETIC_FIXTURES_ONLY_NO_REAL_EFFECTS_NO_EXTERNAL_INPUTS",
+  "scientific_validation": false,
+  "real_discovery_freeze": false,
+  "external_effects_computed": false
+}
