@@ -1,0 +1,50 @@
+{
+  "run_utc": "2026-10-13T06:38:39.672542+00:00",
+  "host_execution": "SRV01 /home/analyst/te",
+  "records": [
+    {
+      "id": "sdrf",
+      "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/E-MTAB-14039.sdrf.txt",
+      "kind": "sdrf",
+      "filename": "E-MTAB-14039.sdrf.txt",
+      "provenance": "manifests/source_inventory.csv",
+      "status": "FAILED",
+      "error_type": "ValueError",
+      "error": "Missing required SDRF columns: ['Characteristics[menstrual cycle phase]']",
+      "failed_utc": "2026-10-13T06:38:37.582950+00:00"
+    },
+    {
+      "id": "biostudies",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-14039",
+      "kind": "biostudies_json",
+      "filename": "E-MTAB-14039.json",
+      "provenance": "docs/DATA_SOURCES.md",
+      "final_url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-14039",
+      "bytes": 174654,
+      "sha256": "0d91686fe91ff2223c85821e5ac511fd4d254762c953ed40e0dd594d0f57abdb",
+      "retrieved_utc": "2026-10-13T06:38:39.356277+00:00",
+      "content_type": "application/json;charset=UTF-8",
+      "schema": {
+        "accession": "E-MTAB-14039",
+        "section_type": "Study"
+      },
+      "https_certificate_verification": true,
+      "byte_limit": 10485760,
+      "socket_timeout_seconds": 30,
+      "stream_deadline_seconds": 120,
+      "path": "/home/analyst/te/data/metadata/E-MTAB-14039.json",
+      "status": "downloaded"
+    },
+    {
+      "id": "geo",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265",
+      "kind": "geo_record",
+      "filename": "GSE266265.record.html",
+      "provenance": "manifests/source_inventory.csv",
+      "status": "FAILED",
+      "error_type": "ValueError",
+      "error": "Not the expected GEO study record",
+      "failed_utc": "2026-10-13T06:38:39.672429+00:00"
+    }
+  ]
+}

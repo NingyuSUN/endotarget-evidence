@@ -1,0 +1,22 @@
+{
+  "id": "sdrf",
+  "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/E-MTAB-14039.sdrf.txt",
+  "kind": "sdrf",
+  "filename": "E-MTAB-14039.sdrf.txt",
+  "provenance": "manifests/source_inventory.csv",
+  "final_url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/039/E-MTAB-14039/Files/E-MTAB-14039.sdrf.txt",
+  "bytes": 61604,
+  "sha256": "cdcd25f5519b3ddac7b68a41140ae577b929a856c35732e598fc95fcb0bbf36b",
+  "retrieved_utc": "2026-10-13T06:43:32.640334+00:00",
+  "content_type": "text/plain; charset=UTF-8",
+  "schema": {
+    "columns": 54,
+    "rows": 103
+  },
+  "https_certificate_verification": true,
+  "byte_limit": 10485760,
+  "socket_timeout_seconds": 30,
+  "stream_deadline_seconds": 120,
+  "path": "/home/analyst/te/data/metadata/E-MTAB-14039.sdrf.txt",
+  "status": "downloaded"
+}

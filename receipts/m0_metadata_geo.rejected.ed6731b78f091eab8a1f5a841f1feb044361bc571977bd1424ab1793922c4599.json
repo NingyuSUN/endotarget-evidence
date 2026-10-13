@@ -1,0 +1,13 @@
+{
+  "id": "geo",
+  "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265",
+  "kind": "geo_record",
+  "filename": "GSE266265.record.html",
+  "provenance": "manifests/source_inventory.csv",
+  "status": "SCHEMA_REJECTED",
+  "path": "/home/analyst/te/data/metadata/GSE266265.record.html.rejected.ed6731b78f091eab8a1f5a841f1feb044361bc571977bd1424ab1793922c4599",
+  "sha256": "ed6731b78f091eab8a1f5a841f1feb044361bc571977bd1424ab1793922c4599",
+  "bytes": 21384,
+  "retrieved_utc": "2026-10-13T06:39:46.200658+00:00",
+  "final_url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265"
+}

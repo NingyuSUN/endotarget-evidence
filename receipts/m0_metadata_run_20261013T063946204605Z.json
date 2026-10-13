@@ -1,0 +1,51 @@
+{
+  "run_utc": "2026-10-13T06:39:46.204668+00:00",
+  "host_execution": "SRV01 /home/analyst/te",
+  "records": [
+    {
+      "id": "sdrf",
+      "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/E-MTAB-14039.sdrf.txt",
+      "kind": "sdrf",
+      "filename": "E-MTAB-14039.sdrf.txt",
+      "provenance": "manifests/source_inventory.csv",
+      "status": "FAILED",
+      "error_type": "ValueError",
+      "error": "Missing required SDRF columns: ['Characteristics[menstrual cycle phase]']; observed=['Source Name', 'Characteristics[organism]', 'Characteristics[individual]', 'Characteristics[age]', 'Unit[time unit]', 'Term Source REF', 'Term Accession Number', 'Characteristics[developmental stage]', 'Characteristics[sex]', 'Characteristics[organism part]', 'Characteristics[disease]', 'Characteristics[library_id]', 'Characteristics[menstrual_cycle_stage]', 'Characteristics[menstrual_cycle_stage_fine]', 'Characteristics[10x technology]', 'Material Type', 'Protocol REF', 'Protocol REF', 'Protocol REF', 'Extract Name', 'Comment[LIBRARY_LAYOUT]', 'Comment[LIBRARY_SELECTION]', 'Comment[LIBRARY_SOURCE]', 'Comment[LIBRARY_STRAND]', 'Comment[LIBRARY_STRATEGY]', 'Comment[cdna read]', 'Comment[cdna read offset]', 'Comment[cdna read size]', 'Comment[cell barcode offset]', 'Comment[cell barcode read]', 'Comment[cell barcode size]', 'Comment[end bias]', 'Comment[input molecule]', 'Comment[library construction]', 'Comment[primer]', 'Comment[sample barcode offset]', 'Comment[sample barcode read]', 'Comment[sample barcode size]', 'Comment[single cell isolation]', 'Comment[spike in]', 'Comment[umi barcode offset]', 'Comment[umi barcode read]', 'Comment[umi barcode size]', 'Protocol REF', 'Performer', 'Assay Name', 'Technology Type', 'Protocol REF', 'Protocol REF', 'Derived Array Data File', 'Factor Value[disease]', 'Factor Value[library_id]', 'Factor Value[menstrual_cycle_stage]', 'Factor Value[menstrual_cycle_stage_fine]']",
+      "failed_utc": "2026-10-13T06:39:46.104155+00:00"
+    },
+    {
+      "id": "biostudies",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-14039",
+      "kind": "biostudies_json",
+      "filename": "E-MTAB-14039.json",
+      "provenance": "docs/DATA_SOURCES.md",
+      "final_url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/E-MTAB-14039",
+      "bytes": 174654,
+      "sha256": "0d91686fe91ff2223c85821e5ac511fd4d254762c953ed40e0dd594d0f57abdb",
+      "retrieved_utc": "2026-10-13T06:38:39.356277+00:00",
+      "content_type": "application/json;charset=UTF-8",
+      "schema": {
+        "accession": "E-MTAB-14039",
+        "section_type": "Study"
+      },
+      "https_certificate_verification": true,
+      "byte_limit": 10485760,
+      "socket_timeout_seconds": 30,
+      "stream_deadline_seconds": 120,
+      "path": "/home/analyst/te/data/metadata/E-MTAB-14039.json",
+      "status": "reused_validated",
+      "cache_checked_utc": "2026-10-13T06:39:46.111636+00:00"
+    },
+    {
+      "id": "geo",
+      "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE266265",
+      "kind": "geo_record",
+      "filename": "GSE266265.record.html",
+      "provenance": "manifests/source_inventory.csv",
+      "status": "FAILED",
+      "error_type": "ValueError",
+      "error": "Not the expected GEO study record",
+      "failed_utc": "2026-10-13T06:39:46.204574+00:00"
+    }
+  ]
+}

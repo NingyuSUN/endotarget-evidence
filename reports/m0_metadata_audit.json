@@ -1,0 +1,3555 @@
+{
+  "schema_version": 1,
+  "status": "METADATA_ONLY",
+  "field_names": [
+    "Source Name",
+    "Characteristics[organism]",
+    "Characteristics[individual]",
+    "Characteristics[age]",
+    "Unit[time unit]",
+    "Term Source REF",
+    "Term Accession Number",
+    "Characteristics[developmental stage]",
+    "Characteristics[sex]",
+    "Characteristics[organism part]",
+    "Characteristics[disease]",
+    "Characteristics[library_id]",
+    "Characteristics[menstrual_cycle_stage]",
+    "Characteristics[menstrual_cycle_stage_fine]",
+    "Characteristics[10x technology]",
+    "Material Type",
+    "Protocol REF",
+    "Protocol REF",
+    "Protocol REF",
+    "Extract Name",
+    "Comment[LIBRARY_LAYOUT]",
+    "Comment[LIBRARY_SELECTION]",
+    "Comment[LIBRARY_SOURCE]",
+    "Comment[LIBRARY_STRAND]",
+    "Comment[LIBRARY_STRATEGY]",
+    "Comment[cdna read]",
+    "Comment[cdna read offset]",
+    "Comment[cdna read size]",
+    "Comment[cell barcode offset]",
+    "Comment[cell barcode read]",
+    "Comment[cell barcode size]",
+    "Comment[end bias]",
+    "Comment[input molecule]",
+    "Comment[library construction]",
+    "Comment[primer]",
+    "Comment[sample barcode offset]",
+    "Comment[sample barcode read]",
+    "Comment[sample barcode size]",
+    "Comment[single cell isolation]",
+    "Comment[spike in]",
+    "Comment[umi barcode offset]",
+    "Comment[umi barcode read]",
+    "Comment[umi barcode size]",
+    "Protocol REF",
+    "Performer",
+    "Assay Name",
+    "Technology Type",
+    "Protocol REF",
+    "Protocol REF",
+    "Derived Array Data File",
+    "Factor Value[disease]",
+    "Factor Value[library_id]",
+    "Factor Value[menstrual_cycle_stage]",
+    "Factor Value[menstrual_cycle_stage_fine]"
+  ],
+  "deduplication_key": [
+    "Characteristics[10x technology]",
+    "Characteristics[individual]"
+  ],
+  "library_rows": 103,
+  "donor_units": 79,
+  "donor_units_note": "Assay-specific declared IDs; do not sum assays as independent people.",
+  "donors_by_assay": [
+    {
+      "assay": "scRNAseq",
+      "donors": 16
+    },
+    {
+      "assay": "snRNAseq",
+      "donors": 63
+    }
+  ],
+  "donor_strata": [
+    {
+      "assay": "scRNAseq",
+      "disease": "endometriosis",
+      "phase": "Hormones",
+      "donors": 2
+    },
+    {
+      "assay": "scRNAseq",
+      "disease": "endometriosis",
+      "phase": "Proliferative",
+      "donors": 5
+    },
+    {
+      "assay": "scRNAseq",
+      "disease": "endometriosis",
+      "phase": "Secretory",
+      "donors": 2
+    },
+    {
+      "assay": "scRNAseq",
+      "disease": "normal",
+      "phase": "Menstrual",
+      "donors": 1
+    },
+    {
+      "assay": "scRNAseq",
+      "disease": "normal",
+      "phase": "Proliferative",
+      "donors": 5
+    },
+    {
+      "assay": "scRNAseq",
+      "disease": "normal",
+      "phase": "Secretory",
+      "donors": 1
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "endometriosis",
+      "phase": "Hormones",
+      "donors": 9
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "endometriosis",
+      "phase": "Menstrual",
+      "donors": 3
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "endometriosis",
+      "phase": "Proliferative",
+      "donors": 16
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "endometriosis",
+      "phase": "Secretory",
+      "donors": 16
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "normal",
+      "phase": "Hormones",
+      "donors": 5
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "normal",
+      "phase": "Menstrual",
+      "donors": 1
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "normal",
+      "phase": "Proliferative",
+      "donors": 6
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "normal",
+      "phase": "Secretory",
+      "donors": 6
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "normal",
+      "phase": "Unknown",
+      "donors": 1
+    }
+  ],
+  "candidate_proliferative_counts": [
+    {
+      "assay": "scRNAseq",
+      "disease": "endometriosis",
+      "donors": 5
+    },
+    {
+      "assay": "scRNAseq",
+      "disease": "normal",
+      "donors": 5
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "endometriosis",
+      "donors": 16
+    },
+    {
+      "assay": "snRNAseq",
+      "disease": "normal",
+      "donors": 6
+    }
+  ],
+  "candidate_definition": "Exact Proliferative and endometriosis/normal labels; no within-donor clinical conflicts. Hormone, cell/QC and count eligibility NOT VERIFIED.",
+  "within_donor_conflicts": [],
+  "missing_clinical_fields": [
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9016",
+      "fields": {
+        "Characteristics[menstrual_cycle_stage]": [
+          "Unknown"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Unknown"
+        ]
+      }
+    }
+  ],
+  "rows_missing_identity": [],
+  "filename_naming_evidence": [
+    {
+      "sdrf_line": 65,
+      "assay": "scRNAseq",
+      "declared_donor": "FX1119",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12680031_FX1259.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 68,
+      "assay": "scRNAseq",
+      "declared_donor": "FX1249",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12680033_FX1254.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 70,
+      "assay": "scRNAseq",
+      "declared_donor": "FX1249",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12680034_FX1254.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 67,
+      "assay": "scRNAseq",
+      "declared_donor": "FX1254",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12680033_FX1249.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 69,
+      "assay": "scRNAseq",
+      "declared_donor": "FX1254",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12680034_FX1249.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 64,
+      "assay": "scRNAseq",
+      "declared_donor": "FX1259",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12680031_FX1119.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 24,
+      "assay": "snRNAseq",
+      "declared_donor": "EX0366",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460960_FX1100.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 22,
+      "assay": "snRNAseq",
+      "declared_donor": "EX0540",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11282193_FX1146.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 26,
+      "assay": "snRNAseq",
+      "declared_donor": "FX0011",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460961_FX1097.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 62,
+      "assay": "snRNAseq",
+      "declared_donor": "FX0028",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12604667_FX1130.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 37,
+      "assay": "snRNAseq",
+      "declared_donor": "FX0056",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12061703_FX9020.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 72,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1074",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12821480_FX1122.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 25,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1097",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460961_FX0011.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 23,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1100",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460960_EX0366.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 33,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1104",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11596522_FX9005.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 74,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1111",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12821481_FX9007.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 71,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1122",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12821480_FX1074.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 61,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1130",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12604667_FX0028.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 60,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1136",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12449301_FX1150.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 28,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1141",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460962_FX1170.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 21,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1146",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11282193_EX0540.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 59,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1150",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12449301_FX1136.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 54,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1156",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12449298_FX1160.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 35,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1158",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12061415_FX1223.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 53,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1160",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12449298_FX1156.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 39,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1163",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12061704_FX9024.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 27,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1170",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460962_FX1141.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 30,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1215",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460963_FX9006.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 34,
+      "assay": "snRNAseq",
+      "declared_donor": "FX1223",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12061415_FX1158.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 32,
+      "assay": "snRNAseq",
+      "declared_donor": "FX9005",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11596522_FX1104.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 29,
+      "assay": "snRNAseq",
+      "declared_donor": "FX9006",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo11460963_FX1215.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 73,
+      "assay": "snRNAseq",
+      "declared_donor": "FX9007",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12821481_FX1111.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 36,
+      "assay": "snRNAseq",
+      "declared_donor": "FX9020",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12061703_FX0056.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    },
+    {
+      "sdrf_line": 38,
+      "assay": "snRNAseq",
+      "declared_donor": "FX9024",
+      "field": "Derived Array Data File",
+      "source_value": "UA_Endo12061704_FX1163.tar.gz",
+      "issue": "declared_ID_not_literal_filename_token",
+      "status": "UNRESOLVED_NAMING_EVIDENCE",
+      "reassigned": false
+    }
+  ],
+  "filename_check_limit": "Literal-token absence is a broad screen, not a donor inference; opaque filenames can trigger it.",
+  "donors": [
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "A70",
+      "library_rows": 1,
+      "sdrf_lines": [
+        6
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "HCA_A_RepT_RNA13247830"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "ES345",
+      "library_rows": 4,
+      "sdrf_lines": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Early"
+        ]
+      },
+      "library_ids": [
+        "FRZFRESH_GX25",
+        "FRZFRESH_GX26",
+        "FRZFRESH_GX27",
+        "FRZFRESH_GX28"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1119",
+      "library_rows": 1,
+      "sdrf_lines": [
+        65
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12680031"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1125",
+      "library_rows": 2,
+      "sdrf_lines": [
+        9,
+        12
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo10298210",
+        "UA_Endo10298211"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1146",
+      "library_rows": 2,
+      "sdrf_lines": [
+        99,
+        100
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo9426399",
+        "UA_Endo9426400"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1156",
+      "library_rows": 4,
+      "sdrf_lines": [
+        14,
+        15,
+        101,
+        103
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo10298212",
+        "UA_Endo10298213",
+        "UA_Endo9426401",
+        "UA_Endo9426402"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1176",
+      "library_rows": 2,
+      "sdrf_lines": [
+        10,
+        11
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo10298210",
+        "UA_Endo10298211"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1249",
+      "library_rows": 2,
+      "sdrf_lines": [
+        68,
+        70
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12680033",
+        "UA_Endo12680034"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1254",
+      "library_rows": 2,
+      "sdrf_lines": [
+        67,
+        69
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12680033",
+        "UA_Endo12680034"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1259",
+      "library_rows": 2,
+      "sdrf_lines": [
+        64,
+        66
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative Late"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12680031",
+        "UA_Endo12680032"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1285",
+      "library_rows": 2,
+      "sdrf_lines": [
+        90,
+        92
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative Early"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12961679",
+        "UA_Endo12961680"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX1289",
+      "library_rows": 2,
+      "sdrf_lines": [
+        94,
+        96
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative Late"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12961681",
+        "UA_Endo12961682"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "FX9006",
+      "library_rows": 4,
+      "sdrf_lines": [
+        13,
+        16,
+        102,
+        104
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Early"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo10298212",
+        "UA_Endo10298213",
+        "UA_Endo9426401",
+        "UA_Endo9426402"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "SE02",
+      "library_rows": 2,
+      "sdrf_lines": [
+        91,
+        93
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative Early"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12961679",
+        "UA_Endo12961680"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "SE03",
+      "library_rows": 2,
+      "sdrf_lines": [
+        95,
+        97
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12961681",
+        "UA_Endo12961682"
+      ]
+    },
+    {
+      "assay": "scRNAseq",
+      "declared_donor": "SE06",
+      "library_rows": 1,
+      "sdrf_lines": [
+        98
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Menstrual"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Menstrual"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo13646709"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0045",
+      "library_rows": 1,
+      "sdrf_lines": [
+        57
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449300"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0277",
+      "library_rows": 1,
+      "sdrf_lines": [
+        55
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449299"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0288",
+      "library_rows": 1,
+      "sdrf_lines": [
+        56
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449299"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0366",
+      "library_rows": 1,
+      "sdrf_lines": [
+        24
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460960"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0540",
+      "library_rows": 1,
+      "sdrf_lines": [
+        22
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11282193"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0661",
+      "library_rows": 1,
+      "sdrf_lines": [
+        47
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12269814"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0789",
+      "library_rows": 1,
+      "sdrf_lines": [
+        48
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12269814"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "EX0795",
+      "library_rows": 1,
+      "sdrf_lines": [
+        49
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12296823"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0011",
+      "library_rows": 1,
+      "sdrf_lines": [
+        26
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Early"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460961"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0022",
+      "library_rows": 1,
+      "sdrf_lines": [
+        44
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Menstrual"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Menstrual"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12269811"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0024",
+      "library_rows": 1,
+      "sdrf_lines": [
+        75
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821482"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0028",
+      "library_rows": 1,
+      "sdrf_lines": [
+        62
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12604667"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0033",
+      "library_rows": 1,
+      "sdrf_lines": [
+        42
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12269810"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0052",
+      "library_rows": 1,
+      "sdrf_lines": [
+        17
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11173480"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0056",
+      "library_rows": 1,
+      "sdrf_lines": [
+        37
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Menstrual"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Menstrual"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061703"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0060",
+      "library_rows": 1,
+      "sdrf_lines": [
+        45
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12269811"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX0065",
+      "library_rows": 1,
+      "sdrf_lines": [
+        78
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821485"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1074",
+      "library_rows": 1,
+      "sdrf_lines": [
+        72
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821480"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1080",
+      "library_rows": 1,
+      "sdrf_lines": [
+        76
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821483"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1087",
+      "library_rows": 1,
+      "sdrf_lines": [
+        87
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12865963"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1097",
+      "library_rows": 1,
+      "sdrf_lines": [
+        25
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460961"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1100",
+      "library_rows": 1,
+      "sdrf_lines": [
+        23
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460960"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1101",
+      "library_rows": 2,
+      "sdrf_lines": [
+        7,
+        8
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo10281925",
+        "UA_Endo10281926"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1104",
+      "library_rows": 1,
+      "sdrf_lines": [
+        33
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative Late"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11596522"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1106",
+      "library_rows": 1,
+      "sdrf_lines": [
+        43
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12269810"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1111",
+      "library_rows": 1,
+      "sdrf_lines": [
+        74
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821481"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1119",
+      "library_rows": 1,
+      "sdrf_lines": [
+        50
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12296823"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1122",
+      "library_rows": 1,
+      "sdrf_lines": [
+        71
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821480"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1125",
+      "library_rows": 1,
+      "sdrf_lines": [
+        51
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12296824"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1129",
+      "library_rows": 1,
+      "sdrf_lines": [
+        40
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061705"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1130",
+      "library_rows": 1,
+      "sdrf_lines": [
+        61
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Early"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12604667"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1136",
+      "library_rows": 1,
+      "sdrf_lines": [
+        60
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449301"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1141",
+      "library_rows": 1,
+      "sdrf_lines": [
+        28
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460962"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1146",
+      "library_rows": 1,
+      "sdrf_lines": [
+        21
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11282193"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1150",
+      "library_rows": 1,
+      "sdrf_lines": [
+        59
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449301"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1156",
+      "library_rows": 1,
+      "sdrf_lines": [
+        54
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449298"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1158",
+      "library_rows": 1,
+      "sdrf_lines": [
+        35
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Menstrual"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Menstrual"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061415"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1160",
+      "library_rows": 1,
+      "sdrf_lines": [
+        53
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449298"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1163",
+      "library_rows": 1,
+      "sdrf_lines": [
+        39
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061704"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1170",
+      "library_rows": 2,
+      "sdrf_lines": [
+        27,
+        81
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460962",
+        "UA_Endo12865960"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1191",
+      "library_rows": 1,
+      "sdrf_lines": [
+        79
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821487"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1205",
+      "library_rows": 1,
+      "sdrf_lines": [
+        18
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11173480"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1215",
+      "library_rows": 1,
+      "sdrf_lines": [
+        30
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460963"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1223",
+      "library_rows": 2,
+      "sdrf_lines": [
+        34,
+        89
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Early"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061415",
+        "UA_Endo12865966"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1233",
+      "library_rows": 1,
+      "sdrf_lines": [
+        46
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12269813"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX1236",
+      "library_rows": 2,
+      "sdrf_lines": [
+        31,
+        85
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11596521",
+        "UA_Endo12865962"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9005",
+      "library_rows": 1,
+      "sdrf_lines": [
+        32
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11596522"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9006",
+      "library_rows": 2,
+      "sdrf_lines": [
+        29,
+        83
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Early"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11460963",
+        "UA_Endo12865961"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9007",
+      "library_rows": 1,
+      "sdrf_lines": [
+        73
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821481"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9008",
+      "library_rows": 1,
+      "sdrf_lines": [
+        52
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12296824"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9009",
+      "library_rows": 1,
+      "sdrf_lines": [
+        41
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Menstrual"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Menstrual"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061705"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9010",
+      "library_rows": 1,
+      "sdrf_lines": [
+        77
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821484"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9011",
+      "library_rows": 1,
+      "sdrf_lines": [
+        20
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11173482"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9012",
+      "library_rows": 1,
+      "sdrf_lines": [
+        86
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12865962"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9013",
+      "library_rows": 1,
+      "sdrf_lines": [
+        82
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12865960"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9014",
+      "library_rows": 1,
+      "sdrf_lines": [
+        84
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12865961"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9016",
+      "library_rows": 1,
+      "sdrf_lines": [
+        63
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Unknown"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Unknown"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12604668"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9018",
+      "library_rows": 1,
+      "sdrf_lines": [
+        80
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12821488"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9020",
+      "library_rows": 1,
+      "sdrf_lines": [
+        36
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061703"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9021",
+      "library_rows": 1,
+      "sdrf_lines": [
+        88
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Hormones"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Hormones"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12865963"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9022",
+      "library_rows": 1,
+      "sdrf_lines": [
+        19
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "endometriosis"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Secretory"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Secretory Mid"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo11173481"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9024",
+      "library_rows": 1,
+      "sdrf_lines": [
+        38
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12061704"
+      ]
+    },
+    {
+      "assay": "snRNAseq",
+      "declared_donor": "FX9027",
+      "library_rows": 1,
+      "sdrf_lines": [
+        58
+      ],
+      "source_values": {
+        "Characteristics[organism]": [
+          "Homo sapiens"
+        ],
+        "Characteristics[age]": [
+          "20 to 45"
+        ],
+        "Characteristics[developmental stage]": [
+          "adult"
+        ],
+        "Characteristics[sex]": [
+          "female"
+        ],
+        "Characteristics[organism part]": [
+          "endometrium"
+        ],
+        "Characteristics[disease]": [
+          "normal"
+        ],
+        "Characteristics[menstrual_cycle_stage]": [
+          "Proliferative"
+        ],
+        "Characteristics[menstrual_cycle_stage_fine]": [
+          "Proliferative"
+        ]
+      },
+      "library_ids": [
+        "UA_Endo12449300"
+      ]
+    }
+  ],
+  "readiness": {
+    "stage0_passed": false,
+    "status": "OPEN",
+    "final_eligibility": "NOT_VERIFIED",
+    "eligible_discovery_donors": null,
+    "eligible_replication_donors": null,
+    "metadata_only": true,
+    "required_unverified_gates": [
+      "cell_to_donor_mapping",
+      "stromal_cells_per_donor",
+      "hormone_exposure_and_clinical_exclusions",
+      "raw_count_layer",
+      "age_batch_model_identifiability",
+      "independence_ledger",
+      "resource_feasibility",
+      "source_terms"
+    ],
+    "fixed_thresholds": {
+      "discovery_min_per_group": 8,
+      "replication_min_per_group": 5,
+      "stromal_cells_min": 50
+    },
+    "metadata_conflict_units": 0,
+    "missing_identity_rows": 0,
+    "candidate_counts_are_final_eligibility": false
+  },
+  "audited_utc": "2026-10-13T06:45:37.745402+00:00",
+  "source_sha256": "cdcd25f5519b3ddac7b68a41140ae577b929a856c35732e598fc95fcb0bbf36b",
+  "source_bytes": 61604,
+  "source_url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/E-MTAB-14039.sdrf.txt",
+  "acquisition_complete": true
+}

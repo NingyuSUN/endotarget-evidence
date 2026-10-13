@@ -1,0 +1,26 @@
+{
+  "stage0_passed": false,
+  "status": "OPEN",
+  "final_eligibility": "NOT_VERIFIED",
+  "eligible_discovery_donors": null,
+  "eligible_replication_donors": null,
+  "metadata_only": true,
+  "required_unverified_gates": [
+    "cell_to_donor_mapping",
+    "stromal_cells_per_donor",
+    "hormone_exposure_and_clinical_exclusions",
+    "raw_count_layer",
+    "age_batch_model_identifiability",
+    "independence_ledger",
+    "resource_feasibility",
+    "source_terms"
+  ],
+  "fixed_thresholds": {
+    "discovery_min_per_group": 8,
+    "replication_min_per_group": 5,
+    "stromal_cells_min": 50
+  },
+  "metadata_conflict_units": 0,
+  "missing_identity_rows": 0,
+  "candidate_counts_are_final_eligibility": false
+}
