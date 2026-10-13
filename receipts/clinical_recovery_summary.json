@@ -1,0 +1,39 @@
+{
+  "status": "BLOCKED_NO_CLINICAL_XLSX",
+  "host": "SRV01",
+  "root": "/home/analyst/te",
+  "primary_sources": [
+    {
+      "cohort": "discovery",
+      "xml_path": "data/reference/discovery_article.xml",
+      "xml_sha256": "fb09a4f9bbe895ff683187260d0a797749bc3920d50f5005c1d66ed6bdf743b7",
+      "pmcid": "PMC13385355",
+      "doi": "10.1038/s41467-026-73020-4",
+      "exact_filename": "41467_2026_73020_MOESM3_ESM.xlsx",
+      "caption": "Supplementary Data 1"
+    },
+    {
+      "cohort": "heca",
+      "xml_path": "data/reference/heca_article.xml",
+      "xml_sha256": "d28b8499e0eff07ea2ea29f1b6a6429d6e05ce65a099e72b4cc4185899367874",
+      "pmcid": "PMC11387200",
+      "doi": "10.1038/s41588-024-01873-w",
+      "exact_filename": "41588_2024_1873_MOESM3_ESM.xlsx",
+      "caption": "Supplementary Tables 1\u20139 Supplementary Table 1. Harmonized metadata of samples analyzed. Supplementary Table 2. Cell Ranger QC outputs for all newly generated data. Supplementary Table 3. Absolute cell counts per donor and dataset in the HECA. Supplementary Table 4. Cell\u2013cell interactions identified using LIANA. Supplementary Table 5. Differentially expressed genes reported for stromal cells between controls and endometriosis cases. Differential expression analysis was performed using limma v.3.54.2. The table reports the magnitude of differential expression (log 2  fold change) and false discovery rate-adjusted  P  values using the Benjamini\u2013Hochberg method. Supplementary Table 6. Differentially expressed genes reported for macrophages between controls and endometriosis cases. Differential expression analysis was performed using limma v.3.54.2. The table reports the magnitude of differential expression (log 2  fold change) and false discovery rate-adjusted  P  values using the Benjamini\u2013Hochberg method. Supplementary Table 7. Reagents used for the snRNA-seq homogenization buffer. Supplementary Table 8. Reagents used for the snRNA-seq wash buffer. Supplementary Table 9. List of smFISH probes used for smFISH imagining."
+    }
+  ],
+  "successful_workbooks": [],
+  "metadata_inspection_performed": false,
+  "disease_DE_tables_inspected": false,
+  "total_received_bytes_current_attempts": 77529088,
+  "remaining_blockers": [
+    "Official endpoints fail with404 or network read/overall timeout before target is recovered",
+    "No workbook metadata headers or donor identifiers available",
+    "Age, phase provenance and donor mapping remain NOT VERIFIED"
+  ],
+  "validation": {
+    "python_compile": "passed",
+    "download_success": "none",
+    "xlsx_zip_and_schema_validation": "NOT EXECUTED: no workbook bytes"
+  }
+}

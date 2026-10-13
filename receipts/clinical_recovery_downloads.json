@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13385355/bin/41467_2026_73020_MOESM3_ESM.xlsx",
+    "target": "41467_2026_73020_MOESM3_ESM.xlsx",
+    "attempt_utc": "2026-10-13T07:18:28.704755+00:00",
+    "cap_bytes": 134217728,
+    "deadline_seconds": 180,
+    "bytes_received": 0,
+    "status": "failed",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "elapsed_seconds": 0.231
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385355/supplementaryFiles",
+    "target": "41467_2026_73020_MOESM3_ESM.xlsx",
+    "attempt_utc": "2026-10-13T07:18:28.936731+00:00",
+    "cap_bytes": 134217728,
+    "deadline_seconds": 180,
+    "bytes_received": 47185920,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385355/supplementaryFiles",
+    "content_type": "application/zip",
+    "content_length": null,
+    "status": "failed",
+    "error": "TimeoutError: overall deadline 180s exceeded",
+    "elapsed_seconds": 180.0
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11387200/bin/41588_2024_1873_MOESM3_ESM.xlsx",
+    "target": "41588_2024_1873_MOESM3_ESM.xlsx",
+    "attempt_utc": "2026-10-13T07:21:28.947782+00:00",
+    "cap_bytes": 134217728,
+    "deadline_seconds": 180,
+    "bytes_received": 0,
+    "status": "failed",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "elapsed_seconds": 0.192
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11387200/supplementaryFiles",
+    "target": "41588_2024_1873_MOESM3_ESM.xlsx",
+    "attempt_utc": "2026-10-13T07:21:29.140022+00:00",
+    "cap_bytes": 134217728,
+    "deadline_seconds": 180,
+    "bytes_received": 4718592,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11387200/supplementaryFiles",
+    "content_type": "application/zip",
+    "content_length": null,
+    "status": "failed",
+    "error": "TimeoutError: The read operation timed out",
+    "elapsed_seconds": 142.69
+  }
+]

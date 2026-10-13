@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11387200/supplementaryFiles",
+    "target": "41588_2024_1873_MOESM3_ESM.xlsx",
+    "method": "sequential ZIP local records, stop at target",
+    "attempt_utc": "2026-10-13T07:24:34.936062+00:00",
+    "cap_bytes": 134217728,
+    "deadline_seconds": 180,
+    "bytes_received": 0,
+    "visited_members": [],
+    "status": "failed",
+    "error": "TimeoutError: The read operation timed out",
+    "elapsed_seconds": 41.059
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385355/supplementaryFiles",
+    "target": "41467_2026_73020_MOESM3_ESM.xlsx",
+    "method": "sequential ZIP local records, stop at target",
+    "attempt_utc": "2026-10-13T07:23:01.473953+00:00",
+    "cap_bytes": 134217728,
+    "deadline_seconds": 180,
+    "bytes_received": 25624576,
+    "visited_members": [
+      "41467_2026_73020_Fig2_HTML.jpg",
+      "41467_2026_73020_Fig2_HTML.gif",
+      "41467_2026_73020_MOESM1_ESM.pdf"
+    ],
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13385355/supplementaryFiles",
+    "content_type": "application/zip",
+    "status": "failed",
+    "error": "OverallDeadline: overall deadline 180s exceeded",
+    "elapsed_seconds": 180.0
+  }
+]
