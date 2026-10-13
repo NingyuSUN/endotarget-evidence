@@ -1,0 +1,176 @@
+{
+  "status": "PASS_SYNTHETIC_ONLY",
+  "completed_utc": "2026-10-13T10:43:35.731331+00:00",
+  "host": "SRV01",
+  "project_root": "/home/analyst/te",
+  "scientific_validation": false,
+  "real_HECA_bootstrap_run": false,
+  "real_discovery_LODO_run": false,
+  "R_contracts": {
+    "status": "PASS",
+    "fixture_genes": 1500,
+    "fixture_people": 22,
+    "toy_fixed_family_fit_seconds": 0.521,
+    "parity": "original primary and fixed retained family identical logFC,t,BH within1e-12",
+    "boundaries": [
+      "duplicatepeople accepted without uniquegroupminimum",
+      "fixedfamily no expressionrefilter",
+      "constant nuisance dropreceipted",
+      "nonconstant collinearity rejects withoutrescue",
+      "mixedbatch support rejects confounding",
+      "all500draws deterministic R seed42",
+      "top20/top50 unioninvalidity",
+      "originalunevaluable mask stays excluded",
+      "zeroeffect invalidates originallyevaluable",
+      "50failures allowed51suppresses",
+      "quantile type7",
+      "perdrawSHA256rejects syntacticallyvalid edit",
+      "freshlyhashed inconsistent paired difference rejects",
+      "freshlyhashed changed original denominator rejects"
+    ]
+  },
+  "Python_tests": {
+    "lodo_unit_tests": 4,
+    "full_suite_tests": 119,
+    "full_suite_status": "PASS",
+    "full_suite_elapsed_seconds": 8.792,
+    "command": "envs/m0-h5/bin/python -m unittest discover -s tests -v"
+  },
+  "synthetic_bootstrap": {
+    "summary": {
+      "total_required": 500,
+      "completed": 500,
+      "valid": 500,
+      "invalid": 0,
+      "interval_suppressed": false,
+      "interval": [
+        0,
+        0
+      ],
+      "quantile_type": 7,
+      "valid_only_conditioning": false,
+      "scientific_validation": false,
+      "binding_sha256": "9d30b315669b35eeda2ea924fd579c5dd8924cb9fe77eef9c294672f9b2ceef7",
+      "failure_reasons": [],
+      "synthetic": true
+    },
+    "four_worker_process_receipt": {
+      "pid": 2601638,
+      "host": "SRV01",
+      "started_utc": "2026-10-13 10:40:28 UTC",
+      "binding_sha256": "9d30b315669b35eeda2ea924fd579c5dd8924cb9fe77eef9c294672f9b2ceef7",
+      "status": "COMPLETED",
+      "exit_status": 0,
+      "workers": 4,
+      "BLAS_threads": 1,
+      "finished_utc": "2026-10-13 10:41:42 UTC"
+    },
+    "draw_files": 500,
+    "median_per_draw_seconds": 0.5549999999999997,
+    "all_masks_intentionally_identical": "zero paired difference is software fixture outcome, not method comparison",
+    "sha256_sidecar_files": 500,
+    "output_root": "work/synthetic/resampling/bootstrap_v3"
+  },
+  "synthetic_lodo": {
+    "summary": {
+      "total_folds": 22,
+      "valid_folds": 22,
+      "failed_folds": 0,
+      "failed_folds_replaced": false,
+      "binding_sha256": "391af4aaca2c873bc576177531a3ea349dc1a551a3acb349f1707292f2aad21d",
+      "synthetic": true,
+      "scientific_validation": false,
+      "metrics_meaning": "fixed20_retention_and_intersection_over_union_discovery_stability"
+    },
+    "serial_process_receipt": {
+      "pid": 2601819,
+      "host": "SRV01",
+      "started_utc": "2026-10-13T10:40:33.279580+00:00",
+      "status": "COMPLETED",
+      "binding_sha256": "391af4aaca2c873bc576177531a3ea349dc1a551a3acb349f1707292f2aad21d",
+      "exit_status": 0,
+      "workers": 1,
+      "BLAS_threads": 1,
+      "active_fold": 22,
+      "child_pid": 2604101,
+      "finished_utc": "2026-10-13T10:41:46.409212+00:00"
+    },
+    "fold_files": 22,
+    "output_root": "work/synthetic/resampling/lodo_v4"
+  },
+  "safe_resume": {
+    "bootstrap": true,
+    "LODO": true,
+    "completed_failed_fold_no_replacement": true,
+    "corruption_rejections": [
+      {
+        "case": "source_hash_corruption",
+        "exit_status": 1,
+        "rejected": true,
+        "log": "logs/resampling_negative_source_hash_corruption.log"
+      },
+      {
+        "case": "ledger_hash_corruption",
+        "exit_status": 1,
+        "rejected": true,
+        "log": "logs/resampling_negative_ledger_hash_corruption.log"
+      },
+      {
+        "case": "syntactically_valid_draw_edit",
+        "exit_status": 1,
+        "rejected": true,
+        "log": "logs/resampling_negative_syntactically_valid_draw_edit.log"
+      },
+      {
+        "case": "lodo_reference_corruption",
+        "exit_status": 1,
+        "rejected": true,
+        "log": "logs/resampling_negative_lodo_reference.log"
+      }
+    ],
+    "fixture_bytes_restored": true
+  },
+  "failed_approaches": {
+    "progress_print_bug": {
+      "fixed": true,
+      "preserved_output": "work/synthetic/resampling/lodo_interrupted_before_progress_fix",
+      "preserved_log": "logs/resampling_synthetic_lodo.log"
+    },
+    "code_integrity_finalization": "reran final artificial workflows after integrity/receipt edits; old artificial snapshots preserved"
+  },
+  "code_sha256": {
+    "scripts/resample_donor_models.R": "04a922a7dd13fa96a8eab1b1f8eac8c4929bb9cd78f4ece8b333ca7cd79f01a6",
+    "scripts/run_discovery_lodo.py": "fc85be383ff76661217e70f6d3d1e110a58189600cd5d2d807ba583397160b77",
+    "tests/test_resampling.R": "9e8fa3ba0db88156f6f62160af483985be95efd8d689d5f3dc6f2e24ddaf65e1",
+    "tests/test_lodo.py": "6601aa4e22e2ff9347cd3fc20e619d7c9fa11e9c18d26206ed63a77842d37913",
+    "docs/RESAMPLING.md": "1c1ab720262185c2dafd5d5a79cfd382cf75d4a457c9a1b3363b6186d16aa502",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a"
+  },
+  "log_sha256": {
+    "logs/resampling_unit_final.log": "a3ef176a68ae55c812a3230e1b7aef1a6049690b148f8d48256ee9847f25ba53",
+    "logs/lodo_unit_final.log": "320767f9d727fb8aac79ffaa41c6c600c4bf3986e52d6ff92374e3852b3dd7ba",
+    "logs/resampling_full_python.log": "aa65a222509cad3ee7322c467a1091dc20b4b897e5c11f0403a01df6e4215e1c",
+    "logs/resampling_resume_final.log": "301edbf1af4d9794cf804d68b05e1ebadfab689394195fb4c41fdec386f93917",
+    "logs/lodo_resume_final.log": "80a43c297d8a631696f7d66c2b7a9eaf79638742062aa502c2c71b6219d6a2f5",
+    "logs/resampling_synthetic_bootstrap_v3.log": "10dd86fee85eb53d310d0727f547ebc0b2c453f0812c52b3cca220ecb2bebe78",
+    "logs/resampling_synthetic_lodo_v4.log": "80a43c297d8a631696f7d66c2b7a9eaf79638742062aa502c2c71b6219d6a2f5",
+    "logs/resampling_checkpoint_red.log": "6728783aaa3741e85401f5f97b1a0174d0ad8c5143204d720cae94ab8feb2052",
+    "logs/resampling_negative_syntactically_valid_draw_edit.log": "4d12e1b9e3d6d2a4059a91505b7f221308ab422ccba86b1a893a656d3150d687"
+  },
+  "runtime_limits": {
+    "bootstrap_max_workers": 4,
+    "BLAS_threads_per_worker": 1,
+    "LODO_workers": 1,
+    "actual_peak_RSS_measured": false
+  },
+  "cost_limit": "Toy timings do not estimate real500draw runtime; prior discovery full model cost about12.5s is historical parent evidence, not a realexternal resampling benchmark.",
+  "review_fix": {
+    "finding": "P2 resume would trust an edited syntactically valid drawJSON",
+    "addressed": "atomicperdrawSHA256sidecar plus fixedfamily/count/denominator/rate/difference validations",
+    "tests_first_red_log": "logs/resampling_checkpoint_red.log",
+    "test_log": "logs/resampling_unit_final.log",
+    "review_recheck_status": "pending independent reviewer acknowledgement; tests do not replace scientific review"
+  }
+}
