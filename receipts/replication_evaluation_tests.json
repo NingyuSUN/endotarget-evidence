@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "completed_utc": "2026-10-13T10:33:59.240154+00:00",
+  "status": "PASS",
+  "n_tests": 19,
+  "data_kind": "synthetic_test_only",
+  "public_external_effects_read": false,
+  "public_external_evaluation_run": false,
+  "python": "3.10.16",
+  "command": "/home/analyst/te/envs/m0-h5/bin/python -m unittest discover -s tests -p test_replication_evaluation.py -v",
+  "exit_code": 0,
+  "output": "test_complete_family_BH_and_legitimate_failed_gene (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_dossier_fixed_pool_and_no_forced_positive (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_empty_evaluable_bounds (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_exhaustive_reasons_and_denominators (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_external_zero_preserves_signed_t_but_not_concordance (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_failed_gene_q_zero_rejected (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_family_filter_contract_rejects_absent_passed_gene (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_fitted_subset_contract (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_null_coverage_descriptive_only (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_null_own_discovery_sign (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_opposite_CI_touching_zero_is_inconclusive (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_paired_missing_bounds_prevent_superiority (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_reason_precedence (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_zero_and_tiny_nonzero (test_replication_evaluation.GoldenEvaluation) ... ok\ntest_full_synthetic_cli_600_frozen_sets_210_list_rows (test_replication_evaluation.SyntheticFileContract) ... ok\ntest_null_membership_uses_own_sign_rejected (test_replication_evaluation.SyntheticFileContract) ... ok\ntest_original_input_signature_mismatch_rejected (test_replication_evaluation.SyntheticFileContract) ... ok\ntest_output_tamper_rejected (test_replication_evaluation.SyntheticFileContract) ... ok\ntest_synthetic_cannot_enter_production (test_replication_evaluation.SyntheticFileContract) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 1.620s\n\nOK\n",
+  "implementation_sha256": {
+    "scripts/evaluate_replication.py": "76464563522a7f7ef33eea66ba95c4f727ee5b23c8207ea1f794e904a47038b0",
+    "tests/test_replication_evaluation.py": "418bf0cd79f010c1c57989dda6f245d8cd54de44fc7fbd6a7252116d5961a42e",
+    "docs/REPLICATION_EVALUATION.md": "90d7d4bcbe96a3ef9ba054149c113e7c532074451b072791a0216e66355e513d"
+  },
+  "negative_first_observed": "Missing new implementation caused FileNotFoundError before implementation; corrected artificial q fixture and floating-point assertion during golden validation.",
+  "claim": "engineering behavior on invented data only; not scientific replication, resampling, Docker or AWS execution",
+  "original_freeze_verification": [
+    {
+      "freeze": "receipts/discovery_rank_freeze.json",
+      "exit_code": 0,
+      "output": "{\"verified\": true, \"phase\": \"DISCOVERY_FROZEN_PRE_EXTERNAL\", \"artifacts\": 74}\n"
+    },
+    {
+      "freeze": "receipts/statistical_pre_effect_freeze.json",
+      "exit_code": 0,
+      "output": "{\"verified\": true, \"phase\": \"STATISTICAL_IMPLEMENTATION_FROZEN_PRE_EFFECT\", \"artifacts\": 43}\n"
+    }
+  ]
+}
