@@ -1,0 +1,70 @@
+{
+  "finished_utc": "2026-10-13T09:51:30.320388+00:00",
+  "status": "SYNTHETIC_SOFTWARE_TESTS_PASS",
+  "host": "SRV01",
+  "project_root": "/home/analyst/te",
+  "requested_model_config": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high"
+  },
+  "model_identity_note": "Configured delegation recorded by parent; this process does not independently attest model execution",
+  "python": "3.10.16",
+  "numpy": "2.2.6",
+  "runs": [
+    {
+      "command": [
+        "envs/m0-h5/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_rank_targets.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_bad_de_values_duplicates_and_schema_fail (test_rank_targets.RankingTests) ... ok\ntest_bad_reference_including_outside_induction_fails (test_rank_targets.RankingTests) ... ok\ntest_complete_expression_eligibility_must_be_unique_and_contain_fits (test_rank_targets.RankingTests) ... ok\ntest_disconnected_nonisolated_components_allowed (test_rank_targets.RankingTests) ... ok\ntest_extreme_finite_t_values_normalize_without_overflow (test_rank_targets.RankingTests) ... ok\ntest_failed_fit_outside_induced_graph_is_reported_excluded (test_rank_targets.RankingTests) ... ok\ntest_failed_network_eligible_gene_cannot_shrink_universe (test_rank_targets.RankingTests) ... ok\ntest_induced_isolation_not_background_isolation (test_rank_targets.RankingTests) ... ok\ntest_minimum_applies_after_induced_isolation (test_rank_targets.RankingTests) ... ok\ntest_real_cli_synthetic_only_outputs_complete_same_universe (test_rank_targets.RankingTests) ... ok\ntest_ties_signs_and_permutation_invariance (test_rank_targets.RankingTests) ... ok\ntest_tsv_headers_duplicate_columns_extra_or_missing_fields_fail (test_rank_targets.RankingTests) ... ok\ntest_two_node_closed_form_and_mass (test_rank_targets.RankingTests) ... ok\ntest_weighted_path_degree_and_column_normalization (test_rank_targets.RankingTests) ... ok\ntest_zero_seeds_and_nonconvergence_fail (test_rank_targets.RankingTests) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 1.960s\n\nOK\n"
+    },
+    {
+      "command": [
+        "envs/m0-h5/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "test_disease_batch_confounded_design_rejected (test_m0_contracts.M0ContractTests) ... ok\ntest_donor_swap_rejected_even_with_same_donor_set (test_m0_contracts.M0ContractTests) ... ok\ntest_duplicate_person_does_not_satisfy_donor_minimum (test_m0_contracts.M0ContractTests) ... ok\ntest_fractional_discovery_preserved_but_not_accepted_as_integer_heca (test_m0_contracts.M0ContractTests) ... ok\ntest_nonfinite_negative_and_duplicate_gene_rejected (test_m0_contracts.M0ContractTests) ... ok\ntest_deadline_escapes_stdlib_address_retry (test_m0_metadata.DeadlineRegression) ... ok\ntest_overall_deadline_includes_open (test_m0_metadata.DeadlineRegression) ... ok\ntest_trickling_http_read_is_interrupted (test_m0_metadata.DeadlineRegression) ... ok\ntest_blank_label_is_conflict_and_missing (test_m0_metadata.DonorBoundaries) ... ok\ntest_conflicting_clinical_labels_gate (test_m0_metadata.DonorBoundaries) ... ok\ntest_html_is_not_table (test_m0_metadata.DonorBoundaries) ... ok\ntest_metadata_cannot_pass_stage0 (test_m0_metadata.DonorBoundaries) ... ok\ntest_missing_donor_not_inferred (test_m0_metadata.DonorBoundaries) ... ok\ntest_missing_required_column_fails (test_m0_metadata.DonorBoundaries) ... ok\ntest_ragged_table_fails (test_m0_metadata.DonorBoundaries) ... ok\ntest_same_id_across_assays_not_merged (test_m0_metadata.DonorBoundaries) ... ok\ntest_technical_libraries_one_donor (test_m0_metadata.DonorBoundaries) ... ok\ntest_cache_hash_mismatch_fails (test_m0_metadata.FetchBoundaries) ... ok\ntest_html_rejected_as_json (test_m0_metadata.FetchBoundaries) ... ok\ntest_non_https_url_rejected (test_m0_metadata.FetchBoundaries) ... ok\ntest_over_limit_stream_fails (test_m0_metadata.FetchBoundaries) ... ok\ntest_refresh_changed_source_preserves_original (test_m0_metadata.FetchBoundaries) ... ok\ntest_stream_success_hash_and_bytes (test_m0_metadata.FetchBoundaries) ... ok\ntest_valid_cache_reused_without_network (test_m0_metadata.FetchBoundaries) ... ok\ntest_wrong_accession_rejected (test_m0_metadata.FetchBoundaries) ... ok\ntest_compressed_bomb_rejected (test_m0_metadata.SoftBoundaries) ... ok\ntest_valid_family_soft (test_m0_metadata.SoftBoundaries) ... ok\ntest_wrong_soft_accession_rejected (test_m0_metadata.SoftBoundaries) ... ok\ntest_library_id_difference_is_not_clinical_conflict (test_m0_metadata.SourceRegression) ... ok\ntest_true_source_phase_header (test_m0_metadata.SourceRegression) ... ok\ntest_corrupt_reference_rejected_even_if_schema_valid (test_prepare_discovery_counts.AnnotationTests) ... ok\ntest_actual_pinned_C18orf21_is_ambiguous_and_never_kept (test_prepare_discovery_counts.CountsTests) ... ok\ntest_ambiguous_previous_symbol_and_unmapped_never_guess (test_prepare_discovery_counts.CountsTests) ... ok\ntest_count_validation_rejects_negative_and_nonfinite (test_prepare_discovery_counts.CountsTests) ... ok\ntest_duplicate_stable_target_discards_both_rows (test_prepare_discovery_counts.CountsTests) ... ok\ntest_exact_approved_symbol_precedes_other_records_previous_symbol (test_prepare_discovery_counts.CountsTests) ... ok\ntest_restore_drops_entire_many_source_group_and_preserves_fraction (test_prepare_discovery_counts.CountsTests) ... ok\ntest_collapsed_gem_suffix_ambiguity_rejected (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_duplicate_coordinate_rejected (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_duplicate_selected_cell_rejected (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_genuine_selected_sum (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_log_or_real_layer_rejected (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_missing_selected_barcode_rejected (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_negative_raw_count_rejected (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_wrong_feature_identity_rejected (test_prepare_heca_counts.BoundaryTests) ... ok\ntest_changed_selected_barcode_pin_rejected (test_prepare_heca_counts.HardenedCheckpointTests) ... ok\ntest_correct_checkpoint_accepted (test_prepare_heca_counts.HardenedCheckpointTests) ... ok\ntest_deterministic_gzip (test_prepare_heca_counts.HardenedCheckpointTests) ... ok\ntest_fractional_checkpoint_rejected_even_with_current_hash (test_prepare_heca_counts.HardenedCheckpointTests) ... ok\ntest_mutated_npz_rejected (test_prepare_heca_counts.HardenedCheckpointTests) ... ok\ntest_700_exact_boundary_uses_either_direct_channel (test_prepare_string_reference.StringFilterTests) ... ok\ntest_combined_transferred_and_text_only_cannot_rescue_low_direct (test_prepare_string_reference.StringFilterTests) ... ok\ntest_invalid_direct_score_and_malformed_row_fail (test_prepare_string_reference.StringFilterTests) ... ok\ntest_qualifying_self_loop_is_excluded (test_prepare_string_reference.StringFilterTests) ... ok\ntest_reverse_and_same_order_duplicate_edges_take_max_permitted_score (test_prepare_string_reference.StringFilterTests) ... ok\ntest_unknown_or_nonhuman_qualifying_protein_fails (test_prepare_string_reference.StringFilterTests) ... ok\ntest_unsupported_configuration_semantics_fail_instead_of_silent_ignoring (test_prepare_string_reference.StringFilterTests) ... ok\ntest_bad_de_values_duplicates_and_schema_fail (test_rank_targets.RankingTests) ... ok\ntest_bad_reference_including_outside_induction_fails (test_rank_targets.RankingTests) ... ok\ntest_complete_expression_eligibility_must_be_unique_and_contain_fits (test_rank_targets.RankingTests) ... ok\ntest_disconnected_nonisolated_components_allowed (test_rank_targets.RankingTests) ... ok\ntest_extreme_finite_t_values_normalize_without_overflow (test_rank_targets.RankingTests) ... ok\ntest_failed_fit_outside_induced_graph_is_reported_excluded (test_rank_targets.RankingTests) ... ok\ntest_failed_network_eligible_gene_cannot_shrink_universe (test_rank_targets.RankingTests) ... ok\ntest_induced_isolation_not_background_isolation (test_rank_targets.RankingTests) ... ok\ntest_minimum_applies_after_induced_isolation (test_rank_targets.RankingTests) ... ok\ntest_real_cli_synthetic_only_outputs_complete_same_universe (test_rank_targets.RankingTests) ... ok\ntest_ties_signs_and_permutation_invariance (test_rank_targets.RankingTests) ... ok\ntest_tsv_headers_duplicate_columns_extra_or_missing_fields_fail (test_rank_targets.RankingTests) ... ok\ntest_two_node_closed_form_and_mass (test_rank_targets.RankingTests) ... ok\ntest_weighted_path_degree_and_column_normalization (test_rank_targets.RankingTests) ... ok\ntest_zero_seeds_and_nonconvergence_fail (test_rank_targets.RankingTests) ... ok\ntest_ambiguous_unknown_and_case_guess_are_excluded (test_string_gene_mapping.StringGeneTests) ... ok\ntest_current_approved_symbol_precedes_other_previous_symbol (test_string_gene_mapping.StringGeneTests) ... ok\ntest_duplicate_protein_ID_never_overwrites_mapping (test_string_gene_mapping.StringGeneTests) ... ok\ntest_gene_edge_max_collapse_loops_endpoints_and_mass (test_string_gene_mapping.StringGeneTests) ... ok\ntest_many_proteins_same_gene_allowed_approved_and_unique_previous (test_string_gene_mapping.StringGeneTests) ... ok\ntest_unknown_graph_endpoint_and_invalid_weight_fail (test_string_gene_mapping.StringGeneTests) ... ok\n\n----------------------------------------------------------------------\nRan 78 tests in 3.930s\n\nOK\n"
+    }
+  ],
+  "test_first_observation": {
+    "command": "envs/m0-h5/bin/python -m unittest discover -s tests -p test_rank_targets.py -v",
+    "returncode": 1,
+    "failures": 12,
+    "reason": "Ranking implementation missing",
+    "observed_before_implementation": true
+  },
+  "files": {
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "tests/test_rank_targets.py": "f7c4cca75b180583d7b51f66528e76193cfd009440089ce0e9a337c506114da8",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "docs/RANKING_IMPLEMENTATION.md": "fe075f1aa17c29f4ce9b939d7bab02c2f6226c3cf74301e08b350ce6b1fea422"
+  },
+  "real_discovery_rankings_executed": false,
+  "external_effects_used": false,
+  "scientific_validation": false,
+  "complete_external_freeze": false,
+  "universe_protection_test_first": {
+    "observed_before_protection_implementation": true,
+    "command": "envs/m0-h5/bin/python -m unittest discover -s tests -p test_rank_targets.py -v",
+    "returncode": 1,
+    "reason": "eligibility_rows API not yet implemented",
+    "affected_tests": 3
+  },
+  "complete_expression_family_required_in_production": true
+}

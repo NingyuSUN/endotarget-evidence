@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "minimum_universe_genes": 50,
+  "universe": "complete_discovery_expression_pass_de_all_induced_graph_then_remove_zero_degree_and_require_all_U_fits",
+  "stable_gene_id_pattern": "^ENSG[0-9]{11}$",
+  "reference_sha256": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033",
+  "reference_kind": "STRING12.5_direct_experiments_database_functional_association",
+  "reference_schema": [
+    "gene1",
+    "gene2",
+    "weight"
+  ],
+  "reference_weight": "unchanged_max_direct_score_divided_by_1000",
+  "minimum_edge_weight": 0.7,
+  "maximum_edge_weight": 1.0,
+  "duplicate_reference_edges": "reject_already_collapsed_immutable_reference",
+  "self_loops": "reject_already_removed_immutable_reference",
+  "B0": "descending_abs_moderated_discovery_t",
+  "B1": "descending_weighted_degree_same_U",
+  "G1": "restart_random_walk_symmetric_adjacency_column_normalized",
+  "seed": "abs_discovery_t_normalized_to_sum_1_on_U",
+  "restart_probability": 0.5,
+  "l1_tolerance": 1e-10,
+  "max_iterations": 10000,
+  "tie_break": "ascending_stable_gene_id_exact_score_ties",
+  "direction": "sign_discovery_logFC_independently_preserved_zero_is_zero",
+  "top_k": [
+    20,
+    50
+  ],
+  "external_data_used": false,
+  "parameter_search": false
+}
