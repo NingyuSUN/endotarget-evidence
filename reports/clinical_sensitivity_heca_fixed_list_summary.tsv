@@ -1,0 +1,7 @@
+scenario	method	k	selected	sensitivity_evaluable	agree	opposite	unevaluable	concordance	coverage	coverage_adequate	missing_bound_low	missing_bound_high	significant_same_direction_BH05	lists_replaced
+adenomyosis_free	B0	20	20	20	15	5	0	0.75	1.0	True	0.75	0.75	0	False
+adenomyosis_free	B0	50	50	49	38	11	1	0.7755102040816326	0.98	True	0.76	0.78	0	False
+adenomyosis_free	B1	20	20	13	4	9	7	0.3076923076923077	0.65	False	0.2	0.55	0	False
+adenomyosis_free	B1	50	50	35	18	17	15	0.5142857142857142	0.7	False	0.36	0.66	0	False
+adenomyosis_free	G1	20	20	19	10	9	1	0.5263157894736842	0.95	True	0.5	0.55	0	False
+adenomyosis_free	G1	50	50	47	29	18	3	0.6170212765957447	0.94	True	0.58	0.64	0	False

@@ -1,0 +1,6 @@
+cohort	scenario	status	fit_executed	donors	ENDO	non_ENDO	rank	residual_df	expression_pass_genes	estimable_genes	BH_q_lt05	minimum_BH_q	reason
+discovery	strict_histology_conflict_exclusion	COMPLETE_SENSITIVITY_ASSOCIATION	True	20	11	9	12	8	17761	17761	0	0.7700194528856027	
+discovery	adenomyosis_free	COMPLETE_SENSITIVITY_ASSOCIATION	True	18	8	10	11	7	17678	17678	0	0.6157277894306061	
+heca	adenomyosis_free	COMPLETE_SENSITIVITY_ASSOCIATION	True	19	12	7	9	10	17425	17425	0	0.6312218891952182	
+heca	strict_histology_conflict_exclusion	NOT_ESTIMABLE	False	13	10	3	8	5	NA	NA	NA	NA	disease group donor minimum failed
+discovery	strict_and_adenomyosis_free	NOT_ESTIMABLE	False	16	7	9	11	5	NA	NA	NA	NA	disease group donor minimum failed

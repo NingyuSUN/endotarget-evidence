@@ -1,0 +1,37 @@
+cohort	disease	field	denominator_people	recorded_original_value	missing_or_unknown	numeric_value_count	numeric_min	numeric_max	note
+discovery	ALL	age	22	22	0	22	22.0	40.0	source original; no imputation or relabeling
+discovery	ALL	cycle_day	22	22	0	22	6.0	14.0	source original; no imputation or relabeling
+discovery	ALL	progesterone_nmol_L	22	22	0	22	0.03	0.599	source original; no imputation or relabeling
+discovery	ALL	histology	22	10	12	NA	NA	NA	source original; no imputation or relabeling
+discovery	ALL	expression_phase	22	0	22	NA	NA	NA	not separately recorded
+discovery	ALL	per_person_hormone_clinical	22	22	0	NA	NA	NA	source original; no imputation or relabeling
+discovery	ENDO	age	12	12	0	12	22.0	40.0	source original; no imputation or relabeling
+discovery	ENDO	cycle_day	12	12	0	12	6.0	14.0	source original; no imputation or relabeling
+discovery	ENDO	progesterone_nmol_L	12	12	0	12	0.082	0.599	source original; no imputation or relabeling
+discovery	ENDO	histology	12	5	7	NA	NA	NA	source original; no imputation or relabeling
+discovery	ENDO	expression_phase	12	0	12	NA	NA	NA	not separately recorded
+discovery	ENDO	per_person_hormone_clinical	12	12	0	NA	NA	NA	source original; no imputation or relabeling
+discovery	non-ENDO	age	10	10	0	10	25.0	40.0	source original; no imputation or relabeling
+discovery	non-ENDO	cycle_day	10	10	0	10	7.0	14.0	source original; no imputation or relabeling
+discovery	non-ENDO	progesterone_nmol_L	10	10	0	10	0.03	0.386	source original; no imputation or relabeling
+discovery	non-ENDO	histology	10	5	5	NA	NA	NA	source original; no imputation or relabeling
+discovery	non-ENDO	expression_phase	10	0	10	NA	NA	NA	not separately recorded
+discovery	non-ENDO	per_person_hormone_clinical	10	10	0	NA	NA	NA	source original; no imputation or relabeling
+heca	ALL	age	22	22	0	22	18.0	46.0	source original; no imputation or relabeling
+heca	ALL	cycle_day	22	16	6	16	6.0	28.0	source original; no imputation or relabeling
+heca	ALL	progesterone_nmol_L	22	0	22	0	NA	NA	not recorded in selected cached HECA table
+heca	ALL	histology	22	20	2	NA	NA	NA	source original; no imputation or relabeling
+heca	ALL	expression_phase	22	12	10	NA	NA	NA	source original; no imputation or relabeling
+heca	ALL	per_person_hormone_clinical	22	0	22	NA	NA	NA	source original; no imputation or relabeling
+heca	ENDO	age	15	15	0	15	18.0	43.0	source original; no imputation or relabeling
+heca	ENDO	cycle_day	15	11	4	11	6.0	17.0	source original; no imputation or relabeling
+heca	ENDO	progesterone_nmol_L	15	0	15	0	NA	NA	not recorded in selected cached HECA table
+heca	ENDO	histology	15	14	1	NA	NA	NA	source original; no imputation or relabeling
+heca	ENDO	expression_phase	15	7	8	NA	NA	NA	source original; no imputation or relabeling
+heca	ENDO	per_person_hormone_clinical	15	0	15	NA	NA	NA	source original; no imputation or relabeling
+heca	non-ENDO	age	7	7	0	7	27.0	46.0	source original; no imputation or relabeling
+heca	non-ENDO	cycle_day	7	5	2	5	12.0	28.0	source original; no imputation or relabeling
+heca	non-ENDO	progesterone_nmol_L	7	0	7	0	NA	NA	not recorded in selected cached HECA table
+heca	non-ENDO	histology	7	6	1	NA	NA	NA	source original; no imputation or relabeling
+heca	non-ENDO	expression_phase	7	5	2	NA	NA	NA	source original; no imputation or relabeling
+heca	non-ENDO	per_person_hormone_clinical	7	0	7	NA	NA	NA	source original; no imputation or relabeling

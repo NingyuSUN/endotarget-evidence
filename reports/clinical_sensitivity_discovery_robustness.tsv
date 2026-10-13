@@ -1,0 +1,15 @@
+scenario	comparison_scope	primary_genes	direction_evaluable	same_direction	opposite_direction	unevaluable	same_direction_rate	opposite_direction_unadjusted_CI_excludes_zero	interpretation
+strict_histology_conflict_exclusion	all_primary_expression_pass_genes	17733	17708	15138	2570	25	0.8548678563361193	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+strict_histology_conflict_exclusion	B0_top20	20	20	20	0	0	1.0	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+strict_histology_conflict_exclusion	B0_top50	50	50	50	0	0	1.0	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+strict_histology_conflict_exclusion	B1_top20	20	20	16	4	0	0.8	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+strict_histology_conflict_exclusion	B1_top50	50	50	45	5	0	0.9	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+strict_histology_conflict_exclusion	G1_top20	20	20	16	4	0	0.8	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+strict_histology_conflict_exclusion	G1_top50	50	50	45	5	0	0.9	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+adenomyosis_free	all_primary_expression_pass_genes	17733	17616	15456	2160	117	0.8773841961852861	1	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+adenomyosis_free	B0_top20	20	20	20	0	0	1.0	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+adenomyosis_free	B0_top50	50	50	50	0	0	1.0	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+adenomyosis_free	B1_top20	20	20	16	4	0	0.8	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+adenomyosis_free	B1_top50	50	50	46	4	0	0.92	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+adenomyosis_free	G1_top20	20	20	18	2	0	0.9	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance
+adenomyosis_free	G1_top50	50	50	46	4	0	0.92	0	descriptive paired effect stability; missing genes are not opposite effects; CI flag not multiplicity-adjusted significance

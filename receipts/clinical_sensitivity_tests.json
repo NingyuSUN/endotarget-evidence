@@ -1,0 +1,51 @@
+{
+  "status": "PASS_SOFTWARE_AND_EXECUTION_INTEGRITY_NOT_BIOLOGICAL_VALIDATION",
+  "completed_utc": "2026-10-13T11:10:11.107287+00:00",
+  "R_focused_status": "PASS",
+  "Python_focused_tests": 4,
+  "Python_full_tests": 147,
+  "Python_full_elapsed_seconds": 8.254,
+  "Python_full_status": "PASS",
+  "synthetic_end_to_end": {
+    "models_fit": 3,
+    "failed_minima_not_fitted": 2,
+    "output_root": "work/synthetic/clinical_sensitivity/output"
+  },
+  "actual": {
+    "models_fit": 3,
+    "failed_minima_not_fitted": 2,
+    "all_five_scenario_donor_orders_verified": true,
+    "original_snapshot_hashes_reverified": true,
+    "process": {
+      "pid": 2621240,
+      "host": "SRV01",
+      "started_utc": "2026-10-13 11:02:14 UTC",
+      "workers": 1,
+      "BLAS_threads": 1,
+      "status": "COMPLETED",
+      "exit_status": 0,
+      "finished_utc": "2026-10-13 11:02:41 UTC"
+    }
+  },
+  "primary_bootstrap_LODO_rerun": false,
+  "frozen_primary_code_modified": false,
+  "code_sha256": {
+    "scripts/run_clinical_sensitivities.R": "4ed5d6bbb3bc155334d6f85c0ad6262f244ef23158483c26d44c3a68d908c360",
+    "scripts/summarize_clinical_sensitivities.py": "d6e40f734bd0faf856bf39a337af0f1575252fc103512161777df67b3ab9c1e4",
+    "tests/test_clinical_sensitivities.R": "77863d7e84221e38fd5893013d705e8eedd9c42ccc16bb5e67e128c8ebb1f045",
+    "tests/test_clinical_sensitivity_reporting.py": "3eb04610b38ea6617e51653d3c8d12539afb8d2a54fc0a7c50f5f98b3aa98793",
+    "docs/CLINICAL_SENSITIVITIES.md": "d96806e2d1c7fdb17ed524931b3df344252ec75b495011633047b8fe80a331cc"
+  },
+  "log_sha256": {
+    "logs/clinical_sensitivity_red.log": "7c3da17eb7e00e7982b38281f70ef89970a7660044fdc4aa02235a16d0bb0e9c",
+    "logs/clinical_sensitivity_unit.log": "55f18f031a38d6e5938582217b89ec44caf470463282d34eb2e6cf4aae16ab0a",
+    "logs/clinical_sensitivity_reporting_red.log": "56ee0f57779da51c7ffe2d03cda72b36d908008ee20325f0afe3e8eb470b72f1",
+    "logs/clinical_sensitivity_reporting_unit.log": "0833514df2a62a4ad1cff118d5e2154a1929c4d215ab2dfc3f325c5c34abba0d",
+    "logs/clinical_sensitivity_synthetic.log": "d257f9d22f550afde3ec5d814b59a244ba0f351d5394d4e2d9a9acdfb148f098",
+    "logs/clinical_sensitivity_real.log": "f07a68f01d91e678b0c016953f8c9ce978cfd9b1ee5133a02b074011ef64e81e",
+    "logs/clinical_sensitivity_reporting_real.log": "99314182dcd06749c8f943d005ed24e38ba3a69e7cf1d41cd75f0c26bb0da29d",
+    "logs/clinical_sensitivity_full_python.log": "ce55f832189fce93587508d853dcbeecc0e38fb8510bd9c079ec6176c0914e16"
+  },
+  "scientific_validation": false,
+  "failures_encountered": "No substantive runtime/model/report failures; synthetic missing-module negative tests recorded before implementation."
+}
