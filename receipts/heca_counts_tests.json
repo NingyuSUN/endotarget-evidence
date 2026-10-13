@@ -1,0 +1,23 @@
+{
+  "command": "envs/m0-h5/bin/python -m unittest discover -s tests -p test_prepare_heca_counts.py",
+  "tests_passed": 13,
+  "status": "PASS",
+  "baseline_before_implementation": {
+    "tests": 8,
+    "errors": 8,
+    "log": "logs/heca_counts_tests_before.log"
+  },
+  "final_log": "logs/heca_counts_tests_final.log",
+  "script_sha256": "c8685a2ff40709821c63671aa4406b1bd032c0f5f45dccb96478b17c649423f6",
+  "test_sha256": "56b4aba3fe197d86e43ce803d8b3a50631691bc70cc7bd05bc883e6d98e6b2f5",
+  "negative_scope": [
+    "missing/ambiguous/duplicate selected barcode",
+    "noninteger/negative source counts",
+    "duplicate source coordinate",
+    "source feature identity conflict",
+    "modified NPZ or selected-barcode pin",
+    "fractional checkpoint",
+    "deterministic gzip"
+  ],
+  "scientific_validation": false
+}

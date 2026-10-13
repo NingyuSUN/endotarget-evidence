@@ -1,0 +1,190 @@
+{
+  "status": "PASS_TABLE_HASH_INTEGER_SOURCE_MAPPING_CELL_AND_COUNT_MASS_CONSISTENCY",
+  "source_genes": 36601,
+  "stable_genes": 26125,
+  "donors": 22,
+  "primary_nuclei": 52744,
+  "source_UMIs_total": 360765431,
+  "stable_UMIs_total": 352307494,
+  "donor_totals": [
+    {
+      "donor_id": "EX0045",
+      "source_UMIs": 21479092,
+      "stable_retained_UMIs": 21027316,
+      "mapping_excluded_UMIs": 451776,
+      "selected_nuclei": 2862,
+      "author_H5_original_UMIs": 21478574
+    },
+    {
+      "donor_id": "EX0288",
+      "source_UMIs": 8220852,
+      "stable_retained_UMIs": 8005358,
+      "mapping_excluded_UMIs": 215494,
+      "selected_nuclei": 925,
+      "author_H5_original_UMIs": 8220594
+    },
+    {
+      "donor_id": "EX0540",
+      "source_UMIs": 12781794,
+      "stable_retained_UMIs": 12546966,
+      "mapping_excluded_UMIs": 234828,
+      "selected_nuclei": 2077,
+      "author_H5_original_UMIs": 12781468
+    },
+    {
+      "donor_id": "EX0795",
+      "source_UMIs": 4103997,
+      "stable_retained_UMIs": 3986665,
+      "mapping_excluded_UMIs": 117332,
+      "selected_nuclei": 468,
+      "author_H5_original_UMIs": 4103824
+    },
+    {
+      "donor_id": "FX0011",
+      "source_UMIs": 16516276,
+      "stable_retained_UMIs": 16158128,
+      "mapping_excluded_UMIs": 358148,
+      "selected_nuclei": 2395,
+      "author_H5_original_UMIs": 16515968
+    },
+    {
+      "donor_id": "FX0052",
+      "source_UMIs": 45774319,
+      "stable_retained_UMIs": 44675364,
+      "mapping_excluded_UMIs": 1098955,
+      "selected_nuclei": 6544,
+      "author_H5_original_UMIs": 45772665
+    },
+    {
+      "donor_id": "FX0060",
+      "source_UMIs": 6527571,
+      "stable_retained_UMIs": 6331222,
+      "mapping_excluded_UMIs": 196349,
+      "selected_nuclei": 1110,
+      "author_H5_original_UMIs": 6527348
+    },
+    {
+      "donor_id": "FX1097",
+      "source_UMIs": 34412954,
+      "stable_retained_UMIs": 33693089,
+      "mapping_excluded_UMIs": 719865,
+      "selected_nuclei": 4867,
+      "author_H5_original_UMIs": 34412216
+    },
+    {
+      "donor_id": "FX1101",
+      "source_UMIs": 28549400,
+      "stable_retained_UMIs": 27567447,
+      "mapping_excluded_UMIs": 981953,
+      "selected_nuclei": 4657,
+      "author_H5_original_UMIs": 28548526
+    },
+    {
+      "donor_id": "FX1104",
+      "source_UMIs": 27149304,
+      "stable_retained_UMIs": 26482274,
+      "mapping_excluded_UMIs": 667030,
+      "selected_nuclei": 4801,
+      "author_H5_original_UMIs": 27148731
+    },
+    {
+      "donor_id": "FX1119",
+      "source_UMIs": 1428905,
+      "stable_retained_UMIs": 1387077,
+      "mapping_excluded_UMIs": 41828,
+      "selected_nuclei": 203,
+      "author_H5_original_UMIs": 1428859
+    },
+    {
+      "donor_id": "FX1125",
+      "source_UMIs": 5333167,
+      "stable_retained_UMIs": 5164598,
+      "mapping_excluded_UMIs": 168569,
+      "selected_nuclei": 723,
+      "author_H5_original_UMIs": 5333007
+    },
+    {
+      "donor_id": "FX1129",
+      "source_UMIs": 3111055,
+      "stable_retained_UMIs": 3055123,
+      "mapping_excluded_UMIs": 55932,
+      "selected_nuclei": 507,
+      "author_H5_original_UMIs": 3110901
+    },
+    {
+      "donor_id": "FX1136",
+      "source_UMIs": 7812803,
+      "stable_retained_UMIs": 7638544,
+      "mapping_excluded_UMIs": 174259,
+      "selected_nuclei": 1110,
+      "author_H5_original_UMIs": 7812597
+    },
+    {
+      "donor_id": "FX1146",
+      "source_UMIs": 26974388,
+      "stable_retained_UMIs": 26497542,
+      "mapping_excluded_UMIs": 476846,
+      "selected_nuclei": 4521,
+      "author_H5_original_UMIs": 26973756
+    },
+    {
+      "donor_id": "FX1150",
+      "source_UMIs": 20831550,
+      "stable_retained_UMIs": 20325625,
+      "mapping_excluded_UMIs": 505925,
+      "selected_nuclei": 2995,
+      "author_H5_original_UMIs": 20830894
+    },
+    {
+      "donor_id": "FX1160",
+      "source_UMIs": 4372691,
+      "stable_retained_UMIs": 4245092,
+      "mapping_excluded_UMIs": 127599,
+      "selected_nuclei": 528,
+      "author_H5_original_UMIs": 4372556
+    },
+    {
+      "donor_id": "FX1236",
+      "source_UMIs": 35931136,
+      "stable_retained_UMIs": 35207180,
+      "mapping_excluded_UMIs": 723956,
+      "selected_nuclei": 3518,
+      "author_H5_original_UMIs": 35930192
+    },
+    {
+      "donor_id": "FX9005",
+      "source_UMIs": 19929293,
+      "stable_retained_UMIs": 19470664,
+      "mapping_excluded_UMIs": 458629,
+      "selected_nuclei": 3672,
+      "author_H5_original_UMIs": 19928931
+    },
+    {
+      "donor_id": "FX9020",
+      "source_UMIs": 11465619,
+      "stable_retained_UMIs": 11202535,
+      "mapping_excluded_UMIs": 263084,
+      "selected_nuclei": 1755,
+      "author_H5_original_UMIs": 11465318
+    },
+    {
+      "donor_id": "FX9024",
+      "source_UMIs": 11376437,
+      "stable_retained_UMIs": 11105258,
+      "mapping_excluded_UMIs": 271179,
+      "selected_nuclei": 1644,
+      "author_H5_original_UMIs": 11376229
+    },
+    {
+      "donor_id": "FX9027",
+      "source_UMIs": 6682828,
+      "stable_retained_UMIs": 6534427,
+      "mapping_excluded_UMIs": 148401,
+      "selected_nuclei": 862,
+      "author_H5_original_UMIs": 6682670
+    }
+  ],
+  "preparation_receipt_sha256": "8be6e1b3e1e3d3fac67b50b3ceaccd343ee35fac492ac21a98819bc272ed9ce7",
+  "disease_effects_computed": false,
+  "validation_is_scientific_or_external_confirmation": false
+}

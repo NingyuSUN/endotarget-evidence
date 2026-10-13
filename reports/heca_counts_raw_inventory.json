@@ -1,0 +1,178 @@
+[
+  {
+    "donor_id": "EX0045",
+    "sample_id": "UA_Endo12449300_EX0045",
+    "library_id": "UA_Endo12449300",
+    "path": "UA_Endo12449300_EX0045.tar.gz",
+    "expected_bytes": 80752081,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12449300_EX0045.tar.gz"
+  },
+  {
+    "donor_id": "EX0288",
+    "sample_id": "UA_Endo12449299_EX0288",
+    "library_id": "UA_Endo12449299",
+    "path": "UA_Endo12449299_EX0288.tar.gz",
+    "expected_bytes": 70226140,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12449299_EX0288.tar.gz"
+  },
+  {
+    "donor_id": "EX0540",
+    "sample_id": "UA_Endo11282193_EX0540",
+    "library_id": "UA_Endo11282193",
+    "path": "UA_Endo11282193_EX0540.tar.gz",
+    "expected_bytes": 79075364,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11282193_EX0540.tar.gz"
+  },
+  {
+    "donor_id": "EX0795",
+    "sample_id": "UA_Endo12296823_EX0795",
+    "library_id": "UA_Endo12296823",
+    "path": "UA_Endo12296823_EX0795.tar.gz",
+    "expected_bytes": 79119323,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12296823_EX0795.tar.gz"
+  },
+  {
+    "donor_id": "FX0011",
+    "sample_id": "UA_Endo11460961_FX0011",
+    "library_id": "UA_Endo11460961",
+    "path": "UA_Endo11460961_FX0011.tar.gz",
+    "expected_bytes": 67719393,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11460961_FX0011.tar.gz"
+  },
+  {
+    "donor_id": "FX0052",
+    "sample_id": "UA_Endo11173480_FX0052",
+    "library_id": "UA_Endo11173480",
+    "path": "UA_Endo11173480_FX0052.tar.gz",
+    "expected_bytes": 89709197,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11173480_FX0052.tar.gz"
+  },
+  {
+    "donor_id": "FX0060",
+    "sample_id": "UA_Endo12269811_FX0060",
+    "library_id": "UA_Endo12269811",
+    "path": "UA_Endo12269811_FX0060.tar.gz",
+    "expected_bytes": 61866382,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12269811_FX0060.tar.gz"
+  },
+  {
+    "donor_id": "FX1097",
+    "sample_id": "UA_Endo11460961_FX1097",
+    "library_id": "UA_Endo11460961",
+    "path": "UA_Endo11460961_FX1097.tar.gz",
+    "expected_bytes": 98568682,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11460961_FX1097.tar.gz"
+  },
+  {
+    "donor_id": "FX1101",
+    "sample_id": "UA_Endo10281926_FX1101",
+    "library_id": "UA_Endo10281926",
+    "path": "UA_Endo10281926_FX1101.tar.gz",
+    "expected_bytes": 139010931,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo10281926_FX1101.tar.gz"
+  },
+  {
+    "donor_id": "FX1104",
+    "sample_id": "UA_Endo11596522_FX1104",
+    "library_id": "UA_Endo11596522",
+    "path": "UA_Endo11596522_FX1104.tar.gz",
+    "expected_bytes": 67113961,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11596522_FX1104.tar.gz"
+  },
+  {
+    "donor_id": "FX1119",
+    "sample_id": "UA_Endo12296823_FX1119",
+    "library_id": "UA_Endo12296823",
+    "path": "UA_Endo12296823_FX1119.tar.gz",
+    "expected_bytes": 39296052,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12296823_FX1119.tar.gz"
+  },
+  {
+    "donor_id": "FX1125",
+    "sample_id": "UA_Endo12296824_FX1125",
+    "library_id": "UA_Endo12296824",
+    "path": "UA_Endo12296824_FX1125.tar.gz",
+    "expected_bytes": 53545895,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12296824_FX1125.tar.gz"
+  },
+  {
+    "donor_id": "FX1129",
+    "sample_id": "UA_Endo12061705_FX1129",
+    "library_id": "UA_Endo12061705",
+    "path": "UA_Endo12061705_FX1129.tar.gz",
+    "expected_bytes": 36290888,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12061705_FX1129.tar.gz"
+  },
+  {
+    "donor_id": "FX1136",
+    "sample_id": "UA_Endo12449301_FX1136",
+    "library_id": "UA_Endo12449301",
+    "path": "UA_Endo12449301_FX1136.tar.gz",
+    "expected_bytes": 38858041,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12449301_FX1136.tar.gz"
+  },
+  {
+    "donor_id": "FX1146",
+    "sample_id": "UA_Endo11282193_FX1146",
+    "library_id": "UA_Endo11282193",
+    "path": "UA_Endo11282193_FX1146.tar.gz",
+    "expected_bytes": 62694218,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11282193_FX1146.tar.gz"
+  },
+  {
+    "donor_id": "FX1150",
+    "sample_id": "UA_Endo12449301_FX1150",
+    "library_id": "UA_Endo12449301",
+    "path": "UA_Endo12449301_FX1150.tar.gz",
+    "expected_bytes": 67331134,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12449301_FX1150.tar.gz"
+  },
+  {
+    "donor_id": "FX1160",
+    "sample_id": "UA_Endo12449298_FX1160",
+    "library_id": "UA_Endo12449298",
+    "path": "UA_Endo12449298_FX1160.tar.gz",
+    "expected_bytes": 62178706,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12449298_FX1160.tar.gz"
+  },
+  {
+    "donor_id": "FX1236",
+    "sample_id": "UA_Endo11596521_FX1236",
+    "library_id": "UA_Endo11596521",
+    "path": "UA_Endo11596521_FX1236.tar.gz",
+    "expected_bytes": 94603640,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11596521_FX1236.tar.gz"
+  },
+  {
+    "donor_id": "FX9005",
+    "sample_id": "UA_Endo11596522_FX9005",
+    "library_id": "UA_Endo11596522",
+    "path": "UA_Endo11596522_FX9005.tar.gz",
+    "expected_bytes": 88870624,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo11596522_FX9005.tar.gz"
+  },
+  {
+    "donor_id": "FX9020",
+    "sample_id": "UA_Endo12061703_FX9020",
+    "library_id": "UA_Endo12061703",
+    "path": "UA_Endo12061703_FX9020.tar.gz",
+    "expected_bytes": 55190489,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12061703_FX9020.tar.gz"
+  },
+  {
+    "donor_id": "FX9024",
+    "sample_id": "UA_Endo12061704_FX9024",
+    "library_id": "UA_Endo12061704",
+    "path": "UA_Endo12061704_FX9024.tar.gz",
+    "expected_bytes": 78589867,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12061704_FX9024.tar.gz"
+  },
+  {
+    "donor_id": "FX9027",
+    "sample_id": "UA_Endo12449300_FX9027",
+    "library_id": "UA_Endo12449300",
+    "path": "UA_Endo12449300_FX9027.tar.gz",
+    "expected_bytes": 71433090,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12449300_FX9027.tar.gz"
+  }
+]

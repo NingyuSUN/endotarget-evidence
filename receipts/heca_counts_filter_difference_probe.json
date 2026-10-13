@@ -1,0 +1,144 @@
+{
+  "method": "Only exact raw-source symbols unique in raw features and absent original H5 var; no suffix stripping or alias guesses",
+  "unique_absent_source_feature_rows": 3022,
+  "raw_feature_rows_with_nonunique_symbols": 20,
+  "H5_var_symbols": 33578,
+  "all_22_donor_differences_explained_exactly": false,
+  "new_network_bytes": 0,
+  "new_MTX_parse": false,
+  "comparison": [
+    {
+      "donor_id": "EX0045",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 76,
+      "raw_minus_author_H5_UMIs": 518,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "EX0288",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 27,
+      "raw_minus_author_H5_UMIs": 258,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "EX0540",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 34,
+      "raw_minus_author_H5_UMIs": 326,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "EX0795",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 13,
+      "raw_minus_author_H5_UMIs": 173,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX0011",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 41,
+      "raw_minus_author_H5_UMIs": 308,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX0052",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 201,
+      "raw_minus_author_H5_UMIs": 1654,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX0060",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 40,
+      "raw_minus_author_H5_UMIs": 223,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1097",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 110,
+      "raw_minus_author_H5_UMIs": 738,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1101",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 141,
+      "raw_minus_author_H5_UMIs": 874,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1104",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 114,
+      "raw_minus_author_H5_UMIs": 573,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1119",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 6,
+      "raw_minus_author_H5_UMIs": 46,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1125",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 25,
+      "raw_minus_author_H5_UMIs": 160,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1129",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 12,
+      "raw_minus_author_H5_UMIs": 154,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1136",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 28,
+      "raw_minus_author_H5_UMIs": 206,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1146",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 87,
+      "raw_minus_author_H5_UMIs": 632,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1150",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 89,
+      "raw_minus_author_H5_UMIs": 656,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1160",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 19,
+      "raw_minus_author_H5_UMIs": 135,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX1236",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 132,
+      "raw_minus_author_H5_UMIs": 944,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX9005",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 79,
+      "raw_minus_author_H5_UMIs": 362,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX9020",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 36,
+      "raw_minus_author_H5_UMIs": 301,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX9024",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 36,
+      "raw_minus_author_H5_UMIs": 208,
+      "exact_explanation": false
+    },
+    {
+      "donor_id": "FX9027",
+      "UMIs_on_unique_source_symbols_absent_H5_var": 13,
+      "raw_minus_author_H5_UMIs": 158,
+      "exact_explanation": false
+    }
+  ],
+  "status": "OPTIONAL_SOURCE_UNIVERSE_CHECK_NOT_COUNT_CORRECTION"
+}

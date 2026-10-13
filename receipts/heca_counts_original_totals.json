@@ -1,0 +1,53 @@
+{
+  "source_url": "https://cellgeni.cog.sanger.ac.uk/vento/reproductivecellatlas/endometriumAtlasV2_nuclei.h5ad",
+  "source_size": 8739186814,
+  "additional_budget_is_part_of_prior_10MiB": true,
+  "source_cache_limit_bytes": 220200960,
+  "path": "data/metadata/heca_h5/heca_count_probe/original_obs_n_counts.npy",
+  "shape": [
+    312246
+  ],
+  "sha256": "e6887afd3a2500fbfc2d37f5d2ea55cea3e73e4361c79bb9f6153463be072c98",
+  "finite_positive_integer": true,
+  "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+  "new_network_bytes": 1048576,
+  "source_cache_bytes": 213909504,
+  "range_responses": [
+    {
+      "start": 8438677504,
+      "end": 8438939647,
+      "bytes": 262144,
+      "sha256": "6a562514de19740387ed0a0aed4ca606599cf8e5f6c6f301824f1c37ee6c1b6f",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 2.942
+    },
+    {
+      "start": 8438939648,
+      "end": 8439201791,
+      "bytes": 262144,
+      "sha256": "c2f375ea96a4dd146113633512238d8c17880b273052c41ae2802da98276d65a",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.464
+    },
+    {
+      "start": 8439201792,
+      "end": 8439463935,
+      "bytes": 262144,
+      "sha256": "ae99ad36bcf78f8ff000a02b1a86c1da793c9d9ef5ebfdc43c49075d91e0ac03",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.238
+    },
+    {
+      "start": 8439463936,
+      "end": 8439726079,
+      "bytes": 262144,
+      "sha256": "cb94b45c5151366ff0376f9297a32efada85d10ef0924010bd1f0ffe267fafba",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.238
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "source": "cached BioStudies public processed-file inventory + exact fixed sample selection",
+  "selected_archives": 22,
+  "selected_archive_total_bytes": 1582044098,
+  "probe": {
+    "donor_id": "FX1129",
+    "sample_id": "UA_Endo12061705_FX1129",
+    "library_id": "UA_Endo12061705",
+    "path": "UA_Endo12061705_FX1129.tar.gz",
+    "expected_bytes": 36290888,
+    "url": "https://www.ebi.ac.uk/biostudies/files/E-MTAB-14039/UA_Endo12061705_FX1129.tar.gz"
+  },
+  "http_status": 206,
+  "final_url": "https://ftp.ebi.ac.uk/biostudies/fire/E-MTAB-/039/E-MTAB-14039/Files/UA_Endo12061705_FX1129.tar.gz",
+  "etag": "\"229c148-616fd4a93c880\"",
+  "last_modified": "Fri, 26 Apr 2024 10:23:14 GMT",
+  "content_range": "bytes 0-1048575/36290888",
+  "downloaded_bytes": 1048576,
+  "sha256": "6cbf62f938efe29c722c073aac5ef2bdfb28946b7e9a220a7565fbafd03507fc",
+  "wall_seconds": 6.39858756493777,
+  "first_members": [
+    {
+      "name": "work/UA_Endo12061705_FX1129",
+      "size": 0,
+      "payload_available": 0,
+      "type": "5",
+      "head_hex": ""
+    },
+    {
+      "name": "work/UA_Endo12061705_FX1129/matrix.mtx.gz",
+      "size": 35944213,
+      "payload_available": 1048194,
+      "type": "0",
+      "head_hex": "1f8b08080b93946400036d6174726978",
+      "inner_text_head": "%%MatrixMarket matrix coordinate integer general\n36601 3205 11885010\n15 1 1\n25 1 1\n31 1 1\n59 1 1\n63 1 1\n73 1 1\n78 1 1\n81 1 1\n84 1 2\n87 1 3\n100 1 1\n144 1 1\n146 1 2\n158 1 1\n171 1 1\n174 1 2\n195 1 1\n209 1 2\n212 1 2\n217 1 6\n220 1 1\n238 1 3\n239 1 2\n244 1 1\n247 1 1\n257 1 1\n262 1 1\n292 1 1\n299 1 4\n337 1 1\n339 1 3\n356 1 2\n360 1 2\n368 1 1\n371 1 1\n387 1 1\n394 1 1\n399 1 2\n404 1 1\n408 1 2\n433 1 1\n435 1 2\n439 1 4\n475 1 2\n476 1 3\n486 1 1\n493 1 2\n509 1 1\n510 1 1\n514 1 3\n525 1 7\n531 1 1\n536 1 1\n551 1 1\n553 1 3\n563 1 1\n600 1 2\n602 1 1\n605 1 1\n626 1 5\n629 1 3\n635 1 1\n640 1 1\n646 1 3\n648 1 2\n649 1 1\n654 1 1\n664 1 1\n670 1 4\n688 1 1\n689 1 1\n691 1 1\n709 1 1\n712 1 1\n714 1 1\n715 1 2\n727 1 1\n735 1 3\n740 1 1\n746 1 1\n747 1 1\n751 1 1\n755 1 1\n775 1 1\n776 1 2\n777 1 1\n782 1 2\n790 1 4\n798 1 1\n799 1 2\n802 1 1\n820 1 1\n829 1 1\n847 1 1\n848 1 11\n859 1 2\n866 1 1\n872 1 5\n891 1 1\n894 1 1\n898 1 1\n899 1 2\n900 1 1\n916 1 1\n918 1 2\n921 1 2\n927 1 1\n947 1 1\n952 1 1\n954 1 3\n955 1 1\n965 1 2\n976 1 4\n982 1 3\n985 1 4\n993 1 2\n995 1 2\n997 1 2\n998 1 2\n1001 1 3\n1011 1 4\n1036 1 1\n1040 1 1\n1065 1 7\n1077 1 4\n1078 1 2\n1082 1 1\n1086 1 1\n1087 1 2\n1093 1 3\n1111 1 1\n1113 1 1\n1126 1 1\n1129 1 2\n1135 1 1\n1147 1 1\n1159 1 2\n1167 1 4\n1178 1 1\n1181 1 1\n1183 1 2\n1188 1 1\n1208 1 1\n1211 1 1\n1212 1 4\n1229 1 1\n1232 1 10\n1236 1 1\n1238 1 2\n1248 1 1\n1250 1 8\n1251 1 1\n1252 1 1\n1262 1 1\n1265 1 2\n1266 1 3\n1268 1 1\n1283 1 1\n1284 1 1\n1286 1 1\n1296 1 1\n1297 1 4\n1342 1 1\n1344 1 1\n1346 1 2\n1347 1 2\n1350 1 1\n1381 1 1\n1385 1 1\n1386 1 2\n1387 1 5\n1392 1 2\n1396 1 1\n1400 1 1\n1406 1 2\n1409 1 5\n1411 1 1\n1417 1 1\n1419 1 2\n1424 1 2\n1428 1 2\n1451 1 2\n1462 1 1\n1473 1 1\n1475 1 8\n1476 1 7\n1479 1 1\n1482 1 3\n1488 1 3\n1496 1 1\n1497 1 2\n1500 1 4\n1507 1 1\n1518 1 2\n1519 1 2\n1527 1 1\n1530 1 1\n1536 1 2\n1542 1 1\n1543 1 1\n1547 1 1\n1585 1 1\n1592 1 1\n1597 1 1\n1600 1 1\n1609 1 2\n1614"
+    }
+  ],
+  "decompressed_prefix_bytes": 1049218,
+  "complete_tar_verified": false,
+  "raw_count_status": "HEADER_PROBE_ONLY_NOT_VALIDATED"
+}
