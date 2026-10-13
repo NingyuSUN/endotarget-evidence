@@ -185,7 +185,7 @@ class DeadlineRegression(unittest.TestCase):
                 part = Path(td)/"slow.part"
                 start = time.monotonic()
                 with patch.object(m, "TOTAL_TIMEOUT", 0.05):
-                    with self.assertRaises(TimeoutError):
+                    with self.assertRaises(m.DeadlineExceeded):
                         m.stream_to_part(response, part, 100)
                 elapsed = time.monotonic()-start
                 self.assertLess(elapsed, 0.20, "A single trickling read exceeded the overall deadline")
@@ -209,10 +209,44 @@ class DeadlineRegression(unittest.TestCase):
             start = time.monotonic()
             with patch.object(m, "TOTAL_TIMEOUT", 0.05):
                 with patch("urllib.request.OpenerDirector.open", side_effect=slow_open):
-                    with self.assertRaises(TimeoutError):
+                    with self.assertRaises(m.DeadlineExceeded):
                         m.fetch_one({"id":"slow","url":"https://example.com","kind":"biostudies_json","filename":"x.json"},Path(td))
             self.assertLess(time.monotonic()-start,0.20)
             self.assertFalse((Path(td)/"data/metadata/x.json").exists())
+
+
+    def test_deadline_escapes_stdlib_address_retry(self):
+        import socket
+        import time
+        attempts = []
+        class EndpointSocket:
+            def __init__(self, *args):
+                pass
+            def settimeout(self, value):
+                pass
+            def close(self):
+                pass
+            def connect(self, address):
+                attempts.append(address)
+                if len(attempts) == 1:
+                    time.sleep(0.30)
+        addresses = [(socket.AF_INET, socket.SOCK_STREAM, 6, "", ("192.0.2.1",443)),
+                     (socket.AF_INET, socket.SOCK_STREAM, 6, "", ("192.0.2.2",443))]
+        caught = None
+        started = time.monotonic()
+        with patch.object(socket, "getaddrinfo", return_value=addresses):
+            with patch.object(socket, "socket", EndpointSocket):
+                try:
+                    with m.overall_deadline(0.05):
+                        # The actual stdlib retry loop, not a mocked create_connection.
+                        socket.create_connection(("example.invalid",443), timeout=1)
+                except Exception as exc:
+                    caught = exc
+        self.assertIsInstance(caught, RuntimeError,
+                              f"Deadline swallowed; address attempts: {attempts}")
+        self.assertNotIsInstance(caught, OSError)
+        self.assertEqual(len(attempts), 1)
+        self.assertLess(time.monotonic()-started, 0.20)
 
 if __name__ == "__main__":
     unittest.main()

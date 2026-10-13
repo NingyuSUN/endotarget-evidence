@@ -99,6 +99,9 @@ def validate_payload(data, kind):
         return {"accession":"GSE266265", "representation":"official HTML record; no per-donor eligibility inferred"}
     raise ValueError("Unknown metadata type")
 
+class DeadlineExceeded(RuntimeError):
+    """Overall deadline; must escape socket/urllib OSError retry handlers."""
+
 @contextmanager
 def overall_deadline(seconds):
     """Interrupt blocking open/read on the SRV01 Unix main-thread CLI."""
@@ -106,7 +109,7 @@ def overall_deadline(seconds):
         raise RuntimeError("Refusing to replace an existing process alarm")
     previous_handler = signal.getsignal(signal.SIGALRM)
     def expired(signum, frame):
-        raise TimeoutError("Download exceeded overall deadline")
+        raise DeadlineExceeded("Download exceeded overall deadline")
     signal.signal(signal.SIGALRM, expired)
     try:
         signal.setitimer(signal.ITIMER_REAL, seconds)

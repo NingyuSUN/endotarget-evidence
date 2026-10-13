@@ -31,3 +31,19 @@ Logs, exact code hashes, command metadata and full outputs are saved in receipts
 
 ## Interpretation and remaining scope
 These results establish the two engineering fixes on SRV01. They do not alter or verify biological eligibility, donor mapping or raw counts. Stage 0 remains OPEN and final eligibility NOT_VERIFIED. No additional user decision is needed. YELLOW: understanding not yet assessed; a per-socket inactivity timeout and an overall elapsed-time deadline guard different failure modes.
+
+
+## Scoped rereview: prevent deadline swallowing by address retries
+VERIFIED on SRV01 Python 3.10.12: socket.create_connection catches socket.error (OSError) around socket.connect. Built-in TimeoutError is an OSError subclass, so the one-shot alarm could be caught and the next address tried after the timer had fired.
+
+The minimal correction is DeadlineExceeded(RuntimeError), deliberately outside the OSError hierarchy. The signal handler raises this dedicated exception; existing streaming/opening regression assertions now expect it. Alarm mechanics and the accepted scratch-directory fix are unchanged.
+
+The new regression invokes the actual stdlib socket.create_connection retry loop. Only getaddrinfo and the endpoint socket are replaced: two documentation-range addresses are supplied, the first connect blocks, and a real 50 ms ITIMER_REAL alarm fires. Before the correction, the test observed both address attempts and no escaping exception (25 tests, one failure). After the correction, DeadlineExceeded escapes on the first address within the 200 ms assertion bound; all 25 tests pass.
+
+Exact command for both red and green runs, from /home/analyst/te:
+    python3 -m unittest discover -s tests -v
+Red log: logs/m0_metadata_alarm_red.log, exit 1.
+Green log: logs/m0_metadata_alarm_green.log, exit 0.
+Full outputs, implementation hashes, stdlib socket.py hash and command metadata: receipts/m0_metadata_alarm_evidence.json.
+
+No public source fetch or scientific analysis occurred. Original metadata, donor counts and scientific readiness remain unchanged. The Unix main-thread restriction still applies. No new user decision is needed.

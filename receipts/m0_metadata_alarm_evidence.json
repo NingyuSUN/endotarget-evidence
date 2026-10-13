@@ -1,0 +1,35 @@
+{
+  "recorded_utc": "2026-10-13T07:08:02.514175+00:00",
+  "host": "SRV01",
+  "root": "/home/analyst/te",
+  "python": "3.10.12",
+  "base_commit": "0290d997e73e9e5ec6e8e4f1be4d116d4b8ccd63",
+  "command": "python3 -m unittest discover -s tests -v",
+  "exception_type": "scripts.m0_metadata.DeadlineExceeded(RuntimeError)",
+  "outside_oserror_hierarchy": true,
+  "stdlib_retry_used": "Actual socket.create_connection; only socket.getaddrinfo and endpoint socket mocked",
+  "network_source_downloads": false,
+  "runs": [
+    {
+      "phase": "red",
+      "exit_code": 1,
+      "tests": 25,
+      "path": "logs/m0_metadata_alarm_red.log",
+      "sha256": "ea3ea4a843559b523d29751570d24319ee6fa8ac962d553322afdcb5fc265379",
+      "text": "test_deadline_escapes_stdlib_address_retry (test_m0_metadata.DeadlineRegression) ... FAIL\ntest_overall_deadline_includes_open (test_m0_metadata.DeadlineRegression) ... ok\ntest_trickling_http_read_is_interrupted (test_m0_metadata.DeadlineRegression) ... ok\ntest_blank_label_is_conflict_and_missing (test_m0_metadata.DonorBoundaries) ... ok\ntest_conflicting_clinical_labels_gate (test_m0_metadata.DonorBoundaries) ... ok\ntest_html_is_not_table (test_m0_metadata.DonorBoundaries) ... ok\ntest_metadata_cannot_pass_stage0 (test_m0_metadata.DonorBoundaries) ... ok\ntest_missing_donor_not_inferred (test_m0_metadata.DonorBoundaries) ... ok\ntest_missing_required_column_fails (test_m0_metadata.DonorBoundaries) ... ok\ntest_ragged_table_fails (test_m0_metadata.DonorBoundaries) ... ok\ntest_same_id_across_assays_not_merged (test_m0_metadata.DonorBoundaries) ... ok\ntest_technical_libraries_one_donor (test_m0_metadata.DonorBoundaries) ... ok\ntest_cache_hash_mismatch_fails (test_m0_metadata.FetchBoundaries) ... ok\ntest_html_rejected_as_json (test_m0_metadata.FetchBoundaries) ... ok\ntest_non_https_url_rejected (test_m0_metadata.FetchBoundaries) ... ok\ntest_over_limit_stream_fails (test_m0_metadata.FetchBoundaries) ... ok\ntest_refresh_changed_source_preserves_original (test_m0_metadata.FetchBoundaries) ... ok\ntest_stream_success_hash_and_bytes (test_m0_metadata.FetchBoundaries) ... ok\ntest_valid_cache_reused_without_network (test_m0_metadata.FetchBoundaries) ... ok\ntest_wrong_accession_rejected (test_m0_metadata.FetchBoundaries) ... ok\ntest_compressed_bomb_rejected (test_m0_metadata.SoftBoundaries) ... ok\ntest_valid_family_soft (test_m0_metadata.SoftBoundaries) ... ok\ntest_wrong_soft_accession_rejected (test_m0_metadata.SoftBoundaries) ... ok\ntest_library_id_difference_is_not_clinical_conflict (test_m0_metadata.SourceRegression) ... ok\ntest_true_source_phase_header (test_m0_metadata.SourceRegression) ... ok\n\n======================================================================\nFAIL: test_deadline_escapes_stdlib_address_retry (test_m0_metadata.DeadlineRegression)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/analyst/te/tests/test_m0_metadata.py\", line 245, in test_deadline_escapes_stdlib_address_retry\n    self.assertIsInstance(caught, RuntimeError,\nAssertionError: None is not an instance of <class 'RuntimeError'> : Deadline swallowed; address attempts: [('192.0.2.1', 443), ('192.0.2.2', 443)]\n\n----------------------------------------------------------------------\nRan 25 tests in 0.472s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "phase": "green",
+      "exit_code": 0,
+      "tests": 25,
+      "path": "logs/m0_metadata_alarm_green.log",
+      "sha256": "46b781c4e8dfc1b835d2e21ff8c48edad84487e5c616ca7d3dc5c1b4bdddc9c5",
+      "text": "test_deadline_escapes_stdlib_address_retry (test_m0_metadata.DeadlineRegression) ... ok\ntest_overall_deadline_includes_open (test_m0_metadata.DeadlineRegression) ... ok\ntest_trickling_http_read_is_interrupted (test_m0_metadata.DeadlineRegression) ... ok\ntest_blank_label_is_conflict_and_missing (test_m0_metadata.DonorBoundaries) ... ok\ntest_conflicting_clinical_labels_gate (test_m0_metadata.DonorBoundaries) ... ok\ntest_html_is_not_table (test_m0_metadata.DonorBoundaries) ... ok\ntest_metadata_cannot_pass_stage0 (test_m0_metadata.DonorBoundaries) ... ok\ntest_missing_donor_not_inferred (test_m0_metadata.DonorBoundaries) ... ok\ntest_missing_required_column_fails (test_m0_metadata.DonorBoundaries) ... ok\ntest_ragged_table_fails (test_m0_metadata.DonorBoundaries) ... ok\ntest_same_id_across_assays_not_merged (test_m0_metadata.DonorBoundaries) ... ok\ntest_technical_libraries_one_donor (test_m0_metadata.DonorBoundaries) ... ok\ntest_cache_hash_mismatch_fails (test_m0_metadata.FetchBoundaries) ... ok\ntest_html_rejected_as_json (test_m0_metadata.FetchBoundaries) ... ok\ntest_non_https_url_rejected (test_m0_metadata.FetchBoundaries) ... ok\ntest_over_limit_stream_fails (test_m0_metadata.FetchBoundaries) ... ok\ntest_refresh_changed_source_preserves_original (test_m0_metadata.FetchBoundaries) ... ok\ntest_stream_success_hash_and_bytes (test_m0_metadata.FetchBoundaries) ... ok\ntest_valid_cache_reused_without_network (test_m0_metadata.FetchBoundaries) ... ok\ntest_wrong_accession_rejected (test_m0_metadata.FetchBoundaries) ... ok\ntest_compressed_bomb_rejected (test_m0_metadata.SoftBoundaries) ... ok\ntest_valid_family_soft (test_m0_metadata.SoftBoundaries) ... ok\ntest_wrong_soft_accession_rejected (test_m0_metadata.SoftBoundaries) ... ok\ntest_library_id_difference_is_not_clinical_conflict (test_m0_metadata.SourceRegression) ... ok\ntest_true_source_phase_header (test_m0_metadata.SourceRegression) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.458s\n\nOK\n"
+    }
+  ],
+  "code_hashes": {
+    "scripts/m0_metadata.py": "d3073297fa57c66b52b4c693bd8b1b7bf2293104ea843cc2bbe28f32b735eaa4",
+    "tests/test_m0_metadata.py": "c64e6dd0a41d4f38278b6da697b495c2a63948c996e09b7b84010a5df9460a84",
+    "/usr/lib/python3.10/socket.py": "a11ad8b558a58696a39a92658e400ed74f060a7d78e71eb79fc88842dfa5f361"
+  }
+}

@@ -67,4 +67,6 @@ NOT VERIFIED: donor-cell joins; >=50 eligible stromal cells/nuclei per donor; ho
 Task 2 must resolve the clinical and cell mapping and safe import path before scientific inference. Engineering test success is not scientific/clinical/target validation. No new user decision is needed for this bounded milestone. YELLOW: understanding not yet assessed; explain why 103 libraries, 63 nuclei donor units and 22 phase/disease candidates answer different questions.
 
 ## Independent review follow-up
-Two engineering findings were fixed: interruptible overall fetch timeout and self-created project-local test scratch. Final suite now has 24 passing tests, also passing in a clean tracked-code snapshot. See m0_metadata_review_fixes.md and receipts/m0_metadata_review_evidence.json. Earlier receipts remain historical evidence; no scientific readiness changed.
+Two engineering findings were fixed: interruptible overall fetch timeout and self-created project-local test scratch. The scratch fix passed 24 tests in a clean tracked-code snapshot. After the scoped exception-hierarchy correction, the final suite has 25 passing tests; DeadlineExceeded(RuntimeError) escapes stdlib OSError address retries. See m0_metadata_review_fixes.md and receipts/m0_metadata_review_evidence.json. Earlier receipts remain historical evidence; no scientific readiness changed.
+
+Scoped deadline rereview evidence: receipts/m0_metadata_alarm_evidence.json; no source input or scientific state changed.
