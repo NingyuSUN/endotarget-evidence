@@ -3,6 +3,7 @@
 args <- commandArgs(trailingOnly=TRUE)
 if (length(args)!=4) stop("Usage: plot_replication.R data_dir output_dir prefix label")
 data_dir<-args[1]; out<-args[2]; prefix<-args[3]; label<-args[4]
+caption<-function(text) mtext(text,side=1,outer=TRUE,line=.5,cex=.68)
 read_table<-function(name) read.delim(file.path(data_dir,name), stringsAsFactors=FALSE, check.names=FALSE)
 is_true<-function(x) tolower(as.character(x))=="true"
 render<-function(name,fun,w=8,h=5.5) {
@@ -10,9 +11,9 @@ render<-function(name,fun,w=8,h=5.5) {
     dest<-file.path(out,paste0(prefix,"_",name,".",ext))
     if(file.exists(dest)) stop("Refuse overwrite: ",dest)
     if(ext=="pdf") pdf(dest,width=w,height=h,useDingbats=FALSE) else png(dest,width=w*160,height=h*160,res=160)
-    par(mar=c(4.5,4.8,3.6,1),las=1)
+    par(mar=c(4.8,4.8,3.4,1),oma=c(2.2,0,2.8,0),las=1)
     fun()
-    mtext(label,side=3,line=2,cex=.7)
+    mtext(label,side=3,outer=TRUE,line=1,cex=.85)
     dev.off()
   }
 }
@@ -40,7 +41,7 @@ render("scatter",function() {
   points(scatter$discovery_logFC[sel],scatter$external_logFC[sel],pch=21,bg="#2A788E",col="#173D45",cex=.8)
   legend("topleft",legend=c("All common fitted B0-universe genes","Frozen B0/B1/G1 top20 union"),
     pch=c(16,21),col=c("#9E9E9E","#173D45"),pt.bg=c(NA,"#2A788E"),bty="n",cex=.8)
-  mtext(paste0("Finite selected points: ",sum(sel),"; missing outcomes not plotted; associations, not intervention effects"),side=1,line=3.4,cex=.65)
+  caption(paste0("Finite selected points: ",sum(sel),"; missing outcomes not plotted; associations, not intervention effects"))
 },w=8,h=6)
 if(file.exists(file.path(data_dir,"lodo.tsv"))) {
   folds<-read_table("lodo.tsv")
@@ -59,8 +60,8 @@ if(file.exists(file.path(data_dir,"lodo.tsv"))) {
         if(any(!good)) points(i+offset[!good],rep(-.05,sum(!good)),pch=4,col="#D95F02",lwd=2)
         text(i,1.04,paste0(sum(good),"/",nrow(s)," valid"),cex=.7)
       }
-      mtext("Crosses below zero mark failed folds; failures retained",side=1,line=3.4,cex=.65)
     }
+    caption("Crosses below zero mark failed folds; failures retained")
   },w=9,h=5.5)
 }
 if(file.exists(file.path(data_dir,"bootstrap.tsv"))) {
@@ -77,7 +78,7 @@ if(file.exists(file.path(data_dir,"bootstrap.tsv"))) {
       main=paste0(length(v)," valid / 500 total draws"))
     abline(v=0,col="#666666",lty=2)
     abline(v=c(limits$low,limits$high),col="#D95F02",lwd=2)
-    mtext(paste0("Failed=",limits$failed,"/500; type7 conditional interval; fixed discovery lists/directions"),side=1,line=3.4,cex=.65)
+    caption(paste0("Failed=",limits$failed,"/500; type7 conditional interval; fixed discovery lists/directions"))
   },w=8,h=5.5)
 }
 cat("R=",R.version.string,"; base graphics; no model fitting\n",sep="")

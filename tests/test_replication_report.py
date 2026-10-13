@@ -66,6 +66,22 @@ class ReportingBoundaryTests(unittest.TestCase):
         with patch("sys.argv", ["build_replication_report.py","--partial","--receipt","work/synthetic/custom_receipt.json"]), patch.object(mod,"build",return_value={}) as build, contextlib.redirect_stdout(io.StringIO()):
             mod.main()
         self.assertEqual(build.call_args.args[0].receipt,"work/synthetic/custom_receipt.json")
+    def test_versioned_prefix_has_matching_default_receipt(self):
+        with patch("sys.argv", ["build_replication_report.py","--prefix","replication_v2"]), patch.object(mod,"build",return_value={}) as build, contextlib.redirect_stdout(io.StringIO()):
+            mod.main()
+        self.assertEqual(build.call_args.args[0].prefix,"replication_v2")
+        self.assertEqual(build.call_args.args[0].receipt,"receipts/replication_v2_report.json")
+    def test_safe_prefix_accepts_single_filename_component(self):
+        self.assertEqual(mod.validate_prefix("replication_v2"),"replication_v2")
+        self.assertEqual(mod.validate_prefix("Run-2_alpha"),"Run-2_alpha")
+    def test_prefix_rejects_path_escape_and_empty_name(self):
+        for prefix in ("../escape","a/b","a\\b","..","", "a"*65,"x.y","/tmp/file"):
+            with self.subTest(prefix=prefix), self.assertRaisesRegex(ValueError,"Unsafe output prefix"):
+                mod.validate_prefix(prefix)
+    def test_unsafe_prefix_stops_cli_before_build(self):
+        with patch("sys.argv", ["build_replication_report.py","--prefix","../escape"]), patch.object(mod,"build") as build, contextlib.redirect_stderr(io.StringIO()), self.assertRaises(SystemExit):
+            mod.main()
+        build.assert_not_called()
     def test_nonfinite_is_unavailable(self):
         self.assertIsNone(mod.num("nan")); self.assertIsNone(mod.num("inf")); self.assertEqual(mod.num("0"),0)
 if __name__=="__main__": unittest.main()

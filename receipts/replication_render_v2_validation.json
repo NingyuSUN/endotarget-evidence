@@ -1,0 +1,54 @@
+{
+  "status": "PASS_LAYOUT_AND_VERSIONING_ONLY",
+  "completed_utc": "2026-10-13T11:07:13Z",
+  "unit_tests": 16,
+  "unit_command": [
+    "envs/m0-h5/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_replication_report.py",
+    "-v"
+  ],
+  "unit_log": "test_50_failures_permits_conditional_interval (test_replication_report.ReportingBoundaryTests) ... ok\ntest_51_failures_suppresses_interval (test_replication_report.ReportingBoundaryTests) ... ok\ntest_default_main_final_receipt (test_replication_report.ReportingBoundaryTests) ... ok\ntest_default_main_partial_receipt (test_replication_report.ReportingBoundaryTests) ... ok\ntest_explicit_receipt_override_preserved (test_replication_report.ReportingBoundaryTests) ... ok\ntest_false_summary_counts_rejected (test_replication_report.ReportingBoundaryTests) ... ok\ntest_missing_fold_cannot_disappear (test_replication_report.ReportingBoundaryTests) ... ok\ntest_no_forced_supported_dossier (test_replication_report.ReportingBoundaryTests) ... ok\ntest_nonfinite_is_unavailable (test_replication_report.ReportingBoundaryTests) ... ok\ntest_one_failed_lodo_fold_preserved (test_replication_report.ReportingBoundaryTests) ... ok\ntest_prefix_rejects_path_escape_and_empty_name (test_replication_report.ReportingBoundaryTests) ... ok\ntest_retention_has_fixed20_denominator (test_replication_report.ReportingBoundaryTests) ... ok\ntest_safe_prefix_accepts_single_filename_component (test_replication_report.ReportingBoundaryTests) ... ok\ntest_suppressed_interval_cannot_be_reported (test_replication_report.ReportingBoundaryTests) ... ok\ntest_unsafe_prefix_stops_cli_before_build (test_replication_report.ReportingBoundaryTests) ... ok\ntest_versioned_prefix_has_matching_default_receipt (test_replication_report.ReportingBoundaryTests) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.056s\n\nOK\n",
+  "synthetic_all_four_plot_types_pdf_png": true,
+  "synthetic_visual_inspection": "counts,scatter,lodo,bootstrap outer title/main title/x-axis/caption separated",
+  "real_visual_inspection": "all four v2 PNGs inspected; no observed title or caption overlap",
+  "v1_preserved_sha256": {
+    "reports/replication_results.md": "f5e320f0f12d9293a337d3e65dcb06d462b81bc4cbf99f9099714eff51c9fac7",
+    "reports/replication_dossier_pool.tsv": "7d6a35f4d89cf66dc6c0c44fd024e4801edc3329869f964d19015ffc6123678d",
+    "reports/replication_dossiers.tsv": "9f41a1667b7ab5843aa3693316f4617842cf86980d1a681b3f69f3ae8a3b986e",
+    "reports/figures/replication_scatter.pdf": "9a042f373f8aed2be0a07a5f7613c6695d9a8e4a8638d5615a524bdc122ce1e4",
+    "reports/figures/replication_counts.png": "ba069156b084d2cf101ee4e5ab9268df121bce499f8aec8346f6c474c8affce1",
+    "reports/figures/replication_lodo.png": "c39bd5165ff981eb877d01f3cc40f11dcc208ebcf13a93f0d7e610251ae88a88",
+    "reports/figures/replication_scatter.png": "64622f6dcf2d69e15562ec7f884a4ea7b8dcd0b5807c40946136cb90e15e5dec",
+    "reports/figures/replication_bootstrap.png": "d414605ad5e8e6f934ce4aa1c7f0aac3c8fcb93f4e6669c02da0d2e6be3b4b45",
+    "reports/figures/replication_counts.pdf": "e06db8c6a7f3e5659bf1da62bf3e6dc1170c84c140a9c193464fccc1a5bd9184",
+    "reports/figures/replication_lodo.pdf": "205770985eeccd7d35f3dc348e9e8eae7130165c4875ca4e8e30068bb7b19650",
+    "reports/figures/replication_bootstrap.pdf": "46ea1a835de1769050c1e048593ea85cd1c3ec8fba15dfe32607a14be80a867b",
+    "receipts/replication_report.json": "f857855a0e3eb02e5af4fc03943e8c299d4c94dbaf282179c35128f3276e27f8"
+  },
+  "v2_receipt": "receipts/replication_v2_report.json",
+  "v2_receipt_sha256": "e3ba7f9c625e5d669016ef1ab8133d8f6a75380a4014136e9924692b5ec09585",
+  "scientific_report_prose_identical_after_filename_substitution": true,
+  "dossier_pool_byte_identical": true,
+  "dossiers_byte_identical": true,
+  "rendering_revision": {
+    "supersedes_receipt": "receipts/replication_report.json",
+    "supersedes_receipt_sha256": "f857855a0e3eb02e5af4fc03943e8c299d4c94dbaf282179c35128f3276e27f8",
+    "reason": "layout-only title/margin correction; v1 preserved",
+    "scientific_inputs_identical": true,
+    "bootstrap_and_lodo_identical": true,
+    "shared_input_count": 48
+  },
+  "analysis_rerun": false,
+  "scientific_validation": false,
+  "source_sha256": {
+    "scripts/build_replication_report.py": "2b0850366135d9ef2363fba11372fe4af9d7487c1603e3d167c1a6d08375861a",
+    "scripts/plot_replication.R": "5d3903ca8d85d3d53fd48dbae540a2e009bd451e26a27f704c4b344bae3aba23",
+    "tests/test_replication_report.py": "73163f63f9a0772f69753b872b35b4202f8348fc0946ddb015e2a9ed1c3d27c3"
+  }
+}

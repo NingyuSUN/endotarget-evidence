@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Read-only report assembly from frozen/evaluated artifacts. Never fits a model."""
-import argparse, csv, hashlib, json, math, os, platform, statistics, subprocess, tempfile
+import argparse, csv, hashlib, json, math, os, platform, re, statistics, subprocess, tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -122,11 +122,15 @@ def validate_resampling_binding(bootstrap, lodo, bs, ls, de, ev, ranking, freeze
             require(binding["sha256"].get(str(name)) == sha(name), "LODO belongs to a different discovery baseline")
         for name,digest in binding["sha256"].items(): require(sha(track(name))==digest,"LODO source changed")
 
+def validate_prefix(prefix):
+    require(isinstance(prefix,str) and re.fullmatch(r"[A-Za-z][A-Za-z0-9_-]{0,63}",prefix) is not None, "Unsafe output prefix: use1-64 letters/digits/underscore/hyphen, starting with a letter")
+    return prefix
+
 def build(args):
     root = Path.cwd()
     ev = Path(args.evaluation); de = Path(args.external_de); ranking = Path(args.ranking)
     output = Path(args.output_dir); receipt = Path(args.receipt)
-    prefix = "replication_draft" if args.partial else "replication"
+    prefix = validate_prefix(args.prefix or ("replication_draft" if args.partial else "replication"))
     report_name = prefix + "_results.md"
     inputs = {}
     def track(p):
@@ -297,7 +301,18 @@ def build(args):
         require(run.returncode==0,f"R figures failed: {run.stderr}")
         generated=[p for p in stage.rglob("*") if p.is_file() and (p.parent==stage/"figures" or p.name in {report_name,prefix+"_dossier_pool.tsv",prefix+"_dossiers.tsv"})]
         require(all((stage/"figures"/(prefix+"_"+n+"."+e)).stat().st_size>1000 for n in fig_names for e in ("pdf","png")), "Missing/empty figures")
-        receipt_data=dict(schema_version=1,completed_utc=datetime.now(timezone.utc).isoformat(),data_kind=kind,partial=bool(pending),pending=pending,scientific_validation=False,therapeutic_validation=False,container_execution=False,aws_execution=False,execution_host=platform.node(),python=platform.python_version(),input_sha256=inputs,implementation_sha256=sha(__file__),bootstrap=bs,lodo=ls,superiority_descriptive_guards_pass=superiority,plot_stdout=run.stdout,plot_stderr=run.stderr,output_sha256={str(output/p.relative_to(stage)):sha(p) for p in generated})
+        rendering_revision=None
+        if args.supersedes_receipt:
+            previous=load(track(args.supersedes_receipt))
+            require(previous["data_kind"]==kind and previous["bootstrap"]==bs and previous["lodo"]==ls, "Prior rendering has different scientific results")
+            checked=0
+            for name,digest in previous["input_sha256"].items():
+                if Path(name).resolve()==Path(args.plot_script).resolve(): continue
+                require(inputs.get(name)==digest, "Prior rendering has different scientific input: "+name)
+                checked+=1
+            require(checked>0, "Prior receipt has no comparable inputs")
+            rendering_revision=dict(supersedes_receipt=str(args.supersedes_receipt),supersedes_receipt_sha256=sha(args.supersedes_receipt),reason="layout-only title/margin correction; v1 preserved",scientific_inputs_identical=True,bootstrap_and_lodo_identical=True,shared_input_count=checked)
+        receipt_data=dict(schema_version=1,rendering_revision=rendering_revision,completed_utc=datetime.now(timezone.utc).isoformat(),data_kind=kind,partial=bool(pending),pending=pending,scientific_validation=False,therapeutic_validation=False,container_execution=False,aws_execution=False,execution_host=platform.node(),python=platform.python_version(),input_sha256=inputs,implementation_sha256=sha(__file__),bootstrap=bs,lodo=ls,superiority_descriptive_guards_pass=superiority,plot_stdout=run.stdout,plot_stderr=run.stderr,output_sha256={str(output/p.relative_to(stage)):sha(p) for p in generated})
         for p in generated:
             target=output/p.relative_to(stage); target.parent.mkdir(parents=True,exist_ok=True)
             require(not target.exists(),"Concurrent output exists"); os.link(p,target)
@@ -316,13 +331,19 @@ def main():
     p.add_argument("--lodo",default="work/statistical/discovery_lodo")
     p.add_argument("--output-dir",default="reports")
     p.add_argument("--receipt",default=None)
+    p.add_argument("--prefix",default=None)
+    p.add_argument("--supersedes-receipt",default=None,help="Previous immutable rendering receipt; require identical scientific inputs")
     p.add_argument("--plot-script",default="scripts/plot_replication.R")
     p.add_argument("--rscript",default="Rscript")
     p.add_argument("--partial",action="store_true")
     p.add_argument("--synthetic-test",action="store_true")
     args=p.parse_args()
+    if args.prefix is None:
+        args.prefix="replication_draft" if args.partial else "replication"
+    try: validate_prefix(args.prefix)
+    except ValueError as e: p.error(str(e))
     if args.receipt is None:
-        args.receipt="receipts/replication_draft_report.json" if args.partial else "receipts/replication_report.json"
+        args.receipt="receipts/"+args.prefix+"_report.json"
     try: print(json.dumps(build(args),ensure_ascii=False))
     except (ValueError,KeyError,FileNotFoundError) as e: p.exit(1,str(e)+"\n")
 if __name__=="__main__": main()
