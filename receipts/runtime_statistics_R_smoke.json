@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "purpose": "SYNTHETIC_RUNTIME_SMOKE_ONLY",
+  "biological_validation": false,
+  "actual_cohort_effects_computed": false,
+  "R": "R version 4.4.3 (2025-02-28)",
+  "packages": {
+    "edgeR": "4.4.0",
+    "limma": "3.62.1",
+    "statmod": "1.5.2",
+    "jsonlite": "2.0.0"
+  },
+  "toy_genes": 200,
+  "toy_samples": 12,
+  "design_rank": 2,
+  "residual_df": 10,
+  "seed": 42,
+  "TMM": "TMM",
+  "voom_span": 0.5,
+  "ebayes_robust": true,
+  "session_info": ["R version 4.4.3 (2025-02-28)", "Platform: x86_64-conda-linux-gnu", "Running under: Ubuntu 22.04.5 LTS", "", "Matrix products: default", "BLAS/LAPACK: /home/analyst/te/envs/statistical-runtime/lib/libopenblasp-r0.3.34.so;  LAPACK version 3.12.0", "", "locale:", " [1] LC_CTYPE=ja_JP.UTF-8       LC_NUMERIC=C              ", " [3] LC_TIME=ja_JP.UTF-8        LC_COLLATE=ja_JP.UTF-8    ", " [5] LC_MONETARY=ja_JP.UTF-8    LC_MESSAGES=ja_JP.UTF-8   ", " [7] LC_PAPER=ja_JP.UTF-8       LC_NAME=C                 ", " [9] LC_ADDRESS=C               LC_TELEPHONE=C            ", "[11] LC_MEASUREMENT=ja_JP.UTF-8 LC_IDENTIFICATION=C       ", "", "time zone: Asia/Tokyo", "tzcode source: system (glibc)", "", "attached base packages:", "[1] stats     graphics  grDevices utils     datasets  methods   base     ", "", "other attached packages:", "[1] jsonlite_2.0.0 statmod_1.5.2  edgeR_4.4.0    limma_3.62.1  ", "", "loaded via a namespace (and not attached):", "[1] compiler_4.4.3  grid_4.4.3      locfit_1.5-9.12 lattice_0.23-1 "]
+}
