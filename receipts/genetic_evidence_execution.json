@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-13T10:40:40.447374+00:00",
+  "host": "SRV01",
+  "root": "/home/analyst/te",
+  "commands": [
+    "/usr/bin/time -v envs/m0-h5/bin/python scripts/genetic_evidence_audit.py",
+    "envs/m0-h5/bin/python scripts/genetic_evidence_finalize.py",
+    "envs/m0-h5/bin/python scripts/genetic_evidence_fetch.py"
+  ],
+  "audit_wall_seconds": 295.68,
+  "audit_max_rss_kib": 288172,
+  "audit_exit_status": 0,
+  "source_download_bytes": 120578101,
+  "resource_log_sha256": "e60dc51c06086e78e9a94f577e20afc4befeb33c23d7a71ee8d3ec24cc6f5a1e",
+  "table_34_35_row_records_including_headers": 1431756,
+  "pool_stable_ids_in_workbook_shared_strings": 0,
+  "input_scope": "fixed 40-gene pool; no HECA effects read",
+  "file_hashes": {
+    "scripts/genetic_evidence_xlsx.py": "6e7d8bf961d52440303b228dbfa76521d0de234f3e2f412f36235de0236b221d",
+    "scripts/genetic_evidence_fetch.py": "b5fb371769d62b885b867bcaccc48df2c17a45734186f209fe6a605216c2bb6d",
+    "scripts/genetic_evidence_audit_helpers.py": "dcdfd5d23a0157e223530c1bab7d6be29f5fa3047a48129282ff94f6059a6103",
+    "scripts/genetic_evidence_audit.py": "964457ca2c36c46b03919b166e8d025d396c085fff3c40fd64ede1f768d41a79",
+    "scripts/genetic_evidence_finalize.py": "20bf9b0b2024c9e5c3a0d3d727f0033cac4924f24b01136466308a875a89634d",
+    "docs/GENETIC_EVIDENCE_METHOD.md": "3a0e91acf6cc263a4a1f45afd78f86681e02dbe62d16293af4120701df5a1eab",
+    "reports/genetic_evidence_report.md": "37cc93a0a56d550fc1e7dad4a62dec96d54f1d96fd16da45d4d9e47def9375db"
+  },
+  "limits": [
+    "no causal validation",
+    "no drug actionability",
+    "individual donor nonoverlap unverified",
+    "genetic evidence never reranks"
+  ]
+}

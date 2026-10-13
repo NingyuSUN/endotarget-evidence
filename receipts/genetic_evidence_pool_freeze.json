@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-10-13T10:23:57.314688+00:00",
+  "freeze_receipt_sha256": "642332e970df9cca45616c6f53444f9e834b79d8ded01b40d673e1f8c64ee143",
+  "pool_sha256": "4c50d4f2d6ee15329cbe6de15878b9cfca4f11365fbf5d101eb85182bf577ef4",
+  "n_genes": 40,
+  "annotation_started": false,
+  "methods": [
+    "B0",
+    "G1"
+  ],
+  "policy": "pool fixed before genetic annotation; no reranking"
+}

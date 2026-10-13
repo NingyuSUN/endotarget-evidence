@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-13T10:39:14.131447+00:00",
+  "pool_membership_reconstructed_and_equal": true,
+  "all_40_rows_present": true,
+  "true_mapping_gene": "SKIDA1",
+  "actual_source_cells": [
+    "Supp11.CrediblesetSNPannot!J76",
+    "Supp31.EndometriumeQTLs-shared!K11"
+  ],
+  "rejected_prose_mentions": [
+    "ACTB",
+    "EGFR"
+  ],
+  "n_pool_genes_in_UK_cis_QTL_context": 0,
+  "UK_QTL_context_variant_rows": 0,
+  "source_and_output_hashes": {
+    "manifests/genetic_sources.tsv": "2e5f548e2f6a05be8ae5b09a282f141b541567ffd7144133fabcd89b9a8ea8c7",
+    "reports/genetic_evidence_context.tsv": "1206f4a6e1dbc02377c4fc199d27a9c8df1c18e3a40b1eecd695447e59055ffc"
+  },
+  "rankings_unchanged": true,
+  "scientific_causal_validation": false
+}

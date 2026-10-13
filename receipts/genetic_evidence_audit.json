@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-13T10:38:23.727876+00:00",
+  "n_pool": 40,
+  "n_supporting_mapping": 1,
+  "n_no_available_mapping": 39,
+  "n_conflicting": 0,
+  "source": {
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41588-023-01323-z/MediaObjects/41588_2023_1323_MOESM4_ESM.xlsx",
+    "path": "data/genetics/41588_2023_1323_MOESM4_ESM.xlsx",
+    "bytes": 120578101,
+    "sha256": "01cc0de4f3cb9aeec523ba312a17b931606d627e17e83581700b559741c7585e",
+    "retrieved_utc": "2026-10-13T10:30:34.344703+00:00"
+  },
+  "pool_sha256": "4c50d4f2d6ee15329cbe6de15878b9cfca4f11365fbf5d101eb85182bf577ef4",
+  "hgnc_sha256": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d",
+  "elapsed_seconds": 295.40188378607854,
+  "external_effects_read": false,
+  "rankings_modified": false,
+  "de_novo_inference": false,
+  "validation": "exact source headers and frozen input hashes asserted; 40/40 summary coverage",
+  "output_hashes": {
+    "reports/genetic_evidence_uk_qtl_context.tsv": "e882713c571a64ed48df0b8114486b8fa818702c87ef84f5cd64ac55d7510b31",
+    "reports/genetic_evidence_rows.tsv": "97d39f2717b8111f77359ed8006583ded5ea5339c965c614280c57c6e58fa2d5",
+    "reports/genetic_evidence_summary.tsv": "9fda084c329efbd96be1e21867b7f4fb2e7959fbb7538a555c5ec3c3613ba42f",
+    "reports/genetic_evidence_frozen_pool.tsv": "4c50d4f2d6ee15329cbe6de15878b9cfca4f11365fbf5d101eb85182bf577ef4",
+    "reports/genetic_evidence_rejected_prose_hits.tsv": "1b0e5e6bca2b56b25da4e5de337722b4405913f334c9e91324581460bf681bd3",
+    "reports/genetic_evidence_table_inventory.tsv": "60e67295907ede52f2294a5bced68e62bc074193583cdac98e01015d648cc5a8"
+  }
+}
