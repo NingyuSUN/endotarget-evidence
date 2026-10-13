@@ -1,0 +1,1186 @@
+{
+  "source_url": "https://cellgeni.cog.sanger.ac.uk/vento/reproductivecellatlas/endometriumAtlasV2_nuclei.h5ad",
+  "source_size": 8739186814,
+  "obs_attributes": {
+    "_index": "_index",
+    "column-order": [
+      "n_genes",
+      "sample",
+      "library",
+      "Processing",
+      "Treatment",
+      "10x kit",
+      "percent_mito",
+      "n_counts",
+      "scrublet_score",
+      "genotype",
+      "Library_genotype",
+      "Group",
+      "discard_lowQC",
+      "Endometriosis_stage",
+      "Hormonal treatment",
+      "Age",
+      "Binary Stage",
+      "Stage",
+      "phase",
+      "dataset",
+      "Biopsy_type",
+      "Tissue_sampled",
+      "LT_celltype",
+      "LT_epi_celltype",
+      "LT_mesen_celltype",
+      "Endometrial_pathology",
+      "celltype",
+      "lineage",
+      "label_long"
+    ],
+    "encoding-type": "dataframe",
+    "encoding-version": "0.1.0"
+  },
+  "columns": {
+    "10x kit": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "categories": [
+        "3' v3.0",
+        "3' v3.1"
+      ]
+    },
+    "Age": {
+      "shape": [
+        312246
+      ],
+      "dtype": "float64",
+      "head": [
+        31.0,
+        35.0,
+        24.0,
+        37.0,
+        33.0
+      ]
+    },
+    "Binary Stage": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "categories": [
+        "Hormones",
+        "Menstrual",
+        "Proliferative",
+        "Secretory",
+        "Unknown"
+      ]
+    },
+    "Biopsy_type": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "categories": [
+        "Superficial_Eutopic"
+      ]
+    },
+    "Endometrial_pathology": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        1,
+        4,
+        1,
+        1,
+        1
+      ],
+      "categories": [
+        "C",
+        "E",
+        "E + A",
+        "E + A + F",
+        "E + A + P",
+        "E + F",
+        "E + H",
+        "F + P",
+        "P"
+      ]
+    },
+    "Endometriosis_stage": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "categories": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    "Group": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "categories": [
+        "Ctrl_Superficial",
+        "Endo_Superficial"
+      ]
+    },
+    "Hormonal treatment": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "categories": [
+        "COCP (Rigevidon)",
+        "COCP - Gederal",
+        "Implant",
+        "Mirena coil",
+        "POP",
+        "POP - Cerezette",
+        "POP - Desogestrel",
+        "POP Desogesterol",
+        "Zoladex",
+        "nan"
+      ]
+    },
+    "LT_celltype": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        10,
+        21,
+        22,
+        26,
+        24
+      ],
+      "categories": [
+        "Ciliated",
+        "Fibroblast_basalis",
+        "Glandular",
+        "Glandular_secretory",
+        "Glandular_secretory_FGF7",
+        "HOXA13",
+        "Hormones",
+        "KRT5",
+        "Luminal",
+        "MUC5B",
+        "SOX9",
+        "SOX9_basalis_I",
+        "SOX9_basalis_II",
+        "SOX9_luminal",
+        "dStromal_early",
+        "dStromal_late",
+        "dStromal_menstrual",
+        "dStromal_mid",
+        "ePV_AOC3",
+        "ePV_MMP11",
+        "ePV_STEAP4",
+        "eStromal",
+        "eStromal_MMPs",
+        "mPV",
+        "nan",
+        "preCiliated",
+        "preGlandular",
+        "preLuminal",
+        "uSMCs"
+      ]
+    },
+    "LT_epi_celltype": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        8,
+        12,
+        12,
+        14,
+        12
+      ],
+      "categories": [
+        "Ciliated",
+        "Glandular",
+        "Glandular_secretory",
+        "Glandular_secretory_FGF7",
+        "Hormones",
+        "KRT5",
+        "Luminal",
+        "MUC5B",
+        "SOX9",
+        "SOX9_basalis_I",
+        "SOX9_basalis_II",
+        "SOX9_luminal",
+        "nan",
+        "preCiliated",
+        "preGlandular",
+        "preLuminal"
+      ]
+    },
+    "LT_mesen_celltype": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        13,
+        10,
+        11,
+        13,
+        13
+      ],
+      "categories": [
+        "Fibroblast_basalis",
+        "HOXA13",
+        "Hormones",
+        "dStromal_early",
+        "dStromal_late",
+        "dStromal_menstrual",
+        "dStromal_mid",
+        "ePV_AOC3",
+        "ePV_MMP11",
+        "ePV_STEAP4",
+        "eStromal",
+        "eStromal_MMPs",
+        "mPV",
+        "nan",
+        "uSMCs"
+      ]
+    },
+    "Library_genotype": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        42,
+        16,
+        45,
+        59,
+        61
+      ],
+      "categories": [
+        "UA_Endo10281925_FX1101",
+        "UA_Endo10281926_FX1101",
+        "UA_Endo11173480_FX0052",
+        "UA_Endo11173480_FX1205",
+        "UA_Endo11173481_FX9022",
+        "UA_Endo11173482_FX9011",
+        "UA_Endo11282193_EX0540",
+        "UA_Endo11282193_FX1146",
+        "UA_Endo11460960_EX0366",
+        "UA_Endo11460960_FX1100",
+        "UA_Endo11460961_FX0011",
+        "UA_Endo11460961_FX1097",
+        "UA_Endo11460962_FX1141",
+        "UA_Endo11460962_FX1170",
+        "UA_Endo11460963_FX1215",
+        "UA_Endo11460963_FX9006",
+        "UA_Endo11596521_FX1236",
+        "UA_Endo11596522_FX1104",
+        "UA_Endo11596522_FX9005",
+        "UA_Endo12061415_FX1158",
+        "UA_Endo12061415_FX1223",
+        "UA_Endo12061703_FX0056",
+        "UA_Endo12061703_FX9020",
+        "UA_Endo12061704_FX1163",
+        "UA_Endo12061704_FX9024",
+        "UA_Endo12061705_FX1129",
+        "UA_Endo12061705_FX9009",
+        "UA_Endo12269810_FX0033",
+        "UA_Endo12269810_FX1106",
+        "UA_Endo12269811_FX0022",
+        "UA_Endo12269811_FX0060",
+        "UA_Endo12269813_FX1233",
+        "UA_Endo12269814_EX0661",
+        "UA_Endo12269814_EX0789",
+        "UA_Endo12296823_EX0795",
+        "UA_Endo12296823_FX1119",
+        "UA_Endo12296824_FX1125",
+        "UA_Endo12296824_FX9008",
+        "UA_Endo12449298_FX1156",
+        "UA_Endo12449298_FX1160",
+        "UA_Endo12449299_EX0277",
+        "UA_Endo12449299_EX0288",
+        "UA_Endo12449300_EX0045",
+        "UA_Endo12449300_FX9027",
+        "UA_Endo12449301_FX1136",
+        "UA_Endo12449301_FX1150",
+        "UA_Endo12604667_FX0028",
+        "UA_Endo12604667_FX1130",
+        "UA_Endo12604668_FX9016",
+        "UA_Endo12821480_FX1074",
+        "UA_Endo12821480_FX1122",
+        "UA_Endo12821481_FX1111",
+        "UA_Endo12821481_FX9007",
+        "UA_Endo12821482_FX0024",
+        "UA_Endo12821483_FX1080",
+        "UA_Endo12821484_FX9010",
+        "UA_Endo12821485_FX0065",
+        "UA_Endo12821487_FX1191",
+        "UA_Endo12821488_FX9018",
+        "UA_Endo12865960_FX1170",
+        "UA_Endo12865960_FX9013",
+        "UA_Endo12865961_FX9006",
+        "UA_Endo12865961_FX9014",
+        "UA_Endo12865962_FX1236",
+        "UA_Endo12865962_FX9012",
+        "UA_Endo12865963_FX1087",
+        "UA_Endo12865963_FX9021",
+        "UA_Endo12865966_FX1223"
+      ]
+    },
+    "Processing": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "categories": [
+        "Frozen"
+      ]
+    },
+    "Stage": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        2,
+        2,
+        2,
+        6,
+        7
+      ],
+      "categories": [
+        "Hormones",
+        "Menstrual",
+        "Proliferative",
+        "Proliferative Disordered",
+        "Proliferative Late",
+        "Proliferative Menstrual",
+        "Secretory",
+        "Secretory Early",
+        "Secretory Mid",
+        "Unknown"
+      ]
+    },
+    "Tissue_sampled": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "categories": [
+        "eutopic_endometrium"
+      ]
+    },
+    "Treatment": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "categories": [
+        "Mixed",
+        "None",
+        "Percoll"
+      ]
+    },
+    "__categories": {
+      "encoding": {},
+      "children": {
+        "10x kit": {
+          "shape": [
+            2
+          ],
+          "dtype": "object",
+          "head": [
+            "3' v3.0",
+            "3' v3.1"
+          ]
+        },
+        "Binary Stage": {
+          "shape": [
+            5
+          ],
+          "dtype": "object",
+          "head": [
+            "Hormones",
+            "Menstrual",
+            "Proliferative",
+            "Secretory",
+            "Unknown"
+          ]
+        },
+        "Biopsy_type": {
+          "shape": [
+            1
+          ],
+          "dtype": "object",
+          "head": [
+            "Superficial_Eutopic"
+          ]
+        },
+        "Endometrial_pathology": {
+          "shape": [
+            9
+          ],
+          "dtype": "object",
+          "head": [
+            "C",
+            "E",
+            "E + A",
+            "E + A + F",
+            "E + A + P"
+          ]
+        },
+        "Endometriosis_stage": {
+          "shape": [
+            5
+          ],
+          "dtype": "object",
+          "head": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        "Group": {
+          "shape": [
+            2
+          ],
+          "dtype": "object",
+          "head": [
+            "Ctrl_Superficial",
+            "Endo_Superficial"
+          ]
+        },
+        "Hormonal treatment": {
+          "shape": [
+            10
+          ],
+          "dtype": "object",
+          "head": [
+            "COCP (Rigevidon)",
+            "COCP - Gederal",
+            "Implant",
+            "Mirena coil",
+            "POP"
+          ]
+        },
+        "LT_celltype": {
+          "shape": [
+            29
+          ],
+          "dtype": "object",
+          "head": [
+            "Ciliated",
+            "Fibroblast_basalis",
+            "Glandular",
+            "Glandular_secretory",
+            "Glandular_secretory_FGF7"
+          ]
+        },
+        "LT_epi_celltype": {
+          "shape": [
+            16
+          ],
+          "dtype": "object",
+          "head": [
+            "Ciliated",
+            "Glandular",
+            "Glandular_secretory",
+            "Glandular_secretory_FGF7",
+            "Hormones"
+          ]
+        },
+        "LT_mesen_celltype": {
+          "shape": [
+            15
+          ],
+          "dtype": "object",
+          "head": [
+            "Fibroblast_basalis",
+            "HOXA13",
+            "Hormones",
+            "dStromal_early",
+            "dStromal_late"
+          ]
+        },
+        "Library_genotype": {
+          "shape": [
+            68
+          ],
+          "dtype": "object",
+          "head": [
+            "UA_Endo10281925_FX1101",
+            "UA_Endo10281926_FX1101",
+            "UA_Endo11173480_FX0052",
+            "UA_Endo11173480_FX1205",
+            "UA_Endo11173481_FX9022"
+          ]
+        },
+        "Processing": {
+          "shape": [
+            1
+          ],
+          "dtype": "object",
+          "head": [
+            "Frozen"
+          ]
+        },
+        "Stage": {
+          "shape": [
+            10
+          ],
+          "dtype": "object",
+          "head": [
+            "Hormones",
+            "Menstrual",
+            "Proliferative",
+            "Proliferative Disordered",
+            "Proliferative Late"
+          ]
+        },
+        "Tissue_sampled": {
+          "shape": [
+            1
+          ],
+          "dtype": "object",
+          "head": [
+            "eutopic_endometrium"
+          ]
+        },
+        "Treatment": {
+          "shape": [
+            3
+          ],
+          "dtype": "object",
+          "head": [
+            "Mixed",
+            "None",
+            "Percoll"
+          ]
+        },
+        "celltype": {
+          "shape": [
+            31
+          ],
+          "dtype": "object",
+          "head": [
+            "SOX9_basalis",
+            "SOX9_functionalis_I",
+            "SOX9_functionalis_II",
+            "SOX9_luminal",
+            "Cycling"
+          ]
+        },
+        "dataset": {
+          "shape": [
+            1
+          ],
+          "dtype": "object",
+          "head": [
+            "Mareckova_Nuclei"
+          ]
+        },
+        "discard_lowQC": {
+          "shape": [
+            1
+          ],
+          "dtype": "object",
+          "head": [
+            "no"
+          ]
+        },
+        "genotype": {
+          "shape": [
+            63
+          ],
+          "dtype": "object",
+          "head": [
+            "EX0045",
+            "EX0277",
+            "EX0288",
+            "EX0366",
+            "EX0540"
+          ]
+        },
+        "label_long": {
+          "shape": [
+            31
+          ],
+          "dtype": "object",
+          "head": [
+            "1 | SOX9 basalis",
+            "2 | SOX9 functionalis I",
+            "3 | SOX9 functionalis II",
+            "4 | SOX9 luminal",
+            "5 | Cycling"
+          ]
+        },
+        "library": {
+          "shape": [
+            41
+          ],
+          "dtype": "object",
+          "head": [
+            "UA_Endo10281925",
+            "UA_Endo10281926",
+            "UA_Endo11173480",
+            "UA_Endo11173481",
+            "UA_Endo11173482"
+          ]
+        },
+        "lineage": {
+          "shape": [
+            4
+          ],
+          "dtype": "object",
+          "head": [
+            "Endothelial",
+            "Epithelial",
+            "Immune",
+            "Mesenchymal"
+          ]
+        },
+        "phase": {
+          "shape": [
+            3
+          ],
+          "dtype": "object",
+          "head": [
+            "G1",
+            "G2M",
+            "S"
+          ]
+        },
+        "sample": {
+          "shape": [
+            68
+          ],
+          "dtype": "object",
+          "head": [
+            "UA_Endo10281925_FX1101",
+            "UA_Endo10281926_FX1101",
+            "UA_Endo11173480_FX0052",
+            "UA_Endo11173480_FX1205",
+            "UA_Endo11173481_FX9022"
+          ]
+        }
+      }
+    },
+    "_index": {
+      "shape": [
+        312246
+      ],
+      "dtype": "object",
+      "head": [
+        "UA_Endo12449300_CTTCAATGTACCGGAA",
+        "UA_Endo11596521_GAACACTCAGAGAAAG",
+        "UA_Endo12449301_TCAGTGATCGTAGGGA",
+        "UA_Endo12865960_GAGACTTAGAGATCGC",
+        "UA_Endo12865961_CCACGAGGTCACGCTG"
+      ]
+    },
+    "celltype": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        2,
+        19,
+        18,
+        5,
+        27
+      ],
+      "categories": [
+        "SOX9_basalis",
+        "SOX9_functionalis_I",
+        "SOX9_functionalis_II",
+        "SOX9_luminal",
+        "Cycling",
+        "preGlandular",
+        "Glandular",
+        "Glandular_secretory",
+        "preLuminal",
+        "Luminal",
+        "preCiliated",
+        "Ciliated",
+        "MUC5B",
+        "eHormones",
+        "uSMCs",
+        "ePV_1a",
+        "ePV_1b",
+        "ePV_2",
+        "eStromal_MMPs",
+        "eStromal",
+        "eStromal_cycling",
+        "dStromal_early",
+        "dStromal_mid",
+        "dStromal_late",
+        "Fibroblast_basalis",
+        "HOXA13",
+        "Immune_Lymphoid",
+        "Immune_Myeloid",
+        "Venous",
+        "Arterial",
+        "Lymphatic"
+      ]
+    },
+    "dataset": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "categories": [
+        "Mareckova_Nuclei"
+      ]
+    },
+    "discard_lowQC": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "categories": [
+        "no"
+      ]
+    },
+    "genotype": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        0,
+        45,
+        34,
+        39,
+        47
+      ],
+      "categories": [
+        "EX0045",
+        "EX0277",
+        "EX0288",
+        "EX0366",
+        "EX0540",
+        "EX0661",
+        "EX0789",
+        "EX0795",
+        "FX0011",
+        "FX0022",
+        "FX0024",
+        "FX0028",
+        "FX0033",
+        "FX0052",
+        "FX0056",
+        "FX0060",
+        "FX0065",
+        "FX1074",
+        "FX1080",
+        "FX1087",
+        "FX1097",
+        "FX1100",
+        "FX1101",
+        "FX1104",
+        "FX1106",
+        "FX1111",
+        "FX1119",
+        "FX1122",
+        "FX1125",
+        "FX1129",
+        "FX1130",
+        "FX1136",
+        "FX1141",
+        "FX1146",
+        "FX1150",
+        "FX1156",
+        "FX1158",
+        "FX1160",
+        "FX1163",
+        "FX1170",
+        "FX1191",
+        "FX1205",
+        "FX1215",
+        "FX1223",
+        "FX1233",
+        "FX1236",
+        "FX9005",
+        "FX9006",
+        "FX9007",
+        "FX9008",
+        "FX9009",
+        "FX9010",
+        "FX9011",
+        "FX9012",
+        "FX9013",
+        "FX9014",
+        "FX9016",
+        "FX9018",
+        "FX9020",
+        "FX9021",
+        "FX9022",
+        "FX9024",
+        "FX9027"
+      ]
+    },
+    "label_long": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        2,
+        19,
+        18,
+        5,
+        30
+      ],
+      "categories": [
+        "1 | SOX9 basalis",
+        "2 | SOX9 functionalis I",
+        "3 | SOX9 functionalis II",
+        "4 | SOX9 luminal",
+        "5 | Cycling",
+        "6 | preGlandular",
+        "7 | Glandular",
+        "8 | Glandular secretory",
+        "10 | preLuminal",
+        "11 | Luminal",
+        "12 | preCiliated",
+        "13 | Ciliated",
+        "14 | MUC5B",
+        "16 | eHormones",
+        "17 | uSMCs",
+        "19 | ePV 1a",
+        "20 | ePV 1b",
+        "21 | ePV 2",
+        "22 | eStromal MMPs",
+        "23 | eStromal",
+        "24 | eStromal cycling",
+        "25 | dStromal early",
+        "26 | dStromal mid",
+        "27 | dStromal late",
+        "28 | Fibroblast basalis",
+        "29 | HOXA13",
+        "32 | Venous",
+        "33 | Arterial",
+        "34 | Lymphatic",
+        "35 | Immune Lymphoid",
+        "36 | Immune Myeloid"
+      ]
+    },
+    "library": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        24,
+        10,
+        25,
+        36,
+        37
+      ],
+      "categories": [
+        "UA_Endo10281925",
+        "UA_Endo10281926",
+        "UA_Endo11173480",
+        "UA_Endo11173481",
+        "UA_Endo11173482",
+        "UA_Endo11282193",
+        "UA_Endo11460960",
+        "UA_Endo11460961",
+        "UA_Endo11460962",
+        "UA_Endo11460963",
+        "UA_Endo11596521",
+        "UA_Endo11596522",
+        "UA_Endo12061415",
+        "UA_Endo12061703",
+        "UA_Endo12061704",
+        "UA_Endo12061705",
+        "UA_Endo12269810",
+        "UA_Endo12269811",
+        "UA_Endo12269813",
+        "UA_Endo12269814",
+        "UA_Endo12296823",
+        "UA_Endo12296824",
+        "UA_Endo12449298",
+        "UA_Endo12449299",
+        "UA_Endo12449300",
+        "UA_Endo12449301",
+        "UA_Endo12604667",
+        "UA_Endo12604668",
+        "UA_Endo12821480",
+        "UA_Endo12821481",
+        "UA_Endo12821482",
+        "UA_Endo12821483",
+        "UA_Endo12821484",
+        "UA_Endo12821485",
+        "UA_Endo12821487",
+        "UA_Endo12821488",
+        "UA_Endo12865960",
+        "UA_Endo12865961",
+        "UA_Endo12865962",
+        "UA_Endo12865963",
+        "UA_Endo12865966"
+      ]
+    },
+    "lineage": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        1,
+        3,
+        3,
+        1,
+        2
+      ],
+      "categories": [
+        "Endothelial",
+        "Epithelial",
+        "Immune",
+        "Mesenchymal"
+      ]
+    },
+    "n_counts": {
+      "shape": [
+        312246
+      ],
+      "dtype": "float32",
+      "head": [
+        6476.0,
+        4967.0,
+        3064.0,
+        3010.0,
+        8153.0
+      ]
+    },
+    "n_genes": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int64",
+      "head": [
+        3302,
+        2282,
+        2071,
+        1890,
+        3912
+      ]
+    },
+    "percent_mito": {
+      "shape": [
+        312246
+      ],
+      "dtype": "float32",
+      "head": [
+        0.0033971588127315044,
+        0.014294343069195747,
+        0.004569190554320812,
+        0.004318936727941036,
+        0.0041702440939843655
+      ]
+    },
+    "phase": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "categories": [
+        "G1",
+        "G2M",
+        "S"
+      ]
+    },
+    "sample": {
+      "shape": [
+        312246
+      ],
+      "dtype": "int8",
+      "head": [
+        42,
+        16,
+        45,
+        59,
+        61
+      ],
+      "categories": [
+        "UA_Endo10281925_FX1101",
+        "UA_Endo10281926_FX1101",
+        "UA_Endo11173480_FX0052",
+        "UA_Endo11173480_FX1205",
+        "UA_Endo11173481_FX9022",
+        "UA_Endo11173482_FX9011",
+        "UA_Endo11282193_EX0540",
+        "UA_Endo11282193_FX1146",
+        "UA_Endo11460960_EX0366",
+        "UA_Endo11460960_FX1100",
+        "UA_Endo11460961_FX0011",
+        "UA_Endo11460961_FX1097",
+        "UA_Endo11460962_FX1141",
+        "UA_Endo11460962_FX1170",
+        "UA_Endo11460963_FX1215",
+        "UA_Endo11460963_FX9006",
+        "UA_Endo11596521_FX1236",
+        "UA_Endo11596522_FX1104",
+        "UA_Endo11596522_FX9005",
+        "UA_Endo12061415_FX1158",
+        "UA_Endo12061415_FX1223",
+        "UA_Endo12061703_FX0056",
+        "UA_Endo12061703_FX9020",
+        "UA_Endo12061704_FX1163",
+        "UA_Endo12061704_FX9024",
+        "UA_Endo12061705_FX1129",
+        "UA_Endo12061705_FX9009",
+        "UA_Endo12269810_FX0033",
+        "UA_Endo12269810_FX1106",
+        "UA_Endo12269811_FX0022",
+        "UA_Endo12269811_FX0060",
+        "UA_Endo12269813_FX1233",
+        "UA_Endo12269814_EX0661",
+        "UA_Endo12269814_EX0789",
+        "UA_Endo12296823_EX0795",
+        "UA_Endo12296823_FX1119",
+        "UA_Endo12296824_FX1125",
+        "UA_Endo12296824_FX9008",
+        "UA_Endo12449298_FX1156",
+        "UA_Endo12449298_FX1160",
+        "UA_Endo12449299_EX0277",
+        "UA_Endo12449299_EX0288",
+        "UA_Endo12449300_EX0045",
+        "UA_Endo12449300_FX9027",
+        "UA_Endo12449301_FX1136",
+        "UA_Endo12449301_FX1150",
+        "UA_Endo12604667_FX0028",
+        "UA_Endo12604667_FX1130",
+        "UA_Endo12604668_FX9016",
+        "UA_Endo12821480_FX1074",
+        "UA_Endo12821480_FX1122",
+        "UA_Endo12821481_FX1111",
+        "UA_Endo12821481_FX9007",
+        "UA_Endo12821482_FX0024",
+        "UA_Endo12821483_FX1080",
+        "UA_Endo12821484_FX9010",
+        "UA_Endo12821485_FX0065",
+        "UA_Endo12821487_FX1191",
+        "UA_Endo12821488_FX9018",
+        "UA_Endo12865960_FX1170",
+        "UA_Endo12865960_FX9013",
+        "UA_Endo12865961_FX9006",
+        "UA_Endo12865961_FX9014",
+        "UA_Endo12865962_FX1236",
+        "UA_Endo12865962_FX9012",
+        "UA_Endo12865963_FX1087",
+        "UA_Endo12865963_FX9021",
+        "UA_Endo12865966_FX1223"
+      ]
+    },
+    "scrublet_score": {
+      "shape": [
+        312246
+      ],
+      "dtype": "float64",
+      "head": [
+        0.12123677786818547,
+        0.33463035019455223,
+        0.16610169491525414,
+        0.051046025104602516,
+        0.026239067055393583
+      ]
+    }
+  }
+}

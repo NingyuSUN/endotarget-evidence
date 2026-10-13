@@ -1,0 +1,472 @@
+{
+  "source_url": "https://cellgeni.cog.sanger.ac.uk/vento/reproductivecellatlas/endometriumAtlasV2_nuclei.h5ad",
+  "expected_size": 8739186814,
+  "status": "ok",
+  "network_budget_bytes": 157286400,
+  "wall_budget_seconds": 600,
+  "aggregate_exploration_elapsed_seconds": 370.393,
+  "network_elapsed_seconds": 25.413,
+  "new_transferred_bytes": 3276800,
+  "total_cached_source_bytes": 28901376,
+  "new_range_responses": [
+    {
+      "start": 8443789312,
+      "end": 8443854847,
+      "bytes": 65536,
+      "sha256": "8f9c3ce51566c2bc9d5c74a9727d12fec85cbebcbcb7bc344749bad17a683e58",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 1.209
+    },
+    {
+      "start": 8443854848,
+      "end": 8443920383,
+      "bytes": 65536,
+      "sha256": "b4c784d20992c2b4531c8296a61104c59b05e7c22d1928b8ef0dd42c5a2fd926",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.234
+    },
+    {
+      "start": 8443920384,
+      "end": 8443985919,
+      "bytes": 65536,
+      "sha256": "cd35aa632e1ca625de156ad89c59f1c78e03e95326ef9e4e0a89c9e9e6412738",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443985920,
+      "end": 8444051455,
+      "bytes": 65536,
+      "sha256": "d81c648f5d10e1fbd8ceecac58c3542df11f0bb2dc5dcc0243eac7051bca454c",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8446607360,
+      "end": 8446672895,
+      "bytes": 65536,
+      "sha256": "d889256fd338b92d26c78728b3b39c06e6efa5ec4a2720072bf5157e795ac730",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8446672896,
+      "end": 8446738431,
+      "bytes": 65536,
+      "sha256": "15b70c0879cedd698225e3c2bfe3ad9b16156fe1ea65bbcc01dc42bb42128b99",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8446738432,
+      "end": 8446803967,
+      "bytes": 65536,
+      "sha256": "28dc5d55ddac9924f91175109102603ad53f05bc0793b52032b7ff9d989f18cc",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8446803968,
+      "end": 8446869503,
+      "bytes": 65536,
+      "sha256": "1fadf208952311cc6db10b6383096766f8b7c6d5cbb24861e324fa2122c505e8",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8446935040,
+      "end": 8447000575,
+      "bytes": 65536,
+      "sha256": "2417f9f09b140ca91a1be24d104c484c1261cf19e3d57fda634e4a9d6a909449",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8447000576,
+      "end": 8447066111,
+      "bytes": 65536,
+      "sha256": "4505bead23b3fcb187ef99c99dab299c611b34e8db71a663e10d51facfcfab9b",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8447066112,
+      "end": 8447131647,
+      "bytes": 65536,
+      "sha256": "ed3bc315131793a0f18dbfb3fef401c6073e14cd186c0241674d4e7754a2fb39",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8447852544,
+      "end": 8447918079,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8447918080,
+      "end": 8447983615,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8447983616,
+      "end": 8448049151,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448049152,
+      "end": 8448114687,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448180224,
+      "end": 8448245759,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448245760,
+      "end": 8448311295,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448311296,
+      "end": 8448376831,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448376832,
+      "end": 8448442367,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448507904,
+      "end": 8448573439,
+      "bytes": 65536,
+      "sha256": "c21afeca29e4a5a1c56443a570b74d6b2e886e8184c621e46003b98366c16abd",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448573440,
+      "end": 8448638975,
+      "bytes": 65536,
+      "sha256": "57627d860b090c7f8488b6b349cc533de43bec6c0987eace7a73e8e4a8855ff3",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8448638976,
+      "end": 8448704511,
+      "bytes": 65536,
+      "sha256": "eaccdff4c23697ea58bce1dad66276630458740ba7a531eb531146ff9337b857",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8449097728,
+      "end": 8449163263,
+      "bytes": 65536,
+      "sha256": "81367a8bbc4d2e72ed2627b12e7b1e6ea350833cf957eb1e5407285d762c3f47",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8449163264,
+      "end": 8449228799,
+      "bytes": 65536,
+      "sha256": "900cc8750b2eef845a2aa9c6bd495247dd6c90cc408f64d65be274e103e52beb",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8449228800,
+      "end": 8449294335,
+      "bytes": 65536,
+      "sha256": "152a1f8d1cbb5884428836573abe56fa92acabfaff6834718aed708e0654e6e6",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.23
+    },
+    {
+      "start": 8449294336,
+      "end": 8449359871,
+      "bytes": 65536,
+      "sha256": "9618cb50149bd6decf748e609ab195ee2879713364f535ed31910feced10cf1c",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8449753088,
+      "end": 8449818623,
+      "bytes": 65536,
+      "sha256": "0b1ca91cd38fcbe3112da247d30fea20ef15de56560c645f9bf06f6163708711",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.23
+    },
+    {
+      "start": 8449818624,
+      "end": 8449884159,
+      "bytes": 65536,
+      "sha256": "e821dde161238d449882702ec6f8f46ef6b9aa709eeb63ad136e12e48c481370",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8449884160,
+      "end": 8449949695,
+      "bytes": 65536,
+      "sha256": "e4f13be145afb4a3b325943f2c9a526809dc5c28851946ca5fba0598c7ab43ac",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8450015232,
+      "end": 8450080767,
+      "bytes": 65536,
+      "sha256": "c6b60a8212775b81fd92a1083901cb6e9f6a5f3752e8c6028932b2602fc6c82c",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8450080768,
+      "end": 8450146303,
+      "bytes": 65536,
+      "sha256": "6401916961a93369f9d0f88b3aa2da74c71ef26ceed4c2915cf4f91bb84dbe53",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8450146304,
+      "end": 8450211839,
+      "bytes": 65536,
+      "sha256": "3f89e8b7da191d651b7fab38368abe3e656b3dc0902be5744ea51beffddca651",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8450211840,
+      "end": 8450277375,
+      "bytes": 65536,
+      "sha256": "1e26d0cc27dd991c8a36be0d9848f8c37d5e694528e9f71d0917065b65a9d21a",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8450342912,
+      "end": 8450408447,
+      "bytes": 65536,
+      "sha256": "bcd156862b5555930337cfa21085d3efec1c326e926e3b55f3803e71abdbc471",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8450408448,
+      "end": 8450473983,
+      "bytes": 65536,
+      "sha256": "693234806f2d7c8e4704c48f92aa89d8faba333849e30c79f977bd95025c0664",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8450473984,
+      "end": 8450539519,
+      "bytes": 65536,
+      "sha256": "5be503094c062d66f87adb2d92adbeeb274a6c910fd03c98c3655c8d18ee5e32",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.24
+    },
+    {
+      "start": 8450539520,
+      "end": 8450605055,
+      "bytes": 65536,
+      "sha256": "f29f5848ac6ddddb92c286e709b8d426d918c143914e44f0eb17375cfd885d29",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.25
+    },
+    {
+      "start": 8450605056,
+      "end": 8450670591,
+      "bytes": 65536,
+      "sha256": "7226a322563b05e494b088017d0903df87679acf58a139ce7c68727a5594a2ae",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.238
+    },
+    {
+      "start": 8449425408,
+      "end": 8449490943,
+      "bytes": 65536,
+      "sha256": "f285c8dc41625dc3a5b2df46071b68979a7208215079e00fe1f588804cfb8960",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8449490944,
+      "end": 8449556479,
+      "bytes": 65536,
+      "sha256": "12ebc541b5e5765bf5a864fb813d49691d0a9329eb431eaff98ec0fd7be613e4",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.23
+    },
+    {
+      "start": 8449556480,
+      "end": 8449622015,
+      "bytes": 65536,
+      "sha256": "c8e99417d715dcc00d9a6c2243290f2256c07e1e5295db2944cd344000f5f68c",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8449622016,
+      "end": 8449687551,
+      "bytes": 65536,
+      "sha256": "74244dc1c51c555ec0defd4ef41adcb31d46ff725790fca63d2be00cf18b820a",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443461632,
+      "end": 8443527167,
+      "bytes": 65536,
+      "sha256": "f6b8f4d8a02b38a8760e039d73da1006009be8a5cc46d62c0604741149299e64",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443527168,
+      "end": 8443592703,
+      "bytes": 65536,
+      "sha256": "23f228e99a39f585d75429ab4330934c0a212936293313ee9e7758733de9517b",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443592704,
+      "end": 8443658239,
+      "bytes": 65536,
+      "sha256": "c6049da378e031f74ad6a4a55dacf5c51262ed9da01c31a14418de5592a3b244",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.23
+    },
+    {
+      "start": 8443658240,
+      "end": 8443723775,
+      "bytes": 65536,
+      "sha256": "0bd7a521c6a1f01ed307f1ecde65d4989dcdd360cdd7361844cfbc5599744d1b",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443133952,
+      "end": 8443199487,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443199488,
+      "end": 8443265023,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443265024,
+      "end": 8443330559,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    },
+    {
+      "start": 8443330560,
+      "end": 8443396095,
+      "bytes": 65536,
+      "sha256": "de2f256064a0af797747c2b97505dc0b9f3df0de4f489eac731c23ae9ca9cc31",
+      "etag": "\"3b257ce77e9a967b574b55810dfa189d-556\"",
+      "last_modified": "Wed, 08 Nov 2023 10:30:00 GMT",
+      "seconds": 0.229
+    }
+  ],
+  "total_response_count": 441,
+  "cache_manifest_sha256": "f05b041d4261551fb01cdc648b6800c8617d0763713821194b4b5d78fb13ff5c",
+  "versions": {
+    "python": "3.10.16",
+    "numpy": "2.2.6",
+    "h5py": "3.14.0",
+    "requests": "2.32.5"
+  },
+  "expression_datasets_opened": []
+}
