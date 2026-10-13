@@ -1,0 +1,16 @@
+{
+  "status": "PRE_EFFECT_RULES_APPLIED_NO_DE",
+  "reference_config": "config/gene_mapping_reference.json",
+  "source_recovery": "Exclude all 50 source-canonical groups of cardinality>1; restore original source IDs for34550singletons; neverdeconvolve mergedcounts.",
+  "Ensembl_source_rule": "Strip only terminal numeric version for lookup; preserve full original ID andversion; require one HGNC approvedrecordvalid stableENSG target.",
+  "symbol_source_rule": "Exact case-sensitive official approvedsymbol first; then official previoussymbol onlyifone approved HGNC record/one stableEnsemblID; no genericalias or capitalization guesses.",
+  "duplicate_target_rule": "Exclude entire group when multiple source rows map to one target, regardless counts; no sum, max or disease-drivenchoice.",
+  "unmapped_rule": "Exclude from namedgene countmatrix; preserve sourcecounts and reasons.",
+  "universe": "HGNC approved namedgeneuniverse, not completeEnsemblgene universe and not networkuniverse.",
+  "count_representation": "Original fractional estimated UMIs; original lexical decimal values; no rounding, normalization or diseaseeffects.",
+  "primary_donor_rule": "Accepted authorproliferative minusfive clinicalflags andsample73contradiction;22primary12ENDO10non-ENDO;strictphase20metadata11/9.",
+  "source_counts": "data/processed/discovery/source_counts.tsv.gz",
+  "stable_counts": "data/processed/discovery/counts_stable.tsv.gz",
+  "mapping_table": "manifests/discovery_features_mapping.tsv",
+  "downstream_network_universe_status": "NOT FROZEN: discovery expression filtering and permitted network construction remain future gatedsteps."
+}

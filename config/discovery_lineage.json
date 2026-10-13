@@ -1,0 +1,55 @@
+{
+  "definition": "eutopic endometrial stromal fibroblast lineage; fixed before disease effects",
+  "source_annotation_main": "stromal",
+  "include_exact_refined_labels": [
+    "dS1-myofibroblast",
+    "dS2",
+    "dS3",
+    "dS4",
+    "eF1",
+    "eF2",
+    "eF3",
+    "eF4-CXCL14",
+    "fib C7",
+    "fib C7 secretory",
+    "fib C7 secretory_late",
+    "fib C7-SFRP2"
+  ],
+  "exclude_exact_mural_labels": [
+    "Prv-CCL19",
+    "Prv-MYH11",
+    "Prv-STEAP4",
+    "Prv_VSMC secretory",
+    "Prv_VSMC secretory_late",
+    "VSMC"
+  ],
+  "exclude_other_main_labels": [
+    "endothelial",
+    "epithelial",
+    "myeloid",
+    "lymphocyte"
+  ],
+  "missing_annotation": "exclude, do not infer",
+  "source_population_id": "P077",
+  "author_source": "Duempelmann et al. 2026, Cell-type identification; https://doi.org/10.1038/s41467-026-73020-4",
+  "annotation_method": "Inherited author Symphony v0.1.1 transfer of Tan et al reference coarse/refined labels, probability>=0.5; menstrual-stage Louvain refinement; original author marker confirmation with DotPlot",
+  "source_xml": "data/reference/discovery_article.xml",
+  "source_xml_sha256": "fb09a4f9bbe895ff683187260d0a797749bc3920d50f5005c1d66ed6bdf743b7",
+  "author_crosswalk_path": "data/input_routes/osf/selected/04_Analysis/S3_COMPLETION_EXTENSION/GSE266265_DONOR_RECONSTRUCTION/MESENCHYMAL_LABEL_CROSSWALK.csv",
+  "author_crosswalk_sha256": "53c237e8b8d32246629852abe3f606fe7be7df111d551b1d4b0516abadf0680c",
+  "own_boundary": "retain source fibroblast/endometrial/decidual stromal labels; exclude Prv* and VSMC mural/perivascular, nonstromal and missing. No subtype chosen using disease effects.",
+  "marker_source": "Author cell-type identification DotPlot confirmation with Tan reference; C7/CXCL14 and STEAP4/MYH11/CCL19 names are source label markers, not newly validated classification.",
+  "fixed_marker_reference_labels": {
+    "fibroblast_label_markers": [
+      "C7",
+      "CXCL14"
+    ],
+    "mural_label_markers": [
+      "STEAP4",
+      "MYH11",
+      "CCL19"
+    ]
+  },
+  "independent_marker_expression_audit": "NOT RUN: public compact P077 is donor-lineage aggregation and cannot independently validate every cell label; inherited author annotation limitation retained",
+  "author_reference_dependency": "Tan reference annotation methodology shared with related published atlas; not proof of independent label validation"
+}

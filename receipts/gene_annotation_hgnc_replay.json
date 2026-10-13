@@ -1,0 +1,23 @@
+{
+  "name": "HGNC complete approved set",
+  "snapshot_date": "2026-10-06",
+  "assembly_scope": "GRCh38 reference and alternative loci, as defined by HGNC archive documentation",
+  "official_archive_documentation": "https://hgnc.genenames.org/download/archive/",
+  "source_url": "https://storage.googleapis.com/download/storage/v1/b/public-download-files/o/hgnc%2Farchive%2Farchive%2Fquarterly%2Ftsv%2Fhgnc_complete_set_2026-10-06.tsv?generation=1791293906485185&alt=media",
+  "object_generation": "1791293906485185",
+  "path": "data/reference/gene_annotation/hgnc_complete_set_2026-10-06.tsv",
+  "bytes": 16973125,
+  "sha256": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d",
+  "official_GCS_md5": "r0P9VqZK1XwPzHLW72XlFg==",
+  "GCS_md5_match": true,
+  "rows": 45233,
+  "license": "CC0 1.0",
+  "license_source_url": "https://hgnc.genenames.org/about/license/",
+  "license_local_path": "data/reference/gene_annotation/hgnc_license.html",
+  "license_sha256": "6c194097724b5decaa4382b6d2673c1adfeb19a5c1de8806de57a47452e57add",
+  "mapping_policy": "approved exact symbol + official previous symbols; no generic aliases; unique stable Ensembl target required; all conflicting target groups removed",
+  "scope_limitation": "HGNC approved named-gene universe; not every raw Ensembl noncoding feature is included",
+  "verified_rows": 45233,
+  "reused_matching_pinned_bytes": true,
+  "validation": "fixed generation URL, bytes, official MD5, frozen SHA256 and approved schema"
+}

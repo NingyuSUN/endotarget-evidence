@@ -1,0 +1,57 @@
+{
+  "status": "REAL_INPUT_MAPPING_MASS_AUDIT_NO_DE",
+  "donors": 22,
+  "primary_groups": {
+    "non-ENDO": 10,
+    "ENDO": 12
+  },
+  "strict_groups": {
+    "non-ENDO": 9,
+    "ENDO": 11
+  },
+  "row_decisions": [
+    {
+      "decision": "exclude_ambiguous_symbol",
+      "source_features": 1,
+      "total_estimated_UMIs": "19603.5",
+      "per_donor_min_fraction_of_singletons": "0.000014980717883566762206551714866692568605131226894648",
+      "per_donor_max_fraction_of_singletons": "0.000028911092341688703541833812190250568964491462233058"
+    },
+    {
+      "decision": "exclude_duplicate_target",
+      "source_features": 129,
+      "total_estimated_UMIs": "858812.8011728238392626",
+      "per_donor_min_fraction_of_singletons": "0.00081042260267848425355295229520734796099417414900877",
+      "per_donor_max_fraction_of_singletons": "0.0011810048448552025647374153813532910008180725818409"
+    },
+    {
+      "decision": "exclude_no_stable_target",
+      "source_features": 2,
+      "total_estimated_UMIs": "38.833333343267441",
+      "per_donor_min_fraction_of_singletons": "0E+21",
+      "per_donor_max_fraction_of_singletons": "1.2397835489848354929560039889676608500798256740398E-7"
+    },
+    {
+      "decision": "exclude_unmapped",
+      "source_features": 8309,
+      "total_estimated_UMIs": "16563150.29153251106945770",
+      "per_donor_min_fraction_of_singletons": "0.016334333349197671090174117296389230208127216925461",
+      "per_donor_max_fraction_of_singletons": "0.021501073205625075128323091604423958175418365326822"
+    },
+    {
+      "decision": "include",
+      "source_features": 26109,
+      "total_estimated_UMIs": "907355750.4333309618063102755107",
+      "per_donor_min_fraction_of_singletons": "0.97761541072660335398628787807307599317937295330534",
+      "per_donor_max_fraction_of_singletons": "0.98283121135938971971829002294352014131424494148186"
+    }
+  ],
+  "overall_loss_fraction_min": 0.01843165187289618,
+  "overall_loss_fraction_max": 0.023796065525480928,
+  "source_count_matrix_rows": 34550,
+  "retained_stable_ID_rows": 26109,
+  "all_source_symbol_rows_not_blanket_dropped": true,
+  "runtime_peak_RSS_KiB": 391860,
+  "runtime_elapsed_wall": "0:25.73",
+  "resource_command": "/usr/bin/time -v python3 scripts/prepare_discovery_counts.py > logs/discovery_counts_preparation_replay.log 2> logs/discovery_counts_resource.log"
+}

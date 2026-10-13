@@ -1,0 +1,23 @@
+{
+  "status": "LABEL_BLIND_SHARED_ID_PROBE_ONLY_NOT_FINAL",
+  "discovery_accepted_stable_ids": 26109,
+  "HECA_rows": 33578,
+  "HECA_unique_single_source_stable_IDs": 33450,
+  "HECA_duplicate_target_IDs": 0,
+  "shared_unambiguous_source_IDs_in_cached_22_of_51_columns": 21395,
+  "discovery_IDs_not_yet_seen_in_unambiguous_HECA_probe": 4714,
+  "HECA_source_columns_read": 22,
+  "HECA_source_columns_total": 51,
+  "full_H5_geneID_concordance_verified": false,
+  "HECA_counts_layer_passed": false,
+  "no_disease_effects": true,
+  "source_paths": {
+    "discovery_mapping": "manifests/discovery_features_mapping.tsv",
+    "HECA_features": "data/metadata/heca_h5/heca_count_probe/features_cached.tsv"
+  },
+  "source_hashes": {
+    "discovery_mapping": "41a1d85d2e66376f8129d5e02d18da377b6dd206213202c25aa38f9dd5eaf6ff",
+    "HECA_features": "8437837dd60a0f9a273ee80ef869f2aaeee51913b7aa07896261355c6d959056"
+  },
+  "limitations": "Cached feature-ID probe only; do not freeze external common universe until fullsourceIDconcordance+counts audit; sourceENSG takesprecedence overcurrent HGNC symbol guess."
+}

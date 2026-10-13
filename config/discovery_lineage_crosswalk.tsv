@@ -1,0 +1,19 @@
+source_AnnotationMain	source_AnnotationRefined	primary_include	reason	source_annotation_method	independent_marker_reclassification
+stromal	dS1-myofibroblast	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	dS2	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	dS3	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	dS4	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	eF1	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	eF2	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	eF3	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	eF4-CXCL14	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	fib C7	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	fib C7 secretory	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	fib C7 secretory_late	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	fib C7-SFRP2	True	author endometrial/decidual stromal fibroblast label retained before effects	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	Prv-CCL19	False	perivascular/mural Prv or VSMC excluded from stromal fibroblast primary	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	Prv-MYH11	False	perivascular/mural Prv or VSMC excluded from stromal fibroblast primary	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	Prv-STEAP4	False	perivascular/mural Prv or VSMC excluded from stromal fibroblast primary	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	Prv_VSMC secretory	False	perivascular/mural Prv or VSMC excluded from stromal fibroblast primary	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	Prv_VSMC secretory_late	False	perivascular/mural Prv or VSMC excluded from stromal fibroblast primary	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
+stromal	VSMC	False	perivascular/mural Prv or VSMC excluded from stromal fibroblast primary	Symphony Tan reference plus source menstrual-stage refinement	NOT RUN
