@@ -1,0 +1,33 @@
+{
+  "recorded_utc": "2026-10-13T10:04:13.853682+00:00",
+  "host": "SRV01",
+  "project": "/home/analyst/te",
+  "configured_review_model": "gpt-6-astra",
+  "configured_review_reasoning_effort": "high",
+  "identity_scope": "orchestrator configuration, not independent backend attestation",
+  "R_checks": 24,
+  "R_command": "source scripts/statistical_runtime_env.sh && Rscript tests/test_donor_de.R",
+  "R_log_sha256": "0c564692c3eb95c12ef732c7a895406cbf362e24224fc0f0feab0a2535ee6aa4",
+  "freeze_boundary_tests": 6,
+  "freeze_test_log_sha256": "7cd8a6e1e9b2f234130e150fa4c7f9f80c1e35e7a8cafdb6cd8cf1e76c90a631",
+  "source_sha256": {
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/fit_donor_de.R": "e68c80e3c2d37ec260a814890d5c7f2fdbad5033b95c22c30b53811e289be07c",
+    "scripts/freeze_analysis.py": "0dd5a528eeb71db3c024da463eec9bd0a3508d66802f98f990b37d6d9755cddd",
+    "tests/test_donor_de.R": "28771ce17c52a65a0cd55210d66544547c1951a01c07e09f44e1fe3969986d08",
+    "tests/test_freeze_analysis.py": "f975e3b4258cbb218f0d576c8f4dd92e213de66c431b48f1d60e68b208c33cba"
+  },
+  "initial_observation": "R suite failed before missing library implementation; subsequent fixture edit briefly had escaped-newline syntax error, corrected before final passing run",
+  "scientific_review": "No current primary statistical blocker identified by bounded source review; actual limma3.62.1 supports adaptive.span and legacy, passed explicitly FALSE/TRUE; no compatibility fallback used",
+  "addressed_findings": [
+    "clinical cell minimum",
+    "cohort-specific locked primary input paths",
+    "external freeze semantic product requirements",
+    "warnings and actual filter thresholds saved",
+    "positive finite voom precision weights",
+    "per-gene residual df>=5",
+    "complete expression-pass induced-U checked before finite-fit selection"
+  ],
+  "remaining_scope": "No real disease effects, replication, Docker or AWS yet; synthetic tests establish software behavior only",
+  "scientific_validation": false
+}

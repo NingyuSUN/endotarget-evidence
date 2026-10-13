@@ -153,7 +153,47 @@
         "c0e6d0be3972aeff2e5be86d4203899f4747a18b"
       ],
       "result": "Rejected normalized H5 X as count input; 22 public raw archives and 52744 selected nuclei aggregated, validated with source difference retained; no inverse reconstruction or disease analysis"
+    },
+    {
+      "task": "/root/astra_statistical_contract",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commit": "1515ba57a9367c05e5a0e6a9794f70af62bf1f0d",
+      "result": "Pre-effect exact methods and bounded installed-source R review; findings adjudicated in statistical_model_tests receipt"
+    },
+    {
+      "task": "/root/sol61_statistical_runtime",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "medium",
+      "status": "completed",
+      "commit": "39f1053a9a7ffc52dc3e81db6fb392fee08d8d88",
+      "result": "Isolated117package locked runtime and actual R/Java/Nextflow version checks, toy smoke"
+    },
+    {
+      "task": "/root/sol61_network_ranker",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commit": "62504ea226d98935c0c82d33a78ed4450ef5f616",
+      "result": "Three ranking methods with complete induced-U failure protection;15tests"
+    },
+    {
+      "task": "/root/sol61_null_sets",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "commit": "62938adf6c183ec1925256056382a8c683dd02e1",
+      "result": "Prespecified200x20 joint-bin sampled controls with explicit failure;12tests"
+    },
+    {
+      "task": "/root/sol61_nextflow_discovery",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "status": "completed",
+      "result": "Actual3stage synthetic Nextflow chain+cachedresume+4negativegates; final receipt nextflow_synthetic_20261013T100618Z.json; no container",
+      "commit": "34660b4a819b794246c01ebc8a7b5565935cb0ff"
     }
   ],
-  "updated_utc": "2026-10-13T09:34:01.408380+00:00"
+  "updated_utc": "2026-10-13T10:07:17.484123+00:00"
 }
