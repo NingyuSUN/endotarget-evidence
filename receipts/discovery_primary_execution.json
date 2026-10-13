@@ -1,0 +1,144 @@
+{
+  "status": "DISCOVERY_COMPLETE_AND_FROZEN_EXTERNAL_NOT_RUN",
+  "recorded_utc": "2026-10-13T10:13:27.355728+00:00",
+  "cohort": {
+    "n_donors": 22,
+    "input_genes": 26109,
+    "rank": 12,
+    "residual_df": 10,
+    "non_ENDO": 10,
+    "ENDO": 12
+  },
+  "expression_pass": 17733,
+  "expression_filter_excluded": 8376,
+  "all_estimable": 17733,
+  "BH_q_lt_05": 0,
+  "minimum_p": 5.72993006679919e-05,
+  "minimum_BH_q": 0.510071299810366,
+  "maximum_absolute_moderated_t": 5.8841315206569,
+  "warnings": [],
+  "filter_audit": {
+    "cpm_cutoff": 0.2291,
+    "minimum_support_donors": 10,
+    "min_total_count": 15,
+    "median_raw_library_size": 43648838.8851
+  },
+  "design_singular_values": [
+    22.178815119612995,
+    5.8033382329937755,
+    2.394021749016787,
+    1.9901743189495766,
+    1.8227442396446023,
+    1.7246236695752584,
+    1.5315002781398965,
+    1.27817356865814,
+    1.1285372141185048,
+    1.071275942768371,
+    0.8068968802589994,
+    0.3921268400690602
+  ],
+  "design_condition_number": 56.560308689165296,
+  "design_condition_interpretation": "diagnostic on raw column scaling; no post-effect threshold or model rescue",
+  "ranking": {
+    "discovery_expressed_genes": 17733,
+    "finite_discovery_fit_genes": 17733,
+    "reference_edges": 159312,
+    "induced_edges": 123313,
+    "final_universe_genes": 11749,
+    "excluded_induced_zero_degree": 5984
+  },
+  "propagation": {
+    "iterations": 28,
+    "final_l1_change": 5.470345431916171e-11,
+    "fixed_point_l1_residual": 2.6852326221819055e-11,
+    "mass_sum": 1.0,
+    "maximum_mass_error": 2.220446049250313e-16,
+    "converged": true
+  },
+  "top20_overlap": {
+    "B0_B1": 0,
+    "B0_G1": 0,
+    "B1_G1": 9
+  },
+  "nulls": {
+    "B0": {
+      "status": "ESTIMABLE",
+      "sampled_sets": 200,
+      "genes_per_set": 20,
+      "reason": null
+    },
+    "B1": {
+      "status": "ESTIMABLE",
+      "sampled_sets": 200,
+      "genes_per_set": 20,
+      "reason": null
+    },
+    "G1": {
+      "status": "ESTIMABLE",
+      "sampled_sets": 200,
+      "genes_per_set": 20,
+      "reason": null
+    }
+  },
+  "Nextflow_trace": [
+    {
+      "task_id": "1",
+      "hash": "73/52b130",
+      "native_id": "2587608",
+      "name": "DONOR_DE (discovery)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:08:57.360",
+      "duration": "12.5s",
+      "realtime": "12.1s",
+      "%cpu": "97.2%",
+      "peak_rss": "201 MB",
+      "peak_vmem": "633.9 MB",
+      "rchar": "41.6 MB",
+      "wchar": "22.5 MB"
+    },
+    {
+      "task_id": "2",
+      "hash": "be/406312",
+      "native_id": "2588602",
+      "name": "RANK_TARGETS (B0_B1_G1)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:09:10.007",
+      "duration": "7s",
+      "realtime": "6.6s",
+      "%cpu": "100.2%",
+      "peak_rss": "134.5 MB",
+      "peak_vmem": "327.2 MB",
+      "rchar": "42 MB",
+      "wchar": "11.9 MB"
+    },
+    {
+      "task_id": "3",
+      "hash": "5b/66cb08",
+      "native_id": "2589124",
+      "name": "MATCHED_NULLS (matched_nulls)",
+      "status": "COMPLETED",
+      "exit": "0",
+      "submit": "2026-10-13 19:09:17.057",
+      "duration": "5.4s",
+      "realtime": "5s",
+      "%cpu": "100.2%",
+      "peak_rss": "105.7 MB",
+      "peak_vmem": "298.6 MB",
+      "rchar": "55.3 MB",
+      "wchar": "3.4 MB"
+    }
+  ],
+  "freeze_path": "receipts/discovery_rank_freeze.json",
+  "freeze_sha256": "642332e970df9cca45616c6f53444f9e834b79d8ded01b40d673e1f8c64ee143",
+  "pre_effect_freeze_sha256": "8ae5baaf46068fb8587b7f81465a6c1028de3a1b55dcca91c162b6559ab91430",
+  "DE_provenance_sha256": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
+  "ranking_provenance_sha256": "29af78115872d016045f5a5ab740216a7298589b134c7e882039cfb8b1492efb",
+  "null_status_sha256": "ea1c94e96f7e4a7ee96269602ebe2fbf55fb532e56ab999212634ae6af352aad",
+  "command": "nextflow -log logs/discovery_primary_nextflow.log run main.nf -profile srv01 -work-dir work/nextflow -with-trace logs/discovery_primary_trace.tsv -with-report logs/discovery_primary_execution.html -with-timeline logs/discovery_primary_timeline.html --pre_effect_freeze receipts/statistical_pre_effect_freeze.json --outdir work/statistical/discovery_primary",
+  "scientific_replication_complete": false,
+  "therapeutic_validation": false,
+  "container_executed": false,
+  "AWS_executed": false
+}

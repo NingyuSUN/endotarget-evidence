@@ -19,3 +19,6 @@ Scope: implement the approved donor-level statistics and ranking workflow on SRV
 - Final integration: 96 Python tests PASS in m0-h5. Statistical-only runtime lacked requests for the legacy ingestion test module; recorded failure, then used the existing correct data-preparation environment without mutating either lock. R24 checks and actual three-stage Nextflow synthetic execution ran in the statistical runtime.
 - Nextflow committed34660b4: real synthetic3/3 completed,3/3 cached on resume, byte-identical outputs, four preflight negative gates. Each method200x20 matched sets. Final receipt nextflow_synthetic_20261013T100618Z.json. Container remains unexecuted.
 - Review all current artifacts, commit implementation, and create pre-effect freeze before first real discovery invocation.
+
+- Actual discovery ran after7ad353f pre-effect freeze:3Nextflowprocessescompleted, no warnings,17,733tests,0BHq<.05. SameU11,749ranks and600matchedsets created. No outcome-driven parameter adjustment.
+- Complete discovery/null freeze committedebb5652 BEFORE anyHECAeffects. Negative/inconclusive interpretation preserved in reports/discovery_primary_results.md. External evaluation remains next.
