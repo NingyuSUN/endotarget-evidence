@@ -1,0 +1,102 @@
+{
+  "status": "CACHED_REFERENCE_REPLAY_PASS_NOT_A_GENE_UNIVERSE_OR_RANKING",
+  "configuration": {
+    "version": "12.5",
+    "species_taxid": 9606,
+    "network_kind": "functional_association_not_physical_binding_or_causal_regulation",
+    "permitted_direct_channels": [
+      "experiments",
+      "database"
+    ],
+    "excluded_channels": [
+      "experiments_transferred",
+      "database_transferred",
+      "textmining",
+      "textmining_transferred",
+      "coexpression",
+      "coexpression_transferred",
+      "neighborhood",
+      "neighborhood_transferred",
+      "fusion",
+      "cooccurence",
+      "homology"
+    ],
+    "source_score_scale": 1000,
+    "minimum_max_direct_score": 700,
+    "edge_weight": "max(experiments,database)/1000",
+    "undirected_duplicate_policy": "maximum_weight",
+    "self_loop_policy": "exclude",
+    "comparative_gene_universe": "not_yet_defined; discovery-expressed_unambiguous_genes_then_induced_subgraph_then_drop_zero_degree",
+    "source_probe": "receipts/string_source_probe.json",
+    "license": "CC BY 4.0 with original-provider terms retained where applicable",
+    "license_url": "https://string-db.org/cgi/access?footer_active_subpage=licensing",
+    "mapping_status": "pending frozen HGNC gene mapping; no candidate ranking computed"
+  },
+  "configuration_sha256": "4f8b07596612bee8cc56af1970d4d134dc19bc9face1625a4c86683b540aca61",
+  "code_sha256": "8d0fa0bfb7272eb1c6b756eb78feabf0f5109c27a5ef68a2c116c2cede50e019",
+  "original_receipt_path": "receipts/string_reference_download.json",
+  "original_receipt_sha256_preserved": "60c3aca9dd738c4d2837614f0aff14b15159e58a189caefb259965330139dceb",
+  "sources": [
+    {
+      "url": "https://stringdb-downloads.org/download/protein.info.v12.5/9606.protein.info.v12.5.txt.gz",
+      "path": "data/reference/string/9606.protein.info.v12.5.txt.gz",
+      "bytes": 1970090,
+      "sha256": "144de4b0d98c6a7dfde6ddc2591cf88657f27b989eadff4f501450c3ed1f0f1c",
+      "etag": "\"647733e4-1e0faa\"",
+      "last_modified": "Wed, 31 May 2023 11:47:48 GMT",
+      "download_seconds": 2.861659049987793,
+      "retrieved_at": "2026-10-13T08:24:44.331687+00:00",
+      "gzip_crc": "PASS",
+      "current_action": "verified_cache_reuse"
+    },
+    {
+      "url": "https://stringdb-downloads.org/download/protein.links.full.v12.5/9606.protein.links.full.v12.5.txt.gz",
+      "path": "data/reference/string/9606.protein.links.full.v12.5.txt.gz",
+      "bytes": 116855136,
+      "sha256": "c645be3e636a896f82b0acf63d181aa58a1320b8df9b4106ae9348e68e086ad8",
+      "etag": "\"6a6e90ae-6f71160\"",
+      "last_modified": "Sun, 02 Aug 2026 00:34:54 GMT",
+      "download_seconds": 18.858596801757812,
+      "retrieved_at": "2026-10-13T08:25:03.191108+00:00",
+      "gzip_crc": "PASS",
+      "current_action": "verified_cache_reuse"
+    }
+  ],
+  "summary": {
+    "source_rows": 10826054,
+    "below_direct_score_threshold": 10502958,
+    "self_loops_excluded": 0,
+    "qualifying_directed_rows": 323096,
+    "proteins_in_info": 19699,
+    "undirected_edges": 161548,
+    "nodes_in_filtered_reference": 14658,
+    "output_path": "data/reference/string/direct_evidence_protein_edges.tsv.gz",
+    "output_sha256": "803cb3f406f33a81857c0759878485c41f018a5442b493d14f598b5b71808e09",
+    "wall_seconds": 74.95610547065735,
+    "peak_rss_bytes": 80613376
+  },
+  "network_downloads_this_round": 0,
+  "disease_input_used": false,
+  "tests": {
+    "new_hand_calculated_boundary_tests": 7,
+    "targeted_result": "PASS",
+    "command": "python3 -m unittest discover -s tests -p test_prepare_string_reference.py -v",
+    "before_implementation": "7failures: pure streaming edge filter not implemented",
+    "before_log": "logs/string_filter_tests_red.log",
+    "after_log": "logs/string_filter_tests_green.log",
+    "full_suite_snapshot": "47tests,8HECAerrors duringconfirmedconcurrentintentionalTDD baseline; noSTRINGtestfailed",
+    "full_suite_environment": "envs/m0-h5/bin/python",
+    "concurrent_errors": [
+      "ERROR: test_collapsed_gem_suffix_ambiguity_rejected (test_prepare_heca_counts.BoundaryTests)",
+      "ERROR: test_duplicate_coordinate_rejected (test_prepare_heca_counts.BoundaryTests)",
+      "ERROR: test_duplicate_selected_cell_rejected (test_prepare_heca_counts.BoundaryTests)",
+      "ERROR: test_genuine_selected_sum (test_prepare_heca_counts.BoundaryTests)",
+      "ERROR: test_log_or_real_layer_rejected (test_prepare_heca_counts.BoundaryTests)",
+      "ERROR: test_missing_selected_barcode_rejected (test_prepare_heca_counts.BoundaryTests)",
+      "ERROR: test_negative_raw_count_rejected (test_prepare_heca_counts.BoundaryTests)",
+      "ERROR: test_wrong_feature_identity_rejected (test_prepare_heca_counts.BoundaryTests)"
+    ],
+    "system_python_full_suite": "initiallyfailedtoimportHECAnumpy; existingm0-h5envusedwithoutmodification",
+    "future_full_suite_owner": "root; nofullrepeatrequestedwhileparallelHECAimplementationinprogress"
+  }
+}

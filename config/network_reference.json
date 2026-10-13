@@ -1,0 +1,32 @@
+{
+  "version": "12.5",
+  "species_taxid": 9606,
+  "network_kind": "functional_association_not_physical_binding_or_causal_regulation",
+  "permitted_direct_channels": [
+    "experiments",
+    "database"
+  ],
+  "excluded_channels": [
+    "experiments_transferred",
+    "database_transferred",
+    "textmining",
+    "textmining_transferred",
+    "coexpression",
+    "coexpression_transferred",
+    "neighborhood",
+    "neighborhood_transferred",
+    "fusion",
+    "cooccurence",
+    "homology"
+  ],
+  "source_score_scale": 1000,
+  "minimum_max_direct_score": 700,
+  "edge_weight": "max(experiments,database)/1000",
+  "undirected_duplicate_policy": "maximum_weight",
+  "self_loop_policy": "exclude",
+  "comparative_gene_universe": "not_yet_defined; discovery-expressed_unambiguous_genes_then_induced_subgraph_then_drop_zero_degree",
+  "source_probe": "receipts/string_source_probe.json",
+  "license": "CC BY 4.0 with original-provider terms retained where applicable",
+  "license_url": "https://string-db.org/cgi/access?footer_active_subpage=licensing",
+  "mapping_status": "pending frozen HGNC gene mapping; no candidate ranking computed"
+}

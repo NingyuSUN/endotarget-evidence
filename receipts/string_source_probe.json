@@ -1,0 +1,46 @@
+{
+  "records": [
+    {
+      "url": "https://stringdb-downloads.org/download/protein.links.full.v12.5/9606.protein.links.full.v12.5.txt.gz",
+      "version": "12.5",
+      "species_taxid": 9606,
+      "retrieved_at": "2026-10-13T08:13:21.470525+00:00",
+      "purpose": "bounded source header/schema probe, not accepted full input",
+      "status": 206,
+      "headers": {
+        "Content-Length": "65536",
+        "Content-Range": "bytes 0-65535/116855136",
+        "ETag": "\"6a6e90ae-6f71160\"",
+        "Last-Modified": "Sun, 02 Aug 2026 00:34:54 GMT",
+        "Content-Type": "application/octet-stream"
+      },
+      "bytes_read": 65536,
+      "sha256_prefix": "55a1c3583ef6750593e1715158d2abef41b3e53fb245f2696e2a8a4fe988c4ee",
+      "final_url": "https://stringdb-downloads.org/download/protein.links.full.v12.5/9606.protein.links.full.v12.5.txt.gz",
+      "table_header": "protein1 protein2 neighborhood neighborhood_transferred fusion cooccurence homology coexpression coexpression_transferred experiments experiments_transferred database database_transferred textmining textmining_transferred combined_score"
+    },
+    {
+      "url": "https://stringdb-downloads.org/download/protein.info.v12.5/9606.protein.info.v12.5.txt.gz",
+      "version": "12.5",
+      "species_taxid": 9606,
+      "retrieved_at": "2026-10-13T08:13:23.148114+00:00",
+      "purpose": "bounded source header/schema probe, not accepted full input",
+      "status": 206,
+      "headers": {
+        "Content-Length": "65536",
+        "Content-Range": "bytes 0-65535/1970090",
+        "ETag": "\"647733e4-1e0faa\"",
+        "Last-Modified": "Wed, 31 May 2023 11:47:48 GMT",
+        "Content-Type": "application/octet-stream"
+      },
+      "bytes_read": 65536,
+      "sha256_prefix": "8ba38e05ce1ef050f1016dccdad4e17ae62ed8994c7896627658844d1f4bdaa7",
+      "final_url": "https://stringdb-downloads.org/download/protein.info.v12.5/9606.protein.info.v12.5.txt.gz",
+      "table_header": "#string_protein_id\tpreferred_name\tprotein_size\tannotation"
+    }
+  ],
+  "official_download_page": "https://string-db.org/cgi/download",
+  "server_html_route": "HTTP403; stopped",
+  "license_source": "https://string-db.org/cgi/access?footer_active_subpage=licensing",
+  "official_version_current_since": "2026-09-29"
+}
