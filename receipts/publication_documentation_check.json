@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-14T05:24:33.031824+00:00",
+  "status": "PASS_DOCUMENTATION_AND_HISTORY_CHECKS",
+  "scope": "Documentation presentation and English commit messages; no new scientific execution",
+  "source_equivalent_history_tip": "a9de05bdf0b514a12f01f79c4d71062477d92a9a",
+  "original_history_tip": "b775b599cd067d485323c40d648165b262b0bd4c",
+  "history": {
+    "commits_checked": 45,
+    "identical_trees": 45,
+    "author_committer_dates_preserved": true,
+    "messages_english": true,
+    "backup_bundle_verified": true,
+    "backup_bundle_sha256": "01a1d03c1982e1cf27ac2701a307a1f18caf64dea1c8b97195d925dc4c4f2cc4"
+  },
+  "scientific_freeze_artifacts_unchanged": 95,
+  "historical_receipts_unchanged": true,
+  "removed_process_documents": [
+  ],
+  "relative_document_links_checked": 195,
+  "readme_rendering": {
+    "README": {
+      "github_markdown_rendered": true,
+      "tables": 5,
+      "images": 4,
+      "mermaid_block_recognized": true,
+      "html_sha256": "b58d8df573eb15f55699c2dc5f1013c23d235d9e82d0c6a68dd9648e9a14d2ed"
+    },
+    "README.zh-CN": {
+      "github_markdown_rendered": true,
+      "tables": 5,
+      "images": 4,
+      "mermaid_block_recognized": true,
+      "html_sha256": "8312f65f73ac6ce050089f33ec88424479f994ae09cdbcbc0738687761f817b7"
+    }
+  },
+  "pdf_pages": 2,
+  "pdf_source_text_coverage": "PASS",
+  "pdf_visual_review": "PASS: both pages inspected",
+  "scientific_numeric_tokens_preserved_in_report_sources": true,
+  "independent_review": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "role": "Scientific wording and documentation scope review",
+    "verdict": "No scientific overclaim or misleading execution promise found; three editorial fixes applied",
+    "is_biological_validation": false
+  },
+  "files_sha256": {
+    "AGENTS.md": "2b8122c835da27c1e4c674871955245308e1b4da2ee871947e450dee38712955",
+    "README.md": "a80c946f66d00a29722b15d1c924fc4721f00c041f2ded3e5e601e50636998d1",
+    "README.zh-CN.md": "c9e0632d229ab00d67c0eb5c67e8e1a4351c6b69d4b6ac468c8ff9afc19ade2d",
+    "docs/AWS_DEPLOYMENT.md": "5556240865b1eb704cc349724fd7b9d98354c8def26e51f0d53cf3780f36bcad",
+    "docs/CONTAINER_BUILD.md": "688ebd5eed96d681a37098cfc451c2bcf219b2c67ebd7831cc38c4ad61109b56",
+    "docs/LOCAL_DELIVERY_ACCEPTANCE.md": "85803b6d995cad4432c53dcaa572e9e565a0be1702e1a5da0e002f324a423dc7",
+    "docs/LOCAL_EXECUTION.md": "2f078f699642923b8570560d5f9307fb0943a588c56b1eee93143e14de73a000",
+    "docs/METHOD_CARD.md": "06c1bf85922d890a5106833e3657ca081acc4ffe6beced41dc5e6bbd786a4cbf",
+    "docs/PUBLICATION_HISTORY.md": "6d861928671c51c40fa47613d4d196e4dc5f64c901280c4d3b524f1a7464548c",
+    "docs/README.md": "f33b537304929401615ff4cfced16f0dd257fcc12bf00dcfa7ac796caa3bd4bc",
+    "receipts/publication_brief_pdf.json": "f8cdb0164090ca05da2af939dfe19516d24c4b0ede46f5dc7bed692a00af639a",
+    "receipts/publication_commit_map.tsv": "08c2873edad7e4c0738676a5d6c3573c5b391fb30acc54db87cc968700a47645",
+    "reports/biology_report_zh.md": "350164d1050835b1fb5c02050e75e82fba3106c29bfc857f0085cdaf74ca7068",
+    "reports/executive_brief_en.md": "0c2f86ca295945a143f86bb4d053f2e787679ccd792e3bb64c63b016b34bd1b7",
+    "reports/executive_brief_en.pdf": "04f2d015d948b2ea2c69672e04bd68936e1ebbb34c1fa81457115401d10ff59b",
+    "scripts/render_executive_brief_pdf.py": "4663f1ae379f40d454a71fd178824506b56d3cda43cb7ebb82d997f7bc58a3a8"
+  },
+  "new_scientific_fits": 0,
+  "aws_execution": false,
+  "limitations": [
+    "Fresh clone excludes required large artifacts and runtime assets.",
+    "Historical delivery checker requires the original Git ancestry and artifact set; it was not rerun.",
+    "GitHub Markdown API recognized Mermaid markup; it does not by itself verify the browser-rendered diagram."
+  ]
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Render the English brief as exactly two A4 pages without dropping source content."""
-import hashlib,html,json,pathlib,re,datetime,importlib.metadata
+import argparse,hashlib,html,json,pathlib,re,datetime,importlib.metadata
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
 from reportlab.lib.pagesizes import A4
@@ -10,6 +10,10 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import SimpleDocTemplate,Paragraph,Spacer,PageBreak,Table,TableStyle
 from pypdf import PdfReader
 root=pathlib.Path(__file__).resolve().parent.parent
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--receipt', default='receipts/executive_brief_pdf.json')
+parser.add_argument('--preview-dir', default='work/local-runtime/pdf-preview')
+args=parser.parse_args()
 source=root/"reports/executive_brief_en.md"
 output=root/"reports/executive_brief_en.pdf"
 font_dir=pathlib.Path("C:/Windows/Fonts")
@@ -96,7 +100,7 @@ receipt={"created_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),
  "new_scientific_analysis":False,"visual_review":"PENDING",
  "renderer_versions":{name:importlib.metadata.version(name) for name in ("reportlab","pypdf")},
  "font_sha256":{file:hashlib.sha256((font_dir/file).read_bytes()).hexdigest() for file in files}}
-preview=root/"work/local-runtime/pdf-preview";preview.mkdir(exist_ok=True)
+preview=root/args.preview_dir;preview.mkdir(parents=True,exist_ok=True)
 try:
     import pypdfium2
     pdf=pypdfium2.PdfDocument(str(output))
@@ -105,5 +109,5 @@ try:
     receipt["preview_rendered"]=True
 except ImportError:
     receipt["preview_rendered"]=False
-(root/"receipts/executive_brief_pdf.json").write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
+(root/args.receipt).write_text(json.dumps(receipt,indent=2)+"\n",encoding="utf-8")
 print(json.dumps(receipt))

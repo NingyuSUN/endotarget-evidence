@@ -1,87 +1,70 @@
-# AWS deployment guide — documented, not executed
+# AWS deployment specification
 
-Current execution remains SRV01:/home/analyst/te as requested. No AWS account resources,
-image registry, bucket, instance, IAM role or billable job were created. This is an optional
-portability guide, not evidence of cloud deployment experience or a completed cloud release.
+**Status: documented; not executed.** Local native and Docker runs are recorded;
+there is no AWS execution, cost or performance result for this project.
 
-## Target and prerequisites
+## Deployment scope
 
-Use one Linux x86_64 EC2 host for a first replay of the audited donor-level workflow.
-Single-host replay is sufficient for these small donor matrices; an AWS Batch port is outside
-this first guide. A proposed initial capacity is 8 vCPU,16 GiB RAM and80 GiB attached storage,
-to be revised from the measured receipts before purchase. This is not an AWS performance
-measurement or price quotation. Reserve at least20 GiB free; cap numerical threads at1
-per model and bootstrap workers at4. Keep new raw acquisition outside the replay.
+The proposed target is a Linux x86_64 EC2 host with encrypted storage for the
+donor-level primary workflow. A single host is sufficient for the intended
+orchestration design; this specification does not implement AWS Batch or repeat
+raw-data acquisition. Instance size and storage must be selected from the actual
+artifact inventory and measured workload, not inferred from cell counts alone.
 
-Prerequisites for an actual attempt:
-- Explicitly authorize the AWS account, region, spend limit and shutdown plan. None is assumed.
-- Finish and verify the SRV01 container build/run first if the intended claim is container portability.
-  The current Docker profile is unexecuted and no validated image digest exists yet.
-- Export a versioned source commit and the complete referenced local artifact closure. Git alone
-  omits raw/count/work artifacts. Include the files hashed by the three freezes and the immutable
-  discovery products; also preserve all original output paths needed by provenance receipts.
-- Store the transfer bundle privately with a SHA256 manifest. Preserve source access/licensing
-  information. Exclude credentials, local environments, unrelated projects and shell histories.
-- Retain the absolute project layout /home/analyst/te on the replay host because archived
-  provenance and some frozen interfaces reference that path. Another layout needs an explicit
-  portability change and a new manifest; do not silently rewrite frozen files.
+## Required inputs
 
-The AWS documentation describes installing Docker on an EC2 host and granting the configured
-account access before verifying the daemon. These are future administrator actions, not commands
-executed on SRV01: [AWS container/EC2 setup](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html).
+- A fixed source revision and the complete hashed artifact set referenced by the
+  three scientific freezes, including frozen discovery outputs. A Git clone
+  excludes required count matrices and intermediate products.
+- The [locked scientific environment](../requirements/statistical-runtime.explicit.txt),
+  Nextflow 25.10.2 and Java 21, or a rebuilt and verified Linux amd64 container.
+  The recorded loopback registry address is local to the tested workstation and
+  cannot be pulled from EC2 as a public image.
+- The recorded `/home/analyst/te` path layout, or a separately tested portability
+  adaptation. Frozen scripts and provenance records contain absolute paths.
+- An authorized account, region, spending limit, scoped storage access and
+  shutdown policy. No resources have been provisioned by this specification.
 
-## Replay sequence
+Source data and transfer bundles retain their original access and attribution
+terms. Runtime credentials belong in the host identity mechanism, not in source,
+containers, configuration committed to Git or evidence records.
 
-1. Select the EC2 host and private storage according to the approved budget. Permit only the
-   necessary administration access; use a scoped instance role for the artifact location.
-   Record region, AMI ID, architecture, vCPU/RAM/storage and launch/termination timestamps.
-2. Restore the source and artifact bundle into the preserved project layout. Recreate the
-   statistical runtime from requirements/statistical-runtime.explicit.txt using a verified
-   package manager; do not copy a machine-dependent conda prefix blindly. Use the pinned
-   Nextflow25.10.2 and Java21 runtime. Record actual package versions and the new machine.
-3. Verify the supplied checkpoints before any computation:
+## Proposed execution sequence
 
-       python scripts/freeze_analysis.py --verify receipts/statistical_pre_effect_freeze.json
-       python scripts/freeze_analysis.py --verify receipts/discovery_rank_freeze.json
-       python scripts/freeze_analysis.py --verify receipts/replication_implementation_freeze.json
+1. Provision the Linux host and required storage. Record the region, machine
+   image, architecture, CPU, memory, storage and timestamps.
+2. Restore the source and referenced artifacts. Recreate the locked environment
+   or verify the rebuilt container, including its registry manifest and package
+   inventory. Do not copy a machine-dependent environment prefix blindly.
+3. From the restored project, verify all three scientific freezes:
 
-   Run these from the restored project with the required Python available. Failure to find a
-   referenced ignored file means the bundle is incomplete. Failure of a hash is a stop, not
-   permission to update the freeze.
-4. For a native portability check, source scripts/statistical_runtime_env.sh and run a NEW
-   external output tree; preserve the SRV01 result:
+   ```bash
+   python scripts/freeze_analysis.py --verify receipts/statistical_pre_effect_freeze.json
+   python scripts/freeze_analysis.py --verify receipts/discovery_rank_freeze.json
+   python scripts/freeze_analysis.py --verify receipts/replication_implementation_freeze.json
+   ```
 
-       nextflow -C replication.config -log logs/aws_heca_replay.log run replication.nf -profile srv01 -params-file config/replication_run.json --outdir work/aws_heca_replay -with-trace logs/aws_heca_replay_trace.tsv
+4. Use new work/output directories for the designated discovery and external
+   primary tasks. Adapt the tested commands in the [reproduction guide](LOCAL_EXECUTION.md)
+   to the host and verify task mounts, user identity and input visibility before
+   executing the scientific tasks. The existing workstation-specific checker is
+   not an EC2 installer.
+5. Compare outputs, preserve the execution record and shut down the allocated
+   resources according to the retention policy.
 
-   The profile name srv01 selects the native locked environment; it does not establish host
-   identity. The receipt must explicitly say EC2 when that is the actual host.
-   This command is a proposed replay and has NOT been executed on AWS.
-5. For container portability, use the separately verified image digest and an audited runtime
-   overlay with the correct host UID/GID and project/task mounts. Verify read access to frozen
-   inputs and write access only to task outputs. Nextflow stages inputs through filesystem
-   paths, so host-path/symlink visibility matters. See [Nextflow containers](https://docs.seqera.io/nextflow/container).
-   Do not claim the existing untested docker profile is ready merely because it parses.
+## Acceptance criteria
 
-## Acceptance and shutdown
+Both primary workflows must complete. Selected gene IDs, directions, ranks,
+filter decisions, tested-family sizes and agreement counts must match exactly.
+Declare the numeric comparison tolerance before running; the tested local replay
+used absolute tolerance 1e-8 and zero relative tolerance. Record any deviations.
 
-A successful cloud replay requires actual exit0 for both Nextflow stages, real host/image/runtime
-identities, input hashes matching the SRV01 checkpoint, unchanged selected gene IDs/directions,
-matching tested-family sizes and agreement counts, and effect/statistic differences within a
-declared numerical tolerance. Timestamps and host-specific receipt paths will differ; compare
-the scientific tables and explain any numerical differences. A proposed tolerance of1e-8
-absolute for finite effect/statistic values must be declared before the cloud comparison.
+Retain commands, input/container/configuration hashes, output comparisons,
+execution traces, measured resources and costs, with estimates distinguished
+from actual bills. Host paths and timestamps are expected to differ and do not
+substitute for comparing scientific values.
 
-Preserve execution trace, console/error logs, output hashes, measured resources, any deviations,
-and the exact command. A passing replay demonstrates engineering portability, not independent
-biological validation: it reruns the same data. Public cohort replication is a separate result.
-
-After the authorized attempt, copy the final evidence bundle to the approved location, then
-stop/terminate the instance and review persistent volume, object, snapshot and registry storage.
-Stopping compute alone does not demonstrate that every storage charge has ended. Verify the
-account's actual resource inventory; this guide does not delete resources.
-
-## Current limits
-
-VERIFIED: native SRV01 workflow and its measured receipts.
-DOCUMENTED: this EC2 replay and acceptance plan.
-NOT VERIFIED: image build, actual container execution, AWS execution, cloud cost or performance.
+A cloud replay would demonstrate portability of the same analysis, not independent
+biological validation. Compute shutdown and remaining storage, snapshot and
+registry resources require separate inventory checks; stopping an instance alone
+does not establish that all charges have ended.
