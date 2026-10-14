@@ -41,7 +41,8 @@ No peak resource or AWS price/performance measurement is inferred.
 The [AWS guide](AWS_DEPLOYMENT.md) remains an unexecuted plan. Its original
 container-status wording is historical; current local evidence is recorded in
 [LOCAL_EXECUTION.md](LOCAL_EXECUTION.md). No cloud resources or external image
-publication are part of this work. No GitHub push has been performed. A Git clone
+publication are part of the local execution described above. GitHub distribution is a separate
+publication step; see the current repository homepages. A Git clone
 excludes large ignored inputs and work products; full checkpoint reproduction also
 requires the hashed artifact bundle described in the execution documentation.
 

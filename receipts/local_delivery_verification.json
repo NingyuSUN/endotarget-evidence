@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "created_utc": "2026-10-14T02:55:52.073208+00:00",
+  "created_utc": "2026-10-14T03:37:18.192685+00:00",
   "source_commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
   "local_root": "/mnt/g/projects/te",
-  "local_head_before_receipt": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+  "local_head_before_receipt": "4087a8424592fda5871f9a159a010e299288d54f",
   "scientific_validation": false,
   "therapeutic_validation": false,
   "new_scientific_fits_executed": 0,
@@ -15,14 +15,14 @@
           "source_commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
           "archived_as": "docs/archive/README_srv01_4cc7580.md",
           "historical_sha256": "d73153d84255856c794640814c9c43a4b522c88b64e0aab8099dabea4588273e",
-          "current_sha256": "762172f251c8369ff53822f23397cbb4563c70abb99b3df7ca0ef8bbaf7800ce",
+          "current_sha256": "14cc7a23b8ce9d7aed647fbcb05d9a4dd1ec4bd82b43def7da4eca315b5265bb",
           "root_readme_changed": true
         },
         "README.zh-CN.md": {
           "source_commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
           "archived_as": "docs/archive/README.zh-CN_srv01_4cc7580.md",
           "historical_sha256": "f084154b11f8878422b8340ed70a017b431449263b9ed0474be23f80b48f9732",
-          "current_sha256": "0ea4e8453c8be80940f56e939bd9dc2a4b5c10b3e04b69d6c5da83e0ad494c3b",
+          "current_sha256": "8cf0cb66fdab1c0a7da74a57758ba8b870e73d1230153cde6ab3cf117c7ea863",
           "root_readme_changed": true
         }
       },
@@ -162,15 +162,15 @@
     },
     "current_files": {
       "status": "PASS",
-      "count": 65,
+      "count": 66,
       "sha256": {
-        "README.md": "762172f251c8369ff53822f23397cbb4563c70abb99b3df7ca0ef8bbaf7800ce",
-        "README.zh-CN.md": "0ea4e8453c8be80940f56e939bd9dc2a4b5c10b3e04b69d6c5da83e0ad494c3b",
+        "README.md": "14cc7a23b8ce9d7aed647fbcb05d9a4dd1ec4bd82b43def7da4eca315b5265bb",
+        "README.zh-CN.md": "8cf0cb66fdab1c0a7da74a57758ba8b870e73d1230153cde6ab3cf117c7ea863",
         "conf/local_container.config": "ec08fbb346c8398ddfe704c433fb280eadb14efa2102b9f1a5d0192213d7976c",
         "containers/statistics-local/.dockerignore": "217014bfddda45e99253a6508523e7b8d05cab0c0bf7dbb05e9911c18c8f114e",
         "containers/statistics-local/Dockerfile": "d254b27e98a8040987bc3b95de7ed8ca671ac2a71d62ff1380d38ad30def1d11",
         "containers/statistics-local/os-packages.lock.tsv": "f5bec1167cd112f6a778218ad328fbd83a0c10464bc8f163f09552b07528696c",
-        "docs/LOCAL_DELIVERY_ACCEPTANCE.md": "8bcae59bf86b10cc83085aaabc8c9392cf06872b30ce2a28abacdd0597c9b260",
+        "docs/LOCAL_DELIVERY_ACCEPTANCE.md": "a9b9242fb12ff3941f03621049ff22290e3e6dc6293dd08790f50d15f1a4de50",
         "docs/LOCAL_EXECUTION.md": "cada196c3b4b84116dfce1beb3c1bdf50a011881ce223fb99bb8d15f8e03c9b9",
         "docs/METHOD_CARD.md": "aa8566bd7462ebaffa6d0a24f2c225876a6154d848c045d5fe1431ec5e6889e5",
         "docs/archive/INDEX.md": "6fc7b76292500b0439def1512d3e8d5e2e23e3cf17192e1be51ff5d91b52a4af",
@@ -199,6 +199,7 @@
         "receipts/local_delivery_boundary_tests_v1.json": "5ba08c35e7204ed8ece51449d95defc2880b9d24fceccccf7925ad0a572179f9",
         "receipts/local_delivery_boundary_tests_v2.json": "a5898f6e506df1b2b02cc627f90e51f97ed7794e7d3d10fd841c13e0f0634cd8",
         "receipts/local_delivery_independent_review.json": "0cb7768ae7b7c8d9ca8d750d4a1c04973bc6ece3e13b482101ee49471d1e2a9c",
+        "receipts/local_delivery_verification_4087a84.json": "708174b3d6e769a2a66f9c89a6806f9b643896b0520a11cb86139fd83a7c351c",
         "receipts/local_delivery_verification_attempt1.json": "df07cb3043d3a168f55cb71c5f70ab3ee26958903439518da4444cee177621b8",
         "receipts/local_delivery_visual_review.json": "ad3933f69118d8e8b0b1157b2777ba64305f0b0951ba0caaf32b867b86726a4b",
         "receipts/local_migration_integrity.json": "51acb578c59de937cae4d0018a52befeda3692dc83b85e4a78848149c0abe69d",
@@ -328,8 +329,8 @@
   "errors": [],
   "status": "PASS_LOCAL_DELIVERY_INTEGRITY",
   "hash_checks": 1894,
-  "unique_files_hashed": 1320,
-  "unique_bytes_hashed": 1003338496,
+  "unique_files_hashed": 1321,
+  "unique_bytes_hashed": 1003358506,
   "completed_hash_maps": {
     "receipts/statistical_pre_effect_freeze.json:artifacts": 43,
     "receipts/discovery_rank_freeze.json:artifacts": 74,

@@ -1,6 +1,6 @@
 # EndoTarget Evidence
 
-A public-data endometriosis target-evidence benchmark: donor-level stromal RNA, fixed expression, degree and network-propagation baselines, source-separated transcriptomic replication, and a separate genetics evidence layer. The original scientific analysis was executed on SRV01. Local continuation, container testing and bounded reproduction now use G:\projects\te in the project-owned EndoTargetRuntime WSL guest. The repository has not been published to GitHub.
+A public-data endometriosis target-evidence benchmark: donor-level stromal RNA, fixed expression, degree and network-propagation baselines, source-separated transcriptomic replication, and a separate genetics evidence layer. The original scientific analysis was executed on SRV01. Local continuation, container testing and bounded reproduction now use G:\projects\te in the project-owned EndoTargetRuntime WSL guest. GitHub repository: [NingyuSUN/endotarget-evidence](https://github.com/NingyuSUN/endotarget-evidence).
 
 **Result: the prespecified analysis did not produce a significantly supported cross-study target shortlist or evidence that network propagation improves on expression ranking.** Negative and not-estimable outcomes are retained.
 
