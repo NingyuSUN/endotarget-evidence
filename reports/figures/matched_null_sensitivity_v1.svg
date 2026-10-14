@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650" role="img" aria-labelledby="title desc">
+<title id="title">Expression and degree matched gene-set sensitivity</title><desc id="desc">Each panel contains 200 frozen matched sets; bars show number of sets by external direction agreement. The observed line uses each fixed list evaluable denominator. Percentiles are descriptive, not p values.</desc>
+<rect width="100%" height="100%" fill="white"/><g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="30" y="40" font-size="25" fill="#243247" >Frozen expression / degree matched gene sets</text>
+<text x="30" y="70" font-size="15" fill="#243247" >200 sets per method; 20 genes per set; shared genes and donors mean these are not independent biological replications.</text>
+<text x="65" y="125" font-size="19" fill="#243247" >B0: observed 14 / 20 evaluable</text>
+<text x="65" y="152" font-size="13" fill="#243247" >Descriptive percentile: 96.5 (not a p value)</text>
+<line x1="65" y1="445.0" x2="465" y2="445.0" stroke="#dce2e9" stroke-width="1"/>
+<text x="55" y="449.0" font-size="12" fill="#243247" text-anchor="end">0</text>
+<line x1="65" y1="368.33333333333337" x2="465" y2="368.33333333333337" stroke="#dce2e9" stroke-width="1"/>
+<text x="55" y="372.33333333333337" font-size="12" fill="#243247" text-anchor="end">20</text>
+<line x1="65" y1="291.6666666666667" x2="465" y2="291.6666666666667" stroke="#dce2e9" stroke-width="1"/>
+<text x="55" y="295.6666666666667" font-size="12" fill="#243247" text-anchor="end">40</text>
+<line x1="65" y1="215.0" x2="465" y2="215.0" stroke="#dce2e9" stroke-width="1"/>
+<text x="55" y="219.0" font-size="12" fill="#243247" text-anchor="end">60</text>
+<rect x="66.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="86.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="106.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="126.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="146.00" y="441.17" width="18.00" height="3.83" fill="#91b8ce" />
+<rect x="166.00" y="441.17" width="18.00" height="3.83" fill="#91b8ce" />
+<rect x="186.00" y="425.83" width="18.00" height="19.17" fill="#91b8ce" />
+<rect x="206.00" y="383.67" width="18.00" height="61.33" fill="#91b8ce" />
+<rect x="226.00" y="326.17" width="18.00" height="118.83" fill="#91b8ce" />
+<rect x="246.00" y="345.33" width="18.00" height="99.67" fill="#91b8ce" />
+<rect x="266.00" y="303.17" width="18.00" height="141.83" fill="#91b8ce" />
+<rect x="286.00" y="326.17" width="18.00" height="118.83" fill="#91b8ce" />
+<rect x="306.00" y="337.67" width="18.00" height="107.33" fill="#91b8ce" />
+<rect x="326.00" y="391.33" width="18.00" height="53.67" fill="#91b8ce" />
+<rect x="346.00" y="418.17" width="18.00" height="26.83" fill="#91b8ce" />
+<rect x="366.00" y="437.33" width="18.00" height="7.67" fill="#91b8ce" />
+<rect x="386.00" y="441.17" width="18.00" height="3.83" fill="#91b8ce" />
+<rect x="406.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="426.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="446.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<line x1="345.0" y1="215" x2="345.0" y2="445" stroke="#ad5d20" stroke-width="3"/>
+<text x="65" y="202" font-size="12" fill="#243247" >Number of matched sets</text>
+<text x="65" y="470" font-size="12" fill="#243247" text-anchor="middle">0%</text>
+<text x="165.0" y="470" font-size="12" fill="#243247" text-anchor="middle">25%</text>
+<text x="265.0" y="470" font-size="12" fill="#243247" text-anchor="middle">50%</text>
+<text x="365.0" y="470" font-size="12" fill="#243247" text-anchor="middle">75%</text>
+<text x="465" y="470" font-size="12" fill="#243247" text-anchor="middle">100%</text>
+<text x="110" y="498" font-size="13" fill="#243247" >External same-sign / evaluable genes</text>
+<text x="555" y="125" font-size="19" fill="#243247" >B1: observed 3 / 13 evaluable</text>
+<text x="555" y="152" font-size="13" fill="#243247" >Descriptive percentile: 0.5 (not a p value)</text>
+<text x="555" y="178" font-size="13" fill="#ad5d20" >Coverage limited: 13 / 20 &lt; fixed 16 / 20 gate</text>
+<line x1="555" y1="445.0" x2="955" y2="445.0" stroke="#dce2e9" stroke-width="1"/>
+<text x="545" y="449.0" font-size="12" fill="#243247" text-anchor="end">0</text>
+<line x1="555" y1="368.33333333333337" x2="955" y2="368.33333333333337" stroke="#dce2e9" stroke-width="1"/>
+<text x="545" y="372.33333333333337" font-size="12" fill="#243247" text-anchor="end">20</text>
+<line x1="555" y1="291.6666666666667" x2="955" y2="291.6666666666667" stroke="#dce2e9" stroke-width="1"/>
+<text x="545" y="295.6666666666667" font-size="12" fill="#243247" text-anchor="end">40</text>
+<line x1="555" y1="215.0" x2="955" y2="215.0" stroke="#dce2e9" stroke-width="1"/>
+<text x="545" y="219.0" font-size="12" fill="#243247" text-anchor="end">60</text>
+<rect x="556.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="576.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="596.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="616.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="636.00" y="441.17" width="18.00" height="3.83" fill="#91b8ce" />
+<rect x="656.00" y="437.33" width="18.00" height="7.67" fill="#91b8ce" />
+<rect x="676.00" y="425.83" width="18.00" height="19.17" fill="#91b8ce" />
+<rect x="696.00" y="406.67" width="18.00" height="38.33" fill="#91b8ce" />
+<rect x="716.00" y="395.17" width="18.00" height="49.83" fill="#91b8ce" />
+<rect x="736.00" y="372.17" width="18.00" height="72.83" fill="#91b8ce" />
+<rect x="756.00" y="299.33" width="18.00" height="145.67" fill="#91b8ce" />
+<rect x="776.00" y="322.33" width="18.00" height="122.67" fill="#91b8ce" />
+<rect x="796.00" y="322.33" width="18.00" height="122.67" fill="#91b8ce" />
+<rect x="816.00" y="353.00" width="18.00" height="92.00" fill="#91b8ce" />
+<rect x="836.00" y="368.33" width="18.00" height="76.67" fill="#91b8ce" />
+<rect x="856.00" y="433.50" width="18.00" height="11.50" fill="#91b8ce" />
+<rect x="876.00" y="441.17" width="18.00" height="3.83" fill="#91b8ce" />
+<rect x="896.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="916.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="936.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<line x1="647.3076923076923" y1="215" x2="647.3076923076923" y2="445" stroke="#ad5d20" stroke-width="3"/>
+<text x="555" y="202" font-size="12" fill="#243247" >Number of matched sets</text>
+<text x="555" y="470" font-size="12" fill="#243247" text-anchor="middle">0%</text>
+<text x="655.0" y="470" font-size="12" fill="#243247" text-anchor="middle">25%</text>
+<text x="755.0" y="470" font-size="12" fill="#243247" text-anchor="middle">50%</text>
+<text x="855.0" y="470" font-size="12" fill="#243247" text-anchor="middle">75%</text>
+<text x="955" y="470" font-size="12" fill="#243247" text-anchor="middle">100%</text>
+<text x="600" y="498" font-size="13" fill="#243247" >External same-sign / evaluable genes</text>
+<text x="1045" y="125" font-size="19" fill="#243247" >G1: observed 6 / 19 evaluable</text>
+<text x="1045" y="152" font-size="13" fill="#243247" >Descriptive percentile: 0.5 (not a p value)</text>
+<line x1="1045" y1="445.0" x2="1445" y2="445.0" stroke="#dce2e9" stroke-width="1"/>
+<text x="1035" y="449.0" font-size="12" fill="#243247" text-anchor="end">0</text>
+<line x1="1045" y1="368.33333333333337" x2="1445" y2="368.33333333333337" stroke="#dce2e9" stroke-width="1"/>
+<text x="1035" y="372.33333333333337" font-size="12" fill="#243247" text-anchor="end">20</text>
+<line x1="1045" y1="291.6666666666667" x2="1445" y2="291.6666666666667" stroke="#dce2e9" stroke-width="1"/>
+<text x="1035" y="295.6666666666667" font-size="12" fill="#243247" text-anchor="end">40</text>
+<line x1="1045" y1="215.0" x2="1445" y2="215.0" stroke="#dce2e9" stroke-width="1"/>
+<text x="1035" y="219.0" font-size="12" fill="#243247" text-anchor="end">60</text>
+<rect x="1046.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1066.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1086.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1106.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1126.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1146.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1166.00" y="433.50" width="18.00" height="11.50" fill="#91b8ce" />
+<rect x="1186.00" y="410.50" width="18.00" height="34.50" fill="#91b8ce" />
+<rect x="1206.00" y="399.00" width="18.00" height="46.00" fill="#91b8ce" />
+<rect x="1226.00" y="387.50" width="18.00" height="57.50" fill="#91b8ce" />
+<rect x="1246.00" y="341.50" width="18.00" height="103.50" fill="#91b8ce" />
+<rect x="1266.00" y="341.50" width="18.00" height="103.50" fill="#91b8ce" />
+<rect x="1286.00" y="257.17" width="18.00" height="187.83" fill="#91b8ce" />
+<rect x="1306.00" y="360.67" width="18.00" height="84.33" fill="#91b8ce" />
+<rect x="1326.00" y="353.00" width="18.00" height="92.00" fill="#91b8ce" />
+<rect x="1346.00" y="406.67" width="18.00" height="38.33" fill="#91b8ce" />
+<rect x="1366.00" y="437.33" width="18.00" height="7.67" fill="#91b8ce" />
+<rect x="1386.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1406.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<rect x="1426.00" y="445.00" width="18.00" height="0.00" fill="#91b8ce" />
+<line x1="1171.3157894736842" y1="215" x2="1171.3157894736842" y2="445" stroke="#ad5d20" stroke-width="3"/>
+<text x="1045" y="202" font-size="12" fill="#243247" >Number of matched sets</text>
+<text x="1045" y="470" font-size="12" fill="#243247" text-anchor="middle">0%</text>
+<text x="1145.0" y="470" font-size="12" fill="#243247" text-anchor="middle">25%</text>
+<text x="1245.0" y="470" font-size="12" fill="#243247" text-anchor="middle">50%</text>
+<text x="1345.0" y="470" font-size="12" fill="#243247" text-anchor="middle">75%</text>
+<text x="1445" y="470" font-size="12" fill="#243247" text-anchor="middle">100%</text>
+<text x="1090" y="498" font-size="13" fill="#243247" >External same-sign / evaluable genes</text>
+<text x="30" y="555" font-size="14" fill="#243247" >Matching uses discovery expression and network degree only; external disease outcomes do not select the sets.</text>
+<text x="30" y="581" font-size="14" fill="#243247" >All 600 frozen sets meet coverage requirements. Observed lists retain their own missingness; no replacement genes are added.</text>
+<text x="30" y="607" font-size="14" fill="#243247" >Orange line = observed fixed list. The descriptive position does not establish ranking accuracy, therapeutic validity or a calibrated significance test.</text>
+<text x="30" y="633" font-size="14" fill="#243247" >See the paired external-donor bootstrap and discovery leave-one-donor-out panels for their distinct uncertainty/stability questions.</text>
+</g></svg>

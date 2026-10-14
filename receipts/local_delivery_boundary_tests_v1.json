@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-14T02:41:39.871125+00:00",
+  "completed_utc": "2026-10-14T02:41:41.815490+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_local_*.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "log": "logs/local_delivery_boundary_tests.log",
+  "log_sha256": "a880776777e49aa7eed4c735854276122906b3724ff76f961c37a6c797eeb4c4",
+  "source_sha256": {
+    "scripts/check_local_container_nextflow.py": "5e4e64eb90911e7be0fbff45d8f48d3518549de54ba857ecf1d816cabdd50b04",
+    "scripts/check_local_primary_replay.py": "aee7926ecfbdb178308ef2b8074be2c476bee5a07a4a6fdf872da4e41820206e",
+    "scripts/verify_local_delivery.py": "e2bf973e55161440089c896ff3c955d5db2ed479d6634e7b1226267d74a5cbb7",
+    "scripts/verify_local_migration.py": "8745c655e46b1ad5ae3783ce8bb2a79d11a25b46a67d8901b12285e9656ca033",
+    "tests/test_local_container_check.py": "3d6c8b926b30a602d19e20e7e5f6cd937abc1110ba32fdaa71fc197eb2b0f486",
+    "tests/test_local_delivery.py": "f32b48959094669d1d326b0965da48fd023cd18dfdc786793c588cd094380e0f",
+    "tests/test_local_migration_integrity.py": "f9e928e153e17a85bbcfce3882fe63cd356abab1dc8dbe136977476ed7de186f",
+    "tests/test_local_primary_replay.py": "cc901bff7206747b92ba67e3ffa4aa57a0b72d80285e4636e21c18b9c02875a7"
+  },
+  "scope": "local integrity/container comparison/delivery boundary tests; no scientific model fit"
+}

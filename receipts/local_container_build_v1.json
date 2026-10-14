@@ -1,0 +1,78 @@
+{
+  "started_utc": "20261014T015621Z",
+  "distribution": "EndoTargetRuntime",
+  "execution_location": "LOCAL",
+  "source_hashes": {
+    "containers/statistics/Dockerfile": "60f35f65af0155de1b3ca94c5572c3a426f69e290c8886fd8f51107cd9d9a563",
+    "containers/statistics/.dockerignore": "b1a1a73f1fe6928cc7b995f466708e729dcdef843dfa8fd519509e7648a60b8a",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6"
+  },
+  "build_command": [
+    "docker",
+    "build",
+    "--network=host",
+    "--progress=plain",
+    "--tag",
+    "endotarget-statistics:local-20261014t015621z",
+    "/opt/endotarget-local/build-context-20261014T015621Z"
+  ],
+  "build_context": "/opt/endotarget-local/build-context-20261014T015621Z",
+  "image_tag": "endotarget-statistics:local-20261014t015621z",
+  "build_log": "logs/local_container_build_20261014T015621Z.log",
+  "build_succeeded": true,
+  "nextflow_executed": false,
+  "exit_code": 0,
+  "build_log_sha256": "d000e2fccf9bc015870247cb0dfae2d82eeb87c6b5edd55e93401724fb3c6b4f",
+  "finished_utc": "2026-10-14T02:01:29.468427+00:00",
+  "image_id": "sha256:a2ed587a37490abe671c96ba5246811f038e7f5e81d65da043d200135dd7cd1e",
+  "architecture": "amd64",
+  "os": "linux",
+  "size_bytes": 862452943,
+  "image_config": {
+    "User": "57439:57439",
+    "Env": [
+      "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "MAMBA_USER=mambauser",
+      "MAMBA_USER_ID=57439",
+      "MAMBA_USER_GID=57439",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "ENV_NAME=base",
+      "MAMBA_ROOT_PREFIX=/opt/conda",
+      "MAMBA_EXE=/bin/micromamba",
+      "CONDA_OVERRIDE_CUDA=",
+      "JAVA_HOME=/opt/endo/lib/jvm",
+      "R_LIBS_USER=/opt/endo/lib/R/library",
+      "PYTHONNOUSERSITE=1",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "TMPDIR=/tmp",
+      "HOME=/tmp",
+      "XDG_CACHE_HOME=/tmp/.cache"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "WorkingDir": "/tmp",
+    "Labels": {
+      "distro_id": "debian",
+      "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+      "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+      "org.opencontainers.image.licenses": "Apache-2.0",
+      "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+      "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+      "org.opencontainers.image.title": "micromamba-docker",
+      "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+      "org.opencontainers.image.version": "latest"
+    },
+    "ArgsEscaped": true,
+    "Shell": [
+      "/usr/local/bin/_dockerfile_shell.sh"
+    ]
+  },
+  "repo_digests": [
+    "endotarget-statistics@sha256:a2ed587a37490abe671c96ba5246811f038e7f5e81d65da043d200135dd7cd1e"
+  ],
+  "script_sha256": "5c8e575f681f12525ff7586bc1c31e2bcedecde8967f54abde0018760773f546"
+}

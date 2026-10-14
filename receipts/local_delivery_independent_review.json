@@ -1,0 +1,34 @@
+{
+  "recorded_utc": "2026-10-14T02:50:39.509638+00:00",
+  "reviewer_agent": "/root/astra_local_completion_audit",
+  "review_kind": "Independent AI read-only audit, not biological validation",
+  "status": "RUNTIME_AND_SCIENTIFIC_REPORTING_ACCEPTED_PENDING_FINAL_INTEGRITY_AND_COMMIT",
+  "reviewed_evidence_sha256": {
+    "receipts/local_container_build.json": "a7b342e4d117051f5b11776016fc01040242e2f5b29577534723a8a9e7817e21",
+    "receipts/local_container_manifest.json": "ac7e91e7483030a4256d758c688fa26b412404f2e667e377b2cd4ddb2f77ad81",
+    "receipts/local_container_nextflow.json": "bb3fe28bc38806f1b9bab3816b9e46417ab04da7787b1cdc8f0af1f243b0618f",
+    "receipts/local_primary_container_replay.json": "d5b725ff4430461f6878b155ffffde963a86bd0cafc8d38a45a5d9e310436cd7",
+    "reports/executive_brief_en.md": "16b03240aeb85b05e503d0cdd66d8e1e34a22673caeadc51ec1595cc91a7c5f9",
+    "docs/METHOD_CARD.md": "aa8566bd7462ebaffa6d0a24f2c225876a6154d848c045d5fe1431ec5e6889e5",
+    "docs/archive/README_srv01_4cc7580.md": "d73153d84255856c794640814c9c43a4b522c88b64e0aab8099dabea4588273e",
+    "docs/archive/README.zh-CN_srv01_4cc7580.md": "f084154b11f8878422b8340ed70a017b431449263b9ed0474be23f80b48f9732"
+  },
+  "verified": [
+    "Six actual workflow traces agree with receipts: five fresh synthetic tasks, five cached synthetic tasks, five fresh real tasks.",
+    "Real-primary scientific comparisons cover 34 TSVs and eight JSONs; tested-gene counts 17733/17643 and zero BH-significant genes agree.",
+    "Ten fresh task container inspections retain the selected image, non-root UID/GID, no network, read-only root, 2 GiB cap and one writable task directory.",
+    "Both historical README archives match original byte hashes.",
+    "Scientific summaries retain negative results, missingness and non-causal interpretation."
+  ],
+  "required_fixes_identified": [
+    "Require core current delivery files in final verification inventory; implemented and covered by boundary tests.",
+    "Allow only the final verifier exact planned atomic-output path as a not-yet-existing Markdown target; implemented and covered by boundary tests.",
+    "Root final integrity run identified default image USER versus task --user confusion; require both identities at their respective layer, retaining actual container user checks."
+  ],
+  "subsequent_root_layout_review": "Final PDF two pages and four SVG figures inspected; see receipts/local_delivery_visual_review.json",
+  "remaining_at_review": [
+    "Run final combined delivery integrity verifier after final artifact preparation.",
+    "Commit intentional local changes and verify final Git status."
+  ],
+  "new_scientific_model_runs_by_reviewer": 0
+}

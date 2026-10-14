@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-14T02:51:19.382174+00:00",
+  "source_commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+  "local_root": "/mnt/g/projects/te",
+  "local_head_before_receipt": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+  "scientific_validation": false,
+  "therapeutic_validation": false,
+  "new_scientific_fits_executed": 0,
+  "checks": {
+    "archives": {
+      "status": "PASS",
+      "readmes": {
+        "README.md": {
+          "source_commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+          "archived_as": "docs/archive/README_srv01_4cc7580.md",
+          "historical_sha256": "d73153d84255856c794640814c9c43a4b522c88b64e0aab8099dabea4588273e",
+          "current_sha256": "762172f251c8369ff53822f23397cbb4563c70abb99b3df7ca0ef8bbaf7800ce",
+          "root_readme_changed": true
+        },
+        "README.zh-CN.md": {
+          "source_commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+          "archived_as": "docs/archive/README.zh-CN_srv01_4cc7580.md",
+          "historical_sha256": "f084154b11f8878422b8340ed70a017b431449263b9ed0474be23f80b48f9732",
+          "current_sha256": "0ea4e8453c8be80940f56e939bd9dc2a4b5c10b3e04b69d6c5da83e0ad494c3b",
+          "root_readme_changed": true
+        }
+      },
+      "policy": "exact old relative path + old SHA256 + base=None only"
+    },
+    "freezes": {
+      "status": "PASS",
+      "manifests": [
+        {
+          "receipt": "receipts/statistical_pre_effect_freeze.json",
+          "phase": "STATISTICAL_IMPLEMENTATION_FROZEN_PRE_EFFECT",
+          "artifacts": 43
+        },
+        {
+          "receipt": "receipts/discovery_rank_freeze.json",
+          "phase": "DISCOVERY_FROZEN_PRE_EXTERNAL",
+          "artifacts": 74
+        },
+        {
+          "receipt": "receipts/replication_implementation_freeze.json",
+          "phase": "REPLICATION_IMPLEMENTATION_FROZEN_PRE_EXTERNAL",
+          "artifacts": 95
+        }
+      ],
+      "unique_artifacts": 95
+    },
+    "historical_delivery": {
+      "status": "PASS",
+      "delivery_map_specifications": 17,
+      "final_review_evidence_entries": 16,
+      "historical_v1_policy": "verify v1 outputs and current v2 inputs as selected by original delivery map"
+    },
+    "bootstrap": {
+      "status": "PASS",
+      "draws": 500,
+      "sidecar_SHA256_checks": 500,
+      "valid": 487,
+      "invalid_preserved": 13,
+      "conditional_interval": [
+        -0.3894736842105263,
+        0.08684210526315783
+      ],
+      "fits_executed": 0
+    },
+    "LODO": {
+      "status": "PASS",
+      "folds": 22,
+      "valid_folds": 22,
+      "fold_output_SHA256_checks": 440,
+      "metrics_rows": 66,
+      "fits_executed": 0
+    },
+    "reported_results": {
+      "status": "PASS",
+      "concordance_agree_evaluable_selected": {
+        "B0": {
+          "20": [
+            14,
+            20,
+            20
+          ],
+          "50": [
+            36,
+            49,
+            50
+          ]
+        },
+        "B1": {
+          "20": [
+            3,
+            13,
+            20
+          ],
+          "50": [
+            16,
+            35,
+            50
+          ]
+        },
+        "G1": {
+          "20": [
+            6,
+            19,
+            20
+          ],
+          "50": [
+            26,
+            47,
+            50
+          ]
+        }
+      },
+      "DE": {
+        "discovery": {
+          "tested_genes": 17733,
+          "BH_q_lt_05": 0
+        },
+        "heca": {
+          "tested_genes": 17643,
+          "BH_q_lt_05": 0
+        }
+      },
+      "selected_evaluation_rows": 210,
+      "scientific_results_recomputed": false
+    },
+    "build_manifest": {
+      "status": "FAIL"
+    },
+    "figures": {
+      "status": "PASS",
+      "new_figures": [
+        "reports/figures/donor_composition_qc_v1.svg",
+        "reports/figures/donor_flow_v1.svg",
+        "reports/figures/evidence_matrix_v1.svg",
+        "reports/figures/matched_null_sensitivity_v1.svg"
+      ],
+      "scientific_fits_executed": 0
+    },
+    "two_page_brief": {
+      "status": "PASS",
+      "pages": 2,
+      "source": "reports/executive_brief_en.md",
+      "output": "reports/executive_brief_en.pdf",
+      "visual_review_checked_separately": true
+    },
+    "current_files": {
+      "status": "PASS",
+      "count": 63,
+      "sha256": {
+        "README.md": "762172f251c8369ff53822f23397cbb4563c70abb99b3df7ca0ef8bbaf7800ce",
+        "README.zh-CN.md": "0ea4e8453c8be80940f56e939bd9dc2a4b5c10b3e04b69d6c5da83e0ad494c3b",
+        "conf/local_container.config": "ec08fbb346c8398ddfe704c433fb280eadb14efa2102b9f1a5d0192213d7976c",
+        "containers/statistics-local/.dockerignore": "217014bfddda45e99253a6508523e7b8d05cab0c0bf7dbb05e9911c18c8f114e",
+        "containers/statistics-local/Dockerfile": "d254b27e98a8040987bc3b95de7ed8ca671ac2a71d62ff1380d38ad30def1d11",
+        "containers/statistics-local/os-packages.lock.tsv": "f5bec1167cd112f6a778218ad328fbd83a0c10464bc8f163f09552b07528696c",
+        "docs/LOCAL_DELIVERY_ACCEPTANCE.md": "8bcae59bf86b10cc83085aaabc8c9392cf06872b30ce2a28abacdd0597c9b260",
+        "docs/LOCAL_EXECUTION.md": "ca0f03a2b741f4eeef0193f78adf5817c174545daf9930d70203f53c01210229",
+        "docs/METHOD_CARD.md": "aa8566bd7462ebaffa6d0a24f2c225876a6154d848c045d5fe1431ec5e6889e5",
+        "docs/archive/INDEX.md": "6fc7b76292500b0439def1512d3e8d5e2e23e3cf17192e1be51ff5d91b52a4af",
+        "docs/archive/README.zh-CN_srv01_4cc7580.md": "f084154b11f8878422b8340ed70a017b431449263b9ed0474be23f80b48f9732",
+        "docs/archive/README_srv01_4cc7580.md": "d73153d84255856c794640814c9c43a4b522c88b64e0aab8099dabea4588273e",
+        "receipts/executive_brief_pdf.json": "73aba8e52e4eccffe36b859eec2785c207ce1f8910fc189e8fd8dacc49cc6e15",
+        "receipts/summary_figures_v1.json": "6899408908d53a950b69ecc77588ab112726265de777834dc100229b59b01f6e",
+        "receipts/local_container_build.json": "a7b342e4d117051f5b11776016fc01040242e2f5b29577534723a8a9e7817e21",
+        "receipts/local_container_build_v1.json": "8456bf431e0f4b13e8dc5c7efd529e370b3d11c38f06936b83af1e7d6edcfae1",
+        "receipts/local_container_build_v2.json": "e7b1eaf947132cf4c384f784d06d610fc96f56f6c514f7b936acb7663168258e",
+        "receipts/local_container_build_v2_attempt1.json": "2ea7d681f7344845a145b635eba8296001ab09e4b43cce3c08459dea1cd42176",
+        "receipts/local_container_build_v3_attempt1.json": "3da4b5a28413a0031143d3ef4058c362ce8988d39aae2c57d3046f0bec1ba10a",
+        "receipts/local_container_manifest.json": "ac7e91e7483030a4256d758c688fa26b412404f2e667e377b2cd4ddb2f77ad81",
+        "receipts/local_container_manifest_attempt1.json": "9e5beedadce544a21da6c076bd7796c00f0d7bee22ab35042c746044130136d4",
+        "receipts/local_container_manifest_v1.json": "dcbee8c03f7cab549222b0b7524e6aadfe33cd62d0a4d61df0a9901532490710",
+        "receipts/local_container_manifest_v2.json": "29424bd2a951cae7cf9d39659f8249dba55694b7308419f0b44efcfdba45f9a4",
+        "receipts/local_container_nextflow.json": "bb3fe28bc38806f1b9bab3816b9e46417ab04da7787b1cdc8f0af1f243b0618f",
+        "receipts/local_container_nextflow_attempt1.json": "aba411c73807842d9e5123d59e42d2fc25621d23ffb0ac7df35bf04f0d742fde",
+        "receipts/local_container_nextflow_attempt2.json": "f0b85cbb9d191e6e9a823dec41c6863dde0ddbf6452eaa7061042cdc35d31b83",
+        "receipts/local_container_nextflow_attempt3.json": "0c6870d70b883171b56cb6452dff9f1bb4cf13f61531b47704a5898d9a860326",
+        "receipts/local_container_nextflow_attempt4.json": "cb5e491001742be2888f60fd3afef88d2f8c9ce4b28390f99b308b380bb9ff43",
+        "receipts/local_container_nextflow_attempt5.json": "79163d890818c0f6ff8cd41541d29698316daa6593ebd93abb141071ac38255c",
+        "receipts/local_container_nextflow_attempt6.json": "8a52f80cb23358cbb92484b2dcb80533ab9901727e83e176eea7e17cf60c1ac2",
+        "receipts/local_container_resources.json": "388639cac1d982e295d96338e538595e1834cb933cf48bd60fcdfa93cbc94581",
+        "receipts/local_delivery_boundary_tests.json": "a5898f6e506df1b2b02cc627f90e51f97ed7794e7d3d10fd841c13e0f0634cd8",
+        "receipts/local_delivery_boundary_tests_v1.json": "5ba08c35e7204ed8ece51449d95defc2880b9d24fceccccf7925ad0a572179f9",
+        "receipts/local_delivery_independent_review.json": "8dc7eaf2aedb3e739b69eb9c63b71c99b7a26d821f062ccc9b155eadfe8d4dad",
+        "receipts/local_delivery_visual_review.json": "ad3933f69118d8e8b0b1157b2777ba64305f0b0951ba0caaf32b867b86726a4b",
+        "receipts/local_migration_integrity.json": "51acb578c59de937cae4d0018a52befeda3692dc83b85e4a78848149c0abe69d",
+        "receipts/local_migration_transfer.json": "ca058057c75a655afadb9b9576465f6fbb3f8fc9d2fe54f8a8152fa3f0c88046",
+        "receipts/local_primary_container_replay.json": "d5b725ff4430461f6878b155ffffde963a86bd0cafc8d38a45a5d9e310436cd7",
+        "receipts/local_runtime_daemon.json": "1e7a2541f3e294daa4caa323a6c3196deac3f2bbc59ded8854783894ebb0585b",
+        "receipts/local_runtime_guest_setup.json": "1735e698fa5b1ba52aa9ed705678eecc1ba9d836ba35686603b68ee6caf70bef",
+        "receipts/local_runtime_rootfs_download.json": "d4e52d7f87fd76f69cb9481779246fe89d1ac718897c2bb1ede088a76ba12c59",
+        "receipts/local_runtime_shutdown.json": "2d2b83fbb478c054d1616d3e0400b3f1eb8a43c23110629378f0b080cf56e988",
+        "reports/executive_brief_en.md": "16b03240aeb85b05e503d0cdd66d8e1e34a22673caeadc51ec1595cc91a7c5f9",
+        "reports/executive_brief_en.pdf": "19854829de2b210236eebdfb32be4ffebe1306d820ce79080f776f9fe5037f14",
+        "reports/figures/donor_composition_qc_v1.svg": "e9cf007e1a1d980837769c5dbc16eb71b9c3e680ceba86f2fe39e10f4b379e5e",
+        "reports/figures/donor_flow_v1.svg": "3870eba5a0b876e819062dd8ccb1a21226752ff82cec3fd1e88d4e29e3d19670",
+        "reports/figures/evidence_matrix_v1.svg": "137e93f5ac5e36f3f505dc12163d8da9628d61e940b6cbac0cf902d9e487ba50",
+        "reports/figures/matched_null_sensitivity_v1.svg": "aa458f709d2852184fbc8536978ed9d224aed3e516644e6ae97b11541ba09406",
+        "scripts/build_local_container.py": "8a613128d305a1fc5d63bec877528cbee1f994aa005f43bc4a44c9cbee668c65",
+        "scripts/check_local_container_nextflow.py": "5e4e64eb90911e7be0fbff45d8f48d3518549de54ba857ecf1d816cabdd50b04",
+        "scripts/check_local_primary_replay.py": "aee7926ecfbdb178308ef2b8074be2c476bee5a07a4a6fdf872da4e41820206e",
+        "scripts/local_runtime_guest_setup.sh": "32d07721bccecf16eafb5fdd0648c1491e1043b23a713f3b530ff2ef0b50847f",
+        "scripts/local_runtime_network_snapshot.py": "a3052c9da1d2d220c830d6d8740257058787411f490b04f3763cfcaad5802224",
+        "scripts/local_runtime_start.sh": "81c838b2b455e25519fbeb6a06abcff1f64c9300af25689ed3eda722ec8df2f5",
+        "scripts/render_executive_brief_pdf.py": "2a11a4aac758d92a9f9d02c67ee4d932dd88842b1cb0df9c403a1a6a0e6ba209",
+        "scripts/render_summary_figures_v1.py": "434805cf24dcc28ec0dc6f0016f2c3540bb81f64baf9b72b62915c1f52db22d1",
+        "scripts/verify_local_container_manifest.py": "da089e4ba8a085fc88310b41bdb18180009e251c821a034a97577ed2373cd373",
+        "scripts/verify_local_delivery.py": "014ce735372cfcde843ef0eed8fca7ac3e0b1acb030d3e9a01e1b5ee47e80343",
+        "scripts/verify_local_migration.py": "8745c655e46b1ad5ae3783ce8bb2a79d11a25b46a67d8901b12285e9656ca033",
+        "tests/test_local_container_check.py": "3d6c8b926b30a602d19e20e7e5f6cd937abc1110ba32fdaa71fc197eb2b0f486",
+        "tests/test_local_delivery.py": "865267ecb5290a3eb9dc0ccb5c33267bc7d990d2bc3526868310233918eac5eb",
+        "tests/test_local_migration_integrity.py": "f9e928e153e17a85bbcfce3882fe63cd356abab1dc8dbe136977476ed7de186f",
+        "tests/test_local_primary_replay.py": "cc901bff7206747b92ba67e3ffa4aa57a0b72d80285e4636e21c18b9c02875a7"
+      },
+      "self_receipt_excluded": "receipts/local_delivery_verification.json",
+      "required_core_files": [
+        "README.md",
+        "README.zh-CN.md",
+        "containers/statistics-local/.dockerignore",
+        "containers/statistics-local/Dockerfile",
+        "containers/statistics-local/os-packages.lock.tsv",
+        "docs/LOCAL_DELIVERY_ACCEPTANCE.md",
+        "docs/LOCAL_EXECUTION.md",
+        "docs/METHOD_CARD.md",
+        "docs/archive/INDEX.md",
+        "docs/archive/README.zh-CN_srv01_4cc7580.md",
+        "docs/archive/README_srv01_4cc7580.md",
+        "receipts/executive_brief_pdf.json",
+        "receipts/summary_figures_v1.json",
+        "receipts/local_container_build.json",
+        "receipts/local_container_manifest.json",
+        "receipts/local_container_nextflow.json",
+        "receipts/local_delivery_visual_review.json",
+        "receipts/local_primary_container_replay.json",
+        "reports/executive_brief_en.md",
+        "reports/executive_brief_en.pdf",
+        "reports/figures/donor_composition_qc_v1.svg",
+        "reports/figures/donor_flow_v1.svg",
+        "reports/figures/evidence_matrix_v1.svg",
+        "reports/figures/matched_null_sensitivity_v1.svg",
+        "scripts/render_executive_brief_pdf.py",
+        "scripts/render_summary_figures_v1.py",
+        "scripts/verify_local_delivery.py",
+        "tests/test_local_delivery.py"
+      ]
+    },
+    "active_markdown": {
+      "status": "PASS",
+      "files_checked": [
+        "README.md",
+        "README.zh-CN.md",
+        "docs/LOCAL_DELIVERY_ACCEPTANCE.md",
+        "docs/LOCAL_EXECUTION.md",
+        "docs/METHOD_CARD.md",
+        "docs/archive/INDEX.md",
+        "reports/executive_brief_en.md"
+      ],
+      "local_targets_checked": 110,
+      "explicit_archives_skipped": [
+        "docs/archive/README.zh-CN_srv01_4cc7580.md",
+        "docs/archive/README_srv01_4cc7580.md"
+      ],
+      "planned_atomic_output_links": [
+        {
+          "document": "README.md",
+          "target": "receipts/local_delivery_verification.json"
+        },
+        {
+          "document": "README.zh-CN.md",
+          "target": "receipts/local_delivery_verification.json"
+        },
+        {
+          "document": "docs/LOCAL_DELIVERY_ACCEPTANCE.md",
+          "target": "receipts/local_delivery_verification.json"
+        },
+        {
+          "document": "docs/LOCAL_EXECUTION.md",
+          "target": "receipts/local_delivery_verification.json"
+        }
+      ]
+    },
+    "visual_review": {
+      "status": "PASS",
+      "receipt": "receipts/local_delivery_visual_review.json",
+      "artifacts": [
+        "reports/executive_brief_en.pdf",
+        "reports/figures/donor_composition_qc_v1.svg",
+        "reports/figures/donor_flow_v1.svg",
+        "reports/figures/evidence_matrix_v1.svg",
+        "reports/figures/matched_null_sensitivity_v1.svg"
+      ],
+      "automated_visual_proof": false,
+      "scope": "Integrity of recorded human/model visual inspection; no automated proof of appearance"
+    },
+    "synthetic_container": {
+      "status": "FAIL"
+    },
+    "primary_container": {
+      "status": "FAIL"
+    }
+  },
+  "errors": [
+    {
+      "stage": "build_manifest",
+      "error": "Unexpected built platform/user"
+    },
+    {
+      "stage": "synthetic_container",
+      "error": "Build/manifest prerequisite failed"
+    },
+    {
+      "stage": "primary_container",
+      "error": "Build/manifest prerequisite failed"
+    }
+  ],
+  "status": "FAIL_LOCAL_DELIVERY_INTEGRITY",
+  "hash_checks": 1663,
+  "unique_files_hashed": 1238,
+  "unique_bytes_hashed": 958554541,
+  "completed_hash_maps": {
+    "receipts/statistical_pre_effect_freeze.json:artifacts": 43,
+    "receipts/discovery_rank_freeze.json:artifacts": 74,
+    "receipts/replication_implementation_freeze.json:artifacts": 95,
+    "receipts/heca_primary_execution.json:output_sha256": 16,
+    "receipts/real_resampling_execution.json:artifacts_sha256": 8,
+    "receipts/replication_report.json:output_sha256": 11,
+    "receipts/replication_v2_report.json:input_sha256": 50,
+    "receipts/replication_v2_report.json:output_sha256": 11,
+    "receipts/clinical_sensitivity_execution.json:input_sha256": 6,
+    "receipts/clinical_sensitivity_execution.json:output_sha256": 9,
+    "receipts/clinical_sensitivity_tests.json:code_sha256": 5,
+    "receipts/clinical_sensitivity_tests.json:log_sha256": 8,
+    "receipts/stromal_composition.json:input_sha256": 10,
+    "receipts/stromal_composition.json:outputs_sha256": 4,
+    "receipts/genetic_evidence_execution.json:file_hashes": 7,
+    "receipts/container_recipe_v1.json:protected_sha256": 6,
+    "receipts/container_recipe_v1.json:recipe_sha256": 4,
+    "receipts/scientific_delivery_verification.json:delivery_sha256": 18,
+    "receipts/final_independent_delivery_review.json:evidence_sha256": 16,
+    "work/statistical/bootstrap/draw_freeze.json:inputs": 12,
+    "work/statistical/discovery_lodo/binding.json:sha256": 16,
+    "work/statistical/discovery_lodo/fold_01/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_02/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_03/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_04/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_05/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_06/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_07/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_08/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_09/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_10/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_11/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_12/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_13/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_14/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_15/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_16/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_17/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_18/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_19/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_20/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_21/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_22/checkpoint.json:output_sha256": 20,
+    "local_build:source_hashes": 4,
+    "local_manifest:artifacts": 16,
+    "summary_figures:inputs": 9,
+    "summary_figures:outputs": 4,
+    "visual_review:artifacts": 5,
+    "visual_review:previews": 6
+  },
+  "verifier_sha256": "014ce735372cfcde843ef0eed8fca7ac3e0b1acb030d3e9a01e1b5ee47e80343"
+}

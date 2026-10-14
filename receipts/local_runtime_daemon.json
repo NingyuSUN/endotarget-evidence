@@ -1,0 +1,89 @@
+{
+  "created_utc": "2026-10-14T01:55:45.380910+00:00",
+  "distribution": "EndoTargetRuntime",
+  "daemon_pid": 76,
+  "daemon_arguments": [
+    "dockerd",
+    "--host=unix:///run/endotarget-docker.sock",
+    "--group=root",
+    "--pidfile=/run/endotarget-docker.pid",
+    "--exec-root=/run/endotarget-docker",
+    "--data-root=/var/lib/endotarget-docker",
+    "--bridge=none",
+    "--iptables=false",
+    "--ip6tables=false",
+    "--ip-forward=false",
+    "--ip-masq=false",
+    "--userland-proxy=false",
+    "--exec-opt=native.cgroupdriver=cgroupfs",
+    ""
+  ],
+  "docker_version": "{\"Client\":{\"Version\":\"29.1.3\",\"ApiVersion\":\"1.52\",\"DefaultAPIVersion\":\"1.52\",\"GitCommit\":\"29.1.3-0ubuntu3~24.04.2\",\"GoVersion\":\"go1.24.4\",\"Os\":\"linux\",\"Arch\":\"amd64\",\"BuildTime\":\"Wed Apr 29 16:41:06 2026\",\"Context\":\"default\"},\"Server\":{\"Platform\":{\"Name\":\"\"},\"Version\":\"29.1.3\",\"ApiVersion\":\"1.52\",\"MinAPIVersion\":\"1.44\",\"Os\":\"linux\",\"Arch\":\"amd64\",\"Components\":[{\"Name\":\"Engine\",\"Version\":\"29.1.3\",\"Details\":{\"ApiVersion\":\"1.52\",\"Arch\":\"amd64\",\"BuildTime\":\"Wed Apr 29 16:41:06 2026\",\"Experimental\":\"false\",\"GitCommit\":\"29.1.3-0ubuntu3~24.04.2\",\"GoVersion\":\"go1.24.4\",\"KernelVersion\":\"6.18.54.1-microsoft-standard-WSL2\",\"MinAPIVersion\":\"1.44\",\"Os\":\"linux\"}},{\"Name\":\"containerd\",\"Version\":\"2.2.1\",\"Details\":{\"GitCommit\":\"\"}},{\"Name\":\"runc\",\"Version\":\"1.3.4-0ubuntu1~24.04.1\",\"Details\":{\"GitCommit\":\"\"}},{\"Name\":\"docker-init\",\"Version\":\"0.19.0\",\"Details\":{\"GitCommit\":\"\"}}],\"GitCommit\":\"29.1.3-0ubuntu3~24.04.2\",\"GoVersion\":\"go1.24.4\",\"KernelVersion\":\"6.18.54.1-microsoft-standard-WSL2\",\"BuildTime\":\"2026-04-29T16:41:06.000000000+00:00\"}}",
+  "buildx_version": "github.com/docker/buildx 0.30.1 0.30.1-0ubuntu1~24.04.1",
+  "storage_driver": "overlayfs",
+  "docker_root": "/var/lib/endotarget-docker",
+  "security_options": [
+    "name=seccomp,profile=builtin",
+    "name=cgroupns"
+  ],
+  "cgroup_driver": "cgroupfs",
+  "socket": "unix:///run/endotarget-docker.sock",
+  "tcp_daemon_listener": false,
+  "project_bind": "/home/analyst/te",
+  "project_source": "/mnt/g/projects/te",
+  "network_before": {
+    "interfaces": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "51bbea91e351e4e6c946ea9e7a39e44ca570e0b2fe4212f4c69085f45108823d"
+    },
+    "ip6tables": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "iptables": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ipv4_forward": "0",
+    "ipv6_forward": "0",
+    "routes": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9b3d855a6fe7ef82b263ae54a64fdd8960bbcc841ab2186017f7040b9524ee90"
+    }
+  },
+  "network_after": {
+    "interfaces": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "51bbea91e351e4e6c946ea9e7a39e44ca570e0b2fe4212f4c69085f45108823d"
+    },
+    "ip6tables": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "iptables": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ipv4_forward": "0",
+    "ipv6_forward": "0",
+    "routes": {
+      "exit_code": 0,
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "9b3d855a6fe7ef82b263ae54a64fdd8960bbcc841ab2186017f7040b9524ee90"
+    }
+  },
+  "network_changes": {},
+  "network_unchanged": true,
+  "scientific_containers_executed": false,
+  "script_sha256": {
+    "scripts/local_runtime_start.sh": "81c838b2b455e25519fbeb6a06abcff1f64c9300af25689ed3eda722ec8df2f5",
+    "scripts/local_runtime_network_snapshot.py": "a3052c9da1d2d220c830d6d8740257058787411f490b04f3763cfcaad5802224"
+  }
+}

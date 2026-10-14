@@ -1,0 +1,32 @@
+{
+  "status": "STOPPED",
+  "created_utc": "2026-10-14T02:49:00.058141+00:00",
+  "distribution": "EndoTargetRuntime",
+  "daemon_pid": 76,
+  "daemon_arguments": [
+    "dockerd",
+    "--host=unix:///run/endotarget-docker.sock",
+    "--group=root",
+    "--pidfile=/run/endotarget-docker.pid",
+    "--exec-root=/run/endotarget-docker",
+    "--data-root=/var/lib/endotarget-docker",
+    "--bridge=none",
+    "--iptables=false",
+    "--ip6tables=false",
+    "--ip-forward=false",
+    "--ip-masq=false",
+    "--userland-proxy=false",
+    "--exec-opt=native.cgroupdriver=cgroupfs",
+    ""
+  ],
+  "active_container_count_before": 0,
+  "signal": "SIGTERM",
+  "daemon_reachable_after": false,
+  "daemon_process_state_after": "ABSENT",
+  "data_images_caches_preserved": true,
+  "WSL_distribution_unregistered": false,
+  "global_WSL_settings_modified": false,
+  "restart_script": "scripts/local_runtime_start.sh",
+  "shutdown_script": "work/local-runtime/stop_project_daemon.py",
+  "shutdown_script_sha256": "b83c5a7184e88b38e680d2e68a1d79ed1eb4c5c92311c34a31b0ad575c58696d"
+}

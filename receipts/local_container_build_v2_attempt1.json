@@ -1,0 +1,104 @@
+{
+  "started_utc": "20261014T021516Z",
+  "distribution": "EndoTargetRuntime",
+  "execution_location": "LOCAL",
+  "recipe_version": "local_v2_add_procps",
+  "source_hashes": {
+    "containers/statistics-local/Dockerfile": "5b9e72a3c4d2e7df1f5ddcd274e105deabd488b6e32b749bf8740fcdafba0f5e",
+    "containers/statistics/.dockerignore": "b1a1a73f1fe6928cc7b995f466708e729dcdef843dfa8fd519509e7648a60b8a",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6"
+  },
+  "build_command": [
+    "docker",
+    "build",
+    "--network=host",
+    "--progress=plain",
+    "--tag",
+    "endotarget-statistics:local-v2-20261014t021516z",
+    "/opt/endotarget-local/build-context-20261014T021516Z"
+  ],
+  "build_context": "/opt/endotarget-local/build-context-20261014T021516Z",
+  "image_tag": "endotarget-statistics:local-v2-20261014t021516z",
+  "build_log": "logs/local_container_build_20261014T021516Z.log",
+  "build_succeeded": false,
+  "nextflow_executed": false,
+  "required_os_packages": {
+    "procps": "2:4.0.4-9",
+    "libproc2-0": "2:4.0.4-9",
+    "libncursesw6": "6.5+20250216-2"
+  },
+  "exit_code": 0,
+  "build_log_sha256": "bb28e4b9727573d1863bc973d540b452f9f4cdb45004cec2d7a932a5a5dab897",
+  "finished_utc": "2026-10-14T02:15:58.795352+00:00",
+  "image_id": "sha256:24582d6b7773c7f8a75d5028b8139e80c90d4db595240b45783277e29e1af152",
+  "architecture": "amd64",
+  "os": "linux",
+  "size_bytes": 862998584,
+  "image_config": {
+    "User": "57439:57439",
+    "Env": [
+      "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+      "MAMBA_USER=mambauser",
+      "MAMBA_USER_ID=57439",
+      "MAMBA_USER_GID=57439",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "ENV_NAME=base",
+      "MAMBA_ROOT_PREFIX=/opt/conda",
+      "MAMBA_EXE=/bin/micromamba",
+      "CONDA_OVERRIDE_CUDA=",
+      "JAVA_HOME=/opt/endo/lib/jvm",
+      "R_LIBS_USER=/opt/endo/lib/R/library",
+      "PYTHONNOUSERSITE=1",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "OPENBLAS_NUM_THREADS=1",
+      "OMP_NUM_THREADS=1",
+      "TMPDIR=/tmp",
+      "HOME=/tmp",
+      "XDG_CACHE_HOME=/tmp/.cache"
+    ],
+    "Cmd": [
+      "/bin/bash"
+    ],
+    "WorkingDir": "/tmp",
+    "Labels": {
+      "distro_id": "debian",
+      "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+      "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+      "org.opencontainers.image.licenses": "Apache-2.0",
+      "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+      "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+      "org.opencontainers.image.title": "micromamba-docker",
+      "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+      "org.opencontainers.image.version": "latest"
+    },
+    "ArgsEscaped": true,
+    "Shell": [
+      "/usr/local/bin/_dockerfile_shell.sh"
+    ]
+  },
+  "repo_digests": [
+    "endotarget-statistics@sha256:24582d6b7773c7f8a75d5028b8139e80c90d4db595240b45783277e29e1af152"
+  ],
+  "runtime_inspection_command": [
+    "docker",
+    "run",
+    "--rm",
+    "--network",
+    "none",
+    "--memory",
+    "2g",
+    "--user",
+    "1003:1004",
+    "--read-only",
+    "--tmpfs",
+    "/tmp:rw,nosuid,nodev,size=64m,mode=0700,uid=1003,gid=1004",
+    "--entrypoint",
+    "/opt/endo/bin/python",
+    "endotarget-statistics:local-v2-20261014t021516z",
+    "-c",
+    "import glob,json,subprocess\npackages=[]\nfor path in glob.glob('/opt/endo/conda-meta/*.json'):\n x=json.load(open(path));packages.append({k:x.get(k) for k in ('name','version','build','fn','md5','url')})\nprint(json.dumps({'scientific_packages':sorted(packages,key=lambda x:x['name']),\n 'os_packages':subprocess.check_output(['dpkg-query','-W','procps','libproc2-0','libncursesw6'],text=True),\n 'ps_version':subprocess.check_output(['ps','--version'],text=True)}))\n"
+  ],
+  "verification_error": "ValueError('Pinned Debian metrics package versions differ')",
+  "script_sha256": "d181782b0c94f7ceb9e1023214a6ab53763c58031a2348e97713afe0ec83ea81"
+}

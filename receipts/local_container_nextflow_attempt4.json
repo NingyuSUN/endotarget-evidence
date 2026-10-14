@@ -1,0 +1,2235 @@
+{
+  "status": "FAIL",
+  "execution_location": "LOCAL_EndoTargetRuntime",
+  "data_kind": "synthetic_test_only",
+  "scientific_validation": false,
+  "real_cohort_effects_computed": false,
+  "AWS_execution_verified": false,
+  "started_utc": "2026-10-14T02:21:32.306184+00:00",
+  "image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+  "image_id": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+  "image_inspect": {
+    "Id": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+    "RepoTags": [
+      "127.0.0.1:5500/endotarget-statistics:20261014t021740z",
+      "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+      "endotarget-statistics:local-v2-20261014t021647z"
+    ],
+    "RepoDigests": [
+      "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+      "endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d"
+    ],
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": "2026-10-14T11:15:44.516248438+09:00",
+    "Config": {
+      "User": "57439:57439",
+      "Env": [
+        "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "MAMBA_USER=mambauser",
+        "MAMBA_USER_ID=57439",
+        "MAMBA_USER_GID=57439",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8",
+        "ENV_NAME=base",
+        "MAMBA_ROOT_PREFIX=/opt/conda",
+        "MAMBA_EXE=/bin/micromamba",
+        "CONDA_OVERRIDE_CUDA=",
+        "JAVA_HOME=/opt/endo/lib/jvm",
+        "R_LIBS_USER=/opt/endo/lib/R/library",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "OMP_NUM_THREADS=1",
+        "TMPDIR=/tmp",
+        "HOME=/tmp",
+        "XDG_CACHE_HOME=/tmp/.cache"
+      ],
+      "Cmd": [
+        "/bin/bash"
+      ],
+      "WorkingDir": "/tmp",
+      "Labels": {
+        "distro_id": "debian",
+        "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+        "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+        "org.opencontainers.image.licenses": "Apache-2.0",
+        "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+        "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+        "org.opencontainers.image.title": "micromamba-docker",
+        "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+        "org.opencontainers.image.version": "latest"
+      },
+      "ArgsEscaped": true,
+      "Shell": [
+        "/usr/local/bin/_dockerfile_shell.sh"
+      ]
+    },
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 862998584,
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c",
+        "sha256:96ff6b3e8c2af1d7740fc49caa14f50aaeaf6466d54a52d4faf566fc5f14df7c",
+        "sha256:0c785ef64bd8b7e23e05726d6c0a753bf0b98d0ebc45940fd7d1fb506d994052",
+        "sha256:1c8ef3e3700c6b2eb02b218e218b3c5ed1a224edffcc01d286ebdefb1e2ba0d6",
+        "sha256:daa0f9d9bfe45f2c4ed78030ebb7ebd5ea0f3f01ac6f56c472047dcff37e3820",
+        "sha256:354a6c68555f1c4b00330165c9a2bae7566de9d5e34b0b560223aea4c98b4597",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+        "sha256:72e0e1cb7dd803e5ddf74101b3c796ba40241f5325a01fe4fbe637d2d8a0f741",
+        "sha256:5d9c1c63520ad67e78755b690a74f2875633042b0f7a6724b98f2a2d87b04daf",
+        "sha256:d72f1f4b38088a30045e2f2d231e095f3fc29a3c7e6cf12d1ac9094530f0dea5",
+        "sha256:db4261ca27ee24eec8cc851a2f2cf9dba9ffa20ba5d9db43bdfcd64e03dd7481",
+        "sha256:d6cfb81bb30520da28e20a3e3f10edda603887df4b6173c39a514b392ae48a74",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+        "sha256:50813b52e1b6686e07dee8d9bb6c741f1e71de78dc04145e3e9b6f481c37aa56"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "2026-10-14T02:18:02.871737705Z"
+    },
+    "Descriptor": {
+      "mediaType": "application/vnd.oci.image.index.v1+json",
+      "digest": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+      "size": 856
+    }
+  },
+  "build_receipt": "receipts/local_container_build.json",
+  "build_receipt_sha256": "e7b1eaf947132cf4c384f784d06d610fc96f56f6c514f7b936acb7663168258e",
+  "build_image_id": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+  "host_java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)\n",
+  "java_heap": "512m",
+  "task_concurrency": 1,
+  "comparison_tolerance": {
+    "relative": 1e-08,
+    "absolute": 1e-08
+  },
+  "run_directory": "work/local-container/20261014T022132Z-c054ea07",
+  "input_sha256_before": {
+    "conf/local_container.config": "ec08fbb346c8398ddfe704c433fb280eadb14efa2102b9f1a5d0192213d7976c",
+    "conf/statistics_container.config": "819e49b9b94ecd32bf0b75de736e95f50eb5c1b2683fadd5f84259c58402499e",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "main.nf": "3790a6f647565b91334e51686c450100542575b671398bf4c0e281ec1f7da422",
+    "nextflow.config": "4d8c79071f053b9ae894230feaa619a629e33f6717f74d02a0887d425af40214",
+    "receipts/runtime_statistics_R_smoke.json": "4f3aa34a5dc48bf9fb7470dce1e2eadca0ef7f1a9ca134cf1feddb8535cabece",
+    "receipts/runtime_statistics_install.json": "5a65eda490112f6cd34722796294baf5be4adf80f5af79350b29f31090c6c527",
+    "replication.config": "87a1afa33c51043b82da0be28d7a5e5786559163155257c7e562b40afc2fc501",
+    "replication.nf": "3b06ec4c3aa01a10cd02334ec48d0d99deaa898299eec85faefd71b3a579295e",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6",
+    "requirements/statistical-runtime.yml": "51e78370e2a5495a33a6272c5a8159d9233a07fd851d28086da79b8d1b4b8269",
+    "scripts/check_local_container_nextflow.py": "7617aae183be4c5ae854a0495a8e0a5701f6a0906152b55f4212957d2ee9b8da",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/evaluate_replication.py": "76464563522a7f7ef33eea66ba95c4f727ee5b23c8207ea1f794e904a47038b0",
+    "scripts/fit_donor_de.R": "e68c80e3c2d37ec260a814890d5c7f2fdbad5033b95c22c30b53811e289be07c",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "scripts/sample_matched_nulls.py": "587092a1f2b2a8915759df67eaf23d4c2d4a18232c9308cac7afd6b2fff90ba5",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "work/synthetic/20261013T100312Z-439d82d9/clinical.tsv": "0f4f8893784308e35ce60a139a41735ed2f5c4a2a772b7bf1997f81e58169ed0",
+    "work/synthetic/20261013T100312Z-439d82d9/counts.tsv.gz": "4ed0c916ffdfdbd24bb996cb86076b67b65a16d5e53fd63a9d336490f75ffd26",
+    "work/synthetic/20261013T100312Z-439d82d9/design.tsv": "f4d0e33953af4304a0da031df3bd4282ecf093d92263cf8d8b60b12e26c9394d",
+    "work/synthetic/20261013T100312Z-439d82d9/edges.tsv.gz": "4b19d1b5237a44c474da9b35f2760c88b2df1524d37bbb520e3b0b58e0892359",
+    "work/synthetic/20261013T100312Z-439d82d9/freeze.json": "a2068fa572cb8e8083c98898f518d1c949a338de9c5f945b822e37b2c20679d9",
+    "work/synthetic/20261013T100312Z-439d82d9/params.json": "4cce48f133d1605072507f63444407c1656e13c330847d63cf6439382ba84c80",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/de_all.tsv": "c45d3cac2c13f6378838bfe66568506283ec4fbea009e170287432e069cbfdc6",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/de_fitted.tsv": "c45d3cac2c13f6378838bfe66568506283ec4fbea009e170287432e069cbfdc6",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/design.tsv": "e1f86325a2f6dc9572c335c0c16a63404943d617745d81d1faa0dedf5335061d",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/expression_filter.tsv": "bd35aa258624fdb26cb08cdf9271e8f91e32cd4d80f2f44abcfc8414ec2bf8e5",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/model.rds": "0b528433742a394d99980f254c23a01a532956ab1846d1ee4609dcf040e70fff",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/normalization.tsv": "247a63443c332ee578efaf22b69875d275990e8d844246a5272cfee5daeb8c80",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/provenance.json": "ae4c60bdead403a5d850f9ea726d356626a874d07b236e979986f669329f8c15",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/B0_null_membership.tsv": "7ec939bb155c1bef579c4f3d81d00a565a0d46df2d2dd2d33f3a44cf712652fe",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/B1_null_membership.tsv": "fbd6913895183d236827e469958182366fc88714fcf771d8bc5e4451c56bba7c",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/G1_null_membership.tsv": "948aab53a16b80a6d540eb06e63eaaa7f97ceb6a9b417f27e18bc6f66683bc38",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/all_U_directions.tsv": "60b7481d065e4e13ce447cbe93ee760be1ee29d83b911e2a18002e6819844dac",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/bin_demands.tsv": "1e74c624843e97a24ddda8832d4926fe35a2cd0c4b6a3c598555c390d1364646",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/boundaries.json": "c8b849632b89ab3e4a1bdde5305e1ed3e0a2e7201f7f9530ba27160a4e238650",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/null_memberships.tsv": "2d016e3cf1558613cf95733f091d05d87fdcfc39f0d86de460f01795d0d51533",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/status.json": "f3879782f03559857b2febacef17a4df48424003b8bd32d08e948e1fecb6c605",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/universe_bins.tsv": "127d828644b778c25b6645a405b2bd2a7c2088251c7cc6f7fedfe009deda027a",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B0.tsv": "05f9e0203c7b2d97c075a19f03528e13cdfdd953f75dc70509f6653bed2436d4",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B0_top20.tsv": "5e62c27c0b6d50e02c0cba616d11f7a30e5a4acd09208b4e6f423811de1df73c",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B0_top50.tsv": "55145af74174d33c0dc060b4a8c48c14f72d7a0080a84f89495dcab01fa28d20",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B1.tsv": "bfdb395b13cffb5bda7f80ff010055498651d99cc2559ea51942be591dc8f9f0",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B1_top20.tsv": "704120a28ac765e70aa8f8aaf03ce2dfda1f0032a1248cd408fce5b49e77722f",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B1_top50.tsv": "b3c3f9a0ae2a729689c82ff05b8bd0754696c5d40c44e095de9ffd7defbe0f35",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/G1.tsv": "cdbc887aa46c6681af2ff1047a649e0f43ac3ae6d8e8f3130f0c26352e29cbf1",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/G1_top20.tsv": "a8582574415516b4329e71a756712343b3a9373ec3f763e6b76864f8740de034",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/G1_top50.tsv": "d44c1d68b4555931d266f289a030f541c8afe5fde700a004ec45709ebebe8faf",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/excluded_genes.tsv": "b2c55e7b43ce376d0d9adda80672e3a8dc113b363664dfca7f9a671b17dc5324",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/induced_edges.tsv": "860ddd76c8ae57a92e9f7c88926d10aabf54779cfd94ac2d953a9fac1fa08368",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/provenance.json": "49400c35c22a2c8f89a2a4479ebd2b7f856195ed0666afd2d9258f80bcafdd8b",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/universe.tsv": "5445f2752af877662d611693af999cd34f08430d5f71187e095dac36d1bec740",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/clinical.tsv": "b17d3e5e41b494cf7e57154f312dba7c6751705f1612e9deb818ef0387975689",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/counts.tsv.gz": "223918acb8875c29efbed7465118409f1569321016bd020faaadc40ec054a3f9",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/design.tsv": "a762f9129e0fa13510598ab3c8b67a320e7fa1b460e51a7a4e6396f8d03e19bc",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/discovery_freeze.json": "f92dccf28dcc0207eb23b5475622fbc890d96e3c3b7413c5549ed7adc665cb72",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/evaluation_freeze.json": "e818c0f2af80fda2a1aeda9c3b700fe60d4348ed3ea632876b8dde3a6a98eb9f",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/params.json": "67cb5f45bd29c4469c7a12db79c50d3a7dfb6a930c8ad39a95d6268cebb04beb",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/pre_effect.json": "d46ee507a982aed2b6b3bb020a6fb1984649a7eaefff178a531129052f6d20c5",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/de_all.tsv": "e02b71560f4d1cddf291eddf16359f8f4f2ca98595d525b799fb959be38728c4",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/de_fitted.tsv": "e02b71560f4d1cddf291eddf16359f8f4f2ca98595d525b799fb959be38728c4",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/design.tsv": "d755c496d15dab9225510909faacd83f89fe782c126788ff772dc1163b606cb5",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/expression_filter.tsv": "45eda42e3208957f03a03d1dc3a7d9307ddbf8204b83a1ed7d1001e7e70aaf96",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/model.rds": "d0f23a97dfc09e0efba76196338ad9606cd6821a54572bd4d83d5da46af1a128",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/normalization.tsv": "d22e9214eb572dcf4e6766620431a38d080b43678c69c321acffbb2887cae652",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/provenance.json": "aa0c8a465fac7dc73ba25f4b9b0418f39b161464581aa429671af6f65816a43e",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/bootstrap_interface.tsv": "37a61a5b95bd52a9ae88db83e914590c7dd5d5ade54fb470fd84bc35d773a9d7",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/dossier_pool.tsv": "617e977b75091fb35f2e71bccaf3121eec5e30097edcb547686b4e08b2be0e88",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/dossier_selection.tsv": "921091c3490611feb3b1d7907804d2ed4a79a1596d9ad8809c2ddc2c3fe5fd29",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/null_sets.tsv": "5ae37cc70bdf59af2bc504f5f1253e2afce61c0cac227d285ff08b3c5ecde9cf",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/null_summary.json": "d65b20a4c80a9c3c26fcbd21fa1f0aab1d42d1ad9d18155f6f7fa15e618e9321",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/provenance.json": "22363006693c9097363734fb7beebfcb31a6a3c96a7eb93cf1b4fa17cf23e002",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/selected_genes.tsv": "37a61a5b95bd52a9ae88db83e914590c7dd5d5ade54fb470fd84bc35d773a9d7",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/summary.json": "f79caeec546af9d2a106b49e57df004604d8c5d162c7f76321a8a6f47221c701"
+  },
+  "environment": {
+    "WSL_DISTRO_NAME": "EndoTargetRuntime",
+    "WSL_INTEROP": "/run/WSL/4957_interop",
+    "WSLENV": "PATHEXT/l:COMSPEC/p:SYSTEMROOT/p:SYSTEMDRIVE:USERNAME:USERDOMAIN:USERPROFILE/p:PROGRAMFILES/p:PROGRAMFILES(X86)/p:PROGRAMW6432/p:PROGRAMDATA/p:LOCALAPPDATA/p:APPDATA/p:POWERSHELL:PWSH:HTTP_PROXY:HTTPS_PROXY:NO_PROXY:NODE_TLS_REJECT_UNAUTHORIZED:CODEX_APP_SERVER_LOGIN_ISSUER:CODEX_APP_SERVER_LOGIN_CLIENT_ID:CODEX_REFRESH_TOKEN_URL_OVERRIDE:CODEX_REVOKE_TOKEN_URL_OVERRIDE:CODEX_HOME/p:LOG_FORMAT:RUST_LOG:CODEX_INTERNAL_ORIGINATOR_OVERRIDE:CODEX_APP_TOOLS_PIPE_PATH",
+    "LANG": "C.UTF-8",
+    "TERM": "xterm-256color",
+    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "HOME": "/root",
+    "DOCKER_HOST": "unix:///run/endotarget-docker.sock",
+    "ENDOTARGET_CONTAINER_UID": "1003",
+    "ENDOTARGET_CONTAINER_GID": "1004",
+    "ENDOTARGET_LOCAL_CHECK_ID": "20261014T022132Z-c054ea07",
+    "NXF_HOME": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/nxf_home",
+    "NXF_OFFLINE": "true",
+    "NXF_DISABLE_CHECK_LATEST": "true",
+    "NXF_ANSI_LOG": "false",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "launches": [
+    {
+      "pipeline": "discovery",
+      "resume": false,
+      "command": [
+        "java",
+        "-Xmx512m",
+        "-jar",
+        "/home/analyst/te/work/local-runtime/nextflow/nextflow-25.10.2-one.jar",
+        "-C",
+        "/home/analyst/te/nextflow.config,/home/analyst/te/conf/statistics_container.config,/home/analyst/te/conf/local_container.config",
+        "-log",
+        "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_fresh_nextflow.log",
+        "run",
+        "/home/analyst/te/main.nf",
+        "-profile",
+        "docker,statistics_container,local_container",
+        "-params-file",
+        "/home/analyst/te/work/synthetic/20261013T100312Z-439d82d9/params.json",
+        "--runtime_mode",
+        "docker",
+        "--container_image",
+        "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+        "--outdir",
+        "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_fresh_results",
+        "-work-dir",
+        "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work",
+        "-with-trace",
+        "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_fresh_trace.tsv",
+        "-dump-hashes",
+        "json",
+        "-name",
+        "local_20261014T022132Z-c054ea07_discovery"
+      ],
+      "exit_code": 0,
+      "console": "work/local-container/20261014T022132Z-c054ea07/discovery_fresh_console.log",
+      "trace": "work/local-container/20261014T022132Z-c054ea07/discovery_fresh_trace.tsv",
+      "tasks": [
+        {
+          "name": "DONOR_DE (discovery)",
+          "workdir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed",
+          "command_run": "work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed/.command.run",
+          "command_run_sha256": "1422091d7394b156998e34933f32305e3be906f2156062b2bbc58d81636bde43",
+          "command_sh": "work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed/.command.sh",
+          "command_sh_sha256": "1e86797165227a103774673dcfe297a2967cb3b0db862be4925beca4118a1b0a"
+        },
+        {
+          "name": "RANK_TARGETS (B0_B1_G1)",
+          "workdir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52",
+          "command_run": "work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52/.command.run",
+          "command_run_sha256": "00a341ae09f760190798b99487c7fccf0e1a7eb11668dfae5cd030e5d4b99711",
+          "command_sh": "work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52/.command.sh",
+          "command_sh_sha256": "83a382027fb80ccde35087102b8fadad12643a7424632a3b0045a4096972f32b"
+        },
+        {
+          "name": "MATCHED_NULLS (matched_nulls)",
+          "workdir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f",
+          "command_run": "work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f/.command.run",
+          "command_run_sha256": "93399d03466adc2b6b96675f4a8ad19b8a42c65e626f1a19065ae830f82045a3",
+          "command_sh": "work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f/.command.sh",
+          "command_sh_sha256": "d1750e80e86e02748a42794cf7b480402bd1f5de737eccd0de94fe467096df49"
+        }
+      ],
+      "trace_rows": [
+        {
+          "task_id": "1",
+          "hash": "81/e3c68e",
+          "name": "DONOR_DE (discovery)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "workdir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed"
+        },
+        {
+          "task_id": "2",
+          "hash": "43/4e36c8",
+          "name": "RANK_TARGETS (B0_B1_G1)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "workdir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52"
+        },
+        {
+          "task_id": "3",
+          "hash": "4f/5c84f6",
+          "name": "MATCHED_NULLS (matched_nulls)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "workdir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f"
+        }
+      ],
+      "all_scientific_tsv_comparisons": {
+        "de/de_all.tsv": {
+          "rows": 1500,
+          "columns": 14,
+          "numerically_equal_nonidentical_cells": 8857,
+          "expected_sha256": "c45d3cac2c13f6378838bfe66568506283ec4fbea009e170287432e069cbfdc6",
+          "actual_sha256": "deccb6549a0844c145fba54a5ef05f2d8b3e693819cd1c9e28bc45497683086e"
+        },
+        "de/de_fitted.tsv": {
+          "rows": 1500,
+          "columns": 14,
+          "numerically_equal_nonidentical_cells": 8857,
+          "expected_sha256": "c45d3cac2c13f6378838bfe66568506283ec4fbea009e170287432e069cbfdc6",
+          "actual_sha256": "deccb6549a0844c145fba54a5ef05f2d8b3e693819cd1c9e28bc45497683086e"
+        },
+        "de/design.tsv": {
+          "rows": 20,
+          "columns": 4,
+          "numerically_equal_nonidentical_cells": 0,
+          "expected_sha256": "e1f86325a2f6dc9572c335c0c16a63404943d617745d81d1faa0dedf5335061d",
+          "actual_sha256": "e1f86325a2f6dc9572c335c0c16a63404943d617745d81d1faa0dedf5335061d"
+        },
+        "de/expression_filter.tsv": {
+          "rows": 1500,
+          "columns": 2,
+          "numerically_equal_nonidentical_cells": 0,
+          "expected_sha256": "bd35aa258624fdb26cb08cdf9271e8f91e32cd4d80f2f44abcfc8414ec2bf8e5",
+          "actual_sha256": "bd35aa258624fdb26cb08cdf9271e8f91e32cd4d80f2f44abcfc8414ec2bf8e5"
+        },
+        "de/normalization.tsv": {
+          "rows": 20,
+          "columns": 5,
+          "numerically_equal_nonidentical_cells": 0,
+          "expected_sha256": "247a63443c332ee578efaf22b69875d275990e8d844246a5272cfee5daeb8c80",
+          "actual_sha256": "247a63443c332ee578efaf22b69875d275990e8d844246a5272cfee5daeb8c80"
+        },
+        "nulls/B0_null_membership.tsv": {
+          "rows": 4000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 3009,
+          "expected_sha256": "7ec939bb155c1bef579c4f3d81d00a565a0d46df2d2dd2d33f3a44cf712652fe",
+          "actual_sha256": "17a718bf49468af96c2e5cf0f789d32a4a9363ec2eee0a65db1b8bd3445b79fe"
+        },
+        "nulls/B1_null_membership.tsv": {
+          "rows": 4000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 3083,
+          "expected_sha256": "fbd6913895183d236827e469958182366fc88714fcf771d8bc5e4451c56bba7c",
+          "actual_sha256": "fc9c6842ed25a1765671ade8ea124559eff88532962ad9c68d13f5d9ab54f1de"
+        },
+        "nulls/G1_null_membership.tsv": {
+          "rows": 4000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 3035,
+          "expected_sha256": "948aab53a16b80a6d540eb06e63eaaa7f97ceb6a9b417f27e18bc6f66683bc38",
+          "actual_sha256": "d00e611893dde402b76eee90f07f42a8d04489c93862b4bf49892880156ad132"
+        },
+        "nulls/all_U_directions.tsv": {
+          "rows": 1500,
+          "columns": 3,
+          "numerically_equal_nonidentical_cells": 1143,
+          "expected_sha256": "60b7481d065e4e13ce447cbe93ee760be1ee29d83b911e2a18002e6819844dac",
+          "actual_sha256": "d88a12bf53c83c5440b3e151363bb2dc75a8d1647e0d344eb5192d98100cc06f"
+        },
+        "nulls/bin_demands.tsv": {
+          "rows": 75,
+          "columns": 6,
+          "numerically_equal_nonidentical_cells": 0,
+          "expected_sha256": "1e74c624843e97a24ddda8832d4926fe35a2cd0c4b6a3c598555c390d1364646",
+          "actual_sha256": "1e74c624843e97a24ddda8832d4926fe35a2cd0c4b6a3c598555c390d1364646"
+        },
+        "nulls/null_memberships.tsv": {
+          "rows": 12000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 9127,
+          "expected_sha256": "2d016e3cf1558613cf95733f091d05d87fdcfc39f0d86de460f01795d0d51533",
+          "actual_sha256": "03124e44f341fa6cf1725c8708ed9ad5ae3de1a2c2ef92e17974d56bdaf306d0"
+        },
+        "nulls/universe_bins.tsv": {
+          "rows": 1500,
+          "columns": 7,
+          "numerically_equal_nonidentical_cells": 1143,
+          "expected_sha256": "127d828644b778c25b6645a405b2bd2a7c2088251c7cc6f7fedfe009deda027a",
+          "actual_sha256": "75f1a3d9715beda63fb17cfcf3dd9755047a19eb3b7b1719ae7e65073e0989e5"
+        },
+        "ranking/B0.tsv": {
+          "rows": 1500,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 6664,
+          "expected_sha256": "05f9e0203c7b2d97c075a19f03528e13cdfdd953f75dc70509f6653bed2436d4",
+          "actual_sha256": "7f356c740b1c8ae671c46a96bf1972396d22dd3da05a31efd3791bdd62452d43"
+        },
+        "ranking/B0_top20.tsv": {
+          "rows": 20,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 79,
+          "expected_sha256": "5e62c27c0b6d50e02c0cba616d11f7a30e5a4acd09208b4e6f423811de1df73c",
+          "actual_sha256": "dce80e4763674c4e62b54ad74e04f0183baf3af86ced724934a6e51abdb989a7"
+        },
+        "ranking/B0_top50.tsv": {
+          "rows": 50,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 176,
+          "expected_sha256": "55145af74174d33c0dc060b4a8c48c14f72d7a0080a84f89495dcab01fa28d20",
+          "actual_sha256": "bd56aeb00acdc9ad0959d37025a9f188e9f4f6894d67eda61c8ab6d5f871bb41"
+        },
+        "ranking/B1.tsv": {
+          "rows": 1500,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 5377,
+          "expected_sha256": "bfdb395b13cffb5bda7f80ff010055498651d99cc2559ea51942be591dc8f9f0",
+          "actual_sha256": "5a77ad317286c9a4d5169e25350b02258b5fc77511d3f1c26b78c1880dc211e6"
+        },
+        "ranking/B1_top20.tsv": {
+          "rows": 20,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 68,
+          "expected_sha256": "704120a28ac765e70aa8f8aaf03ce2dfda1f0032a1248cd408fce5b49e77722f",
+          "actual_sha256": "03128376adc858e84c30800e517a6bd091fada2948608a2d617bd8bc11c4df62"
+        },
+        "ranking/B1_top50.tsv": {
+          "rows": 50,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 177,
+          "expected_sha256": "b3c3f9a0ae2a729689c82ff05b8bd0754696c5d40c44e095de9ffd7defbe0f35",
+          "actual_sha256": "2cbad9c8bf72d0da7adf3f9cbc0fbb8f38244e1ea96d0a3e584221871f7ef12d"
+        },
+        "ranking/G1.tsv": {
+          "rows": 1500,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 6861,
+          "expected_sha256": "cdbc887aa46c6681af2ff1047a649e0f43ac3ae6d8e8f3130f0c26352e29cbf1",
+          "actual_sha256": "6392c5a939f2c2c6c69a8449a899dea683a14b5a6dacf476fe79647105e9917d"
+        },
+        "ranking/G1_top20.tsv": {
+          "rows": 20,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 77,
+          "expected_sha256": "a8582574415516b4329e71a756712343b3a9373ec3f763e6b76864f8740de034",
+          "actual_sha256": "769c0377b56eb5b8015f0a740154e244b8ad9c5638cebb7e2430f6585137d843"
+        },
+        "ranking/G1_top50.tsv": {
+          "rows": 50,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 184,
+          "expected_sha256": "d44c1d68b4555931d266f289a030f541c8afe5fde700a004ec45709ebebe8faf",
+          "actual_sha256": "c2d5a9f6e9290d9c2e36d0fa7b86d39e01e9345933c3308a3fdf56c06983f699"
+        },
+        "ranking/excluded_genes.tsv": {
+          "rows": 0,
+          "columns": 2,
+          "numerically_equal_nonidentical_cells": 0,
+          "expected_sha256": "b2c55e7b43ce376d0d9adda80672e3a8dc113b363664dfca7f9a671b17dc5324",
+          "actual_sha256": "b2c55e7b43ce376d0d9adda80672e3a8dc113b363664dfca7f9a671b17dc5324"
+        },
+        "ranking/induced_edges.tsv": {
+          "rows": 1500,
+          "columns": 3,
+          "numerically_equal_nonidentical_cells": 0,
+          "expected_sha256": "860ddd76c8ae57a92e9f7c88926d10aabf54779cfd94ac2d953a9fac1fa08368",
+          "actual_sha256": "860ddd76c8ae57a92e9f7c88926d10aabf54779cfd94ac2d953a9fac1fa08368"
+        },
+        "ranking/universe.tsv": {
+          "rows": 1500,
+          "columns": 1,
+          "numerically_equal_nonidentical_cells": 0,
+          "expected_sha256": "5445f2752af877662d611693af999cd34f08430d5f71187e095dac36d1bec740",
+          "actual_sha256": "5445f2752af877662d611693af999cd34f08430d5f71187e095dac36d1bec740"
+        }
+      },
+      "output": "work/local-container/20261014T022132Z-c054ea07/discovery_fresh_results",
+      "cached_output_bytes_identical": null
+    }
+  ],
+  "docker_execution_verified": false,
+  "error": "Trace requires every task CACHED with exit 0",
+  "input_sha256_after": {
+    "conf/local_container.config": "ec08fbb346c8398ddfe704c433fb280eadb14efa2102b9f1a5d0192213d7976c",
+    "conf/statistics_container.config": "819e49b9b94ecd32bf0b75de736e95f50eb5c1b2683fadd5f84259c58402499e",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "main.nf": "3790a6f647565b91334e51686c450100542575b671398bf4c0e281ec1f7da422",
+    "nextflow.config": "4d8c79071f053b9ae894230feaa619a629e33f6717f74d02a0887d425af40214",
+    "receipts/runtime_statistics_R_smoke.json": "4f3aa34a5dc48bf9fb7470dce1e2eadca0ef7f1a9ca134cf1feddb8535cabece",
+    "receipts/runtime_statistics_install.json": "5a65eda490112f6cd34722796294baf5be4adf80f5af79350b29f31090c6c527",
+    "replication.config": "87a1afa33c51043b82da0be28d7a5e5786559163155257c7e562b40afc2fc501",
+    "replication.nf": "3b06ec4c3aa01a10cd02334ec48d0d99deaa898299eec85faefd71b3a579295e",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6",
+    "requirements/statistical-runtime.yml": "51e78370e2a5495a33a6272c5a8159d9233a07fd851d28086da79b8d1b4b8269",
+    "scripts/check_local_container_nextflow.py": "7617aae183be4c5ae854a0495a8e0a5701f6a0906152b55f4212957d2ee9b8da",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/evaluate_replication.py": "76464563522a7f7ef33eea66ba95c4f727ee5b23c8207ea1f794e904a47038b0",
+    "scripts/fit_donor_de.R": "e68c80e3c2d37ec260a814890d5c7f2fdbad5033b95c22c30b53811e289be07c",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "scripts/sample_matched_nulls.py": "587092a1f2b2a8915759df67eaf23d4c2d4a18232c9308cac7afd6b2fff90ba5",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "work/synthetic/20261013T100312Z-439d82d9/clinical.tsv": "0f4f8893784308e35ce60a139a41735ed2f5c4a2a772b7bf1997f81e58169ed0",
+    "work/synthetic/20261013T100312Z-439d82d9/counts.tsv.gz": "4ed0c916ffdfdbd24bb996cb86076b67b65a16d5e53fd63a9d336490f75ffd26",
+    "work/synthetic/20261013T100312Z-439d82d9/design.tsv": "f4d0e33953af4304a0da031df3bd4282ecf093d92263cf8d8b60b12e26c9394d",
+    "work/synthetic/20261013T100312Z-439d82d9/edges.tsv.gz": "4b19d1b5237a44c474da9b35f2760c88b2df1524d37bbb520e3b0b58e0892359",
+    "work/synthetic/20261013T100312Z-439d82d9/freeze.json": "a2068fa572cb8e8083c98898f518d1c949a338de9c5f945b822e37b2c20679d9",
+    "work/synthetic/20261013T100312Z-439d82d9/params.json": "4cce48f133d1605072507f63444407c1656e13c330847d63cf6439382ba84c80",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/de_all.tsv": "c45d3cac2c13f6378838bfe66568506283ec4fbea009e170287432e069cbfdc6",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/de_fitted.tsv": "c45d3cac2c13f6378838bfe66568506283ec4fbea009e170287432e069cbfdc6",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/design.tsv": "e1f86325a2f6dc9572c335c0c16a63404943d617745d81d1faa0dedf5335061d",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/expression_filter.tsv": "bd35aa258624fdb26cb08cdf9271e8f91e32cd4d80f2f44abcfc8414ec2bf8e5",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/model.rds": "0b528433742a394d99980f254c23a01a532956ab1846d1ee4609dcf040e70fff",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/normalization.tsv": "247a63443c332ee578efaf22b69875d275990e8d844246a5272cfee5daeb8c80",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/provenance.json": "ae4c60bdead403a5d850f9ea726d356626a874d07b236e979986f669329f8c15",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/B0_null_membership.tsv": "7ec939bb155c1bef579c4f3d81d00a565a0d46df2d2dd2d33f3a44cf712652fe",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/B1_null_membership.tsv": "fbd6913895183d236827e469958182366fc88714fcf771d8bc5e4451c56bba7c",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/G1_null_membership.tsv": "948aab53a16b80a6d540eb06e63eaaa7f97ceb6a9b417f27e18bc6f66683bc38",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/all_U_directions.tsv": "60b7481d065e4e13ce447cbe93ee760be1ee29d83b911e2a18002e6819844dac",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/bin_demands.tsv": "1e74c624843e97a24ddda8832d4926fe35a2cd0c4b6a3c598555c390d1364646",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/boundaries.json": "c8b849632b89ab3e4a1bdde5305e1ed3e0a2e7201f7f9530ba27160a4e238650",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/null_memberships.tsv": "2d016e3cf1558613cf95733f091d05d87fdcfc39f0d86de460f01795d0d51533",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/status.json": "f3879782f03559857b2febacef17a4df48424003b8bd32d08e948e1fecb6c605",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/nulls/universe_bins.tsv": "127d828644b778c25b6645a405b2bd2a7c2088251c7cc6f7fedfe009deda027a",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B0.tsv": "05f9e0203c7b2d97c075a19f03528e13cdfdd953f75dc70509f6653bed2436d4",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B0_top20.tsv": "5e62c27c0b6d50e02c0cba616d11f7a30e5a4acd09208b4e6f423811de1df73c",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B0_top50.tsv": "55145af74174d33c0dc060b4a8c48c14f72d7a0080a84f89495dcab01fa28d20",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B1.tsv": "bfdb395b13cffb5bda7f80ff010055498651d99cc2559ea51942be591dc8f9f0",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B1_top20.tsv": "704120a28ac765e70aa8f8aaf03ce2dfda1f0032a1248cd408fce5b49e77722f",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/B1_top50.tsv": "b3c3f9a0ae2a729689c82ff05b8bd0754696c5d40c44e095de9ffd7defbe0f35",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/G1.tsv": "cdbc887aa46c6681af2ff1047a649e0f43ac3ae6d8e8f3130f0c26352e29cbf1",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/G1_top20.tsv": "a8582574415516b4329e71a756712343b3a9373ec3f763e6b76864f8740de034",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/G1_top50.tsv": "d44c1d68b4555931d266f289a030f541c8afe5fde700a004ec45709ebebe8faf",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/excluded_genes.tsv": "b2c55e7b43ce376d0d9adda80672e3a8dc113b363664dfca7f9a671b17dc5324",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/induced_edges.tsv": "860ddd76c8ae57a92e9f7c88926d10aabf54779cfd94ac2d953a9fac1fa08368",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/provenance.json": "49400c35c22a2c8f89a2a4479ebd2b7f856195ed0666afd2d9258f80bcafdd8b",
+    "work/synthetic/20261013T100312Z-439d82d9/results_first/ranking/universe.tsv": "5445f2752af877662d611693af999cd34f08430d5f71187e095dac36d1bec740",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/clinical.tsv": "b17d3e5e41b494cf7e57154f312dba7c6751705f1612e9deb818ef0387975689",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/counts.tsv.gz": "223918acb8875c29efbed7465118409f1569321016bd020faaadc40ec054a3f9",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/design.tsv": "a762f9129e0fa13510598ab3c8b67a320e7fa1b460e51a7a4e6396f8d03e19bc",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/discovery_freeze.json": "f92dccf28dcc0207eb23b5475622fbc890d96e3c3b7413c5549ed7adc665cb72",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/evaluation_freeze.json": "e818c0f2af80fda2a1aeda9c3b700fe60d4348ed3ea632876b8dde3a6a98eb9f",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/params.json": "67cb5f45bd29c4469c7a12db79c50d3a7dfb6a930c8ad39a95d6268cebb04beb",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/pre_effect.json": "d46ee507a982aed2b6b3bb020a6fb1984649a7eaefff178a531129052f6d20c5",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/de_all.tsv": "e02b71560f4d1cddf291eddf16359f8f4f2ca98595d525b799fb959be38728c4",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/de_fitted.tsv": "e02b71560f4d1cddf291eddf16359f8f4f2ca98595d525b799fb959be38728c4",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/design.tsv": "d755c496d15dab9225510909faacd83f89fe782c126788ff772dc1163b606cb5",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/expression_filter.tsv": "45eda42e3208957f03a03d1dc3a7d9307ddbf8204b83a1ed7d1001e7e70aaf96",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/model.rds": "d0f23a97dfc09e0efba76196338ad9606cd6821a54572bd4d83d5da46af1a128",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/normalization.tsv": "d22e9214eb572dcf4e6766620431a38d080b43678c69c321acffbb2887cae652",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/provenance.json": "aa0c8a465fac7dc73ba25f4b9b0418f39b161464581aa429671af6f65816a43e",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/bootstrap_interface.tsv": "37a61a5b95bd52a9ae88db83e914590c7dd5d5ade54fb470fd84bc35d773a9d7",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/dossier_pool.tsv": "617e977b75091fb35f2e71bccaf3121eec5e30097edcb547686b4e08b2be0e88",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/dossier_selection.tsv": "921091c3490611feb3b1d7907804d2ed4a79a1596d9ad8809c2ddc2c3fe5fd29",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/null_sets.tsv": "5ae37cc70bdf59af2bc504f5f1253e2afce61c0cac227d285ff08b3c5ecde9cf",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/null_summary.json": "d65b20a4c80a9c3c26fcbd21fa1f0aab1d42d1ad9d18155f6f7fa15e618e9321",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/provenance.json": "22363006693c9097363734fb7beebfcb31a6a3c96a7eb93cf1b4fa17cf23e002",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/selected_genes.tsv": "37a61a5b95bd52a9ae88db83e914590c7dd5d5ade54fb470fd84bc35d773a9d7",
+    "work/synthetic/20261013T103604Z-replication-cb59eb61/results_first/evaluation/summary.json": "f79caeec546af9d2a106b49e57df004604d8c5d162c7f76321a8a6f47221c701"
+  },
+  "docker_event_command": [
+    "docker",
+    "events",
+    "--filter",
+    "type=container",
+    "--filter",
+    "event=create",
+    "--filter",
+    "label=endotarget.local-check=20261014T022132Z-c054ea07",
+    "--format",
+    "{{json .}}"
+  ],
+  "container_inspections": [
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "a9b0eb9cf3b92c2e64662825d6698e5b3805c42fdf41d19617ec0c940be30e1b",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+            "name": "nxf-QZcS9aD14j36Hlwr2oK9lMJV",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791944503,
+        "timeNano": 1791944503635979031
+      },
+      "inspect": {
+        "Id": "a9b0eb9cf3b92c2e64662825d6698e5b3805c42fdf41d19617ec0c940be30e1b",
+        "Created": "2026-10-14T02:21:41.8458198Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 5159,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:21:44.102846562Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/a9b0eb9cf3b92c2e64662825d6698e5b3805c42fdf41d19617ec0c940be30e1b/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/a9b0eb9cf3b92c2e64662825d6698e5b3805c42fdf41d19617ec0c940be30e1b/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/a9b0eb9cf3b92c2e64662825d6698e5b3805c42fdf41d19617ec0c940be30e1b/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/a9b0eb9cf3b92c2e64662825d6698e5b3805c42fdf41d19617ec0c940be30e1b/a9b0eb9cf3b92c2e64662825d6698e5b3805c42fdf41d19617ec0c940be30e1b-json.log",
+        "Name": "/nxf-QZcS9aD14j36Hlwr2oK9lMJV",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed:/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed",
+            "Destination": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "a9b0eb9cf3b9",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed",
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/81/e3c68e2bb6bf010b05e5f55dcbe4ed",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "7fab33bcad8489ea31df8ca5d32e48d08d5d94b1f76f879ef8ab9eb1f0043489",
+          "SandboxKey": "/run/endotarget-docker/netns/7fab33bcad84",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "515f9611cd60b4a0853a7a388659f1d410abf4789f12fd7cf2445adae4c8ebd7",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:4cb654fd464d082eee7af85c6e70188eadf56f0998cb043173f421e6c41c25bb",
+          "size": 2942,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "7415510f9d5c9baf7029419440d7911c10489c3ac26de4d7d7cea576a4aca4d2",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+            "name": "nxf-uVQaHZsXlicrBlA0SOMqWY0K",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791944511,
+        "timeNano": 1791944511681038107
+      },
+      "inspect": {
+        "Id": "7415510f9d5c9baf7029419440d7911c10489c3ac26de4d7d7cea576a4aca4d2",
+        "Created": "2026-10-14T02:21:49.914697402Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 5600,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:21:52.1813995Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/7415510f9d5c9baf7029419440d7911c10489c3ac26de4d7d7cea576a4aca4d2/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/7415510f9d5c9baf7029419440d7911c10489c3ac26de4d7d7cea576a4aca4d2/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/7415510f9d5c9baf7029419440d7911c10489c3ac26de4d7d7cea576a4aca4d2/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/7415510f9d5c9baf7029419440d7911c10489c3ac26de4d7d7cea576a4aca4d2/7415510f9d5c9baf7029419440d7911c10489c3ac26de4d7d7cea576a4aca4d2-json.log",
+        "Name": "/nxf-uVQaHZsXlicrBlA0SOMqWY0K",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52:/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52",
+            "/home/analyst/te:/home/analyst/te:ro"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52",
+            "Destination": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "7415510f9d5c",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52",
+            "NXF_DEBUG=0",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/43/4e36c8f2983e2f44dcc1dcb3162b52",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "ea25502ee19c62db0553518d332acce700a622e9d8ad57814a6a28bd3463a4d5",
+          "SandboxKey": "/run/endotarget-docker/netns/ea25502ee19c",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "0dc0eca3aade60441be331dfe8ca1811eb85809fa3809ec4c31cb058237bf5f0",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:4cb654fd464d082eee7af85c6e70188eadf56f0998cb043173f421e6c41c25bb",
+          "size": 2942,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "771656dcb10454acf98e5444908f59e2ce0da3c3696c8e1b099512ce8717709f",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+            "name": "nxf-d0rNkqMMqpO91Hju5zziM6Jb",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791944518,
+        "timeNano": 1791944518015241753
+      },
+      "inspect": {
+        "Id": "771656dcb10454acf98e5444908f59e2ce0da3c3696c8e1b099512ce8717709f",
+        "Created": "2026-10-14T02:21:56.310743476Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 5863,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:21:58.5045579Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/771656dcb10454acf98e5444908f59e2ce0da3c3696c8e1b099512ce8717709f/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/771656dcb10454acf98e5444908f59e2ce0da3c3696c8e1b099512ce8717709f/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/771656dcb10454acf98e5444908f59e2ce0da3c3696c8e1b099512ce8717709f/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/771656dcb10454acf98e5444908f59e2ce0da3c3696c8e1b099512ce8717709f/771656dcb10454acf98e5444908f59e2ce0da3c3696c8e1b099512ce8717709f-json.log",
+        "Name": "/nxf-d0rNkqMMqpO91Hju5zziM6Jb",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f:/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f",
+            "Destination": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "771656dcb104",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f",
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/4f/5c84f699a9e2c369a40e0981e0341f",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "a7501ed72268bb1a3bf8c54d21301a8409a4b92a42a7d4e191d8231e296057a7",
+          "SandboxKey": "/run/endotarget-docker/netns/a7501ed72268",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "25f2a9589c2610ffb5ab33490da2022f54a8b22a9bb0e159644369deed30ec94",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:4cb654fd464d082eee7af85c6e70188eadf56f0998cb043173f421e6c41c25bb",
+          "size": 2942,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "b2c3834a8264bd3ce24c2a2f75402c6421c7b35f2af96fa3b89d1277047d0a31",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+            "name": "nxf-oJ1pSvCsoUeCUcFvGeo0ZER4",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791944540,
+        "timeNano": 1791944540518682630
+      },
+      "inspect": {
+        "Id": "b2c3834a8264bd3ce24c2a2f75402c6421c7b35f2af96fa3b89d1277047d0a31",
+        "Created": "2026-10-14T02:22:18.098107782Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 6215,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:22:21.019107641Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/b2c3834a8264bd3ce24c2a2f75402c6421c7b35f2af96fa3b89d1277047d0a31/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/b2c3834a8264bd3ce24c2a2f75402c6421c7b35f2af96fa3b89d1277047d0a31/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/b2c3834a8264bd3ce24c2a2f75402c6421c7b35f2af96fa3b89d1277047d0a31/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/b2c3834a8264bd3ce24c2a2f75402c6421c7b35f2af96fa3b89d1277047d0a31/b2c3834a8264bd3ce24c2a2f75402c6421c7b35f2af96fa3b89d1277047d0a31-json.log",
+        "Name": "/nxf-oJ1pSvCsoUeCUcFvGeo0ZER4",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c:/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c",
+            "Destination": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "b2c3834a8264",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c",
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/c2/e02724aa6d0b3d7b771289db7c074c",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "eb413bbece284da6b5910bd4395e5f966358ae511a8fa7f6f7acc81f2398ac62",
+          "SandboxKey": "/run/endotarget-docker/netns/eb413bbece28",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "dd921476516739c22727c8b6e186653204253bff6cf5fcc7b8116b16fb1055ee",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:4cb654fd464d082eee7af85c6e70188eadf56f0998cb043173f421e6c41c25bb",
+          "size": 2942,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "d2bd2ce2b01bf685ccb50f03b8df7b6d67fc6af2b7704b233119c758e7a3d4eb",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+            "name": "nxf-AJpr783GA9gPKixJ76qUAXbB",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791944548,
+        "timeNano": 1791944548347059378
+      },
+      "inspect": {
+        "Id": "d2bd2ce2b01bf685ccb50f03b8df7b6d67fc6af2b7704b233119c758e7a3d4eb",
+        "Created": "2026-10-14T02:22:26.403755961Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 6653,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:22:28.853241781Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/d2bd2ce2b01bf685ccb50f03b8df7b6d67fc6af2b7704b233119c758e7a3d4eb/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/d2bd2ce2b01bf685ccb50f03b8df7b6d67fc6af2b7704b233119c758e7a3d4eb/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/d2bd2ce2b01bf685ccb50f03b8df7b6d67fc6af2b7704b233119c758e7a3d4eb/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/d2bd2ce2b01bf685ccb50f03b8df7b6d67fc6af2b7704b233119c758e7a3d4eb/d2bd2ce2b01bf685ccb50f03b8df7b6d67fc6af2b7704b233119c758e7a3d4eb-json.log",
+        "Name": "/nxf-AJpr783GA9gPKixJ76qUAXbB",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a:/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a",
+            "/home/analyst/te:/home/analyst/te:ro"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a",
+            "Destination": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "d2bd2ce2b01b",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a",
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/02/719a403f61fd67e7dc1b2a12905c8a",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "baa4ba981c2a870349a33a6642e27a7fcfb3b2dec8a3e720e367735dfd7ce5d0",
+          "SandboxKey": "/run/endotarget-docker/netns/baa4ba981c2a",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "65b82bd8614bc9fe22c8dfa69988faa416aa2a37c64ba035305e9015b2b55cde",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:4cb654fd464d082eee7af85c6e70188eadf56f0998cb043173f421e6c41c25bb",
+          "size": 2942,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "000694613e359d20ba90fae59f140d0cf905439498785747b597fa0a11dc9255",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+            "name": "nxf-UnuD07AozPqKDj5AhEbKiSrv",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791944555,
+        "timeNano": 1791944555666251565
+      },
+      "inspect": {
+        "Id": "000694613e359d20ba90fae59f140d0cf905439498785747b597fa0a11dc9255",
+        "Created": "2026-10-14T02:22:33.71051685Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 6946,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:22:36.254563643Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/000694613e359d20ba90fae59f140d0cf905439498785747b597fa0a11dc9255/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/000694613e359d20ba90fae59f140d0cf905439498785747b597fa0a11dc9255/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/000694613e359d20ba90fae59f140d0cf905439498785747b597fa0a11dc9255/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/000694613e359d20ba90fae59f140d0cf905439498785747b597fa0a11dc9255/000694613e359d20ba90fae59f140d0cf905439498785747b597fa0a11dc9255-json.log",
+        "Name": "/nxf-UnuD07AozPqKDj5AhEbKiSrv",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b:/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b",
+            "Destination": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "000694613e35",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b",
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:1e4fcea183a2561c88259d742502f590fbaa2cd5fead9d632d48f619070abf2d",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-container/20261014T022132Z-c054ea07/discovery_work/d6/096b06f5df966d6033c0db605dc41b",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T022132Z-c054ea07",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "17d641da721783f5d45dc930d6e77ebf90cb787689bfe595b5d653803c8d80f7",
+          "SandboxKey": "/run/endotarget-docker/netns/17d641da7217",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "75ecbf42d0e97c9928a67c75a5d8efe75085e2a02f399804cde49d48004f2e0a",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:4cb654fd464d082eee7af85c6e70188eadf56f0998cb043173f421e6c41c25bb",
+          "size": 2942,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    }
+  ],
+  "container_observer_errors": [],
+  "completed_utc": "2026-10-14T02:22:50.113653+00:00"
+}

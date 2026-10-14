@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-14T02:46:11.674338+00:00",
+  "source": "reports/executive_brief_en.md",
+  "source_sha256": "16b03240aeb85b05e503d0cdd66d8e1e34a22673caeadc51ec1595cc91a7c5f9",
+  "output": "reports/executive_brief_en.pdf",
+  "output_sha256": "19854829de2b210236eebdfb32be4ffebe1306d820ce79080f776f9fe5037f14",
+  "script_sha256": "2a11a4aac758d92a9f9d02c67ee4d932dd88842b1cb0df9c403a1a6a0e6ba209",
+  "pages": 2,
+  "text_coverage": "All source alphanumeric tokens and key scientific values checked",
+  "new_scientific_analysis": false,
+  "visual_review": "PASS_RECORDED_SEPARATELY",
+  "renderer_versions": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.10.0"
+  },
+  "font_sha256": {
+    "arial.ttf": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+    "arialbd.ttf": "766f06ac8761f82f25d032a220e89438f6064591af9915061f20b949efdedf69",
+    "ariali.ttf": "79a5742b865cf06891d4ae43e42cac0e5169c7b7b06b5b3c24ef8e0966d27b62"
+  },
+  "preview_rendered": true,
+  "visual_review_receipt": "receipts/local_delivery_visual_review.json"
+}

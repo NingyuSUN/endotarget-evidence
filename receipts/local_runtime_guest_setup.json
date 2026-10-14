@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-10-13T13:54:05.508821+00:00",
+  "distribution": "EndoTargetRuntime",
+  "execution_location": "LOCAL_PROJECT_WSL",
+  "virtual_disk_host_location": "G:\\projects\\te\\work\\local-runtime\\distro",
+  "project_mount": "/home/analyst/te",
+  "project_source": "/mnt/g/projects/te",
+  "uid": 1003,
+  "gid": 1004,
+  "policy_rc_d_exit": 101,
+  "docker_daemon_started": false,
+  "docker_client": "Docker version 29.1.3, build 29.1.3-0ubuntu3~24.04.2",
+  "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)",
+  "python": "Python 3.12.3",
+  "existing_Ubuntu_or_Windows_security_modified": false,
+  "container_execution": false
+}

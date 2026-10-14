@@ -1,16 +1,20 @@
 # EndoTarget Evidence
 
-A public-data endometriosis target-evidence benchmark: donor-level stromal RNA, fixed expression, degree and network-propagation baselines, source-separated transcriptomic replication, and a separate genetics evidence layer. All completed analyses were executed on SRV01 under /home/analyst/te. The repository is local and has not been published to GitHub.
+A public-data endometriosis target-evidence benchmark: donor-level stromal RNA, fixed expression, degree and network-propagation baselines, source-separated transcriptomic replication, and a separate genetics evidence layer. The original scientific analysis was executed on SRV01. Local continuation, container testing and bounded reproduction now use G:\projects\te in the project-owned EndoTargetRuntime WSL guest. The repository has not been published to GitHub.
 
 **Result: the prespecified analysis did not produce a significantly supported cross-study target shortlist or evidence that network propagation improves on expression ranking.** Negative and not-estimable outcomes are retained.
 
 ## Start with the evidence
 
+- [Two-page English research brief](reports/executive_brief_en.pdf) and [editable source](reports/executive_brief_en.md).
+- [Method card and five figure topics](docs/METHOD_CARD.md).
+- [Current local execution and reproduction](docs/LOCAL_EXECUTION.md) and [milestone acceptance map](docs/LOCAL_DELIVERY_ACCEPTANCE.md).
+
 - [Integrated biology report, Chinese](reports/biology_report_zh.md).
 - [Detailed bilingual replication report and figures](reports/replication_v2_results.md).
 - [Clinical sensitivities and phase ascertainment](reports/clinical_sensitivity_report.md).
 - [Donor subtype composition](reports/stromal_composition.md) and [genetic evidence](reports/genetic_evidence_report.md).
-- Current execution checkpoint.
+- Preserved SRV01 scientific checkpoint.
 
 ## Question, data and result
 
@@ -55,9 +59,7 @@ deterministic resampling. All 500 actual bootstrap checkpoints and 22 LODO outpu
 - [HECA execution](receipts/heca_primary_execution.json) and [real resampling receipt](receipts/real_resampling_execution.json).
 - [Replication instructions](docs/REPLICATION_EXECUTION.md), [runtime lock](requirements/statistical-runtime.explicit.txt), [AWS deployment guide](docs/AWS_DEPLOYMENT.md).
 
-Large raw/work artifacts remain on SRV01 and are excluded from Git; cloning this repository alone
-does not restore the complete frozen checkpoint. Historical frozen documents retain their original
-pre-effect status wording. Use the current checkpoint above for execution status.
+Large data/work artifacts were copied to local G:\projects\te; SRV01 originals are preserved. They are excluded from Git, so a clone alone does not restore the complete frozen checkpoint. Historical scientific documents retain their original status wording. The prior homepages are byte archives in docs/archive; current local status is described above.
 
 ## Limits and release status
 
@@ -67,7 +69,6 @@ difference are explicit in the reports. Recruitment sources are separated; genot
 non-overlap and cell purity are not established. Genetics annotations do not establish causal or
 intervention direction.
 
-Docker client access is blocked for the project account; see access details.
-The [locked container candidate](docs/CONTAINER_BUILD.md) passes static checks; actual image build/container execution remains required. Native execution does not establish a
-container run. AWS is a documented, unexecuted portability plan. No therapeutic validation,
-wet experiment, cloud deployment or successful target-discovery claim is made.
+The local Docker build, registry-manifest check and actual Nextflow container checks have passed. Synthetic tests completed five fresh and five cached tasks. A fresh real-primary replay completed all five tasks: all 34 scientific TSVs and eight JSON result metadata files agreed with the original science; discrete selections matched exactly and the maximum continuous difference was 1.10e-13 (declared absolute tolerance 1e-8). The 117 scientific packages remain locked. The additive local recipe pins 37 OS packages supporting task metrics and real Git provenance. AWS is a documented, unexecuted portability plan. No therapeutic validation, wet experiment, cloud deployment or successful target-discovery claim is made.
+
+Actual evidence: [container/cache checks](receipts/local_container_nextflow.json), [real-primary reproduction](receipts/local_primary_container_replay.json), [final delivery integrity verdict](receipts/local_delivery_verification.json).

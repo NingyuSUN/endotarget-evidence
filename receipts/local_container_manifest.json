@@ -1,0 +1,181 @@
+{
+  "started_utc": "20261014T023843Z",
+  "scope": "Temporary loopback registry; reachable from local host processes",
+  "external_publication": false,
+  "port": 5500,
+  "registry_stopped": true,
+  "verified": true,
+  "commands": [
+    [
+      "docker",
+      "pull",
+      "registry:3"
+    ],
+    [
+      "docker",
+      "image",
+      "inspect",
+      "registry:3"
+    ],
+    [
+      "docker",
+      "run",
+      "-d",
+      "--name",
+      "endotarget-registry-20261014t023843z",
+      "--network=host",
+      "--user",
+      "1003:1004",
+      "--read-only",
+      "--cap-drop=ALL",
+      "--security-opt=no-new-privileges",
+      "--memory=256m",
+      "--cpus=1",
+      "--tmpfs",
+      "/tmp:rw,nosuid,nodev,size=64m,mode=0700,uid=1003,gid=1004",
+      "-e",
+      "REGISTRY_HTTP_ADDR=127.0.0.1:5500",
+      "-e",
+      "OTEL_TRACES_EXPORTER=none",
+      "-e",
+      "REGISTRY_HTTP_DEBUG_PROMETHEUS_ENABLED=false",
+      "--mount",
+      "type=bind,source=/var/lib/endotarget-registry,target=/var/lib/registry",
+      "--mount",
+      "type=bind,source=/opt/endotarget-local/registry.yml,target=/etc/distribution/local.yml,readonly",
+      "registry@sha256:ddf754342cfc8acc51a56d5d0ab6af06826461864460636d8bd5c546dab2a7b8",
+      "/etc/distribution/local.yml"
+    ],
+    [
+      "ss",
+      "-H",
+      "-lntp"
+    ],
+    [
+      "docker",
+      "inspect",
+      "8abc3b6e7904a5cc05ee6d694533e37647d516c1a5632d1c7426a628608e9124"
+    ],
+    [
+      "docker",
+      "image",
+      "inspect",
+      "endotarget-statistics:local-v3-20261014t023454z"
+    ],
+    [
+      "docker",
+      "tag",
+      "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+      "127.0.0.1:5500/endotarget-statistics:20261014t023843z"
+    ],
+    [
+      "docker",
+      "push",
+      "127.0.0.1:5500/endotarget-statistics:20261014t023843z"
+    ],
+    [
+      "docker",
+      "image",
+      "inspect",
+      "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489"
+    ],
+    [
+      "docker",
+      "pull",
+      "--platform=linux/amd64",
+      "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489"
+    ],
+    [
+      "docker",
+      "image",
+      "inspect",
+      "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489"
+    ],
+    [
+      "docker",
+      "stop",
+      "8abc3b6e7904a5cc05ee6d694533e37647d516c1a5632d1c7426a628608e9124"
+    ],
+    [
+      "docker",
+      "inspect",
+      "8abc3b6e7904a5cc05ee6d694533e37647d516c1a5632d1c7426a628608e9124"
+    ]
+  ],
+  "registry_image_ref": "registry@sha256:ddf754342cfc8acc51a56d5d0ab6af06826461864460636d8bd5c546dab2a7b8",
+  "registry_configuration": "version: 0.1\nlog:\n  level: info\nstorage:\n  filesystem:\n    rootdirectory: /var/lib/registry\nhttp:\n  addr: 127.0.0.1:5500\n",
+  "registry_container": "8abc3b6e7904a5cc05ee6d694533e37647d516c1a5632d1c7426a628608e9124",
+  "registry_listeners": [
+    "LISTEN 0      4096       127.0.0.1:5500 0.0.0.0:* users:((\"registry\",pid=13159,fd=4))"
+  ],
+  "registry_controls": {
+    "NetworkMode": "host",
+    "ReadonlyRootfs": true,
+    "CapDrop": [
+      "ALL"
+    ],
+    "SecurityOpt": [
+      "no-new-privileges"
+    ],
+    "Memory": 268435456,
+    "Binds": null,
+    "Mounts": [
+      {
+        "Type": "bind",
+        "Source": "/var/lib/endotarget-registry",
+        "Target": "/var/lib/registry"
+      },
+      {
+        "Type": "bind",
+        "Source": "/opt/endotarget-local/registry.yml",
+        "Target": "/etc/distribution/local.yml",
+        "ReadOnly": true
+      }
+    ]
+  },
+  "registry_user": "1003:1004",
+  "push_digest": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+  "push_manifest": {
+    "requested_digest": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+    "header_digest": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+    "raw_bytes_sha256": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+    "file": "work/local-runtime/manifest-20261014T023843Z/push-manifest.json"
+  },
+  "platform_manifest": {
+    "requested_digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+    "header_digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+    "raw_bytes_sha256": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+    "file": "work/local-runtime/manifest-20261014T023843Z/platform-manifest.json"
+  },
+  "manifest_config_digest": "sha256:04ce448d17f8603d24c41f196dc1e4df21b65cff293dce260474c65b6f9e4213",
+  "docker_id_kind": "pushed_manifest_or_index",
+  "build_image_id": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+  "platform_digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+  "image_ref": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+  "image_id": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+  "image_config_digest": "sha256:04ce448d17f8603d24c41f196dc1e4df21b65cff293dce260474c65b6f9e4213",
+  "repo_digests": [
+    "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+    "endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489"
+  ],
+  "finished_utc": "2026-10-14T02:39:09.410477+00:00",
+  "artifacts": {
+    "work/local-runtime/manifest-20261014T023843Z/1.log": "ee6017e7dcae3c503a5700e7d02643eb9cbc396abfefd23c4b81918933cc3a24",
+    "work/local-runtime/manifest-20261014T023843Z/10.log": "b629dd7feda14c43c50aba54fbf9ece14d0adfb4f4144e99ca86d330023763a7",
+    "work/local-runtime/manifest-20261014T023843Z/11.log": "6f1426b48da14a093e979c4da45e0dcc4548c96b54895d4c6441b04ba6fc4292",
+    "work/local-runtime/manifest-20261014T023843Z/12.log": "fb395ae39e237efed5592803635ae63d1df04d70f152c477259f332261c2ac38",
+    "work/local-runtime/manifest-20261014T023843Z/13.log": "8ee96520ba1e429d26419c56d6d1b5ac931509425a1967b019b7ac8764f2d5e3",
+    "work/local-runtime/manifest-20261014T023843Z/2.log": "9322267076697f1d6396346bbc28950ac1e409f0cc22414b93914b58a9182967",
+    "work/local-runtime/manifest-20261014T023843Z/3.log": "7fee6f2a997937213f68d4ed128db8d59e00fb808afc5ed2f16ff7248e2bbaab",
+    "work/local-runtime/manifest-20261014T023843Z/4.log": "9847305d8f11a97f7f3f116bf5b3dceb08813465d311d9369104bbfbcf784f2c",
+    "work/local-runtime/manifest-20261014T023843Z/5.log": "d4e7e862ac8d6027689486c6326273be312e38136f859b729bd6d77d21b88d8f",
+    "work/local-runtime/manifest-20261014T023843Z/6.log": "a6d2c531a3b41792cc9473bb12479a5fd6037ff0b40eb3c3b18792b2299ac558",
+    "work/local-runtime/manifest-20261014T023843Z/7.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "work/local-runtime/manifest-20261014T023843Z/8.log": "c3b0af55625e155b6f640c9ae5fb506c9571625ec539da3acc6e2bf3d0553d98",
+    "work/local-runtime/manifest-20261014T023843Z/9.log": "d1436471d77eb63e1c2ed1442cbf0fb2d057f381ff7ec2c76446568a640f9e18",
+    "work/local-runtime/manifest-20261014T023843Z/image-config.json": "04ce448d17f8603d24c41f196dc1e4df21b65cff293dce260474c65b6f9e4213",
+    "work/local-runtime/manifest-20261014T023843Z/platform-manifest.json": "a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+    "work/local-runtime/manifest-20261014T023843Z/push-manifest.json": "725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489"
+  },
+  "script_sha256": "da089e4ba8a085fc88310b41bdb18180009e251c821a034a97577ed2373cd373"
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-14T02:09:49.912450+00:00",
+  "purpose": "Render existing descriptive donor and frozen evidence tables; no scientific model rerun",
+  "input_sha256": {
+    "reports/stromal_composition_donors.tsv": "b4f1ade648bbe7cba626f06a8b48cbd920fa9b1885e24a488daff70d786c9c08",
+    "reports/stromal_composition_denominators.tsv": "4ab38be9a713f8b8761c15e754eb5587b56b86e342a4801c6b27a907bd9d08b8",
+    "reports/replication_v2_dossier_pool.tsv": "7d6a35f4d89cf66dc6c0c44fd024e4801edc3329869f964d19015ffc6123678d",
+    "manifests/final_discovery_clinical_selected.tsv": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d",
+    "manifests/final_heca_clinical_selected.tsv": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc",
+    "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
+    "manifests/final_heca_clinical_donors.tsv": "7ab8dc6e318fa0763cdd62cdd4821b172d17a08694a7f3b9f5e39c6829e3445f",
+    "work/statistical/heca_primary/evaluation/null_sets.tsv": "c8dc028443f496fcbaee3ab36be418960d18ae386647fe4f2fa2d6593bea426b",
+    "work/statistical/heca_primary/evaluation/null_summary.json": "ffc4d86ff269f63345b4454b72416cf519d3068f73b0da24c3c935d460441a32"
+  },
+  "renderer_sha256": "434805cf24dcc28ec0dc6f0016f2c3540bb81f64baf9b72b62915c1f52db22d1",
+  "output_sha256": {
+    "reports/figures/donor_composition_qc_v1.svg": "e9cf007e1a1d980837769c5dbc16eb71b9c3e680ceba86f2fe39e10f4b379e5e",
+    "reports/figures/evidence_matrix_v1.svg": "137e93f5ac5e36f3f505dc12163d8da9628d61e940b6cbac0cf902d9e487ba50",
+    "reports/figures/donor_flow_v1.svg": "3870eba5a0b876e819062dd8ccb1a21226752ff82cec3fd1e88d4e29e3d19670",
+    "reports/figures/matched_null_sensitivity_v1.svg": "aa458f709d2852184fbc8536978ed9d224aed3e516644e6ae97b11541ba09406"
+  },
+  "checks": {
+    "discovery": {
+      "donors": 22,
+      "disease_counts": {
+        "non-ENDO": 10,
+        "ENDO": 12
+      },
+      "primary_cells_or_nuclei": 150788,
+      "author_subtypes": 12
+    },
+    "heca": {
+      "donors": 22,
+      "disease_counts": {
+        "ENDO": 15,
+        "non-ENDO": 7
+      },
+      "primary_cells_or_nuclei": 52744,
+      "author_subtypes": 7
+    }
+  },
+  "donor_flow": {
+    "discovery": [
+      {
+        "stage": "Source clinical donors",
+        "total": 60,
+        "cases": 35,
+        "controls": 25
+      },
+      {
+        "stage": "Author proliferative phase",
+        "total": 28,
+        "cases": 15,
+        "controls": 13
+      },
+      {
+        "stage": "No source minor exclusion flag",
+        "total": 23,
+        "cases": 12,
+        "controls": 11
+      },
+      {
+        "stage": "Disease-label consistency",
+        "total": 22,
+        "cases": 12,
+        "controls": 10
+      },
+      {
+        "stage": "At least 50 primary cells",
+        "total": 22,
+        "cases": 12,
+        "controls": 10
+      }
+    ],
+    "heca": [
+      {
+        "stage": "Source donor ledger",
+        "total": 63,
+        "cases": 44,
+        "controls": 19
+      },
+      {
+        "stage": "Author proliferative phase",
+        "total": 24,
+        "cases": 16,
+        "controls": 8
+      },
+      {
+        "stage": "Exclude mixed menstrual phase",
+        "total": 23,
+        "cases": 16,
+        "controls": 7
+      },
+      {
+        "stage": "At least 50 primary nuclei",
+        "total": 22,
+        "cases": 15,
+        "controls": 7
+      }
+    ]
+  },
+  "matched_sets": {
+    "per_method": 200,
+    "total": 600,
+    "descriptive_not_p_value": true
+  },
+  "pool_genes": 40,
+  "pool_external_direction_counts": {
+    "Opposite sign": 19,
+    "Same sign": 20,
+    "Not evaluable": 1
+  },
+  "new_disease_tests": 0,
+  "scientific_fits_executed": 0,
+  "causal_or_clinical_validation": false,
+  "scope_note": "Source-specific author labels, all selected donor denominators and unavailable/unknown evidence retained."
+}

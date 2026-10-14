@@ -1,0 +1,2426 @@
+{
+  "status": "PASS",
+  "execution_location": "LOCAL_EndoTargetRuntime",
+  "data_kind": "public_cohort",
+  "scope": "bounded_frozen_real_primary_replay_3_discovery_plus_2_HECA_tasks",
+  "new_scientific_validation": false,
+  "AWS_execution_verified": false,
+  "bootstrap_500_rerun": false,
+  "LODO_22_rerun": false,
+  "raw_import_rerun": false,
+  "HECA_selection_source": "original_frozen_discovery_not_new_replay",
+  "started_utc": "2026-10-14T02:42:43.746547+00:00",
+  "image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+  "image_id": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+  "image_inspect": {
+    "Id": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+    "RepoTags": [
+      "127.0.0.1:5500/endotarget-statistics:20261014t023843z",
+      "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+      "endotarget-statistics:local-v3-20261014t023454z"
+    ],
+    "RepoDigests": [
+      "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+      "endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489"
+    ],
+    "Comment": "buildkit.dockerfile.v0",
+    "Created": "2026-10-14T11:37:52.859512084+09:00",
+    "Config": {
+      "User": "57439:57439",
+      "Env": [
+        "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "MAMBA_USER=mambauser",
+        "MAMBA_USER_ID=57439",
+        "MAMBA_USER_GID=57439",
+        "LANG=C.UTF-8",
+        "LC_ALL=C.UTF-8",
+        "ENV_NAME=base",
+        "MAMBA_ROOT_PREFIX=/opt/conda",
+        "MAMBA_EXE=/bin/micromamba",
+        "CONDA_OVERRIDE_CUDA=",
+        "JAVA_HOME=/opt/endo/lib/jvm",
+        "R_LIBS_USER=/opt/endo/lib/R/library",
+        "PYTHONNOUSERSITE=1",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "OMP_NUM_THREADS=1",
+        "TMPDIR=/tmp",
+        "HOME=/tmp",
+        "XDG_CACHE_HOME=/tmp/.cache"
+      ],
+      "Cmd": [
+        "/bin/bash"
+      ],
+      "WorkingDir": "/tmp",
+      "Labels": {
+        "distro_id": "debian",
+        "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+        "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+        "org.opencontainers.image.licenses": "Apache-2.0",
+        "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+        "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+        "org.opencontainers.image.title": "micromamba-docker",
+        "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+        "org.opencontainers.image.version": "latest"
+      },
+      "ArgsEscaped": true,
+      "Shell": [
+        "/usr/local/bin/_dockerfile_shell.sh"
+      ]
+    },
+    "Architecture": "amd64",
+    "Os": "linux",
+    "Size": 900209189,
+    "RootFS": {
+      "Type": "layers",
+      "Layers": [
+        "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c",
+        "sha256:96ff6b3e8c2af1d7740fc49caa14f50aaeaf6466d54a52d4faf566fc5f14df7c",
+        "sha256:0c785ef64bd8b7e23e05726d6c0a753bf0b98d0ebc45940fd7d1fb506d994052",
+        "sha256:1c8ef3e3700c6b2eb02b218e218b3c5ed1a224edffcc01d286ebdefb1e2ba0d6",
+        "sha256:daa0f9d9bfe45f2c4ed78030ebb7ebd5ea0f3f01ac6f56c472047dcff37e3820",
+        "sha256:354a6c68555f1c4b00330165c9a2bae7566de9d5e34b0b560223aea4c98b4597",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+        "sha256:72e0e1cb7dd803e5ddf74101b3c796ba40241f5325a01fe4fbe637d2d8a0f741",
+        "sha256:5d9c1c63520ad67e78755b690a74f2875633042b0f7a6724b98f2a2d87b04daf",
+        "sha256:d72f1f4b38088a30045e2f2d231e095f3fc29a3c7e6cf12d1ac9094530f0dea5",
+        "sha256:db4261ca27ee24eec8cc851a2f2cf9dba9ffa20ba5d9db43bdfcd64e03dd7481",
+        "sha256:d6cfb81bb30520da28e20a3e3f10edda603887df4b6173c39a514b392ae48a74",
+        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef",
+        "sha256:50813b52e1b6686e07dee8d9bb6c741f1e71de78dc04145e3e9b6f481c37aa56",
+        "sha256:5c19bdf32bfd67cc4d491069279d75e00c33ded8b35c8d1914b1c360211132c1",
+        "sha256:1f47fc669d647a301ba80c2897e112f51fec863e75204c8421513aea25b0194a"
+      ]
+    },
+    "Metadata": {
+      "LastTagTime": "2026-10-14T02:39:06.804912085Z"
+    },
+    "Descriptor": {
+      "mediaType": "application/vnd.oci.image.index.v1+json",
+      "digest": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+      "size": 856
+    }
+  },
+  "build_receipt_sha256": "a7b342e4d117051f5b11776016fc01040242e2f5b29577534723a8a9e7817e21",
+  "synthetic_receipt_sha256": "bb3fe28bc38806f1b9bab3816b9e46417ab04da7787b1cdc8f0af1f243b0618f",
+  "comparison_tolerance": {
+    "relative": 0,
+    "absolute": 1e-08,
+    "continuous_columns": [
+      "AveExpr",
+      "CI_high",
+      "CI_low",
+      "P.Value",
+      "adj.P.Val",
+      "age_centered_years",
+      "concordance",
+      "coverage",
+      "df_total",
+      "effective_library_size",
+      "external_CI_high",
+      "external_CI_low",
+      "external_logFC",
+      "external_p",
+      "external_q",
+      "external_t",
+      "logFC",
+      "missing_lower",
+      "missing_upper",
+      "moderated_SE",
+      "norm_factor",
+      "null_matching_logCPM",
+      "score",
+      "signed_external_t",
+      "t",
+      "weight",
+      "weighted_degree"
+    ],
+    "discrete_ids_counts_ranks_directions_filters": "exact"
+  },
+  "runtime_artifact_exceptions": [
+    "RDS serialization and sessionInfo host descriptions recorded, not byte-equality required",
+    "JSON timestamps/work paths/software executable/Git HEAD recorded; scientific values retained and referenced hashes checked"
+  ],
+  "run_directory": "work/local-primary-container/20261014T024243Z-57350542",
+  "input_sha256_before": {
+    "conf/local_container.config": "ec08fbb346c8398ddfe704c433fb280eadb14efa2102b9f1a5d0192213d7976c",
+    "conf/statistics_container.config": "819e49b9b94ecd32bf0b75de736e95f50eb5c1b2683fadd5f84259c58402499e",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "config/replication_run.json": "3a123ac02195ec983da8f873a9cb6b068b0c525d70ca685beedb4ce4900be708",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067",
+    "data/processed/heca/counts_stable.tsv.gz": "77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0",
+    "data/reference/string/direct_evidence_gene_edges.tsv.gz": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033",
+    "docs/PRE_EFFECT_METHOD_DECISIONS.md": "ea28d759c1bdd35d58744416f8739edf27f3d701a3531da844583f3e7f786fd5",
+    "docs/REPLICATION_EVALUATION.md": "90d7d4bcbe96a3ef9ba054149c113e7c532074451b072791a0216e66355e513d",
+    "docs/REPLICATION_EXECUTION.md": "4650f58f0367d738d05005d646b7a5e28a0b7157d746092871a25ae662af4653",
+    "docs/RESAMPLING.md": "1c1ab720262185c2dafd5d5a79cfd382cf75d4a457c9a1b3363b6186d16aa502",
+    "docs/RESEARCH_PROTOCOL.md": "cdcb1c8bc672c3924373cbd38b9ab57e3c1cf350934ba562ca218ba1470e9fe1",
+    "docs/STATISTICAL_IMPLEMENTATION_DECISIONS.md": "0c75d1d4ffa1c05ae77b0a34f9a843bbcd3559876d00e00e066d06cf822c0b80",
+    "main.nf": "3790a6f647565b91334e51686c450100542575b671398bf4c0e281ec1f7da422",
+    "manifests/final_discovery_clinical_selected.tsv": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d",
+    "manifests/final_heca_clinical_selected.tsv": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc",
+    "nextflow.config": "4d8c79071f053b9ae894230feaa619a629e33f6717f74d02a0887d425af40214",
+    "receipts/discovery_rank_freeze.json": "642332e970df9cca45616c6f53444f9e834b79d8ded01b40d673e1f8c64ee143",
+    "receipts/heca_primary_execution.json": "358db8268a3ac20ea3d1e4bec287ffc2cc79019acc2f3322a0b32d2783e1e3b6",
+    "receipts/local_container_build.json": "a7b342e4d117051f5b11776016fc01040242e2f5b29577534723a8a9e7817e21",
+    "receipts/local_container_nextflow.json": "bb3fe28bc38806f1b9bab3816b9e46417ab04da7787b1cdc8f0af1f243b0618f",
+    "receipts/m0_input_gate_decision.json": "0969a5e163b8845df5c3daed7e56dd9deaf11bc55f2ebef3a3eb10640f46e886",
+    "receipts/replication_evaluation_tests.json": "9705b00f9f9abbfa262dd9933b0fd8d8b478085879723983043c14bef16a8ff2",
+    "receipts/replication_fix_adjudication.json": "76446cd7a9482e6226f36c8f4b5fc4843c30385c6e960ad2a3993313c1987a43",
+    "receipts/replication_implementation_freeze.json": "e28db1a5f4100b3f2e844b5d49615fe7168f91e01a177f6fcc60029342887990",
+    "receipts/replication_independent_review.json": "80ae555e2b9e63713711cc6e1eb676bceb329490396e050c16db0177278a2e53",
+    "receipts/replication_nextflow_tests.json": "b2bd340215e20a04e57d1d7748f45abaf4cec775648face5ad097ef8e575b9c9",
+    "receipts/resampling_tests.json": "2c803d3fe5f7486d572c8c4cbc6a05186a4ad91957a3ef2cdb713832b1457360",
+    "receipts/runtime_statistics_R_smoke.json": "4f3aa34a5dc48bf9fb7470dce1e2eadca0ef7f1a9ca134cf1feddb8535cabece",
+    "receipts/runtime_statistics_install.json": "5a65eda490112f6cd34722796294baf5be4adf80f5af79350b29f31090c6c527",
+    "receipts/statistical_pre_effect_freeze.json": "8ae5baaf46068fb8587b7f81465a6c1028de3a1b55dcca91c162b6559ab91430",
+    "replication.config": "87a1afa33c51043b82da0be28d7a5e5786559163155257c7e562b40afc2fc501",
+    "replication.nf": "3b06ec4c3aa01a10cd02334ec48d0d99deaa898299eec85faefd71b3a579295e",
+    "reports/final_clinical_design_discovery_primary.tsv": "cfde21f83223ca3ba74f9f1e0b330aea98ca2341f4efe47348d6fa6f5f99241c",
+    "reports/final_clinical_design_heca_primary.tsv": "e8eaf603af32950b6b329ba7f0501c23d25f9cb22e6177fd76609adee44a638b",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6",
+    "requirements/statistical-runtime.yml": "51e78370e2a5495a33a6272c5a8159d9233a07fd851d28086da79b8d1b4b8269",
+    "scripts/audit_lineage_markers.py": "32a2ef4ab6fbdeb8af75e5d62f14e37a82a3b570d5dc3de5057fc5c02d4ead9c",
+    "scripts/audit_m0_contracts.py": "3545a9c5ab66cd81b7c0f4e10e108ca694070ffa3dbcf8c766548f2a50d3ee5b",
+    "scripts/check_local_container_nextflow.py": "5e4e64eb90911e7be0fbff45d8f48d3518549de54ba857ecf1d816cabdd50b04",
+    "scripts/check_local_primary_replay.py": "aee7926ecfbdb178308ef2b8074be2c476bee5a07a4a6fdf872da4e41820206e",
+    "scripts/clinical_gate_audit.py": "66b119fa6a9fe0f316309bf6d8a0ba7b9e1b372dbf473545c6c067cc50d9aa76",
+    "scripts/discovery_clinical_gate.py": "dbc0e4d5ffd594bb80436f7dc60a8f116879747eb953bf78e38838f5dd4f48b1",
+    "scripts/discovery_design_audit.py": "205cd2593b7239c6c0f7b6297872e0402cf2238647cc21a762ebc2c3463d759d",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/evaluate_replication.py": "76464563522a7f7ef33eea66ba95c4f727ee5b23c8207ea1f794e904a47038b0",
+    "scripts/fetch_clinical_supplements.py": "041a10f6a7f6c35c6afb969aa2fb60e4980fef23a8ec74992ad4be46130d4d7c",
+    "scripts/fetch_gene_annotation.py": "ec37386df40b12003b66aac8b5127eedb60270074d3d817e45e57f0ab95a3cc4",
+    "scripts/final_clinical_gate.py": "bb63aa92565c5cfa5d0ebe48378d2d8eab3a1df3de776016abe40dbdccf58179",
+    "scripts/fit_donor_de.R": "e68c80e3c2d37ec260a814890d5c7f2fdbad5033b95c22c30b53811e289be07c",
+    "scripts/freeze_analysis.py": "0dd5a528eeb71db3c024da463eec9bd0a3508d66802f98f990b37d6d9755cddd",
+    "scripts/freeze_replication.py": "45ecb350580c5de52827ad4aa3d1ca265f539c1018491ae9c8c1c50bf839eb91",
+    "scripts/heca_count_layer_audit.py": "846638aa678b5566d3b482dcc4ac635a78fe92d1b31cfb88fbaed36c8a329f30",
+    "scripts/heca_h5_metadata.py": "3da94586a1f7cad35f78fda6423be1482fed546a8531d4f7535d19d27f5e878d",
+    "scripts/m0_metadata.py": "d3073297fa57c66b52b4c693bd8b1b7bf2293104ea843cc2bbe28f32b735eaa4",
+    "scripts/map_string_genes.py": "db6e90fa6ff469c0d3588edf9b66d97a5412887a5c0e181913a69b242a2ca730",
+    "scripts/prepare_discovery_counts.py": "b59378263c2a21669915ef178e8c5d5befd30b2385a0f35b8d16e1c18cf9e6a3",
+    "scripts/prepare_heca_counts.py": "c8685a2ff40709821c63671aa4406b1bd032c0f5f45dccb96478b17c649423f6",
+    "scripts/prepare_string_reference.py": "8d0fa0bfb7272eb1c6b756eb78feabf0f5109c27a5ef68a2c116c2cede50e019",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "scripts/resample_donor_models.R": "04a922a7dd13fa96a8eab1b1f8eac8c4929bb9cd78f4ece8b333ca7cd79f01a6",
+    "scripts/run_discovery_lodo.py": "fc85be383ff76661217e70f6d3d1e110a58189600cd5d2d807ba583397160b77",
+    "scripts/sample_matched_nulls.py": "587092a1f2b2a8915759df67eaf23d4c2d4a18232c9308cac7afd6b2fff90ba5",
+    "scripts/setup_statistical_runtime.sh": "96316eda46ae6df52ba0437c0ff1292882f24ae219c35273ce188fd4b073661e",
+    "scripts/smoke_statistical_runtime.R": "a3e5c3eb6c93f6e25caeec4c39bd6e59c338b3784006b2bc5cea5a39a12bc157",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "scripts/validate_heca_counts.py": "703e5f4aac217b313c19b8078f5ff3979ad4c486b7b7ea3185818acc0d79d4db",
+    "tests/check_replication_nextflow.py": "2c641da6aa9fc09ee973631711dc738730f0a54dd64cb39eb905bc137587d6ee",
+    "tests/make_replication_synthetic.py": "b7363cda36ae317218e8a482d3791280b78aec1eadb015e80dcb9a5b4f86353e",
+    "tests/test_lodo.py": "6601aa4e22e2ff9347cd3fc20e619d7c9fa11e9c18d26206ed63a77842d37913",
+    "tests/test_replication_evaluation.py": "418bf0cd79f010c1c57989dda6f245d8cd54de44fc7fbd6a7252116d5961a42e",
+    "tests/test_resampling.R": "9e8fa3ba0db88156f6f62160af483985be95efd8d689d5f3dc6f2e24ddaf65e1",
+    "work/local-runtime/nextflow/nextflow-25.10.2-one.jar": "0057035603c5fc18f42dc4bfbfcb7fc957d307c4111a9a7f2896d85d78340835",
+    "work/statistical/discovery_primary/de/de_all.tsv": "b1da2ff253f154e23f0b9276ecf45d9c2a1645b08b2fbbedb1fc4552a00c4e94",
+    "work/statistical/discovery_primary/de/de_fitted.tsv": "b1da2ff253f154e23f0b9276ecf45d9c2a1645b08b2fbbedb1fc4552a00c4e94",
+    "work/statistical/discovery_primary/de/design.tsv": "dd16c73bf14b7801752edbb5fbef6734c7dc6fff3a70d6c29576deb90ccab42b",
+    "work/statistical/discovery_primary/de/expression_filter.tsv": "702945bdf9a684a1e12823ed6b22197ad5a1179e001af2b528ee7eb45f992292",
+    "work/statistical/discovery_primary/de/model.rds": "43692814c50fecdd35ec462a281994f394d9551065d2600a8aed8e8889a6ab71",
+    "work/statistical/discovery_primary/de/normalization.tsv": "ed20223396201bcd3599f3d561d56bb66ca094f452cc572be75f4545c39d7e6c",
+    "work/statistical/discovery_primary/de/provenance.json": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
+    "work/statistical/discovery_primary/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/statistical/discovery_primary/nulls/B0_null_membership.tsv": "cf63d425f08b1bfe48f4e19f00fcb53b2bc19efe2397b048e3ba8b0dbfa2d921",
+    "work/statistical/discovery_primary/nulls/B1_null_membership.tsv": "ab28fd2a2197406788081ef6addc2fa7e63e3e0cd371a6facaf91525fc662fb3",
+    "work/statistical/discovery_primary/nulls/G1_null_membership.tsv": "57390deaee8b373106e95c1315bdcf914256a2a747b5efb62d4423da924d46e9",
+    "work/statistical/discovery_primary/nulls/all_U_directions.tsv": "75d72b23cce7b8a14f46987472bd6ea10eff6d0ce2a3a412cf38f67aca771a2f",
+    "work/statistical/discovery_primary/nulls/bin_demands.tsv": "32cb21de6a6c604363abb1826fac8907136818003941306d3e64e6bd5ad90c87",
+    "work/statistical/discovery_primary/nulls/boundaries.json": "eda0efb5d7d8b611933b162f5ecd5fa475d7dc767ab7afd8a407b0ae10aca0e4",
+    "work/statistical/discovery_primary/nulls/null_memberships.tsv": "0b9e7a06f4dbdaedd2bb513b9abc40a4a41fc3cf855d48b11e4f2dfc6d981e9c",
+    "work/statistical/discovery_primary/nulls/status.json": "ea1c94e96f7e4a7ee96269602ebe2fbf55fb532e56ab999212634ae6af352aad",
+    "work/statistical/discovery_primary/nulls/universe_bins.tsv": "a2fec339cd7abbea08d60b35a7b671b48abb19116dd6f277eae4d570778f1c72",
+    "work/statistical/discovery_primary/ranking/B0.tsv": "32b931a18cdef05e763278435e200811b3bdb01e243fff7fb5fa24cc124e763f",
+    "work/statistical/discovery_primary/ranking/B0_top20.tsv": "fd6addcbc046e3c61fc4ce21f4beed2e1a01759cac6ae0dc942f497b541d38a5",
+    "work/statistical/discovery_primary/ranking/B0_top50.tsv": "745f45a41c9fa7b10e7f326435946e46fbfb53fbb4a84e05fd4e51c6fb2f3b8d",
+    "work/statistical/discovery_primary/ranking/B1.tsv": "336a4c7125e6ae205c62deadd675ecaffc49c70c64c14a795e2828e03e423f3f",
+    "work/statistical/discovery_primary/ranking/B1_top20.tsv": "8550943234771f9e9f49f1255513a99dde9bc84cf22b7ebdba0520f7803d15e9",
+    "work/statistical/discovery_primary/ranking/B1_top50.tsv": "557a2ca330dcd5d2fc09097cc126b249b664d46c7ac322ed52e00f7ad2049a8c",
+    "work/statistical/discovery_primary/ranking/G1.tsv": "f2cfa7a271069e0d89c0af2652486c42f2111d3e832588528a47d2afc66ac35e",
+    "work/statistical/discovery_primary/ranking/G1_top20.tsv": "f3e0e2d8af611db6c22e234fc365f706c4316d1fb4adb727cafa60b1d15ee26c",
+    "work/statistical/discovery_primary/ranking/G1_top50.tsv": "703886c3e9671fcf9fc7911d28185e959f93f3ddecb0b4ce19ff04836090ab8d",
+    "work/statistical/discovery_primary/ranking/excluded_genes.tsv": "21dd8eb6a9af6cfb83178c670eda47e2e0f84d3ca93bfd355d34b0e0f723a600",
+    "work/statistical/discovery_primary/ranking/induced_edges.tsv": "a1e923af57260c6ba6f61c89b9138049c3b3da92549a893c98ec3629ae39e3fd",
+    "work/statistical/discovery_primary/ranking/provenance.json": "29af78115872d016045f5a5ab740216a7298589b134c7e882039cfb8b1492efb",
+    "work/statistical/discovery_primary/ranking/universe.tsv": "0f25f9f775e431f3f34e90d1d6e1dc33c48c99c5c3aee90b3a3ae1170d06b26c",
+    "work/statistical/heca_primary/de/de_all.tsv": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+    "work/statistical/heca_primary/de/de_fitted.tsv": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+    "work/statistical/heca_primary/de/design.tsv": "205f6b014e23066a811244f5d7afae3e0cad520faa9e5d1f3e6d1e4a5b175509",
+    "work/statistical/heca_primary/de/expression_filter.tsv": "73a3b6a27320d0f08df6bd8746df57c4e6f540e8649e9a3fa01025eb9f254b0e",
+    "work/statistical/heca_primary/de/model.rds": "10306b806a875d9bb42f699bfcc8851d39c3282d4705f5f7d215775364daa174",
+    "work/statistical/heca_primary/de/normalization.tsv": "0a7789b20efde7188d00685f789e96be7e7eb4647f206c5715ce3695a80e0275",
+    "work/statistical/heca_primary/de/provenance.json": "e84a468eb71d6e7c0614c37a25faecd7e0dfab5e17360299f5eb6b36df52bf46",
+    "work/statistical/heca_primary/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/statistical/heca_primary/evaluation/bootstrap_interface.tsv": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+    "work/statistical/heca_primary/evaluation/dossier_pool.tsv": "2f31cf38db9d4086249eb3a1f794e4f2e47a70b974925d45c3aef1622d19d4cc",
+    "work/statistical/heca_primary/evaluation/dossier_selection.tsv": "d246cdcdb4ed87ae0cf0dfa0ba529069d5d67f04dff00c74346857e49d9957fa",
+    "work/statistical/heca_primary/evaluation/null_sets.tsv": "c8dc028443f496fcbaee3ab36be418960d18ae386647fe4f2fa2d6593bea426b",
+    "work/statistical/heca_primary/evaluation/null_summary.json": "ffc4d86ff269f63345b4454b72416cf519d3068f73b0da24c3c935d460441a32",
+    "work/statistical/heca_primary/evaluation/provenance.json": "cb720faff633bf2660018656c56520a68cfdea3f80ecfdbf1c2f1b3d79943679",
+    "work/statistical/heca_primary/evaluation/selected_genes.tsv": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+    "work/statistical/heca_primary/evaluation/summary.json": "bb44ae312ccabe52d9b1da23db20b32ddeac5d0b84605e76c88fcf0e24afe14b"
+  },
+  "freezes": {
+    "statistical_pre_effect_freeze": {
+      "artifact_count": 43,
+      "sha256": "8ae5baaf46068fb8587b7f81465a6c1028de3a1b55dcca91c162b6559ab91430"
+    },
+    "discovery_rank_freeze": {
+      "artifact_count": 74,
+      "sha256": "642332e970df9cca45616c6f53444f9e834b79d8ded01b40d673e1f8c64ee143"
+    },
+    "replication_implementation_freeze": {
+      "artifact_count": 95,
+      "sha256": "e28db1a5f4100b3f2e844b5d49615fe7168f91e01a177f6fcc60029342887990"
+    }
+  },
+  "environment": {
+    "WSL_DISTRO_NAME": "EndoTargetRuntime",
+    "WSL_INTEROP": "/run/WSL/15307_interop",
+    "WSLENV": "PATHEXT/l:COMSPEC/p:SYSTEMROOT/p:SYSTEMDRIVE:USERNAME:USERDOMAIN:USERPROFILE/p:PROGRAMFILES/p:PROGRAMFILES(X86)/p:PROGRAMW6432/p:PROGRAMDATA/p:LOCALAPPDATA/p:APPDATA/p:POWERSHELL:PWSH:HTTP_PROXY:HTTPS_PROXY:NO_PROXY:NODE_TLS_REJECT_UNAUTHORIZED:CODEX_APP_SERVER_LOGIN_ISSUER:CODEX_APP_SERVER_LOGIN_CLIENT_ID:CODEX_REFRESH_TOKEN_URL_OVERRIDE:CODEX_REVOKE_TOKEN_URL_OVERRIDE:CODEX_HOME/p:LOG_FORMAT:RUST_LOG:CODEX_INTERNAL_ORIGINATOR_OVERRIDE:CODEX_APP_TOOLS_PIPE_PATH",
+    "LANG": "C.UTF-8",
+    "TERM": "xterm-256color",
+    "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "HOME": "/root",
+    "DOCKER_HOST": "unix:///run/endotarget-docker.sock",
+    "ENDOTARGET_CONTAINER_UID": "1003",
+    "ENDOTARGET_CONTAINER_GID": "1004",
+    "ENDOTARGET_LOCAL_CHECK_ID": "20261014T024243Z-57350542",
+    "NXF_HOME": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/nxf_home",
+    "NXF_OFFLINE": "true",
+    "NXF_DISABLE_CHECK_LATEST": "true",
+    "NXF_ANSI_LOG": "false",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "host_java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1-1-24.04.4-Ubuntu)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1-1-24.04.4-Ubuntu, mixed mode, sharing)\n",
+  "java_heap": "512m",
+  "task_concurrency": 1,
+  "launches": [
+    {
+      "pipeline": "discovery",
+      "resume": false,
+      "command": [
+        "java",
+        "-Xmx512m",
+        "-Dfile.encoding=UTF-8",
+        "--add-opens=java.base/java.lang=ALL-UNNAMED",
+        "--add-opens=java.base/java.io=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio=ALL-UNNAMED",
+        "--add-opens=java.base/java.net=ALL-UNNAMED",
+        "--add-opens=java.base/java.util=ALL-UNNAMED",
+        "--add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED",
+        "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio.file.spi=ALL-UNNAMED",
+        "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+        "--add-opens=java.base/sun.nio.fs=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.ftp=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.file=ALL-UNNAMED",
+        "--add-opens=java.base/jdk.internal.misc=ALL-UNNAMED",
+        "--add-opens=java.base/jdk.internal.vm=ALL-UNNAMED",
+        "--add-opens=java.base/java.util.regex=ALL-UNNAMED",
+        "-jar",
+        "/home/analyst/te/work/local-runtime/nextflow/nextflow-25.10.2-one.jar",
+        "-C",
+        "/home/analyst/te/nextflow.config,/home/analyst/te/conf/statistics_container.config,/home/analyst/te/conf/local_container.config",
+        "-log",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_nextflow.log",
+        "run",
+        "/home/analyst/te/main.nf",
+        "-profile",
+        "docker,statistics_container,local_container",
+        "-params-file",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_params.json",
+        "-work-dir",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work",
+        "-with-trace",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_trace.tsv",
+        "-name",
+        "primary_20261014T024243Z-57350542_discovery"
+      ],
+      "effective_params": {
+        "pre_effect_freeze": "receipts/statistical_pre_effect_freeze.json",
+        "runtime_mode": "docker",
+        "container_image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+        "outdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_results"
+      },
+      "source": "work/statistical/discovery_primary",
+      "output": "work/local-primary-container/20261014T024243Z-57350542/discovery_results",
+      "trace_rows": [
+        {
+          "task_id": "1",
+          "hash": "ff/658332",
+          "name": "DONOR_DE (discovery)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd"
+        },
+        {
+          "task_id": "2",
+          "hash": "27/99853a",
+          "name": "RANK_TARGETS (B0_B1_G1)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12"
+        },
+        {
+          "task_id": "3",
+          "hash": "1e/ce6027",
+          "name": "MATCHED_NULLS (matched_nulls)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162"
+        }
+      ],
+      "tasks": [
+        {
+          "name": "DONOR_DE (discovery)",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd",
+          "command_run_sha256": "cacba4e84eb783281311042f57a5fbcf224df71ba0af95ae68402fff5737d78e",
+          "command_sh_sha256": "6199cbc09916d61b29c92487be64987254eeed6fe3068133ed17634bf28eaf49"
+        },
+        {
+          "name": "RANK_TARGETS (B0_B1_G1)",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12",
+          "command_run_sha256": "802d28a752c1b4e2c97ad862b81aae8dc474a791dac2a2af832f06f16b627bd3",
+          "command_sh_sha256": "cc9472cf13510b643ecb00e8f0b5da062359c38d9b0628718050d33df14317d1"
+        },
+        {
+          "name": "MATCHED_NULLS (matched_nulls)",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162",
+          "command_run_sha256": "af4f1d66a52a6c70550e0e9e3f7046611aa465b30f670f01d40ca70d3e30d2f0",
+          "command_sh_sha256": "d9f87cc15c93453a9f0e375c35d54e77fda1874dccd60e0d5b0a9a6d4c7a0ed3"
+        }
+      ],
+      "exit_code": 0,
+      "all_scientific_tsv_comparisons": {
+        "de/de_all.tsv": {
+          "rows": 17733,
+          "columns": 14,
+          "numerically_equal_nonidentical_cells": 79129,
+          "maximum_absolute_difference": 1.0990167109703464e-13,
+          "expected_sha256": "b1da2ff253f154e23f0b9276ecf45d9c2a1645b08b2fbbedb1fc4552a00c4e94",
+          "actual_sha256": "ccde47b25b5f234e5fbc0a9a434d976b8857830c7e5f33c42390d6f9cedab361"
+        },
+        "de/de_fitted.tsv": {
+          "rows": 17733,
+          "columns": 14,
+          "numerically_equal_nonidentical_cells": 79129,
+          "maximum_absolute_difference": 1.0990167109703464e-13,
+          "expected_sha256": "b1da2ff253f154e23f0b9276ecf45d9c2a1645b08b2fbbedb1fc4552a00c4e94",
+          "actual_sha256": "ccde47b25b5f234e5fbc0a9a434d976b8857830c7e5f33c42390d6f9cedab361"
+        },
+        "de/design.tsv": {
+          "rows": 22,
+          "columns": 13,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "dd16c73bf14b7801752edbb5fbef6734c7dc6fff3a70d6c29576deb90ccab42b",
+          "actual_sha256": "dd16c73bf14b7801752edbb5fbef6734c7dc6fff3a70d6c29576deb90ccab42b"
+        },
+        "de/expression_filter.tsv": {
+          "rows": 26109,
+          "columns": 2,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "702945bdf9a684a1e12823ed6b22197ad5a1179e001af2b528ee7eb45f992292",
+          "actual_sha256": "702945bdf9a684a1e12823ed6b22197ad5a1179e001af2b528ee7eb45f992292"
+        },
+        "de/normalization.tsv": {
+          "rows": 22,
+          "columns": 5,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "ed20223396201bcd3599f3d561d56bb66ca094f452cc572be75f4545c39d7e6c",
+          "actual_sha256": "ed20223396201bcd3599f3d561d56bb66ca094f452cc572be75f4545c39d7e6c"
+        },
+        "nulls/B0_null_membership.tsv": {
+          "rows": 4000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 2777,
+          "maximum_absolute_difference": 3.108624468950438e-14,
+          "expected_sha256": "cf63d425f08b1bfe48f4e19f00fcb53b2bc19efe2397b048e3ba8b0dbfa2d921",
+          "actual_sha256": "53fed3034dc87c8b57e149a6236489c97edcb64364b8e2fba2d07a53f713d1e9"
+        },
+        "nulls/B1_null_membership.tsv": {
+          "rows": 4000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 2784,
+          "maximum_absolute_difference": 2.0011770018868447e-14,
+          "expected_sha256": "ab28fd2a2197406788081ef6addc2fa7e63e3e0cd371a6facaf91525fc662fb3",
+          "actual_sha256": "f19c5e64a71beb1b14797200251d96fe69bae60e55cc2255c09cb9bafe1e21e9"
+        },
+        "nulls/G1_null_membership.tsv": {
+          "rows": 4000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 2933,
+          "maximum_absolute_difference": 2.0011770018868447e-14,
+          "expected_sha256": "57390deaee8b373106e95c1315bdcf914256a2a747b5efb62d4423da924d46e9",
+          "actual_sha256": "3ba393cbe774b1d80bb1faea73b8116b8dbb58d50052eeaa56f67df666fdaf3c"
+        },
+        "nulls/all_U_directions.tsv": {
+          "rows": 11749,
+          "columns": 3,
+          "numerically_equal_nonidentical_cells": 7951,
+          "maximum_absolute_difference": 4.2021941482062175e-14,
+          "expected_sha256": "75d72b23cce7b8a14f46987472bd6ea10eff6d0ce2a3a412cf38f67aca771a2f",
+          "actual_sha256": "9e3e05f638477771d8fd297012f6566b1f8d38c8adf2e4737b4db9e34d1342aa"
+        },
+        "nulls/bin_demands.tsv": {
+          "rows": 75,
+          "columns": 6,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "32cb21de6a6c604363abb1826fac8907136818003941306d3e64e6bd5ad90c87",
+          "actual_sha256": "32cb21de6a6c604363abb1826fac8907136818003941306d3e64e6bd5ad90c87"
+        },
+        "nulls/null_memberships.tsv": {
+          "rows": 12000,
+          "columns": 10,
+          "numerically_equal_nonidentical_cells": 8494,
+          "maximum_absolute_difference": 3.108624468950438e-14,
+          "expected_sha256": "0b9e7a06f4dbdaedd2bb513b9abc40a4a41fc3cf855d48b11e4f2dfc6d981e9c",
+          "actual_sha256": "e4704d0a73d27ee504d6379c59566989dfed252ce2b7bd7b9bfe2d20c6f9b714"
+        },
+        "nulls/universe_bins.tsv": {
+          "rows": 11749,
+          "columns": 7,
+          "numerically_equal_nonidentical_cells": 7951,
+          "maximum_absolute_difference": 4.2021941482062175e-14,
+          "expected_sha256": "a2fec339cd7abbea08d60b35a7b671b48abb19116dd6f277eae4d570778f1c72",
+          "actual_sha256": "5913c209d8132312c7f099c97d45a4ae10c9db0899f05963a78442021bdd3606"
+        },
+        "ranking/B0.tsv": {
+          "rows": 11749,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 43743,
+          "maximum_absolute_difference": 1.0990167109703464e-13,
+          "expected_sha256": "32b931a18cdef05e763278435e200811b3bdb01e243fff7fb5fa24cc124e763f",
+          "actual_sha256": "72950775ea9a53ffad3157b858b10145c398292e731a450d11e8d4a1e9b8639b"
+        },
+        "ranking/B0_top20.tsv": {
+          "rows": 20,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 58,
+          "maximum_absolute_difference": 1.0658141036401503e-14,
+          "expected_sha256": "fd6addcbc046e3c61fc4ce21f4beed2e1a01759cac6ae0dc942f497b541d38a5",
+          "actual_sha256": "c2a2a5a82982725b4349ab7213deb51346020d22048e9aa3900618502c606197"
+        },
+        "ranking/B0_top50.tsv": {
+          "rows": 50,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 130,
+          "maximum_absolute_difference": 5.0182080713057076e-14,
+          "expected_sha256": "745f45a41c9fa7b10e7f326435946e46fbfb53fbb4a84e05fd4e51c6fb2f3b8d",
+          "actual_sha256": "d1b82e57fe77d7b5efd4bfeb2d73ca91d90c6944324e0bb1cf8a1563343c4833"
+        },
+        "ranking/B1.tsv": {
+          "rows": 11749,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 35757,
+          "maximum_absolute_difference": 1.0990167109703464e-13,
+          "expected_sha256": "336a4c7125e6ae205c62deadd675ecaffc49c70c64c14a795e2828e03e423f3f",
+          "actual_sha256": "90acd74ac02ebc3e05ab5946a739ea75481917f67d46a809a17c3ff6d97e91bf"
+        },
+        "ranking/B1_top20.tsv": {
+          "rows": 20,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 57,
+          "maximum_absolute_difference": 4.0967229608668276e-14,
+          "expected_sha256": "8550943234771f9e9f49f1255513a99dde9bc84cf22b7ebdba0520f7803d15e9",
+          "actual_sha256": "62a2c0ce4a42fede366a12eff12aceb488ac9157d81a6c014a61aa6566f2d7b9"
+        },
+        "ranking/B1_top50.tsv": {
+          "rows": 50,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 129,
+          "maximum_absolute_difference": 4.0967229608668276e-14,
+          "expected_sha256": "557a2ca330dcd5d2fc09097cc126b249b664d46c7ac322ed52e00f7ad2049a8c",
+          "actual_sha256": "b9321d90c7f90b45563919e480eb1505ef52dbe31f5bb739021172d4d6d54cd7"
+        },
+        "ranking/G1.tsv": {
+          "rows": 11749,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 46931,
+          "maximum_absolute_difference": 1.0990167109703464e-13,
+          "expected_sha256": "f2cfa7a271069e0d89c0af2652486c42f2111d3e832588528a47d2afc66ac35e",
+          "actual_sha256": "1e2d3fccf6715e267cae985b49622c0ada0541c37d8c7698dfe2f251dd3aead1"
+        },
+        "ranking/G1_top20.tsv": {
+          "rows": 20,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 79,
+          "maximum_absolute_difference": 2.098321516541546e-14,
+          "expected_sha256": "f3e0e2d8af611db6c22e234fc365f706c4316d1fb4adb727cafa60b1d15ee26c",
+          "actual_sha256": "3acc4d3257d6a188acd75e6a664c574d2d93aa399505f2204a9f958a5366cef4"
+        },
+        "ranking/G1_top50.tsv": {
+          "rows": 50,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 200,
+          "maximum_absolute_difference": 5.995204332975845e-14,
+          "expected_sha256": "703886c3e9671fcf9fc7911d28185e959f93f3ddecb0b4ce19ff04836090ab8d",
+          "actual_sha256": "931fe5ede3d61acc9be57088b52fc9a03a784a964cdcf33e2068aefba18b41ed"
+        },
+        "ranking/excluded_genes.tsv": {
+          "rows": 5984,
+          "columns": 2,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "21dd8eb6a9af6cfb83178c670eda47e2e0f84d3ca93bfd355d34b0e0f723a600",
+          "actual_sha256": "21dd8eb6a9af6cfb83178c670eda47e2e0f84d3ca93bfd355d34b0e0f723a600"
+        },
+        "ranking/induced_edges.tsv": {
+          "rows": 123313,
+          "columns": 3,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "a1e923af57260c6ba6f61c89b9138049c3b3da92549a893c98ec3629ae39e3fd",
+          "actual_sha256": "a1e923af57260c6ba6f61c89b9138049c3b3da92549a893c98ec3629ae39e3fd"
+        },
+        "ranking/universe.tsv": {
+          "rows": 11749,
+          "columns": 1,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "0f25f9f775e431f3f34e90d1d6e1dc33c48c99c5c3aee90b3a3ae1170d06b26c",
+          "actual_sha256": "0f25f9f775e431f3f34e90d1d6e1dc33c48c99c5c3aee90b3a3ae1170d06b26c"
+        }
+      },
+      "scientific_json_comparisons": {
+        "de/provenance.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
+          "actual_sha256": "fa2282fed495bf2c353be1130c0cb886195e108f1dcb22f05162e14763e80767"
+        },
+        "nulls/boundaries.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "eda0efb5d7d8b611933b162f5ecd5fa475d7dc767ab7afd8a407b0ae10aca0e4",
+          "actual_sha256": "eda0efb5d7d8b611933b162f5ecd5fa475d7dc767ab7afd8a407b0ae10aca0e4"
+        },
+        "nulls/status.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "ea1c94e96f7e4a7ee96269602ebe2fbf55fb532e56ab999212634ae6af352aad",
+          "actual_sha256": "d5ca9dc7ba13f14d4edd134121b0e374c623cfe2e79423a1a6616bd51fa86e84"
+        },
+        "ranking/provenance.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "29af78115872d016045f5a5ab740216a7298589b134c7e882039cfb8b1492efb",
+          "actual_sha256": "1001951ba4e6dda72b76c99d42adb6f81a0b66681fa932f6c04b45f85baf2227"
+        }
+      },
+      "runtime_artifacts": {
+        "de/model.rds": {
+          "expected_sha256": "43692814c50fecdd35ec462a281994f394d9551065d2600a8aed8e8889a6ab71",
+          "actual_sha256": "64e1e239b894cd4c37332c5754cba55c47497a8d7ee02d9fae91fd3e4784d974",
+          "comparison": "record_only_native_serialized_model_or_host_session_metadata",
+          "bytes_equal": false
+        },
+        "de/sessionInfo.txt": {
+          "expected_sha256": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+          "actual_sha256": "1c45fcd8ee771e7c9aabedbfafe421d79160f9dfbfb92e129b413a783f84c01b",
+          "comparison": "record_only_native_serialized_model_or_host_session_metadata",
+          "bytes_equal": false
+        }
+      },
+      "all_output_files": [
+        "de/de_all.tsv",
+        "de/de_fitted.tsv",
+        "de/design.tsv",
+        "de/expression_filter.tsv",
+        "de/model.rds",
+        "de/normalization.tsv",
+        "de/provenance.json",
+        "de/sessionInfo.txt",
+        "nulls/B0_null_membership.tsv",
+        "nulls/B1_null_membership.tsv",
+        "nulls/G1_null_membership.tsv",
+        "nulls/all_U_directions.tsv",
+        "nulls/bin_demands.tsv",
+        "nulls/boundaries.json",
+        "nulls/null_memberships.tsv",
+        "nulls/status.json",
+        "nulls/universe_bins.tsv",
+        "ranking/B0.tsv",
+        "ranking/B0_top20.tsv",
+        "ranking/B0_top50.tsv",
+        "ranking/B1.tsv",
+        "ranking/B1_top20.tsv",
+        "ranking/B1_top50.tsv",
+        "ranking/G1.tsv",
+        "ranking/G1_top20.tsv",
+        "ranking/G1_top50.tsv",
+        "ranking/excluded_genes.tsv",
+        "ranking/induced_edges.tsv",
+        "ranking/provenance.json",
+        "ranking/universe.tsv"
+      ],
+      "tested_genes": 17733,
+      "BH_q_lt_05": 0
+    },
+    {
+      "pipeline": "heca",
+      "resume": false,
+      "command": [
+        "java",
+        "-Xmx512m",
+        "-Dfile.encoding=UTF-8",
+        "--add-opens=java.base/java.lang=ALL-UNNAMED",
+        "--add-opens=java.base/java.io=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio=ALL-UNNAMED",
+        "--add-opens=java.base/java.net=ALL-UNNAMED",
+        "--add-opens=java.base/java.util=ALL-UNNAMED",
+        "--add-opens=java.base/java.util.concurrent.locks=ALL-UNNAMED",
+        "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED",
+        "--add-opens=java.base/java.nio.file.spi=ALL-UNNAMED",
+        "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+        "--add-opens=java.base/sun.nio.fs=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.ftp=ALL-UNNAMED",
+        "--add-opens=java.base/sun.net.www.protocol.file=ALL-UNNAMED",
+        "--add-opens=java.base/jdk.internal.misc=ALL-UNNAMED",
+        "--add-opens=java.base/jdk.internal.vm=ALL-UNNAMED",
+        "--add-opens=java.base/java.util.regex=ALL-UNNAMED",
+        "-jar",
+        "/home/analyst/te/work/local-runtime/nextflow/nextflow-25.10.2-one.jar",
+        "-C",
+        "/home/analyst/te/replication.config,/home/analyst/te/conf/statistics_container.config,/home/analyst/te/conf/local_container.config",
+        "-log",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_nextflow.log",
+        "run",
+        "/home/analyst/te/replication.nf",
+        "-profile",
+        "docker,statistics_container,local_container",
+        "-params-file",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_params.json",
+        "-work-dir",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work",
+        "-with-trace",
+        "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_trace.tsv",
+        "-name",
+        "primary_20261014T024243Z-57350542_heca"
+      ],
+      "effective_params": {
+        "evaluation_freeze": "receipts/replication_implementation_freeze.json",
+        "outdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_results",
+        "runtime_mode": "docker",
+        "container_image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489"
+      },
+      "source": "work/statistical/heca_primary",
+      "output": "work/local-primary-container/20261014T024243Z-57350542/heca_results",
+      "trace_rows": [
+        {
+          "task_id": "1",
+          "hash": "64/d081b6",
+          "name": "HECA_DONOR_DE (heca)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562"
+        },
+        {
+          "task_id": "2",
+          "hash": "0c/13e283",
+          "name": "EVALUATE_REPLICATION (fixed_lists_and_nulls)",
+          "status": "COMPLETED",
+          "exit": "0",
+          "container": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0"
+        }
+      ],
+      "tasks": [
+        {
+          "name": "HECA_DONOR_DE (heca)",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562",
+          "command_run_sha256": "d9f2cc86b47dfc88d32c6541838c6a7add5a5588eaef9e025f3fe1864a0ae4d2",
+          "command_sh_sha256": "f4596115f083497ea853fdfe57ff0d3fee1ecf2a8153326d3efb322e457b6944"
+        },
+        {
+          "name": "EVALUATE_REPLICATION (fixed_lists_and_nulls)",
+          "workdir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0",
+          "command_run_sha256": "88a045ce9c67f93fc25fa790e98838f5fcafd92fc8de709107a24bbc60f7bdeb",
+          "command_sh_sha256": "611e28ee679aa5fbc35bbbb47bb6b7a7871b24b7e8150b1a62b4b4c0681aca43"
+        }
+      ],
+      "exit_code": 0,
+      "all_scientific_tsv_comparisons": {
+        "de/de_all.tsv": {
+          "rows": 17643,
+          "columns": 14,
+          "numerically_equal_nonidentical_cells": 91078,
+          "maximum_absolute_difference": 1.0125233984581428e-13,
+          "expected_sha256": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+          "actual_sha256": "c63cc8d8f548f433304bff62219f48955ec745ba341488e5c1b43531b16034a8"
+        },
+        "de/de_fitted.tsv": {
+          "rows": 17643,
+          "columns": 14,
+          "numerically_equal_nonidentical_cells": 91078,
+          "maximum_absolute_difference": 1.0125233984581428e-13,
+          "expected_sha256": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+          "actual_sha256": "c63cc8d8f548f433304bff62219f48955ec745ba341488e5c1b43531b16034a8"
+        },
+        "de/design.tsv": {
+          "rows": 22,
+          "columns": 11,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "205f6b014e23066a811244f5d7afae3e0cad520faa9e5d1f3e6d1e4a5b175509",
+          "actual_sha256": "205f6b014e23066a811244f5d7afae3e0cad520faa9e5d1f3e6d1e4a5b175509"
+        },
+        "de/expression_filter.tsv": {
+          "rows": 26125,
+          "columns": 2,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "73a3b6a27320d0f08df6bd8746df57c4e6f540e8649e9a3fa01025eb9f254b0e",
+          "actual_sha256": "73a3b6a27320d0f08df6bd8746df57c4e6f540e8649e9a3fa01025eb9f254b0e"
+        },
+        "de/normalization.tsv": {
+          "rows": 22,
+          "columns": 5,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "0a7789b20efde7188d00685f789e96be7e7eb4647f206c5715ce3695a80e0275",
+          "actual_sha256": "0a7789b20efde7188d00685f789e96be7e7eb4647f206c5715ce3695a80e0275"
+        },
+        "evaluation/bootstrap_interface.tsv": {
+          "rows": 210,
+          "columns": 17,
+          "numerically_equal_nonidentical_cells": 982,
+          "maximum_absolute_difference": 3.9968028886505635e-14,
+          "expected_sha256": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+          "actual_sha256": "58ac0ad26cb187250061f4256e2a558780987118aeffdf512c853d342660bfcd"
+        },
+        "evaluation/dossier_pool.tsv": {
+          "rows": 40,
+          "columns": 19,
+          "numerically_equal_nonidentical_cells": 209,
+          "maximum_absolute_difference": 1.9984014443252818e-14,
+          "expected_sha256": "2f31cf38db9d4086249eb3a1f794e4f2e47a70b974925d45c3aef1622d19d4cc",
+          "actual_sha256": "bac30c8a34c737f242d2faba908ea01cd424718635c506811e725c6b674b57ec"
+        },
+        "evaluation/dossier_selection.tsv": {
+          "rows": 1,
+          "columns": 19,
+          "numerically_equal_nonidentical_cells": 4,
+          "maximum_absolute_difference": 9.992007221626409e-15,
+          "expected_sha256": "d246cdcdb4ed87ae0cf0dfa0ba529069d5d67f04dff00c74346857e49d9957fa",
+          "actual_sha256": "a6f15f6bf90b40eb94f2c26844497b311c271fa71b2230552b7e42f22b5aa35c"
+        },
+        "evaluation/null_sets.tsv": {
+          "rows": 600,
+          "columns": 17,
+          "numerically_equal_nonidentical_cells": 0,
+          "maximum_absolute_difference": 0.0,
+          "expected_sha256": "c8dc028443f496fcbaee3ab36be418960d18ae386647fe4f2fa2d6593bea426b",
+          "actual_sha256": "c8dc028443f496fcbaee3ab36be418960d18ae386647fe4f2fa2d6593bea426b"
+        },
+        "evaluation/selected_genes.tsv": {
+          "rows": 210,
+          "columns": 17,
+          "numerically_equal_nonidentical_cells": 982,
+          "maximum_absolute_difference": 3.9968028886505635e-14,
+          "expected_sha256": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+          "actual_sha256": "58ac0ad26cb187250061f4256e2a558780987118aeffdf512c853d342660bfcd"
+        }
+      },
+      "scientific_json_comparisons": {
+        "de/provenance.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "e84a468eb71d6e7c0614c37a25faecd7e0dfab5e17360299f5eb6b36df52bf46",
+          "actual_sha256": "8685421f88e5d6b5ed59ee83124c69b56db0e5de4842cafcce77c24e50dae181"
+        },
+        "evaluation/null_summary.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "ffc4d86ff269f63345b4454b72416cf519d3068f73b0da24c3c935d460441a32",
+          "actual_sha256": "ffc4d86ff269f63345b4454b72416cf519d3068f73b0da24c3c935d460441a32"
+        },
+        "evaluation/provenance.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "cb720faff633bf2660018656c56520a68cfdea3f80ecfdbf1c2f1b3d79943679",
+          "actual_sha256": "8bcbace2e430a810adc3108d479430d3db1ec1aeba6afbb81e7bf8138caa8a46"
+        },
+        "evaluation/summary.json": {
+          "scientific_semantics_equal": true,
+          "expected_sha256": "bb44ae312ccabe52d9b1da23db20b32ddeac5d0b84605e76c88fcf0e24afe14b",
+          "actual_sha256": "bb44ae312ccabe52d9b1da23db20b32ddeac5d0b84605e76c88fcf0e24afe14b"
+        }
+      },
+      "runtime_artifacts": {
+        "de/model.rds": {
+          "expected_sha256": "10306b806a875d9bb42f699bfcc8851d39c3282d4705f5f7d215775364daa174",
+          "actual_sha256": "ade9fb7396a54cde3b9917db2c0f04c6e1401ed1823c80f9f17266f1f9f389e9",
+          "comparison": "record_only_native_serialized_model_or_host_session_metadata",
+          "bytes_equal": false
+        },
+        "de/sessionInfo.txt": {
+          "expected_sha256": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+          "actual_sha256": "1c45fcd8ee771e7c9aabedbfafe421d79160f9dfbfb92e129b413a783f84c01b",
+          "comparison": "record_only_native_serialized_model_or_host_session_metadata",
+          "bytes_equal": false
+        }
+      },
+      "all_output_files": [
+        "de/de_all.tsv",
+        "de/de_fitted.tsv",
+        "de/design.tsv",
+        "de/expression_filter.tsv",
+        "de/model.rds",
+        "de/normalization.tsv",
+        "de/provenance.json",
+        "de/sessionInfo.txt",
+        "evaluation/bootstrap_interface.tsv",
+        "evaluation/dossier_pool.tsv",
+        "evaluation/dossier_selection.tsv",
+        "evaluation/null_sets.tsv",
+        "evaluation/null_summary.json",
+        "evaluation/provenance.json",
+        "evaluation/selected_genes.tsv",
+        "evaluation/summary.json"
+      ],
+      "tested_genes": 17643,
+      "BH_q_lt_05": 0
+    }
+  ],
+  "docker_execution_verified": true,
+  "fresh_tasks_completed": 5,
+  "discovery_tsvs_compared": 24,
+  "HECA_tsvs_compared": 10,
+  "real_primary_outputs_reproduced": true,
+  "original_inputs_and_native_outputs_preserved": true,
+  "docker_event_command": [
+    "docker",
+    "events",
+    "--filter",
+    "type=container",
+    "--filter",
+    "event=create",
+    "--filter",
+    "label=endotarget.local-check=20261014T024243Z-57350542",
+    "--format",
+    "{{json .}}"
+  ],
+  "container_inspections": [
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "50fa38c04ce826a405717c00fdd755b24d0c5126082860d31a2ad8e42e9aad57",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+            "name": "nxf-Rz0GCDKP0ANJmJqoTU6nvsnl",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791945774,
+        "timeNano": 1791945774594125520
+      },
+      "inspect": {
+        "Id": "50fa38c04ce826a405717c00fdd755b24d0c5126082860d31a2ad8e42e9aad57",
+        "Created": "2026-10-14T02:42:52.990011407Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 15586,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:42:55.061024627Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/50fa38c04ce826a405717c00fdd755b24d0c5126082860d31a2ad8e42e9aad57/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/50fa38c04ce826a405717c00fdd755b24d0c5126082860d31a2ad8e42e9aad57/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/50fa38c04ce826a405717c00fdd755b24d0c5126082860d31a2ad8e42e9aad57/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/50fa38c04ce826a405717c00fdd755b24d0c5126082860d31a2ad8e42e9aad57/50fa38c04ce826a405717c00fdd755b24d0c5126082860d31a2ad8e42e9aad57-json.log",
+        "Name": "/nxf-Rz0GCDKP0ANJmJqoTU6nvsnl",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd:/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd",
+            "Destination": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "50fa38c04ce8",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/ff/65833217eb28c503ab079bec0a86dd",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "aacd0505f53394d4ad2e39adec01acbe66bb8deab595e4850d226b0ed0fea06f",
+          "SandboxKey": "/run/endotarget-docker/netns/aacd0505f533",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "2173ebea302744f296bb3e5328fdc75aaf7a4370fb27ba957115d46a60ab0537",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+          "size": 3323,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "aa2e2efdb0ce412e07a5d4ba380f3934809f6d4138fc97733f1caa09ec84a938",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+            "name": "nxf-sPvxhA0HthsotdLrZQ1Uf0C9",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791945791,
+        "timeNano": 1791945791163324314
+      },
+      "inspect": {
+        "Id": "aa2e2efdb0ce412e07a5d4ba380f3934809f6d4138fc97733f1caa09ec84a938",
+        "Created": "2026-10-14T02:43:09.335693467Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 16513,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:43:11.652526832Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/aa2e2efdb0ce412e07a5d4ba380f3934809f6d4138fc97733f1caa09ec84a938/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/aa2e2efdb0ce412e07a5d4ba380f3934809f6d4138fc97733f1caa09ec84a938/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/aa2e2efdb0ce412e07a5d4ba380f3934809f6d4138fc97733f1caa09ec84a938/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/aa2e2efdb0ce412e07a5d4ba380f3934809f6d4138fc97733f1caa09ec84a938/aa2e2efdb0ce412e07a5d4ba380f3934809f6d4138fc97733f1caa09ec84a938-json.log",
+        "Name": "/nxf-sPvxhA0HthsotdLrZQ1Uf0C9",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12:/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12",
+            "Destination": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "aa2e2efdb0ce",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12",
+            "NXF_DEBUG=0",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/27/99853a6c4b3b555e88ea155a2a1c12",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "d8a6e5f5ff8a26f40912630f930c68a2bca0793a837d97fea53db18e5e2c85bc",
+          "SandboxKey": "/run/endotarget-docker/netns/d8a6e5f5ff8a",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "6742715a065a737f2109e3fe64341b29fc4215c7a7717b95ff099d256764eee2",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+          "size": 3323,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "9f5e48f213be8ec41004990cf27e379b4c3118b339ed8f280abd42756eea0583",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+            "name": "nxf-qgrrv1IOuJPIrZ3l0Su40G1w",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791945802,
+        "timeNano": 1791945802720309307
+      },
+      "inspect": {
+        "Id": "9f5e48f213be8ec41004990cf27e379b4c3118b339ed8f280abd42756eea0583",
+        "Created": "2026-10-14T02:43:21.020877341Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 17107,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:43:23.16458371Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/9f5e48f213be8ec41004990cf27e379b4c3118b339ed8f280abd42756eea0583/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/9f5e48f213be8ec41004990cf27e379b4c3118b339ed8f280abd42756eea0583/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/9f5e48f213be8ec41004990cf27e379b4c3118b339ed8f280abd42756eea0583/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/9f5e48f213be8ec41004990cf27e379b4c3118b339ed8f280abd42756eea0583/9f5e48f213be8ec41004990cf27e379b4c3118b339ed8f280abd42756eea0583-json.log",
+        "Name": "/nxf-qgrrv1IOuJPIrZ3l0Su40G1w",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162:/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162",
+            "Destination": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "9f5e48f213be",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/discovery_work/1e/ce602746b45f4bb5a492453074d162",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "6dea450da1ad87b9c0a239ebd55aff5fa1cf80f2867e1e58c4934e0c7c667f31",
+          "SandboxKey": "/run/endotarget-docker/netns/6dea450da1ad",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "5445b53dfd2bf4d3e33cafd1c0b54bfaa560654cb8bb605cbe6f53ed89d049ce",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+          "size": 3323,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "874a9a47d807260eabfa5e5fa7f9b84ce9936940dea74a8a22a01318e10127f6",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+            "name": "nxf-tJOoFzSQ1h39dWpR4UzrIq37",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791945829,
+        "timeNano": 1791945829544964706
+      },
+      "inspect": {
+        "Id": "874a9a47d807260eabfa5e5fa7f9b84ce9936940dea74a8a22a01318e10127f6",
+        "Created": "2026-10-14T02:43:47.880235113Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 17848,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:43:49.978481386Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/874a9a47d807260eabfa5e5fa7f9b84ce9936940dea74a8a22a01318e10127f6/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/874a9a47d807260eabfa5e5fa7f9b84ce9936940dea74a8a22a01318e10127f6/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/874a9a47d807260eabfa5e5fa7f9b84ce9936940dea74a8a22a01318e10127f6/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/874a9a47d807260eabfa5e5fa7f9b84ce9936940dea74a8a22a01318e10127f6/874a9a47d807260eabfa5e5fa7f9b84ce9936940dea74a8a22a01318e10127f6-json.log",
+        "Name": "/nxf-tJOoFzSQ1h39dWpR4UzrIq37",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562:/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562",
+            "Destination": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "874a9a47d807",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/64/d081b6a7768af3f8793f8ce2cec562",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "8c3dcf30bba2a33b8a0abc03dcf91728717c76b14a4388989876905d0c8ef6e0",
+          "SandboxKey": "/run/endotarget-docker/netns/8c3dcf30bba2",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "9d4fcb52fc2087a1d83b3527f9d31db44961792bfc9c23437189cc6db9bf6b91",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+          "size": 3323,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    },
+    {
+      "event": {
+        "Type": "container",
+        "Action": "create",
+        "Actor": {
+          "ID": "4e1ece4e41bbf309b3198e73fc2556b9d9a8ec5b2d39f292b8534a3a028f89b6",
+          "Attributes": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+            "name": "nxf-FXWI9dcYyLqVx7YQsWxds8DD",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "scope": "local",
+        "time": 1791945848,
+        "timeNano": 1791945848491156409
+      },
+      "inspect": {
+        "Id": "4e1ece4e41bbf309b3198e73fc2556b9d9a8ec5b2d39f292b8534a3a028f89b6",
+        "Created": "2026-10-14T02:44:06.786711612Z",
+        "Path": "/bin/bash",
+        "Args": [
+          "-euo",
+          "pipefail",
+          "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0/.command.run",
+          "nxf_trace"
+        ],
+        "State": {
+          "Status": "running",
+          "Running": true,
+          "Paused": false,
+          "Restarting": false,
+          "OOMKilled": false,
+          "Dead": false,
+          "Pid": 19186,
+          "ExitCode": 0,
+          "Error": "",
+          "StartedAt": "2026-10-14T02:44:08.935912553Z",
+          "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+        "ResolvConfPath": "/var/lib/endotarget-docker/containers/4e1ece4e41bbf309b3198e73fc2556b9d9a8ec5b2d39f292b8534a3a028f89b6/resolv.conf",
+        "HostnamePath": "/var/lib/endotarget-docker/containers/4e1ece4e41bbf309b3198e73fc2556b9d9a8ec5b2d39f292b8534a3a028f89b6/hostname",
+        "HostsPath": "/var/lib/endotarget-docker/containers/4e1ece4e41bbf309b3198e73fc2556b9d9a8ec5b2d39f292b8534a3a028f89b6/hosts",
+        "LogPath": "/var/lib/endotarget-docker/containers/4e1ece4e41bbf309b3198e73fc2556b9d9a8ec5b2d39f292b8534a3a028f89b6/4e1ece4e41bbf309b3198e73fc2556b9d9a8ec5b2d39f292b8534a3a028f89b6-json.log",
+        "Name": "/nxf-FXWI9dcYyLqVx7YQsWxds8DD",
+        "RestartCount": 0,
+        "Driver": "overlayfs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+          "Binds": [
+            "/home/analyst/te:/home/analyst/te:ro",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0:/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0"
+          ],
+          "ContainerIDFile": "",
+          "LogConfig": {
+            "Type": "json-file",
+            "Config": {}
+          },
+          "NetworkMode": "none",
+          "PortBindings": {},
+          "RestartPolicy": {
+            "Name": "no",
+            "MaximumRetryCount": 0
+          },
+          "AutoRemove": false,
+          "VolumeDriver": "",
+          "VolumesFrom": null,
+          "ConsoleSize": [
+            0,
+            0
+          ],
+          "CapAdd": null,
+          "CapDrop": null,
+          "CgroupnsMode": "private",
+          "Dns": null,
+          "DnsOptions": [],
+          "DnsSearch": [],
+          "ExtraHosts": null,
+          "GroupAdd": null,
+          "IpcMode": "private",
+          "Cgroup": "",
+          "Links": null,
+          "OomScoreAdj": 0,
+          "PidMode": "",
+          "Privileged": false,
+          "PublishAllPorts": false,
+          "ReadonlyRootfs": true,
+          "SecurityOpt": null,
+          "Tmpfs": {
+            "/tmp": "rw,nosuid,nodev,size=1g,mode=0700,uid=1003,gid=1004"
+          },
+          "UTSMode": "",
+          "UsernsMode": "",
+          "ShmSize": 67108864,
+          "Runtime": "runc",
+          "Isolation": "",
+          "CpuShares": 1024,
+          "Memory": 2147483648,
+          "NanoCpus": 1000000000,
+          "CgroupParent": "",
+          "BlkioWeight": 0,
+          "BlkioWeightDevice": [],
+          "BlkioDeviceReadBps": [],
+          "BlkioDeviceWriteBps": [],
+          "BlkioDeviceReadIOps": [],
+          "BlkioDeviceWriteIOps": [],
+          "CpuPeriod": 0,
+          "CpuQuota": 0,
+          "CpuRealtimePeriod": 0,
+          "CpuRealtimeRuntime": 0,
+          "CpusetCpus": "",
+          "CpusetMems": "",
+          "Devices": [],
+          "DeviceCgroupRules": null,
+          "DeviceRequests": null,
+          "MemoryReservation": 0,
+          "MemorySwap": -1,
+          "MemorySwappiness": null,
+          "OomKillDisable": null,
+          "PidsLimit": null,
+          "Ulimits": [],
+          "CpuCount": 0,
+          "CpuPercent": 0,
+          "IOMaximumIOps": 0,
+          "IOMaximumBandwidth": 0,
+          "MaskedPaths": [
+            "/proc/acpi",
+            "/proc/asound",
+            "/proc/interrupts",
+            "/proc/kcore",
+            "/proc/keys",
+            "/proc/latency_stats",
+            "/proc/sched_debug",
+            "/proc/scsi",
+            "/proc/timer_list",
+            "/proc/timer_stats",
+            "/sys/devices/virtual/powercap",
+            "/sys/firmware"
+          ],
+          "ReadonlyPaths": [
+            "/proc/bus",
+            "/proc/fs",
+            "/proc/irq",
+            "/proc/sys",
+            "/proc/sysrq-trigger"
+          ]
+        },
+        "Storage": {
+          "RootFS": {
+            "Snapshot": {
+              "Name": "overlayfs"
+            }
+          }
+        },
+        "Mounts": [
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te",
+            "Destination": "/home/analyst/te",
+            "Mode": "ro",
+            "RW": false,
+            "Propagation": "rprivate"
+          },
+          {
+            "Type": "bind",
+            "Source": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0",
+            "Destination": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0",
+            "Mode": "",
+            "RW": true,
+            "Propagation": "rprivate"
+          }
+        ],
+        "Config": {
+          "Hostname": "4e1ece4e41bb",
+          "Domainname": "",
+          "User": "1003:1004",
+          "AttachStdin": true,
+          "AttachStdout": true,
+          "AttachStderr": true,
+          "Tty": false,
+          "OpenStdin": true,
+          "StdinOnce": true,
+          "Env": [
+            "NXF_TASK_WORKDIR=/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0",
+            "NXF_DEBUG=0",
+            "TMPDIR=/tmp",
+            "HOME=/tmp",
+            "XDG_CACHE_HOME=/tmp/.cache",
+            "PATH=/opt/endo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+            "MAMBA_USER=mambauser",
+            "MAMBA_USER_ID=57439",
+            "MAMBA_USER_GID=57439",
+            "LANG=C.UTF-8",
+            "LC_ALL=C.UTF-8",
+            "ENV_NAME=base",
+            "MAMBA_ROOT_PREFIX=/opt/conda",
+            "MAMBA_EXE=/bin/micromamba",
+            "CONDA_OVERRIDE_CUDA=",
+            "JAVA_HOME=/opt/endo/lib/jvm",
+            "R_LIBS_USER=/opt/endo/lib/R/library",
+            "PYTHONNOUSERSITE=1",
+            "PYTHONDONTWRITEBYTECODE=1",
+            "OPENBLAS_NUM_THREADS=1",
+            "OMP_NUM_THREADS=1"
+          ],
+          "Cmd": [
+            "/bin/bash",
+            "-euo",
+            "pipefail",
+            "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0/.command.run",
+            "nxf_trace"
+          ],
+          "Image": "127.0.0.1:5500/endotarget-statistics@sha256:725be6fc5ae3a531974ac5ff9cc938616f2b07d959e3df13cdf0b16e2dde1489",
+          "Volumes": null,
+          "WorkingDir": "/home/analyst/te/work/local-primary-container/20261014T024243Z-57350542/heca_work/0c/13e28375e4b035eb94588a7ad4fba0",
+          "Entrypoint": null,
+          "Labels": {
+            "distro_id": "debian",
+            "endotarget.local-check": "20261014T024243Z-57350542",
+            "org.opencontainers.image.created": "2025-10-27T01:29:06.846Z",
+            "org.opencontainers.image.description": "Rapid builds of small Conda-based containers using micromamba.",
+            "org.opencontainers.image.licenses": "Apache-2.0",
+            "org.opencontainers.image.revision": "5a253903cd902afa6da0d67f2bd12756e1d30a63",
+            "org.opencontainers.image.source": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.title": "micromamba-docker",
+            "org.opencontainers.image.url": "https://github.com/mamba-org/micromamba-docker",
+            "org.opencontainers.image.version": "latest"
+          }
+        },
+        "NetworkSettings": {
+          "SandboxID": "77540cb7855dee771292025a02c7c95f933dcc3e6ac06b838dd3be2a6cef2bff",
+          "SandboxKey": "/run/endotarget-docker/netns/77540cb7855d",
+          "Ports": {},
+          "Networks": {
+            "none": {
+              "IPAMConfig": null,
+              "Links": null,
+              "Aliases": null,
+              "DriverOpts": null,
+              "GwPriority": 0,
+              "NetworkID": "997a87995fc818c7e7b32d92acfe8cf17c4bb54acc972e97e15868906f28475a",
+              "EndpointID": "101861a0d80bcf4513485a3983c546fbc3172a963aa24e12a5b97f23dfd6bf04",
+              "Gateway": "",
+              "IPAddress": "",
+              "MacAddress": "",
+              "IPPrefixLen": 0,
+              "IPv6Gateway": "",
+              "GlobalIPv6Address": "",
+              "GlobalIPv6PrefixLen": 0,
+              "DNSNames": null
+            }
+          }
+        },
+        "ImageManifestDescriptor": {
+          "mediaType": "application/vnd.oci.image.manifest.v1+json",
+          "digest": "sha256:a08c2c49b085b20b3b40bdbc5260d897198f4f26c5aa8ec93a8acccc62c8e236",
+          "size": 3323,
+          "platform": {
+            "architecture": "amd64",
+            "os": "linux"
+          }
+        }
+      }
+    }
+  ],
+  "container_observer_errors": [],
+  "input_sha256_after": {
+    "conf/local_container.config": "ec08fbb346c8398ddfe704c433fb280eadb14efa2102b9f1a5d0192213d7976c",
+    "conf/statistics_container.config": "819e49b9b94ecd32bf0b75de736e95f50eb5c1b2683fadd5f84259c58402499e",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "config/replication_run.json": "3a123ac02195ec983da8f873a9cb6b068b0c525d70ca685beedb4ce4900be708",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067",
+    "data/processed/heca/counts_stable.tsv.gz": "77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0",
+    "data/reference/string/direct_evidence_gene_edges.tsv.gz": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033",
+    "docs/PRE_EFFECT_METHOD_DECISIONS.md": "ea28d759c1bdd35d58744416f8739edf27f3d701a3531da844583f3e7f786fd5",
+    "docs/REPLICATION_EVALUATION.md": "90d7d4bcbe96a3ef9ba054149c113e7c532074451b072791a0216e66355e513d",
+    "docs/REPLICATION_EXECUTION.md": "4650f58f0367d738d05005d646b7a5e28a0b7157d746092871a25ae662af4653",
+    "docs/RESAMPLING.md": "1c1ab720262185c2dafd5d5a79cfd382cf75d4a457c9a1b3363b6186d16aa502",
+    "docs/RESEARCH_PROTOCOL.md": "cdcb1c8bc672c3924373cbd38b9ab57e3c1cf350934ba562ca218ba1470e9fe1",
+    "docs/STATISTICAL_IMPLEMENTATION_DECISIONS.md": "0c75d1d4ffa1c05ae77b0a34f9a843bbcd3559876d00e00e066d06cf822c0b80",
+    "main.nf": "3790a6f647565b91334e51686c450100542575b671398bf4c0e281ec1f7da422",
+    "manifests/final_discovery_clinical_selected.tsv": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d",
+    "manifests/final_heca_clinical_selected.tsv": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc",
+    "nextflow.config": "4d8c79071f053b9ae894230feaa619a629e33f6717f74d02a0887d425af40214",
+    "receipts/discovery_rank_freeze.json": "642332e970df9cca45616c6f53444f9e834b79d8ded01b40d673e1f8c64ee143",
+    "receipts/heca_primary_execution.json": "358db8268a3ac20ea3d1e4bec287ffc2cc79019acc2f3322a0b32d2783e1e3b6",
+    "receipts/local_container_build.json": "a7b342e4d117051f5b11776016fc01040242e2f5b29577534723a8a9e7817e21",
+    "receipts/local_container_nextflow.json": "bb3fe28bc38806f1b9bab3816b9e46417ab04da7787b1cdc8f0af1f243b0618f",
+    "receipts/m0_input_gate_decision.json": "0969a5e163b8845df5c3daed7e56dd9deaf11bc55f2ebef3a3eb10640f46e886",
+    "receipts/replication_evaluation_tests.json": "9705b00f9f9abbfa262dd9933b0fd8d8b478085879723983043c14bef16a8ff2",
+    "receipts/replication_fix_adjudication.json": "76446cd7a9482e6226f36c8f4b5fc4843c30385c6e960ad2a3993313c1987a43",
+    "receipts/replication_implementation_freeze.json": "e28db1a5f4100b3f2e844b5d49615fe7168f91e01a177f6fcc60029342887990",
+    "receipts/replication_independent_review.json": "80ae555e2b9e63713711cc6e1eb676bceb329490396e050c16db0177278a2e53",
+    "receipts/replication_nextflow_tests.json": "b2bd340215e20a04e57d1d7748f45abaf4cec775648face5ad097ef8e575b9c9",
+    "receipts/resampling_tests.json": "2c803d3fe5f7486d572c8c4cbc6a05186a4ad91957a3ef2cdb713832b1457360",
+    "receipts/runtime_statistics_R_smoke.json": "4f3aa34a5dc48bf9fb7470dce1e2eadca0ef7f1a9ca134cf1feddb8535cabece",
+    "receipts/runtime_statistics_install.json": "5a65eda490112f6cd34722796294baf5be4adf80f5af79350b29f31090c6c527",
+    "receipts/statistical_pre_effect_freeze.json": "8ae5baaf46068fb8587b7f81465a6c1028de3a1b55dcca91c162b6559ab91430",
+    "replication.config": "87a1afa33c51043b82da0be28d7a5e5786559163155257c7e562b40afc2fc501",
+    "replication.nf": "3b06ec4c3aa01a10cd02334ec48d0d99deaa898299eec85faefd71b3a579295e",
+    "reports/final_clinical_design_discovery_primary.tsv": "cfde21f83223ca3ba74f9f1e0b330aea98ca2341f4efe47348d6fa6f5f99241c",
+    "reports/final_clinical_design_heca_primary.tsv": "e8eaf603af32950b6b329ba7f0501c23d25f9cb22e6177fd76609adee44a638b",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6",
+    "requirements/statistical-runtime.yml": "51e78370e2a5495a33a6272c5a8159d9233a07fd851d28086da79b8d1b4b8269",
+    "scripts/audit_lineage_markers.py": "32a2ef4ab6fbdeb8af75e5d62f14e37a82a3b570d5dc3de5057fc5c02d4ead9c",
+    "scripts/audit_m0_contracts.py": "3545a9c5ab66cd81b7c0f4e10e108ca694070ffa3dbcf8c766548f2a50d3ee5b",
+    "scripts/check_local_container_nextflow.py": "5e4e64eb90911e7be0fbff45d8f48d3518549de54ba857ecf1d816cabdd50b04",
+    "scripts/check_local_primary_replay.py": "aee7926ecfbdb178308ef2b8074be2c476bee5a07a4a6fdf872da4e41820206e",
+    "scripts/clinical_gate_audit.py": "66b119fa6a9fe0f316309bf6d8a0ba7b9e1b372dbf473545c6c067cc50d9aa76",
+    "scripts/discovery_clinical_gate.py": "dbc0e4d5ffd594bb80436f7dc60a8f116879747eb953bf78e38838f5dd4f48b1",
+    "scripts/discovery_design_audit.py": "205cd2593b7239c6c0f7b6297872e0402cf2238647cc21a762ebc2c3463d759d",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/evaluate_replication.py": "76464563522a7f7ef33eea66ba95c4f727ee5b23c8207ea1f794e904a47038b0",
+    "scripts/fetch_clinical_supplements.py": "041a10f6a7f6c35c6afb969aa2fb60e4980fef23a8ec74992ad4be46130d4d7c",
+    "scripts/fetch_gene_annotation.py": "ec37386df40b12003b66aac8b5127eedb60270074d3d817e45e57f0ab95a3cc4",
+    "scripts/final_clinical_gate.py": "bb63aa92565c5cfa5d0ebe48378d2d8eab3a1df3de776016abe40dbdccf58179",
+    "scripts/fit_donor_de.R": "e68c80e3c2d37ec260a814890d5c7f2fdbad5033b95c22c30b53811e289be07c",
+    "scripts/freeze_analysis.py": "0dd5a528eeb71db3c024da463eec9bd0a3508d66802f98f990b37d6d9755cddd",
+    "scripts/freeze_replication.py": "45ecb350580c5de52827ad4aa3d1ca265f539c1018491ae9c8c1c50bf839eb91",
+    "scripts/heca_count_layer_audit.py": "846638aa678b5566d3b482dcc4ac635a78fe92d1b31cfb88fbaed36c8a329f30",
+    "scripts/heca_h5_metadata.py": "3da94586a1f7cad35f78fda6423be1482fed546a8531d4f7535d19d27f5e878d",
+    "scripts/m0_metadata.py": "d3073297fa57c66b52b4c693bd8b1b7bf2293104ea843cc2bbe28f32b735eaa4",
+    "scripts/map_string_genes.py": "db6e90fa6ff469c0d3588edf9b66d97a5412887a5c0e181913a69b242a2ca730",
+    "scripts/prepare_discovery_counts.py": "b59378263c2a21669915ef178e8c5d5befd30b2385a0f35b8d16e1c18cf9e6a3",
+    "scripts/prepare_heca_counts.py": "c8685a2ff40709821c63671aa4406b1bd032c0f5f45dccb96478b17c649423f6",
+    "scripts/prepare_string_reference.py": "8d0fa0bfb7272eb1c6b756eb78feabf0f5109c27a5ef68a2c116c2cede50e019",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "scripts/resample_donor_models.R": "04a922a7dd13fa96a8eab1b1f8eac8c4929bb9cd78f4ece8b333ca7cd79f01a6",
+    "scripts/run_discovery_lodo.py": "fc85be383ff76661217e70f6d3d1e110a58189600cd5d2d807ba583397160b77",
+    "scripts/sample_matched_nulls.py": "587092a1f2b2a8915759df67eaf23d4c2d4a18232c9308cac7afd6b2fff90ba5",
+    "scripts/setup_statistical_runtime.sh": "96316eda46ae6df52ba0437c0ff1292882f24ae219c35273ce188fd4b073661e",
+    "scripts/smoke_statistical_runtime.R": "a3e5c3eb6c93f6e25caeec4c39bd6e59c338b3784006b2bc5cea5a39a12bc157",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "scripts/validate_heca_counts.py": "703e5f4aac217b313c19b8078f5ff3979ad4c486b7b7ea3185818acc0d79d4db",
+    "tests/check_replication_nextflow.py": "2c641da6aa9fc09ee973631711dc738730f0a54dd64cb39eb905bc137587d6ee",
+    "tests/make_replication_synthetic.py": "b7363cda36ae317218e8a482d3791280b78aec1eadb015e80dcb9a5b4f86353e",
+    "tests/test_lodo.py": "6601aa4e22e2ff9347cd3fc20e619d7c9fa11e9c18d26206ed63a77842d37913",
+    "tests/test_replication_evaluation.py": "418bf0cd79f010c1c57989dda6f245d8cd54de44fc7fbd6a7252116d5961a42e",
+    "tests/test_resampling.R": "9e8fa3ba0db88156f6f62160af483985be95efd8d689d5f3dc6f2e24ddaf65e1",
+    "work/local-runtime/nextflow/nextflow-25.10.2-one.jar": "0057035603c5fc18f42dc4bfbfcb7fc957d307c4111a9a7f2896d85d78340835",
+    "work/statistical/discovery_primary/de/de_all.tsv": "b1da2ff253f154e23f0b9276ecf45d9c2a1645b08b2fbbedb1fc4552a00c4e94",
+    "work/statistical/discovery_primary/de/de_fitted.tsv": "b1da2ff253f154e23f0b9276ecf45d9c2a1645b08b2fbbedb1fc4552a00c4e94",
+    "work/statistical/discovery_primary/de/design.tsv": "dd16c73bf14b7801752edbb5fbef6734c7dc6fff3a70d6c29576deb90ccab42b",
+    "work/statistical/discovery_primary/de/expression_filter.tsv": "702945bdf9a684a1e12823ed6b22197ad5a1179e001af2b528ee7eb45f992292",
+    "work/statistical/discovery_primary/de/model.rds": "43692814c50fecdd35ec462a281994f394d9551065d2600a8aed8e8889a6ab71",
+    "work/statistical/discovery_primary/de/normalization.tsv": "ed20223396201bcd3599f3d561d56bb66ca094f452cc572be75f4545c39d7e6c",
+    "work/statistical/discovery_primary/de/provenance.json": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
+    "work/statistical/discovery_primary/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/statistical/discovery_primary/nulls/B0_null_membership.tsv": "cf63d425f08b1bfe48f4e19f00fcb53b2bc19efe2397b048e3ba8b0dbfa2d921",
+    "work/statistical/discovery_primary/nulls/B1_null_membership.tsv": "ab28fd2a2197406788081ef6addc2fa7e63e3e0cd371a6facaf91525fc662fb3",
+    "work/statistical/discovery_primary/nulls/G1_null_membership.tsv": "57390deaee8b373106e95c1315bdcf914256a2a747b5efb62d4423da924d46e9",
+    "work/statistical/discovery_primary/nulls/all_U_directions.tsv": "75d72b23cce7b8a14f46987472bd6ea10eff6d0ce2a3a412cf38f67aca771a2f",
+    "work/statistical/discovery_primary/nulls/bin_demands.tsv": "32cb21de6a6c604363abb1826fac8907136818003941306d3e64e6bd5ad90c87",
+    "work/statistical/discovery_primary/nulls/boundaries.json": "eda0efb5d7d8b611933b162f5ecd5fa475d7dc767ab7afd8a407b0ae10aca0e4",
+    "work/statistical/discovery_primary/nulls/null_memberships.tsv": "0b9e7a06f4dbdaedd2bb513b9abc40a4a41fc3cf855d48b11e4f2dfc6d981e9c",
+    "work/statistical/discovery_primary/nulls/status.json": "ea1c94e96f7e4a7ee96269602ebe2fbf55fb532e56ab999212634ae6af352aad",
+    "work/statistical/discovery_primary/nulls/universe_bins.tsv": "a2fec339cd7abbea08d60b35a7b671b48abb19116dd6f277eae4d570778f1c72",
+    "work/statistical/discovery_primary/ranking/B0.tsv": "32b931a18cdef05e763278435e200811b3bdb01e243fff7fb5fa24cc124e763f",
+    "work/statistical/discovery_primary/ranking/B0_top20.tsv": "fd6addcbc046e3c61fc4ce21f4beed2e1a01759cac6ae0dc942f497b541d38a5",
+    "work/statistical/discovery_primary/ranking/B0_top50.tsv": "745f45a41c9fa7b10e7f326435946e46fbfb53fbb4a84e05fd4e51c6fb2f3b8d",
+    "work/statistical/discovery_primary/ranking/B1.tsv": "336a4c7125e6ae205c62deadd675ecaffc49c70c64c14a795e2828e03e423f3f",
+    "work/statistical/discovery_primary/ranking/B1_top20.tsv": "8550943234771f9e9f49f1255513a99dde9bc84cf22b7ebdba0520f7803d15e9",
+    "work/statistical/discovery_primary/ranking/B1_top50.tsv": "557a2ca330dcd5d2fc09097cc126b249b664d46c7ac322ed52e00f7ad2049a8c",
+    "work/statistical/discovery_primary/ranking/G1.tsv": "f2cfa7a271069e0d89c0af2652486c42f2111d3e832588528a47d2afc66ac35e",
+    "work/statistical/discovery_primary/ranking/G1_top20.tsv": "f3e0e2d8af611db6c22e234fc365f706c4316d1fb4adb727cafa60b1d15ee26c",
+    "work/statistical/discovery_primary/ranking/G1_top50.tsv": "703886c3e9671fcf9fc7911d28185e959f93f3ddecb0b4ce19ff04836090ab8d",
+    "work/statistical/discovery_primary/ranking/excluded_genes.tsv": "21dd8eb6a9af6cfb83178c670eda47e2e0f84d3ca93bfd355d34b0e0f723a600",
+    "work/statistical/discovery_primary/ranking/induced_edges.tsv": "a1e923af57260c6ba6f61c89b9138049c3b3da92549a893c98ec3629ae39e3fd",
+    "work/statistical/discovery_primary/ranking/provenance.json": "29af78115872d016045f5a5ab740216a7298589b134c7e882039cfb8b1492efb",
+    "work/statistical/discovery_primary/ranking/universe.tsv": "0f25f9f775e431f3f34e90d1d6e1dc33c48c99c5c3aee90b3a3ae1170d06b26c",
+    "work/statistical/heca_primary/de/de_all.tsv": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+    "work/statistical/heca_primary/de/de_fitted.tsv": "5e8d2f1b37e5d45aad30eb8060a70b54c23715b56ba92f2f0fcf0840d5b51659",
+    "work/statistical/heca_primary/de/design.tsv": "205f6b014e23066a811244f5d7afae3e0cad520faa9e5d1f3e6d1e4a5b175509",
+    "work/statistical/heca_primary/de/expression_filter.tsv": "73a3b6a27320d0f08df6bd8746df57c4e6f540e8649e9a3fa01025eb9f254b0e",
+    "work/statistical/heca_primary/de/model.rds": "10306b806a875d9bb42f699bfcc8851d39c3282d4705f5f7d215775364daa174",
+    "work/statistical/heca_primary/de/normalization.tsv": "0a7789b20efde7188d00685f789e96be7e7eb4647f206c5715ce3695a80e0275",
+    "work/statistical/heca_primary/de/provenance.json": "e84a468eb71d6e7c0614c37a25faecd7e0dfab5e17360299f5eb6b36df52bf46",
+    "work/statistical/heca_primary/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3",
+    "work/statistical/heca_primary/evaluation/bootstrap_interface.tsv": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+    "work/statistical/heca_primary/evaluation/dossier_pool.tsv": "2f31cf38db9d4086249eb3a1f794e4f2e47a70b974925d45c3aef1622d19d4cc",
+    "work/statistical/heca_primary/evaluation/dossier_selection.tsv": "d246cdcdb4ed87ae0cf0dfa0ba529069d5d67f04dff00c74346857e49d9957fa",
+    "work/statistical/heca_primary/evaluation/null_sets.tsv": "c8dc028443f496fcbaee3ab36be418960d18ae386647fe4f2fa2d6593bea426b",
+    "work/statistical/heca_primary/evaluation/null_summary.json": "ffc4d86ff269f63345b4454b72416cf519d3068f73b0da24c3c935d460441a32",
+    "work/statistical/heca_primary/evaluation/provenance.json": "cb720faff633bf2660018656c56520a68cfdea3f80ecfdbf1c2f1b3d79943679",
+    "work/statistical/heca_primary/evaluation/selected_genes.tsv": "fed88b5677c51b7e1e36ebe52270111a292299ec5e3c339f6159c26d3baa4db5",
+    "work/statistical/heca_primary/evaluation/summary.json": "bb44ae312ccabe52d9b1da23db20b32ddeac5d0b84605e76c88fcf0e24afe14b"
+  },
+  "completed_utc": "2026-10-14T02:44:20.206381+00:00"
+}

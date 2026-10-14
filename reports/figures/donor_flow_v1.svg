@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="990" viewBox="0 0 1500 990" role="img" aria-labelledby="title desc">
+<title id="title">Source donors to primary analyzed cohorts</title><desc id="desc">Sequential donor selection in discovery and HECA; exclusions assigned to first failed stage, no double counting. Case/control counts shown at each stage.</desc>
+<rect width="100%" height="100%" fill="white"/><g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="35" y="42" font-size="25" fill="#243247" >Donor flow: source eligibility to fixed primary cohorts</text>
+<text x="35" y="72" font-size="16" fill="#243247" >All counts are people, not libraries or cell-level observations. Sequential losses are mutually exclusive.</text>
+<text x="35" y="126" font-size="22" fill="#243247" >Discovery: GSE266265</text>
+<rect x="35.00" y="158.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="53" y="186" font-size="18" fill="#243247" >Source clinical donors</text>
+<text x="53" y="219" font-size="19" fill="#243247" >60 donors = 35 ENDO + 25 non-ENDO</text>
+<line x1="365" y1="245" x2="365" y2="277" stroke="#56718b" stroke-width="2"/>
+<text x="385" y="268" font-size="13" fill="#243247" >Excluded 32 (20 / 12)</text>
+<rect x="35.00" y="283.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="53" y="311" font-size="18" fill="#243247" >Author proliferative phase</text>
+<text x="53" y="344" font-size="19" fill="#243247" >28 donors = 15 ENDO + 13 non-ENDO</text>
+<line x1="365" y1="370" x2="365" y2="402" stroke="#56718b" stroke-width="2"/>
+<text x="385" y="393" font-size="13" fill="#243247" >Excluded 5 (3 / 2)</text>
+<rect x="35.00" y="408.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="53" y="436" font-size="18" fill="#243247" >No source minor exclusion flag</text>
+<text x="53" y="469" font-size="19" fill="#243247" >23 donors = 12 ENDO + 11 non-ENDO</text>
+<line x1="365" y1="495" x2="365" y2="527" stroke="#56718b" stroke-width="2"/>
+<text x="385" y="518" font-size="13" fill="#243247" >Excluded 1 (0 / 1)</text>
+<rect x="35.00" y="533.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="53" y="561" font-size="18" fill="#243247" >Disease-label consistency</text>
+<text x="53" y="594" font-size="19" fill="#243247" >22 donors = 12 ENDO + 10 non-ENDO</text>
+<line x1="365" y1="620" x2="365" y2="652" stroke="#56718b" stroke-width="2"/>
+<text x="385" y="643" font-size="13" fill="#243247" >Excluded 0 (0 / 0)</text>
+<rect x="35.00" y="658.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="53" y="686" font-size="18" fill="#243247" >At least 50 primary cells</text>
+<text x="53" y="719" font-size="19" fill="#243247" >22 donors = 12 ENDO + 10 non-ENDO</text>
+<text x="35" y="817" font-size="20" fill="#243247" >22 donors / 150,788 primary cells</text>
+<text x="780" y="126" font-size="22" fill="#243247" >Replication: HECA E-MTAB-14039</text>
+<rect x="780.00" y="158.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="798" y="186" font-size="18" fill="#243247" >Source donor ledger</text>
+<text x="798" y="219" font-size="19" fill="#243247" >63 donors = 44 ENDO + 19 non-ENDO</text>
+<line x1="1110" y1="245" x2="1110" y2="277" stroke="#56718b" stroke-width="2"/>
+<text x="1130" y="268" font-size="13" fill="#243247" >Excluded 39 (28 / 11)</text>
+<rect x="780.00" y="283.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="798" y="311" font-size="18" fill="#243247" >Author proliferative phase</text>
+<text x="798" y="344" font-size="19" fill="#243247" >24 donors = 16 ENDO + 8 non-ENDO</text>
+<line x1="1110" y1="370" x2="1110" y2="402" stroke="#56718b" stroke-width="2"/>
+<text x="1130" y="393" font-size="13" fill="#243247" >Excluded 1 (0 / 1)</text>
+<rect x="780.00" y="408.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="798" y="436" font-size="18" fill="#243247" >Exclude mixed menstrual phase</text>
+<text x="798" y="469" font-size="19" fill="#243247" >23 donors = 16 ENDO + 7 non-ENDO</text>
+<line x1="1110" y1="495" x2="1110" y2="527" stroke="#56718b" stroke-width="2"/>
+<text x="1130" y="518" font-size="13" fill="#243247" >Excluded 1 (1 / 0)</text>
+<rect x="780.00" y="533.00" width="680.00" height="86.00" fill="#eef3f8" rx="8"/>
+<text x="798" y="561" font-size="18" fill="#243247" >At least 50 primary nuclei</text>
+<text x="798" y="594" font-size="19" fill="#243247" >22 donors = 15 ENDO + 7 non-ENDO</text>
+<text x="780" y="817" font-size="20" fill="#243247" >22 donors / 52,744 primary nuclei</text>
+<text x="35" y="860" font-size="14" fill="#243247" >Exclusion parentheses = cases / controls. HECA mixed phase is removed before the count threshold; FX1141 is counted once.</text>
+<text x="35" y="886" font-size="14" fill="#243247" >HECA: 68 source samples represent 63 donors; 26 proliferative samples represent 24 donors. Two retained donors each use one selected library.</text>
+<text x="35" y="912" font-size="14" fill="#243247" >The final selected-library rule excludes 2,741 nuclei without removing those two people; FX1215 has zero primary nuclei and is excluded.</text>
+<text x="35" y="938" font-size="14" fill="#243247" >Author phase and hormone-eligibility evidence remain inherited. Source separation is documented; genotype-confirmed individual non-overlap is unavailable.</text>
+<text x="35" y="964" font-size="14" fill="#243247" >Donor minimums and full-rank model gates apply after these selections. This diagram does not establish cell purity or causal disease effects.</text>
+</g></svg>

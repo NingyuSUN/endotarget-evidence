@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T14:03:16.769809+00:00",
+  "status": "PASS_SOURCE_CHECKSUM_DRY_RUN_WITH_PARENT_DIRECTORY_MTIME_DIFFERENCES",
+  "source": {
+    "host": "SRV01",
+    "root": "/home/analyst/te",
+    "commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+    "directories": [
+      "data",
+      "work",
+      "logs",
+      ".nextflow"
+    ]
+  },
+  "destination": {
+    "root": "/mnt/g/projects/te",
+    "branch": "codex/local-execution",
+    "head_before_receipt": "4cc7580851cbfcb776385ac0ae858fe5f81e818b"
+  },
+  "source_inventory": {
+    "entries": 8593,
+    "regular_files": 7501,
+    "directories": 597,
+    "symbolic_links": 495,
+    "regular_file_bytes": 3476278855,
+    "total_file_size_bytes": 3476307048,
+    "regular_bytes_evidence": "Parent agent measured the completed full transfer inventory; rsync check log records total size and entry counts."
+  },
+  "verification": {
+    "method": "rsync --checksum --dry-run with itemized output and statistics",
+    "execution_session": 37043,
+    "exit_code": 0,
+    "exit_code_evidence": "Parent agent observed completion of its full checksum dry-run session with exit 0.",
+    "exact_full_command": "NOT_RECORDED_IN_THIS_LOG",
+    "log": "logs/local_migration_rsync_check.txt",
+    "log_bytes": 580,
+    "log_sha256": "c2785f500581b93c0c08cd00149bb6a5979976cab68c1bf2d188ca40c5c14894",
+    "log_mtime_utc": "2026-10-13T13:56:41.519317+00:00",
+    "created_files": 0,
+    "deleted_files": 0,
+    "regular_files_proposed_for_transfer": 0,
+    "transferred_file_size_bytes": 0,
+    "file_content_differences_reported": 0,
+    "symbolic_link_differences_reported": 0,
+    "directory_metadata_differences": [
+      ".d..t...... logs/",
+      ".d..t...... work/"
+    ],
+    "directory_difference_meaning": "Only modification times of the logs/ and work/ parent directories differ; no file item is listed."
+  },
+  "scope": {
+    "whole_selected_source_transfer_checksum_comparison": true,
+    "source_directories": [
+      "data",
+      "work",
+      "logs",
+      ".nextflow"
+    ],
+    "does_not_assert_absence_of_additional_local_files": "The log does not establish that destination-only local runtime files are absent; no destructive synchronization was requested.",
+    "key_scientific_evidence_verification_receipt": "receipts/local_migration_integrity.json",
+    "key_evidence_check_is_distinct_from_whole_transfer_check": true,
+    "installed_environments_and_package_caches_copied": false,
+    "scientific_recomputation": false,
+    "scientific_validation": false,
+    "container_validation": false
+  }
+}

@@ -1,0 +1,423 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1515" viewBox="0 0 1500 1515" role="img" aria-labelledby="title desc">
+<title id="title">Frozen 40-gene evidence matrix</title><desc id="desc">All 40 frozen B0/G1 pool genes; external expression direction, full-family q, source genetics, conflict status and intervention uncertainty. Unavailable mapping is not a negative genetic test.</desc>
+<rect width="100%" height="100%" fill="white"/><g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="30" y="38" font-size="25" fill="#243247" >Frozen pool: 40 genes, separate evidence layers</text>
+<text x="30" y="66" font-size="15" fill="#243247" >No supported target shortlist: 0 same-direction external q &lt; 0.05; 1 limited genetic mapping / 40; intervention direction unknown / 40.</text>
+<text x="30" y="91" font-size="14" fill="#243247" >Genes are ordered by B0 rank; selection badges identify the frozen expression (B0) or network-propagation (G1) top 20.</text>
+<text x="35" y="130" font-size="13" fill="#243247" >Gene</text>
+<text x="155" y="130" font-size="13" fill="#243247" >List</text>
+<text x="225" y="130" font-size="13" fill="#243247" >B0 rank</text>
+<text x="315" y="130" font-size="13" fill="#243247" >G1 rank</text>
+<text x="415" y="130" font-size="13" fill="#243247" >External direction</text>
+<text x="625" y="130" font-size="13" fill="#243247" >External q</text>
+<text x="755" y="130" font-size="13" fill="#243247" >Genetic mapping (one source)</text>
+<text x="1085" y="130" font-size="13" fill="#243247" >Conflict</text>
+<text x="1275" y="130" font-size="13" fill="#243247" >Intervention</text>
+<rect x="25.00" y="135.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="151" font-size="13" fill="#243247" >PARP9</text>
+<text x="155" y="151" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="151" font-size="13" fill="#243247" >1</text>
+<text x="315" y="151" font-size="13" fill="#243247" >112</text>
+<text x="415" y="151" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="151" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="151" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="151" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="151" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="164.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="180" font-size="13" fill="#243247" >SKIDA1</text>
+<text x="155" y="180" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="180" font-size="13" fill="#243247" >2</text>
+<text x="315" y="180" font-size="13" fill="#243247" >272</text>
+<text x="415" y="180" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="180" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="180" font-size="13" fill="#243247" >Limited positional / QTL</text>
+<text x="1085" y="180" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="180" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="193.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="209" font-size="13" fill="#243247" >TMEM128</text>
+<text x="155" y="209" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="209" font-size="13" fill="#243247" >3</text>
+<text x="315" y="209" font-size="13" fill="#243247" >295</text>
+<text x="415" y="209" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="209" font-size="13" fill="#243247" >0.976</text>
+<text x="755" y="209" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="209" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="209" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="222.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="238" font-size="13" fill="#243247" >ATAD3A</text>
+<text x="155" y="238" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="238" font-size="13" fill="#243247" >4</text>
+<text x="315" y="238" font-size="13" fill="#243247" >263</text>
+<text x="415" y="238" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="238" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="238" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="238" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="238" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="251.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="267" font-size="13" fill="#243247" >SCRIB</text>
+<text x="155" y="267" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="267" font-size="13" fill="#243247" >5</text>
+<text x="315" y="267" font-size="13" fill="#243247" >121</text>
+<text x="415" y="267" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="267" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="267" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="267" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="267" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="280.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="296" font-size="13" fill="#243247" >NT5DC2</text>
+<text x="155" y="296" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="296" font-size="13" fill="#243247" >6</text>
+<text x="315" y="296" font-size="13" fill="#243247" >133</text>
+<text x="415" y="296" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="296" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="296" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="296" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="296" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="309.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="325" font-size="13" fill="#243247" >LDOC1</text>
+<text x="155" y="325" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="325" font-size="13" fill="#243247" >7</text>
+<text x="315" y="325" font-size="13" fill="#243247" >385</text>
+<text x="415" y="325" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="325" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="325" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="325" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="325" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="338.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="354" font-size="13" fill="#243247" >DYNLRB2</text>
+<text x="155" y="354" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="354" font-size="13" fill="#243247" >8</text>
+<text x="315" y="354" font-size="13" fill="#243247" >298</text>
+<text x="415" y="354" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="354" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="354" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="354" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="354" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="367.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="383" font-size="13" fill="#243247" >USP18</text>
+<text x="155" y="383" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="383" font-size="13" fill="#243247" >9</text>
+<text x="315" y="383" font-size="13" fill="#243247" >375</text>
+<text x="415" y="383" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="383" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="383" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="383" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="383" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="396.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="412" font-size="13" fill="#243247" >FCGRT</text>
+<text x="155" y="412" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="412" font-size="13" fill="#243247" >10</text>
+<text x="315" y="412" font-size="13" fill="#243247" >522</text>
+<text x="415" y="412" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="412" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="412" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="412" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="412" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="425.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="441" font-size="13" fill="#243247" >TENT5C</text>
+<text x="155" y="441" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="441" font-size="13" fill="#243247" >11</text>
+<text x="315" y="441" font-size="13" fill="#243247" >374</text>
+<text x="415" y="441" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="441" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="441" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="441" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="441" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="454.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="470" font-size="13" fill="#243247" >DYNC2LI1</text>
+<text x="155" y="470" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="470" font-size="13" fill="#243247" >12</text>
+<text x="315" y="470" font-size="13" fill="#243247" >315</text>
+<text x="415" y="470" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="470" font-size="13" fill="#243247" >0.977</text>
+<text x="755" y="470" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="470" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="470" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="483.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="499" font-size="13" fill="#243247" >PGAM5</text>
+<text x="155" y="499" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="499" font-size="13" fill="#243247" >13</text>
+<text x="315" y="499" font-size="13" fill="#243247" >357</text>
+<text x="415" y="499" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="499" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="499" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="499" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="499" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="512.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="528" font-size="13" fill="#243247" >TPM3</text>
+<text x="155" y="528" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="528" font-size="13" fill="#243247" >14</text>
+<text x="315" y="528" font-size="13" fill="#243247" >244</text>
+<text x="415" y="528" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="528" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="528" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="528" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="528" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="541.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="557" font-size="13" fill="#243247" >MAST2</text>
+<text x="155" y="557" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="557" font-size="13" fill="#243247" >15</text>
+<text x="315" y="557" font-size="13" fill="#243247" >597</text>
+<text x="415" y="557" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="557" font-size="13" fill="#243247" >0.982</text>
+<text x="755" y="557" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="557" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="557" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="570.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="586" font-size="13" fill="#243247" >TUBB6</text>
+<text x="155" y="586" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="586" font-size="13" fill="#243247" >16</text>
+<text x="315" y="586" font-size="13" fill="#243247" >476</text>
+<text x="415" y="586" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="586" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="586" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="586" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="586" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="599.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="615" font-size="13" fill="#243247" >KIF1C</text>
+<text x="155" y="615" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="615" font-size="13" fill="#243247" >17</text>
+<text x="315" y="615" font-size="13" fill="#243247" >239</text>
+<text x="415" y="615" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="615" font-size="13" fill="#243247" >0.972</text>
+<text x="755" y="615" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="615" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="615" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="628.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="644" font-size="13" fill="#243247" >SLC25A10</text>
+<text x="155" y="644" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="644" font-size="13" fill="#243247" >18</text>
+<text x="315" y="644" font-size="13" fill="#243247" >398</text>
+<text x="415" y="644" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="644" font-size="13" fill="#243247" >0.990</text>
+<text x="755" y="644" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="644" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="644" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="657.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="673" font-size="13" fill="#243247" >IFIH1</text>
+<text x="155" y="673" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="673" font-size="13" fill="#243247" >19</text>
+<text x="315" y="673" font-size="13" fill="#243247" >234</text>
+<text x="415" y="673" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="673" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="673" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="673" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="673" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="686.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="702" font-size="13" fill="#243247" >MEI1</text>
+<text x="155" y="702" font-size="13" fill="#243247" >B0</text>
+<text x="225" y="702" font-size="13" fill="#243247" >20</text>
+<text x="315" y="702" font-size="13" fill="#243247" >303</text>
+<text x="415" y="702" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="702" font-size="13" fill="#243247" >0.976</text>
+<text x="755" y="702" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="702" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="702" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="715.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="731" font-size="13" fill="#243247" >GNB1</text>
+<text x="155" y="731" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="731" font-size="13" fill="#243247" >94</text>
+<text x="315" y="731" font-size="13" fill="#243247" >6</text>
+<text x="415" y="731" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="731" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="731" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="731" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="731" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="744.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="760" font-size="13" fill="#243247" >DYNLL1</text>
+<text x="155" y="760" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="760" font-size="13" fill="#243247" >172</text>
+<text x="315" y="760" font-size="13" fill="#243247" >18</text>
+<text x="415" y="760" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="760" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="760" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="760" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="760" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="773.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="789" font-size="13" fill="#243247" >MAPK1</text>
+<text x="155" y="789" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="789" font-size="13" fill="#243247" >207</text>
+<text x="315" y="789" font-size="13" fill="#243247" >19</text>
+<text x="415" y="789" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="789" font-size="13" fill="#243247" >0.982</text>
+<text x="755" y="789" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="789" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="789" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="802.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="818" font-size="13" fill="#243247" >TRIM28</text>
+<text x="155" y="818" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="818" font-size="13" fill="#243247" >803</text>
+<text x="315" y="818" font-size="13" fill="#243247" >1</text>
+<text x="415" y="818" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="818" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="818" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="818" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="818" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="831.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="847" font-size="13" fill="#243247" >BRCA1</text>
+<text x="155" y="847" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="847" font-size="13" fill="#243247" >1480</text>
+<text x="315" y="847" font-size="13" fill="#243247" >10</text>
+<text x="415" y="847" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="847" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="847" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="847" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="847" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="860.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="876" font-size="13" fill="#243247" >CCNF</text>
+<text x="155" y="876" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="876" font-size="13" fill="#243247" >1698</text>
+<text x="315" y="876" font-size="13" fill="#243247" >11</text>
+<text x="415" y="876" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="876" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="876" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="876" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="876" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="889.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="905" font-size="13" fill="#243247" >CUL3</text>
+<text x="155" y="905" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="905" font-size="13" fill="#243247" >2318</text>
+<text x="315" y="905" font-size="13" fill="#243247" >13</text>
+<text x="415" y="905" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="905" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="905" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="905" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="905" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="918.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="934" font-size="13" fill="#243247" >LRRK2</text>
+<text x="155" y="934" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="934" font-size="13" fill="#243247" >2393</text>
+<text x="315" y="934" font-size="13" fill="#243247" >12</text>
+<text x="415" y="934" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="934" font-size="13" fill="#243247" >0.977</text>
+<text x="755" y="934" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="934" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="934" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="947.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="963" font-size="13" fill="#243247" >ANLN</text>
+<text x="155" y="963" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="963" font-size="13" fill="#243247" >2551</text>
+<text x="315" y="963" font-size="13" fill="#243247" >3</text>
+<text x="415" y="963" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="963" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="963" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="963" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="963" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="976.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="992" font-size="13" fill="#243247" >PLK1</text>
+<text x="155" y="992" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="992" font-size="13" fill="#243247" >2669</text>
+<text x="315" y="992" font-size="13" fill="#243247" >17</text>
+<text x="415" y="992" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="992" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="992" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="992" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="992" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1005.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="1021" font-size="13" fill="#243247" >H4C6</text>
+<text x="155" y="1021" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1021" font-size="13" fill="#243247" >5499</text>
+<text x="315" y="1021" font-size="13" fill="#243247" >8</text>
+<text x="415" y="1021" font-size="13" fill="#697386" >Not evaluable</text>
+<text x="625" y="1021" font-size="13" fill="#243247" >NA</text>
+<text x="755" y="1021" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1021" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1021" font-size="13" fill="#243247" >Unknown</text>
+<text x="415" y="1032" font-size="9" fill="#243247" >expression filter failed</text>
+<rect x="25.00" y="1034.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="1050" font-size="13" fill="#243247" >NUDCD1</text>
+<text x="155" y="1050" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1050" font-size="13" fill="#243247" >5531</text>
+<text x="315" y="1050" font-size="13" fill="#243247" >7</text>
+<text x="415" y="1050" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="1050" font-size="13" fill="#243247" >0.979</text>
+<text x="755" y="1050" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1050" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1050" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1063.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="1079" font-size="13" fill="#243247" >ACTB</text>
+<text x="155" y="1079" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1079" font-size="13" fill="#243247" >6120</text>
+<text x="315" y="1079" font-size="13" fill="#243247" >15</text>
+<text x="415" y="1079" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="1079" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="1079" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1079" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1079" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1092.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="1108" font-size="13" fill="#243247" >CTNNB1</text>
+<text x="155" y="1108" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1108" font-size="13" fill="#243247" >7477</text>
+<text x="315" y="1108" font-size="13" fill="#243247" >20</text>
+<text x="415" y="1108" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="1108" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="1108" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1108" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1108" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1121.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="1137" font-size="13" fill="#243247" >MAPT</text>
+<text x="155" y="1137" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1137" font-size="13" fill="#243247" >7559</text>
+<text x="315" y="1137" font-size="13" fill="#243247" >2</text>
+<text x="415" y="1137" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="1137" font-size="13" fill="#243247" >0.977</text>
+<text x="755" y="1137" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1137" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1137" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1150.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="1166" font-size="13" fill="#243247" >BRD4</text>
+<text x="155" y="1166" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1166" font-size="13" fill="#243247" >7640</text>
+<text x="315" y="1166" font-size="13" fill="#243247" >9</text>
+<text x="415" y="1166" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="1166" font-size="13" fill="#243247" >0.988</text>
+<text x="755" y="1166" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1166" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1166" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1179.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="1195" font-size="13" fill="#243247" >TP53</text>
+<text x="155" y="1195" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1195" font-size="13" fill="#243247" >7975</text>
+<text x="315" y="1195" font-size="13" fill="#243247" >4</text>
+<text x="415" y="1195" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="1195" font-size="13" fill="#243247" >0.999</text>
+<text x="755" y="1195" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1195" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1195" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1208.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="1224" font-size="13" fill="#243247" >UBC</text>
+<text x="155" y="1224" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1224" font-size="13" fill="#243247" >9293</text>
+<text x="315" y="1224" font-size="13" fill="#243247" >5</text>
+<text x="415" y="1224" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="1224" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="1224" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1224" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1224" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1237.00" width="1450.00" height="28.00" fill="#f4f7fa" />
+<text x="35" y="1253" font-size="13" fill="#243247" >GNG2</text>
+<text x="155" y="1253" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1253" font-size="13" fill="#243247" >10281</text>
+<text x="315" y="1253" font-size="13" fill="#243247" >16</text>
+<text x="415" y="1253" font-size="13" fill="#087f8c" >Same sign</text>
+<text x="625" y="1253" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="1253" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1253" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1253" font-size="13" fill="#243247" >Unknown</text>
+<rect x="25.00" y="1266.00" width="1450.00" height="28.00" fill="white" />
+<text x="35" y="1282" font-size="13" fill="#243247" >EGFR</text>
+<text x="155" y="1282" font-size="13" fill="#243247" >G1</text>
+<text x="225" y="1282" font-size="13" fill="#243247" >11724</text>
+<text x="315" y="1282" font-size="13" fill="#243247" >14</text>
+<text x="415" y="1282" font-size="13" fill="#ad5d20" >Opposite sign</text>
+<text x="625" y="1282" font-size="13" fill="#243247" >0.970</text>
+<text x="755" y="1282" font-size="13" fill="#243247" >Unavailable in audited source</text>
+<text x="1085" y="1282" font-size="13" fill="#243247" >Not established</text>
+<text x="1275" y="1282" font-size="13" fill="#243247" >Unknown</text>
+<text x="30" y="1351" font-size="14" fill="#243247" >Direction = sign agreement with the frozen discovery coefficient; opposite signs alone do not establish a precise biological conflict.</text>
+<text x="30" y="1375" font-size="14" fill="#243247" >q = BH adjustment across all 17,643 externally tested genes. A large q means insufficient evidence here; it does not prove no effect.</text>
+<text x="30" y="1399" font-size="14" fill="#243247" >Unavailable genetics = no mapping in the prespecified 2023 source, not 39 negative tests. SKIDA1 annotations reuse one publication.</text>
+<text x="30" y="1423" font-size="14" fill="#243247" >Not established conflict / unknown intervention = evidence not established, not absence of conflict or proof that activation/inhibition helps.</text>
+<text x="30" y="1455" font-size="14" fill="#243247" >The deterministic dossier rule selected only inconclusive PARP9 (hold); no precise opposite-effect or supported dossier emerged.</text>
+<text x="30" y="1480" font-size="13" fill="#243247" >Rows include all frozen pool members; full IDs, effect intervals, missing reasons and provenance remain in replication_v2_dossier_pool.tsv.</text>
+</g></svg>

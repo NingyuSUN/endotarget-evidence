@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "created_utc": "2026-10-14T02:47:45.931600+00:00",
+  "reviewer": "Codex visual inspection",
+  "pdf_pages": 2,
+  "artifacts": {
+    "reports/figures/donor_flow_v1.svg": "3870eba5a0b876e819062dd8ccb1a21226752ff82cec3fd1e88d4e29e3d19670",
+    "reports/figures/donor_composition_qc_v1.svg": "e9cf007e1a1d980837769c5dbc16eb71b9c3e680ceba86f2fe39e10f4b379e5e",
+    "reports/figures/matched_null_sensitivity_v1.svg": "aa458f709d2852184fbc8536978ed9d224aed3e516644e6ae97b11541ba09406",
+    "reports/figures/evidence_matrix_v1.svg": "137e93f5ac5e36f3f505dc12163d8da9628d61e940b6cbac0cf902d9e487ba50",
+    "reports/executive_brief_en.pdf": "19854829de2b210236eebdfb32be4ffebe1306d820ce79080f776f9fe5037f14"
+  },
+  "previews": {
+    "work/local-runtime/figure-preview/donor_flow_v1.png": "0c274c04e81409afe601bae529e461be34bf57b03c9fa41713ff14e448e3e40e",
+    "work/local-runtime/figure-preview/donor_composition_qc_v1.png": "bce1dce648be70827a7fceef7625f3d05b25d721b2a45de4e2a051b28338afa1",
+    "work/local-runtime/figure-preview/matched_null_sensitivity_v1.png": "9418db2343ec040969d10ad5f2f2d0e579da1b518d017bb861754af6c74e8797",
+    "work/local-runtime/figure-preview/evidence_matrix_v1.png": "d586332b137ac4b543d721139706d461320a4dbd9f9e1f0eb2456a02f823fea9",
+    "work/local-runtime/pdf-preview/brief-1.png": "e146ebe27f0ac12594d6532e68c4ccb2feb75b3a50477343c572a738c45c148f",
+    "work/local-runtime/pdf-preview/brief-2.png": "4d3280d0387b30b495cb67a9c5d6e11f8630e7706201a7dab67453c7e486d84b"
+  },
+  "scope": "Final two-page English PDF and four new scientific SVG figures rendered and visually inspected",
+  "findings": [
+    "Both PDF pages have readable complete text, tables and page footers without clipping or overlap.",
+    "Four figures show their denominators, units, cohort/source distinctions and uncertainty limits; labels and legends are readable without overlap.",
+    "Visual review is layout inspection, not independent biological validation."
+  ]
+}

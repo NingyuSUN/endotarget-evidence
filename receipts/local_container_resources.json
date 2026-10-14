@@ -1,0 +1,38 @@
+{
+  "scope": "single_post_synthetic_resource_snapshot_not_peak_or_benchmark",
+  "utc": "2026-10-14T02:41:29.367112+00:00",
+  "commands": [
+    {
+      "command": [
+        "docker",
+        "system",
+        "df",
+        "--format",
+        "{{json .}}"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"Active\":\"1\",\"Reclaimable\":\"1.924GB (34%)\",\"Size\":\"5.528GB\",\"TotalCount\":\"5\",\"Type\":\"Images\"}\n{\"Active\":\"0\",\"Reclaimable\":\"118.8kB (100%)\",\"Size\":\"118.8kB\",\"TotalCount\":\"4\",\"Type\":\"Containers\"}\n{\"Active\":\"0\",\"Reclaimable\":\"0B\",\"Size\":\"0B\",\"TotalCount\":\"0\",\"Type\":\"Local Volumes\"}\n{\"Active\":\"0\",\"Reclaimable\":\"154.1MB\",\"Size\":\"3.224GB\",\"TotalCount\":\"31\",\"Type\":\"Build Cache\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "free",
+        "-b"
+      ],
+      "exit_code": 0,
+      "stdout": "               total        used        free      shared  buff/cache   available\nMem:      8328622080  1672998912   471842816     4780032  6389985280  6655623168\nSwap:     2147483648      241664  2147241984\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "df",
+        "-B1",
+        "/",
+        "/mnt/g/projects/te"
+      ],
+      "exit_code": 0,
+      "stdout": "Filesystem         1B-blocks         Used     Available Use% Mounted on\n/dev/sde       1081101176832   7704231936 1018404589568   1% /\nG:\\            1000068870144 557270650880  442798219264  56% /mnt/g\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-13T13:58:15.295740+00:00",
+  "source_commit": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+  "historical_root": "/home/analyst/te",
+  "local_root": "/mnt/g/projects/te",
+  "local_branch": "codex/local-execution",
+  "local_head_before_receipt": "4cc7580851cbfcb776385ac0ae858fe5f81e818b",
+  "scientific_validation": false,
+  "therapeutic_validation": false,
+  "container_validation": false,
+  "scientific_fits_executed": 0,
+  "scope": "frozen and current delivery evidence plus all bootstrap and LODO checkpoints; not full raw import or a whole-transfer checksum comparison",
+  "checks": {
+    "freezes": {
+      "status": "PASS",
+      "manifests": [
+        {
+          "receipt": "receipts/statistical_pre_effect_freeze.json",
+          "phase": "STATISTICAL_IMPLEMENTATION_FROZEN_PRE_EFFECT",
+          "artifacts": 43
+        },
+        {
+          "receipt": "receipts/discovery_rank_freeze.json",
+          "phase": "DISCOVERY_FROZEN_PRE_EXTERNAL",
+          "artifacts": 74
+        },
+        {
+          "receipt": "receipts/replication_implementation_freeze.json",
+          "phase": "REPLICATION_IMPLEMENTATION_FROZEN_PRE_EXTERNAL",
+          "artifacts": 95
+        }
+      ],
+      "unique_artifacts": 95
+    },
+    "delivery": {
+      "status": "PASS",
+      "delivery_map_specifications": 17,
+      "final_review_evidence_entries": 16,
+      "historical_v1_policy": "verify v1 outputs and current v2 inputs as selected by original delivery map"
+    },
+    "bootstrap": {
+      "status": "PASS",
+      "draws": 500,
+      "sidecar_SHA256_checks": 500,
+      "valid": 487,
+      "invalid_preserved": 13,
+      "conditional_interval": [
+        -0.3894736842105263,
+        0.08684210526315783
+      ],
+      "fits_executed": 0
+    },
+    "LODO": {
+      "status": "PASS",
+      "folds": 22,
+      "valid_folds": 22,
+      "fold_output_SHA256_checks": 440,
+      "metrics_rows": 66,
+      "fits_executed": 0
+    },
+    "reported_results": {
+      "status": "PASS",
+      "concordance_agree_evaluable_selected": {
+        "B0": {
+          "20": [
+            14,
+            20,
+            20
+          ],
+          "50": [
+            36,
+            49,
+            50
+          ]
+        },
+        "B1": {
+          "20": [
+            3,
+            13,
+            20
+          ],
+          "50": [
+            16,
+            35,
+            50
+          ]
+        },
+        "G1": {
+          "20": [
+            6,
+            19,
+            20
+          ],
+          "50": [
+            26,
+            47,
+            50
+          ]
+        }
+      },
+      "DE": {
+        "discovery": {
+          "tested_genes": 17733,
+          "BH_q_lt_05": 0
+        },
+        "heca": {
+          "tested_genes": 17643,
+          "BH_q_lt_05": 0
+        }
+      },
+      "selected_evaluation_rows": 210,
+      "scientific_results_recomputed": false
+    }
+  },
+  "errors": [],
+  "status": "PASS_MIGRATION_EVIDENCE_INTEGRITY",
+  "hash_checks": 1607,
+  "unique_files_hashed": 1154,
+  "unique_bytes_hashed": 956072976,
+  "historical_absolute_paths_mapped": [
+    "/home/analyst/te/requirements/statistical-runtime.explicit.txt",
+    "/home/analyst/te/scripts/donor_de_lib.R",
+    "/home/analyst/te/scripts/rank_targets.py",
+    "/home/analyst/te/scripts/resample_donor_models.R",
+    "/home/analyst/te/scripts/run_discovery_lodo.py",
+    "/home/analyst/te/scripts/statistical_runtime_env.sh"
+  ],
+  "completed_hash_maps": {
+    "receipts/statistical_pre_effect_freeze.json:artifacts": 43,
+    "receipts/discovery_rank_freeze.json:artifacts": 74,
+    "receipts/replication_implementation_freeze.json:artifacts": 95,
+    "receipts/heca_primary_execution.json:output_sha256": 16,
+    "receipts/real_resampling_execution.json:artifacts_sha256": 8,
+    "receipts/replication_report.json:output_sha256": 11,
+    "receipts/replication_v2_report.json:input_sha256": 50,
+    "receipts/replication_v2_report.json:output_sha256": 11,
+    "receipts/clinical_sensitivity_execution.json:input_sha256": 6,
+    "receipts/clinical_sensitivity_execution.json:output_sha256": 9,
+    "receipts/clinical_sensitivity_tests.json:code_sha256": 5,
+    "receipts/clinical_sensitivity_tests.json:log_sha256": 8,
+    "receipts/stromal_composition.json:input_sha256": 10,
+    "receipts/stromal_composition.json:outputs_sha256": 4,
+    "receipts/genetic_evidence_execution.json:file_hashes": 7,
+    "receipts/container_recipe_v1.json:protected_sha256": 6,
+    "receipts/container_recipe_v1.json:recipe_sha256": 4,
+    "receipts/scientific_delivery_verification.json:delivery_sha256": 18,
+    "receipts/final_independent_delivery_review.json:evidence_sha256": 16,
+    "work/statistical/bootstrap/draw_freeze.json:inputs": 12,
+    "work/statistical/discovery_lodo/binding.json:sha256": 16,
+    "work/statistical/discovery_lodo/fold_01/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_02/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_03/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_04/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_05/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_06/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_07/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_08/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_09/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_10/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_11/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_12/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_13/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_14/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_15/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_16/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_17/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_18/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_19/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_20/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_21/checkpoint.json:output_sha256": 20,
+    "work/statistical/discovery_lodo/fold_22/checkpoint.json:output_sha256": 20
+  },
+  "verifier_sha256": "8745c655e46b1ad5ae3783ce8bb2a79d11a25b46a67d8901b12285e9656ca033"
+}
