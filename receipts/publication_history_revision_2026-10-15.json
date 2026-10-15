@@ -40,6 +40,7 @@
   ],
   "note" : "Recorded SHA-256 values in receipts were not edited. Files listed above changed only by placeholder substitution; their recorded hashes refer to the original bytes retained in the original history bundle.",
   "post_verification_note" : "After verification, co-author trailers were removed from the messages of the final three commits. Their trees, authors and timestamps were not changed; published_commit values above refer to the final identifiers.",
+  "author_normalization_note" : "Author and committer identities of all commits were then set to the maintainer's GitHub-linked address. Trees, messages and timestamps were not changed; published_commit values refer to the resulting identifiers.",
   "original_history_bundle_sha256" : "6ea628673ce1610a76f6d2c9c41be0765c7230887b0c401c8d0d6e8335763d8e",
   "per_commit" : [
     {
@@ -48,7 +49,7 @@
       "modified" : 3,
       "original_published_commit" : "5244e5e43ba47f1abec4ebffb6ea55b83f6fdb52",
       "original_tree" : "e5c8dc33786c4e6eff96e45674eef34ac75af94e",
-      "published_commit" : "d4d37a890dfb24b40903b27b151f2b53baa9cf3f",
+      "published_commit" : "4b3fce5a25f90483ae5ed07521545d9276eb6a98",
       "renamed" : 0,
       "unchanged" : 8
     },
@@ -58,7 +59,7 @@
       "modified" : 16,
       "original_published_commit" : "ddf1a28c609ad139c69ba8fe0da392023fea6baa",
       "original_tree" : "17c389f7e4148cd6724eee43d6d01ea3972d60de",
-      "published_commit" : "a43275d5780c62856cb1d46db8c83ad40e223a48",
+      "published_commit" : "0ad2dc8e194a6601441e58cd52fc859f2d27da2a",
       "renamed" : 0,
       "unchanged" : 11
     },
@@ -68,7 +69,7 @@
       "modified" : 20,
       "original_published_commit" : "0d3d00b2caf3bdfd9e2e9b6401ac9e39fde2ef4c",
       "original_tree" : "cd9f06b9aafe304254b96fc3baf02f453776a07a",
-      "published_commit" : "6977e5eae9383c6e357f63f7364f78d372a039f4",
+      "published_commit" : "3dcf618a97042ffbdab8836ea0e36722d04d1f4f",
       "renamed" : 1,
       "unchanged" : 14
     },
@@ -78,7 +79,7 @@
       "modified" : 22,
       "original_published_commit" : "1ba9d82defcea857ed83579dfed87ce6688ce0ee",
       "original_tree" : "e97b406adb6b70af64b406ac08e2b7cc941c6caa",
-      "published_commit" : "27e69258f9a1557a2277fa17ad63db14dc99c620",
+      "published_commit" : "70b47e1f2f4671d339b3ca60070ac46d5c378b59",
       "renamed" : 1,
       "unchanged" : 14
     },
@@ -88,7 +89,7 @@
       "modified" : 23,
       "original_published_commit" : "c6e2b3a1c7a86be2f7901cde464ad6135b9298eb",
       "original_tree" : "56346e70983a037fddce36368eb11e0586e2a267",
-      "published_commit" : "24a54a2ead8eb5e931e317f9549b19659280cc79",
+      "published_commit" : "5e3f190adf458cb3a08e95b2d4d746729b5b473e",
       "renamed" : 1,
       "unchanged" : 14
     },
@@ -98,7 +99,7 @@
       "modified" : 27,
       "original_published_commit" : "dce40b31edac203f5cd45cec830adbedf9aae122",
       "original_tree" : "ba54cca95d33cd61ddea30456602be650c310810",
-      "published_commit" : "7f5d0b932b97eb0ad68064650e87ff269204478c",
+      "published_commit" : "d3aee5f4a1888cc3581a8b6c69f46eca3e49cdea",
       "renamed" : 1,
       "unchanged" : 14
     },
@@ -108,7 +109,7 @@
       "modified" : 29,
       "original_published_commit" : "171704054634c0a760dc71e143e45ef7273abae4",
       "original_tree" : "f97d9658008d2ecae9254b9a9a9498fba7010366",
-      "published_commit" : "22d6b015c51318861303317fbebabdf026be3388",
+      "published_commit" : "2141a1a4204f0bfbab8d793ae964d49d2718ba3c",
       "renamed" : 1,
       "unchanged" : 19
     },
@@ -118,7 +119,7 @@
       "modified" : 31,
       "original_published_commit" : "a448cee99e1994b706c20984e03acd4c563650f4",
       "original_tree" : "89c5cd2fec9032bd27d442defae2903db4c90d1e",
-      "published_commit" : "02d0dc1f44455b86e5c05f328e4412f045245bc4",
+      "published_commit" : "f4b588b40cdb3c2b941458d365b6a0e70514f3b6",
       "renamed" : 1,
       "unchanged" : 24
     },
@@ -128,7 +129,7 @@
       "modified" : 32,
       "original_published_commit" : "e00e339e0b209285d5770a3971c674a620e91b77",
       "original_tree" : "355d1ec67afe92f3c76d98d8845aa58ebaaea1b8",
-      "published_commit" : "2236ac8d9de67ecb25254c326fd65be5fabdeffb",
+      "published_commit" : "24f77f47ef34f3fb271ca318579478ad8eadc742",
       "renamed" : 1,
       "unchanged" : 31
     },
@@ -138,7 +139,7 @@
       "modified" : 35,
       "original_published_commit" : "73041153ec5e04dbc1b769e4ae171f2af665a6fb",
       "original_tree" : "25a639835651289c83ea1b635e1ce93fe9f19ba7",
-      "published_commit" : "c8eb8f69832c7ed1a90a31a5851836993678b0d8",
+      "published_commit" : "dcd923d9f2ac7589bc6541f7a5dba6974d6ebc86",
       "renamed" : 1,
       "unchanged" : 35
     },
@@ -148,7 +149,7 @@
       "modified" : 36,
       "original_published_commit" : "ae812fa8fb7e2ed3ed0dbc37ffaa15a53e56ce8e",
       "original_tree" : "fb63caa9ee1a0aa0dc8ffb657b92ba2978b84e38",
-      "published_commit" : "1fe0410699e40a1891ff0d0331e7a91549a906fc",
+      "published_commit" : "e7eee663ef6622fb93d38af81e59b7c1f4cb82e3",
       "renamed" : 1,
       "unchanged" : 43
     },
@@ -158,7 +159,7 @@
       "modified" : 38,
       "original_published_commit" : "6e3e6e7ec46a2562e009c9cb7c187a17b9c38547",
       "original_tree" : "f39efde33b64a695137a3d74ec6fbe89eb671dc4",
-      "published_commit" : "0b85aba8703803805cf1a8d75cc8eccf922d4a1f",
+      "published_commit" : "b8fb8de4e913d6cae9167b42429991c70d70ee7b",
       "renamed" : 1,
       "unchanged" : 51
     },
@@ -168,7 +169,7 @@
       "modified" : 39,
       "original_published_commit" : "5d5a00abd0652f60c44fed801476f245771a6419",
       "original_tree" : "3ac59a86d8e9f0af12d2a54700bf80cc7f0559d0",
-      "published_commit" : "e55ebb7a1daaefe1ba2a3dd6a1752134b42a174c",
+      "published_commit" : "979e4ed0de2d61a79090fa7881e72204202df243",
       "renamed" : 1,
       "unchanged" : 66
     },
@@ -178,7 +179,7 @@
       "modified" : 40,
       "original_published_commit" : "7f011031f04131cb2eecb32738855b405c207e6e",
       "original_tree" : "70827c95ac66c51ee54a39ed595d5bb48610802c",
-      "published_commit" : "535f218fe770022331d61e9275606acaa8e3f0f8",
+      "published_commit" : "90ce0f66bb2a4a969f31222f4dde27670f3c7a35",
       "renamed" : 1,
       "unchanged" : 72
     },
@@ -188,7 +189,7 @@
       "modified" : 40,
       "original_published_commit" : "84847a6402438e35b2bac926f41e429ab866c369",
       "original_tree" : "7769504f840a1896f738620875eb59f64dbedd98",
-      "published_commit" : "3ed4bd1a7545c1b3afbdb21b7dc5def2758d9a56",
+      "published_commit" : "0051d4b699a9508c749b9065746855104f3e3bb3",
       "renamed" : 1,
       "unchanged" : 90
     },
@@ -198,7 +199,7 @@
       "modified" : 41,
       "original_published_commit" : "b974dda41dce2fc8ac4b66fd00060937c85ab8dd",
       "original_tree" : "a31e67462b555fe785dd08a2943540ea25692767",
-      "published_commit" : "5974a8decc620e20d232f4fcfed65ddca3197630",
+      "published_commit" : "94790ff387a751272b099eb485d412c42e2badf9",
       "renamed" : 1,
       "unchanged" : 96
     },
@@ -208,7 +209,7 @@
       "modified" : 41,
       "original_published_commit" : "c472b76fa85f404ae754bb5f4ecbd2e7c08cfb0c",
       "original_tree" : "db54a215b8ed681e2984cefa25c3abcf9aa5de6c",
-      "published_commit" : "39c6a13b6d9bcd1f32d90408d5c27f6078f7d77e",
+      "published_commit" : "e24f0422fe3242009a7487fdf6cdfe795ff3a7d4",
       "renamed" : 1,
       "unchanged" : 105
     },
@@ -218,7 +219,7 @@
       "modified" : 41,
       "original_published_commit" : "7f73b40845bb187ea68febe181e467a6551db8b7",
       "original_tree" : "f9d5e1b0d48641206041ceb9316d78c9766952c9",
-      "published_commit" : "b8b19a967ad03ceea2c821332f469b61f657b819",
+      "published_commit" : "79bcd76bd95952a4175b09f34c9f046ef68d6cc7",
       "renamed" : 1,
       "unchanged" : 114
     },
@@ -228,7 +229,7 @@
       "modified" : 43,
       "original_published_commit" : "1139fad14a6e15b8e2b836ceba69f1fc126b7d46",
       "original_tree" : "66a94f86c20d9f3b266fe94a6e1f11a238fb9f02",
-      "published_commit" : "73afd27013d055400a21ecb4317e1fba381d7d27",
+      "published_commit" : "bed3dca7f21751446eb99769ac623ee7057b898e",
       "renamed" : 1,
       "unchanged" : 123
     },
@@ -238,7 +239,7 @@
       "modified" : 43,
       "original_published_commit" : "c6589c8d6cec9bd124871975f4ecc635727963fb",
       "original_tree" : "365d9d26591b761fb09df0e711a4fa143d438596",
-      "published_commit" : "4a9b8fde6f3e61f58e57e9b18189466ef37c8cf9",
+      "published_commit" : "bd63ecbe05acaa7e16151e3de1b2e44654631814",
       "renamed" : 1,
       "unchanged" : 124
     },
@@ -248,7 +249,7 @@
       "modified" : 45,
       "original_published_commit" : "7e579c3d5bc2da6f4fa47e80186ecf6c43a0ca0e",
       "original_tree" : "617266e5484cd87576cc7a872bc75fc8c2bf0044",
-      "published_commit" : "aa6bfa77d77148fe39ebd4aefaab1a55be948ff3",
+      "published_commit" : "794bd424ae814d0169971065722c88f403d85eee",
       "renamed" : 1,
       "unchanged" : 129
     },
@@ -258,7 +259,7 @@
       "modified" : 45,
       "original_published_commit" : "e4241af9048f3fb2f5359bf870a5312fb41b0d28",
       "original_tree" : "f149df658808c2ffb95a83dca56443d81e53d12c",
-      "published_commit" : "044e2c970ac0d43c69a5674e3c1c4d5b9b6db5c0",
+      "published_commit" : "4ed6a4533fa5fc5efebecfcdab63719b907437bc",
       "renamed" : 1,
       "unchanged" : 132
     },
@@ -268,7 +269,7 @@
       "modified" : 46,
       "original_published_commit" : "f3e38b84da73e8c148bb3001324c0fb81d51eb6f",
       "original_tree" : "58d13bd35e8bedf5dd882443768c2b2af1975256",
-      "published_commit" : "7ae7d7814044f6bbae9cf4ce969e30090f244439",
+      "published_commit" : "7333f2f162a8e7ba385be95ca4c770c5a5844eca",
       "renamed" : 1,
       "unchanged" : 136
     },
@@ -278,7 +279,7 @@
       "modified" : 48,
       "original_published_commit" : "01471f5492867b13ed89d6ae90d16d7661506884",
       "original_tree" : "295720ce3217b0eb0c9c11a6d7affb0173913ad7",
-      "published_commit" : "edbd60e6132b062fb4abaf4f5f6477730c7ce350",
+      "published_commit" : "74bcc4903d3c9bef90796fbd81c8ef691a243710",
       "renamed" : 1,
       "unchanged" : 139
     },
@@ -288,7 +289,7 @@
       "modified" : 50,
       "original_published_commit" : "650c9e02912901db847e5afe20c75a5f1beec552",
       "original_tree" : "faa2e93a2356e8cd92827f8749a5db704effd047",
-      "published_commit" : "c9f7d7f3310e7b2da059a9b3904a11ac8e2b172c",
+      "published_commit" : "014276a581db17ea8eb4c17ad61f7c13e683db46",
       "renamed" : 1,
       "unchanged" : 141
     },
@@ -298,7 +299,7 @@
       "modified" : 55,
       "original_published_commit" : "3cc98246435f7da71197aadeeaa737b60a250ed7",
       "original_tree" : "2e7557a905359a4d175a3f3a36660499d15e4052",
-      "published_commit" : "2c485f4937b4ffac409ef9cc33fafe65fe7facad",
+      "published_commit" : "f92d629351507f1848dce14277f16762ffddb1ab",
       "renamed" : 1,
       "unchanged" : 143
     },
@@ -308,7 +309,7 @@
       "modified" : 57,
       "original_published_commit" : "de6abb10c8ff235a0183440cdab170b7628f2b94",
       "original_tree" : "8a20c5fff77c6749ba61b29e6b9a521c7aa03ad5",
-      "published_commit" : "b8604f8fc1b83248db0cdca3ae94a6bda1726c0e",
+      "published_commit" : "1de814c8f243db5949da7e4a18665c9a0e3ca985",
       "renamed" : 1,
       "unchanged" : 149
     },
@@ -318,7 +319,7 @@
       "modified" : 57,
       "original_published_commit" : "679138edf830ad1b086983372a10efeb1ddaf70b",
       "original_tree" : "bab93a34896798bb8b8633574173bbb52d23c36f",
-      "published_commit" : "2e2aade2ca1b651d55fe0f5dd4e11ebdbad217d1",
+      "published_commit" : "62a488f1b151eed7d9fb31ea9ca43f7cc839fbc2",
       "renamed" : 1,
       "unchanged" : 150
     },
@@ -328,7 +329,7 @@
       "modified" : 57,
       "original_published_commit" : "50b6b53b18c6e6f73727ab176f6b39a9efcf2e45",
       "original_tree" : "c205e96afc41b557b0e8af3b8fd0b846bca757e7",
-      "published_commit" : "e2a2cf4f4ad31454072234ed635eaef3bcdced9d",
+      "published_commit" : "b2032b55e4ad01fe1745c86f08464d0e671a87ae",
       "renamed" : 1,
       "unchanged" : 151
     },
@@ -338,7 +339,7 @@
       "modified" : 59,
       "original_published_commit" : "f0e9927d559937a4db468f37e0dc866ad95cce42",
       "original_tree" : "ea709218e1ee8950ae3d948f821b0ba95ad634fe",
-      "published_commit" : "c4ebbd159f4c3a0387a1d0bb92757141154a2557",
+      "published_commit" : "49eb1d3b4b44542be46714cfb1df0e811c318c7a",
       "renamed" : 1,
       "unchanged" : 151
     },
@@ -348,7 +349,7 @@
       "modified" : 59,
       "original_published_commit" : "41ac6f626ed63101fcf6857360f4b3fe3df291c6",
       "original_tree" : "cee00fa87100d8bd499ba98a14d0d4a3bcd36f24",
-      "published_commit" : "92adf8001ce6284828e6448295885496a601c30b",
+      "published_commit" : "841c1f66fbb6abfce724c429b1ce9b32fe7110df",
       "renamed" : 1,
       "unchanged" : 153
     },
@@ -358,7 +359,7 @@
       "modified" : 63,
       "original_published_commit" : "4a71dbb3c513103625af6c69a9a08e8fcea32378",
       "original_tree" : "67e22222719e0d47b598a4f5dff98285a3050c64",
-      "published_commit" : "3a07c91ca4813e9aeade6ac7011e94d8fff80299",
+      "published_commit" : "1d5fc58aa87428dea3ecda90d0f562ba5de0400a",
       "renamed" : 1,
       "unchanged" : 168
     },
@@ -368,7 +369,7 @@
       "modified" : 63,
       "original_published_commit" : "fec492c19d2d7c4db9ae21f82772ce24495aacca",
       "original_tree" : "a47ef934fc66b10a72b2a5f1b654bd9ed5766e28",
-      "published_commit" : "87ad0c776f3cfceca0a55934467ecc6cf54c5372",
+      "published_commit" : "983a52d7e86843f123b8c60675899849d06eff53",
       "renamed" : 1,
       "unchanged" : 172
     },
@@ -378,7 +379,7 @@
       "modified" : 63,
       "original_published_commit" : "5b37b9f2f9b435fcf644c6ba2942a927266fc50f",
       "original_tree" : "35ea1d5af9fd0b6f7e63599da6bd06642ab07ec3",
-      "published_commit" : "adee3ef7e085ef89a9ca4f72c5f6d05b630f0492",
+      "published_commit" : "9d8eacaa55895adb5f5c692fd9260eb8d721e54e",
       "renamed" : 1,
       "unchanged" : 176
     },
@@ -388,7 +389,7 @@
       "modified" : 63,
       "original_published_commit" : "91cbbeaeeef70ff3abd5a473649345c075244546",
       "original_tree" : "8e992d4cea4a3155d53b415a1bec1140dc869e57",
-      "published_commit" : "93899e1e7741864bb993f2dc52fa1db0942b41be",
+      "published_commit" : "69d16f27328b9dbd3460d7ff0bac120ca06c0eff",
       "renamed" : 1,
       "unchanged" : 176
     },
@@ -398,7 +399,7 @@
       "modified" : 64,
       "original_published_commit" : "239cfb8ad7b0ae4517aefef24ac70c8a2aad2523",
       "original_tree" : "56fa1b7a7079c83eb481e8cabc3c79a5364ba0ff",
-      "published_commit" : "f959cad74492e84827ca0291f24ff7ba78ca90d3",
+      "published_commit" : "62ec63863176c600cc88e509b0f155888a6cdda8",
       "renamed" : 1,
       "unchanged" : 179
     },
@@ -408,7 +409,7 @@
       "modified" : 64,
       "original_published_commit" : "59bd174eb443acf6b177f83a46e673b207604195",
       "original_tree" : "b2b30e6781bcd2f40f6c86997152bdc0129b46ff",
-      "published_commit" : "26250e0a2373f951f04a25121c77f8b944ac8b0c",
+      "published_commit" : "6479e040b9781d96c900a98bab4e9b44d0ecf11a",
       "renamed" : 1,
       "unchanged" : 180
     },
@@ -418,7 +419,7 @@
       "modified" : 66,
       "original_published_commit" : "80e23796657249aa080bbd8ae1eef6388dafdb6b",
       "original_tree" : "aa546552509040a7b060d2a2e964725f5eee5d4c",
-      "published_commit" : "6128b1786cc5f40afd6f6bc7cceaa275258c45b6",
+      "published_commit" : "ecbab4adcf175f2e73c7929ac23e4599eb876304",
       "renamed" : 1,
       "unchanged" : 186
     },
@@ -428,7 +429,7 @@
       "modified" : 66,
       "original_published_commit" : "cee39cb072df337bd20beebf1878a48ae7371d97",
       "original_tree" : "99de54651c1d7a587e1695a85f6f504d52ba6c48",
-      "published_commit" : "1f09f0c8f9bd1fed86026b2c3d80a4e84b0b6843",
+      "published_commit" : "0b7d1362242899139913a12e00846ddd426339bc",
       "renamed" : 1,
       "unchanged" : 187
     },
@@ -438,7 +439,7 @@
       "modified" : 69,
       "original_published_commit" : "89d121dd6e192ef158c69b037c463332583f68ed",
       "original_tree" : "b2671250cd9d1e4440d0da16921c85eba91d78b8",
-      "published_commit" : "4dc5bc92fde0c5e8bc06eeba4c91b0ecdfde3666",
+      "published_commit" : "9a1e17c1bc86b3ffa761573587c58971c0247937",
       "renamed" : 1,
       "unchanged" : 198
     },
@@ -448,7 +449,7 @@
       "modified" : 71,
       "original_published_commit" : "9f4a0fdba6a98e7542e1866de73c3e3a71bfb295",
       "original_tree" : "373f086ab572162ea434d5ef4b06031ea92ce59b",
-      "published_commit" : "b665c6a7cff701b2b2389598b91734bce3f3404f",
+      "published_commit" : "a79ad7a0d1bfbf5e4d8cbb27a4e91cd8924ba45f",
       "renamed" : 1,
       "unchanged" : 201
     },
@@ -458,7 +459,7 @@
       "modified" : 82,
       "original_published_commit" : "999560276adb4bbdf34b0513a3347ef201191c9b",
       "original_tree" : "c508483a6928507191cc14218b8a98080baa52af",
-      "published_commit" : "0a2fd278b8d43c41f03321d01c3e2edb02af431b",
+      "published_commit" : "b700915956d64a6b443912306aa3ef478df9ceb5",
       "renamed" : 1,
       "unchanged" : 221
     },
@@ -468,7 +469,7 @@
       "modified" : 82,
       "original_published_commit" : "c199397665e927e163548504ccf7d4ad338c1ca7",
       "original_tree" : "34a4a96b261dc63ace191336ea6aaa12ead06740",
-      "published_commit" : "c7fddc31d31b0aef71afcd7cc7203c806ffc80ad",
+      "published_commit" : "4c18c08c725a934edba38f80a9a504c4c32d2d85",
       "renamed" : 1,
       "unchanged" : 222
     },
@@ -478,7 +479,7 @@
       "modified" : 119,
       "original_published_commit" : "ab03da21580a3c53ae34288e109c578393b1e066",
       "original_tree" : "af3c78e07313f941e264b9e99d5b2e8702553b0e",
-      "published_commit" : "4cb01987fccf31c85652f7c7464bae3ac6971b42",
+      "published_commit" : "1c4707ff3d4daf0ebd071b54671b04106146ebb1",
       "renamed" : 5,
       "unchanged" : 247
     },
@@ -488,7 +489,7 @@
       "modified" : 120,
       "original_published_commit" : "a9de05bdf0b514a12f01f79c4d71062477d92a9a",
       "original_tree" : "deafaece2bbdfd85aab05c88417fa3a8e8d0525c",
-      "published_commit" : "b96f5448c7a8387911cbfd9ecdec4299003da78c",
+      "published_commit" : "e3c6f7173aed91463f3dee1180dd00eebb4aadbc",
       "renamed" : 5,
       "unchanged" : 247
     },
@@ -498,7 +499,7 @@
       "modified" : 119,
       "original_published_commit" : "ba9cfa8cd282890d371e528abc037cbead123f30",
       "original_tree" : "c97ced3108fb4e12a0008f13918ee84a6608e2cd",
-      "published_commit" : "05e5d3eca6f752c991b8ff3573221f9907d06758",
+      "published_commit" : "fc3cfcb09dbf76fd98715c3c74ef258b189c79a9",
       "renamed" : 5,
       "unchanged" : 253
     },
@@ -508,7 +509,7 @@
       "modified" : 115,
       "original_published_commit" : "432f1c7e3dff8dda10f3d974026cf73f0ed165be",
       "original_tree" : "167a21ba020e505f4a1feab3549bce0475e07c71",
-      "published_commit" : "035ff92c3e5b402ddc8181107057e8e5c7ee23f3",
+      "published_commit" : "2a60498d904bb315c874f5ef0c69e6363c9a3324",
       "renamed" : 3,
       "unchanged" : 259
     },
@@ -518,7 +519,7 @@
       "modified" : 115,
       "original_published_commit" : "38cae690d0830a658bc2023b9e07ba5f419acdd3",
       "original_tree" : "f38c19502134702941b7b14877cc4859b8101ac6",
-      "published_commit" : "b2a3b08161c201973a710decd8384ebceb32e691",
+      "published_commit" : "b52d401c5fe4074be6f553a3eebf17f855680daa",
       "renamed" : 3,
       "unchanged" : 260
     }

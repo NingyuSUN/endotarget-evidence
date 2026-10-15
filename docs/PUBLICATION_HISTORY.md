@@ -7,15 +7,18 @@ the verification records.
 
 ## Commit identifiers
 
-The published history has been rewritten twice. Both rewrites kept the commit
-sequence, authors, committers, timestamps and scientific content. The complete
-original history is kept by the maintainer as a verified local Git bundle.
+The published history has been rewritten more than once. Every rewrite kept the
+commit sequence, timestamps and scientific content. The complete original history
+is kept by the maintainer as a verified local Git bundle.
 
 - **14 October 2026.** The descriptions of 45 commits were standardized in English.
   Only commit messages and parent identifiers changed; every Git tree was preserved.
 - **15 October 2026.** Content not intended for publication was removed from every
   commit (see below). Git trees therefore changed, and every commit identifier
   changed again.
+- **15 October 2026, later.** The author and committer identity of every commit was
+  set to the maintainer's GitHub-linked address. Trees, messages and timestamps were
+  unchanged; commit identifiers changed, and the commit map was updated.
 
 The [commit map](../receipts/publication_commit_map.tsv) links each identifier in
 historical execution records to its corresponding published commit. The
