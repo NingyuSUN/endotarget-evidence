@@ -1,22 +1,22 @@
 {
-  "created_utc": "2026-10-14T05:21:13.782941+00:00",
+  "created_utc": "2026-10-15T01:26:06.422646+00:00",
   "source": "reports/executive_brief_en.md",
-  "source_sha256": "0c2f86ca295945a143f86bb4d053f2e787679ccd792e3bb64c63b016b34bd1b7",
+  "source_sha256": "77949997621c1d3ce51280ce7f4295c58cee13be0b9e5177aac87b8f570acf6a",
   "output": "reports/executive_brief_en.pdf",
-  "output_sha256": "04f2d015d948b2ea2c69672e04bd68936e1ebbb34c1fa81457115401d10ff59b",
+  "output_sha256": "da44888c97b9b39e48d850b10d2d689f438a36a9d05d60b766ff6ff0011df4a8",
   "script_sha256": "4663f1ae379f40d454a71fd178824506b56d3cda43cb7ebb82d997f7bc58a3a8",
   "pages": 2,
   "text_coverage": "All source alphanumeric tokens and key scientific values checked",
   "new_scientific_analysis": false,
-  "visual_review": "PASS: both rendered pages inspected; no clipping or overlap; scientific tables and text legible",
+  "visual_review": "PASS: both pages rendered with pdf.js and inspected; no clipping or overlap; tables and text legible",
   "renderer_versions": {
     "reportlab": "4.4.9",
-    "pypdf": "6.10.0"
+    "pypdf": "6.16.2"
   },
   "font_sha256": {
     "arial.ttf": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
     "arialbd.ttf": "766f06ac8761f82f25d032a220e89438f6064591af9915061f20b949efdedf69",
     "ariali.ttf": "79a5742b865cf06891d4ae43e42cac0e5169c7b7b06b5b3c24ef8e0966d27b62"
   },
-  "preview_rendered": true
+  "preview_rendered": false
 }
