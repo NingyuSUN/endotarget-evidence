@@ -100,6 +100,10 @@ cd endotarget-evidence
 - 遗传证据限定于一项 2023 年研究。缺少映射不等于阴性证据，表达关联不等于因果关系，也不能确定激活或抑制策略。
 - 本项目用于早期靶点证据评估，不生成药物分子或抗体，没有训练 GNN 或基础模型，也没有验证治疗效果。AWS 部署尚未执行。
 
+## 许可
+
+代码采用 [MIT 许可证](LICENSE)。本项目撰写的文档、报告和图表采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)。第三方数据、参考资源和出版物仍适用其各自条款，见[来源登记](docs/DATA_SOURCES.md)和[输入来源说明](docs/INPUT_PROVENANCE.md)。
+
 维护者：[Ningyu Sun](https://github.com/NingyuSUN)。实现与审查使用了 AI 辅助。原始研究及来源归属见[输入来源说明](docs/INPUT_PROVENANCE.md)和[遗传证据方法](docs/GENETIC_EVIDENCE_METHOD.md)。
 
 历史运行编号与当前公开提交的对应关系见[来源追溯说明](docs/PUBLICATION_HISTORY.md)。
