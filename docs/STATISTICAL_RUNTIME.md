@@ -26,4 +26,4 @@ Initial setup resource check failed before installation because shell quotation 
 
 Official sources: [Bioconductor release compatibility](https://bioconductor.org/about/release-announcements/), [edgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html), [limma](https://bioconductor.org/packages/release/bioc/html/limma.html), [Nextflow Java requirements](https://training.nextflow.io/latest/envsetup/02_local/).
 
-YELLOW: understanding not assessed. User should distinguish toy software cooperation from count provenance, donor-design validity, scientific inference, external replication and container portability.
+Toy software cooperation is separate from count provenance, donor-design validity, scientific inference, external replication and container portability.

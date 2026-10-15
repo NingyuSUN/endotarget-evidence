@@ -7,9 +7,10 @@ supported target shortlist and no established advantage from network propagation
 ## Results and interpretation
 
 - [English research brief](../reports/executive_brief_en.pdf)
+- [Results summary, English](../reports/results_summary_en.md)
 - [Integrated biology report, Chinese](../reports/biology_report_zh.md)
-- [External evaluation and donor sensitivity](../reports/replication_v2_results.md)
-- [Clinical sensitivity analyses](../reports/clinical_sensitivity_report.md)
+- [External evaluation and donor sensitivity, Chinese/English generated report](../reports/replication_v2_results.md)
+- [Clinical sensitivity analyses, Chinese generated report](../reports/clinical_sensitivity_report.md)
 - [Stromal composition](../reports/stromal_composition.md) and [genetic evidence](../reports/genetic_evidence_report.md)
 
 ## Methods and source evidence
@@ -42,10 +43,7 @@ The [research protocol](RESEARCH_PROTOCOL.md),
 retain the bytes recorded by the scientific freezes. Their original status wording
 describes the time of each record, not the current completion state.
 
-The same preservation rule applies to the
-report-input state snapshot,
-[scientific-work audit](REMAINING_SCIENTIFIC_WORK.md) and
-execution checkpoint. These are provenance
-records rather than instructions to resume completed analyses. See
+The [scientific-work audit](REMAINING_SCIENTIFIC_WORK.md) is likewise a
+provenance record rather than an instruction to resume completed analyses. See
 [publication history](PUBLICATION_HISTORY.md) for documentation changes and
 the scope of historical verification receipts.

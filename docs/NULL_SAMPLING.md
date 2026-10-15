@@ -57,4 +57,4 @@ The executable tests cover independently hand-calculated type-7 boundaries, dupl
 
 An initial boundary assertion used literal 0.2; NumPy's type-7 interpolation produced 0.20000000000000018. The test assertion was corrected with a 1e-15 absolute floating-point comparison. The stored cutpoint and binning logic were not rounded or changed. All subsequent assertions pass; numerical agreement is software evidence, not external biological validation.
 
-YELLOW — understanding not yet assessed: independently explain joint-bin occupancy, why identical values remain together, why a scarce pool is not permission to rescue the null experiment, and why these 200 sets are descriptive sensitivity evidence rather than 200 biological negative controls. No new routine user decision is required for this implementation scope.
+Interpretation notes: joint-bin occupancy determines which genes can be matched; identical values remain together; a scarce pool is not permission to rescue the null experiment; and these 200 sets are descriptive sensitivity evidence rather than 200 biological negative controls.

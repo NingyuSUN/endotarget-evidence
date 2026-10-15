@@ -1,6 +1,6 @@
 # Public data and readiness audit
 
-**Historical audit; current checkpoint:** see CURRENT_STATE.md. A later metadata environment, compact count route and author-confirmed donor crosswalk now exist. Original complete-file constraints still apply; no container has run.
+**Historical pre-analysis audit.** A later metadata environment, compact count route and author-confirmed donor crosswalk were used for the completed analysis; see the [method card](METHOD_CARD.md) and [input provenance](INPUT_PROVENANCE.md). Container execution was verified later; see the [local execution record](LOCAL_EXECUTION.md).
 
 
 Checked: 2026-10-13. Labels: **VERIFIED** = source record or directly inspected metadata; **PROPOSED** = project choice; **NOT VERIFIED** = not yet inspected or executed. Public catalog presence alone does not make data analysis-ready.

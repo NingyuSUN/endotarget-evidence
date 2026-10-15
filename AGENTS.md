@@ -8,3 +8,4 @@
 - Use only `gpt-6-astra` and `gpt-6.1-sol` for delegated work, with no other-model fallback.
 - Write concise English commit messages describing technical changes. Preserve partial or failed status when applicable. Commit only intentional changes; push or rewrite history only with explicit user authorization.
 - Keep project documentation focused on methods, results, limitations and reproducibility. Keep internal planning and progress notes out of published project documentation.
+- This repository is public. Never commit personal or employment information, SSH commands or configuration paths, account/group/sudo details, or other host-access information.

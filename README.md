@@ -20,7 +20,7 @@ Can a biological network improve which disease-associated genes reproduce in ano
 | Evaluation | External expression-direction agreement, donor resampling and clinical sensitivity analyses |
 | Reproduction | Five primary Nextflow tasks reproduced in Docker; 34 scientific tables and eight result metadata files matched |
 
-**Read the results:** [Two-page research brief](reports/executive_brief_en.pdf) · [Method card](docs/METHOD_CARD.md) · [Full results and figures](reports/replication_v2_results.md)
+**Read the results:** [Two-page research brief](reports/executive_brief_en.pdf) · [Method card](docs/METHOD_CARD.md) · [Full results and figures](reports/results_summary_en.md)
 
 ## Study design
 
@@ -53,13 +53,13 @@ The three methods share the same 11,749-gene, 123,313-edge STRING functional-ass
 | **Network degree (B1)** | Weighted connectivity; topology control | **3 / 13 / 20** |
 | **Network propagation (G1)** | Random walk with restart, seeded by discovery evidence | **6 / 19 / 20** |
 
-G1 is a fixed graph algorithm with no model training or parameter search. Genes missing from external evaluation remain missing; lists are never refilled. B1 falls below the predefined 16-of-20 evaluability threshold.
+G1 is a fixed graph algorithm with no model training or parameter search. Genes missing from external evaluation remain missing; lists are never refilled. B1 falls below the predefined 16-of-20 evaluability threshold. Both network lists agreed less often than their 200 expression- and degree-matched reference sets (0.5th percentile, versus the 96.5th for B0), a descriptive lower-than-reference pattern rather than only an absence of improvement; the percentile is not a calibrated p value.
 
 ![External expression directions for the fixed top-20 and top-50 lists: same direction, opposite direction and unevaluable genes](reports/figures/replication_v2_counts.png)
 
 **Interpretation.** Expression-direction agreement is not target accuracy. None of the selected genes combined direction agreement with external BH q < 0.05, where BH adjustment accounts for the full tested gene family. Lack of significance does not demonstrate absence of a disease effect.
 
-The observed G1-minus-B0 agreement difference was **−38.4 percentage points**. Of 500 paired external-donor bootstrap draws, 487 were valid and 13 failed design checks. The conditional 95% interval was **−38.9 to +8.7 points**, including zero; it does not establish a general method advantage. All 22 discovery leave-one-donor-out analyses completed. [Uncertainty and sensitivity results](reports/replication_v2_results.md).
+The observed G1-minus-B0 agreement difference was **−38.4 percentage points**. Of 500 paired external-donor bootstrap draws, 487 were valid and 13 failed design checks. The conditional 95% interval was **−38.9 to +8.7 points**, including zero; it does not establish a general method advantage. Because resampling noise pulls both methods toward 50% agreement, this interval is not centered on the observed difference; see the [interpretation notes](reports/results_summary_en.md#notes-for-interpretation). All 22 discovery leave-one-donor-out analyses completed. [Uncertainty and sensitivity results](reports/results_summary_en.md#donor-sensitivity).
 
 The separate genetic assessment retains all 40 frozen candidate-pool genes: one limited SKIDA1 mapping and 39 unavailable mappings in the selected source. The dossier rule yielded one inconclusive PARP9 case and no supported target dossier. [Genetic evidence report](reports/genetic_evidence_report.md).
 
@@ -87,7 +87,7 @@ cd endotarget-evidence
 
 | Task | Entry point |
 |---|---|
-| Read the scientific conclusions | [Research brief](reports/executive_brief_en.pdf), [Chinese biology report](reports/biology_report_zh.md) |
+| Read the scientific conclusions | [Research brief](reports/executive_brief_en.pdf), [English results summary](reports/results_summary_en.md), [Chinese biology report](reports/biology_report_zh.md) |
 | Review assumptions and figures | [Method card](docs/METHOD_CARD.md) |
 | Reproduce the designated primary outputs | [Prerequisites, commands and checks](docs/LOCAL_EXECUTION.md) |
 | Review a possible cloud deployment | [AWS guide — not executed](docs/AWS_DEPLOYMENT.md) |

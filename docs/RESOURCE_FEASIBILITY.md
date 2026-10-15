@@ -1,6 +1,6 @@
 # Resource gate — 2026-10-13
 
-**Historical audit; current checkpoint:** see CURRENT_STATE.md. A later metadata environment, compact count route and author-confirmed donor crosswalk now exist. Original complete-file constraints still apply; no container has run.
+**Historical pre-analysis audit.** A later metadata environment, compact count route and author-confirmed donor crosswalk were used for the completed analysis; see the [method card](METHOD_CARD.md) and [input provenance](INPUT_PROVENANCE.md). Container execution was verified later; see the [local execution record](LOCAL_EXECUTION.md).
 
 
 Status: OPEN / full-input path not demonstrated. This is a capacity calculation, not an observed out-of-memory failure.
@@ -15,4 +15,4 @@ Neither complete object has been downloaded. The archive size does not determine
 
 Next allowed work: inspect small public metadata/clinical supplements and public smaller-count representations, or investigate bounded HDF5 metadata access. Do not alter cohort, phase or donor thresholds to evade feasibility. Do not modify/delete existing server files to create room. If no suitable discovery representation exists, report the need for revised resources or a revised protocol before proceeding.
 
-Evidence: receipts/input_head_probes.json, receipts/srv01_environment.json, receipts/resource_budget.json. Docker access is a separate runtime issue documented in docs/RUNTIME_STATUS.md.
+Evidence: receipts/input_head_probes.json, receipts/srv01_environment.json, receipts/resource_budget.json. Container execution is documented separately in [LOCAL_EXECUTION.md](LOCAL_EXECUTION.md).

@@ -22,9 +22,9 @@ historical file at `https://github.com/NingyuSUN/endotarget-evidence/blob/<publi
 ## Current documentation
 
 The repository homepages, method card, reproduction guide, evidence index and
-research brief present the completed study. Obsolete planning, progress, server
-access documents were removed from the current file tree.
-Their original versions remain in the mapped Git history and the local backup.
+research brief present the completed study. Obsolete planning, progress and
+server-access documents were removed from the current file tree. The maintainer
+retains a complete local backup of the original history.
 
 The original protocol, pre-effect decisions, statistical implementation and
 evaluation contracts remain unchanged. So do the three primary scientific
@@ -55,3 +55,24 @@ verified Git bundle and archive ref preserve that lineage locally.
 This revision did not refit statistical models, alter candidate lists, regenerate
 scientific figures, or add biological evidence. It changes presentation and source
 navigation; the scientific limitations remain as reported.
+
+## 15 October 2026 documentation revision
+
+- The internal working-state notes `docs/CURRENT_STATE.md` and
+  `docs/EXTERNAL_ANALYSIS_CHECKPOINT.md` were removed from the current file tree.
+  The generated replication reports still list `docs/CURRENT_STATE.md` as a build
+  input, and their receipts keep its recorded hash; the file itself is no longer
+  published.
+- Learning-status annotations were rewritten as neutral interpretation notes in
+  editable documentation. The nine documents whose bytes are recorded by the
+  scientific freezes or the M0 gate decision, and all generated reports, were not
+  changed.
+- The figure renderer and its receipt were renamed to
+  `scripts/render_summary_figures_v1.py` and `receipts/summary_figures_v1.json`.
+  The receipt's recorded renderer hash refers to the original bytes, which differ
+  only in the receipt output path. Earlier delivery-verification receipts keep the
+  original path labels.
+- [results_summary_en.md](../reports/results_summary_en.md) adds an English
+  summary of the generated bilingual replication report, including two
+  interpretation notes derived from the reported numbers. It contains no new
+  analysis.
