@@ -21,7 +21,9 @@ supported target shortlist and no established advantage from network propagation
 - [External evaluation definitions](REPLICATION_EVALUATION.md) and [resampling](RESAMPLING.md)
 - [Genetic evidence method](GENETIC_EVIDENCE_METHOD.md)
 - [Phase positive-control protocol](PHASE_POSITIVE_CONTROL_PROTOCOL.md) — frozen 2026-10-26 before any secretory-phase data; not executed
-- [Phase positive-control feasibility](../reports/phase_positive_control_feasibility.md) — metadata only; both designs estimable; secretory counts not yet downloaded
+- [Phase positive-control feasibility](../reports/phase_positive_control_feasibility.md) — metadata only; both designs estimable
+- [Phase positive-control HECA counts](../reports/phase_positive_control_heca_counts.md) — 42-donor HECA matrix prepared 2026-10-26; v1 columns reproduced exactly; no model fitted
+- [Discovery secretory counts acquisition plan](PHASE_POSITIVE_CONTROL_DISCOVERY_COUNTS_PLAN.md) — measured resource constraints and procedure for the 41.7 GB GEO object; not executed
 
 ## Reproduction
 
