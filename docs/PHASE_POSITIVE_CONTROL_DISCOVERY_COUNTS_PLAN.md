@@ -1,10 +1,13 @@
 # Discovery secretory counts — acquisition plan (protocol step 2)
 
-Date: 2026-10-26. Status: **PLANNED, NOT EXECUTED.** Nothing in this plan has been
-downloaded, extracted or fitted. It implements section 10 of the
+Date: 2026-10-26. Status: **EXECUTED 2026-10-26** — see the
+[discovery counts report](../reports/phase_positive_control_discovery_counts.md) and
+[receipt](../receipts/phase_positive_control_discovery_counts.json). No model was fitted.
+The plan below is kept as written before execution; it implements section 10 of the
 [phase positive-control protocol](PHASE_POSITIVE_CONTROL_PROTOCOL.md) for the discovery
-cohort and records the measured resource constraints before any large transfer, as the
-repository rules require.
+cohort and records the measured resource constraints before the large transfer, as the
+repository rules require. Deviations from the plan during execution are listed in the
+report.
 
 ## Why a new download is unavoidable
 
@@ -41,7 +44,7 @@ built-in 35 GiB memory ceiling exceeds the analysis host's physical memory; and 
 | Cores | 36 | Not limiting; the parser is single-threaded |
 | Root volume | 42 GB free (91% used) | **Not usable**: a 39 GiB object would breach the project's 20 GiB reserve rule |
 | Secondary volume | about 1.3 TB free | Use it for the object, the streamed payload and scratch; budget 100 GiB |
-| Transfer rate | HECA secretory download, 2026-10-26: 1,378,729,112 bytes in 732 s with three concurrent streams, about 1.9 MB/s aggregate (0.6–0.7 MB/s per stream, matching v1); the GEO rate is unmeasured | At the BioStudies rate the object would take about 6 h with three ranged streams or about 18 h single-stream; measure the GEO rate on the first gigabyte before choosing |
+| Transfer rate | GEO, 2026-10-26: a 200 MiB range probe ran at 7.3 MB/s single-stream; the full object then transferred at 17.9 MB/s aggregate with four ranged streams (2,329 s), plus 662 s to concatenate the parts and 604 s to hash the result on the secondary volume | Four ranged, resumable streams are adequate; no multi-day budget is needed |
 
 Disk budget: 39 GiB object + about 15 GiB streamed sparse payload (1.19 × 10⁹ nonzeros
 as 32-bit indices plus 64-bit values, with pointers) + extracted metadata + reserve.
