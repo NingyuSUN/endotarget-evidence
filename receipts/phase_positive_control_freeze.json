@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "phase": "PHASE_POSITIVE_CONTROL_PROTOCOL_FROZEN_PRE_DATA",
+  "created_utc": "2026-10-26T06:48:51+00:00",
+  "git_head": "b2670a10a0c870ac2e7ca2a9f98deebedec30bca",
+  "git_branch": "protocol/phase-positive-control",
+  "protocol": "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md",
+  "config": "config/phase_positive_control.json",
+  "artifacts": {
+    "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md": "728f5273b4cc84ddbbd82ec1a94ef63e5a701241e11a762e4229201b769b6154",
+    "config/phase_positive_control.json": "4fb6084dc4fefeec1a79ff5fd4116dccaeb531619bf749c0737c7eb09a2fce92",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "config/network_reference.json": "4f8b07596612bee8cc56af1970d4d134dc19bc9face1625a4c86683b540aca61",
+    "config/discovery_lineage.json": "868ba258cdc8b5911aba63f3e352dfc0f7ebe96f5da420b9707957faa9839645",
+    "config/gene_mapping_policy.json": "0a55a0fd71f9485f6026a4693b2becd6c4aeb557cc7a76cb61084fbfb7a79940",
+    "docs/REPLICATION_EVALUATION.md": "8261fe9824c0934bbdbc434fa95cb0b82ab627a81fa13bfb18ab54b2f1c776d7",
+    "manifests/final_discovery_clinical_selected.tsv": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d",
+    "manifests/final_heca_clinical_selected.tsv": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc",
+    "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
+    "reports/final_clinical_design_discovery_primary.tsv": "cfde21f83223ca3ba74f9f1e0b330aea98ca2341f4efe47348d6fa6f5f99241c",
+    "reports/final_clinical_design_heca_primary.tsv": "e8eaf603af32950b6b329ba7f0501c23d25f9cb22e6177fd76609adee44a638b",
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067",
+    "data/processed/discovery/provenance.json": "a2e2614c7bd3d21ae67534c58bc4932c20d1ffc4e0b2b081d3ad7e258aaeb361",
+    "data/processed/heca/counts_stable.tsv.gz": "77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0",
+    "data/processed/heca/provenance.json": "8be6e1b3e1e3d3fac67b50b3ceaccd343ee35fac492ac21a98819bc272ed9ce7",
+    "data/metadata/heca_h5/obs_selected.tsv": "835c0d9aaf4dcc3b89183ad03c94f171bd9b7ca4aa736ed1e6c29cf3704932ef",
+    "data/metadata/heca_author/metadata-donors.csv": "9c8c5e501c65a457d76927a8e1691ce8c099d94d05fc6c85ec2aa344cf6efa07",
+    "data/metadata/heca_author/metadata-libraries.csv": "82d6a06a41f0f0277ecb2fcb9352296cca857246632e6216c4fb5623f06a3dc9",
+    "data/reference/string/direct_evidence_gene_edges.tsv.gz": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033"
+  },
+  "state_at_freeze": {
+    "discovery_count_matrix_donor_columns": 22,
+    "heca_count_matrix_selected_donors": 22,
+    "secretory_phase_expression_data_present": false,
+    "downloads_started": false,
+    "models_fitted": 0,
+    "expression_values_read": false
+  },
+  "candidate_counts_from_metadata": {
+    "discovery_proliferative_v1": 22,
+    "discovery_secretory_candidates": 13,
+    "heca_proliferative_v1": 22,
+    "heca_secretory_candidates": 20
+  },
+  "timing_note": "Eligibility counts were tabulated from cached clinical and cell-label metadata before this freeze; no expression from any secretory donor exists locally or has been read. Expected marker directions are public knowledge, which is the purpose of a positive control.",
+  "modifies_v1_artifacts": false
+}
