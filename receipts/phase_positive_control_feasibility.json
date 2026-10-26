@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "phase": "PHASE_POSITIVE_CONTROL_FEASIBILITY_METADATA_ONLY",
+  "created_utc": "2026-10-26T06:53:17+00:00",
+  "git_head": "74a680caed3c10372bcdd55f47810c47fc2dc2d3",
+  "protocol": "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md",
+  "script": "scripts/phase_positive_control_feasibility.sh",
+  "inputs_sha256": {
+    "config/phase_positive_control.json": "4fb6084dc4fefeec1a79ff5fd4116dccaeb531619bf749c0737c7eb09a2fce92",
+    "manifests/final_discovery_clinical_selected.tsv": "24ba9af01c457ff6840796097a94f7f75b22b379d65b37dd0f1c8af15277c08d",
+    "manifests/discovery_clinical_candidates.tsv": "e10371d50623c84ad3d13a6ab27e2dfd0fbca5579d28fb94b6b1dad11a2bc6a7",
+    "manifests/final_heca_clinical_selected.tsv": "1a0ba5813046f9cb6e18862e17ca7fe64c31a39605d048309f1e3522447046cc",
+    "data/metadata/heca_h5/obs_selected.tsv": "835c0d9aaf4dcc3b89183ad03c94f171bd9b7ca4aa736ed1e6c29cf3704932ef",
+    "data/metadata/heca_author/metadata-donors.csv": "9c8c5e501c65a457d76927a8e1691ce8c099d94d05fc6c85ec2aa344cf6efa07",
+    "data/metadata/heca_author/metadata-libraries.csv": "82d6a06a41f0f0277ecb2fcb9352296cca857246632e6216c4fb5623f06a3dc9",
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067",
+    "data/processed/heca/provenance.json": "8be6e1b3e1e3d3fac67b50b3ceaccd343ee35fac492ac21a98819bc272ed9ce7"
+  },
+  "outputs_sha256": {
+    "manifests/phase_positive_control_discovery_candidates.tsv": "cd6235865aefc7e31086b29cb1a1427088a9e27e068870b1d0959faf0c487395",
+    "manifests/phase_positive_control_heca_candidates.tsv": "72877e5c8e2683ac25be2b042d5c194efce4237e2a51640862fec282fe690a91",
+    "reports/phase_positive_control_design_discovery_primary.tsv": "1d1677e3058e35007458d3b9eccbe913ea204c89e23a8b27965b8f9f5f4cc490",
+    "reports/phase_positive_control_design_discovery_fallback.tsv": "992fa907ecc41088fca01bf2ab522a582e9e65cb9679ef80ef74299da50fe994",
+    "reports/phase_positive_control_design_heca_primary.tsv": "b99fca8f5932ce81815e54c5df3caf0f3087c8e7252c317b465daee1834225c4",
+    "reports/phase_positive_control_design_heca_fallback.tsv": "1dc8b8d79be8c786f289e769d2f4f24c17f307f3868b07c895a32b66f9af1120",
+    "manifests/phase_positive_control_heca_download_manifest.tsv": "7654e0d4e3642e69884548c9ad3184410bdd09144ef2e992f8cf37c302b6f8f6"
+  },
+  "discovery": {
+    "donors_total": 35, "proliferative_v1": 22, "secretory_candidates": 13, "secretory_ENDO": 7, "secretory_non_ENDO": 6,
+    "periovulatory_excluded_as_ambiguous": 18,
+    "secretory_excluded_by_rule": "sample87[secretory_late;minor=1;detail=minor cervicitis]",
+    "candidate_ids_match_frozen_config": true,
+    "group_minimum": 8, "group_minimum_pass": true,
+    "primary_design": {"file": "reports/phase_positive_control_design_discovery_primary.tsv", "n": 35, "p": 13, "rank": 13, "residual_df": 22, "age_mean_levels_ref_adenoconst": "34.42857142857143	9	batch11	0"},
+    "fallback_design": {"file": "reports/phase_positive_control_design_discovery_fallback.tsv", "n": 35, "p": 6, "rank": 6, "residual_df": 29, "age_mean_levels_ref_adenoconst": "34.42857142857143	2	first	0"},
+    "phase_by_capture_batch": "batch11 proliferative 2;batch12 proliferative 2;batch12 secretory 1;batch13 proliferative 2;batch13 secretory 2;batch14 proliferative 4;batch15 proliferative 1;batch15 secretory 2;batch16 proliferative 4;batch16 secretory 1;batch17 proliferative 1;batch17 secretory 1;batch18 proliferative 3;batch18 secretory 2;batch19 proliferative 3;batch19 secretory 4;",
+    "design_decision": "primary",
+    "count_matrix_donor_columns": 22,
+    "secretory_donors_present_in_count_matrix": 0,
+    "count_source_required": {"url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE266nnn/GSE266265/suppl/GSE266265_EndoAtlas.rds", "recorded_bytes": 41729517596, "head_status": "200", "head_bytes": "41729517596", "head_matches_recorded": true}
+  },
+  "heca": {
+    "obs_rows_scanned": 312246,
+    "donors_total_selected": 42, "proliferative_v1": 22, "secretory_selected": 20, "secretory_ENDO": 16, "secretory_non_ENDO": 4,
+    "secretory_samples_considered": 23,
+    "secretory_samples_not_selected": "UA_Endo11460962_FX1170:repeat_smaller_or_later;UA_Endo12865966_FX1223:lt50_primary_nuclei;UA_Endo11460963_FX9006:repeat_smaller_or_later",
+    "age_mismatch_rows": 0,
+    "candidate_ids_match_frozen_config": true,
+    "group_minimum": 5, "group_minimum_pass": true,
+    "primary_design": {"file": "reports/phase_positive_control_design_heca_primary.tsv", "n": 42, "p": 13, "rank": 13, "residual_df": 29, "age_mean_levels_ref_adenoconst": "32.5	9	20	0"},
+    "fallback_design": {"file": "reports/phase_positive_control_design_heca_fallback.tsv", "n": 42, "p": 5, "rank": 5, "residual_df": 37, "age_mean_levels_ref_adenoconst": "32.5	0	none	0"},
+    "phase_by_library_group_Lane": "20 proliferative 1;42058 proliferative 1;42058 secretory 3;42196 proliferative 2;42196 secretory 2;43103 proliferative 2;43281 proliferative 6;43281 secretory 1;43937 proliferative 4;43937 secretory 7;43996 proliferative 6;43996 secretory 2;44595 secretory 2;44999 secretory 3;",
+    "design_decision": "primary",
+    "secretory_donors_present_in_count_provenance": 0,
+    "download_manifest": {"file": "manifests/phase_positive_control_heca_download_manifest.tsv", "archives": 20, "head_200_with_size": 20, "total_bytes": 1378729112}
+  },
+  "resources": {
+    "repository_volume_available_kib": 346164516,
+    "operator_reported_host_ram_gib": "15.9",
+    "operator_reported_wsl_memory_gb": "8",
+    "operator_reported_wsl_swap_gb": "2"
+  },
+  "expression_values_read": false,
+  "downloads_started": false,
+  "models_fitted": 0,
+  "v1_artifacts_modified": false
+}

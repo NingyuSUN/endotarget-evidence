@@ -21,6 +21,7 @@ supported target shortlist and no established advantage from network propagation
 - [External evaluation definitions](REPLICATION_EVALUATION.md) and [resampling](RESAMPLING.md)
 - [Genetic evidence method](GENETIC_EVIDENCE_METHOD.md)
 - [Phase positive-control protocol](PHASE_POSITIVE_CONTROL_PROTOCOL.md) — frozen 2026-10-26 before any secretory-phase data; not executed
+- [Phase positive-control feasibility](../reports/phase_positive_control_feasibility.md) — metadata only; both designs estimable; secretory counts not yet downloaded
 
 ## Reproduction
 
