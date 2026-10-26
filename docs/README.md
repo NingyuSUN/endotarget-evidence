@@ -20,6 +20,7 @@ supported target shortlist and no established advantage from network propagation
 - [Ranking implementation](RANKING_IMPLEMENTATION.md) and [network audit](../reports/string_gene_reference_audit.md)
 - [External evaluation definitions](REPLICATION_EVALUATION.md) and [resampling](RESAMPLING.md)
 - [Genetic evidence method](GENETIC_EVIDENCE_METHOD.md)
+- [Phase positive-control protocol](PHASE_POSITIVE_CONTROL_PROTOCOL.md) — frozen 2026-10-26 before any secretory-phase data; not executed
 
 ## Reproduction
 

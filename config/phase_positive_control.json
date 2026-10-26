@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_PRE_DATA_2026-10-26",
+  "protocol": "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md",
+  "purpose": "pipeline positive control; does not modify v1 disease analysis",
+  "coefficient": "SEC_minus_PRO",
+  "sign_convention": "positive = higher in secretory",
+  "inherits": {
+    "estimator": "config/statistical_analysis.json",
+    "ranking": "config/ranking_algorithm.json",
+    "network": "config/network_reference.json",
+    "gene_mapping": "config/gene_mapping_policy.json",
+    "discovery_lineage": "config/discovery_lineage.json",
+    "heca_primary_labels": [
+      "eStromal",
+      "eStromal_MMPs",
+      "eStromal_cycling",
+      "dStromal_early",
+      "dStromal_mid",
+      "dStromal_late",
+      "Fibroblast_basalis"
+    ],
+    "overrides": {
+      "fit.coefficient": "SEC_minus_PRO",
+      "filterByExpr.group": "phase"
+    }
+  },
+  "phase_factor": {
+    "reference": "proliferative",
+    "case": "secretory",
+    "discovery_secretory_labels": ["secretory_early", "secretory_mid", "secretory_late"],
+    "discovery_excluded_labels": ["periovulatory"],
+    "heca_secretory_binary_stage": "Secretory",
+    "heca_excluded_stages": ["Hormones", "Menstrual", "Unknown"]
+  },
+  "cohorts": {
+    "discovery": {
+      "proliferative_donors_v1": [
+        "sample70", "sample71", "sample76", "sample82", "sample83", "sample84", "sample91",
+        "sample94", "sample95", "sample96", "sample106", "sample110", "sample111", "sample112",
+        "sample114", "sample116", "sample123", "sample125", "sample126", "sample130",
+        "sample134", "sample135"
+      ],
+      "secretory_candidates": {
+        "ENDO": ["sample75", "sample85", "sample100", "sample127", "sample128", "sample132", "sample136"],
+        "non-ENDO": ["sample88", "sample104", "sample113", "sample117", "sample131", "sample133"]
+      },
+      "secretory_rule": "author MenstrualCyclePhase in secretory_*; hormone FALSE; minor exclusion flag 0; no disease inconsistency; age present; >=50 primary cells",
+      "excluded_secretory_by_rule": {"sample87": "minor clinical exclusion flag (cervicitis), same rule as v1"},
+      "minimum_per_phase_group": 8,
+      "primary_design": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:*_vs_batch11", "adenomyosis"],
+      "fallback_design": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "sequencing_batch:second_vs_first", "adenomyosis"],
+      "integer_counts": false
+    },
+    "heca": {
+      "proliferative_donors_v1": [
+        "EX0045", "EX0288", "EX0540", "EX0795", "FX0011", "FX0052", "FX0060", "FX1097",
+        "FX1101", "FX1104", "FX1119", "FX1125", "FX1129", "FX1136", "FX1146", "FX1150",
+        "FX1160", "FX1236", "FX9005", "FX9020", "FX9024", "FX9027"
+      ],
+      "secretory_candidates": {
+        "ENDO": ["EX0277", "EX0366", "EX0661", "EX0789", "FX0033", "FX1087", "FX1100", "FX1130",
+                 "FX1156", "FX1163", "FX1170", "FX1205", "FX1223", "FX1233", "FX9006", "FX9022"],
+        "non-ENDO": ["FX0028", "FX1106", "FX9008", "FX9011"]
+      },
+      "secretory_rule": "Binary Stage Secretory; Stage not Hormones/Menstrual/Unknown; hormone field missing = study natural-cycle group as v1; superficial eutopic; discard_lowQC=no; >=50 primary nuclei; largest sample per donor; v1 adenomyosis coding; duplicate-conflict donors excluded",
+      "sample_selection": "largest primary nucleus count, then lexical library, then sample; no summing",
+      "minimum_per_phase_group": 5,
+      "primary_design": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:*_vs_lowest", "adenomyosis"],
+      "fallback_design": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "adenomyosis"],
+      "integer_counts": true
+    }
+  },
+  "design_rules": {
+    "min_cells": 50,
+    "min_residual_df": 5,
+    "rank_tolerance": 1e-07,
+    "age_center": "arithmetic mean of analyzed donors",
+    "constant_adenomyosis": "omit with receipt",
+    "hierarchy_decision": "metadata-level rank/df check in feasibility step, before any count download; fixed thereafter",
+    "failure": "NOT_ESTIMABLE; no relaxation, no reclassification"
+  },
+  "order_of_operations": [
+    "F0 protocol freeze",
+    "feasibility (metadata only)",
+    "discovery secretory counts from GEO RDS",
+    "discovery fit and F1 list freeze",
+    "HECA secretory counts from BioStudies archives",
+    "HECA fit and evaluation"
+  ],
+  "reduced_form_if_discovery_counts_infeasible": {
+    "run": ["P1_heca", "S1_heca"],
+    "report_as_not_evaluable": ["P2", "S2"]
+  },
+  "endpoints": {
+    "P1": {"metric": "genes with BH q<0.05 per cohort", "pass": {"discovery_min": 100, "heca_min": 100}, "strong_label_min": 1000},
+    "P2": {
+      "list": "frozen discovery B0 top-20 by |moderated t|",
+      "evaluation": "docs/REPLICATION_EVALUATION.md definitions; denominator 20; no refill; coverage-limited if evaluable < 16",
+      "pass": {"same_sign_min": 16, "same_sign_and_external_q_lt_0_05_min": 10},
+      "secondary": "top-50"
+    },
+    "S1": {
+      "panel": [
+        {"gene": "IGFBP1", "expected_sign": "+", "source": "Gellersen & Brosens 2014, doi:10.1210/er.2014-1045"},
+        {"gene": "PRL", "expected_sign": "+", "source": "Gellersen & Brosens 2014, doi:10.1210/er.2014-1045"},
+        {"gene": "DKK1", "expected_sign": "+", "source": "Mareckova 2024, doi:10.1038/s41588-024-01873-w; dStromal_mid"},
+        {"gene": "LEFTY2", "expected_sign": "+", "source": "Mareckova 2024, doi:10.1038/s41588-024-01873-w; dStromal_late"},
+        {"gene": "PLCL1", "expected_sign": "+", "source": "Mareckova 2024, doi:10.1038/s41588-024-01873-w; dStromal_early"},
+        {"gene": "ESR1", "expected_sign": "-", "source": "Mareckova 2024, doi:10.1038/s41588-024-01873-w; dStromal_mid/late"},
+        {"gene": "PGR", "expected_sign": "-", "source": "Mareckova 2024, doi:10.1038/s41588-024-01873-w; dStromal_mid/late"}
+      ],
+      "pass": {"discovery_expected_sign_and_q_lt_0_05_min": 6, "heca_expected_sign_min": 6},
+      "filter_failures_count_as_failures": true,
+      "dependency_note": "five of seven markers derive from the HECA authors' label characterization; partly dependent for HECA, independent for discovery"
+    },
+    "S2": {"optional": true, "definition": "v1 B1/G1 top-20 transfer and paired G1-B0 500-draw bootstrap", "affects_pass_fail": false}
+  },
+  "interpretation_rules_fixed": true,
+  "v1_artifacts_modified": false,
+  "sources": {
+    "heca": "doi:10.1038/s41588-024-01873-w",
+    "wang_2020": "doi:10.1038/s41591-020-1040-z",
+    "gellersen_brosens_2014": "doi:10.1210/er.2014-1045",
+    "talbi_2006": "doi:10.1210/en.2005-1076",
+    "discovery_cohort": "doi:10.1038/s41467-026-73020-4"
+  }
+}
