@@ -91,7 +91,11 @@ Outputs under `data/processed/phase_positive_control/discovery/`:
   memory-mapped file pages — the streaming reads were changed to explicit offset reads
   (peak 1.9 GiB). No numbers changed between attempts; only the completed run wrote outputs.
 - Clean-up of the 39 GiB object and the 14 GB extract on the secondary volume (plan step
-  8) has not been done; both remain, hash-recorded, pending a decision.
+  8) was deferred until the positive control was evaluated and was completed on
+  2026-10-27: both were re-hashed (the object matched the author record and the download
+  receipt; the 21 extract files matched the parser report) and then deleted, as recorded in
+  [`phase_positive_control_server_cleanup.json`](../receipts/phase_positive_control_server_cleanup.json).
+  The processed count matrices, the HECA archives and all receipts were kept.
 
 ## What this does and does not establish
 
