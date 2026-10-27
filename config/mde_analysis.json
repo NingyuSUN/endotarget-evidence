@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_PRE_COMPUTATION_2026-10-27",
+  "protocol": "docs/MDE_ANALYSIS_PROTOCOL.md",
+  "purpose": "minimum detectable effect bounds from the saved v1 fits and a donor-subsampling sensitivity curve on the phase positive-control signal; no disease model is fitted; no v1 or positive-control artifact is modified",
+  "estimator_config": "config/statistical_analysis.json",
+  "phase_config": "config/phase_positive_control.json",
+  "power": 0.8,
+  "two_sided": true,
+  "nominal_alpha": 0.05,
+  "bh_q": 0.05,
+  "bh_scenarios_k": [1, 10, 100, 1000],
+  "scenario_names": ["alpha_0.05", "bh_k1", "bh_k10", "bh_k100", "bh_k1000"],
+  "family_size_definition": "all expression-pass genes of the fit (the v1 BH adjustment denominator)",
+  "mde_solver": {"method": "uniroot on the two-sided noncentral-t rejection probability", "tolerance": 1e-08, "approximation_check_column": "(qt(1-alpha/2,df)+qt(power,df))*SE"},
+  "mde_summary_quantiles": [0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 0.95],
+  "mde_at_most_log2": [0.25, 0.5, 0.585, 1.0, 2.0],
+  "ci_containment_log2_thresholds": [0.25, 0.5, 0.585, 1.0, 2.0],
+  "ci_levels": {"per_gene": 0.95, "family_bonferroni": 0.95},
+  "expression_bins": 5,
+  "fits": {
+    "v1_discovery": {
+      "cohort": "discovery",
+      "coefficient": "ENDO_minus_non_ENDO",
+      "model": "work/statistical/discovery_primary/de/model.rds",
+      "provenance": "work/statistical/discovery_primary/de/provenance.json",
+      "provenance_sha256": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
+      "provenance_sha256_source": "receipts/discovery_primary_execution.json:DE_provenance_sha256",
+      "model_sha256_from": "provenance.output_sha256"
+    },
+    "v1_heca": {
+      "cohort": "heca",
+      "coefficient": "ENDO_minus_non_ENDO",
+      "model": "work/statistical/heca_primary/de/model.rds",
+      "model_sha256": "10306b806a875d9bb42f699bfcc8851d39c3282d4705f5f7d215775364daa174",
+      "model_sha256_source": "receipts/heca_primary_execution.json:output_sha256"
+    },
+    "phase_discovery": {
+      "cohort": "discovery",
+      "coefficient": "SEC_minus_PRO",
+      "model": "work/phase_positive_control/discovery_fit/de/model.rds",
+      "model_sha256": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+      "model_sha256_source": "reports/phase_positive_control_f1/de_provenance.json:output_sha256"
+    },
+    "phase_heca": {
+      "cohort": "heca",
+      "coefficient": "SEC_minus_PRO",
+      "model": "work/phase_positive_control/heca_fit/de/model.rds",
+      "model_sha256": "d9b570e2f0901bc1ed8cc50202ca171b7967a6676302175e07d06fa323aedbe1",
+      "model_sha256_source": "reports/phase_positive_control_f2/heca_de_provenance.json:output_sha256"
+    }
+  },
+  "subsampling": {
+    "counts": {
+      "discovery": "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz",
+      "heca": "data/processed/phase_positive_control/heca/counts_stable.tsv.gz"
+    },
+    "clinical": {
+      "discovery": "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv",
+      "heca": "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv"
+    },
+    "input_hash_sources": {
+      "discovery": "receipts/phase_positive_control_f1_discovery_freeze.json:artifacts",
+      "heca": "receipts/phase_positive_control_evaluation.json:artifacts"
+    },
+    "reference_fit": {"discovery": "phase_discovery", "heca": "phase_heca"},
+    "coefficient": "SEC_minus_PRO",
+    "draws_per_level": 100,
+    "seed": 42,
+    "rng": "R_Mersenne-Twister_Inversion_Rejection",
+    "replace": false,
+    "equal_arms": true,
+    "stratify": "phase",
+    "levels_per_arm": {
+      "discovery": [5, 6, 8, 10, 11, 13],
+      "heca": [5, 6, 8, 10, 11, 13, 16, 20]
+    },
+    "designs": {
+      "primary": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered", "batch_treatment_contrasts_over_sorted_levels_present", "adenomyosis"],
+      "reduced": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered", "adenomyosis"]
+    },
+    "constant_nuisance_policy": "drop_with_receipt",
+    "invalid_draw_policy": "rank_deficient_or_residual_df_below_5_is_invalid_retained_not_redrawn",
+    "refilter": true,
+    "renormalize": true,
+    "refit_voom": true,
+    "refit_ebayes": true,
+    "bh_family": "subset_expression_pass_genes",
+    "reference_sets": {
+      "significant_set": "full-cohort phase fit genes with BH q<0.05 (estimable), with signs",
+      "top_list": "full-cohort top-20 by |moderated t| among estimable genes"
+    },
+    "metrics": ["n_sig", "n_sig_up", "n_sig_down", "recall_full", "recall_full_any_sign", "sign_disagreement", "top20_overlap", "typical_mde_alpha_0.05", "typical_mde_bh_k100", "median_se", "median_df_total", "family_size", "estimable_genes", "residual_df", "rank", "n_batch_levels", "dropped_constant_nuisance"],
+    "typical_gene_mde": "exact noncentral-t MDE at the median SE and median df_total of the draw's estimable genes; bh_k100 uses alpha = 0.05*100/family_size of the draw",
+    "identity_check": {
+      "required": true,
+      "description": "the subsampling estimator on all donors with the primary design must reproduce the frozen full-cohort table before any subsample is fitted",
+      "tolerance_logFC": 1e-08,
+      "tolerance_t": 1e-06,
+      "tolerance_log10_p": 1e-06
+    },
+    "summary_percentiles": [0.025, 0.5, 0.975],
+    "quantile_type": 7,
+    "max_workers": 12
+  },
+  "bridge": {
+    "phase_program": "phase fit genes with BH q<0.05 (estimable)",
+    "disease_mde_reference_scenarios": ["alpha_0.05", "bh_k100"],
+    "statistics": [
+      "share of phase-program genes whose |log2FC| exceeds the disease fit's median MDE under each reference scenario",
+      "gene-matched: among phase-program genes present in the disease family, share whose phase |log2FC| exceeds that gene's own disease MDE under each scenario",
+      "median |log2FC| of the phase program"
+    ],
+    "descriptive_only": true
+  },
+  "outputs": {
+    "work_root": "work/mde_analysis",
+    "publish_dir": "reports/mde_analysis",
+    "freeze_receipt": "receipts/mde_analysis_freeze.json",
+    "results_receipt": "receipts/mde_analysis_results.json",
+    "report": "reports/mde_results.md"
+  },
+  "interpretation_rules_fixed": true,
+  "pass_fail_endpoints": false,
+  "new_disease_fits": false,
+  "v1_artifacts_modified": false
+}
