@@ -1,0 +1,138 @@
+{
+  "status": "DISCOVERY_RANKING_ARTIFACT_NOT_COMPLETE_EXTERNAL_FREEZE",
+  "finished_utc": "2026-10-27T00:46:06.762719+00:00",
+  "inputs": {
+    "discovery_de": {
+      "path": "/home/analyst/te/work/phase_positive_control/discovery_fit/de/de_fitted.tsv",
+      "sha256": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a"
+    },
+    "discovery_de_all": {
+      "path": "/home/analyst/te/work/phase_positive_control/discovery_fit/de/de_all.tsv",
+      "sha256": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a"
+    },
+    "reference_edges": {
+      "path": "/home/analyst/te/data/reference/string/direct_evidence_gene_edges.tsv.gz",
+      "sha256": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033"
+    },
+    "configuration": {
+      "path": "/home/analyst/te/config/ranking_algorithm.json",
+      "sha256": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6"
+    }
+  },
+  "implementation": {
+    "path": "/home/analyst/te/scripts/rank_targets.py",
+    "sha256": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe"
+  },
+  "software": {
+    "python": "3.10.22",
+    "numpy": "2.2.6",
+    "executable": "/home/analyst/te/envs/statistical-runtime/bin/python"
+  },
+  "algorithm": {
+    "schema_version": 1,
+    "minimum_universe_genes": 50,
+    "universe": "complete_discovery_expression_pass_de_all_induced_graph_then_remove_zero_degree_and_require_all_U_fits",
+    "stable_gene_id_pattern": "^ENSG[0-9]{11}$",
+    "reference_sha256": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033",
+    "reference_kind": "STRING12.5_direct_experiments_database_functional_association",
+    "reference_schema": [
+      "gene1",
+      "gene2",
+      "weight"
+    ],
+    "reference_weight": "unchanged_max_direct_score_divided_by_1000",
+    "minimum_edge_weight": 0.7,
+    "maximum_edge_weight": 1.0,
+    "duplicate_reference_edges": "reject_already_collapsed_immutable_reference",
+    "self_loops": "reject_already_removed_immutable_reference",
+    "B0": "descending_abs_moderated_discovery_t",
+    "B1": "descending_weighted_degree_same_U",
+    "G1": "restart_random_walk_symmetric_adjacency_column_normalized",
+    "seed": "abs_discovery_t_normalized_to_sum_1_on_U",
+    "restart_probability": 0.5,
+    "l1_tolerance": 1e-10,
+    "max_iterations": 10000,
+    "tie_break": "ascending_stable_gene_id_exact_score_ties",
+    "direction": "sign_discovery_logFC_independently_preserved_zero_is_zero",
+    "top_k": [
+      20,
+      50
+    ],
+    "external_data_used": false,
+    "parameter_search": false
+  },
+  "counts": {
+    "discovery_expressed_genes": 17341,
+    "finite_discovery_fit_genes": 17341,
+    "reference_edges": 159312,
+    "induced_edges": 122355,
+    "final_universe_genes": 11650,
+    "excluded_induced_zero_degree": 5691
+  },
+  "propagation": {
+    "iterations": 28,
+    "final_l1_change": 5.333520764475841e-11,
+    "fixed_point_l1_residual": 2.602940075593304e-11,
+    "mass_sum": 1.0,
+    "maximum_mass_error": 0.0,
+    "converged": true
+  },
+  "outputs": {
+    "B0.tsv": {
+      "sha256": "cb0f2b3e79681ecad534fda0574ab672b1a8d9e76a9ca6e0a25c04a6214373df",
+      "bytes": 1886422
+    },
+    "B0_top20.tsv": {
+      "sha256": "0650da62a175aafe71fe6160215070c8acb88a63d6927caf73d63c8cee674a0e",
+      "bytes": 3247
+    },
+    "B0_top50.tsv": {
+      "sha256": "a76ff1fd31667f459ea2e236f59d3d5dae2fe17a694cba816d87815eeecaf973",
+      "bytes": 7983
+    },
+    "B1.tsv": {
+      "sha256": "87fabf30f02790c17b0a69e4797d9455cdfe32bb6f268a8fea8b46d0caef4f47",
+      "bytes": 1867580
+    },
+    "B1_top20.tsv": {
+      "sha256": "f9415299ae53f18d8eccabb4cdb2c48c1a26366a1912121afd9184cb33c5d610",
+      "bytes": 3326
+    },
+    "B1_top50.tsv": {
+      "sha256": "c4a1cec526894e3659e05076e52d9a75011fcf5879708f6b6f102e8b28d8d8b7",
+      "bytes": 8180
+    },
+    "G1.tsv": {
+      "sha256": "cdcf13a1ec9d69b198e294c1f3aae8afb5481040b7f24da37a318ba1200f0634",
+      "bytes": 1934228
+    },
+    "G1_top20.tsv": {
+      "sha256": "58374b1df803389d5a08c8ce98c52b3784c8f2b3bc0e5d51e3b37cbbff9b6a49",
+      "bytes": 3379
+    },
+    "G1_top50.tsv": {
+      "sha256": "954ec20715652c94e1373dacc09308db962d7df95771b97e48fa1cdd7f211852",
+      "bytes": 8340
+    },
+    "excluded_genes.tsv": {
+      "sha256": "ca4e9bac233740aeca37f5401d632656d19ba5abf196e92281c04f0068060d02",
+      "bytes": 313020
+    },
+    "induced_edges.tsv": {
+      "sha256": "422d5c8be651e5ebe2d5633924a24b58f0fb391b23fe2451f059e7c23c30ef0d",
+      "bytes": 6143085
+    },
+    "universe.tsv": {
+      "sha256": "4682729cbfa690d7944249d7937f1d414cfb4dc7075b20ce1fd7adc7185e4c08",
+      "bytes": 186408
+    }
+  },
+  "universe_sha256": "4682729cbfa690d7944249d7937f1d414cfb4dc7075b20ce1fd7adc7185e4c08",
+  "induced_graph_sha256": "422d5c8be651e5ebe2d5633924a24b58f0fb391b23fe2451f059e7c23c30ef0d",
+  "external_data_used": false,
+  "test_min_universe_override": null,
+  "scientific_validation": false,
+  "complete_external_freeze": false,
+  "direction_meaning": "discovery_expression_sign_not_intervention_activation_or_inhibition",
+  "reference_meaning": "functional_association_not_physical_binding_or_causal_regulation"
+}

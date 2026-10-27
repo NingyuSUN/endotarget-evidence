@@ -1,0 +1,91 @@
+{
+  "started_utc": "2026-10-27 00:45:48 UTC",
+  "completed_utc": "2026-10-27 00:45:59 UTC",
+  "cohort": "discovery",
+  "contrast": "SEC_minus_PRO",
+  "group_column": "phase",
+  "data_kind": "public_cohort",
+  "scientific_effect_run": true,
+  "protocol": "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md",
+  "freeze_phase": "PHASE_POSITIVE_CONTROL_PROTOCOL_FROZEN_PRE_DATA",
+  "freeze_artifact_check": {
+    "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md": true,
+    "config/phase_positive_control.json": true,
+    "config/statistical_analysis.json": true,
+    "config/ranking_algorithm.json": true,
+    "config/network_reference.json": true,
+    "config/discovery_lineage.json": true,
+    "config/gene_mapping_policy.json": true,
+    "docs/REPLICATION_EVALUATION.md": false,
+    "manifests/final_discovery_clinical_selected.tsv": true,
+    "manifests/final_heca_clinical_selected.tsv": true,
+    "manifests/discovery_clinical_candidates.tsv": true,
+    "reports/final_clinical_design_discovery_primary.tsv": true,
+    "reports/final_clinical_design_heca_primary.tsv": true,
+    "data/processed/discovery/counts_stable.tsv.gz": true,
+    "data/processed/discovery/provenance.json": true,
+    "data/processed/heca/counts_stable.tsv.gz": true,
+    "data/processed/heca/provenance.json": true,
+    "data/metadata/heca_h5/obs_selected.tsv": true,
+    "data/metadata/heca_author/metadata-donors.csv": true,
+    "data/metadata/heca_author/metadata-libraries.csv": true,
+    "data/reference/string/direct_evidence_gene_edges.tsv.gz": true
+  },
+  "audit": {
+    "n_donors": 35,
+    "input_genes": 26109,
+    "rank": 13,
+    "residual_df": 22,
+    "proliferative": 22,
+    "secretory": 13,
+    "group_column": "phase",
+    "coefficient": "SEC_minus_PRO",
+    "design_columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:batch12_vs_batch11", "capture_batch:batch13_vs_batch11", "capture_batch:batch14_vs_batch11", "capture_batch:batch15_vs_batch11", "capture_batch:batch16_vs_batch11", "capture_batch:batch17_vs_batch11", "capture_batch:batch18_vs_batch11", "capture_batch:batch19_vs_batch11", "adenomyosis"]
+  },
+  "tested_family_size": 17341,
+  "estimable_genes": 17341,
+  "significant_BH05": 7367,
+  "significant_BH05_up": 3611,
+  "significant_BH05_down": 3756,
+  "effective_compatibility": {
+    "adaptive_span_argument_supported": true,
+    "effective_adaptive_span": false,
+    "legacy_argument_supported": true,
+    "effective_legacy_ebayes": true
+  },
+  "filter_audit": {
+    "cpm_cutoff": 0.3201,
+    "minimum_support_donors": 12.1,
+    "min_total_count": 15,
+    "median_raw_library_size": 31243134.5679
+  },
+  "captured_warnings": [],
+  "software": {
+    "R": "R version 4.4.3 (2025-02-28)",
+    "edgeR": "4.4.0",
+    "limma": "3.62.1",
+    "statmod": "1.5.2"
+  },
+  "reference_implementation": "scripts/donor_de_lib.R (hash recorded in input_sha256; not sourced)",
+  "input_sha256": {
+    "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": "a0fe7e0e7b71a9d1290368154a64e3756e2c7ada4185a8df9f8d01d1a2cc85ad",
+    "reports/phase_positive_control_design_discovery_primary.tsv": "1d1677e3058e35007458d3b9eccbe913ea204c89e23a8b27965b8f9f5f4cc490",
+    "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": "d0187da628540684dfba8edde41f756f0773953701309ef3598c39e9e3a0c455",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/phase_positive_control.json": "4fb6084dc4fefeec1a79ff5fd4116dccaeb531619bf749c0737c7eb09a2fce92",
+    "receipts/phase_positive_control_freeze.json": "c32e8d4304d18f67eacf010718a502b269f01178e0558e77d604c5e2d7ffbef6",
+    "scripts/phase_positive_control_fit_discovery.R": "efe576e6f22127d95f680ae666a8ad19e0b4ac760297209ebf422b1c62cc4cf4",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de"
+  },
+  "output_sha256": {
+    "work/phase_positive_control/discovery_fit/de/de_all.tsv": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a",
+    "work/phase_positive_control/discovery_fit/de/de_fitted.tsv": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a",
+    "work/phase_positive_control/discovery_fit/de/design.tsv": "b24598d1236d548bcb2722e394815d50b9ae7731f5614c07f051f1997f30ff54",
+    "work/phase_positive_control/discovery_fit/de/expression_filter.tsv": "7e2a94c18bc972c00f933c56811cd5edd9ef4f6093245e11dba9b97effaa32ee",
+    "work/phase_positive_control/discovery_fit/de/model.rds": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+    "work/phase_positive_control/discovery_fit/de/normalization.tsv": "58c55c7129191d4407b63f9798dc47700f281290ca02af2d7d521f385a5d91b3",
+    "work/phase_positive_control/discovery_fit/de/sessionInfo.txt": "7ab378621bf73e52bdebda0acc0b19dc4f85b657c0b31e44370d51363a30e2f3"
+  },
+  "heca_phase_effects_computed": false,
+  "scientific_scope": "observational donor-level phase association in a positive-control design; not a disease effect, not causal"
+}

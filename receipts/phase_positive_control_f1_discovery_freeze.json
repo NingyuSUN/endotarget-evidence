@@ -1,0 +1,644 @@
+{
+  "schema_version": 1,
+  "phase": "PHASE_POSITIVE_CONTROL_F1_DISCOVERY_FROZEN_PRE_HECA",
+  "created_utc": "2026-10-27T00:46:09.469856+00:00",
+  "git_head": "77a7751b38331be858c5819fcc03d90fa255300d",
+  "protocol": "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md",
+  "f0_freeze": "receipts/phase_positive_control_freeze.json",
+  "f0_artifact_check_on_analysis_host": {
+    "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md": true,
+    "config/phase_positive_control.json": true,
+    "config/statistical_analysis.json": true,
+    "config/ranking_algorithm.json": true,
+    "config/network_reference.json": true,
+    "config/discovery_lineage.json": true,
+    "config/gene_mapping_policy.json": true,
+    "docs/REPLICATION_EVALUATION.md": false,
+    "manifests/final_discovery_clinical_selected.tsv": true,
+    "manifests/final_heca_clinical_selected.tsv": true,
+    "manifests/discovery_clinical_candidates.tsv": true,
+    "reports/final_clinical_design_discovery_primary.tsv": true,
+    "reports/final_clinical_design_heca_primary.tsv": true,
+    "data/processed/discovery/counts_stable.tsv.gz": true,
+    "data/processed/discovery/provenance.json": true,
+    "data/processed/heca/counts_stable.tsv.gz": true,
+    "data/processed/heca/provenance.json": true,
+    "data/metadata/heca_h5/obs_selected.tsv": true,
+    "data/metadata/heca_author/metadata-donors.csv": true,
+    "data/metadata/heca_author/metadata-libraries.csv": true,
+    "data/reference/string/direct_evidence_gene_edges.tsv.gz": true
+  },
+  "artifacts": {
+    "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": "a0fe7e0e7b71a9d1290368154a64e3756e2c7ada4185a8df9f8d01d1a2cc85ad",
+    "reports/phase_positive_control_design_discovery_primary.tsv": "1d1677e3058e35007458d3b9eccbe913ea204c89e23a8b27965b8f9f5f4cc490",
+    "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": "d0187da628540684dfba8edde41f756f0773953701309ef3598c39e9e3a0c455",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/phase_positive_control.json": "4fb6084dc4fefeec1a79ff5fd4116dccaeb531619bf749c0737c7eb09a2fce92",
+    "receipts/phase_positive_control_freeze.json": "c32e8d4304d18f67eacf010718a502b269f01178e0558e77d604c5e2d7ffbef6",
+    "scripts/phase_positive_control_fit_discovery.R": "efe576e6f22127d95f680ae666a8ad19e0b4ac760297209ebf422b1c62cc4cf4",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "scripts/rank_targets.py": "19e3183cc0bacc4f2a5abb4d03fe0f0cd9bd3ac0c628ccf6b9370e78720348fe",
+    "scripts/phase_positive_control_markers.py": "e17e06aafeddd9d345fc3e9747e2a4eda54114f0d0ae79609b6efbe9a647cd54",
+    "scripts/phase_positive_control_freeze_f1.py": "05e346d3810d400ed500086a9dca671bec8d751a173bcfa660f8437d852449fc",
+    "config/ranking_algorithm.json": "7c5edcbc3b239b60254c235831480d8232749224028635df21ed231a6bfe77c6",
+    "data/reference/string/direct_evidence_gene_edges.tsv.gz": "84a4313292da6d6d69b76a4f721893aa89775beebeed9eabcb263fe93e797033",
+    "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md": "728f5273b4cc84ddbbd82ec1a94ef63e5a701241e11a762e4229201b769b6154",
+    "work/phase_positive_control/discovery_fit/de/de_all.tsv": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a",
+    "work/phase_positive_control/discovery_fit/de/de_fitted.tsv": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a",
+    "work/phase_positive_control/discovery_fit/de/expression_filter.tsv": "7e2a94c18bc972c00f933c56811cd5edd9ef4f6093245e11dba9b97effaa32ee",
+    "work/phase_positive_control/discovery_fit/de/normalization.tsv": "58c55c7129191d4407b63f9798dc47700f281290ca02af2d7d521f385a5d91b3",
+    "work/phase_positive_control/discovery_fit/de/design.tsv": "b24598d1236d548bcb2722e394815d50b9ae7731f5614c07f051f1997f30ff54",
+    "work/phase_positive_control/discovery_fit/de/provenance.json": "9109a106ea03940edff1fb07f2404c0d16a87f7f980ed764ddf681875e96d16f",
+    "work/phase_positive_control/discovery_fit/ranking/universe.tsv": "4682729cbfa690d7944249d7937f1d414cfb4dc7075b20ce1fd7adc7185e4c08",
+    "work/phase_positive_control/discovery_fit/ranking/induced_edges.tsv": "422d5c8be651e5ebe2d5633924a24b58f0fb391b23fe2451f059e7c23c30ef0d",
+    "work/phase_positive_control/discovery_fit/ranking/excluded_genes.tsv": "ca4e9bac233740aeca37f5401d632656d19ba5abf196e92281c04f0068060d02",
+    "work/phase_positive_control/discovery_fit/ranking/provenance.json": "5b1e26070319df6a87aa014b24560c8b211343d6148c6368212014bd390fe57d",
+    "work/phase_positive_control/discovery_fit/markers_discovery.tsv": "b534878dfe83cc2f2d0fea40a27d2da5db1225855e1a8f5fa55a4fc64d1ab28c",
+    "work/phase_positive_control/discovery_fit/markers_discovery_summary.json": "1599957a87758befdd94ee55973e1a3df10b1ef8f16bff6c04b3e3e4bd00051e",
+    "work/phase_positive_control/discovery_fit/ranking/B0.tsv": "cb0f2b3e79681ecad534fda0574ab672b1a8d9e76a9ca6e0a25c04a6214373df",
+    "work/phase_positive_control/discovery_fit/ranking/B0_top20.tsv": "0650da62a175aafe71fe6160215070c8acb88a63d6927caf73d63c8cee674a0e",
+    "work/phase_positive_control/discovery_fit/ranking/B0_top50.tsv": "a76ff1fd31667f459ea2e236f59d3d5dae2fe17a694cba816d87815eeecaf973",
+    "work/phase_positive_control/discovery_fit/ranking/B1.tsv": "87fabf30f02790c17b0a69e4797d9455cdfe32bb6f268a8fea8b46d0caef4f47",
+    "work/phase_positive_control/discovery_fit/ranking/B1_top20.tsv": "f9415299ae53f18d8eccabb4cdb2c48c1a26366a1912121afd9184cb33c5d610",
+    "work/phase_positive_control/discovery_fit/ranking/B1_top50.tsv": "c4a1cec526894e3659e05076e52d9a75011fcf5879708f6b6f102e8b28d8d8b7",
+    "work/phase_positive_control/discovery_fit/ranking/G1.tsv": "cdcf13a1ec9d69b198e294c1f3aae8afb5481040b7f24da37a318ba1200f0634",
+    "work/phase_positive_control/discovery_fit/ranking/G1_top20.tsv": "58374b1df803389d5a08c8ce98c52b3784c8f2b3bc0e5d51e3b37cbbff9b6a49",
+    "work/phase_positive_control/discovery_fit/ranking/G1_top50.tsv": "954ec20715652c94e1373dacc09308db962d7df95771b97e48fa1cdd7f211852",
+    "reports/phase_positive_control_f1/ranking_B0_top20.tsv": "0650da62a175aafe71fe6160215070c8acb88a63d6927caf73d63c8cee674a0e",
+    "reports/phase_positive_control_f1/ranking_B0_top50.tsv": "a76ff1fd31667f459ea2e236f59d3d5dae2fe17a694cba816d87815eeecaf973",
+    "reports/phase_positive_control_f1/ranking_B1_top20.tsv": "f9415299ae53f18d8eccabb4cdb2c48c1a26366a1912121afd9184cb33c5d610",
+    "reports/phase_positive_control_f1/ranking_B1_top50.tsv": "c4a1cec526894e3659e05076e52d9a75011fcf5879708f6b6f102e8b28d8d8b7",
+    "reports/phase_positive_control_f1/ranking_G1_top20.tsv": "58374b1df803389d5a08c8ce98c52b3784c8f2b3bc0e5d51e3b37cbbff9b6a49",
+    "reports/phase_positive_control_f1/ranking_G1_top50.tsv": "954ec20715652c94e1373dacc09308db962d7df95771b97e48fa1cdd7f211852",
+    "reports/phase_positive_control_f1/ranking_universe.tsv": "4682729cbfa690d7944249d7937f1d414cfb4dc7075b20ce1fd7adc7185e4c08",
+    "reports/phase_positive_control_f1/ranking_excluded_genes.tsv": "ca4e9bac233740aeca37f5401d632656d19ba5abf196e92281c04f0068060d02",
+    "reports/phase_positive_control_f1/ranking_provenance.json": "5b1e26070319df6a87aa014b24560c8b211343d6148c6368212014bd390fe57d",
+    "reports/phase_positive_control_f1/de_expression_filter.tsv": "7e2a94c18bc972c00f933c56811cd5edd9ef4f6093245e11dba9b97effaa32ee",
+    "reports/phase_positive_control_f1/de_normalization.tsv": "58c55c7129191d4407b63f9798dc47700f281290ca02af2d7d521f385a5d91b3",
+    "reports/phase_positive_control_f1/de_design.tsv": "b24598d1236d548bcb2722e394815d50b9ae7731f5614c07f051f1997f30ff54",
+    "reports/phase_positive_control_f1/de_provenance.json": "9109a106ea03940edff1fb07f2404c0d16a87f7f980ed764ddf681875e96d16f",
+    "reports/phase_positive_control_f1/de_all.tsv.gz": "26d9a7e5bef2cd0eefe1b349aa0cfb961137e6347d7fc77dc2826a6a9f529e4d",
+    "reports/phase_positive_control_f1/markers_discovery.tsv": "b534878dfe83cc2f2d0fea40a27d2da5db1225855e1a8f5fa55a4fc64d1ab28c",
+    "reports/phase_positive_control_f1/markers_discovery_summary.json": "1599957a87758befdd94ee55973e1a3df10b1ef8f16bff6c04b3e3e4bd00051e"
+  },
+  "products": {
+    "discovery_de_all": "work/phase_positive_control/discovery_fit/de/de_all.tsv",
+    "discovery_de_fitted": "work/phase_positive_control/discovery_fit/de/de_fitted.tsv",
+    "expression_filter": "work/phase_positive_control/discovery_fit/de/expression_filter.tsv",
+    "normalization": "work/phase_positive_control/discovery_fit/de/normalization.tsv",
+    "design": "work/phase_positive_control/discovery_fit/de/design.tsv",
+    "de_provenance": "work/phase_positive_control/discovery_fit/de/provenance.json",
+    "universe": "work/phase_positive_control/discovery_fit/ranking/universe.tsv",
+    "induced_edges": "work/phase_positive_control/discovery_fit/ranking/induced_edges.tsv",
+    "excluded_genes": "work/phase_positive_control/discovery_fit/ranking/excluded_genes.tsv",
+    "rank_provenance": "work/phase_positive_control/discovery_fit/ranking/provenance.json",
+    "markers_discovery": "work/phase_positive_control/discovery_fit/markers_discovery.tsv",
+    "markers_discovery_summary": "work/phase_positive_control/discovery_fit/markers_discovery_summary.json",
+    "B0_full": "work/phase_positive_control/discovery_fit/ranking/B0.tsv",
+    "B0_top20": "work/phase_positive_control/discovery_fit/ranking/B0_top20.tsv",
+    "B0_top50": "work/phase_positive_control/discovery_fit/ranking/B0_top50.tsv",
+    "B1_full": "work/phase_positive_control/discovery_fit/ranking/B1.tsv",
+    "B1_top20": "work/phase_positive_control/discovery_fit/ranking/B1_top20.tsv",
+    "B1_top50": "work/phase_positive_control/discovery_fit/ranking/B1_top50.tsv",
+    "G1_full": "work/phase_positive_control/discovery_fit/ranking/G1.tsv",
+    "G1_top20": "work/phase_positive_control/discovery_fit/ranking/G1_top20.tsv",
+    "G1_top50": "work/phase_positive_control/discovery_fit/ranking/G1_top50.tsv"
+  },
+  "published_copies": {
+    "ranking_B0_top20.tsv": "reports/phase_positive_control_f1/ranking_B0_top20.tsv",
+    "ranking_B0_top50.tsv": "reports/phase_positive_control_f1/ranking_B0_top50.tsv",
+    "ranking_B1_top20.tsv": "reports/phase_positive_control_f1/ranking_B1_top20.tsv",
+    "ranking_B1_top50.tsv": "reports/phase_positive_control_f1/ranking_B1_top50.tsv",
+    "ranking_G1_top20.tsv": "reports/phase_positive_control_f1/ranking_G1_top20.tsv",
+    "ranking_G1_top50.tsv": "reports/phase_positive_control_f1/ranking_G1_top50.tsv",
+    "ranking_universe.tsv": "reports/phase_positive_control_f1/ranking_universe.tsv",
+    "ranking_excluded_genes.tsv": "reports/phase_positive_control_f1/ranking_excluded_genes.tsv",
+    "ranking_provenance.json": "reports/phase_positive_control_f1/ranking_provenance.json",
+    "de_expression_filter.tsv": "reports/phase_positive_control_f1/de_expression_filter.tsv",
+    "de_normalization.tsv": "reports/phase_positive_control_f1/de_normalization.tsv",
+    "de_design.tsv": "reports/phase_positive_control_f1/de_design.tsv",
+    "de_provenance.json": "reports/phase_positive_control_f1/de_provenance.json",
+    "de_all.tsv.gz": "reports/phase_positive_control_f1/de_all.tsv.gz",
+    "markers_discovery.tsv": "reports/phase_positive_control_f1/markers_discovery.tsv",
+    "markers_discovery_summary.json": "reports/phase_positive_control_f1/markers_discovery_summary.json"
+  },
+  "summary": {
+    "tested_family_size": 17341,
+    "estimable_genes": 17341,
+    "BH_q_lt_0_05": 7367,
+    "BH_q_lt_0_05_up": 3611,
+    "BH_q_lt_0_05_down": 3756,
+    "BH_q_lt_0_01": 5182,
+    "design": {
+      "n_donors": 35,
+      "input_genes": 26109,
+      "rank": 13,
+      "residual_df": 22,
+      "proliferative": 22,
+      "secretory": 13,
+      "group_column": "phase",
+      "coefficient": "SEC_minus_PRO",
+      "design_columns": [
+        "intercept",
+        "SEC_minus_PRO",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "capture_batch:batch12_vs_batch11",
+        "capture_batch:batch13_vs_batch11",
+        "capture_batch:batch14_vs_batch11",
+        "capture_batch:batch15_vs_batch11",
+        "capture_batch:batch16_vs_batch11",
+        "capture_batch:batch17_vs_batch11",
+        "capture_batch:batch18_vs_batch11",
+        "capture_batch:batch19_vs_batch11",
+        "adenomyosis"
+      ]
+    },
+    "filter_audit": {
+      "cpm_cutoff": 0.3201,
+      "minimum_support_donors": 12.1,
+      "min_total_count": 15,
+      "median_raw_library_size": 31243134.5679
+    },
+    "captured_warnings": [],
+    "ranking_counts": {
+      "discovery_expressed_genes": 17341,
+      "finite_discovery_fit_genes": 17341,
+      "reference_edges": 159312,
+      "induced_edges": 122355,
+      "final_universe_genes": 11650,
+      "excluded_induced_zero_degree": 5691
+    },
+    "propagation": {
+      "iterations": 28,
+      "final_l1_change": 5.333520764475841e-11,
+      "fixed_point_l1_residual": 2.602940075593304e-11,
+      "mass_sum": 1.0,
+      "maximum_mass_error": 0.0,
+      "converged": true
+    },
+    "top20": {
+      "B0": [
+        {
+          "rank": 1,
+          "gene_id": "ENSG00000060982",
+          "discovery_sign": 1,
+          "t": 23.1073485314613,
+          "adj.P.Val": 1.8771146697326e-14
+        },
+        {
+          "rank": 2,
+          "gene_id": "ENSG00000197766",
+          "discovery_sign": 1,
+          "t": 22.277719156309,
+          "adj.P.Val": 2.59980900765974e-14
+        },
+        {
+          "rank": 3,
+          "gene_id": "ENSG00000066583",
+          "discovery_sign": -1,
+          "t": -22.14246216728,
+          "adj.P.Val": 2.59980900765974e-14
+        },
+        {
+          "rank": 4,
+          "gene_id": "ENSG00000166979",
+          "discovery_sign": 1,
+          "t": 21.245079164222,
+          "adj.P.Val": 4.9976224450582e-14
+        },
+        {
+          "rank": 5,
+          "gene_id": "ENSG00000189221",
+          "discovery_sign": 1,
+          "t": 20.8943438576425,
+          "adj.P.Val": 5.85277859129604e-14
+        },
+        {
+          "rank": 6,
+          "gene_id": "ENSG00000107438",
+          "discovery_sign": 1,
+          "t": 20.7841420899684,
+          "adj.P.Val": 5.85277859129604e-14
+        },
+        {
+          "rank": 7,
+          "gene_id": "ENSG00000189058",
+          "discovery_sign": 1,
+          "t": 18.9950835557413,
+          "adj.P.Val": 4.32536025647197e-13
+        },
+        {
+          "rank": 8,
+          "gene_id": "ENSG00000109906",
+          "discovery_sign": 1,
+          "t": 17.5515869334305,
+          "adj.P.Val": 2.26074541179578e-12
+        },
+        {
+          "rank": 9,
+          "gene_id": "ENSG00000071575",
+          "discovery_sign": -1,
+          "t": -17.2208243589618,
+          "adj.P.Val": 3.13806328574973e-12
+        },
+        {
+          "rank": 10,
+          "gene_id": "ENSG00000168079",
+          "discovery_sign": 1,
+          "t": 16.6059922316165,
+          "adj.P.Val": 5.55922473490643e-12
+        },
+        {
+          "rank": 11,
+          "gene_id": "ENSG00000165675",
+          "discovery_sign": 1,
+          "t": 16.4755171395261,
+          "adj.P.Val": 5.60216446295942e-12
+        },
+        {
+          "rank": 12,
+          "gene_id": "ENSG00000065911",
+          "discovery_sign": 1,
+          "t": 16.1972696917215,
+          "adj.P.Val": 8.3311766697811e-12
+        },
+        {
+          "rank": 13,
+          "gene_id": "ENSG00000141052",
+          "discovery_sign": 1,
+          "t": 16.1081864102073,
+          "adj.P.Val": 9.26382775876549e-12
+        },
+        {
+          "rank": 14,
+          "gene_id": "ENSG00000109846",
+          "discovery_sign": 1,
+          "t": 15.7007402635157,
+          "adj.P.Val": 1.49666641488826e-11
+        },
+        {
+          "rank": 15,
+          "gene_id": "ENSG00000148516",
+          "discovery_sign": 1,
+          "t": 15.5904415044851,
+          "adj.P.Val": 1.56806585400333e-11
+        },
+        {
+          "rank": 16,
+          "gene_id": "ENSG00000127241",
+          "discovery_sign": 1,
+          "t": 15.3487122982265,
+          "adj.P.Val": 2.26821195707791e-11
+        },
+        {
+          "rank": 17,
+          "gene_id": "ENSG00000115594",
+          "discovery_sign": 1,
+          "t": 15.3030725156199,
+          "adj.P.Val": 2.26821195707791e-11
+        },
+        {
+          "rank": 18,
+          "gene_id": "ENSG00000010932",
+          "discovery_sign": -1,
+          "t": -15.0135896853907,
+          "adj.P.Val": 3.50861319716353e-11
+        },
+        {
+          "rank": 19,
+          "gene_id": "ENSG00000107984",
+          "discovery_sign": 1,
+          "t": 14.8908628983627,
+          "adj.P.Val": 4.11677511946811e-11
+        },
+        {
+          "rank": 20,
+          "gene_id": "ENSG00000184254",
+          "discovery_sign": 1,
+          "t": 14.7151754936716,
+          "adj.P.Val": 4.85379101257982e-11
+        }
+      ],
+      "B1": [
+        {
+          "rank": 1,
+          "gene_id": "ENSG00000274618",
+          "discovery_sign": -1,
+          "t": -1.00177196990556,
+          "adj.P.Val": 0.442779405681025
+        },
+        {
+          "rank": 2,
+          "gene_id": "ENSG00000141510",
+          "discovery_sign": -1,
+          "t": -2.87701200157302,
+          "adj.P.Val": 0.0227925011063644
+        },
+        {
+          "rank": 3,
+          "gene_id": "ENSG00000186868",
+          "discovery_sign": 1,
+          "t": 1.06961924549945,
+          "adj.P.Val": 0.409321388344733
+        },
+        {
+          "rank": 4,
+          "gene_id": "ENSG00000011426",
+          "discovery_sign": -1,
+          "t": -3.091749106222,
+          "adj.P.Val": 0.0149227768980223
+        },
+        {
+          "rank": 5,
+          "gene_id": "ENSG00000150991",
+          "discovery_sign": 1,
+          "t": 3.09085987741075,
+          "adj.P.Val": 0.0149227768980223
+        },
+        {
+          "rank": 6,
+          "gene_id": "ENSG00000141867",
+          "discovery_sign": 1,
+          "t": 3.52825767431035,
+          "adj.P.Val": 0.00616651078232059
+        },
+        {
+          "rank": 7,
+          "gene_id": "ENSG00000075624",
+          "discovery_sign": 1,
+          "t": 0.0321763630204326,
+          "adj.P.Val": 0.983091330961653
+        },
+        {
+          "rank": 8,
+          "gene_id": "ENSG00000275714",
+          "discovery_sign": -1,
+          "t": -2.70777576640165,
+          "adj.P.Val": 0.031399036862695
+        },
+        {
+          "rank": 9,
+          "gene_id": "ENSG00000012048",
+          "discovery_sign": -1,
+          "t": -3.67031560801955,
+          "adj.P.Val": 0.00463519308895169
+        },
+        {
+          "rank": 10,
+          "gene_id": "ENSG00000146648",
+          "discovery_sign": -1,
+          "t": -1.97438792696562,
+          "adj.P.Val": 0.114865742538655
+        },
+        {
+          "rank": 11,
+          "gene_id": "ENSG00000100393",
+          "discovery_sign": 1,
+          "t": 0.236138843112847,
+          "adj.P.Val": 0.869126916106318
+        },
+        {
+          "rank": 12,
+          "gene_id": "ENSG00000170315",
+          "discovery_sign": -1,
+          "t": -3.04479936811402,
+          "adj.P.Val": 0.0163149980251123
+        },
+        {
+          "rank": 13,
+          "gene_id": "ENSG00000278677",
+          "discovery_sign": -1,
+          "t": -3.60550566088827,
+          "adj.P.Val": 0.00529628046691794
+        },
+        {
+          "rank": 14,
+          "gene_id": "ENSG00000116478",
+          "discovery_sign": -1,
+          "t": -0.328158210554018,
+          "adj.P.Val": 0.817459786519892
+        },
+        {
+          "rank": 15,
+          "gene_id": "ENSG00000276180",
+          "discovery_sign": -1,
+          "t": -4.00107214705326,
+          "adj.P.Val": 0.00230116164611321
+        },
+        {
+          "rank": 16,
+          "gene_id": "ENSG00000184009",
+          "discovery_sign": -1,
+          "t": -0.0403596790819424,
+          "adj.P.Val": 0.9791943823467
+        },
+        {
+          "rank": 17,
+          "gene_id": "ENSG00000270882",
+          "discovery_sign": 1,
+          "t": 0.656530638657724,
+          "adj.P.Val": 0.628898776479477
+        },
+        {
+          "rank": 18,
+          "gene_id": "ENSG00000273542",
+          "discovery_sign": -1,
+          "t": -4.39215291230469,
+          "adj.P.Val": 0.000998828093052683
+        },
+        {
+          "rank": 19,
+          "gene_id": "ENSG00000158406",
+          "discovery_sign": -1,
+          "t": -0.810890434690457,
+          "adj.P.Val": 0.542687690196125
+        },
+        {
+          "rank": 20,
+          "gene_id": "ENSG00000278705",
+          "discovery_sign": 1,
+          "t": 0.0305734109025543,
+          "adj.P.Val": 0.983967279790091
+        }
+      ],
+      "G1": [
+        {
+          "rank": 1,
+          "gene_id": "ENSG00000130726",
+          "discovery_sign": -1,
+          "t": -1.98338424569357,
+          "adj.P.Val": 0.113097473081394
+        },
+        {
+          "rank": 2,
+          "gene_id": "ENSG00000141510",
+          "discovery_sign": -1,
+          "t": -2.87701200157302,
+          "adj.P.Val": 0.0227925011063644
+        },
+        {
+          "rank": 3,
+          "gene_id": "ENSG00000186868",
+          "discovery_sign": 1,
+          "t": 1.06961924549945,
+          "adj.P.Val": 0.409321388344733
+        },
+        {
+          "rank": 4,
+          "gene_id": "ENSG00000011426",
+          "discovery_sign": -1,
+          "t": -3.091749106222,
+          "adj.P.Val": 0.0149227768980223
+        },
+        {
+          "rank": 5,
+          "gene_id": "ENSG00000120526",
+          "discovery_sign": 1,
+          "t": 0.964648409999029,
+          "adj.P.Val": 0.460273484726928
+        },
+        {
+          "rank": 6,
+          "gene_id": "ENSG00000078369",
+          "discovery_sign": -1,
+          "t": -1.03033873529013,
+          "adj.P.Val": 0.428627889690889
+        },
+        {
+          "rank": 7,
+          "gene_id": "ENSG00000150991",
+          "discovery_sign": 1,
+          "t": 3.09085987741075,
+          "adj.P.Val": 0.0149227768980223
+        },
+        {
+          "rank": 8,
+          "gene_id": "ENSG00000186469",
+          "discovery_sign": -1,
+          "t": -4.05986617066501,
+          "adj.P.Val": 0.00202807122434761
+        },
+        {
+          "rank": 9,
+          "gene_id": "ENSG00000146648",
+          "discovery_sign": -1,
+          "t": -1.97438792696562,
+          "adj.P.Val": 0.114865742538655
+        },
+        {
+          "rank": 10,
+          "gene_id": "ENSG00000036257",
+          "discovery_sign": 1,
+          "t": 0.711133303682309,
+          "adj.P.Val": 0.598344243184119
+        },
+        {
+          "rank": 11,
+          "gene_id": "ENSG00000274618",
+          "discovery_sign": -1,
+          "t": -1.00177196990556,
+          "adj.P.Val": 0.442779405681025
+        },
+        {
+          "rank": 12,
+          "gene_id": "ENSG00000168036",
+          "discovery_sign": -1,
+          "t": -3.50138780802076,
+          "adj.P.Val": 0.00650955236403468
+        },
+        {
+          "rank": 13,
+          "gene_id": "ENSG00000127955",
+          "discovery_sign": 1,
+          "t": 8.35161200159789,
+          "adj.P.Val": 3.7540645105153e-07
+        },
+        {
+          "rank": 14,
+          "gene_id": "ENSG00000075624",
+          "discovery_sign": 1,
+          "t": 0.0321763630204326,
+          "adj.P.Val": 0.983091330961653
+        },
+        {
+          "rank": 15,
+          "gene_id": "ENSG00000116478",
+          "discovery_sign": -1,
+          "t": -0.328158210554018,
+          "adj.P.Val": 0.817459786519892
+        },
+        {
+          "rank": 16,
+          "gene_id": "ENSG00000012048",
+          "discovery_sign": -1,
+          "t": -3.67031560801955,
+          "adj.P.Val": 0.00463519308895169
+        },
+        {
+          "rank": 17,
+          "gene_id": "ENSG00000141867",
+          "discovery_sign": 1,
+          "t": 3.52825767431035,
+          "adj.P.Val": 0.00616651078232059
+        },
+        {
+          "rank": 18,
+          "gene_id": "ENSG00000160014",
+          "discovery_sign": -1,
+          "t": -2.83058707503414,
+          "adj.P.Val": 0.0248957539261463
+        },
+        {
+          "rank": 19,
+          "gene_id": "ENSG00000100393",
+          "discovery_sign": 1,
+          "t": 0.236138843112847,
+          "adj.P.Val": 0.869126916106318
+        },
+        {
+          "rank": 20,
+          "gene_id": "ENSG00000166913",
+          "discovery_sign": -1,
+          "t": -0.58781309154236,
+          "adj.P.Val": 0.667059174199368
+        }
+      ]
+    },
+    "markers_discovery": {
+      "panel_genes": 7,
+      "in_expression_family": 6,
+      "expected_sign_agrees": 6,
+      "expected_sign_agrees_and_q_lt_0_05": 5,
+      "threshold": 6,
+      "pass": false
+    }
+  },
+  "P1_discovery": {
+    "genes_BH_q_lt_0_05": 7367,
+    "threshold": 100,
+    "discovery_component_met": true,
+    "note": "P1 passes only if HECA also meets its threshold; HECA is not fitted"
+  },
+  "heca_phase_effects_computed": false,
+  "lists_may_change_after_this_freeze": false,
+  "software": {
+    "fit": {
+      "R": "R version 4.4.3 (2025-02-28)",
+      "edgeR": "4.4.0",
+      "limma": "3.62.1",
+      "statmod": "1.5.2"
+    },
+    "ranking": {
+      "python": "3.10.22",
+      "numpy": "2.2.6",
+      "executable": "/home/analyst/te/envs/statistical-runtime/bin/python"
+    }
+  },
+  "interpretation": "frozen discovery lists and directions for a pipeline positive control; not disease evidence, not targets",
+  "published_copy_redaction": {
+    "note": "After the freeze, the analysis host project root was replaced by the repository placeholder /home/analyst/te in the ranking provenance copy (absolute paths by v1 design) and in this receipt software record; scientific values unchanged, following docs/PUBLICATION_HISTORY.md.",
+    "reports/phase_positive_control_f1/ranking_provenance.json": {"sha256_before": "5b1e26070319df6a87aa014b24560c8b211343d6148c6368212014bd390fe57d", "sha256_after": "b37818f46b6ab890614d72f228f8680a149cf0aa370aea3ffdf0413425b143dc"},
+    "receipt_sha256_before_redaction": "7b79c4ca5c627445d86675404bc010f2bc5185813960068cc064deec010c63e0"
+  }
+}

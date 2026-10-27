@@ -25,6 +25,7 @@ supported target shortlist and no established advantage from network propagation
 - [Phase positive-control HECA counts](../reports/phase_positive_control_heca_counts.md) — 42-donor HECA matrix prepared 2026-10-26; v1 columns reproduced exactly; no model fitted
 - [Discovery secretory counts acquisition plan](PHASE_POSITIVE_CONTROL_DISCOVERY_COUNTS_PLAN.md) — measured resource constraints and procedure for the 41.7 GB GEO object; executed 2026-10-26
 - [Phase positive-control discovery counts](../reports/phase_positive_control_discovery_counts.md) — 35-donor discovery matrix streamed from the GEO object; v1 columns reproduced to 4e-15; no model fitted
+- [Phase positive-control discovery fit and F1 freeze](../reports/phase_positive_control_f1_discovery.md) — 7,367 genes at BH q<0.05; B0/B1/G1 lists frozen; marker panel 5/7; HECA not fitted
 
 ## Reproduction
 
