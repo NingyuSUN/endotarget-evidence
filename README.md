@@ -10,7 +10,7 @@
 
 Can a biological network improve which disease-associated genes reproduce in another study? EndoTarget Evidence compares expression ranking with two network baselines, evaluates the frozen candidate lists in a separate endometrial cohort, and adds a traceable genetic-evidence assessment.
 
-**Main finding:** the analysis did not establish a statistically supported cross-study target shortlist or an advantage for network propagation. The resulting research recommendation is to hold the candidate pool pending stronger evidence.
+**Main finding:** the analysis did not establish a statistically supported cross-study target shortlist or an advantage for network propagation. The resulting research recommendation is to hold the candidate pool pending stronger evidence. Four prespecified follow-on analyses (October 2026) show that the same pipeline detects a known cycle-phase program at these sample sizes, bound the null to effects below roughly 2.2- to 3.4-fold for the median gene at the multiplicity faced, and find no detectable disease difference in the secretory-phase stromal program.
 
 | Study at a glance | Scope |
 |---|---|
@@ -19,6 +19,7 @@ Can a biological network improve which disease-associated genes reproduce in ano
 | Comparison | Expression, network degree and fixed network propagation on 11,749 genes |
 | Evaluation | External expression-direction agreement, donor resampling and clinical sensitivity analyses |
 | Reproduction | Five primary Nextflow tasks reproduced in Docker; 34 scientific tables and eight result metadata files matched |
+| Follow-on analyses | Phase positive control, minimum detectable effect, secretory-phase program contrast and public-cohort extension audit, each frozen before execution (October 2026) |
 
 **Read the results:** [Two-page research brief](reports/executive_brief_en.pdf) · [Method card](docs/METHOD_CARD.md) · [Full results and figures](reports/results_summary_en.md)
 
@@ -34,6 +35,7 @@ flowchart LR
     D --> E[External evaluation and sensitivity analyses]
     E --> F[Evidence report and research decision]
     G[Separate published genetic evidence] --> F
+    F --> H[Prespecified follow-on analyses bound the null]
 ```
 
 | Cohort | Cases / controls | Retained cells or nuclei | Genes tested | Genes with BH q < 0.05 |
@@ -62,6 +64,19 @@ G1 is a fixed graph algorithm with no model training or parameter search. Genes 
 The observed G1-minus-B0 agreement difference was **−38.4 percentage points**. Of 500 paired external-donor bootstrap draws, 487 were valid and 13 failed design checks. The conditional 95% interval was **−38.9 to +8.7 points**, including zero; it does not establish a general method advantage. Because resampling noise pulls both methods toward 50% agreement, this interval is not centered on the observed difference; see the [interpretation notes](reports/results_summary_en.md#notes-for-interpretation). All 22 discovery leave-one-donor-out analyses completed. [Uncertainty and sensitivity results](reports/results_summary_en.md#donor-sensitivity).
 
 The separate genetic assessment retains all 40 frozen candidate-pool genes: one limited SKIDA1 mapping and 39 unavailable mappings in the selected source. The dossier rule yielded one inconclusive PARP9 case and no supported target dossier. [Genetic evidence report](reports/genetic_evidence_report.md).
+
+## What the null means: follow-on analyses
+
+Four prespecified analyses were added on 26–27 October 2026, each with rules, inputs and thresholds frozen and hashed before any new value was computed. They reuse the v1 estimator unchanged, refit no disease model and leave every v1 artifact byte-identical. None nominates a gene. Secretory-phase genes are not endometriosis genes; the positive-control lists are cycle biology, not a shortlist.
+
+| Analysis | Result | What it bounds |
+|---|---|---|
+| **Phase positive control:** the v1 pipeline on proliferative versus secretory donors (35 and 42) | **7,367 and 3,986** genes at BH q < 0.05; the frozen expression top-20 transfers **20 / 20** same direction, all at external q < 0.05; G1 minus B0 −37 points, 95% interval −53 to −21 | The pipeline detects and transfers a large donor-level program at these sample sizes, so the disease null is not pipeline insensitivity. Propagation transfers worse than expression ranking even with a strong signal. |
+| **Minimum detectable effect** from the saved v1 fits | Median gene: **1.5-fold** at α 0.05, **2.2- to 2.3-fold** at the BH boundary for 100 discoveries, **3.3- to 3.4-fold** for a single discovery; at 11 + 11 donors a study recovers a median 45% (discovery) and 13% (HECA) of the phase program | Fourfold proliferative stromal disease differences are excluded for most genes and twofold differences for a fifth of genes family-wide; 1.5-fold effects remain open. Twenty-two donors recover even a several-thousand-gene program inconsistently. |
+| **Secretory-phase program contrast:** each cohort scored on the other cohort's frozen phase program; phase × disease interaction | Signature transfers at AUC 1.00 and 0.99; θ **+0.04** (−0.18 to +0.25) and **−0.11** (−0.40 to +0.19) program units; detectable attenuation 0.31 and 0.42 units; no interaction gene at q < 0.05 | No detectable program-level disease difference in secretory stromal fibroblasts in either cohort: discovery excludes an attenuation above 14% of the secretory shift, HECA admits anything short of a 71% loss. One nominal sensitivity (adenomyosis donors excluded, p 0.026) points to enhancement and is not reproduced. |
+| **Cohort extension audit:** GSE213216 and GSE179640, metadata only | Natural-cycle eutopic donors **5 ENDO / 0 non-ENDO** and **0 / 1**; matched eutopic–lesion pairs 4 and 8; both studies lie inside the HECA cells atlas | No public single-cell cohort extends the eutopic donor-level contrasts; nothing was downloaded. The remaining eligible public donors are already in the analyses above. |
+
+Reports: [positive control](reports/phase_positive_control_results.md), [detectable effect](reports/mde_results.md), [secretory program](reports/secretory_program_results.md), [cohort extension](reports/cohort_extension_feasibility.md). Protocols, freeze receipts and figures are linked from the [method card](docs/METHOD_CARD.md#follow-on-analyses-what-the-null-resolves) and summarized in the [results summary](reports/results_summary_en.md#follow-on-analyses-october-2026).
 
 ## Design and implementation
 
@@ -98,6 +113,7 @@ cd endotarget-evidence
 - This is a retrospective observational reanalysis with pre-external freezes, not a preregistered or blinded study. Author labels, phase ascertainment, residual confounding, cell-state composition and the cell-versus-nucleus assay difference limit interpretation.
 - Discovery uses author-provided secondary estimated counts. The original full RDS was not recomputed. An 8,248-count component of the HECA raw/H5 discrepancy remains unresolved; details are retained in the [method card](docs/METHOD_CARD.md).
 - Genetic annotations cover one selected 2023 publication. Missing mapping is not negative genetic evidence, and expression association does not determine causality or an activation/inhibition strategy.
+- The follow-on analyses are bounds and controls, not disease evidence. Minimum detectable effects are conditional on the realized variance estimates of the original fits; the secretory program contrast rests on 13 and 20 secretory donors, 6 and 4 of them controls; the cohort audit relies on the HECA authors' curation of clinical fields. Effects below the stated bounds are not shown to be absent.
 - The project evaluates evidence for early target prioritization. It does not generate molecules or antibodies, train a GNN or foundation model, or demonstrate therapeutic efficacy. AWS deployment has not been executed.
 
 ## License
