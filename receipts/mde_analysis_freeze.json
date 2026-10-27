@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "phase": "MDE_ANALYSIS_RULES_FROZEN_PRE_COMPUTATION",
+  "created_utc": "2026-10-27T04:22:41.825476+00:00",
+  "git_head": "4306bf6d746dc0c923a445762c4d0d59e1827611",
+  "protocol": "docs/MDE_ANALYSIS_PROTOCOL.md",
+  "config": "config/mde_analysis.json",
+  "artifacts": {
+    "docs/MDE_ANALYSIS_PROTOCOL.md": "b3447e0a98511ccbb8f76e24f4d076ba0c84694506a84ab0a0c697370cb0d782",
+    "config/mde_analysis.json": "ed338a6bac9db914db606ab9981869f5fed80520ef58df76389090e89e30c889",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/phase_positive_control.json": "6af7d70da8217828cc4f6cfe03fc19b8aeb082640a2a17e6f590c7456313a8d5",
+    "scripts/mde_lib.R": "9a0243c728d5cfac839a23639fe7e9a2145cac64e44ac18c7647929b357dbb4d",
+    "scripts/mde_from_fits.R": "7e29cf19e09c6369bc70a50c2fd7a0a761a215ef67f7df9038e884d4c528a011",
+    "scripts/mde_subsample_curve.R": "71c5c8815d968cec39dc7c948853889d962741e946e18fc5d2a611fee875bc33",
+    "scripts/mde_synthetic_fixture.R": "63ab0596ff2cdddc1a9358999f7e0ec9ee9836987d34dbfb50e5f0100523e9e3",
+    "scripts/mde_freeze.py": "a5efc49122bdacb15423f2380845e861ca0931dc01e7f9a8c869276f823cca81",
+    "scripts/mde_finalize.py": "6dcfcfed67f94390c79cace6fe2429d20f867c37aa1fd6f2aebba28d5939899a",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6",
+    "receipts/discovery_primary_execution.json": "188e3407abcc66d77a83196b82ca488ae6434177390f9a45efbfa0d640866505",
+    "receipts/heca_primary_execution.json": "6c16ed5c03e03bef5260d1881e0c62e45e87888f8c9c760425d1b443a8fea647",
+    "receipts/phase_positive_control_f1_discovery_freeze.json": "685ae7d3d3af329f893798d2628d57512db4fe7d27008f585f1d231d1f600016",
+    "receipts/phase_positive_control_evaluation.json": "5e98470fe2351b33e447983889f5f11e5d5853e533bfe624f15e70f516aa98dd",
+    "reports/phase_positive_control_f1/de_provenance.json": "1f9c9b96f23de82080a5a9ef31284b40df9e06fb185d3ebc8758d41da82bfcba",
+    "reports/phase_positive_control_f2/heca_de_provenance.json": "4ecc65dafda7f569bf4337a266c43bd79562916195cf8158edc191680fa19927",
+    "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": "a0fe7e0e7b71a9d1290368154a64e3756e2c7ada4185a8df9f8d01d1a2cc85ad",
+    "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": "d0187da628540684dfba8edde41f756f0773953701309ef3598c39e9e3a0c455",
+    "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": "6d7f2092b59d28e52c3569febdeebbca0bb191f6fa877acf4ccb53c890a5a7d5",
+    "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": "d1bff21a733df98f8ed1b63b298e5d20c1b1afd1977e68ed25c15e6ad2987883"
+  },
+  "host_verification_exempt": [
+    "receipts/discovery_primary_execution.json",
+    "receipts/heca_primary_execution.json",
+    "receipts/phase_positive_control_f1_discovery_freeze.json",
+    "receipts/phase_positive_control_evaluation.json"
+  ],
+  "host_verification_note": "documentation and the listed published receipts are hashed here and verified on the published checkout; the analysis host keeps their pre-substitution bytes and verifies every other artifact",
+  "pinned_fit_chains": {
+    "v1_discovery": {
+      "coefficient": "ENDO_minus_non_ENDO",
+      "model": "work/statistical/discovery_primary/de/model.rds",
+      "provenance": "work/statistical/discovery_primary/de/provenance.json",
+      "provenance_sha256": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
+      "provenance_sha256_source": "receipts/discovery_primary_execution.json:DE_provenance_sha256",
+      "model_sha256_from": "provenance.output_sha256"
+    },
+    "v1_heca": {
+      "coefficient": "ENDO_minus_non_ENDO",
+      "model": "work/statistical/heca_primary/de/model.rds",
+      "model_sha256": "10306b806a875d9bb42f699bfcc8851d39c3282d4705f5f7d215775364daa174",
+      "model_sha256_source": "receipts/heca_primary_execution.json:output_sha256"
+    },
+    "phase_discovery": {
+      "coefficient": "SEC_minus_PRO",
+      "model": "work/phase_positive_control/discovery_fit/de/model.rds",
+      "model_sha256": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+      "model_sha256_source": "reports/phase_positive_control_f1/de_provenance.json:output_sha256"
+    },
+    "phase_heca": {
+      "coefficient": "SEC_minus_PRO",
+      "model": "work/phase_positive_control/heca_fit/de/model.rds",
+      "model_sha256": "d9b570e2f0901bc1ed8cc50202ca171b7967a6676302175e07d06fa323aedbe1",
+      "model_sha256_source": "reports/phase_positive_control_f2/heca_de_provenance.json:output_sha256"
+    }
+  },
+  "pinned_hash_cross_checks": {
+    "v1_discovery_provenance_sha256": true,
+    "v1_heca_model_sha256": true,
+    "phase_discovery_model_sha256": true,
+    "phase_heca_model_sha256": true,
+    "discovery_counts_matches_earlier_receipt": true,
+    "discovery_clinical_matches_earlier_receipt": true,
+    "heca_counts_matches_earlier_receipt": true,
+    "heca_clinical_matches_earlier_receipt": true
+  },
+  "scenarios": {
+    "power": 0.8,
+    "nominal_alpha": 0.05,
+    "bh_q": 0.05,
+    "bh_scenarios_k": [
+      1,
+      10,
+      100,
+      1000
+    ],
+    "ci_containment_log2_thresholds": [
+      0.25,
+      0.5,
+      0.585,
+      1.0,
+      2.0
+    ]
+  },
+  "subsampling": {
+    "draws_per_level": 100,
+    "seed": 42,
+    "rng": "R_Mersenne-Twister_Inversion_Rejection",
+    "replace": false,
+    "equal_arms": true,
+    "levels_per_arm": {
+      "discovery": [
+        5,
+        6,
+        8,
+        10,
+        11,
+        13
+      ],
+      "heca": [
+        5,
+        6,
+        8,
+        10,
+        11,
+        13,
+        16,
+        20
+      ]
+    },
+    "designs": {
+      "primary": [
+        "intercept",
+        "SEC_minus_PRO",
+        "ENDO_minus_non_ENDO",
+        "age_centered",
+        "batch_treatment_contrasts_over_sorted_levels_present",
+        "adenomyosis"
+      ],
+      "reduced": [
+        "intercept",
+        "SEC_minus_PRO",
+        "ENDO_minus_non_ENDO",
+        "age_centered",
+        "adenomyosis"
+      ]
+    },
+    "invalid_draw_policy": "rank_deficient_or_residual_df_below_5_is_invalid_retained_not_redrawn",
+    "refilter": true,
+    "renormalize": true,
+    "identity_check": {
+      "required": true,
+      "description": "the subsampling estimator on all donors with the primary design must reproduce the frozen full-cohort table before any subsample is fitted",
+      "tolerance_logFC": 1e-08,
+      "tolerance_t": 1e-06,
+      "tolerance_log10_p": 1e-06
+    }
+  },
+  "attestations": {
+    "mde_values_computed_on_real_fits_before_freeze": false,
+    "code_tested_on_synthetic_fixture_only": true,
+    "new_disease_fits": false,
+    "v1_artifacts_modified": false,
+    "pass_fail_endpoints": false,
+    "interpretation_rules_fixed": true
+  },
+  "interpretation": "bounds on what the v1 design could detect and a descriptive degradation curve of a known program; not evidence about any gene"
+}
