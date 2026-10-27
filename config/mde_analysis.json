@@ -23,10 +23,12 @@
       "cohort": "discovery",
       "coefficient": "ENDO_minus_non_ENDO",
       "model": "work/statistical/discovery_primary/de/model.rds",
+      "model_sha256": "43692814c50fecdd35ec462a281994f394d9551065d2600a8aed8e8889a6ab71",
+      "model_sha256_source": "receipts/discovery_rank_freeze.json:artifacts",
       "provenance": "work/statistical/discovery_primary/de/provenance.json",
       "provenance_sha256": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
       "provenance_sha256_source": "receipts/discovery_primary_execution.json:DE_provenance_sha256",
-      "model_sha256_from": "provenance.output_sha256"
+      "provenance_records_outputs_under": "the original task directory paths; matched by file name"
     },
     "v1_heca": {
       "cohort": "heca",

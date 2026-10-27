@@ -33,7 +33,7 @@ before computing anything and record the checks in their provenance files.
 
 | Input | Path on the analysis host | Verified against |
 |---|---|---|
-| v1 discovery fit | `work/statistical/discovery_primary/de/model.rds` | its `provenance.json` (hash pinned by `receipts/discovery_primary_execution.json`, field `DE_provenance_sha256`), which pins the object hash |
+| v1 discovery fit | `work/statistical/discovery_primary/de/model.rds` | object hash pinned by `receipts/discovery_rank_freeze.json` (`artifacts`), and its `provenance.json` (hash pinned by `receipts/discovery_primary_execution.json`, field `DE_provenance_sha256`), which records the same object hash under its original task path |
 | v1 HECA fit | `work/statistical/heca_primary/de/model.rds` | object hash pinned by `receipts/heca_primary_execution.json` (`output_sha256`) |
 | Phase discovery fit | `work/phase_positive_control/discovery_fit/de/model.rds` | object hash pinned by the published `reports/phase_positive_control_f1/de_provenance.json` |
 | Phase HECA fit | `work/phase_positive_control/heca_fit/de/model.rds` | object hash pinned by the published `reports/phase_positive_control_f2/heca_de_provenance.json` |
@@ -191,7 +191,9 @@ the typical MDE against *n*. Draw-level rows are published in full.
    git head of the published checkout, before any MDE value is computed on real fits. A
    synthetic fixture (`scripts/mde_synthetic_fixture.R`, invented counts) may be used to
    test the code before the freeze; synthetic outputs are labelled and never published as
-   results.
+   results. If a run stops in its verification step before computing anything, the code
+   may be corrected and the freeze re-issued; the new receipt names the superseded freeze
+   commit and the reason, and the git history keeps both.
 2. On the analysis host, in the v1 statistical runtime: verify the freeze and every input
    chain; run Part A on the four fits; run the identity check and Part B on both cohorts.
 3. Fetch outputs, verify their hashes, publish compact copies under `reports/mde_analysis/`

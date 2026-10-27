@@ -48,20 +48,28 @@ mde_verify_freeze <- function(path,phase) {
 # Hash chain of a saved fit: either a pinned object hash, or a pinned provenance hash whose
 # provenance records the object hash. Returns the verified chain for the provenance record.
 mde_verify_fit_chain <- function(entry) {
-  if(!is.null(entry$model_sha256)) {
-    expected <- entry$model_sha256; via <- entry$model_sha256_source
-  } else {
-    if(is.null(entry$provenance) || is.null(entry$provenance_sha256)) stop("fit entry lacks a hash chain")
-    actual_prov <- mde_sha(entry$provenance)
-    if(!identical(actual_prov,entry$provenance_sha256)) stop(paste("provenance hash differs from the pinned value:",entry$provenance))
-    pv <- jsonlite::fromJSON(entry$provenance,simplifyVector=FALSE)
-    expected <- pv$output_sha256[[entry$model]]
-    if(is.null(expected)) stop("provenance does not record the model object hash")
-    via <- paste0(entry$provenance_sha256_source," -> ",entry$provenance,":output_sha256")
+  # exact field access only: `$` would partially match e.g. model_sha256_from
+  model <- entry[["model"]]; pinned <- entry[["model_sha256"]]
+  prov <- entry[["provenance"]]; prov_sha <- entry[["provenance_sha256"]]
+  if(is.null(model) || (is.null(pinned) && is.null(prov))) stop("fit entry lacks a hash chain")
+  actual <- mde_sha(model); via <- character()
+  if(!is.null(pinned)) {
+    if(!identical(actual,pinned)) stop(paste("model object hash differs from the pinned value:",model))
+    via <- c(via,entry[["model_sha256_source"]])
   }
-  actual <- mde_sha(entry$model)
-  if(!identical(actual,expected)) stop(paste("model object hash differs from the pinned chain:",entry$model))
-  list(model=entry$model,sha256=actual,pinned_via=via)
+  provenance_record <- NULL
+  if(!is.null(prov)) {
+    if(is.null(prov_sha)) stop("provenance chain lacks its pinned hash")
+    if(!identical(mde_sha(prov),prov_sha)) stop(paste("provenance hash differs from the pinned value:",prov))
+    pv <- jsonlite::fromJSON(prov,simplifyVector=FALSE)
+    keys <- names(pv[["output_sha256"]])
+    hit <- keys[basename(keys)==basename(model)]  # v1 provenance records outputs under the task directory paths
+    if(length(hit)!=1L) stop("provenance does not record exactly one model object hash")
+    if(!identical(pv[["output_sha256"]][[hit]],actual)) stop(paste("model object hash differs from the provenance record:",model))
+    via <- c(via,paste0(entry[["provenance_sha256_source"]]," -> ",prov,":output_sha256[",hit,"]"))
+    provenance_record <- list(path=prov,sha256=prov_sha,recorded_output_key=hit)
+  }
+  list(model=model,sha256=actual,pinned_via=via,provenance=provenance_record)
 }
 # Two-sided rejection probability of a t statistic with realized SE and df under true effect delta.
 mde_power <- function(delta,se,df,tcrit) {

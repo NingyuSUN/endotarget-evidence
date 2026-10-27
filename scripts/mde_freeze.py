@@ -19,9 +19,9 @@ CODE=["scripts/mde_lib.R","scripts/mde_from_fits.R","scripts/mde_subsample_curve
 # Published receipts whose bytes differ from the analysis host's originals only by the
 # documented placeholder substitution; the host run uses them through the hex values
 # cross-checked below, so their hashes are recorded but verified on the published checkout only.
-HOST_EXEMPT=["receipts/discovery_primary_execution.json","receipts/heca_primary_execution.json",
+HOST_EXEMPT=["receipts/discovery_primary_execution.json","receipts/discovery_rank_freeze.json","receipts/heca_primary_execution.json",
              "receipts/phase_positive_control_f1_discovery_freeze.json","receipts/phase_positive_control_evaluation.json"]
-RECEIPTS=["receipts/discovery_primary_execution.json","receipts/heca_primary_execution.json",
+RECEIPTS=["receipts/discovery_primary_execution.json","receipts/discovery_rank_freeze.json","receipts/heca_primary_execution.json",
           "receipts/phase_positive_control_f1_discovery_freeze.json","receipts/phase_positive_control_evaluation.json",
           "reports/phase_positive_control_f1/de_provenance.json","reports/phase_positive_control_f2/heca_de_provenance.json"]
 
@@ -29,6 +29,8 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--root",type=pathlib.Path,default=pathlib.Path(__file__).resolve().parents[1])
     ap.add_argument("--git-head",required=True,help="commit of the published checkout holding this protocol and code")
+    ap.add_argument("--supersedes",default=None,help="commit of a previous freeze receipt that this one replaces, with --supersedes-reason")
+    ap.add_argument("--supersedes-reason",default=None)
     ap.add_argument("--receipt",default="receipts/mde_analysis_freeze.json");a=ap.parse_args()
     root=a.root.resolve();cfg=read(root/"config/mde_analysis.json")
     if cfg["protocol"]!="docs/MDE_ANALYSIS_PROTOCOL.md":raise ValueError("protocol path differs")
@@ -40,6 +42,8 @@ def main():
     checks={}
     d=read(root/"receipts/discovery_primary_execution.json")
     checks["v1_discovery_provenance_sha256"]=cfg["fits"]["v1_discovery"]["provenance_sha256"]==d["DE_provenance_sha256"]
+    r=read(root/"receipts/discovery_rank_freeze.json")
+    checks["v1_discovery_model_sha256"]=cfg["fits"]["v1_discovery"]["model_sha256"]==r["artifacts"].get(cfg["fits"]["v1_discovery"]["model"])
     h=read(root/"receipts/heca_primary_execution.json")
     checks["v1_heca_model_sha256"]=cfg["fits"]["v1_heca"]["model_sha256"]==h["output_sha256"].get(cfg["fits"]["v1_heca"]["model"])
     f1=read(root/"reports/phase_positive_control_f1/de_provenance.json")
@@ -58,6 +62,7 @@ def main():
     if not all(checks.values()):raise ValueError("pinned hash cross-check failed: "+json.dumps(checks))
     for p in (cfg["outputs"]["results_receipt"],cfg["outputs"]["publish_dir"]):
         if (root/p).exists():raise ValueError("results already exist; the freeze must precede computation: "+p)
+    if (a.supersedes is None)!=(a.supersedes_reason is None):raise ValueError("--supersedes and --supersedes-reason go together")
     receipt={"schema_version":1,"phase":"MDE_ANALYSIS_RULES_FROZEN_PRE_COMPUTATION",
              "created_utc":datetime.datetime.now(datetime.timezone.utc).isoformat(),"git_head":a.git_head,
              "protocol":cfg["protocol"],"config":"config/mde_analysis.json","artifacts":artifacts,
@@ -68,6 +73,7 @@ def main():
              "scenarios":{"power":cfg["power"],"nominal_alpha":cfg["nominal_alpha"],"bh_q":cfg["bh_q"],"bh_scenarios_k":cfg["bh_scenarios_k"],
                           "ci_containment_log2_thresholds":cfg["ci_containment_log2_thresholds"]},
              "subsampling":{k:cfg["subsampling"][k] for k in ("draws_per_level","seed","rng","replace","equal_arms","levels_per_arm","designs","invalid_draw_policy","refilter","renormalize","identity_check")},
+             "supersedes":None if a.supersedes is None else {"freeze_commit":a.supersedes,"reason":a.supersedes_reason},
              "attestations":{"mde_values_computed_on_real_fits_before_freeze":False,"code_tested_on_synthetic_fixture_only":True,
                              "new_disease_fits":False,"v1_artifacts_modified":False,"pass_fail_endpoints":False,"interpretation_rules_fixed":True},
              "interpretation":"bounds on what the v1 design could detect and a descriptive degradation curve of a known program; not evidence about any gene"}
