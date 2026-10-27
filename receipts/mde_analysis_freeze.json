@@ -1,24 +1,25 @@
 {
   "schema_version": 1,
   "phase": "MDE_ANALYSIS_RULES_FROZEN_PRE_COMPUTATION",
-  "created_utc": "2026-10-27T04:22:41.825476+00:00",
-  "git_head": "4306bf6d746dc0c923a445762c4d0d59e1827611",
+  "created_utc": "2026-10-27T04:26:11.649502+00:00",
+  "git_head": "0d6cb51d1d92b707844de3c4bfd5334f2a65c7e3",
   "protocol": "docs/MDE_ANALYSIS_PROTOCOL.md",
   "config": "config/mde_analysis.json",
   "artifacts": {
-    "docs/MDE_ANALYSIS_PROTOCOL.md": "b3447e0a98511ccbb8f76e24f4d076ba0c84694506a84ab0a0c697370cb0d782",
-    "config/mde_analysis.json": "ed338a6bac9db914db606ab9981869f5fed80520ef58df76389090e89e30c889",
+    "docs/MDE_ANALYSIS_PROTOCOL.md": "42c68aed6fb90442eccbb1d2c0f103decf2e34019e4f5f2b1fe6dc97de7094a9",
+    "config/mde_analysis.json": "f38c53a584443d5753b0142971832863a8b142b8c0ce44101767454bb0037d0a",
     "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
     "config/phase_positive_control.json": "6af7d70da8217828cc4f6cfe03fc19b8aeb082640a2a17e6f590c7456313a8d5",
-    "scripts/mde_lib.R": "9a0243c728d5cfac839a23639fe7e9a2145cac64e44ac18c7647929b357dbb4d",
+    "scripts/mde_lib.R": "c356930120aaac2236d0a2b8ee845ab19e9e49397db514bf726c7c8122f71e08",
     "scripts/mde_from_fits.R": "7e29cf19e09c6369bc70a50c2fd7a0a761a215ef67f7df9038e884d4c528a011",
     "scripts/mde_subsample_curve.R": "71c5c8815d968cec39dc7c948853889d962741e946e18fc5d2a611fee875bc33",
     "scripts/mde_synthetic_fixture.R": "63ab0596ff2cdddc1a9358999f7e0ec9ee9836987d34dbfb50e5f0100523e9e3",
-    "scripts/mde_freeze.py": "a5efc49122bdacb15423f2380845e861ca0931dc01e7f9a8c869276f823cca81",
+    "scripts/mde_freeze.py": "03e3e62a1c4f47150a9a52632ada82c9e0c47c7183ddfcb4232d398e24ca5734",
     "scripts/mde_finalize.py": "6dcfcfed67f94390c79cace6fe2429d20f867c37aa1fd6f2aebba28d5939899a",
     "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
     "requirements/statistical-runtime.explicit.txt": "6feeb4c8086f62290bc6bda691fede9b053a703247ec60b036c4b2ca0644f7a6",
     "receipts/discovery_primary_execution.json": "188e3407abcc66d77a83196b82ca488ae6434177390f9a45efbfa0d640866505",
+    "receipts/discovery_rank_freeze.json": "642332e970df9cca45616c6f53444f9e834b79d8ded01b40d673e1f8c64ee143",
     "receipts/heca_primary_execution.json": "6c16ed5c03e03bef5260d1881e0c62e45e87888f8c9c760425d1b443a8fea647",
     "receipts/phase_positive_control_f1_discovery_freeze.json": "685ae7d3d3af329f893798d2628d57512db4fe7d27008f585f1d231d1f600016",
     "receipts/phase_positive_control_evaluation.json": "5e98470fe2351b33e447983889f5f11e5d5853e533bfe624f15e70f516aa98dd",
@@ -31,6 +32,7 @@
   },
   "host_verification_exempt": [
     "receipts/discovery_primary_execution.json",
+    "receipts/discovery_rank_freeze.json",
     "receipts/heca_primary_execution.json",
     "receipts/phase_positive_control_f1_discovery_freeze.json",
     "receipts/phase_positive_control_evaluation.json"
@@ -40,10 +42,12 @@
     "v1_discovery": {
       "coefficient": "ENDO_minus_non_ENDO",
       "model": "work/statistical/discovery_primary/de/model.rds",
+      "model_sha256": "43692814c50fecdd35ec462a281994f394d9551065d2600a8aed8e8889a6ab71",
+      "model_sha256_source": "receipts/discovery_rank_freeze.json:artifacts",
       "provenance": "work/statistical/discovery_primary/de/provenance.json",
       "provenance_sha256": "ffc1066391cc4b55062a83ae9212c40210b80e2e92cda410712ae80894adbbeb",
       "provenance_sha256_source": "receipts/discovery_primary_execution.json:DE_provenance_sha256",
-      "model_sha256_from": "provenance.output_sha256"
+      "provenance_records_outputs_under": "the original task directory paths; matched by file name"
     },
     "v1_heca": {
       "coefficient": "ENDO_minus_non_ENDO",
@@ -66,6 +70,7 @@
   },
   "pinned_hash_cross_checks": {
     "v1_discovery_provenance_sha256": true,
+    "v1_discovery_model_sha256": true,
     "v1_heca_model_sha256": true,
     "phase_discovery_model_sha256": true,
     "phase_heca_model_sha256": true,
@@ -145,6 +150,10 @@
       "tolerance_t": 1e-06,
       "tolerance_log10_p": 1e-06
     }
+  },
+  "supersedes": {
+    "freeze_commit": "5005d7614bd5633da7e48b095143f5c2860cd2c0",
+    "reason": "the first host run stopped in the fit-chain verification step before any value was computed: the verifier partially matched a missing field and looked the v1 object up by repository path while its provenance records task paths; verifier corrected, discovery object pinned directly"
   },
   "attestations": {
     "mde_values_computed_on_real_fits_before_freeze": false,
