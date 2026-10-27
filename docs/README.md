@@ -12,6 +12,7 @@ supported target shortlist and no established advantage from network propagation
 - [External evaluation and donor sensitivity, Chinese/English generated report](../reports/replication_v2_results.md)
 - [Clinical sensitivity analyses, Chinese generated report](../reports/clinical_sensitivity_report.md)
 - [Stromal composition](../reports/stromal_composition.md) and [genetic evidence](../reports/genetic_evidence_report.md)
+- [Phase positive-control results](../reports/phase_positive_control_results.md) — the same pipeline on a proliferative-versus-secretory contrast: 7,367 and 3,986 genes at BH q<0.05, the frozen top-20 transfers 20/20; the v1 disease null is not pipeline insensitivity
 
 ## Methods and source evidence
 
@@ -25,7 +26,8 @@ supported target shortlist and no established advantage from network propagation
 - [Phase positive-control HECA counts](../reports/phase_positive_control_heca_counts.md) — 42-donor HECA matrix prepared 2026-10-26; v1 columns reproduced exactly; no model fitted
 - [Discovery secretory counts acquisition plan](PHASE_POSITIVE_CONTROL_DISCOVERY_COUNTS_PLAN.md) — measured resource constraints and procedure for the 41.7 GB GEO object; executed 2026-10-26
 - [Phase positive-control discovery counts](../reports/phase_positive_control_discovery_counts.md) — 35-donor discovery matrix streamed from the GEO object; v1 columns reproduced to 4e-15; no model fitted
-- [Phase positive-control discovery fit and F1 freeze](../reports/phase_positive_control_f1_discovery.md) — 7,367 genes at BH q<0.05; B0/B1/G1 lists frozen; marker panel 5/7; HECA not fitted
+- [Phase positive-control discovery fit and F1 freeze](../reports/phase_positive_control_f1_discovery.md) — 7,367 genes at BH q<0.05; B0/B1/G1 lists frozen; marker panel 5/7
+- [Phase positive-control evaluation receipt](../receipts/phase_positive_control_evaluation.json) and [published products](../reports/phase_positive_control_f2/) — HECA fit, P1/P2/S1/S2 against the frozen lists, 500-draw paired bootstrap
 
 ## Reproduction
 

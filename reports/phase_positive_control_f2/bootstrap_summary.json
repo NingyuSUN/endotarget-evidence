@@ -1,0 +1,17 @@
+{
+  "total_required": 500,
+  "completed": 500,
+  "valid": 499,
+  "invalid": 1,
+  "interval_suppressed": false,
+  "interval": [-0.52631578947368429, -0.21052631578947367],
+  "quantile_type": 7,
+  "valid_only_conditioning": true,
+  "scientific_validation": false,
+  "binding_sha256": "68f90115d8e098b85f8e15fb61a2d23bb6c4288dadb136ec43512b4c64bb422a",
+  "failure_reasons": {
+    "design not full rank; nonconstant nuisance cannot be dropped": 1
+  },
+  "stratification": "phase",
+  "contrast": "SEC_minus_PRO"
+}

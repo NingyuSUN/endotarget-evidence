@@ -1,0 +1,438 @@
+{
+  "schema_version": 1,
+  "phase": "PHASE_POSITIVE_CONTROL_EVALUATED",
+  "created_utc": "2026-10-27T01:23:01.859408+00:00",
+  "git_head": "f87dc06a2a640e8a2963847f425ec8bba6419f1b",
+  "protocol": "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md",
+  "f0_freeze": "receipts/phase_positive_control_freeze.json",
+  "f1_freeze": "receipts/phase_positive_control_f1_discovery_freeze.json",
+  "artifacts": {
+    "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": "6d7f2092b59d28e52c3569febdeebbca0bb191f6fa877acf4ccb53c890a5a7d5",
+    "reports/phase_positive_control_design_heca_primary.tsv": "b99fca8f5932ce81815e54c5df3caf0f3087c8e7252c317b465daee1834225c4",
+    "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": "d1bff21a733df98f8ed1b63b298e5d20c1b1afd1977e68ed25c15e6ad2987883",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/phase_positive_control.json": "4fb6084dc4fefeec1a79ff5fd4116dccaeb531619bf749c0737c7eb09a2fce92",
+    "receipts/phase_positive_control_freeze.json": "c32e8d4304d18f67eacf010718a502b269f01178e0558e77d604c5e2d7ffbef6",
+    "scripts/phase_positive_control_fit_cohort.R": "ba85362d091e01f4222b6a854722dcdd54b4d2cbfd49d6606fb1f47accd3a05a",
+    "scripts/donor_de_lib.R": "9400b53e2755020ad24ef65313883c51742a33a45cb6211adf53fbff65b871de",
+    "receipts/phase_positive_control_f1_discovery_freeze.json": "c29a997fd6d877fcbc6f81bbc3849c496b95010afe4343fa221ebdf0d2a844e6",
+    "scripts/phase_positive_control_evaluate.py": "446af813bb835788aeae55fb6c74f0b3891c7ba027f92e4921de506405d7c584",
+    "scripts/evaluate_replication.py": "76464563522a7f7ef33eea66ba95c4f727ee5b23c8207ea1f794e904a47038b0",
+    "scripts/phase_positive_control_markers.py": "e17e06aafeddd9d345fc3e9747e2a4eda54114f0d0ae79609b6efbe9a647cd54",
+    "scripts/phase_positive_control_bootstrap.R": "f7e1662738934bb423481f1996543af210114705ba5d6adf015e2145f643ec34",
+    "scripts/resample_donor_models.R": "04a922a7dd13fa96a8eab1b1f8eac8c4929bb9cd78f4ece8b333ca7cd79f01a6",
+    "scripts/phase_positive_control_finalize.py": "841f3c403b55ba39647bb57e8ff379f537c171d04f619301d0ed796cc2a7fbd2",
+    "work/phase_positive_control/heca_fit/de/de_all.tsv": "7367f66e780b5c90540c061e6ece99e8431e07e5e8e4376d171a8013f16b21db",
+    "work/phase_positive_control/heca_fit/de/de_fitted.tsv": "7367f66e780b5c90540c061e6ece99e8431e07e5e8e4376d171a8013f16b21db",
+    "work/phase_positive_control/heca_fit/de/expression_filter.tsv": "c66e3250ffd871e01a6731d04cc2fce66c18160cc0fab516fcb28c06441e43b7",
+    "work/phase_positive_control/heca_fit/de/provenance.json": "bac457460cbbfe936343f1b24272432a9d9c5b2ffd139f4d87a71b21bf2a6e43",
+    "work/phase_positive_control/evaluation/selected_genes.tsv": "a898a5d22b46f61ae1ac352fcd416e24025390bcd7e79666f7e3b2586bde5be3",
+    "work/phase_positive_control/evaluation/summary.json": "b6b516ad6ef95876d7583fe0a3c2e1ef7bbb067ace8ff74f4965622421d52fda",
+    "work/phase_positive_control/heca_fit/markers_heca.tsv": "d2e0f31277343746091cc195e0e925bf092c87b3fc613cdedd7a31aa9d6e26e8",
+    "work/phase_positive_control/heca_fit/markers_heca_summary.json": "acd2ef9dd9af1bb1c7d23ddc2ce77227d4dc003b3a19d2086a71be917db5f299",
+    "work/phase_positive_control/bootstrap/summary.json": "3361792aa8996904a091a7333f344f5c710d6f2c82d058ef9d303dc2c88296e3",
+    "work/phase_positive_control/bootstrap/paired_differences.tsv": "c7264642a0d9db41fef013c09521df504d02c55b88976303c531d25e3e21fb63",
+    "work/phase_positive_control/bootstrap/draw_ledger.tsv": "da0f6aa432c8d0fd8b37e5b1d2d85322b7530f0d9b310f68333c0156aaa7db4e",
+    "reports/phase_positive_control_f2/heca_de_all.tsv.gz": "33d99dbdaef9743eae4eb71bd8eb6e20a5fe64644f92535682410156bb8a2d0d",
+    "reports/phase_positive_control_f2/heca_de_expression_filter.tsv": "c66e3250ffd871e01a6731d04cc2fce66c18160cc0fab516fcb28c06441e43b7",
+    "reports/phase_positive_control_f2/heca_de_normalization.tsv": "62812494cfba5198865a33e11de336de360bf2523bd0cc201d86f3b3d30ea5a0",
+    "reports/phase_positive_control_f2/heca_de_design.tsv": "97cfd1137429b5e82bbcab7cbef41352af7620f208030110dab30fb77e9d23a8",
+    "reports/phase_positive_control_f2/heca_de_provenance.json": "bac457460cbbfe936343f1b24272432a9d9c5b2ffd139f4d87a71b21bf2a6e43",
+    "reports/phase_positive_control_f2/evaluation_selected_genes.tsv": "a898a5d22b46f61ae1ac352fcd416e24025390bcd7e79666f7e3b2586bde5be3",
+    "reports/phase_positive_control_f2/evaluation_summary.json": "b6b516ad6ef95876d7583fe0a3c2e1ef7bbb067ace8ff74f4965622421d52fda",
+    "reports/phase_positive_control_f2/evaluation_provenance.json": "95968ffb73cc10e369cb495d360b27b391322b9c844d4b4f8ce4bf91c35ff7eb",
+    "reports/phase_positive_control_f2/markers_heca.tsv": "d2e0f31277343746091cc195e0e925bf092c87b3fc613cdedd7a31aa9d6e26e8",
+    "reports/phase_positive_control_f2/markers_heca_summary.json": "acd2ef9dd9af1bb1c7d23ddc2ce77227d4dc003b3a19d2086a71be917db5f299",
+    "reports/phase_positive_control_f2/bootstrap_paired_differences.tsv": "c7264642a0d9db41fef013c09521df504d02c55b88976303c531d25e3e21fb63",
+    "reports/phase_positive_control_f2/bootstrap_summary.json": "3361792aa8996904a091a7333f344f5c710d6f2c82d058ef9d303dc2c88296e3",
+    "reports/phase_positive_control_f2/bootstrap_draw_freeze.json": "d16b5b5598cdfc6070162fb73ea31425f027df0505ce70e73e9bc458b35288cd"
+  },
+  "products": {
+    "heca_de_all": "work/phase_positive_control/heca_fit/de/de_all.tsv",
+    "heca_de_fitted": "work/phase_positive_control/heca_fit/de/de_fitted.tsv",
+    "heca_expression_filter": "work/phase_positive_control/heca_fit/de/expression_filter.tsv",
+    "heca_provenance": "work/phase_positive_control/heca_fit/de/provenance.json",
+    "evaluation_selected_genes": "work/phase_positive_control/evaluation/selected_genes.tsv",
+    "evaluation_summary": "work/phase_positive_control/evaluation/summary.json",
+    "markers_heca": "work/phase_positive_control/heca_fit/markers_heca.tsv",
+    "markers_heca_summary": "work/phase_positive_control/heca_fit/markers_heca_summary.json",
+    "bootstrap_summary": "work/phase_positive_control/bootstrap/summary.json",
+    "bootstrap_paired_differences": "work/phase_positive_control/bootstrap/paired_differences.tsv",
+    "bootstrap_draw_ledger": "work/phase_positive_control/bootstrap/draw_ledger.tsv"
+  },
+  "published_copies": {
+    "heca_de_all.tsv.gz": "reports/phase_positive_control_f2/heca_de_all.tsv.gz",
+    "heca_de_expression_filter.tsv": "reports/phase_positive_control_f2/heca_de_expression_filter.tsv",
+    "heca_de_normalization.tsv": "reports/phase_positive_control_f2/heca_de_normalization.tsv",
+    "heca_de_design.tsv": "reports/phase_positive_control_f2/heca_de_design.tsv",
+    "heca_de_provenance.json": "reports/phase_positive_control_f2/heca_de_provenance.json",
+    "evaluation_selected_genes.tsv": "reports/phase_positive_control_f2/evaluation_selected_genes.tsv",
+    "evaluation_summary.json": "reports/phase_positive_control_f2/evaluation_summary.json",
+    "evaluation_provenance.json": "reports/phase_positive_control_f2/evaluation_provenance.json",
+    "markers_heca.tsv": "reports/phase_positive_control_f2/markers_heca.tsv",
+    "markers_heca_summary.json": "reports/phase_positive_control_f2/markers_heca_summary.json",
+    "bootstrap_paired_differences.tsv": "reports/phase_positive_control_f2/bootstrap_paired_differences.tsv",
+    "bootstrap_summary.json": "reports/phase_positive_control_f2/bootstrap_summary.json",
+    "bootstrap_draw_freeze.json": "reports/phase_positive_control_f2/bootstrap_draw_freeze.json"
+  },
+  "heca_fit": {
+    "tested_family_size": 17243,
+    "estimable_genes": 17243,
+    "BH_q_lt_0_05": 3986,
+    "BH_q_lt_0_05_up": 1825,
+    "BH_q_lt_0_05_down": 2161,
+    "design": {
+      "n_donors": 42,
+      "input_genes": 26125,
+      "rank": 13,
+      "residual_df": 29,
+      "proliferative": 22,
+      "secretory": 20,
+      "group_column": "phase",
+      "coefficient": "SEC_minus_PRO",
+      "cell_column": "primary_nuclei",
+      "design_columns": [
+        "intercept",
+        "SEC_minus_PRO",
+        "ENDO_minus_non_ENDO",
+        "age_centered_years",
+        "library_group_Lane:42058_vs_20",
+        "library_group_Lane:42196_vs_20",
+        "library_group_Lane:43103_vs_20",
+        "library_group_Lane:43281_vs_20",
+        "library_group_Lane:43937_vs_20",
+        "library_group_Lane:43996_vs_20",
+        "library_group_Lane:44595_vs_20",
+        "library_group_Lane:44999_vs_20",
+        "adenomyosis"
+      ]
+    },
+    "filter_audit": {
+      "cpm_cutoff": 0.8965,
+      "minimum_support_donors": 17,
+      "min_total_count": 15,
+      "median_raw_library_size": 11153896.5
+    },
+    "captured_warnings": [],
+    "f0_artifact_check_on_analysis_host": {
+      "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md": true,
+      "config/phase_positive_control.json": true,
+      "config/statistical_analysis.json": true,
+      "config/ranking_algorithm.json": true,
+      "config/network_reference.json": true,
+      "config/discovery_lineage.json": true,
+      "config/gene_mapping_policy.json": true,
+      "docs/REPLICATION_EVALUATION.md": false,
+      "manifests/final_discovery_clinical_selected.tsv": true,
+      "manifests/final_heca_clinical_selected.tsv": true,
+      "manifests/discovery_clinical_candidates.tsv": true,
+      "reports/final_clinical_design_discovery_primary.tsv": true,
+      "reports/final_clinical_design_heca_primary.tsv": true,
+      "data/processed/discovery/counts_stable.tsv.gz": true,
+      "data/processed/discovery/provenance.json": true,
+      "data/processed/heca/counts_stable.tsv.gz": true,
+      "data/processed/heca/provenance.json": true,
+      "data/metadata/heca_h5/obs_selected.tsv": true,
+      "data/metadata/heca_author/metadata-donors.csv": true,
+      "data/metadata/heca_author/metadata-libraries.csv": true,
+      "data/reference/string/direct_evidence_gene_edges.tsv.gz": true
+    },
+    "f1_artifact_check_on_analysis_host": {
+      "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": true,
+      "reports/phase_positive_control_design_discovery_primary.tsv": true,
+      "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": true,
+      "config/statistical_analysis.json": true,
+      "config/phase_positive_control.json": true,
+      "receipts/phase_positive_control_freeze.json": true,
+      "scripts/phase_positive_control_fit_discovery.R": true,
+      "scripts/donor_de_lib.R": true,
+      "scripts/rank_targets.py": true,
+      "scripts/phase_positive_control_markers.py": true,
+      "scripts/phase_positive_control_freeze_f1.py": true,
+      "config/ranking_algorithm.json": true,
+      "data/reference/string/direct_evidence_gene_edges.tsv.gz": true,
+      "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md": true,
+      "work/phase_positive_control/discovery_fit/de/de_all.tsv": true,
+      "work/phase_positive_control/discovery_fit/de/de_fitted.tsv": true,
+      "work/phase_positive_control/discovery_fit/de/expression_filter.tsv": true,
+      "work/phase_positive_control/discovery_fit/de/normalization.tsv": true,
+      "work/phase_positive_control/discovery_fit/de/design.tsv": true,
+      "work/phase_positive_control/discovery_fit/de/provenance.json": true,
+      "work/phase_positive_control/discovery_fit/ranking/universe.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/induced_edges.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/excluded_genes.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/provenance.json": true,
+      "work/phase_positive_control/discovery_fit/markers_discovery.tsv": true,
+      "work/phase_positive_control/discovery_fit/markers_discovery_summary.json": true,
+      "work/phase_positive_control/discovery_fit/ranking/B0.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/B0_top20.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/B0_top50.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/B1.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/B1_top20.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/B1_top50.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/G1.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/G1_top20.tsv": true,
+      "work/phase_positive_control/discovery_fit/ranking/G1_top50.tsv": true,
+      "reports/phase_positive_control_f1/ranking_B0_top20.tsv": true,
+      "reports/phase_positive_control_f1/ranking_B0_top50.tsv": true,
+      "reports/phase_positive_control_f1/ranking_B1_top20.tsv": true,
+      "reports/phase_positive_control_f1/ranking_B1_top50.tsv": true,
+      "reports/phase_positive_control_f1/ranking_G1_top20.tsv": true,
+      "reports/phase_positive_control_f1/ranking_G1_top50.tsv": true,
+      "reports/phase_positive_control_f1/ranking_universe.tsv": true,
+      "reports/phase_positive_control_f1/ranking_excluded_genes.tsv": true,
+      "reports/phase_positive_control_f1/ranking_provenance.json": true,
+      "reports/phase_positive_control_f1/de_expression_filter.tsv": true,
+      "reports/phase_positive_control_f1/de_normalization.tsv": true,
+      "reports/phase_positive_control_f1/de_design.tsv": true,
+      "reports/phase_positive_control_f1/de_provenance.json": true,
+      "reports/phase_positive_control_f1/de_all.tsv.gz": true,
+      "reports/phase_positive_control_f1/markers_discovery.tsv": true,
+      "reports/phase_positive_control_f1/markers_discovery_summary.json": true
+    }
+  },
+  "endpoints": {
+    "P1": {
+      "discovery_BH_q_lt_0_05": 7367,
+      "heca_BH_q_lt_0_05": 3986,
+      "heca_tested_family": 17243,
+      "thresholds": {
+        "discovery_min": 100,
+        "heca_min": 100
+      },
+      "pass": true,
+      "strong_label_min": 1000,
+      "strong": true
+    },
+    "P2": {
+      "list": "frozen discovery B0 top-20",
+      "same_sign": 20,
+      "evaluable": 20,
+      "selected": 20,
+      "same_sign_and_external_q_lt_0_05": 20,
+      "missing_bounds": [
+        1.0,
+        1.0
+      ],
+      "coverage_limited": false,
+      "thresholds": {
+        "same_sign_min": 16,
+        "same_sign_and_external_q_lt_0_05_min": 10
+      },
+      "pass": true
+    },
+    "S1": {
+      "discovery": {
+        "panel_genes": 7,
+        "in_expression_family": 6,
+        "expected_sign_agrees": 6,
+        "expected_sign_agrees_and_q_lt_0_05": 5,
+        "threshold": 6,
+        "pass": false
+      },
+      "heca": {
+        "panel_genes": 7,
+        "in_expression_family": 6,
+        "expected_sign_agrees": 6,
+        "expected_sign_agrees_and_q_lt_0_05": 4,
+        "threshold": 6,
+        "pass": true
+      },
+      "pass": false,
+      "role": "explanatory, not decisive"
+    },
+    "S2": {
+      "status": "completed",
+      "draws_required": 500,
+      "valid": 499,
+      "invalid": 1,
+      "interval_suppressed": false,
+      "conditional_95_percent_interval_G1_minus_B0": [
+        -0.5263157894736843,
+        -0.21052631578947367
+      ],
+      "fixed_sample_difference": -0.368421052631579,
+      "failure_reasons": {
+        "design not full rank; nonconstant nuisance cannot be dropped": 1
+      },
+      "coverage_adequate_both": true,
+      "affects_pass_fail": false,
+      "direction_statement": "G1 below B0 across the interval"
+    },
+    "primary_contrast": {
+      "contrast": "G1_minus_B0_top20",
+      "concordance_difference": -0.368421052631579,
+      "missing_bounds": [
+        -0.4,
+        -0.35
+      ],
+      "B0_evaluable": 20,
+      "G1_evaluable": 19,
+      "coverage_adequate_both": true,
+      "missing_bounds_include_zero": false,
+      "eligible_for_bootstrap_superiority_assessment": false,
+      "superiority_claim": false,
+      "interpretation": "fixed-list transcriptomic comparison; paired bootstrap still required, not therapeutic validation"
+    },
+    "methods": {
+      "B0": {
+        "20": {
+          "selected": 20,
+          "evaluable": 20,
+          "agree": 20,
+          "opposite": 0,
+          "unevaluable": 0,
+          "concordance": 1.0,
+          "coverage": 1.0,
+          "coverage_adequate": true,
+          "missing_bounds": [
+            1.0,
+            1.0
+          ],
+          "missing_reasons": {
+            "absent_id": 0,
+            "expression_filter_fail": 0,
+            "invalid_fit": 0,
+            "discovery_zero_sign": 0,
+            "external_zero_sign": 0
+          },
+          "significant_same_direction": 20
+        },
+        "50": {
+          "selected": 50,
+          "evaluable": 49,
+          "agree": 49,
+          "opposite": 0,
+          "unevaluable": 1,
+          "concordance": 1.0,
+          "coverage": 0.98,
+          "coverage_adequate": true,
+          "missing_bounds": [
+            0.98,
+            1.0
+          ],
+          "missing_reasons": {
+            "absent_id": 0,
+            "expression_filter_fail": 1,
+            "invalid_fit": 0,
+            "discovery_zero_sign": 0,
+            "external_zero_sign": 0
+          },
+          "significant_same_direction": 49
+        }
+      },
+      "B1": {
+        "20": {
+          "selected": 20,
+          "evaluable": 13,
+          "agree": 8,
+          "opposite": 5,
+          "unevaluable": 7,
+          "concordance": 0.6153846153846154,
+          "coverage": 0.65,
+          "coverage_adequate": false,
+          "missing_bounds": [
+            0.4,
+            0.75
+          ],
+          "missing_reasons": {
+            "absent_id": 0,
+            "expression_filter_fail": 7,
+            "invalid_fit": 0,
+            "discovery_zero_sign": 0,
+            "external_zero_sign": 0
+          },
+          "significant_same_direction": 2
+        },
+        "50": {
+          "selected": 50,
+          "evaluable": 34,
+          "agree": 19,
+          "opposite": 15,
+          "unevaluable": 16,
+          "concordance": 0.5588235294117647,
+          "coverage": 0.68,
+          "coverage_adequate": false,
+          "missing_bounds": [
+            0.38,
+            0.7
+          ],
+          "missing_reasons": {
+            "absent_id": 0,
+            "expression_filter_fail": 16,
+            "invalid_fit": 0,
+            "discovery_zero_sign": 0,
+            "external_zero_sign": 0
+          },
+          "significant_same_direction": 3
+        }
+      },
+      "G1": {
+        "20": {
+          "selected": 20,
+          "evaluable": 19,
+          "agree": 12,
+          "opposite": 7,
+          "unevaluable": 1,
+          "concordance": 0.631578947368421,
+          "coverage": 0.95,
+          "coverage_adequate": true,
+          "missing_bounds": [
+            0.6,
+            0.65
+          ],
+          "missing_reasons": {
+            "absent_id": 0,
+            "expression_filter_fail": 1,
+            "invalid_fit": 0,
+            "discovery_zero_sign": 0,
+            "external_zero_sign": 0
+          },
+          "significant_same_direction": 4
+        },
+        "50": {
+          "selected": 50,
+          "evaluable": 48,
+          "agree": 36,
+          "opposite": 12,
+          "unevaluable": 2,
+          "concordance": 0.75,
+          "coverage": 0.96,
+          "coverage_adequate": true,
+          "missing_bounds": [
+            0.72,
+            0.76
+          ],
+          "missing_reasons": {
+            "absent_id": 0,
+            "expression_filter_fail": 2,
+            "invalid_fit": 0,
+            "discovery_zero_sign": 0,
+            "external_zero_sign": 0
+          },
+          "significant_same_direction": 13
+        }
+      }
+    }
+  },
+  "outcome": {
+    "code": "P1_and_P2_pass",
+    "statement": "The v1 pipeline detects and transfers a known stromal program at these sample sizes; the v1 disease null is not attributable to pipeline insensitivity. No gene becomes a target because of this result."
+  },
+  "v1_matrices_sha256_at_evaluation": {
+    "data/processed/discovery/counts_stable.tsv.gz": "c286af7cbe4cf4358afdd985fbeb42cbb4583754cc3650f12ddb92c987d8e067",
+    "data/processed/heca/counts_stable.tsv.gz": "77121542de07e346ea2112f80bfee6248993c42f90c393ec3154b0a9de529af0"
+  },
+  "v1_artifacts_written": false,
+  "heca_phase_effects_computed": true,
+  "software": {
+    "fit": {
+      "R": "R version 4.4.3 (2025-02-28)",
+      "edgeR": "4.4.0",
+      "limma": "3.62.1",
+      "statmod": "1.5.2"
+    },
+    "evaluation_python": "3.10.22"
+  },
+  "interpretation": "cross-study transcriptomic reproducibility of a cycle-phase program as a pipeline positive control; not disease evidence, not targets, not therapeutic validation"
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "cohort": "heca",
+  "contrast": "SEC_minus_PRO",
+  "protocol": "docs/PHASE_POSITIVE_CONTROL_PROTOCOL.md",
+  "definitions": "docs/REPLICATION_EVALUATION.md (v1), applied unchanged",
+  "methods": {
+    "B0": {
+      "20": {
+        "selected": 20,
+        "evaluable": 20,
+        "agree": 20,
+        "opposite": 0,
+        "unevaluable": 0,
+        "concordance": 1.0,
+        "coverage": 1.0,
+        "coverage_adequate": true,
+        "missing_bounds": [
+          1.0,
+          1.0
+        ],
+        "missing_reasons": {
+          "absent_id": 0,
+          "expression_filter_fail": 0,
+          "invalid_fit": 0,
+          "discovery_zero_sign": 0,
+          "external_zero_sign": 0
+        },
+        "significant_same_direction": 20
+      },
+      "50": {
+        "selected": 50,
+        "evaluable": 49,
+        "agree": 49,
+        "opposite": 0,
+        "unevaluable": 1,
+        "concordance": 1.0,
+        "coverage": 0.98,
+        "coverage_adequate": true,
+        "missing_bounds": [
+          0.98,
+          1.0
+        ],
+        "missing_reasons": {
+          "absent_id": 0,
+          "expression_filter_fail": 1,
+          "invalid_fit": 0,
+          "discovery_zero_sign": 0,
+          "external_zero_sign": 0
+        },
+        "significant_same_direction": 49
+      }
+    },
+    "B1": {
+      "20": {
+        "selected": 20,
+        "evaluable": 13,
+        "agree": 8,
+        "opposite": 5,
+        "unevaluable": 7,
+        "concordance": 0.6153846153846154,
+        "coverage": 0.65,
+        "coverage_adequate": false,
+        "missing_bounds": [
+          0.4,
+          0.75
+        ],
+        "missing_reasons": {
+          "absent_id": 0,
+          "expression_filter_fail": 7,
+          "invalid_fit": 0,
+          "discovery_zero_sign": 0,
+          "external_zero_sign": 0
+        },
+        "significant_same_direction": 2
+      },
+      "50": {
+        "selected": 50,
+        "evaluable": 34,
+        "agree": 19,
+        "opposite": 15,
+        "unevaluable": 16,
+        "concordance": 0.5588235294117647,
+        "coverage": 0.68,
+        "coverage_adequate": false,
+        "missing_bounds": [
+          0.38,
+          0.7
+        ],
+        "missing_reasons": {
+          "absent_id": 0,
+          "expression_filter_fail": 16,
+          "invalid_fit": 0,
+          "discovery_zero_sign": 0,
+          "external_zero_sign": 0
+        },
+        "significant_same_direction": 3
+      }
+    },
+    "G1": {
+      "20": {
+        "selected": 20,
+        "evaluable": 19,
+        "agree": 12,
+        "opposite": 7,
+        "unevaluable": 1,
+        "concordance": 0.631578947368421,
+        "coverage": 0.95,
+        "coverage_adequate": true,
+        "missing_bounds": [
+          0.6,
+          0.65
+        ],
+        "missing_reasons": {
+          "absent_id": 0,
+          "expression_filter_fail": 1,
+          "invalid_fit": 0,
+          "discovery_zero_sign": 0,
+          "external_zero_sign": 0
+        },
+        "significant_same_direction": 4
+      },
+      "50": {
+        "selected": 50,
+        "evaluable": 48,
+        "agree": 36,
+        "opposite": 12,
+        "unevaluable": 2,
+        "concordance": 0.75,
+        "coverage": 0.96,
+        "coverage_adequate": true,
+        "missing_bounds": [
+          0.72,
+          0.76
+        ],
+        "missing_reasons": {
+          "absent_id": 0,
+          "expression_filter_fail": 2,
+          "invalid_fit": 0,
+          "discovery_zero_sign": 0,
+          "external_zero_sign": 0
+        },
+        "significant_same_direction": 13
+      }
+    }
+  },
+  "primary": {
+    "contrast": "G1_minus_B0_top20",
+    "concordance_difference": -0.368421052631579,
+    "missing_bounds": [
+      -0.4,
+      -0.35
+    ],
+    "B0_evaluable": 20,
+    "G1_evaluable": 19,
+    "coverage_adequate_both": true,
+    "missing_bounds_include_zero": false,
+    "eligible_for_bootstrap_superiority_assessment": false,
+    "superiority_claim": false,
+    "interpretation": "fixed-list transcriptomic comparison; paired bootstrap still required, not therapeutic validation"
+  },
+  "P1": {
+    "discovery_BH_q_lt_0_05": 7367,
+    "heca_BH_q_lt_0_05": 3986,
+    "heca_tested_family": 17243,
+    "thresholds": {
+      "discovery_min": 100,
+      "heca_min": 100
+    },
+    "pass": true,
+    "strong_label_min": 1000,
+    "strong": true
+  },
+  "P2": {
+    "list": "frozen discovery B0 top-20",
+    "same_sign": 20,
+    "evaluable": 20,
+    "selected": 20,
+    "same_sign_and_external_q_lt_0_05": 20,
+    "missing_bounds": [
+      1.0,
+      1.0
+    ],
+    "coverage_limited": false,
+    "thresholds": {
+      "same_sign_min": 16,
+      "same_sign_and_external_q_lt_0_05_min": 10
+    },
+    "pass": true
+  },
+  "S1": {
+    "discovery": {
+      "panel_genes": 7,
+      "in_expression_family": 6,
+      "expected_sign_agrees": 6,
+      "expected_sign_agrees_and_q_lt_0_05": 5,
+      "threshold": 6,
+      "pass": false
+    },
+    "heca": {
+      "panel_genes": 7,
+      "in_expression_family": 6,
+      "expected_sign_agrees": 6,
+      "expected_sign_agrees_and_q_lt_0_05": 4,
+      "threshold": 6,
+      "pass": true
+    },
+    "pass": false,
+    "role": "explanatory, not decisive"
+  },
+  "S2": {
+    "status": "pending_paired_bootstrap",
+    "affects_pass_fail": false
+  },
+  "outcome": {
+    "code": "P1_and_P2_pass",
+    "statement": "The v1 pipeline detects and transfers a known stromal program at these sample sizes; the v1 disease null is not attributable to pipeline insensitivity. No gene becomes a target because of this result."
+  },
+  "top50_role": "secondary",
+  "dossiers_and_matched_nulls": "not part of the positive control",
+  "scientific_scope": "cross-study transcriptomic reproducibility of a cycle-phase program; not disease evidence, not therapeutic validation"
+}

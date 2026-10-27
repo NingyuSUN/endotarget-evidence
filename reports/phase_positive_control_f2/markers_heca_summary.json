@@ -1,0 +1,84 @@
+{
+  "cohort": "heca",
+  "panel_genes": 7,
+  "in_expression_family": 6,
+  "expected_sign_agrees": 6,
+  "expected_sign_agrees_and_q_lt_0_05": 4,
+  "criterion": "expected sign",
+  "threshold": 6,
+  "pass": true,
+  "filter_failures_count_as_failures": true,
+  "genes": [
+    {
+      "gene": "IGFBP1",
+      "expected_sign": "+",
+      "stable_gene_id": "ENSG00000146678",
+      "in_expression_family": true,
+      "logFC": "4.19879099896237",
+      "adj.P.Val": "0.0629869053670183",
+      "expected_sign_agrees": true,
+      "q_lt_0_05": false
+    },
+    {
+      "gene": "PRL",
+      "expected_sign": "+",
+      "stable_gene_id": "ENSG00000172179",
+      "in_expression_family": false,
+      "logFC": null,
+      "adj.P.Val": null,
+      "expected_sign_agrees": null,
+      "q_lt_0_05": null
+    },
+    {
+      "gene": "DKK1",
+      "expected_sign": "+",
+      "stable_gene_id": "ENSG00000107984",
+      "in_expression_family": true,
+      "logFC": "4.58267707432521",
+      "adj.P.Val": "2.98274385404136e-05",
+      "expected_sign_agrees": true,
+      "q_lt_0_05": true
+    },
+    {
+      "gene": "LEFTY2",
+      "expected_sign": "+",
+      "stable_gene_id": "ENSG00000143768",
+      "in_expression_family": true,
+      "logFC": "2.20352091589442",
+      "adj.P.Val": "0.271019289601558",
+      "expected_sign_agrees": true,
+      "q_lt_0_05": false
+    },
+    {
+      "gene": "PLCL1",
+      "expected_sign": "+",
+      "stable_gene_id": "ENSG00000115896",
+      "in_expression_family": true,
+      "logFC": "3.80303826626536",
+      "adj.P.Val": "6.92385551365309e-10",
+      "expected_sign_agrees": true,
+      "q_lt_0_05": true
+    },
+    {
+      "gene": "ESR1",
+      "expected_sign": "-",
+      "stable_gene_id": "ENSG00000091831",
+      "in_expression_family": true,
+      "logFC": "-1.2626547645165",
+      "adj.P.Val": "6.72481003948374e-05",
+      "expected_sign_agrees": true,
+      "q_lt_0_05": true
+    },
+    {
+      "gene": "PGR",
+      "expected_sign": "-",
+      "stable_gene_id": "ENSG00000082175",
+      "in_expression_family": true,
+      "logFC": "-1.20836443798829",
+      "adj.P.Val": "4.08462279265559e-06",
+      "expected_sign_agrees": true,
+      "q_lt_0_05": true
+    }
+  ],
+  "dependency_note": "five of seven markers derive from the HECA authors' label characterization; partly dependent for HECA, independent for discovery"
+}
