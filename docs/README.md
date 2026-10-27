@@ -3,6 +3,9 @@
 Start with the [method card](METHOD_CARD.md) for the study population, model,
 method comparison, results and limitations. The completed analysis found no
 supported target shortlist and no established advantage from network propagation.
+Four prespecified follow-on analyses (October 2026) bound what that null means; the
+method card's [follow-on section](METHOD_CARD.md#follow-on-analyses-what-the-null-resolves)
+summarizes them.
 
 ## Results and interpretation
 

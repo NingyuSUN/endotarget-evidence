@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-10-27T08:43:11.547053+00:00",
+  "source": "reports/executive_brief_en.md",
+  "source_sha256": "d7e911f0f7db6d7e7e023acca8ca13be74b6a2cf8a6ec12e95e237cbd7a7836e",
+  "output": "reports/executive_brief_en.pdf",
+  "output_sha256": "ea3408a959519723c332cbf9b5e07b05d3a28daa53a0871e6f2e9fc6f7a8b2cf",
+  "script_sha256": "5f4890a5950a7f1e8c4c41d5a2ff516b14f8e12787b93e5f6ecedf42bdaa4179",
+  "pages": 2,
+  "text_coverage": "All source alphanumeric tokens and key scientific values checked",
+  "new_scientific_analysis": false,
+  "visual_review": "PASS: both pages rendered with pypdfium2 at scale 1.5 and inspected; no clipping or overlap; the follow-on table and all text legible; page 2 about nine tenths full",
+  "renderer_versions": {
+    "reportlab": "4.4.9",
+    "pypdf": "6.16.2"
+  },
+  "font_sha256": {
+    "arial.ttf": "c9b76220a5be42ead4733611e417cd65c5fd8aeaa33eb56576ac378a37d130a1",
+    "arialbd.ttf": "766f06ac8761f82f25d032a220e89438f6064591af9915061f20b949efdedf69",
+    "ariali.ttf": "79a5742b865cf06891d4ae43e42cac0e5169c7b7b06b5b3c24ef8e0966d27b62"
+  },
+  "preview_rendered": true
+}

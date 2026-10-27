@@ -64,6 +64,15 @@ research brief present the completed study.
   derived from the reported numbers. It contains no new analysis.
 - The generated replication reports list a removed working-state note as a build
   input; their receipts keep its recorded hash.
+- **27 October 2026.** The method card, research brief and results summary were
+  extended with the four prespecified follow-on analyses completed on 26–27 October
+  2026: the phase positive control, the minimum detectable effect analysis, the
+  secretory program disease contrast and the cohort extension metadata audit. Every
+  number is copied from those analyses' results reports and receipts. The brief PDF
+  was rendered again from the updated source under a new
+  [rendering record](../receipts/publication_brief_pdf_2026-10-27.json); the
+  15 October record is retained unchanged. No v1 number, candidate list or figure
+  changed.
 
 Some frozen documents include status statements and relative links appropriate to
 their original version; they are not current execution instructions. The
@@ -75,8 +84,10 @@ entry points.
 Historical receipts retain their original source identifiers and hashes. In
 particular, `local_delivery_verification.json` and the prior PDF receipt describe
 the files present at their recorded time; they do not verify the edited current
-homepages or research brief. The current PDF has a separate
-[rendering record](../receipts/publication_brief_pdf.json).
+homepages or research brief. The 15 October 2026 PDF has its own
+[rendering record](../receipts/publication_brief_pdf.json); the current PDF,
+rendered on 27 October 2026, has a
+[separate record](../receipts/publication_brief_pdf_2026-10-27.json).
 
 The original `verify_local_delivery.py` also checks original Git ancestry and file
 hashes. Neither is preserved in the published history, so running that checker on

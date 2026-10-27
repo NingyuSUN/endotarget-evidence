@@ -46,7 +46,7 @@ while index<len(lines):
     line=lines[index].strip()
     if not line:
         index+=1; continue
-    if line.startswith("## Evidence integration"):
+    if line.startswith("## What the null means"):
         story.append(PageBreak())
     if line.startswith("# "):
         story.append(paragraph(line[2:],"title")); index+=1; continue
@@ -60,7 +60,7 @@ while index<len(lines):
                 rows.append(cells)
             index+=1
         width=A4[0]-84
-        ratios=[.28,.25,.19,.14,.14] if len(rows[0])==5 else [.28,.25,.24,.23]
+        ratios={5:[.28,.25,.19,.14,.14],4:[.28,.25,.24,.23],3:[.27,.36,.37]}[len(rows[0])]
         values=[[paragraph(c,"tablehead" if n==0 else "table") for c in row] for n,row in enumerate(rows)]
         table=Table(values,colWidths=[width*r for r in ratios],hAlign="LEFT",repeatRows=1)
         table.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),colors.HexColor("#EAF1F5")),
@@ -83,7 +83,7 @@ doc=SimpleDocTemplate(str(output),pagesize=A4,rightMargin=42,leftMargin=42,
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
 reader=PdfReader(str(output)); pages=[page.extract_text() for page in reader.pages]
 if len(pages)!=2: raise SystemExit(f"Expected exactly 2 pages, got {len(pages)}; adjust layout, never omit text")
-for value in ["150,788","52,744","487","13","SKIDA1","PARP9","unavailable","500"]:
+for value in ["150,788","52,744","487","13","SKIDA1","PARP9","unavailable","500","7,367","3,986","0.31","0.42","GSE213216"]:
     if value not in "\n".join(pages): raise SystemExit("Missing PDF evidence: "+value)
 # Verify all plain paragraph/table text tokens survived extraction; allow PDF whitespace.
 plain=re.sub(r"\[([^\]]+)\]\([^)]+\)",r"\1",raw)
