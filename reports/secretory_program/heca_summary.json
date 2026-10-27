@@ -1,0 +1,487 @@
+{
+  "analysis": "SECRETORY_PROGRAM_DISEASE_CONTRAST",
+  "cohort": "heca",
+  "synthetic": false,
+  "donors": {
+    "n": 42,
+    "by_phase_disease": {
+      "proliferative ENDO": 15,
+      "proliferative non-ENDO": 7,
+      "secretory ENDO": 16,
+      "secretory non-ENDO": 4
+    },
+    "secretory_sub_phase_by_disease": [
+      {
+        "level": "Secretory",
+        "disease": "ENDO",
+        "n": 6
+      },
+      {
+        "level": "Secretory Early",
+        "disease": "ENDO",
+        "n": 3
+      },
+      {
+        "level": "Secretory Mid",
+        "disease": "ENDO",
+        "n": 7
+      },
+      {
+        "level": "Secretory",
+        "disease": "non-ENDO",
+        "n": 2
+      },
+      {
+        "level": "Secretory Early",
+        "disease": "non-ENDO",
+        "n": 0
+      },
+      {
+        "level": "Secretory Mid",
+        "disease": "non-ENDO",
+        "n": 2
+      }
+    ],
+    "secretory_batch_by_disease": [
+      {
+        "level": "42058",
+        "disease": "ENDO",
+        "n": 2
+      },
+      {
+        "level": "42196",
+        "disease": "ENDO",
+        "n": 2
+      },
+      {
+        "level": "43281",
+        "disease": "ENDO",
+        "n": 1
+      },
+      {
+        "level": "43937",
+        "disease": "ENDO",
+        "n": 5
+      },
+      {
+        "level": "43996",
+        "disease": "ENDO",
+        "n": 2
+      },
+      {
+        "level": "44595",
+        "disease": "ENDO",
+        "n": 1
+      },
+      {
+        "level": "44999",
+        "disease": "ENDO",
+        "n": 3
+      },
+      {
+        "level": "42058",
+        "disease": "non-ENDO",
+        "n": 1
+      },
+      {
+        "level": "42196",
+        "disease": "non-ENDO",
+        "n": 0
+      },
+      {
+        "level": "43281",
+        "disease": "non-ENDO",
+        "n": 0
+      },
+      {
+        "level": "43937",
+        "disease": "non-ENDO",
+        "n": 2
+      },
+      {
+        "level": "43996",
+        "disease": "non-ENDO",
+        "n": 0
+      },
+      {
+        "level": "44595",
+        "disease": "non-ENDO",
+        "n": 1
+      },
+      {
+        "level": "44999",
+        "disease": "non-ENDO",
+        "n": 0
+      }
+    ],
+    "secretory_age_mean_by_disease": {
+      "ENDO": 33,
+      "non-ENDO": 24.75
+    },
+    "secretory_adenomyosis_by_disease": {
+      "ENDO": 3,
+      "non-ENDO": 0
+    },
+    "secretory_depth_min_by_disease": {
+      "ENDO": 113,
+      "non-ENDO": 147
+    }
+  },
+  "signature": {
+    "source_cohort": "discovery",
+    "q_threshold": 0.05,
+    "genes": 7367,
+    "in_family": 6570,
+    "up": 3210,
+    "down": 3360,
+    "median_abs_beta_in_family": 0.741347647707666,
+    "own_program_genes": 3986,
+    "own_program_in_family": 3986
+  },
+  "scores": {
+    "group_means_projection": {
+      "proliferative ENDO": {
+        "n": 15,
+        "mean": 0.0210717234860527,
+        "sd": 0.12201726140443,
+        "median": -0.0357157283881111
+      },
+      "proliferative non-ENDO": {
+        "n": 7,
+        "mean": -0.0451536931843986,
+        "sd": 0.0361927532835803,
+        "median": -0.0495150587141728
+      },
+      "secretory ENDO": {
+        "n": 16,
+        "mean": 0.517321147189669,
+        "sd": 0.236623500301675,
+        "median": 0.552173532680114
+      },
+      "secretory non-ENDO": {
+        "n": 4,
+        "mean": 0.564423041430229,
+        "sd": 0.229384454498401,
+        "median": 0.601896167806047
+      }
+    },
+    "secretory_projection_sd": 0.229966974783817,
+    "correlation_projection_vs_mean_signed_shift": 0.998888949671425
+  },
+  "validity_gate": {
+    "model": {
+      "n": 42,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis"],
+      "rank": 13,
+      "residual_df": 29,
+      "coefficient": "SEC_minus_PRO",
+      "status": "ESTIMATED",
+      "estimate": 0.558855859348773,
+      "se": 0.0673088894755605,
+      "t": 8.3028536602389,
+      "p": 3.7458013230405e-09,
+      "ci_low": 0.421193723414323,
+      "ci_high": 0.696517995283223,
+      "residual_sd": 0.1692623206887,
+      "coefficients": {
+        "intercept": -0.0464495557971799,
+        "SEC_minus_PRO": 0.558855859348773,
+        "ENDO_minus_non_ENDO": -0.0129665572095357,
+        "age_centered_years": -0.00938856423258064,
+        "library_group_Lane:42058_vs_20": 0.10693326595967,
+        "library_group_Lane:42196_vs_20": 0.15308568736887,
+        "library_group_Lane:43103_vs_20": 0.0526964060555539,
+        "library_group_Lane:43281_vs_20": 0.0183630411214598,
+        "library_group_Lane:43937_vs_20": -0.0229529177591457,
+        "library_group_Lane:43996_vs_20": 0.135809989372522,
+        "library_group_Lane:44595_vs_20": -0.292105107528885,
+        "library_group_Lane:44999_vs_20": 0.00851907877366427,
+        "adenomyosis": 0.0268671994315084
+      }
+    },
+    "auc": 0.986363636363636,
+    "pass": true,
+    "rules": {
+      "phase_separation_auc_min": 0.9,
+      "phase_coefficient_p_max": 0.001,
+      "phase_coefficient_sign": 1,
+      "failure_label": "NOT_INTERPRETABLE"
+    }
+  },
+  "M1_primary": {
+    "n": 42,
+    "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis", "SEC_x_ENDO"],
+    "rank": 14,
+    "residual_df": 28,
+    "coefficient": "SEC_x_ENDO",
+    "status": "ESTIMATED",
+    "estimate": -0.105182701292844,
+    "se": 0.143802429876667,
+    "t": -0.731438970697884,
+    "p": 0.470588696084397,
+    "ci_low": -0.399748625659718,
+    "ci_high": 0.18938322307403,
+    "residual_sd": 0.170635869158021,
+    "coefficients": {
+      "intercept": -0.0935554551647635,
+      "SEC_minus_PRO": 0.638979112859148,
+      "ENDO_minus_non_ENDO": 0.0287677523952996,
+      "age_centered_years": -0.00785382430036682,
+      "library_group_Lane:42058_vs_20": 0.121834071207943,
+      "library_group_Lane:42196_vs_20": 0.180158277016061,
+      "library_group_Lane:43103_vs_20": 0.0695042181097552,
+      "library_group_Lane:43281_vs_20": 0.0366537125893963,
+      "library_group_Lane:43937_vs_20": -0.00129533026277164,
+      "library_group_Lane:43996_vs_20": 0.150552962374698,
+      "library_group_Lane:44595_vs_20": -0.286714429050392,
+      "library_group_Lane:44999_vs_20": 0.0397174862849886,
+      "adenomyosis": 0.0227079654702307,
+      "SEC_x_ENDO": -0.105182701292844
+    },
+    "mde_log": 0.417369395072871,
+    "estimate_in_secretory_sd_units": -0.457381767063389
+  },
+  "M2_secretory": {
+    "n": 20,
+    "columns": ["intercept", "ENDO_minus_non_ENDO", "age_centered_years"],
+    "rank": 3,
+    "residual_df": 17,
+    "coefficient": "ENDO_minus_non_ENDO",
+    "status": "ESTIMATED",
+    "estimate": 0.0474186357165654,
+    "se": 0.153574820349563,
+    "t": 0.308765692244551,
+    "p": 0.761251565022294,
+    "ci_low": -0.276595912619895,
+    "ci_high": 0.371433184053026,
+    "residual_sd": 0.233150521782045,
+    "coefficients": {
+      "intercept": 0.488806617464529,
+      "ENDO_minus_non_ENDO": 0.0474186357165654,
+      "age_centered_years": -0.011457033934197
+    },
+    "mde_log": 0.456564700414813
+  },
+  "M2_subphase": {
+    "n": 20,
+    "columns": ["intercept", "ENDO_minus_non_ENDO", "age_centered_years", "sub_phase:Secretory_Mid_vs_Secretory_Early", "sub_phase:Secretory_vs_Secretory_Early"],
+    "rank": 5,
+    "residual_df": 15,
+    "coefficient": "ENDO_minus_non_ENDO",
+    "status": "ESTIMATED",
+    "estimate": 0.0956725577077215,
+    "se": 0.1122603546887,
+    "t": 0.852238156319955,
+    "p": 0.407483666536476,
+    "ci_low": -0.143604724277886,
+    "ci_high": 0.334949839693329,
+    "residual_sd": 0.158554426343658,
+    "coefficients": {
+      "intercept": 0.239369841513495,
+      "ENDO_minus_non_ENDO": 0.0956725577077215,
+      "age_centered_years": -0.0130305122041846,
+      "sub_phase:Secretory_Mid_vs_Secretory_Early": 0.391843657256331,
+      "sub_phase:Secretory_vs_Secretory_Early": 0.0862599814818989
+    },
+    "mde_log": 0.336541115437546,
+    "sub_phase_reference": "Secretory Early",
+    "sub_phase_levels_present": ["Secretory Early", "Secretory Mid", "Secretory"]
+  },
+  "sensitivities": {
+    "reduced_design": {
+      "n": 42,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "adenomyosis", "SEC_x_ENDO"],
+      "rank": 6,
+      "residual_df": 36,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": -0.0491040311655732,
+      "se": 0.143168223084728,
+      "t": -0.342981355132928,
+      "p": 0.733607282703537,
+      "ci_low": -0.33946264553474,
+      "ci_high": 0.241254583203594,
+      "residual_sd": 0.178645434503847,
+      "coefficients": {
+        "intercept": -0.0228341478733032,
+        "SEC_minus_PRO": 0.550000717515012,
+        "ENDO_minus_non_ENDO": 0.0536771859680276,
+        "age_centered_years": -0.00480728668238974,
+        "adenomyosis": -0.0640796475375917,
+        "SEC_x_ENDO": -0.0491040311655732
+      },
+      "mde_log": 0.412202107147543
+    },
+    "secondary_score": {
+      "n": 42,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis", "SEC_x_ENDO"],
+      "rank": 14,
+      "residual_df": 28,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": -0.116982772561043,
+      "se": 0.154774539564303,
+      "t": -0.755826978328313,
+      "p": 0.456064952879473,
+      "ci_low": -0.434024044772632,
+      "ci_high": 0.200058499650546,
+      "residual_sd": 0.183655367330984,
+      "coefficients": {
+        "intercept": -0.0891984356719845,
+        "SEC_minus_PRO": 0.704633320446989,
+        "ENDO_minus_non_ENDO": 0.0211541297982196,
+        "age_centered_years": -0.00803045388014102,
+        "library_group_Lane:42058_vs_20": 0.144404017291189,
+        "library_group_Lane:42196_vs_20": 0.190859101296126,
+        "library_group_Lane:43103_vs_20": 0.0709930965853052,
+        "library_group_Lane:43281_vs_20": 0.0257324967188141,
+        "library_group_Lane:43937_vs_20": -0.00135933873451251,
+        "library_group_Lane:43996_vs_20": 0.15669630698199,
+        "library_group_Lane:44595_vs_20": -0.326237735578774,
+        "library_group_Lane:44999_vs_20": 0.0236209058253671,
+        "adenomyosis": 0.0241700655775929,
+        "SEC_x_ENDO": -0.116982772561043
+      },
+      "mde_log": 0.449214634314861
+    },
+    "own_cohort_program": {
+      "n": 42,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis", "SEC_x_ENDO"],
+      "rank": 14,
+      "residual_df": 28,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": -0.153146497041005,
+      "se": 0.214706314193252,
+      "t": -0.713283620076312,
+      "p": 0.481573440272042,
+      "ci_low": -0.592952444422997,
+      "ci_high": 0.286659450340987,
+      "residual_sd": 0.254770371874121,
+      "coefficients": {
+        "intercept": -0.0392550373043601,
+        "SEC_minus_PRO": 1.0653534522169,
+        "ENDO_minus_non_ENDO": 0.0148511086057231,
+        "age_centered_years": -0.0129311955963748,
+        "library_group_Lane:42058_vs_20": 0.00750260729444159,
+        "library_group_Lane:42196_vs_20": 0.172084272134064,
+        "library_group_Lane:43103_vs_20": 0.0476494399961654,
+        "library_group_Lane:43281_vs_20": 0.018369564068537,
+        "library_group_Lane:43937_vs_20": -0.132090743767448,
+        "library_group_Lane:43996_vs_20": 0.134153982790012,
+        "library_group_Lane:44595_vs_20": -0.583422707394713,
+        "library_group_Lane:44999_vs_20": -0.0621401175295243,
+        "adenomyosis": 0.0348377842300981,
+        "SEC_x_ENDO": -0.153146497041005
+      },
+      "mde_log": 0.623159459475196,
+      "circular": true
+    },
+    "depth_minimum": {
+      "n": 36,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis", "SEC_x_ENDO"],
+      "rank": 14,
+      "residual_df": 22,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": -0.180625075081215,
+      "se": 0.196898379589753,
+      "t": -0.917351760118878,
+      "p": 0.36890611699769,
+      "ci_low": -0.588967321626347,
+      "ci_high": 0.227717171463918,
+      "residual_sd": 0.186757569427755,
+      "coefficients": {
+        "intercept": -0.117524028580078,
+        "SEC_minus_PRO": 0.682028097050091,
+        "ENDO_minus_non_ENDO": 0.0456790960693386,
+        "age_centered_years": -0.00774233253852972,
+        "library_group_Lane:42058_vs_20": 0.135835683557777,
+        "library_group_Lane:42196_vs_20": 0.194618828404374,
+        "library_group_Lane:43103_vs_20": 0.0651399971942582,
+        "library_group_Lane:43281_vs_20": 0.0427370187541878,
+        "library_group_Lane:43937_vs_20": -0.0303877198935298,
+        "library_group_Lane:43996_vs_20": 0.161002147727213,
+        "library_group_Lane:44595_vs_20": -0.295235783763357,
+        "library_group_Lane:44999_vs_20": 0.0725568429297646,
+        "adenomyosis": 0.0474558168805666,
+        "SEC_x_ENDO": -0.180625075081215
+      },
+      "dropped_constant_nuisance": [],
+      "mde_log": 0.577223056256716,
+      "excluded": 6,
+      "excluded_donors": ["EX0795", "FX1119", "EX0661", "EX0789", "FX1223", "FX1106"]
+    },
+    "adenomyosis_excluded": {
+      "n": 36,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "SEC_x_ENDO"],
+      "rank": 13,
+      "residual_df": 23,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": -0.0950502441744931,
+      "se": 0.166737310269818,
+      "t": -0.570059838560912,
+      "p": 0.57416400667933,
+      "ci_low": -0.439972650004954,
+      "ci_high": 0.249872161655968,
+      "residual_sd": 0.174561691296063,
+      "coefficients": {
+        "intercept": -0.0832574431932651,
+        "SEC_minus_PRO": 0.611472086256431,
+        "ENDO_minus_non_ENDO": 0.0259021054563098,
+        "age_centered_years": -0.00897962145011812,
+        "library_group_Lane:42058_vs_20": 0.134839491981559,
+        "library_group_Lane:42196_vs_20": 0.104906407058718,
+        "library_group_Lane:43103_vs_20": 0.0776427560130031,
+        "library_group_Lane:43281_vs_20": 0.0446700406406599,
+        "library_group_Lane:43937_vs_20": 0.0241336559797653,
+        "library_group_Lane:43996_vs_20": 0.152146079935194,
+        "library_group_Lane:44595_vs_20": -0.302673175392981,
+        "library_group_Lane:44999_vs_20": 0.0525888671703498,
+        "SEC_x_ENDO": -0.0950502441744931
+      },
+      "dropped_constant_nuisance": "adenomyosis",
+      "mde_log": 0.487805449329619,
+      "excluded": 6
+    }
+  },
+  "leave_one_donor_out": {
+    "fits": 42,
+    "estimated": 42,
+    "theta_min": -0.162726839597397,
+    "theta_max": -0.0445583983853696,
+    "max_abs_change": 0.0606243029074743,
+    "most_influential": "FX0011",
+    "all_same_sign_as_primary": true
+  },
+  "gene_level": {
+    "family_size": 17243,
+    "residual_df": 28,
+    "estimable_genes": 17243,
+    "genes_BH_q_lt_0_05": 0,
+    "max_abs_t": 5.29509437416341,
+    "signature_genes_in_family": 6570,
+    "fry": {
+      "n_genes": 6570,
+      "direction": "Down",
+      "p": 0.376997336401563,
+      "p_mixed": 0.77921059021971
+    },
+    "interaction_projection_on_signature": -0.0810819978056022,
+    "mean_signed_interaction_log2fc": -0.107494901869998,
+    "share_signature_genes_interaction_opposes_beta": 0.628919330289193,
+    "estimator_warnings": []
+  },
+  "label": "no_detectable_difference",
+  "label_rules": {
+    "attenuation_detected": "theta < 0 and two-sided p < 0.025",
+    "enhancement_detected": "theta > 0 and two-sided p < 0.025",
+    "no_detectable_difference": "otherwise, with the 95% interval and the MDE reported as the bound",
+    "NOT_INTERPRETABLE": "validity gate failed",
+    "NOT_ESTIMABLE": "primary model not estimable"
+  },
+  "figure": "scores.png",
+  "started_utc": "2026-10-27 06:27:35 UTC",
+  "finished_utc": "2026-10-27 06:27:51 UTC"
+}

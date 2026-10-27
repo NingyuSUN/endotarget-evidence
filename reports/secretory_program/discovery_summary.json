@@ -1,0 +1,456 @@
+{
+  "analysis": "SECRETORY_PROGRAM_DISEASE_CONTRAST",
+  "cohort": "discovery",
+  "synthetic": false,
+  "donors": {
+    "n": 35,
+    "by_phase_disease": {
+      "proliferative ENDO": 12,
+      "proliferative non-ENDO": 10,
+      "secretory ENDO": 7,
+      "secretory non-ENDO": 6
+    },
+    "secretory_sub_phase_by_disease": [
+      {
+        "level": "secretory_early",
+        "disease": "ENDO",
+        "n": 2
+      },
+      {
+        "level": "secretory_late",
+        "disease": "ENDO",
+        "n": 0
+      },
+      {
+        "level": "secretory_mid",
+        "disease": "ENDO",
+        "n": 5
+      },
+      {
+        "level": "secretory_early",
+        "disease": "non-ENDO",
+        "n": 2
+      },
+      {
+        "level": "secretory_late",
+        "disease": "non-ENDO",
+        "n": 2
+      },
+      {
+        "level": "secretory_mid",
+        "disease": "non-ENDO",
+        "n": 2
+      }
+    ],
+    "secretory_batch_by_disease": [
+      {
+        "level": "batch12",
+        "disease": "ENDO",
+        "n": 1
+      },
+      {
+        "level": "batch13",
+        "disease": "ENDO",
+        "n": 1
+      },
+      {
+        "level": "batch15",
+        "disease": "ENDO",
+        "n": 1
+      },
+      {
+        "level": "batch16",
+        "disease": "ENDO",
+        "n": 0
+      },
+      {
+        "level": "batch17",
+        "disease": "ENDO",
+        "n": 0
+      },
+      {
+        "level": "batch18",
+        "disease": "ENDO",
+        "n": 2
+      },
+      {
+        "level": "batch19",
+        "disease": "ENDO",
+        "n": 2
+      },
+      {
+        "level": "batch12",
+        "disease": "non-ENDO",
+        "n": 0
+      },
+      {
+        "level": "batch13",
+        "disease": "non-ENDO",
+        "n": 1
+      },
+      {
+        "level": "batch15",
+        "disease": "non-ENDO",
+        "n": 1
+      },
+      {
+        "level": "batch16",
+        "disease": "non-ENDO",
+        "n": 1
+      },
+      {
+        "level": "batch17",
+        "disease": "non-ENDO",
+        "n": 1
+      },
+      {
+        "level": "batch18",
+        "disease": "non-ENDO",
+        "n": 0
+      },
+      {
+        "level": "batch19",
+        "disease": "non-ENDO",
+        "n": 2
+      }
+    ],
+    "secretory_age_mean_by_disease": {
+      "ENDO": 36,
+      "non-ENDO": 39
+    },
+    "secretory_adenomyosis_by_disease": {
+      "ENDO": 3,
+      "non-ENDO": 0
+    },
+    "secretory_depth_min_by_disease": {
+      "ENDO": 4241,
+      "non-ENDO": 5223
+    }
+  },
+  "signature": {
+    "source_cohort": "heca",
+    "q_threshold": 0.05,
+    "genes": 3986,
+    "in_family": 3580,
+    "up": 1675,
+    "down": 1905,
+    "median_abs_beta_in_family": 0.779171170946157,
+    "own_program_genes": 7367,
+    "own_program_in_family": 7367
+  },
+  "scores": {
+    "group_means_projection": {
+      "proliferative ENDO": {
+        "n": 12,
+        "mean": 0.00486199123358289,
+        "sd": 0.142081995935839,
+        "median": -0.0470239484792597
+      },
+      "proliferative non-ENDO": {
+        "n": 10,
+        "mean": -0.00583438948029947,
+        "sd": 0.0588097232526104,
+        "median": -0.0133635579549795
+      },
+      "secretory ENDO": {
+        "n": 7,
+        "mean": 1.26907208721693,
+        "sd": 0.158905757832936,
+        "median": 1.3128159113553
+      },
+      "secretory non-ENDO": {
+        "n": 6,
+        "mean": 1.27613395255399,
+        "sd": 0.102110766107317,
+        "median": 1.28092405775114
+      }
+    },
+    "secretory_projection_sd": 0.130320246663157,
+    "correlation_projection_vs_mean_signed_shift": 0.999782713918878
+  },
+  "validity_gate": {
+    "model": {
+      "n": 35,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:batch12_vs_batch11", "capture_batch:batch13_vs_batch11", "capture_batch:batch14_vs_batch11", "capture_batch:batch15_vs_batch11", "capture_batch:batch16_vs_batch11", "capture_batch:batch17_vs_batch11", "capture_batch:batch18_vs_batch11", "capture_batch:batch19_vs_batch11", "adenomyosis"],
+      "rank": 13,
+      "residual_df": 22,
+      "coefficient": "SEC_minus_PRO",
+      "status": "ESTIMATED",
+      "estimate": 1.25539442748327,
+      "se": 0.0553615846075198,
+      "t": 22.6762733831276,
+      "p": 9.50728961373003e-17,
+      "ci_low": 1.14058152816924,
+      "ci_high": 1.37020732679729,
+      "residual_sd": 0.122695247853557,
+      "coefficients": {
+        "intercept": 0.0157595296445407,
+        "SEC_minus_PRO": 1.25539442748327,
+        "ENDO_minus_non_ENDO": -0.0221930908159015,
+        "age_centered_years": 0.0039215682836635,
+        "capture_batch:batch12_vs_batch11": 0.0115568159154108,
+        "capture_batch:batch13_vs_batch11": 0.11016203231156,
+        "capture_batch:batch14_vs_batch11": 0.0618117797190193,
+        "capture_batch:batch15_vs_batch11": 0.0193974365778259,
+        "capture_batch:batch16_vs_batch11": -0.063541621163521,
+        "capture_batch:batch17_vs_batch11": -0.0170395130125268,
+        "capture_batch:batch18_vs_batch11": -0.0819127595846009,
+        "capture_batch:batch19_vs_batch11": -0.0366789400718013,
+        "adenomyosis": 0.0468016373099184
+      }
+    },
+    "auc": 1,
+    "pass": true,
+    "rules": {
+      "phase_separation_auc_min": 0.9,
+      "phase_coefficient_p_max": 0.001,
+      "phase_coefficient_sign": 1,
+      "failure_label": "NOT_INTERPRETABLE"
+    }
+  },
+  "M1_primary": {
+    "n": 35,
+    "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:batch12_vs_batch11", "capture_batch:batch13_vs_batch11", "capture_batch:batch14_vs_batch11", "capture_batch:batch15_vs_batch11", "capture_batch:batch16_vs_batch11", "capture_batch:batch17_vs_batch11", "capture_batch:batch18_vs_batch11", "capture_batch:batch19_vs_batch11", "adenomyosis", "SEC_x_ENDO"],
+    "rank": 14,
+    "residual_df": 21,
+    "coefficient": "SEC_x_ENDO",
+    "status": "ESTIMATED",
+    "estimate": 0.0367019785080065,
+    "se": 0.103898631438636,
+    "t": 0.353247949465852,
+    "p": 0.72742392457326,
+    "ci_low": -0.17936705388004,
+    "ci_high": 0.252771010896053,
+    "residual_sd": 0.125211132316999,
+    "coefficients": {
+      "intercept": 0.0168202973817913,
+      "SEC_minus_PRO": 1.22887324518789,
+      "ENDO_minus_non_ENDO": -0.0378687413972886,
+      "age_centered_years": 0.00466410569973885,
+      "capture_batch:batch12_vs_batch11": 0.0174541287593699,
+      "capture_batch:batch13_vs_batch11": 0.127117672892403,
+      "capture_batch:batch14_vs_batch11": 0.0693368664672015,
+      "capture_batch:batch15_vs_batch11": 0.0323245159953677,
+      "capture_batch:batch16_vs_batch11": -0.0557979678718216,
+      "capture_batch:batch17_vs_batch11": -0.00489272798894934,
+      "capture_batch:batch18_vs_batch11": -0.0737964317893444,
+      "capture_batch:batch19_vs_batch11": -0.0220193947284081,
+      "adenomyosis": 0.0450824418156621,
+      "SEC_x_ENDO": 0.0367019785080065
+    },
+    "mde_log": 0.305271931011211,
+    "estimate_in_secretory_sd_units": 0.281629136283568
+  },
+  "M2_secretory": {
+    "n": 13,
+    "columns": ["intercept", "ENDO_minus_non_ENDO", "age_centered_years"],
+    "rank": 3,
+    "residual_df": 10,
+    "coefficient": "ENDO_minus_non_ENDO",
+    "status": "ESTIMATED",
+    "estimate": -0.0206117693673239,
+    "se": 0.0832361055603997,
+    "t": -0.247630150744704,
+    "p": 0.809430909160469,
+    "ci_low": -0.206073370054481,
+    "ci_high": 0.164849831319833,
+    "residual_sd": 0.141034210249683,
+    "coefficients": {
+      "intercept": 1.28343005472413,
+      "ENDO_minus_non_ENDO": -0.0206117693673239,
+      "age_centered_years": -0.00451663467675477
+    },
+    "mde_log": 0.258861632295604
+  },
+  "M2_subphase": {
+    "n": 13,
+    "columns": ["intercept", "ENDO_minus_non_ENDO", "age_centered_years", "sub_phase:secretory_mid_vs_secretory_early", "sub_phase:secretory_late_vs_secretory_early"],
+    "rank": 5,
+    "residual_df": 8,
+    "coefficient": "ENDO_minus_non_ENDO",
+    "status": "ESTIMATED",
+    "estimate": -0.0616094290554125,
+    "se": 0.0758105015675661,
+    "t": -0.812676710765501,
+    "p": 0.439915693428849,
+    "ci_low": -0.236428759162122,
+    "ci_high": 0.113209901051297,
+    "residual_sd": 0.112941645062036,
+    "coefficients": {
+      "intercept": 1.18180700333675,
+      "ENDO_minus_non_ENDO": -0.0616094290554125,
+      "age_centered_years": -0.00451663467675477,
+      "sub_phase:secretory_mid_vs_secretory_early": 0.199668995505657,
+      "sub_phase:secretory_late_vs_secretory_early": 0.105200158656485
+    },
+    "mde_log": 0.24266332292185,
+    "sub_phase_reference": "secretory_early",
+    "sub_phase_levels_present": ["secretory_early", "secretory_mid", "secretory_late"]
+  },
+  "sensitivities": {
+    "reduced_design": {
+      "n": 35,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "adenomyosis", "SEC_x_ENDO"],
+      "rank": 6,
+      "residual_df": 29,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": -0.000473248265936576,
+      "se": 0.0920733196654394,
+      "t": -0.00513990662719869,
+      "p": 0.995934161388761,
+      "ci_low": -0.188784330895253,
+      "ci_high": 0.18783783436338,
+      "residual_sd": 0.124336914911783,
+      "coefficients": {
+        "intercept": 0.00411647936628469,
+        "SEC_minus_PRO": 1.25648440962231,
+        "ENDO_minus_non_ENDO": 0.00238725544904351,
+        "age_centered_years": 0.00339785765493123,
+        "adenomyosis": 0.00284130103746386,
+        "SEC_x_ENDO": -0.000473248265936576
+      },
+      "mde_log": 0.266896876101853
+    },
+    "secondary_score": {
+      "n": 35,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:batch12_vs_batch11", "capture_batch:batch13_vs_batch11", "capture_batch:batch14_vs_batch11", "capture_batch:batch15_vs_batch11", "capture_batch:batch16_vs_batch11", "capture_batch:batch17_vs_batch11", "capture_batch:batch18_vs_batch11", "capture_batch:batch19_vs_batch11", "adenomyosis", "SEC_x_ENDO"],
+      "rank": 14,
+      "residual_df": 21,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": 0.0346606511345615,
+      "se": 0.109194205743679,
+      "t": 0.317422072888405,
+      "p": 0.754057834103362,
+      "ci_low": -0.192421130894035,
+      "ci_high": 0.261742433163158,
+      "residual_sd": 0.131592976291477,
+      "coefficients": {
+        "intercept": 0.0103060756878841,
+        "SEC_minus_PRO": 1.24738344647633,
+        "ENDO_minus_non_ENDO": -0.0443399366679972,
+        "age_centered_years": 0.00469403177116264,
+        "capture_batch:batch12_vs_batch11": 0.0440126159957469,
+        "capture_batch:batch13_vs_batch11": 0.144029758843467,
+        "capture_batch:batch14_vs_batch11": 0.0829189929827806,
+        "capture_batch:batch15_vs_batch11": 0.0526206479544289,
+        "capture_batch:batch16_vs_batch11": -0.0572945540639177,
+        "capture_batch:batch17_vs_batch11": 0.00883466391341507,
+        "capture_batch:batch18_vs_batch11": -0.0714055093241962,
+        "capture_batch:batch19_vs_batch11": -0.013657758379145,
+        "adenomyosis": 0.0502206239942302,
+        "SEC_x_ENDO": 0.0346606511345615
+      },
+      "mde_log": 0.320831233107201
+    },
+    "own_cohort_program": {
+      "n": 35,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:batch12_vs_batch11", "capture_batch:batch13_vs_batch11", "capture_batch:batch14_vs_batch11", "capture_batch:batch15_vs_batch11", "capture_batch:batch16_vs_batch11", "capture_batch:batch17_vs_batch11", "capture_batch:batch18_vs_batch11", "capture_batch:batch19_vs_batch11", "adenomyosis", "SEC_x_ENDO"],
+      "rank": 14,
+      "residual_df": 21,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": 0.0195806201533428,
+      "se": 0.0854206005216736,
+      "t": 0.229225971648077,
+      "p": 0.820911045213677,
+      "ci_low": -0.158061243316482,
+      "ci_high": 0.197222483623168,
+      "residual_sd": 0.102942743002671,
+      "coefficients": {
+        "intercept": 0.0162263660142436,
+        "SEC_minus_PRO": 0.979438048385511,
+        "ENDO_minus_non_ENDO": -0.0199843028176425,
+        "age_centered_years": 0.00127166965312666,
+        "capture_batch:batch12_vs_batch11": -0.0185785644777903,
+        "capture_batch:batch13_vs_batch11": 0.0643463753081549,
+        "capture_batch:batch14_vs_batch11": 0.0548066719656657,
+        "capture_batch:batch15_vs_batch11": 0.0322427394503407,
+        "capture_batch:batch16_vs_batch11": -0.0700763138993895,
+        "capture_batch:batch17_vs_batch11": 0.031269320233822,
+        "capture_batch:batch18_vs_batch11": -0.078160134946645,
+        "capture_batch:batch19_vs_batch11": -0.0376057547865572,
+        "adenomyosis": 0.0462571462966709,
+        "SEC_x_ENDO": 0.0195806201533428
+      },
+      "mde_log": 0.25098031906984,
+      "circular": true
+    },
+    "depth_minimum": {
+      "status": "IDENTICAL_TO_PRIMARY",
+      "excluded": 0
+    },
+    "adenomyosis_excluded": {
+      "n": 28,
+      "columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:batch12_vs_batch11", "capture_batch:batch13_vs_batch11", "capture_batch:batch14_vs_batch11", "capture_batch:batch15_vs_batch11", "capture_batch:batch16_vs_batch11", "capture_batch:batch17_vs_batch11", "capture_batch:batch18_vs_batch11", "capture_batch:batch19_vs_batch11", "SEC_x_ENDO"],
+      "rank": 13,
+      "residual_df": 15,
+      "coefficient": "SEC_x_ENDO",
+      "status": "ESTIMATED",
+      "estimate": 0.200583875336434,
+      "se": 0.0812400989104013,
+      "t": 2.46902549389626,
+      "p": 0.0260484638645301,
+      "ci_low": 0.0274247034326282,
+      "ci_high": 0.373743047240241,
+      "residual_sd": 0.0860211308952493,
+      "coefficients": {
+        "intercept": 0.0152798982926348,
+        "SEC_minus_PRO": 1.14590342740103,
+        "ENDO_minus_non_ENDO": -0.11520031004321,
+        "age_centered_years": 0.00843723844077487,
+        "capture_batch:batch12_vs_batch11": 0.0189652495896645,
+        "capture_batch:batch13_vs_batch11": 0.191290483174717,
+        "capture_batch:batch14_vs_batch11": 0.00400118476483643,
+        "capture_batch:batch15_vs_batch11": 0.0694722770435972,
+        "capture_batch:batch16_vs_batch11": -0.0263725116403886,
+        "capture_batch:batch17_vs_batch11": 0.0309324817929232,
+        "capture_batch:batch18_vs_batch11": -0.0121407765755412,
+        "capture_batch:batch19_vs_batch11": 0.0756880506215785,
+        "SEC_x_ENDO": 0.200583875336434
+      },
+      "dropped_constant_nuisance": "adenomyosis",
+      "mde_log": 0.243546651722055,
+      "excluded": 7
+    }
+  },
+  "leave_one_donor_out": {
+    "fits": 35,
+    "estimated": 35,
+    "theta_min": -0.0329402681048131,
+    "theta_max": 0.10104284711482,
+    "max_abs_change": 0.0696422466128196,
+    "most_influential": "sample100",
+    "all_same_sign_as_primary": false
+  },
+  "gene_level": {
+    "family_size": 17341,
+    "residual_df": 21,
+    "estimable_genes": 17341,
+    "genes_BH_q_lt_0_05": 0,
+    "max_abs_t": 5.07582674168353,
+    "signature_genes_in_family": 3580,
+    "fry": {
+      "n_genes": 3580,
+      "direction": "Up",
+      "p": 0.597050993027008,
+      "p_mixed": 0.405360111193374
+    },
+    "interaction_projection_on_signature": 0.0364444700262487,
+    "mean_signed_interaction_log2fc": 0.0402770331901653,
+    "share_signature_genes_interaction_opposes_beta": 0.460335195530726,
+    "estimator_warnings": []
+  },
+  "label": "no_detectable_difference",
+  "label_rules": {
+    "attenuation_detected": "theta < 0 and two-sided p < 0.025",
+    "enhancement_detected": "theta > 0 and two-sided p < 0.025",
+    "no_detectable_difference": "otherwise, with the 95% interval and the MDE reported as the bound",
+    "NOT_INTERPRETABLE": "validity gate failed",
+    "NOT_ESTIMABLE": "primary model not estimable"
+  },
+  "figure": "scores.png",
+  "started_utc": "2026-10-27 06:27:18 UTC",
+  "finished_utc": "2026-10-27 06:27:34 UTC"
+}

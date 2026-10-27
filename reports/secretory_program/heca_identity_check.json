@@ -1,0 +1,11 @@
+{
+  "expression_filter_identical": true,
+  "normalization_max_relative_diff": 4.78675122897705e-15,
+  "filtered_library_max_relative_diff": 0,
+  "normalization_identical": true,
+  "design_identical": true,
+  "design_columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis"],
+  "own_table_family_identical": true,
+  "family_size": 17243,
+  "passed": true
+}

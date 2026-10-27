@@ -1,0 +1,102 @@
+{
+  "analysis": "SECRETORY_PROGRAM_DISEASE_CONTRAST",
+  "cohort": "heca",
+  "synthetic": false,
+  "freeze": {
+    "path": "receipts/secretory_program_freeze.json",
+    "sha256": "ea299c03b532c617d3e0446ba063ad579bdff61393597943e0685536462979f9",
+    "artifact_check": {
+      "docs/SECRETORY_PROGRAM_PROTOCOL.md": true,
+      "config/secretory_program.json": true,
+      "config/statistical_analysis.json": true,
+      "config/phase_positive_control.json": true,
+      "scripts/secretory_program_lib.R": true,
+      "scripts/secretory_program_analysis.R": true,
+      "scripts/secretory_program_synthetic_fixture.R": true,
+      "scripts/secretory_program_freeze.py": true,
+      "scripts/secretory_program_finalize.py": true,
+      "scripts/mde_lib.R": true,
+      "scripts/donor_de_lib.R": true,
+      "requirements/statistical-runtime.explicit.txt": true,
+      "receipts/phase_positive_control_f1_discovery_freeze.json": false,
+      "receipts/phase_positive_control_evaluation.json": false,
+      "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": true,
+      "reports/phase_positive_control_f1/de_all.tsv.gz": false,
+      "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": true,
+      "reports/phase_positive_control_f2/heca_de_all.tsv.gz": false
+    }
+  },
+  "config_sha256": {
+    "statistical": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "phase": "6af7d70da8217828cc4f6cfe03fc19b8aeb082640a2a17e6f590c7456313a8d5",
+    "secretory_program": "5a5a9a855362e929adc538a70df171dfa3370fe68ca5fc943e452708aa2cb1d1"
+  },
+  "code_sha256": {
+    "lib": "93f97d6db7801fc0e51739715f62e425dd96bc66f2d97e6a5128d68e4aaeb5e7",
+    "analysis": "2e6d0560b2ded133fd834df5f9034d40f580cada1615f13982f8afad0d2d9f3a",
+    "mde_lib": "c356930120aaac2236d0a2b8ee845ab19e9e49397db514bf726c7c8122f71e08"
+  },
+  "inputs": {
+    "counts": "data/processed/phase_positive_control/heca/counts_stable.tsv.gz",
+    "counts_sha256": "6d7f2092b59d28e52c3569febdeebbca0bb191f6fa877acf4ccb53c890a5a7d5",
+    "clinical": "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv",
+    "clinical_sha256": "d1bff21a733df98f8ed1b63b298e5d20c1b1afd1977e68ed25c15e6ad2987883",
+    "phase_fit_table": "work/phase_positive_control/heca_fit/de/de_all.tsv",
+    "phase_fit_table_sha256": "7367f66e780b5c90540c061e6ece99e8431e07e5e8e4376d171a8013f16b21db",
+    "expression_filter": "work/phase_positive_control/heca_fit/de/expression_filter.tsv",
+    "expression_filter_sha256": "c66e3250ffd871e01a6731d04cc2fce66c18160cc0fab516fcb28c06441e43b7",
+    "normalization": "work/phase_positive_control/heca_fit/de/normalization.tsv",
+    "normalization_sha256": "62812494cfba5198865a33e11de336de360bf2523bd0cc201d86f3b3d30ea5a0",
+    "design": "work/phase_positive_control/heca_fit/de/design.tsv",
+    "design_sha256": "97cfd1137429b5e82bbcab7cbef41352af7620f208030110dab30fb77e9d23a8",
+    "hash_source": "receipts/phase_positive_control_evaluation.json:artifacts; normalization and design through their published byte copies reports/phase_positive_control_f2/heca_de_normalization.tsv and heca_de_design.tsv",
+    "published_phase_fit_table": "reports/phase_positive_control_f2/heca_de_all.tsv.gz",
+    "published_phase_fit_table_sha256": "33d99dbdaef9743eae4eb71bd8eb6e20a5fe64644f92535682410156bb8a2d0d",
+    "sub_phase_column": "stage_fine",
+    "sub_phase_levels": ["Secretory Early", "Secretory Mid", "Secretory"],
+    "depth_column": "primary_nuclei",
+    "signature_table": "work/phase_positive_control/discovery_fit/de/de_all.tsv",
+    "signature_table_sha256": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a"
+  },
+  "input_sha256": {
+    "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": "6d7f2092b59d28e52c3569febdeebbca0bb191f6fa877acf4ccb53c890a5a7d5",
+    "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": "d1bff21a733df98f8ed1b63b298e5d20c1b1afd1977e68ed25c15e6ad2987883",
+    "work/phase_positive_control/heca_fit/de/de_all.tsv": "7367f66e780b5c90540c061e6ece99e8431e07e5e8e4376d171a8013f16b21db",
+    "work/phase_positive_control/heca_fit/de/expression_filter.tsv": "c66e3250ffd871e01a6731d04cc2fce66c18160cc0fab516fcb28c06441e43b7",
+    "work/phase_positive_control/heca_fit/de/normalization.tsv": "62812494cfba5198865a33e11de336de360bf2523bd0cc201d86f3b3d30ea5a0",
+    "work/phase_positive_control/heca_fit/de/design.tsv": "97cfd1137429b5e82bbcab7cbef41352af7620f208030110dab30fb77e9d23a8",
+    "work/phase_positive_control/discovery_fit/de/de_all.tsv": "9d2f894be17cbd0d4014f0219a0afe3d1f866c1514e42ce5a10e9b263a4f0d9a"
+  },
+  "identity_check": {
+    "expression_filter_identical": true,
+    "normalization_max_relative_diff": 4.78675122897705e-15,
+    "filtered_library_max_relative_diff": 0,
+    "normalization_identical": true,
+    "design_identical": true,
+    "design_columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis"],
+    "own_table_family_identical": true,
+    "family_size": 17243,
+    "passed": true
+  },
+  "software": {
+    "R": "4.4.3",
+    "edgeR": "4.4.0",
+    "limma": "3.62.1",
+    "statmod": "1.5.2",
+    "jsonlite": "2.0.0"
+  },
+  "started_utc": "2026-10-27 06:27:35 UTC",
+  "finished_utc": "2026-10-27 06:27:51 UTC",
+  "output_sha256": {
+    "identity_check.json": "3ccc3a09ca73373ecbe08e37b63a3e892e543e3ad0d1e81c5eac36c29ef9b171",
+    "donor_scores.tsv": "efa2b5731cb8f59f48de6e6ed7cc8fbb969268fa51c9584cffac1394be9daf4f",
+    "signature_genes.tsv": "f9d4c9dac7082a1c80747c6e30070ba63a175c332e329316fcc59306146570bc",
+    "leave_one_donor_out.tsv": "256af042596948639165bb677334e169e3741c970676d0f49900671e97c9f4db",
+    "interaction_de_all.tsv": "42c2ba67f04d869d409fda138af9598b33538abd75a117bf3bba073ab39390d1",
+    "interaction_top20_by_abs_t.tsv": "181bb0b8dc930bb5da83e6d78a8a55aa37673e98ae35315df1aa1521c47e2d19",
+    "summary.json": "350aca5d18af0cae9788ff932ed25e2193204ed35c2497a6912dbd1ca7b42072",
+    "scores.png": "0cb9e5c58e0821247f4db8a4dcbb3b0fb907fe9198389d0d53dc249668e35c1c"
+  }
+}
