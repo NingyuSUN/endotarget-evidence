@@ -28,6 +28,8 @@ supported target shortlist and no established advantage from network propagation
 - [Phase positive-control discovery counts](../reports/phase_positive_control_discovery_counts.md) — 35-donor discovery matrix streamed from the GEO object; v1 columns reproduced to 4e-15; no model fitted
 - [Phase positive-control discovery fit and F1 freeze](../reports/phase_positive_control_f1_discovery.md) — 7,367 genes at BH q<0.05; B0/B1/G1 lists frozen; marker panel 5/7
 - [Phase positive-control evaluation receipt](../receipts/phase_positive_control_evaluation.json) and [published products](../reports/phase_positive_control_f2/) — HECA fit, P1/P2/S1/S2 against the frozen lists, 500-draw paired bootstrap
+- [Minimum detectable effect protocol](MDE_ANALYSIS_PROTOCOL.md) — frozen 2026-10-27 before computation; per-gene MDE from the saved v1 fits and a donor-subsampling curve on the phase signal; no model refitted on disease
+- [Minimum detectable effect results](../reports/mde_results.md) — median gene: 1.5-fold at α 0.05, 2.2–3.4-fold at the multiplicity faced; twofold effects excluded family-wide for a fifth of genes; a 22-donor study recovers 45% / 13% of the phase program
 
 ## Reproduction
 

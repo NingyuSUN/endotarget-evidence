@@ -1,0 +1,38 @@
+{
+  "binding": {
+    "cohort": "discovery",
+    "coefficient": "SEC_minus_PRO",
+    "levels": [5, 6, 8, 10, 11, 13],
+    "draws": 100,
+    "seed": 42,
+    "replace": false,
+    "inputs": {
+      "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": "a0fe7e0e7b71a9d1290368154a64e3756e2c7ada4185a8df9f8d01d1a2cc85ad",
+      "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": "d0187da628540684dfba8edde41f756f0773953701309ef3598c39e9e3a0c455",
+      "work/phase_positive_control/discovery_fit/de/model.rds": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+      "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+      "config/phase_positive_control.json": "6af7d70da8217828cc4f6cfe03fc19b8aeb082640a2a17e6f590c7456313a8d5",
+      "config/mde_analysis.json": "f38c53a584443d5753b0142971832863a8b142b8c0ce44101767454bb0037d0a",
+      "scripts/mde_lib.R": "c356930120aaac2236d0a2b8ee845ab19e9e49397db514bf726c7c8122f71e08",
+      "scripts/mde_subsample_curve.R": "71c5c8815d968cec39dc7c948853889d962741e946e18fc5d2a611fee875bc33",
+      "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+      "receipts/mde_analysis_freeze.json": "1c3d9517e90ca8c48e2a0a83e532e218d41b1f053d2aec977f10f1c703f8b065"
+    },
+    "software": {
+      "R": "4.4.3",
+      "edgeR": "4.4.0",
+      "limma": "3.62.1",
+      "statmod": "1.5.2",
+      "jsonlite": "2.0.0"
+    },
+    "synthetic": false
+  },
+  "ledger_sha256": "64bef577f69a742c2359c95c0be89974f9ba28c96dca7c028ff0e07373741246",
+  "ledger_saved_before_any_fit": true,
+  "rng": "Mersenne-Twister/Inversion/Rejection",
+  "seed": 42,
+  "arm_sizes": {
+    "secretory": 13,
+    "proliferative": 22
+  }
+}

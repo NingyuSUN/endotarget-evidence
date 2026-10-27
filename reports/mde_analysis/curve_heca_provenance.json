@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-10-27 04:29:08 UTC",
+  "completed_utc": "2026-10-27 04:40:27 UTC",
+  "analysis": "MDE_PART_B_SUBSAMPLING_CURVE",
+  "protocol": "docs/MDE_ANALYSIS_PROTOCOL.md",
+  "cohort": "heca",
+  "coefficient": "SEC_minus_PRO",
+  "synthetic": false,
+  "data_kind": "public_cohort_positive_control_matrices",
+  "reference_model": {
+    "path": "work/phase_positive_control/heca_fit/de/model.rds",
+    "sha256": "d9b570e2f0901bc1ed8cc50202ca171b7967a6676302175e07d06fa323aedbe1",
+    "chain": {
+      "model": "work/phase_positive_control/heca_fit/de/model.rds",
+      "sha256": "d9b570e2f0901bc1ed8cc50202ca171b7967a6676302175e07d06fa323aedbe1",
+      "pinned_via": "reports/phase_positive_control_f2/heca_de_provenance.json:output_sha256",
+      "provenance": null
+    }
+  },
+  "freeze": {
+    "path": "receipts/mde_analysis_freeze.json",
+    "sha256": "1c3d9517e90ca8c48e2a0a83e532e218d41b1f053d2aec977f10f1c703f8b065",
+    "phase": "MDE_ANALYSIS_RULES_FROZEN_PRE_COMPUTATION",
+    "artifact_check": {
+      "docs/MDE_ANALYSIS_PROTOCOL.md": true,
+      "config/mde_analysis.json": true,
+      "config/statistical_analysis.json": true,
+      "config/phase_positive_control.json": true,
+      "scripts/mde_lib.R": true,
+      "scripts/mde_from_fits.R": true,
+      "scripts/mde_subsample_curve.R": true,
+      "scripts/mde_synthetic_fixture.R": true,
+      "scripts/mde_freeze.py": true,
+      "scripts/mde_finalize.py": true,
+      "scripts/donor_de_lib.R": true,
+      "requirements/statistical-runtime.explicit.txt": true,
+      "receipts/discovery_primary_execution.json": false,
+      "receipts/discovery_rank_freeze.json": true,
+      "receipts/heca_primary_execution.json": false,
+      "receipts/phase_positive_control_f1_discovery_freeze.json": false,
+      "receipts/phase_positive_control_evaluation.json": false,
+      "reports/phase_positive_control_f1/de_provenance.json": true,
+      "reports/phase_positive_control_f2/heca_de_provenance.json": true,
+      "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": true,
+      "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": true
+    }
+  },
+  "input_sha256": {
+    "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": "6d7f2092b59d28e52c3569febdeebbca0bb191f6fa877acf4ccb53c890a5a7d5",
+    "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": "d1bff21a733df98f8ed1b63b298e5d20c1b1afd1977e68ed25c15e6ad2987883",
+    "work/phase_positive_control/heca_fit/de/model.rds": "d9b570e2f0901bc1ed8cc50202ca171b7967a6676302175e07d06fa323aedbe1",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/phase_positive_control.json": "6af7d70da8217828cc4f6cfe03fc19b8aeb082640a2a17e6f590c7456313a8d5",
+    "config/mde_analysis.json": "f38c53a584443d5753b0142971832863a8b142b8c0ce44101767454bb0037d0a",
+    "scripts/mde_lib.R": "c356930120aaac2236d0a2b8ee845ab19e9e49397db514bf726c7c8122f71e08",
+    "scripts/mde_subsample_curve.R": "71c5c8815d968cec39dc7c948853889d962741e946e18fc5d2a611fee875bc33",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "receipts/mde_analysis_freeze.json": "1c3d9517e90ca8c48e2a0a83e532e218d41b1f053d2aec977f10f1c703f8b065"
+  },
+  "binding_sha256": "966ffa2a60f6ddb2298bce601c9e3f7bc64236504575eaaf4c3c4fae3e0925f9",
+  "levels_per_arm": [5, 6, 8, 10, 11, 13, 16, 20],
+  "draws_per_level": 100,
+  "workers": 12,
+  "identity_check": {
+    "same_family": true,
+    "max_abs_diff_logFC": 0,
+    "max_abs_diff_t": 0,
+    "max_abs_diff_log10_p": 0,
+    "tolerances": {
+      "logFC": 1e-08,
+      "t": 1e-06,
+      "log10_p": 1e-06
+    },
+    "design_columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis"],
+    "full_n_sig": 3986,
+    "full_top20": ["ENSG00000198963", "ENSG00000166979", "ENSG00000164292", "ENSG00000115896", "ENSG00000181031", "ENSG00000099139", "ENSG00000069535", "ENSG00000160145", "ENSG00000133794", "ENSG00000148516", "ENSG00000188735", "ENSG00000243004", "ENSG00000155511", "ENSG00000156869", "ENSG00000170776", "ENSG00000096060", "ENSG00000165675", "ENSG00000143842", "ENSG00000108799", "ENSG00000170558"],
+    "passed": true
+  },
+  "software": {
+    "R": "4.4.3",
+    "edgeR": "4.4.0",
+    "limma": "3.62.1",
+    "statmod": "1.5.2",
+    "jsonlite": "2.0.0"
+  },
+  "output_sha256": {
+    "work/mde_analysis/curve/heca/curve_draws.tsv": "a0328275624f036e4fb2a036124a929bcda45da94117c60d802dbcbe44a2e618",
+    "work/mde_analysis/curve/heca/curve_summary.tsv": "2ababc7ee95f833d61cd8874267b30e29307cd037a10163e6fad53f722923a6a",
+    "work/mde_analysis/curve/heca/curve.png": "edb2ad46e5b5a93ed4680962d8675f64bfa7ac0e3df4edc3d2488ba954852e6b",
+    "work/mde_analysis/curve/heca/draw_freeze.json": "966ffa2a60f6ddb2298bce601c9e3f7bc64236504575eaaf4c3c4fae3e0925f9",
+    "work/mde_analysis/curve/heca/draw_ledger.tsv": "01fcc5003ba884ed039a6463660251d275410f2d110283c2fc19b0156a2038c7",
+    "work/mde_analysis/curve/heca/identity_check.json": "278537b7924c09ce067970c3ebf42940ccb354382d9a1a0ebe18d16791dc50ea",
+    "work/mde_analysis/curve/heca/summary.json": "dd33fd19ccd63db14e84db7e6c954bb1c5fd136f7c985056d5b51193c16a4343"
+  },
+  "checkpoints": 800,
+  "v1_artifacts_modified": false,
+  "new_disease_fits": false,
+  "scientific_scope": "descriptive degradation of a known program with donor number under the frozen estimator; not a power calculation for disease effects"
+}

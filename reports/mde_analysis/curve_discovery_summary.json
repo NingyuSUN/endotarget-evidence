@@ -1,0 +1,44 @@
+{
+  "cohort": "discovery",
+  "coefficient": "SEC_minus_PRO",
+  "synthetic": false,
+  "levels_per_arm": [5, 6, 8, 10, 11, 13],
+  "draws_per_level": 100,
+  "seed": 42,
+  "arm_sizes": {
+    "secretory": 13,
+    "proliferative": 22
+  },
+  "full_cohort": {
+    "n_sig": 7367,
+    "family_size": 17341,
+    "top20": ["ENSG00000181031", "ENSG00000060982", "ENSG00000197766", "ENSG00000066583", "ENSG00000243004", "ENSG00000166979", "ENSG00000189221", "ENSG00000107438", "ENSG00000262061", "ENSG00000189058", "ENSG00000109906", "ENSG00000254451", "ENSG00000071575", "ENSG00000198535", "ENSG00000179431", "ENSG00000134827", "ENSG00000168079", "ENSG00000146242", "ENSG00000165675", "ENSG00000065911"]
+  },
+  "identity_check": {
+    "passed": true,
+    "max_abs_diff_logFC": 5.57331958361829e-14,
+    "max_abs_diff_t": 1.10134124042816e-13,
+    "max_abs_diff_log10_p": 8.97060203897126e-14
+  },
+  "valid_draws": {
+    "primary": {
+      "n5": 0,
+      "n6": 0,
+      "n8": 30,
+      "n10": 100,
+      "n11": 100,
+      "n13": 100
+    },
+    "reduced": {
+      "n5": 100,
+      "n6": 100,
+      "n8": 100,
+      "n10": 100,
+      "n11": 100,
+      "n13": 100
+    }
+  },
+  "total_fits": 1200,
+  "workers": 12,
+  "figure": "curve.png"
+}

@@ -1,0 +1,48 @@
+{
+  "cohort": "heca",
+  "coefficient": "SEC_minus_PRO",
+  "synthetic": false,
+  "levels_per_arm": [5, 6, 8, 10, 11, 13, 16, 20],
+  "draws_per_level": 100,
+  "seed": 42,
+  "arm_sizes": {
+    "secretory": 20,
+    "proliferative": 22
+  },
+  "full_cohort": {
+    "n_sig": 3986,
+    "family_size": 17243,
+    "top20": ["ENSG00000198963", "ENSG00000166979", "ENSG00000164292", "ENSG00000115896", "ENSG00000181031", "ENSG00000099139", "ENSG00000069535", "ENSG00000160145", "ENSG00000133794", "ENSG00000148516", "ENSG00000188735", "ENSG00000243004", "ENSG00000155511", "ENSG00000156869", "ENSG00000170776", "ENSG00000096060", "ENSG00000165675", "ENSG00000143842", "ENSG00000108799", "ENSG00000170558"]
+  },
+  "identity_check": {
+    "passed": true,
+    "max_abs_diff_logFC": 0,
+    "max_abs_diff_t": 0,
+    "max_abs_diff_log10_p": 0
+  },
+  "valid_draws": {
+    "primary": {
+      "n5": 0,
+      "n6": 0,
+      "n8": 66,
+      "n10": 96,
+      "n11": 98,
+      "n13": 100,
+      "n16": 100,
+      "n20": 100
+    },
+    "reduced": {
+      "n5": 100,
+      "n6": 100,
+      "n8": 100,
+      "n10": 100,
+      "n11": 100,
+      "n13": 100,
+      "n16": 100,
+      "n20": 100
+    }
+  },
+  "total_fits": 1600,
+  "workers": 12,
+  "figure": "curve.png"
+}

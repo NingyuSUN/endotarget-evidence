@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-10-27 04:29:08 UTC",
+  "completed_utc": "2026-10-27 04:36:54 UTC",
+  "analysis": "MDE_PART_B_SUBSAMPLING_CURVE",
+  "protocol": "docs/MDE_ANALYSIS_PROTOCOL.md",
+  "cohort": "discovery",
+  "coefficient": "SEC_minus_PRO",
+  "synthetic": false,
+  "data_kind": "public_cohort_positive_control_matrices",
+  "reference_model": {
+    "path": "work/phase_positive_control/discovery_fit/de/model.rds",
+    "sha256": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+    "chain": {
+      "model": "work/phase_positive_control/discovery_fit/de/model.rds",
+      "sha256": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+      "pinned_via": "reports/phase_positive_control_f1/de_provenance.json:output_sha256",
+      "provenance": null
+    }
+  },
+  "freeze": {
+    "path": "receipts/mde_analysis_freeze.json",
+    "sha256": "1c3d9517e90ca8c48e2a0a83e532e218d41b1f053d2aec977f10f1c703f8b065",
+    "phase": "MDE_ANALYSIS_RULES_FROZEN_PRE_COMPUTATION",
+    "artifact_check": {
+      "docs/MDE_ANALYSIS_PROTOCOL.md": true,
+      "config/mde_analysis.json": true,
+      "config/statistical_analysis.json": true,
+      "config/phase_positive_control.json": true,
+      "scripts/mde_lib.R": true,
+      "scripts/mde_from_fits.R": true,
+      "scripts/mde_subsample_curve.R": true,
+      "scripts/mde_synthetic_fixture.R": true,
+      "scripts/mde_freeze.py": true,
+      "scripts/mde_finalize.py": true,
+      "scripts/donor_de_lib.R": true,
+      "requirements/statistical-runtime.explicit.txt": true,
+      "receipts/discovery_primary_execution.json": false,
+      "receipts/discovery_rank_freeze.json": true,
+      "receipts/heca_primary_execution.json": false,
+      "receipts/phase_positive_control_f1_discovery_freeze.json": false,
+      "receipts/phase_positive_control_evaluation.json": false,
+      "reports/phase_positive_control_f1/de_provenance.json": true,
+      "reports/phase_positive_control_f2/heca_de_provenance.json": true,
+      "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": true,
+      "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": true
+    }
+  },
+  "input_sha256": {
+    "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": "a0fe7e0e7b71a9d1290368154a64e3756e2c7ada4185a8df9f8d01d1a2cc85ad",
+    "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": "d0187da628540684dfba8edde41f756f0773953701309ef3598c39e9e3a0c455",
+    "work/phase_positive_control/discovery_fit/de/model.rds": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/phase_positive_control.json": "6af7d70da8217828cc4f6cfe03fc19b8aeb082640a2a17e6f590c7456313a8d5",
+    "config/mde_analysis.json": "f38c53a584443d5753b0142971832863a8b142b8c0ce44101767454bb0037d0a",
+    "scripts/mde_lib.R": "c356930120aaac2236d0a2b8ee845ab19e9e49397db514bf726c7c8122f71e08",
+    "scripts/mde_subsample_curve.R": "71c5c8815d968cec39dc7c948853889d962741e946e18fc5d2a611fee875bc33",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b",
+    "receipts/mde_analysis_freeze.json": "1c3d9517e90ca8c48e2a0a83e532e218d41b1f053d2aec977f10f1c703f8b065"
+  },
+  "binding_sha256": "448580f72b277a007c837ce8ebca0b09a28c148e49514e36d1acb9588eed9be5",
+  "levels_per_arm": [5, 6, 8, 10, 11, 13],
+  "draws_per_level": 100,
+  "workers": 12,
+  "identity_check": {
+    "same_family": true,
+    "max_abs_diff_logFC": 5.57331958361829e-14,
+    "max_abs_diff_t": 1.10134124042816e-13,
+    "max_abs_diff_log10_p": 8.97060203897126e-14,
+    "tolerances": {
+      "logFC": 1e-08,
+      "t": 1e-06,
+      "log10_p": 1e-06
+    },
+    "design_columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "capture_batch:batch12_vs_batch11", "capture_batch:batch13_vs_batch11", "capture_batch:batch14_vs_batch11", "capture_batch:batch15_vs_batch11", "capture_batch:batch16_vs_batch11", "capture_batch:batch17_vs_batch11", "capture_batch:batch18_vs_batch11", "capture_batch:batch19_vs_batch11", "adenomyosis"],
+    "full_n_sig": 7367,
+    "full_top20": ["ENSG00000181031", "ENSG00000060982", "ENSG00000197766", "ENSG00000066583", "ENSG00000243004", "ENSG00000166979", "ENSG00000189221", "ENSG00000107438", "ENSG00000262061", "ENSG00000189058", "ENSG00000109906", "ENSG00000254451", "ENSG00000071575", "ENSG00000198535", "ENSG00000179431", "ENSG00000134827", "ENSG00000168079", "ENSG00000146242", "ENSG00000165675", "ENSG00000065911"],
+    "passed": true
+  },
+  "software": {
+    "R": "4.4.3",
+    "edgeR": "4.4.0",
+    "limma": "3.62.1",
+    "statmod": "1.5.2",
+    "jsonlite": "2.0.0"
+  },
+  "output_sha256": {
+    "work/mde_analysis/curve/discovery/curve_draws.tsv": "154a7aacb5135643013e195a6aeba6fb28b2488d9e675e70414f408a46609c7c",
+    "work/mde_analysis/curve/discovery/curve_summary.tsv": "e4437ce22387fa42b03b4198282e7f85be27e9363041b67f04e894be267e9970",
+    "work/mde_analysis/curve/discovery/curve.png": "5d24f46d5e50906c14600beb8cdb3ecff65d6c6c4af416da47162816fd8e0657",
+    "work/mde_analysis/curve/discovery/draw_freeze.json": "448580f72b277a007c837ce8ebca0b09a28c148e49514e36d1acb9588eed9be5",
+    "work/mde_analysis/curve/discovery/draw_ledger.tsv": "64bef577f69a742c2359c95c0be89974f9ba28c96dca7c028ff0e07373741246",
+    "work/mde_analysis/curve/discovery/identity_check.json": "846c8bca68a633d6bb2e7632752fa8bee9225a7c39e493e5177e46acfdbb3b47",
+    "work/mde_analysis/curve/discovery/summary.json": "638c86d1c958cb0bce1b5e6e6b5d7d76d9c425628e6b3818d514b898320df160"
+  },
+  "checkpoints": 600,
+  "v1_artifacts_modified": false,
+  "new_disease_fits": false,
+  "scientific_scope": "descriptive degradation of a known program with donor number under the frozen estimator; not a power calculation for disease effects"
+}

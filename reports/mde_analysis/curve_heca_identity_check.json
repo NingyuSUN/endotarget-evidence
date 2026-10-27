@@ -1,0 +1,15 @@
+{
+  "same_family": true,
+  "max_abs_diff_logFC": 0,
+  "max_abs_diff_t": 0,
+  "max_abs_diff_log10_p": 0,
+  "tolerances": {
+    "logFC": 1e-08,
+    "t": 1e-06,
+    "log10_p": 1e-06
+  },
+  "design_columns": ["intercept", "SEC_minus_PRO", "ENDO_minus_non_ENDO", "age_centered_years", "library_group_Lane:42058_vs_20", "library_group_Lane:42196_vs_20", "library_group_Lane:43103_vs_20", "library_group_Lane:43281_vs_20", "library_group_Lane:43937_vs_20", "library_group_Lane:43996_vs_20", "library_group_Lane:44595_vs_20", "library_group_Lane:44999_vs_20", "adenomyosis"],
+  "full_n_sig": 3986,
+  "full_top20": ["ENSG00000198963", "ENSG00000166979", "ENSG00000164292", "ENSG00000115896", "ENSG00000181031", "ENSG00000099139", "ENSG00000069535", "ENSG00000160145", "ENSG00000133794", "ENSG00000148516", "ENSG00000188735", "ENSG00000243004", "ENSG00000155511", "ENSG00000156869", "ENSG00000170776", "ENSG00000096060", "ENSG00000165675", "ENSG00000143842", "ENSG00000108799", "ENSG00000170558"],
+  "passed": true
+}

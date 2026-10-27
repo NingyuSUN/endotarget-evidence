@@ -1,0 +1,84 @@
+{
+  "started_utc": "2026-10-27 04:27:52 UTC",
+  "completed_utc": "2026-10-27 04:28:28 UTC",
+  "analysis": "MDE_PART_A_FROM_SAVED_FIT",
+  "protocol": "docs/MDE_ANALYSIS_PROTOCOL.md",
+  "fit_name": "phase_discovery",
+  "cohort": "discovery",
+  "coefficient": "SEC_minus_PRO",
+  "synthetic": false,
+  "data_kind": "saved_public_cohort_fit",
+  "model": {
+    "path": "work/phase_positive_control/discovery_fit/de/model.rds",
+    "sha256": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+    "chain": {
+      "model": "work/phase_positive_control/discovery_fit/de/model.rds",
+      "sha256": "4a5b155b6780f00d8dc74d23d014334192c10eb202a39f6db0a1737a6fa105b6",
+      "pinned_via": "reports/phase_positive_control_f1/de_provenance.json:output_sha256",
+      "provenance": null
+    }
+  },
+  "freeze": {
+    "path": "receipts/mde_analysis_freeze.json",
+    "sha256": "1c3d9517e90ca8c48e2a0a83e532e218d41b1f053d2aec977f10f1c703f8b065",
+    "phase": "MDE_ANALYSIS_RULES_FROZEN_PRE_COMPUTATION",
+    "artifact_check": {
+      "docs/MDE_ANALYSIS_PROTOCOL.md": true,
+      "config/mde_analysis.json": true,
+      "config/statistical_analysis.json": true,
+      "config/phase_positive_control.json": true,
+      "scripts/mde_lib.R": true,
+      "scripts/mde_from_fits.R": true,
+      "scripts/mde_subsample_curve.R": true,
+      "scripts/mde_synthetic_fixture.R": true,
+      "scripts/mde_freeze.py": true,
+      "scripts/mde_finalize.py": true,
+      "scripts/donor_de_lib.R": true,
+      "requirements/statistical-runtime.explicit.txt": true,
+      "receipts/discovery_primary_execution.json": false,
+      "receipts/discovery_rank_freeze.json": true,
+      "receipts/heca_primary_execution.json": false,
+      "receipts/phase_positive_control_f1_discovery_freeze.json": false,
+      "receipts/phase_positive_control_evaluation.json": false,
+      "reports/phase_positive_control_f1/de_provenance.json": true,
+      "reports/phase_positive_control_f2/heca_de_provenance.json": true,
+      "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/discovery/selected_donor_count_ledger.tsv": true,
+      "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": true,
+      "data/processed/phase_positive_control/heca/selected_donor_count_ledger.tsv": true
+    }
+  },
+  "input_sha256": {
+    "config/statistical_analysis.json": "c90070cb4f2fc1fc0e658781590d7cad5c5a0a02f8eae19d3cc96ebbee0f9f0a",
+    "config/mde_analysis.json": "f38c53a584443d5753b0142971832863a8b142b8c0ce44101767454bb0037d0a",
+    "scripts/mde_lib.R": "c356930120aaac2236d0a2b8ee845ab19e9e49397db514bf726c7c8122f71e08",
+    "scripts/mde_from_fits.R": "7e29cf19e09c6369bc70a50c2fd7a0a761a215ef67f7df9038e884d4c528a011",
+    "scripts/statistical_runtime_env.sh": "ebab5929f19d0e5fa91714162fefdfd5200f1e36d203ef3d48557e80c70a316b"
+  },
+  "family_size": 17341,
+  "scenario_alphas": {
+    "alpha_0.05": 0.05,
+    "bh_k1": 2.88334006112681e-06,
+    "bh_k10": 2.88334006112681e-05,
+    "bh_k100": 0.000288334006112681,
+    "bh_k1000": 0.00288334006112681
+  },
+  "power": 0.8,
+  "figure": "mde_ecdf.png",
+  "software": {
+    "R": "4.4.3",
+    "edgeR": "4.4.0",
+    "limma": "3.62.1",
+    "statmod": "1.5.2",
+    "jsonlite": "2.0.0"
+  },
+  "output_sha256": {
+    "work/mde_analysis/fits/phase_discovery/mde_by_expression_bin.tsv": "e59eee3119f2a41b4c6ebf43053db5558a1b862136d2cf08cee02ac737cc672a",
+    "work/mde_analysis/fits/phase_discovery/mde_ecdf.png": "af1549c068e5c2eb9fdc5daa8f15776521c3c5aa360e5a31f28ef053d9721017",
+    "work/mde_analysis/fits/phase_discovery/mde_per_gene.tsv": "a85a9bbf6c5e5c21d623e0c63c183528e9febc7f8933d4a98b1ae638c93dee30",
+    "work/mde_analysis/fits/phase_discovery/summary.json": "4d04d0694eaad98c0b639de07e18af57171cbf47aa3741ede04b3e6b0339143e"
+  },
+  "no_model_fitted": true,
+  "v1_artifacts_modified": false,
+  "scientific_scope": "design sensitivity under realized variance estimates; not evidence about any gene"
+}
