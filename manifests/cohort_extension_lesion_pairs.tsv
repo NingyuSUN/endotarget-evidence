@@ -1,0 +1,35 @@
+study	patient	eutopic_scrna	lesion_scrna	matched_pair
+GSE213216	1		GSM6574509:Endometrioma/Left ovary	False
+GSE213216	10	GSM6574528	GSM6574530:Endometriosis/Right uterosacral ligament	True
+GSE213216	11	GSM6574534	GSM6574532:Endometriosis/Left pelvic side wall;GSM6574533:Endometrioma/Left ovarian cyst	True
+GSE213216	12	GSM6574535		False
+GSE213216	13	GSM6574536		False
+GSE213216	14	GSM6574539	GSM6574537:Endometriosis/Right ovary	True
+GSE213216	16	GSM6574542	GSM6574541:Endometriosis/Left ovarian fossa	True
+GSE213216	17	GSM6574543		False
+GSE213216	18	GSM6574544		False
+GSE213216	19		GSM6574546:Endometrioma/Left ovarian cyst;GSM6574547:Endometriosis/Right ovarian fossa	False
+GSE213216	2		GSM6634272:Endometrioma/Right ovary;GSM6634273:Endometrioma/Left ovary	False
+GSE213216	20		GSM6574548:Endometriosis/Left uterosacral ligament	False
+GSE213216	21		GSM6574549:Endometriosis/Rectum;GSM6574550:Endometriosis/Left ovarian fossa;GSM6574551:Endometriosis/Right uterosacral ligament;GSM6574552:Endometriosis/Anterior cul-de-sac;GSM6574553:Endometriosis/Posterior uterus	False
+GSE213216	3	GSM6634274		False
+GSE213216	4		GSM6574510:Endometriosis/Anterior cul-de-sac;GSM6690474:Endometriosis/Posterior cul-de-sac	False
+GSE213216	5		GSM6574511:Endometriosis/Posterior cul-de-sac	False
+GSE213216	6	GSM6574512		False
+GSE213216	7		GSM6574514:Endometriosis/Right and left pelvic side wall†;GSM6574515:Endometriosis/Anterior cul-de-sac;GSM6574516:Endometrioma/Right ovary;GSM6574517:Endometriosis/Right and left uterosacral ligament	False
+GSE213216	8		GSM6574519:Endometrioma/Left ovary;GSM6574520:Endometriosis/Left uterosacral ligament	False
+GSE213216	9		GSM6574522:Endometriosis/Right and left pelvic side wall;GSM6574523:Endometriosis/Left ovarian fossa;GSM6574524:Endometriosis/Anterior abdominal wall and cul-de-sac†;GSM6574525:Endometrioma/Right ovary;GSM6574526:Endometriosis/Right parametrium;GSM6574527:Endometriosis/Perirectal fat	False
+GSE179640	C01	GSM6102532		False
+GSE179640	C02	GSM6102533		False
+GSE179640	C03	GSM6102534		False
+GSE179640	E01	GSM6102537	GSM6595248:Ectopic/Peritoneum	True
+GSE179640	E02	GSM6102540	GSM6595250:Ectopic/Peritoneum	True
+GSE179640	E03	GSM6102543	GSM6595252:Ectopic/Peritoneum	True
+GSE179640	E04	GSM6102546	GSM6595254:Ectopic/Peritoneum	True
+GSE179640	E05	GSM6102549	GSM6595256:Ectopic/Peritoneum	True
+GSE179640	E06	GSM6102551	GSM6102550:Ectopic/Peritoneum	True
+GSE179640	E07	GSM6102554	GSM6102552:Ectopic Ovary/Ovary;GSM6102553:Ectopic/Peritoneum	True
+GSE179640	E08	GSM6102555		False
+GSE179640	E09	GSM6102560	GSM6102556:Ectopic Ovary/Ovary;GSM6595258:Ectopic/Peritoneum	True
+GSE179640	E10		GSM6595261:Ectopic Ovary/Ovary	False
+GSE179640	E11		GSM6102562:Ectopic Ovary/Ovary	False

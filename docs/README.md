@@ -31,6 +31,7 @@ supported target shortlist and no established advantage from network propagation
 - [Minimum detectable effect protocol](MDE_ANALYSIS_PROTOCOL.md) — frozen 2026-10-27 before computation; per-gene MDE from the saved v1 fits and a donor-subsampling curve on the phase signal; no model refitted on disease
 - [Minimum detectable effect results](../reports/mde_results.md) — median gene: 1.5-fold at α 0.05, 2.2–3.4-fold at the multiplicity faced; twofold effects excluded family-wide for a fifth of genes; a 22-donor study recovers 45% / 13% of the phase program
 - [Secretory program disease contrast protocol](SECRETORY_PROGRAM_PROTOCOL.md) — frozen 2026-10-27 before any donor was scored; program-level test of an attenuated secretory stromal program in endometriosis on the positive-control matrices, signature defined in the other cohort
+- [Cohort extension feasibility](../reports/cohort_extension_feasibility.md) — metadata only, 2026-10-27: GSE213216 and GSE179640 cannot extend the eutopic donor-level contrasts (natural-cycle eutopic donors 5 ENDO / 0 non-ENDO and 0 / 1); lesion-context resources only; nothing downloaded
 - [Secretory program disease contrast results](../reports/secretory_program_results.md) — no detectable difference in either cohort: θ +0.04 [−0.18, +0.25] (discovery) and −0.11 [−0.40, +0.19] (HECA) program units; detectable attenuation 0.31 and 0.42 units; gene-level set tests agree; signature transfers at AUC 1.00 / 0.99
 
 ## Reproduction

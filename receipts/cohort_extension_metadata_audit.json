@@ -1,0 +1,839 @@
+{
+  "schema_version": 1,
+  "phase": "COHORT_EXTENSION_FEASIBILITY_METADATA_ONLY",
+  "created_utc": "2026-10-27T06:51:31.736030+00:00",
+  "git_head": "5d234c1288fb4f4dd91278b898ddd91099918d0f",
+  "retrieved_utc": "2026-10-27T06:44:27Z",
+  "urls": {
+    "esummary": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=gds&id=200213216,200179640&retmode=json",
+    "GSE213216": {
+      "soft": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE213nnn/GSE213216/soft/GSE213216_family.soft.gz",
+      "filelist": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE213nnn/GSE213216/suppl/filelist.txt"
+    },
+    "GSE179640": {
+      "soft": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE179nnn/GSE179640/soft/GSE179640_family.soft.gz",
+      "filelist": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE179nnn/GSE179640/suppl/filelist.txt"
+    }
+  },
+  "inputs": {
+    "data/metadata/cohort_extension/esummary_gds.json": {
+      "sha256": "5bac104fc161193b5f8b07c490d18aaa1c707dfea5233cc334d8feff21f8a4c6",
+      "bytes": 10213
+    },
+    "data/metadata/cohort_extension/GSE213216/GSE213216_family.soft.gz": {
+      "sha256": "ba7ae1e586d4e3ab36522de9d1706a55d0dc2f3f1fef1d38fde4572502637f42",
+      "bytes": 6115
+    },
+    "data/metadata/cohort_extension/GSE213216/filelist.txt": {
+      "sha256": "2c233b07218994aae969b77c2127de9facaa9b9d5899349c79a0ea3ccaaa0790",
+      "bytes": 4354
+    },
+    "data/metadata/cohort_extension/GSE179640/GSE179640_family.soft.gz": {
+      "sha256": "1eeaa9b3588effa0dff04ef625f4f3d5299bce6562701503630f7f57bb48b4f9",
+      "bytes": 8690
+    },
+    "data/metadata/cohort_extension/GSE179640/filelist.txt": {
+      "sha256": "f63e02a493e7b11ac8df3e43da4272adc6716ae0476370a2511f6ef620cc8d0f",
+      "bytes": 5314
+    },
+    "data/metadata/heca_author/metadata-donors.csv": {
+      "sha256": "9c8c5e501c65a457d76927a8e1691ce8c099d94d05fc6c85ec2aa344cf6efa07",
+      "bytes": 30823
+    },
+    "data/metadata/heca_author/metadata-libraries.csv": {
+      "sha256": "82d6a06a41f0f0277ecb2fcb9352296cca857246632e6216c4fb5623f06a3dc9",
+      "bytes": 45010
+    },
+    "data/metadata/heca_author/metadata-libraries_deconvoluted.csv": {
+      "sha256": "d03958ca56dda803530312af4b4a32cf063333d07d86207f034185fbce072e2b",
+      "bytes": 76356
+    }
+  },
+  "rules": {
+    "eutopic_scrna": "single-cell gene-expression library of eutopic endometrium (bulk, organoid and hashing libraries excluded)",
+    "natural_cycle": "HECA-curated Hormonal treatment empty or '-', and Binary Stage in {Proliferative, Secretory} (Hormones, Menopause and Menstrual excluded; same rule family as v1)",
+    "disease": "study condition (GSE179640) or HECA-curated endometrial pathology containing the E token / Endometriosis_stage > 0 (GSE213216)",
+    "age_required": true,
+    "minimum_per_disease_group_floor": 5,
+    "minimum_per_disease_group_preferred": 8,
+    "paired_lesion_design_minimum_pairs": 5,
+    "verdict_logic": "usable for the eutopic disease contrast only if, within one phase, both disease groups reach the floor among natural-cycle eutopic scRNA donors with age; lesion-context usable for a paired design only if matched eutopic+lesion scRNA pairs reach the pair minimum"
+  },
+  "series": {
+    "GSE213216": {
+      "title": "A single-cell transcriptomic analysis of endometriosis",
+      "pubmed_ids": [
+        "36624343",
+        "38370978"
+      ],
+      "platforms": [
+        "GPL24676"
+      ],
+      "submission_date": "Sep 12 2022",
+      "last_update_date": "Feb 26 2024",
+      "n_samples": 51,
+      "summary": "We profiled transcriptomes of >370,000 individual cells from endometriomas (n=8), endometriosis (n=28), eutopic endometrium (n=10), unaffected ovary (n=4) and endometriosis-free peritoneum (n=4) to create a cellular atlas of endometrial-type epithelial cells, stromal cells, and microenvironmental cell populations across tissue sites.",
+      "overall_design": "Single cells are captured and barcoded using the 10X Chromium platform (10X Genomics). scRNA-seq libraries were prepared following the instructions from Chromium Single Cell 3' Reagent Kits User Guide (v2 or v3). Briefly, Gel Bead-In EMulsions (GEMs) are generated using single cell preparations. After GEM-RT and cleanup, the cDNA from barcoded single cell RNAs were amplified before quantification using Agilent Bioanalyzer High Sensitivity DNA chips. The single cell 3' gene expression libraries were constructed and cDNA corresponding to an insertion size of around 350 bp selected. Libraries were quantified using Agilent Bioanalyzer High Sensitivity DNA chips and pooled together to get similar numbers of reads from each single cell before sequencing on the NovaSeq S4 (by Fulgent Genomics or Novogene).",
+      "esummary": {
+        "n_samples": 51,
+        "pubmedids": [
+          "36624343",
+          "38370978"
+        ],
+        "gdstype": "Expression profiling by high throughput sequencing",
+        "summary": "We profiled transcriptomes of >370,000 individual cells from endometriomas (n=8), endometriosis (n=28), eutopic endometrium (n=10), unaffected ovary (n=4) and endometriosis-free peritoneum (n=4) to create a cellular atlas of endometrial-type epithelial cells, stromal cells, and microenvironmental cell populations across tissue sites.",
+        "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE213nnn/GSE213216/",
+        "suppfile": "CSV, JSON, MTX, PNG, TAR, TIFF, TSV"
+      },
+      "supplementary_bytes_total": 16836012934,
+      "supplementary_files": [
+        {
+          "name": "GSE213216_RAW.tar",
+          "bytes": 16836065280,
+          "type": "archive"
+        },
+        {
+          "name": "GSM6574509_sample1.tar.gz",
+          "bytes": 54120621,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574510_sample5.tar.gz",
+          "bytes": 226007579,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574511_sample7.tar.gz",
+          "bytes": 631099113,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574512_sample8.tar.gz",
+          "bytes": 602995250,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574513_sample9.tar.gz",
+          "bytes": 305622904,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574514_sample10.tar.gz",
+          "bytes": 135164894,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574515_sample11.tar.gz",
+          "bytes": 284629518,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574516_sample12.tar.gz",
+          "bytes": 685955621,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574517_sample13.tar.gz",
+          "bytes": 649666598,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574518_sample14.tar.gz",
+          "bytes": 474963904,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574519_sample15.tar.gz",
+          "bytes": 349167315,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574520_sample16.tar.gz",
+          "bytes": 270337299,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574521_sample17.tar.gz",
+          "bytes": 199441984,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574522_sample18.tar.gz",
+          "bytes": 290267148,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574523_sample19.tar.gz",
+          "bytes": 330122201,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574524_sample20.tar.gz",
+          "bytes": 400635034,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574525_sample21.tar.gz",
+          "bytes": 432670431,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574526_sample22.tar.gz",
+          "bytes": 472475866,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574527_sample23.tar.gz",
+          "bytes": 416565351,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574528_sample24.tar.gz",
+          "bytes": 186642525,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574529_sample25.tar.gz",
+          "bytes": 204459346,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574530_sample26.tar.gz",
+          "bytes": 172787166,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574531_sample27.tar.gz",
+          "bytes": 389885460,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574532_sample28.tar.gz",
+          "bytes": 182777770,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574533_sample29.tar.gz",
+          "bytes": 852328490,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574534_sample30.tar.gz",
+          "bytes": 1111559338,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574535_sample31.tar.gz",
+          "bytes": 746976676,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574536_sample32.tar.gz",
+          "bytes": 798015767,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574537_sample33.tar.gz",
+          "bytes": 511035453,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574538_sample34.tar.gz",
+          "bytes": 343749869,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574539_sample35.tar.gz",
+          "bytes": 193009273,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574540_sample36.tar.gz",
+          "bytes": 175891528,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574541_sample37.tar.gz",
+          "bytes": 206397907,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574542_sample38.tar.gz",
+          "bytes": 400872751,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574543_sample39.tar.gz",
+          "bytes": 611888233,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574544_sample40.tar.gz",
+          "bytes": 383476680,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574545_sample41.tar.gz",
+          "bytes": 210181668,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574546_sample42.tar.gz",
+          "bytes": 295288216,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574547_sample43.tar.gz",
+          "bytes": 200556285,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574548_sample44.tar.gz",
+          "bytes": 91260010,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574549_sample45.tar.gz",
+          "bytes": 77465694,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574550_sample46.tar.gz",
+          "bytes": 70824269,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574551_sample47.tar.gz",
+          "bytes": 63067081,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574552_sample48.tar.gz",
+          "bytes": 86196158,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6574553_sample49.tar.gz",
+          "bytes": 81752801,
+          "type": "TAR"
+        },
+        {
+          "name": "GSM6690474_sample6_barcodes.tsv.gz",
+          "bytes": 12277,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6690474_sample6_features.tsv.gz",
+          "bytes": 333437,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6690474_sample6_matrix.mtx.gz",
+          "bytes": 6985606,
+          "type": "MTX"
+        },
+        {
+          "name": "GSM6690475_BEME_346_barcodes.tsv.gz",
+          "bytes": 8226,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6690475_BEME_346_features.tsv.gz",
+          "bytes": 333437,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6690475_BEME_346_matrix.mtx.gz",
+          "bytes": 12375804,
+          "type": "MTX"
+        },
+        {
+          "name": "GSM6690475_BEME_346_scalefactors_json.json.gz",
+          "bytes": 175,
+          "type": "JSON"
+        },
+        {
+          "name": "GSM6690475_BEME_346_tissue_hires_image.png.gz",
+          "bytes": 4968075,
+          "type": "PNG"
+        },
+        {
+          "name": "GSM6690475_BEME_346_tissue_positions_list.csv.gz",
+          "bytes": 66098,
+          "type": "CSV"
+        },
+        {
+          "name": "GSM6690475_D_V11F09-023_BEME346.tif.gz",
+          "bytes": 440933765,
+          "type": "TIFF"
+        },
+        {
+          "name": "GSM6690476_BEME-355G_scalefactors_json.json.gz",
+          "bytes": 175,
+          "type": "JSON"
+        },
+        {
+          "name": "GSM6690476_BEME-355G_tissue_hires_image.png.gz",
+          "bytes": 5422627,
+          "type": "PNG"
+        },
+        {
+          "name": "GSM6690476_BEME-355G_tissue_positions_list.csv.gz",
+          "bytes": 65225,
+          "type": "CSV"
+        },
+        {
+          "name": "GSM6690476_BEME_355G_barcodes.tsv.gz",
+          "bytes": 11473,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6690476_BEME_355G_features.tsv.gz",
+          "bytes": 333437,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6690476_BEME_355G_matrix.mtx.gz",
+          "bytes": 13626619,
+          "type": "MTX"
+        },
+        {
+          "name": "GSM6690476_C_V11F09-023_BEME355G.tif.gz",
+          "bytes": 490281433,
+          "type": "TIFF"
+        }
+      ],
+      "characteristic_keys": {
+        "char_patient_id": 49,
+        "char_tissue": 51,
+        "char_cell_line": 51,
+        "char_anatomic_location": 49,
+        "char_tissue_type": 3,
+        "char_cell_type": 2,
+        "char_menstrual_cycle_phase": 1
+      }
+    },
+    "GSE179640": {
+      "title": "Single cell analysis of endometriosis reveals a coordinated transcriptional program driving immunotolerance and angiogenesis across eutopic and ectopic tissues",
+      "pubmed_ids": [
+        "35864314"
+      ],
+      "platforms": [
+        "GPL24676"
+      ],
+      "submission_date": "Jul 07 2021",
+      "last_update_date": "Nov 29 2022",
+      "n_samples": 59,
+      "summary": "Endometriosis is characterized by growth of endometrial-like tissue outside of the uterus affecting many women during their reproductive age, causing years of pelvic pain and potential infertility. Its pathophysiology remains largely unknown, limiting early diagnosis and treatment. We characterized peritoneal and ovarian lesions at single-cell transcriptome resolution and compared to matched eutopic endometrium, control endometrium, and organoids derived from these tissues, generating data on over 122,000 cells across 14 individuals. We spatially localized many of the cell types using imaging mass cytometry. We identify a perivascular mural cell unique to the peritoneal lesions with dual roles in angiogenesis promotion and immune cell trafficking. We define an immunotolerant peritoneal niche, fundamental differences in eutopic endometrium and between lesions microenvironments, and an unreported progenitor-like epithelial cell subpopulation. Altogether, this study provides a holistic view of the endometriosis microenvironment representing a comprehensive cell atlas of the disease in hormonally treated patients, essential information for advancing therapeutics and diagnostics.",
+      "overall_design": "Biopsies were collected from a total of 27 patients, 19 with confirmed endometriosis and 8 patients control. Biopsies were subjected to single cell experiments, bulk sequencing and cell hashing on patient-derived organoid. Single cells experiement were conducted on 31 biopsies consisting of  3 control and  9 eutopic endometrium, 8 ectopic peritoneal, 6 ectopic peritoneal adjacent, 4 ectopic ovary of endometriosis patient. A total of 24 biopsies were subjected to bulk sequencing, consist of 5 control and 7 eutopic endometrium, 6 ectopic peritoneal, 6 ectopic ovary of endometriosis patient. Single-cell cell hashing experiment were conducted on patient-derived organoid from 2 control and 4 eutopic endometrium, 4 ectopic peritoneum, 1 ectopic peritoneal adjacent of endometriosis patient. All single cell experiments were performed on 10x Genomics platform.",
+      "esummary": {
+        "n_samples": 59,
+        "pubmedids": [
+          "35864314"
+        ],
+        "gdstype": "Expression profiling by high throughput sequencing",
+        "summary": "Endometriosis is characterized by growth of endometrial-like tissue outside of the uterus affecting many women during their reproductive age, causing years of pelvic pain and potential infertility. Its pathophysiology remains largely unknown, limiting early diagnosis and treatment. We characterized peritoneal and ovarian lesions at single-cell transcriptome resolution and compared to matched eutopic endometrium, control endometrium, and organoids derived from these tissues, generating data on over 122,000 cells across 14 individuals. We spatially localized many of the cell types using imaging mass cytometry. We identify a perivascular mural cell unique to the peritoneal lesions with dual roles in angiogenesis promotion and immune cell trafficking. We define an immunotolerant peritoneal niche, fundamental differences in eutopic endometrium and between lesions microenvironments, and an unreported progenitor-like epithelial cell subpopulation. Altogether, this study provides a holistic view of the endometriosis microenvironment representing a comprehensive cell atlas of the disease in hormonally treated patients, essential information for advancing therapeutics and diagnostics.",
+        "ftplink": "ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE179nnn/GSE179640/",
+        "suppfile": "H5, MTX, TSV, TXT, XLS"
+      },
+      "supplementary_bytes_total": 795292836,
+      "supplementary_files": [
+        {
+          "name": "GSE179640_RAW.tar",
+          "bytes": 795351040,
+          "type": "archive"
+        },
+        {
+          "name": "GSM6102532_C01_Ctrl_filtered_feature_bc_matrix.h5",
+          "bytes": 23502843,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102533_C02_Ctrl_filtered_feature_bc_matrix.h5",
+          "bytes": 33423588,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102534_C03_Ctrl_filtered_feature_bc_matrix.h5",
+          "bytes": 25745805,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102537_E01_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 29501550,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102540_E02_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 30238159,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102543_E03_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 24306510,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102546_E04_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 15818956,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102549_E05_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 11945946,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102550_E06_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 9542266,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102551_E06_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 24813252,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102552_E07_EcO_filtered_feature_bc_matrix.h5",
+          "bytes": 11322805,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102553_E07_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 20217900,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102554_E07_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 17140128,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102555_E08_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 11480350,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102556_E09_EcO_filtered_feature_bc_matrix.h5",
+          "bytes": 20031865,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102560_E09_EuE_filtered_feature_bc_matrix.h5",
+          "bytes": 24273106,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102562_E11_EcO_filtered_feature_bc_matrix.h5",
+          "bytes": 36296242,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102563_EOR01_filtered_feature_bc_matrix.h5",
+          "bytes": 39370979,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102564_EOR02_barcodes.tsv.gz",
+          "bytes": 490942,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6102564_EOR02_features.tsv.gz",
+          "bytes": 124,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6102564_EOR02_matrix.mtx.gz",
+          "bytes": 771848,
+          "type": "MTX"
+        },
+        {
+          "name": "GSM6102565_EOR03_filtered_feature_bc_matrix.h5",
+          "bytes": 66593052,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6102566_EOR04_barcodes.tsv.gz",
+          "bytes": 1233967,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6102566_EOR04_features.tsv.gz",
+          "bytes": 140,
+          "type": "TSV"
+        },
+        {
+          "name": "GSM6102566_EOR04_matrix.mtx.gz",
+          "bytes": 1888730,
+          "type": "MTX"
+        },
+        {
+          "name": "GSM6102567_C01_Ctrl_bulk.featurecounts.txt.gz",
+          "bytes": 4209526,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102568_C04_Ctrl_bulk.featurecounts.txt.gz",
+          "bytes": 4205135,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102569_C05_Ctrl_bulk.featurecounts.txt.gz",
+          "bytes": 4204244,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102570_C06_Ctrl_bulk.featurecounts.txt.gz",
+          "bytes": 4203337,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102571_C07_Ctrl_bulk.featurecounts.txt.gz",
+          "bytes": 4201159,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102572_E03_EuE_bulk.featurecounts.txt.gz",
+          "bytes": 4210234,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102573_E05_EcP_bulk.featurecounts.txt.gz",
+          "bytes": 4210599,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102574_E07_EcO_bulk.featurecounts.txt.gz",
+          "bytes": 4207276,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102575_E07_EuE_bulk.featurecounts.txt.gz",
+          "bytes": 4208071,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102576_E09_EuE_bulk.featurecounts.txt.gz",
+          "bytes": 4205375,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102577_E10_EcO_bulk.featurecounts.txt.gz",
+          "bytes": 4202589,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102578_E10_EcP_bulk.featurecounts.txt.gz",
+          "bytes": 4204241,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102579_E13_EcO_bulk.featurecounts.txt.gz",
+          "bytes": 4205697,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102580_E13_EcP_bulk.featurecounts.txt.gz",
+          "bytes": 4205468,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102581_E13_EuE_bulk.featurecounts.txt.gz",
+          "bytes": 4205400,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102582_E14_EcO_bulk.featurecounts.txt.gz",
+          "bytes": 4206087,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102583_E14_EcP_bulk.featurecounts.txt.gz",
+          "bytes": 4202680,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102584_E15_EuE_bulk.featurecounts.txt.gz",
+          "bytes": 4203036,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102585_E16_EcO_bulk.featurecounts.txt.gz",
+          "bytes": 4200702,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102586_E16_EcP_bulk.featurecounts.txt.gz",
+          "bytes": 4204452,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102587_E16_EuE_bulk.featurecounts.txt.gz",
+          "bytes": 4202814,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102588_E17_EcO_bulk.featurecounts.txt.gz",
+          "bytes": 4206075,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102589_E17_EcP_bulk.featurecounts.txt.gz",
+          "bytes": 4200073,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6102590_E17_EuE_bulk.featurecounts.txt.gz",
+          "bytes": 4201881,
+          "type": "TXT"
+        },
+        {
+          "name": "GSM6595248_E01_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 13298814,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595249_E01_EcPA_filtered_feature_bc_matrix.h5",
+          "bytes": 16410826,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595250_E02_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 19697188,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595251_E02_EcPA_filtered_feature_bc_matrix.h5",
+          "bytes": 12739990,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595252_E03_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 27740362,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595253_E03_EcPA_filtered_feature_bc_matrix.h5",
+          "bytes": 13258132,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595254_E04_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 13079761,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595255_E04_EcPA_filtered_feature_bc_matrix.h5",
+          "bytes": 10318009,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595256_E05_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 16216637,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595257_E05_EcPA_filtered_feature_bc_matrix.h5",
+          "bytes": 18952294,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595258_E09_EcP_filtered_feature_bc_matrix.h5",
+          "bytes": 9109530,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595259_E09_EcPA_filtered_feature_bc_matrix.h5",
+          "bytes": 3530949,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595260_E09_EcPA2_filtered_feature_bc_matrix.h5",
+          "bytes": 5096416,
+          "type": "H5"
+        },
+        {
+          "name": "GSM6595261_E10_EcO_filtered_feature_bc_matrix.h5",
+          "bytes": 34976724,
+          "type": "H5"
+        }
+      ],
+      "characteristic_keys": {
+        "char_condition": 59,
+        "char_sample_location": 59,
+        "char_tissue": 59,
+        "char_method": 59,
+        "char_library_type": 59
+      }
+    }
+  },
+  "verdicts": {
+    "GSE213216": {
+      "eutopic_scrna_donors": 10,
+      "eligible_natural_cycle_eutopic_donors_by_phase_and_disease": {
+        "Proliferative ENDO": 3,
+        "Secretory ENDO": 2
+      },
+      "exclusions": {
+        "hormonal treatment; stage Menopause_Hormones": 2,
+        "hormonal treatment; stage Hormones": 2,
+        "hormonal treatment; stage PeriMenopause_Hormones": 1
+      },
+      "usable_for_eutopic_disease_contrast": false,
+      "matched_eutopic_lesion_scrna_pairs": 4,
+      "matched_pairs_with_natural_cycle_eutopic": 4,
+      "usable_for_paired_lesion_design_any_treatment": false,
+      "usable_for_paired_lesion_design_natural_cycle": false
+    },
+    "GSE179640": {
+      "eutopic_scrna_donors": 12,
+      "eligible_natural_cycle_eutopic_donors_by_phase_and_disease": {
+        "Proliferative non-ENDO": 1
+      },
+      "exclusions": {
+        "hormonal treatment; stage Hormones": 10,
+        "stage Menstrual": 1
+      },
+      "usable_for_eutopic_disease_contrast": false,
+      "matched_eutopic_lesion_scrna_pairs": 8,
+      "matched_pairs_with_natural_cycle_eutopic": 0,
+      "usable_for_paired_lesion_design_any_treatment": true,
+      "usable_for_paired_lesion_design_natural_cycle": false
+    }
+  },
+  "heca_overlap": {
+    "heca_library_rows_by_study": {
+      "CBTM": 4,
+      "Fonseca": 48,
+      "Garcia_Alonso": 36,
+      "Incliva": 48,
+      "Lai": 9,
+      "Marecckovaa": 74,
+      "Other": 3,
+      "Tan": 31,
+      "Wang": 10,
+      "Zhang": 4,
+      "Shih": 11,
+      "Huang": 10
+    },
+    "note": "both studies are external datasets integrated into the HECA cells atlas; the v1 and positive-control HECA cohorts use only the newly generated nuclei (E-MTAB-14039), so no donor of either study is a v1 HECA donor; HECA label vocabularies were derived on an atlas that includes them",
+    "fonseca_libraries_analysed_flag": {
+      "no": 48
+    },
+    "tan_libraries_analysed_flag": {
+      "yes": 31
+    }
+  },
+  "outputs_sha256": {
+    "manifests/cohort_extension_GSE213216_samples.tsv": "8d3da498752258dd5c339d4dc0f0fb7a1579b87427bf38ff2e08b85abad52c9d",
+    "manifests/cohort_extension_GSE179640_samples.tsv": "b3ae48bbf81f2ee3b59c803b7cad3171c16479531a65370757f657e45f88c77f",
+    "manifests/cohort_extension_eutopic_donor_ledger.tsv": "2f6e3b4903375e6a01223b7c6571cbcefb2f31232a877f828a3bb2bc885cdc7f",
+    "manifests/cohort_extension_lesion_pairs.tsv": "eb83748cb0a9b575e9028d76e0ef81c467820d9234e6b26888e476f2b79c537e"
+  },
+  "attestations": {
+    "expression_data_read": false,
+    "expression_data_downloaded": false,
+    "clinical_fields_source": "GEO sample characteristics and the HECA authors' public curation of these studies; not re-derived from the primary publications' supplements in this step"
+  }
+}

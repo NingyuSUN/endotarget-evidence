@@ -1,0 +1,52 @@
+gsm	title	source_name	library_strategy	instrument	char_anatomic_location	char_cell_line	char_cell_type	char_menstrual_cycle_phase	char_patient_id	char_tissue	char_tissue_type	supplementary_files
+GSM6574509	Sample 1	Endometrioma, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovary	tissue			1	Endometrioma		GSM6574509_sample1.tar.gz
+GSM6574510	Sample 5	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Anterior cul-de-sac	tissue			4	Endometriosis		GSM6574510_sample5.tar.gz
+GSM6574511	Sample 7	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Posterior cul-de-sac	tissue			5	Endometriosis		GSM6574511_sample7.tar.gz
+GSM6574512	Sample 8	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			6	Eutopic Endometrium		GSM6574512_sample8.tar.gz
+GSM6574513	Sample 9	Ovary, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right ovary	tissue			6	Ovary		GSM6574513_sample9.tar.gz
+GSM6574514	Sample 10	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right and left pelvic side wall†	tissue			7	Endometriosis		GSM6574514_sample10.tar.gz
+GSM6574515	Sample 11	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Anterior cul-de-sac	tissue			7	Endometriosis		GSM6574515_sample11.tar.gz
+GSM6574516	Sample 12	Endometrioma, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right ovary	tissue			7	Endometrioma		GSM6574516_sample12.tar.gz
+GSM6574517	Sample 13	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right and left uterosacral ligament	tissue			7	Endometriosis		GSM6574517_sample13.tar.gz
+GSM6574518	Sample 14	No endometriosis detected, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Anterior cul-de-sac and right pelvic side wall†	tissue			8	No endometriosis detected		GSM6574518_sample14.tar.gz
+GSM6574519	Sample 15	Endometrioma, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovary	tissue			8	Endometrioma		GSM6574519_sample15.tar.gz
+GSM6574520	Sample 16	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left uterosacral ligament	tissue			8	Endometriosis		GSM6574520_sample16.tar.gz
+GSM6574521	Sample 17	No endometriosis detected, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Rectal serosa	tissue			8	No endometriosis detected		GSM6574521_sample17.tar.gz
+GSM6574522	Sample 18	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right and left pelvic side wall	tissue			9	Endometriosis		GSM6574522_sample18.tar.gz
+GSM6574523	Sample 19	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovarian fossa	tissue			9	Endometriosis		GSM6574523_sample19.tar.gz
+GSM6574524	Sample 20	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Anterior abdominal wall and cul-de-sac†	tissue			9	Endometriosis		GSM6574524_sample20.tar.gz
+GSM6574525	Sample 21	Endometrioma, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right ovary	tissue			9	Endometrioma		GSM6574525_sample21.tar.gz
+GSM6574526	Sample 22	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right parametrium	tissue			9	Endometriosis		GSM6574526_sample22.tar.gz
+GSM6574527	Sample 23	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Perirectal fat	tissue			9	Endometriosis		GSM6574527_sample23.tar.gz
+GSM6574528	Sample 24	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			10	Eutopic Endometrium		GSM6574528_sample24.tar.gz
+GSM6574529	Sample 25	No endometriosis detected, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left uterosacral ligament	tissue			10	No endometriosis detected		GSM6574529_sample25.tar.gz
+GSM6574530	Sample 26	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right uterosacral ligament	tissue			10	Endometriosis		GSM6574530_sample26.tar.gz
+GSM6574531	Sample 27	No endometriosis detected, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Bladder endometriosis	tissue			10	No endometriosis detected		GSM6574531_sample27.tar.gz
+GSM6574532	Sample 28	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left pelvic side wall	tissue			11	Endometriosis		GSM6574532_sample28.tar.gz
+GSM6574533	Sample 29	Endometrioma, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovarian cyst	tissue			11	Endometrioma		GSM6574533_sample29.tar.gz
+GSM6574534	Sample 30	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			11	Eutopic Endometrium		GSM6574534_sample30.tar.gz
+GSM6574535	Sample 31	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			12	Eutopic Endometrium		GSM6574535_sample31.tar.gz
+GSM6574536	Sample 32	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			13	Eutopic Endometrium		GSM6574536_sample32.tar.gz
+GSM6574537	Sample 33	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right ovary	tissue			14	Endometriosis		GSM6574537_sample33.tar.gz
+GSM6574538	Sample 34	Ovary, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovary	tissue			14	Ovary		GSM6574538_sample34.tar.gz
+GSM6574539	Sample 35	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			14	Eutopic Endometrium		GSM6574539_sample35.tar.gz
+GSM6574540	Sample 36	Ovary, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right ovary	tissue			15	Ovary		GSM6574540_sample36.tar.gz
+GSM6574541	Sample 37	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovarian fossa	tissue			16	Endometriosis		GSM6574541_sample37.tar.gz
+GSM6574542	Sample 38	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			16	Eutopic Endometrium		GSM6574542_sample38.tar.gz
+GSM6574543	Sample 39	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			17	Eutopic Endometrium		GSM6574543_sample39.tar.gz
+GSM6574544	Sample 40	Eutopic Endometrium, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			18	Eutopic Endometrium		GSM6574544_sample40.tar.gz
+GSM6574545	Sample 41	Ovary, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Ovary	tissue			18	Ovary		GSM6574545_sample41.tar.gz
+GSM6574546	Sample 42	Endometrioma, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovarian cyst	tissue			19	Endometrioma		GSM6574546_sample42.tar.gz
+GSM6574547	Sample 43	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right ovarian fossa	tissue			19	Endometriosis		GSM6574547_sample43.tar.gz
+GSM6574548	Sample 44	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left uterosacral ligament	tissue			20	Endometriosis		GSM6574548_sample44.tar.gz
+GSM6574549	Sample 45	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Rectum	tissue			21	Endometriosis		GSM6574549_sample45.tar.gz
+GSM6574550	Sample 46	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Left ovarian fossa	tissue			21	Endometriosis		GSM6574550_sample46.tar.gz
+GSM6574551	Sample 47	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Right uterosacral ligament	tissue			21	Endometriosis		GSM6574551_sample47.tar.gz
+GSM6574552	Sample 48	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Anterior cul-de-sac	tissue			21	Endometriosis		GSM6574552_sample48.tar.gz
+GSM6574553	Sample 49	Endometriosis, scRNAseq	RNA-Seq	Illumina NovaSeq 6000	Posterior uterus	tissue			21	Endometriosis		GSM6574553_sample49.tar.gz
+GSM6634272	sample3	Endometrioma	RNA-Seq	Illumina NovaSeq 6000	Right ovary	tissue			2	Endometrioma		NONE
+GSM6634273	sample2	Endometriosis	RNA-Seq	Illumina NovaSeq 6000	Left ovary	tissue			2	Endometrioma		NONE
+GSM6634274	Sample 4	Eutopic Endometrium	RNA-Seq	Illumina NovaSeq 6000	Endometrium	tissue			3	Eutopic Endometrium		NONE
+GSM6690474	Patient 4, Endometriosis	Endometriosis	RNA-Seq	Illumina NovaSeq 6000	Posterior cul-de-sac	tissue			4	Endometriosis	fresh	GSM6690474_sample6_barcodes.tsv.gz;GSM6690474_sample6_features.tsv.gz;GSM6690474_sample6_matrix.mtx.gz
+GSM6690475	BEME_346, Endometriosis	Endometriosis	OTHER	Illumina NovaSeq 6000		tissue	keratin-positive, mesenchymal and endothelial	Luteal		Endometriosis	frozen	GSM6690475_BEME_346_barcodes.tsv.gz;GSM6690475_BEME_346_features.tsv.gz;GSM6690475_BEME_346_matrix.mtx.gz;GSM6690475_BEME_346_scalefactors_json.json.gz;GSM6690475_BEME_346_tissue_hires_image.png.gz;GSM6690475_BEME_346_tissue_positions_list.csv.gz;GSM6690475_D_V11F09-023_BEME346.tif.gz
+GSM6690476	BEME_355G, Endometriosis	Endometriosis	OTHER	Illumina NovaSeq 6000		tissue	keratin-positive, mesenchymal and endothelial			Endometriosis	frozen	GSM6690476_BEME-355G_scalefactors_json.json.gz;GSM6690476_BEME-355G_tissue_hires_image.png.gz;GSM6690476_BEME-355G_tissue_positions_list.csv.gz;GSM6690476_BEME_355G_barcodes.tsv.gz;GSM6690476_BEME_355G_features.tsv.gz;GSM6690476_BEME_355G_matrix.mtx.gz;GSM6690476_C_V11F09-023_BEME355G.tif.gz
