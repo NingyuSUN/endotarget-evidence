@@ -30,6 +30,7 @@ supported target shortlist and no established advantage from network propagation
 - [Phase positive-control evaluation receipt](../receipts/phase_positive_control_evaluation.json) and [published products](../reports/phase_positive_control_f2/) — HECA fit, P1/P2/S1/S2 against the frozen lists, 500-draw paired bootstrap
 - [Minimum detectable effect protocol](MDE_ANALYSIS_PROTOCOL.md) — frozen 2026-10-27 before computation; per-gene MDE from the saved v1 fits and a donor-subsampling curve on the phase signal; no model refitted on disease
 - [Minimum detectable effect results](../reports/mde_results.md) — median gene: 1.5-fold at α 0.05, 2.2–3.4-fold at the multiplicity faced; twofold effects excluded family-wide for a fifth of genes; a 22-donor study recovers 45% / 13% of the phase program
+- [Secretory program disease contrast protocol](SECRETORY_PROGRAM_PROTOCOL.md) — frozen 2026-10-27 before any donor was scored; program-level test of an attenuated secretory stromal program in endometriosis on the positive-control matrices, signature defined in the other cohort; not executed
 
 ## Reproduction
 
