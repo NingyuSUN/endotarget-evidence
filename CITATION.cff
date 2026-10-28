@@ -22,6 +22,7 @@ repository-code: "https://github.com/NingyuSUN/endotarget-evidence"
 url: "https://github.com/NingyuSUN/endotarget-evidence"
 license: MIT
 version: 1.0.0
+date-released: "2026-10-28"
 keywords:
   - endometriosis
   - single-cell
