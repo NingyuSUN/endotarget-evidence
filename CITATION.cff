@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+type: software
+title: "EndoTarget Evidence: cross-study target prioritization in endometriosis using donor-level transcriptomics and network analysis"
+abstract: >-
+  Public-data endometriosis target-evidence benchmark. Donor-level pseudobulk
+  modeling of proliferative-phase eutopic endometrial stromal fibroblasts in
+  two public single-cell cohorts (GSE266265 discovery, HECA E-MTAB-14039
+  external), expression ranking against two network baselines on a frozen
+  STRING functional-association graph, external-cohort evaluation of frozen
+  lists, a separate genetic-evidence layer, and verified Nextflow/Docker
+  reproduction. The completed analysis found no statistically supported
+  cross-study target shortlist and no advantage for network propagation.
+  Prespecified follow-on analyses (October 2026) add a cycle-phase positive
+  control, minimum-detectable-effect bounds, a secretory-phase program-level
+  disease contrast and a public-cohort extension audit.
+authors:
+  - family-names: Sun
+    given-names: Ningyu
+    alias: NingyuSUN
+repository-code: "https://github.com/NingyuSUN/endotarget-evidence"
+url: "https://github.com/NingyuSUN/endotarget-evidence"
+license: MIT
+version: 1.0.0
+keywords:
+  - endometriosis
+  - single-cell
+  - pseudobulk
+  - target-prioritization
+  - network-propagation
+  - reproducibility
+  - nextflow
+  - computational-biology

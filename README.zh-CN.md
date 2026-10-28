@@ -7,6 +7,8 @@
 [![数据：公开研究](https://img.shields.io/badge/data-public_studies-466A83)](docs/INPUT_PROVENANCE.md)
 [![Nextflow：25.10.2](https://img.shields.io/badge/Nextflow-25.10.2-287C72)](docs/LOCAL_EXECUTION.md)
 [![Docker：本地复现已核验](https://img.shields.io/badge/Docker-local_replay_verified-287C72)](receipts/local_primary_container_replay.json)
+[![CI](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml/badge.svg)](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml)
+[![引用：CITATION.cff](https://img.shields.io/badge/cite-CITATION.cff-466A83)](CITATION.cff)
 
 生物网络能否帮助筛出在另一项研究中仍保留疾病表达关联的基因？本项目比较表达排序与两种网络基线，在另一子宫内膜队列中评价冻结的候选名单，再单独整理遗传证据，形成可追溯的研究判断。
 
@@ -88,6 +90,8 @@ G1 是固定图算法，没有模型训练或参数搜索。无法在外部评�
 | 可复现流程 | Nextflow DSL2、锁定 R/Python 依赖、Docker、文件哈希和缓存检查 | [发现流程](main.nf)、[外部流程](replication.nf)、[复现说明](docs/LOCAL_EXECUTION.md) |
 
 本地容器复现完成全部 5 个主要步骤，离散选择完全一致，连续数值最大差 **1.10 × 10⁻¹³**，小于事先规定的绝对误差 10⁻⁸。合成数据测试还完成 5 个首次执行步骤和 5 个缓存复用步骤。这些是对相同数据的工程核验，不能替代生物学复核。[主要结果复现记录](receipts/local_primary_container_replay.json) · [缓存检查](receipts/local_container_nextflow.json)。
+
+每次推送时，[GitHub Actions](.github/workflows/ci.yml) 会运行合成数据单元测试（Python 使用锁定的依赖版本，R 使用 Bioconductor 3.20 发行系列）和 Markdown 链接检查。一个调用主机专用解释器的测试按名称跳过并打印原因，没有放宽任何检查。这些是软件检查，不是科学分析的重跑。
 
 ## 查看与复现
 

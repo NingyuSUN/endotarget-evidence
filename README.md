@@ -7,6 +7,8 @@
 [![Data: public studies](https://img.shields.io/badge/data-public_studies-466A83)](docs/INPUT_PROVENANCE.md)
 [![Nextflow: 25.10.2](https://img.shields.io/badge/Nextflow-25.10.2-287C72)](docs/LOCAL_EXECUTION.md)
 [![Docker: local replay verified](https://img.shields.io/badge/Docker-local_replay_verified-287C72)](receipts/local_primary_container_replay.json)
+[![CI](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml/badge.svg)](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml)
+[![Cite: CITATION.cff](https://img.shields.io/badge/cite-CITATION.cff-466A83)](CITATION.cff)
 
 Can a biological network improve which disease-associated genes reproduce in another study? EndoTarget Evidence compares expression ranking with two network baselines, evaluates the frozen candidate lists in a separate endometrial cohort, and adds a traceable genetic-evidence assessment.
 
@@ -88,6 +90,8 @@ Reports: [positive control](reports/phase_positive_control_results.md), [detecta
 | Reproducible workflow | Nextflow DSL2, locked R/Python dependencies, Docker, input/output hashes and cache checks | [Discovery workflow](main.nf), [external workflow](replication.nf), [reproduction guide](docs/LOCAL_EXECUTION.md) |
 
 The recorded local replay reproduced all five primary tasks. Discrete selections matched exactly; the largest continuous difference was **1.10 × 10⁻¹³**, below the declared absolute tolerance of 10⁻⁸. Synthetic checks also completed five fresh and five cached tasks. These are engineering checks on the same data, distinct from biological replication. [Replay record](receipts/local_primary_container_replay.json) · [Cache checks](receipts/local_container_nextflow.json).
+
+On every push, [GitHub Actions](.github/workflows/ci.yml) runs the synthetic unit tests (Python on the pinned probe lock, R on the Bioconductor 3.20 release series) and a Markdown link check. One test that calls a host-specific interpreter is skipped by name with the reason printed; no check was relaxed. These are software checks, not a scientific rerun.
 
 ## Explore and reproduce
 
