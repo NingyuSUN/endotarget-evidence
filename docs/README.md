@@ -43,7 +43,7 @@ summarizes them.
 - [Completed evidence index](LOCAL_DELIVERY_ACCEPTANCE.md)
 - [Scientific package lock](../requirements/statistical-runtime.explicit.txt)
 - [Actual container primary replay](../receipts/local_primary_container_replay.json)
-- [Continuous software checks](../.github/workflows/ci.yml) — on every push: synthetic unit tests via [`scripts/run_unit_tests.py`](../scripts/run_unit_tests.py) (Python 3.10 on the pinned probe lock; R on Bioconductor 3.20) and a [Markdown link check](../scripts/check_markdown_links.py); one test that calls a host-specific interpreter is skipped by name with the reason printed
+- [Continuous software checks](../.github/workflows/ci.yml) — on every push: synthetic unit tests via [`scripts/run_unit_tests.py`](../scripts/run_unit_tests.py) (Python 3.10 on the pinned probe lock; R on Bioconductor 3.20) and a [Markdown link check](../scripts/check_markdown_links.py); the tests that read a commit of the original pre-revision history and one test that calls a host-specific interpreter are skipped by name with the reason printed
 - [Citation metadata](../CITATION.cff)
 - [AWS portability plan — unexecuted](AWS_DEPLOYMENT.md)
 

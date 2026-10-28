@@ -20,11 +20,8 @@ jobs:
     name: Python unit tests (3.10, pinned probe lock)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          # The delivery tests read a historical README with `git show`.
-          fetch-depth: 0
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.10"
           cache: pip
@@ -34,9 +31,19 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements/metadata-probe.txt
           python -m pip freeze
+      - name: Mount the checkout at the documented project path
+        # The scripts retain /home/analyst/te as their required project path and the
+        # tested runtime bind-mounts the checkout there (docs/LOCAL_EXECUTION.md).
+        run: |
+          sudo mkdir -p /home/analyst/te
+          sudo mount --bind "$GITHUB_WORKSPACE" /home/analyst/te
+          mkdir -p /home/analyst/te/tmp   # git-ignored scratch directory the freeze tests expect
+          git -C /home/analyst/te rev-parse --short HEAD
       - name: Run the unit tests
+        working-directory: /home/analyst/te
         run: python scripts/run_unit_tests.py
       - name: Check relative Markdown links
+        working-directory: /home/analyst/te
         run: python scripts/check_markdown_links.py
 
   r-tests:
@@ -44,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     container: bioconductor/bioconductor_docker:RELEASE_3_20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Install edgeR, limma, statmod and jsonlite
         run: |
           Rscript -e 'BiocManager::install(c("edgeR", "limma", "statmod", "jsonlite"), ask = FALSE, update = FALSE)'

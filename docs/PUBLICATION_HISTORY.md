@@ -75,10 +75,12 @@ research brief present the completed study.
   changed.
 - **28 October 2026.** A [citation file](../CITATION.cff) and a
   [GitHub Actions workflow](../.github/workflows/ci.yml) were added. The workflow
-  runs the synthetic unit tests through `scripts/run_unit_tests.py` on a checkout
-  with the full published history, skipping by name, with the reason printed, the
-  one test that calls a host-specific interpreter; no test was modified and no
-  check was relaxed. A Markdown link check (`scripts/check_markdown_links.py`)
+  runs the synthetic unit tests through `scripts/run_unit_tests.py` with the
+  checkout bind-mounted at the documented project path, skipping by name, with the
+  reason printed, the delivery-boundary tests that read the original delivery
+  commit `4cc7580` (pre-revision history; published counterpart `4c18c08`) and
+  the one test that calls a host-specific interpreter; no test was modified and
+  no check was relaxed. A Markdown link check (`scripts/check_markdown_links.py`)
   covers the current documents and skips the historical copies under
   `docs/archive/`.
 

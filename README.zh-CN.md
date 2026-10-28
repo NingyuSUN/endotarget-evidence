@@ -91,7 +91,7 @@ G1 是固定图算法，没有模型训练或参数搜索。无法在外部评�
 
 本地容器复现完成全部 5 个主要步骤，离散选择完全一致，连续数值最大差 **1.10 × 10⁻¹³**，小于事先规定的绝对误差 10⁻⁸。合成数据测试还完成 5 个首次执行步骤和 5 个缓存复用步骤。这些是对相同数据的工程核验，不能替代生物学复核。[主要结果复现记录](receipts/local_primary_container_replay.json) · [缓存检查](receipts/local_container_nextflow.json)。
 
-每次推送时，[GitHub Actions](.github/workflows/ci.yml) 会运行合成数据单元测试（Python 使用锁定的依赖版本，R 使用 Bioconductor 3.20 发行系列）和 Markdown 链接检查。一个调用主机专用解释器的测试按名称跳过并打印原因，没有放宽任何检查。这些是软件检查，不是科学分析的重跑。
+每次推送时，[GitHub Actions](.github/workflows/ci.yml) 会运行合成数据单元测试（Python 使用锁定的依赖版本，R 使用 Bioconductor 3.20 发行系列）和 Markdown 链接检查。读取修订前原始历史提交的测试，以及一个调用主机专用解释器的测试，按名称跳过并打印原因，没有放宽任何检查。这些是软件检查，不是科学分析的重跑。
 
 ## 查看与复现
 

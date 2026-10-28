@@ -91,7 +91,7 @@ Reports: [positive control](reports/phase_positive_control_results.md), [detecta
 
 The recorded local replay reproduced all five primary tasks. Discrete selections matched exactly; the largest continuous difference was **1.10 × 10⁻¹³**, below the declared absolute tolerance of 10⁻⁸. Synthetic checks also completed five fresh and five cached tasks. These are engineering checks on the same data, distinct from biological replication. [Replay record](receipts/local_primary_container_replay.json) · [Cache checks](receipts/local_container_nextflow.json).
 
-On every push, [GitHub Actions](.github/workflows/ci.yml) runs the synthetic unit tests (Python on the pinned probe lock, R on the Bioconductor 3.20 release series) and a Markdown link check. One test that calls a host-specific interpreter is skipped by name with the reason printed; no check was relaxed. These are software checks, not a scientific rerun.
+On every push, [GitHub Actions](.github/workflows/ci.yml) runs the synthetic unit tests (Python on the pinned probe lock, R on the Bioconductor 3.20 release series) and a Markdown link check. The tests that read a commit of the original, pre-revision history and one test that calls a host-specific interpreter are skipped by name with the reason printed; no check was relaxed. These are software checks, not a scientific rerun.
 
 ## Explore and reproduce
 
