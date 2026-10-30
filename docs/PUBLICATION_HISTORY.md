@@ -83,6 +83,12 @@ research brief present the completed study.
   no check was relaxed. A Markdown link check (`scripts/check_markdown_links.py`)
   covers the current documents and skips the historical copies under
   `docs/archive/`.
+- **30 October 2026.** A summary figure of the follow-on analyses
+  (`reports/figures/follow_on_summary_v1.svg`) was rendered from the published
+  summaries and receipts by a standard-library script with its own
+  [receipt](../receipts/summary_figure_follow_on_v1.json); a changelog and a
+  citation section were added to both README homepages, and the evidence index
+  gained rows for the follow-on analyses. No scientific value changed.
 
 Some frozen documents include status statements and relative links appropriate to
 their original version; they are not current execution instructions. The

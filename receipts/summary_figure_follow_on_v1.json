@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-30T08:23:06.447628+00:00",
+  "purpose": "Render one summary figure of the follow-on analyses from published summaries and receipts; no scientific model rerun",
+  "input_sha256": {
+    "reports/mde_analysis/v1_discovery_summary.json": "319061e21414b6c3e204a512f26a49cac816f703d0099ce9c6905cec03a8a2cc",
+    "reports/mde_analysis/v1_heca_summary.json": "fa0a2ff785d4c870475cfafcdd53a28eedc94329894ba513baef16bbcf6a5e7a",
+    "reports/mde_analysis/phase_discovery_summary.json": "4d04d0694eaad98c0b639de07e18af57171cbf47aa3741ede04b3e6b0339143e",
+    "reports/mde_analysis/phase_heca_summary.json": "44aed156d69d1bd4c0402a6f5b9c3f396c21f9caa3180a2c9c4216d7a8c2272a",
+    "reports/mde_analysis/curve_discovery_curve_summary.tsv": "e4437ce22387fa42b03b4198282e7f85be27e9363041b67f04e894be267e9970",
+    "reports/mde_analysis/curve_heca_curve_summary.tsv": "2ababc7ee95f833d61cd8874267b30e29307cd037a10163e6fad53f722923a6a",
+    "reports/secretory_program/discovery_summary.json": "de1b09ab54b8c2df4b3a3e0959e34d1e6c4647339b10d580ee196ba9906f2beb",
+    "reports/secretory_program/heca_summary.json": "350aca5d18af0cae9788ff932ed25e2193204ed35c2497a6912dbd1ca7b42072",
+    "receipts/phase_positive_control_evaluation.json": "5e98470fe2351b33e447983889f5f11e5d5853e533bfe624f15e70f516aa98dd",
+    "reports/replication_v2_dossier_pool.tsv": "7d6a35f4d89cf66dc6c0c44fd024e4801edc3329869f964d19015ffc6123678d"
+  },
+  "script_sha256": "3e54bb3597f2e870e880cb77f560c51be54c7204c18c5376c540a3f4f0889e6d",
+  "output": "reports/figures/follow_on_summary_v1.svg",
+  "output_sha256": "c0c963dded2cebcaf82a3dcd30bb0f14e4aadd65ced7a57a0423f35d59cc1649",
+  "numbers_drawn": {
+    "disease_genes_q_lt_0_05": {
+      "discovery": 0,
+      "heca": 0
+    },
+    "phase_genes_q_lt_0_05": {
+      "discovery": 7367,
+      "heca": 3986
+    },
+    "v1_family_size": {
+      "discovery": 17733,
+      "heca": 17643
+    },
+    "v1_B0_top20_transfer": {
+      "same_sign": 14,
+      "evaluable": 20,
+      "same_sign_and_external_q_lt_0_05": 0
+    },
+    "phase_B0_top20_transfer": {
+      "same_sign": 20,
+      "evaluable": 20,
+      "selected": 20,
+      "same_sign_and_external_q_lt_0_05": 20
+    },
+    "median_mde_fold": {
+      "discovery": {
+        "alpha_0.05": 1.47995380716568,
+        "bh_k100": 2.17403952241983,
+        "bh_k1": 3.32095471582245
+      },
+      "heca": {
+        "alpha_0.05": 1.54545872906197,
+        "bh_k100": 2.29371897817241,
+        "bh_k1": 3.42675673725744
+      }
+    },
+    "recall_at_11_per_arm": {
+      "discovery": {
+        "n": 11,
+        "valid": 100,
+        "draws": 100,
+        "median": 0.447672051038415,
+        "q025": 0.180969186914619,
+        "q975": 0.704995249083752
+      },
+      "heca": {
+        "n": 11,
+        "valid": 98,
+        "draws": 100,
+        "median": 0.126191670847968,
+        "q025": 0.000639739086803814,
+        "q975": 0.45614024084295
+      }
+    },
+    "subsampling_curves_primary": {
+      "discovery": [
+        {
+          "n": 5,
+          "valid": 0,
+          "draws": 100,
+          "median": null,
+          "q025": null,
+          "q975": null
+        },
+        {
+          "n": 6,
+          "valid": 0,
+          "draws": 100,
+          "median": null,
+          "q025": null,
+          "q975": null
+        },
+        {
+          "n": 8,
+          "valid": 30,
+          "draws": 100,
+          "median": 0.167843084023347,
+          "q025": 0.0107336772091761,
+          "q975": 0.500553142391747
+        },
+        {
+          "n": 10,
+          "valid": 100,
+          "draws": 100,
+          "median": 0.337450794081716,
+          "q025": 0.0561049273788516,
+          "q975": 0.622288584226958
+        },
+        {
+          "n": 11,
+          "valid": 100,
+          "draws": 100,
+          "median": 0.447672051038415,
+          "q025": 0.180969186914619,
+          "q975": 0.704995249083752
+        },
+        {
+          "n": 13,
+          "valid": 100,
+          "draws": 100,
+          "median": 0.626849463825166,
+          "q025": 0.46716098819058,
+          "q975": 0.765199538482422
+        }
+      ],
+      "heca": [
+        {
+          "n": 5,
+          "valid": 0,
+          "draws": 100,
+          "median": null,
+          "q025": null,
+          "q975": null
+        },
+        {
+          "n": 6,
+          "valid": 0,
+          "draws": 100,
+          "median": null,
+          "q025": null,
+          "q975": null
+        },
+        {
+          "n": 8,
+          "valid": 66,
+          "draws": 100,
+          "median": 0.0166833918715504,
+          "q025": 0.0,
+          "q975": 0.198350476668339
+        },
+        {
+          "n": 10,
+          "valid": 96,
+          "draws": 100,
+          "median": 0.0544405418966382,
+          "q025": 0.0,
+          "q975": 0.483724284997491
+        },
+        {
+          "n": 11,
+          "valid": 98,
+          "draws": 100,
+          "median": 0.126191670847968,
+          "q025": 0.000639739086803814,
+          "q975": 0.45614024084295
+        },
+        {
+          "n": 13,
+          "valid": 100,
+          "draws": 100,
+          "median": 0.292398394380331,
+          "q025": 0.056027345709985,
+          "q975": 0.670521826392373
+        },
+        {
+          "n": 16,
+          "valid": 100,
+          "draws": 100,
+          "median": 0.553938785750125,
+          "q025": 0.223193677872554,
+          "q975": 0.815911941796287
+        },
+        {
+          "n": 20,
+          "valid": 100,
+          "draws": 100,
+          "median": 0.898645258404415,
+          "q025": 0.719900903161064,
+          "q975": 0.964149523331661
+        }
+      ]
+    },
+    "theta": {
+      "discovery": {
+        "estimate": 0.0367019785080065,
+        "ci_low": -0.17936705388004,
+        "ci_high": 0.252771010896053,
+        "p": 0.72742392457326,
+        "mde": 0.305271931011211,
+        "auc": 1,
+        "shift": 1.25539442748327,
+        "secretory_endo": 7,
+        "secretory_non_endo": 6,
+        "n_donors": 35,
+        "max_attenuation_share": 0.1428770511906947,
+        "max_enhancement_share": 0.20134788347180357
+      },
+      "heca": {
+        "estimate": -0.105182701292844,
+        "ci_low": -0.399748625659718,
+        "ci_high": 0.18938322307403,
+        "p": 0.470588696084397,
+        "mde": 0.417369395072871,
+        "auc": 0.986363636363636,
+        "shift": 0.558855859348773,
+        "secretory_endo": 16,
+        "secretory_non_endo": 4,
+        "n_donors": 42,
+        "max_attenuation_share": 0.7152982633581754,
+        "max_enhancement_share": 0.33887668869521315
+      }
+    }
+  },
+  "new_scientific_analysis": false
+}

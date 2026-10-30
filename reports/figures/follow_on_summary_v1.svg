@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="650" viewBox="0 0 1500 650" role="img" aria-labelledby="title desc">
+<title id="title">What the null means: follow-on analyses of the v1 benchmark</title>
+<desc id="desc">Three panels rendered from published tables: detection and transfer of the disease and cycle-phase contrasts, recovery of the phase program by donor number, and the secretory program disease interaction with its detectable effect.</desc>
+<rect width="100%" height="100%" fill="white"/><g font-family="DejaVu Sans, Arial, sans-serif">
+<text x="35.0" y="40.0" font-size="24" fill="#243247" >What the null means: the v1 pipeline under four prespecified follow-on analyses</text>
+<text x="35.0" y="66.0" font-size="14" fill="#5B6B7C" >Rendered from published summaries and receipts; no model rerun. Disease contrast: 22 proliferative donors per cohort. Follow-on contrasts add the secretory arms: 35 (discovery) and 42 (HECA) donors.</text>
+<text x="35.0" y="118.0" font-size="17" fill="#243247" >A. Genes at BH q &lt; 0.05: disease versus cycle phase</text>
+<text x="35.0" y="138.0" font-size="12" fill="#5B6B7C" >Same estimator, filter, normalization and covariates; only the contrast differs</text>
+<line x1="100.00" y1="430.00" x2="470.00" y2="430.00" stroke="#dce2e9" stroke-width="1" />
+<text x="90.0" y="434.0" font-size="11" fill="#5B6B7C" text-anchor="end">0</text>
+<line x1="100.00" y1="362.50" x2="470.00" y2="362.50" stroke="#dce2e9" stroke-width="1" />
+<text x="90.0" y="366.5" font-size="11" fill="#5B6B7C" text-anchor="end">2,000</text>
+<line x1="100.00" y1="295.00" x2="470.00" y2="295.00" stroke="#dce2e9" stroke-width="1" />
+<text x="90.0" y="299.0" font-size="11" fill="#5B6B7C" text-anchor="end">4,000</text>
+<line x1="100.00" y1="227.50" x2="470.00" y2="227.50" stroke="#dce2e9" stroke-width="1" />
+<text x="90.0" y="231.5" font-size="11" fill="#5B6B7C" text-anchor="end">6,000</text>
+<line x1="100.00" y1="160.00" x2="470.00" y2="160.00" stroke="#dce2e9" stroke-width="1" />
+<text x="90.0" y="164.0" font-size="11" fill="#5B6B7C" text-anchor="end">8,000</text>
+<line x1="135.00" y1="428.50" x2="190.00" y2="428.50" stroke="#9AA5B1" stroke-width="3" />
+<text x="162.5" y="422.0" font-size="12" fill="#243247" text-anchor="middle">0</text>
+<text x="162.5" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">disease</text>
+<rect x="200.00" y="181.36" width="55.00" height="248.64" fill="#4477AA" />
+<text x="227.5" y="173.4" font-size="12" fill="#243247" text-anchor="middle">7,367</text>
+<text x="227.5" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">phase</text>
+<text x="197.0" y="466.0" font-size="12" fill="#243247" text-anchor="middle">Discovery (GSE266265, scRNA)</text>
+<line x1="315.00" y1="428.50" x2="370.00" y2="428.50" stroke="#9AA5B1" stroke-width="3" />
+<text x="342.5" y="422.0" font-size="12" fill="#243247" text-anchor="middle">0</text>
+<text x="342.5" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">disease</text>
+<rect x="380.00" y="295.47" width="55.00" height="134.53" fill="#EE7733" />
+<text x="407.5" y="287.5" font-size="12" fill="#243247" text-anchor="middle">3,986</text>
+<text x="407.5" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">phase</text>
+<text x="377.0" y="466.0" font-size="12" fill="#243247" text-anchor="middle">HECA (E-MTAB-14039, snRNA)</text>
+<text x="35.0" y="486.0" font-size="12.5" fill="#243247" >Frozen expression (B0) top-20 transferred to HECA:</text>
+<text x="35.0" y="506.0" font-size="11.5" fill="#5B6B7C" >disease: 14 / 20 / 20 same direction / evaluable / selected; 0 at external q &lt; 0.05</text>
+<text x="35.0" y="526.0" font-size="11.5" fill="#5B6B7C" >phase: 20 / 20 / 20 same direction; 20 at external q &lt; 0.05</text>
+<text x="35.0" y="556.0" font-size="11.5" fill="#243247" >Reading: the null is not pipeline insensitivity; phase genes are not a shortlist.</text>
+<text x="520.0" y="118.0" font-size="17" fill="#243247" >B. Recovery of the phase program by donor number</text>
+<text x="520.0" y="138.0" font-size="12" fill="#5B6B7C" >Subsampled studies of n + n donors re-analyzed with the v1 estimator (primary design)</text>
+<line x1="585.00" y1="430.00" x2="975.00" y2="430.00" stroke="#dce2e9" stroke-width="1" />
+<text x="575.0" y="434.0" font-size="11" fill="#5B6B7C" text-anchor="end">0%</text>
+<line x1="585.00" y1="362.50" x2="975.00" y2="362.50" stroke="#dce2e9" stroke-width="1" />
+<text x="575.0" y="366.5" font-size="11" fill="#5B6B7C" text-anchor="end">25%</text>
+<line x1="585.00" y1="295.00" x2="975.00" y2="295.00" stroke="#dce2e9" stroke-width="1" />
+<text x="575.0" y="299.0" font-size="11" fill="#5B6B7C" text-anchor="end">50%</text>
+<line x1="585.00" y1="227.50" x2="975.00" y2="227.50" stroke="#dce2e9" stroke-width="1" />
+<text x="575.0" y="231.5" font-size="11" fill="#5B6B7C" text-anchor="end">75%</text>
+<line x1="585.00" y1="160.00" x2="975.00" y2="160.00" stroke="#dce2e9" stroke-width="1" />
+<text x="575.0" y="164.0" font-size="11" fill="#5B6B7C" text-anchor="end">100%</text>
+<text x="607.9" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">5</text>
+<text x="630.9" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">6</text>
+<text x="676.8" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">8</text>
+<text x="722.6" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">10</text>
+<text x="745.6" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">11</text>
+<text x="791.5" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">13</text>
+<text x="860.3" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">16</text>
+<text x="952.1" y="446.0" font-size="11" fill="#5B6B7C" text-anchor="middle">20</text>
+<text x="780.0" y="466.0" font-size="12" fill="#243247" text-anchor="middle">donors per arm (secretory and proliferative)</text>
+<text x="537.0" y="295.0" font-size="12" fill="#243247" transform="rotate(-90 537.0 295.0)" text-anchor="middle">recall</text>
+<polygon points="676.76,294.85 722.65,261.98 745.59,239.65 791.47,223.40 791.47,303.87 745.59,381.14 722.65,414.85 676.76,427.10" fill="#D5DFEA" stroke="none" stroke-width="1"/>
+<polygon points="676.76,376.45 722.65,299.39 745.59,306.84 791.47,248.96 860.29,209.70 952.06,169.68 952.06,235.63 860.29,369.74 791.47,414.87 745.59,429.83 722.65,430.00 676.76,430.00" fill="#FBE3D6" stroke="none" stroke-width="1"/>
+<line x1="745.59" y1="160.00" x2="745.59" y2="430.00" stroke="#5B6B7C" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="750.6" y="172.0" font-size="11" fill="#5B6B7C" >11 + 11 = a 22-donor study</text>
+<polyline points="676.76,384.68 722.65,338.89 745.59,309.13 791.47,260.75" fill="none" stroke="#4477AA" stroke-width="2.2"/>
+<circle cx="676.76" cy="384.68" r="3.5" fill="#4477AA"/>
+<circle cx="722.65" cy="338.89" r="3.5" fill="#4477AA"/>
+<circle cx="745.59" cy="309.13" r="3.5" fill="#4477AA"/>
+<circle cx="791.47" cy="260.75" r="3.5" fill="#4477AA"/>
+<text x="607.9" y="424.0" font-size="13" fill="#4477AA" text-anchor="middle">×</text>
+<text x="630.9" y="424.0" font-size="13" fill="#4477AA" text-anchor="middle">×</text>
+<text x="752.6" y="299.1" font-size="11.5" fill="#4477AA" >Discovery 45% [18–70%]</text>
+<polyline points="676.76,425.50 722.65,415.30 745.59,395.93 791.47,351.05 860.29,280.44 952.06,187.37" fill="none" stroke="#EE7733" stroke-width="2.2"/>
+<circle cx="676.76" cy="425.50" r="3.5" fill="#EE7733"/>
+<circle cx="722.65" cy="415.30" r="3.5" fill="#EE7733"/>
+<circle cx="745.59" cy="395.93" r="3.5" fill="#EE7733"/>
+<circle cx="791.47" cy="351.05" r="3.5" fill="#EE7733"/>
+<circle cx="860.29" cy="280.44" r="3.5" fill="#EE7733"/>
+<circle cx="952.06" cy="187.37" r="3.5" fill="#EE7733"/>
+<text x="607.9" y="412.0" font-size="13" fill="#EE7733" text-anchor="middle">×</text>
+<text x="630.9" y="412.0" font-size="13" fill="#EE7733" text-anchor="middle">×</text>
+<text x="752.6" y="385.9" font-size="11.5" fill="#EE7733" >HECA 13% [0–46%]</text>
+<rect x="864.88" y="378.00" width="12.00" height="12.00" fill="#4477AA" />
+<text x="881.9" y="389.0" font-size="11" fill="#5B6B7C" >Discovery (≤13 per arm)</text>
+<rect x="864.88" y="398.00" width="12.00" height="12.00" fill="#EE7733" />
+<text x="881.9" y="409.0" font-size="11" fill="#5B6B7C" >HECA (≤20 per arm)</text>
+<text x="520.0" y="486.0" font-size="11.5" fill="#5B6B7C" >Median and 2.5th–97.5th percentiles over 100 draws per level; × = design not estimable.</text>
+<text x="520.0" y="506.0" font-size="12.5" fill="#243247" >Per-gene detectable effect of the v1 disease fits (median gene, discovery / HECA):</text>
+<text x="520.0" y="526.0" font-size="11.5" fill="#5B6B7C" >1.5× / 1.5× (α 0.05) · 2.2× / 2.3× (100 BH discoveries) · 3.3× / 3.4× (one)</text>
+<text x="520.0" y="556.0" font-size="11.5" fill="#243247" >Reading: 22 donors recover even a large known program inconsistently.</text>
+<text x="1025.0" y="118.0" font-size="17" fill="#243247" >C. Secretory stromal program: disease interaction θ</text>
+<text x="1025.0" y="138.0" font-size="12" fill="#5B6B7C" >Scored on the other cohort’s frozen phase program; 1 = the full secretory shift</text>
+<line x1="1130.62" y1="185.00" x2="1130.62" y2="360.00" stroke="#dce2e9" stroke-width="1" />
+<text x="1130.6" y="376.0" font-size="11" fill="#5B6B7C" text-anchor="middle">−0.6</text>
+<line x1="1191.46" y1="185.00" x2="1191.46" y2="360.00" stroke="#dce2e9" stroke-width="1" />
+<text x="1191.5" y="376.0" font-size="11" fill="#5B6B7C" text-anchor="middle">−0.4</text>
+<line x1="1252.29" y1="185.00" x2="1252.29" y2="360.00" stroke="#dce2e9" stroke-width="1" />
+<text x="1252.3" y="376.0" font-size="11" fill="#5B6B7C" text-anchor="middle">−0.2</text>
+<line x1="1313.12" y1="185.00" x2="1313.12" y2="360.00" stroke="#dce2e9" stroke-width="1" />
+<text x="1313.1" y="376.0" font-size="11" fill="#5B6B7C" text-anchor="middle">0</text>
+<line x1="1373.96" y1="185.00" x2="1373.96" y2="360.00" stroke="#dce2e9" stroke-width="1" />
+<text x="1374.0" y="376.0" font-size="11" fill="#5B6B7C" text-anchor="middle">+0.2</text>
+<line x1="1434.79" y1="185.00" x2="1434.79" y2="360.00" stroke="#dce2e9" stroke-width="1" />
+<text x="1434.8" y="376.0" font-size="11" fill="#5B6B7C" text-anchor="middle">+0.4</text>
+<line x1="1313.12" y1="185.00" x2="1313.12" y2="360.00" stroke="#5B6B7C" stroke-width="1.2" />
+<text x="1267.5" y="396.0" font-size="12" fill="#243247" text-anchor="middle">θ, program units (secretory × ENDO interaction; negative = attenuation)</text>
+<rect x="1085.00" y="208.00" width="135.27" height="44.00" fill="#D5DFEA" />
+<line x1="1220.27" y1="208.00" x2="1220.27" y2="252.00" stroke="#4477AA" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="1258.57" y1="230.00" x2="1390.01" y2="230.00" stroke="#4477AA" stroke-width="2.5" />
+<line x1="1258.57" y1="223.00" x2="1258.57" y2="237.00" stroke="#4477AA" stroke-width="2" />
+<line x1="1390.01" y1="223.00" x2="1390.01" y2="237.00" stroke="#4477AA" stroke-width="2" />
+<circle cx="1324.29" cy="230.00" r="6" fill="#4477AA"/>
+<text x="1025.0" y="200.0" font-size="10.5" fill="#243247" >Discovery: θ +0.04 [−0.18, +0.25], p 0.73 · 7 ENDO / 6 non-ENDO secretory</text>
+<text x="1216.3" y="266.0" font-size="10.5" fill="#4477AA" text-anchor="end">detectable attenuation −0.31</text>
+<rect x="1085.00" y="288.00" width="101.18" height="44.00" fill="#FBE3D6" />
+<line x1="1186.18" y1="288.00" x2="1186.18" y2="332.00" stroke="#EE7733" stroke-width="1.2" stroke-dasharray="3 3"/>
+<line x1="1191.53" y1="310.00" x2="1370.73" y2="310.00" stroke="#EE7733" stroke-width="2.5" />
+<line x1="1191.53" y1="303.00" x2="1191.53" y2="317.00" stroke="#EE7733" stroke-width="2" />
+<line x1="1370.73" y1="303.00" x2="1370.73" y2="317.00" stroke="#EE7733" stroke-width="2" />
+<circle cx="1281.13" cy="310.00" r="6" fill="#EE7733"/>
+<text x="1025.0" y="280.0" font-size="10.5" fill="#243247" >HECA: θ −0.11 [−0.40, +0.19], p 0.47 · 16 ENDO / 4 non-ENDO secretory</text>
+<text x="1182.2" y="346.0" font-size="10.5" fill="#EE7733" text-anchor="end">detectable attenuation −0.42</text>
+<text x="1025.0" y="428.0" font-size="11.5" fill="#5B6B7C" >Gate AUC 1.000 / 0.986; secretory shift 1.26 / 0.56 units.</text>
+<text x="1025.0" y="448.0" font-size="11.5" fill="#5B6B7C" >Shaded: detectable with 80% power. Label: no_detectable_difference.</text>
+<text x="1025.0" y="486.0" font-size="12.5" fill="#243247" >Against each cohort’s own secretory shift, the intervals exclude:</text>
+<text x="1025.0" y="506.0" font-size="11.5" fill="#5B6B7C" >attenuation above 14.3% (discovery) and 71.5% (HECA);</text>
+<text x="1025.0" y="526.0" font-size="11.5" fill="#5B6B7C" >enhancement above 20.1% and 33.9%.</text>
+<text x="1025.0" y="556.0" font-size="11.5" fill="#243247" >Reading: no detectable program-level difference; the HECA bound is wide.</text>
+<line x1="35.00" y1="590.00" x2="1465.00" y2="590.00" stroke="#dce2e9" stroke-width="1" />
+<text x="35.0" y="610.0" font-size="11" fill="#5B6B7C" >Sources: reports/mde_analysis (v1 and phase MDE summaries, subsampling curves), reports/secretory_program (summaries), receipts/phase_positive_control_evaluation.json, reports/replication_v2_dossier_pool.tsv.</text>
+<text x="35.0" y="628.0" font-size="11" fill="#5B6B7C" >Rules for every analysis were frozen and hashed before data; v1 artifacts unchanged. Receipt: receipts/summary_figure_follow_on_v1.json. Nothing here is disease evidence or a target claim.</text>
+</g></svg>

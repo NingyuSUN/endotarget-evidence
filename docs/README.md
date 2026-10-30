@@ -44,7 +44,7 @@ summarizes them.
 - [Scientific package lock](../requirements/statistical-runtime.explicit.txt)
 - [Actual container primary replay](../receipts/local_primary_container_replay.json)
 - [Continuous software checks](../.github/workflows/ci.yml) — on every push: synthetic unit tests via [`scripts/run_unit_tests.py`](../scripts/run_unit_tests.py) (Python 3.10 on the pinned probe lock; R on Bioconductor 3.20) and a [Markdown link check](../scripts/check_markdown_links.py); the tests that read a commit of the original pre-revision history and one test that calls a host-specific interpreter are skipped by name with the reason printed
-- [Citation metadata](../CITATION.cff)
+- [Citation metadata](../CITATION.cff) and [changelog](../CHANGELOG.md)
 - [AWS portability plan — unexecuted](AWS_DEPLOYMENT.md)
 
 A Git clone does not contain the large count matrices, runtime assets or complete

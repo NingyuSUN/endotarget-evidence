@@ -9,6 +9,8 @@
 [![Docker：本地复现已核验](https://img.shields.io/badge/Docker-local_replay_verified-287C72)](receipts/local_primary_container_replay.json)
 [![CI](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml/badge.svg)](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml)
 [![引用：CITATION.cff](https://img.shields.io/badge/cite-CITATION.cff-466A83)](CITATION.cff)
+[![版本](https://img.shields.io/github/v/release/NingyuSUN/endotarget-evidence?label=release&color=466A83)](https://github.com/NingyuSUN/endotarget-evidence/releases/latest)
+[![许可：MIT](https://img.shields.io/badge/license-MIT-466A83)](LICENSE)
 
 生物网络能否帮助筛出在另一项研究中仍保留疾病表达关联的基因？本项目比较表达排序与两种网络基线，在另一子宫内膜队列中评价冻结的候选名单，再单独整理遗传证据，形成可追溯的研究判断。
 
@@ -71,6 +73,10 @@ G1 是固定图算法，没有模型训练或参数搜索。无法在外部评�
 
 2026 年 10 月 26–27 日新增四项预先规定的分析，每项都在计算任何新数值之前冻结并哈希记录规则、输入和阈值。它们原样复用 v1 估计流程，不重新拟合疾病模型，所有 v1 产物逐字节不变，也不提名任何基因。分泌期基因不是内异症基因；阳性对照名单是周期生物学，不是候选名单。
 
+![后续分析一览图：疾病对比与周期分期对比各检出多少基因、分期程序随供者数的召回曲线、分泌期程序的疾病交互项及其可检出效应](reports/figures/follow_on_summary_v1.svg)
+
+图由[仅用标准库的脚本](scripts/render_summary_figure_follow_on_v1.py)从已发布的汇总文件绘制，[回执](receipts/summary_figure_follow_on_v1.json)记录了图中每个数字；没有重跑任何模型。
+
 | 分析 | 结果 | 界定了什么 |
 |---|---|---|
 | **分期阳性对照：** 同一 v1 流程比较增殖期与分泌期供者（35 与 42 名） | **7,367 与 3,986** 个基因 BH q < 0.05；冻结的表达前 20 名在外部队列 **20 / 20** 同向且全部 q < 0.05；G1 减 B0 −37 个百分点，95% 区间 −53 至 −21 | 流程在这一样本量下能检出并跨队列传递大型供者级程序，疾病对比的零结果不是流程不灵敏。即使信号很强，网络传播的传递仍差于表达排序。 |
@@ -119,6 +125,23 @@ cd endotarget-evidence
 - 遗传证据限定于一项 2023 年研究。缺少映射不等于阴性证据，表达关联不等于因果关系，也不能确定激活或抑制策略。
 - 后续分析给出的是边界和对照，不是疾病证据。最小可检出效应量以原拟合的方差估计为条件；分泌期程序对比只有 13 与 20 名分泌期供者，其中对照 6 与 4 名；队列审计依赖 HECA 作者整理的临床字段。低于所述边界的效应并未被证明不存在。
 - 本项目用于早期靶点证据评估，不生成药物分子或抗体，没有训练 GNN 或基础模型，也没有验证治疗效果。AWS 部署尚未执行。
+
+## 引用
+
+请引用带标签的版本；元数据见 [CITATION.cff](CITATION.cff)，各版本内容见[更新日志](CHANGELOG.md)和[发布页](https://github.com/NingyuSUN/endotarget-evidence/releases)。
+
+> Sun N. (2026). EndoTarget Evidence: cross-study target prioritization in endometriosis using donor-level transcriptomics and network analysis (version 1.0.0). https://github.com/NingyuSUN/endotarget-evidence
+
+```bibtex
+@misc{sun2026endotarget,
+  author = {Sun, Ningyu},
+  title  = {EndoTarget Evidence: cross-study target prioritization in endometriosis using donor-level transcriptomics and network analysis},
+  year   = {2026},
+  month  = {10},
+  note   = {Version 1.0.0},
+  url    = {https://github.com/NingyuSUN/endotarget-evidence}
+}
+```
 
 ## 许可
 

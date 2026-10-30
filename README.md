@@ -9,6 +9,8 @@
 [![Docker: local replay verified](https://img.shields.io/badge/Docker-local_replay_verified-287C72)](receipts/local_primary_container_replay.json)
 [![CI](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml/badge.svg)](https://github.com/NingyuSUN/endotarget-evidence/actions/workflows/ci.yml)
 [![Cite: CITATION.cff](https://img.shields.io/badge/cite-CITATION.cff-466A83)](CITATION.cff)
+[![Release](https://img.shields.io/github/v/release/NingyuSUN/endotarget-evidence?label=release&color=466A83)](https://github.com/NingyuSUN/endotarget-evidence/releases/latest)
+[![License: MIT](https://img.shields.io/badge/license-MIT-466A83)](LICENSE)
 
 Can a biological network improve which disease-associated genes reproduce in another study? EndoTarget Evidence compares expression ranking with two network baselines, evaluates the frozen candidate lists in a separate endometrial cohort, and adds a traceable genetic-evidence assessment.
 
@@ -71,6 +73,10 @@ The separate genetic assessment retains all 40 frozen candidate-pool genes: one 
 
 Four prespecified analyses were added on 26–27 October 2026, each with rules, inputs and thresholds frozen and hashed before any new value was computed. They reuse the v1 estimator unchanged, refit no disease model and leave every v1 artifact byte-identical. None nominates a gene. Secretory-phase genes are not endometriosis genes; the positive-control lists are cycle biology, not a shortlist.
 
+![One-glance summary of the follow-on analyses: genes detected in the disease versus cycle-phase contrasts, recovery of the phase program by donor number, and the secretory program disease interaction with its detectable effect](reports/figures/follow_on_summary_v1.svg)
+
+The figure is rendered from the published summaries by a [standard-library script](scripts/render_summary_figure_follow_on_v1.py) with a [receipt](receipts/summary_figure_follow_on_v1.json) that records every number drawn; no model was rerun.
+
 | Analysis | Result | What it bounds |
 |---|---|---|
 | **Phase positive control:** the v1 pipeline on proliferative versus secretory donors (35 and 42) | **7,367 and 3,986** genes at BH q < 0.05; the frozen expression top-20 transfers **20 / 20** same direction, all at external q < 0.05; G1 minus B0 −37 points, 95% interval −53 to −21 | The pipeline detects and transfers a large donor-level program at these sample sizes, so the disease null is not pipeline insensitivity. Propagation transfers worse than expression ranking even with a strong signal. |
@@ -119,6 +125,23 @@ cd endotarget-evidence
 - Genetic annotations cover one selected 2023 publication. Missing mapping is not negative genetic evidence, and expression association does not determine causality or an activation/inhibition strategy.
 - The follow-on analyses are bounds and controls, not disease evidence. Minimum detectable effects are conditional on the realized variance estimates of the original fits; the secretory program contrast rests on 13 and 20 secretory donors, 6 and 4 of them controls; the cohort audit relies on the HECA authors' curation of clinical fields. Effects below the stated bounds are not shown to be absent.
 - The project evaluates evidence for early target prioritization. It does not generate molecules or antibodies, train a GNN or foundation model, or demonstrate therapeutic efficacy. AWS deployment has not been executed.
+
+## Citation
+
+Cite the tagged release; the metadata is in [CITATION.cff](CITATION.cff) and each version is listed in the [changelog](CHANGELOG.md) and on the [releases page](https://github.com/NingyuSUN/endotarget-evidence/releases).
+
+> Sun N. (2026). EndoTarget Evidence: cross-study target prioritization in endometriosis using donor-level transcriptomics and network analysis (version 1.0.0). https://github.com/NingyuSUN/endotarget-evidence
+
+```bibtex
+@misc{sun2026endotarget,
+  author = {Sun, Ningyu},
+  title  = {EndoTarget Evidence: cross-study target prioritization in endometriosis using donor-level transcriptomics and network analysis},
+  year   = {2026},
+  month  = {10},
+  note   = {Version 1.0.0},
+  url    = {https://github.com/NingyuSUN/endotarget-evidence}
+}
+```
 
 ## License
 
