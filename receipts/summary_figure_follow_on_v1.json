@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "created_utc": "2026-10-30T08:23:06.447628+00:00",
+  "created_utc": "2026-10-30T08:37:03.758092+00:00",
   "purpose": "Render one summary figure of the follow-on analyses from published summaries and receipts; no scientific model rerun",
   "input_sha256": {
     "reports/mde_analysis/v1_discovery_summary.json": "319061e21414b6c3e204a512f26a49cac816f703d0099ce9c6905cec03a8a2cc",
@@ -14,7 +14,7 @@
     "receipts/phase_positive_control_evaluation.json": "5e98470fe2351b33e447983889f5f11e5d5853e533bfe624f15e70f516aa98dd",
     "reports/replication_v2_dossier_pool.tsv": "7d6a35f4d89cf66dc6c0c44fd024e4801edc3329869f964d19015ffc6123678d"
   },
-  "script_sha256": "3e54bb3597f2e870e880cb77f560c51be54c7204c18c5376c540a3f4f0889e6d",
+  "script_sha256": "833618f95727ee570835b4c1b48a959d2295640e615a2f07fdcc01cecae59306",
   "output": "reports/figures/follow_on_summary_v1.svg",
   "output_sha256": "c0c963dded2cebcaf82a3dcd30bb0f14e4aadd65ced7a57a0423f35d59cc1649",
   "numbers_drawn": {

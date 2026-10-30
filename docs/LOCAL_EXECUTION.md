@@ -13,6 +13,7 @@ and the scope of the completed checks.
 | Image identity | Actual registry index, amd64 manifest, configuration and pulled identity verified | [Manifest receipt](../receipts/local_container_manifest.json) |
 | Synthetic workflow and resume | Five fresh tasks and five cached tasks completed; all 34 scientific TSVs compared | [Synthetic receipt](../receipts/local_container_nextflow.json) |
 | Real primary reproduction | Five fresh tasks completed; 34 scientific TSVs and eight JSON result metadata files matched | [Primary replay receipt](../receipts/local_primary_container_replay.json) |
+| Continuous software checks | On every push: synthetic unit tests (Python 3.10 on the pinned probe lock, with the checkout bind-mounted at the documented project path; R on the Bioconductor 3.20 release series) and a Markdown link check; software checks only, no scientific rerun | [Workflow](../.github/workflows/ci.yml), [test runner](../scripts/run_unit_tests.py) |
 
 For the real replay, identifiers, counts, ranks, directions and filter decisions
 matched exactly. Continuous scientific values used absolute tolerance 1e-8 and

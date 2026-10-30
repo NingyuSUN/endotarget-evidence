@@ -4,26 +4,27 @@
 Standard library only. Historical copies under docs/archive/ keep the links of
 their recorded version and are skipped. External URLs, mailto links and
 in-page anchors are not checked. Exit status 1 when any link is broken.
+``--root`` checks another git checkout (the boundary tests use a temporary one).
 """
-import pathlib, re, subprocess, sys, urllib.parse
+import argparse, pathlib, re, subprocess, sys, urllib.parse
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SKIP_PREFIXES = ("docs/archive/",)
 LINK = re.compile(r"\]\(([^)\s]+)(?:\s+\"[^\"]*\")?\)")
 
 
-def tracked_markdown():
-    out = subprocess.run(["git", "ls-files", "*.md", "**/*.md"], cwd=ROOT, check=True,
+def tracked_markdown(root):
+    out = subprocess.run(["git", "ls-files", "*.md", "**/*.md"], cwd=root, check=True,
                          capture_output=True, text=True).stdout
     return sorted({line.strip() for line in out.splitlines() if line.strip()})
 
 
-def main():
+def main(root=ROOT):
     broken, checked = [], 0
-    for rel in tracked_markdown():
+    for rel in tracked_markdown(root):
         if rel.startswith(SKIP_PREFIXES):
             continue
-        path = ROOT / rel
+        path = root / rel
         text = path.read_text(encoding="utf-8", errors="replace")
         for match in LINK.finditer(text):
             target = match.group(1)
@@ -42,4 +43,7 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--root", help="git checkout to check (default: this repository)")
+    args = ap.parse_args()
+    sys.exit(main(pathlib.Path(args.root).resolve() if args.root else ROOT))

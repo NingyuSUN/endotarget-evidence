@@ -88,7 +88,12 @@ research brief present the completed study.
   summaries and receipts by a standard-library script with its own
   [receipt](../receipts/summary_figure_follow_on_v1.json); a changelog and a
   citation section were added to both README homepages, and the evidence index
-  gained rows for the follow-on analyses. No scientific value changed.
+  gained rows for the follow-on analyses. The figure renderer and the link
+  checker take a `--root` argument so that boundary tests
+  (`tests/test_render_summary_figure_follow_on.py`,
+  `tests/test_check_markdown_links.py`) can exercise them on temporary copies;
+  the renderer refuses inputs that disagree with each other or with the frozen
+  results. No scientific value changed.
 
 Some frozen documents include status statements and relative links appropriate to
 their original version; they are not current execution instructions. The
