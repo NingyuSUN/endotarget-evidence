@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-02T01:14:25.570561+00:00",
+  "purpose": "gene sets for the genetic set-level test, built before the freeze; no test statistic read",
+  "supplement": {
+    "path": "data/genetics/41588_2023_1323_MOESM4_ESM.xlsx",
+    "sha256": "01cc0de4f3cb9aeec523ba312a17b931606d627e17e83581700b559741c7585e"
+  },
+  "hgnc": {
+    "path": "data/reference/gene_annotation/hgnc_complete_set_2026-10-06.tsv",
+    "sha256_lf_normalized": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d"
+  },
+  "opentargets": {
+    "url": "https://api.platform.opentargets.org/api/v4/graphql",
+    "disease": "MONDO_0005133",
+    "fetched_utc": "2026-11-02T01:14:25.434849+00:00",
+    "count": 3569,
+    "meta": {
+      "apiVersion": {
+        "x": "26",
+        "y": "9",
+        "z": "0"
+      },
+      "dataVersion": {
+        "year": "26",
+        "month": "09",
+        "iteration": null
+      }
+    },
+    "raw_saved": "data/genetics/opentargets_endometriosis_associations.json",
+    "raw_sha256": "dac08d77bd847936789040fe9749fa689b3b9c0f334bbdd81ec5150bb6c97b81"
+  },
+  "set_sizes": {
+    "rahmioglu_nearest": {
+      "source_symbols_or_ids": 102,
+      "mapped_unique_ensembl": 100
+    },
+    "rahmioglu_smr": {
+      "source_symbols_or_ids": 20,
+      "mapped_unique_ensembl": 18
+    },
+    "opentargets_genetic_any": {
+      "source_symbols_or_ids": 356,
+      "mapped_unique_ensembl": 356
+    },
+    "opentargets_genetic_0.5": {
+      "source_symbols_or_ids": 55,
+      "mapped_unique_ensembl": 55
+    }
+  },
+  "unmapped_symbols": 4,
+  "outputs_sha256_lf": {
+    "reports/genetic_set_test/gene_sets.tsv": "73ac9d5cd5712a103394ed7898c48c61c1ff6d6e4a565017c786c15ef9e206db",
+    "reports/genetic_set_test/opentargets_endometriosis_targets.tsv": "8f9d9b65135b27af4cd86b9970dfdf71b524e82606964f1de8bf850f9a707480",
+    "reports/genetic_set_test/unmapped_symbols.tsv": "4ef848fc641bea95be7e4d3eccb0d84828f1ad5a58ceedeb13320c12b6f19f5b"
+  }
+}

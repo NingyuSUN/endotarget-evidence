@@ -1,0 +1,40 @@
+{
+  "analysis": "GENETIC_SET_TEST",
+  "protocol": "docs/GENETIC_SET_TEST_PROTOCOL.md",
+  "synthetic": false,
+  "inputs": {
+    "gene_sets": {"path": "reports/genetic_set_test/gene_sets.tsv", "sha256": "73ac9d5cd5712a103394ed7898c48c61c1ff6d6e4a565017c786c15ef9e206db", "built_by": "scripts/genetic_set_build.py", "build_receipt": "receipts/genetic_set_build.json"},
+    "combined_per_gene": {"path": "reports/combined_bound/combined_per_gene.tsv.gz", "sha256": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b", "listed_in": "receipts/combined_bound_results.json"},
+    "discovery_mde_table": {"path": "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz", "sha256": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a", "listed_in": "receipts/mde_analysis_results.json", "use": "expression_bin per gene"}
+  },
+  "hash_note": "SHA-256 of file bytes with CRLF normalized to LF for text files (scripts/followon_freeze.py)",
+  "set_order": ["rahmioglu_nearest", "rahmioglu_smr", "opentargets_genetic_any", "opentargets_genetic_0.5"],
+  "parameters": {
+    "seed": 20261102,
+    "matched_draws": 10000,
+    "minimum_family_genes": 10,
+    "label_alpha": 0.01,
+    "label_percentile": 99
+  },
+  "software": {"python": "3.10", "numpy": "2.2.6", "scipy": "1.15.2"},
+  "freeze": {
+    "phase": "GENETIC_SET_TEST_RULES_FROZEN_PRE_ANALYSIS",
+    "files": ["scripts/genetic_set_test_analysis.py", "scripts/genetic_set_build.py", "scripts/followon_freeze.py", "tests/test_genetic_set_test.py", "receipts/genetic_set_build.json"],
+    "attestations": [
+      "the gene sets were built and published before this receipt; no set-level statistic had been computed",
+      "the family and the per-gene statistics are the published combined-bound table; nothing is refitted",
+      "the label uses the pooled statistic only; per-cohort tests and sign agreement are secondary"
+    ]
+  },
+  "results_phase": "GENETIC_SET_TEST_COMPLETED",
+  "outputs": {
+    "directory": "reports/genetic_set_test",
+    "set_results": "reports/genetic_set_test/set_results.tsv",
+    "set_members": "reports/genetic_set_test/set_members.tsv",
+    "summary": "reports/genetic_set_test/summary.json",
+    "results_receipt": "receipts/genetic_set_test_results.json",
+    "freeze_receipt": "receipts/genetic_set_test_freeze.json",
+    "report": "reports/genetic_set_test_results.md",
+    "refuse_if_exists": ["receipts/genetic_set_test_results.json", "reports/genetic_set_test/summary.json"]
+  }
+}
