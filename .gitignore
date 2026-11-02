@@ -17,3 +17,7 @@ __pycache__/
 envs/
 cache/
 tmp/
+
+# Third-party papers and tools for literature work (copyright); receipts are tracked in manifests/
+reference/papers/
+reference/tools/

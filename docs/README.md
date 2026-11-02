@@ -15,6 +15,7 @@ summarizes them.
 - [External evaluation and donor sensitivity, Chinese/English generated report](../reports/replication_v2_results.md)
 - [Clinical sensitivity analyses, Chinese generated report](../reports/clinical_sensitivity_report.md)
 - [Stromal composition](../reports/stromal_composition.md) and [genetic evidence](../reports/genetic_evidence_report.md)
+- [Literature context](../reports/literature_context.md) — where the donor-level null, the composition and secretory-program results and the genetic set test sit among published eutopic endometrium transcriptome studies; built from locally downloaded full texts with receipts ([candidates](../manifests/literature_candidates.tsv), [receipts](../manifests/literature_receipts.tsv))
 - [Phase positive-control results](../reports/phase_positive_control_results.md) — the same pipeline on a proliferative-versus-secretory contrast: 7,367 and 3,986 genes at BH q<0.05, the frozen top-20 transfers 20/20; the v1 disease null is not pipeline insensitivity
 
 ## Methods and source evidence

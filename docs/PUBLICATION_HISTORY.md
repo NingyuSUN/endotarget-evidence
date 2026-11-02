@@ -108,6 +108,11 @@ research brief present the completed study.
   receipts, reports and documentation. Hashes of text inputs in these analyses are
   computed with CRLF normalized to LF (`scripts/followon_freeze.py`) so that pins agree
   between Windows and Linux checkouts.
+- **2 November 2026, literature.** `reports/literature_context.md` positions the results
+  among published eutopic endometrium studies. Full texts were downloaded through Europe PMC
+  and NCBI PMC into the git-ignored `reference/papers/` folders with per-attempt receipts in
+  `manifests/literature_receipts.tsv`; claims are marked as read from a local full text or
+  from a PubMed abstract only. Third-party copies are not committed.
 
 Some frozen documents
 
