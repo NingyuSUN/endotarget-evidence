@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-02T03:04:49.070010+00:00",
+  "freeze_sha256": "8744fc254b77c23bf922b00e51302ed53614f861f5c41026842ac338969d5ce6",
+  "files": {
+    "GSE51981_series_matrix.txt.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE51nnn/GSE51981/matrix/GSE51981_series_matrix.txt.gz",
+      "http_status": 200,
+      "bytes": 27099296,
+      "sha256": "810e560c2b10dabb2f92dde03f64a2f9af4d72d51360f29c102569942dd84211",
+      "utc": "2026-11-02T03:04:33.003529+00:00"
+    },
+    "GSE6364_series_matrix.txt.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE6nnn/GSE6364/matrix/GSE6364_series_matrix.txt.gz",
+      "http_status": 200,
+      "bytes": 4665610,
+      "sha256": "b96db29937984402dc4fd13efdf6c609d1b58c007d11336a533fef1c86ccf7da",
+      "utc": "2026-11-02T03:04:34.807195+00:00"
+    },
+    "GPL570.annot.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPLnnn/GPL570/annot/GPL570.annot.gz",
+      "http_status": 200,
+      "bytes": 8471521,
+      "sha256": "d7cd44352127b1e34f3a720ebea86093ef255a38f1612a85a2962b71bde8f394",
+      "utc": "2026-11-02T03:04:36.841360+00:00"
+    },
+    "GSE141549_batchCorrectednormalizedArrayscombined.xlsx": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141549/suppl/GSE141549_batchCorrectednormalizedArrayscombined.xlsx",
+      "http_status": 200,
+      "bytes": 153632401,
+      "sha256": "9919fc5d6d6c09dbdae5a815da798b8250edf17a781fdb86dc25c2f9c9b21d50",
+      "utc": "2026-11-02T03:04:46.287003+00:00"
+    },
+    "GSE141549_Sample_link.xlsx": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141549/suppl/GSE141549_Sample_link.xlsx",
+      "http_status": 200,
+      "bytes": 19153,
+      "sha256": "44cad654a10df5def4b79356f5c0cb2845f66ee9b699372bd1dd0871bd215018",
+      "utc": "2026-11-02T03:04:46.894552+00:00"
+    },
+    "GPL10558.annot.gz": {
+      "url": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/annot/GPL10558.annot.gz",
+      "http_status": 200,
+      "bytes": 7290886,
+      "sha256": "c914fdbe1130906ce3b9c97f5a75280591c89c617c168fb687c641f683e76b45",
+      "utc": "2026-11-02T03:04:48.895780+00:00"
+    }
+  },
+  "hgnc": {
+    "path": "data/reference/gene_annotation/hgnc_complete_set_2026-10-06.tsv",
+    "sha256_lf": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d"
+  },
+  "note": "downloaded after the freeze; no expression value parsed by this script"
+}

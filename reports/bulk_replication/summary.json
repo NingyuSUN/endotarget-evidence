@@ -1,0 +1,755 @@
+{
+  "analysis": "BULK_REPLICATION",
+  "synthetic": false,
+  "series": {
+    "GSE51981": {
+      "series": "GSE51981",
+      "role": "primary",
+      "n_genes": 19823,
+      "n_samples": 144,
+      "groups": {
+        "proliferative_ENDO": 29,
+        "proliferative_non_ENDO": 35,
+        "secretory_ENDO": 46,
+        "secretory_non_ENDO": 34
+      },
+      "E1": {
+        "heca_program": {
+          "genes_in_program": 3986,
+          "genes_in_family": 3574,
+          "gate": {
+            "status": "ESTIMATED",
+            "n": 144,
+            "df": 141,
+            "estimate": 0.5210375364003538,
+            "se": 0.03093487344470595,
+            "t": 16.843047291972088,
+            "p": 1.424537429252073e-35,
+            "ci_low": 0.4598814109910083,
+            "ci_high": 0.5821936618096992,
+            "auc": 0.959765625,
+            "pass": true
+          },
+          "score_means": {
+            "proliferative_non_ENDO": -3.251367429259387e-17,
+            "proliferative_ENDO": 0.10246901579022065,
+            "secretory_non_ENDO": 0.5653067455753388,
+            "secretory_ENDO": 0.5805820696615404
+          },
+          "projection_vs_mean_signed_shift_correlation": 0.999317609933139,
+          "M1_theta": {
+            "status": "ESTIMATED",
+            "n": 144,
+            "df": 140,
+            "estimate": -0.08719369170401917,
+            "se": 0.06165889522591048,
+            "t": -1.4141299707779775,
+            "p": 0.1595437289608356,
+            "ci_low": -0.20909663985950744,
+            "ci_high": 0.034709256451469106,
+            "mde": 0.1739387019992846,
+            "relative_to_shift": {
+              "ci_low_share": -0.4013082076659486,
+              "ci_high_share": 0.06661565439461789
+            }
+          },
+          "M2_secretory_delta": {
+            "status": "ESTIMATED",
+            "n": 80,
+            "df": 78,
+            "estimate": 0.015275324086201641,
+            "se": 0.04907764680726498,
+            "t": 0.31124809521104485,
+            "p": 0.7564423552493061,
+            "ci_low": -0.08243076520421726,
+            "ci_high": 0.11298141337662053
+          },
+          "M2_subphase_adjusted": {
+            "status": "ESTIMATED",
+            "n": 80,
+            "df": 77,
+            "estimate": 0.026575625933671403,
+            "se": 0.036917770671207426,
+            "t": 0.71985998749372,
+            "p": 0.47379062372462066,
+            "ci_low": -0.04693704718331077,
+            "ci_high": 0.10008829905065358
+          },
+          "label": "no_detectable_difference"
+        },
+        "discovery_program": {
+          "genes_in_program": 7367,
+          "genes_in_family": 6537,
+          "gate": {
+            "status": "ESTIMATED",
+            "n": 144,
+            "df": 141,
+            "estimate": 0.39917561621793596,
+            "se": 0.02352394523521743,
+            "t": 16.968906032833928,
+            "p": 7.036449641317581e-36,
+            "ci_low": 0.3526703881458382,
+            "ci_high": 0.44568084429003374,
+            "auc": 0.9634765625,
+            "pass": true
+          },
+          "score_means": {
+            "proliferative_non_ENDO": 4.758098676964957e-18,
+            "proliferative_ENDO": 0.049112040949829724,
+            "secretory_non_ENDO": 0.4222541360840358,
+            "secretory_ENDO": 0.4259101731049117
+          },
+          "projection_vs_mean_signed_shift_correlation": 0.9944353481277252,
+          "M1_theta": {
+            "status": "ESTIMATED",
+            "n": 144,
+            "df": 140,
+            "estimate": -0.04545600392895388,
+            "se": 0.04706470212808889,
+            "t": -0.965819433112381,
+            "p": 0.33579995301860144,
+            "ci_low": -0.13850544833520012,
+            "ci_high": 0.047593440477292345,
+            "mde": 0.13276872976962856,
+            "relative_to_shift": {
+              "ci_low_share": -0.3469787299321935,
+              "ci_high_share": 0.11922932800411333
+            }
+          },
+          "M2_secretory_delta": {
+            "status": "ESTIMATED",
+            "n": 80,
+            "df": 78,
+            "estimate": 0.003656037020875971,
+            "se": 0.03829498869425294,
+            "t": 0.09547037734012036,
+            "p": 0.9241860701116233,
+            "ci_low": -0.07258342897125432,
+            "ci_high": 0.07989550301300626
+          },
+          "M2_subphase_adjusted": {
+            "status": "ESTIMATED",
+            "n": 80,
+            "df": 77,
+            "estimate": 0.012145625154073024,
+            "se": 0.029628794273848864,
+            "t": 0.4099264061107294,
+            "p": 0.6829981987125242,
+            "ci_low": -0.04685284167378672,
+            "ci_high": 0.07114409198193276
+          },
+          "label": "no_detectable_difference"
+        }
+      },
+      "E2": {
+        "all_non_ENDO": {
+          "same_direction": 12,
+          "evaluable": 20,
+          "selected": 20,
+          "missing_bounds": [
+            0.6,
+            0.6
+          ],
+          "matched_percentile": 80.76,
+          "matched_reference_mean": 9.5677,
+          "label": "does_not_transfer",
+          "genes": [
+            {
+              "gene_id": "ENSG00000138496",
+              "discovery_sign": 1,
+              "bulk_coef": -1.5020171009793128,
+              "bulk_q": 7.06406546043636e-209
+            },
+            {
+              "gene_id": "ENSG00000180592",
+              "discovery_sign": -1,
+              "bulk_coef": -0.05437679073202012,
+              "bulk_q": 0.33410838387178887
+            },
+            {
+              "gene_id": "ENSG00000132406",
+              "discovery_sign": -1,
+              "bulk_coef": -0.6286263339408892,
+              "bulk_q": 5.006276437618535e-38
+            },
+            {
+              "gene_id": "ENSG00000197785",
+              "discovery_sign": 1,
+              "bulk_coef": 0.6889204978945808,
+              "bulk_q": 2.323925384381158e-45
+            },
+            {
+              "gene_id": "ENSG00000180900",
+              "discovery_sign": 1,
+              "bulk_coef": 0.6271045781665,
+              "bulk_q": 7.5229809333842e-38
+            },
+            {
+              "gene_id": "ENSG00000168268",
+              "discovery_sign": 1,
+              "bulk_coef": 0.5461682337783234,
+              "bulk_q": 4.522612569816127e-29
+            },
+            {
+              "gene_id": "ENSG00000182195",
+              "discovery_sign": -1,
+              "bulk_coef": 1.0388246746187182,
+              "bulk_q": 5.996930347295904e-101
+            },
+            {
+              "gene_id": "ENSG00000168589",
+              "discovery_sign": -1,
+              "bulk_coef": -0.4480585778128073,
+              "bulk_q": 5.0217929703952386e-20
+            },
+            {
+              "gene_id": "ENSG00000184979",
+              "discovery_sign": 1,
+              "bulk_coef": -0.44951615587290605,
+              "bulk_q": 3.7962026175047674e-20
+            },
+            {
+              "gene_id": "ENSG00000104870",
+              "discovery_sign": -1,
+              "bulk_coef": 0.8421411936581283,
+              "bulk_q": 5.736654251512984e-67
+            },
+            {
+              "gene_id": "ENSG00000183508",
+              "discovery_sign": -1,
+              "bulk_coef": -0.9169943723369457,
+              "bulk_q": 4.511636036578357e-79
+            },
+            {
+              "gene_id": "ENSG00000138036",
+              "discovery_sign": -1,
+              "bulk_coef": -0.7457503428798025,
+              "bulk_q": 7.09465754134613e-53
+            },
+            {
+              "gene_id": "ENSG00000247077",
+              "discovery_sign": 1,
+              "bulk_coef": 0.7422556869004919,
+              "bulk_q": 2.1362081455653783e-52
+            },
+            {
+              "gene_id": "ENSG00000143549",
+              "discovery_sign": 1,
+              "bulk_coef": -0.697041397221673,
+              "bulk_q": 2.1308933228264143e-46
+            },
+            {
+              "gene_id": "ENSG00000086015",
+              "discovery_sign": 1,
+              "bulk_coef": -0.15684618272019846,
+              "bulk_q": 0.0018101625988585503
+            },
+            {
+              "gene_id": "ENSG00000176014",
+              "discovery_sign": 1,
+              "bulk_coef": -0.34110812948473296,
+              "bulk_q": 3.638933756874443e-12
+            },
+            {
+              "gene_id": "ENSG00000129250",
+              "discovery_sign": 1,
+              "bulk_coef": 0.4062142602610826,
+              "bulk_q": 1.0558484937689796e-16
+            },
+            {
+              "gene_id": "ENSG00000183048",
+              "discovery_sign": 1,
+              "bulk_coef": 0.976059470124136,
+              "bulk_q": 2.4426270995976535e-89
+            },
+            {
+              "gene_id": "ENSG00000115267",
+              "discovery_sign": 1,
+              "bulk_coef": -1.164463136872905,
+              "bulk_q": 2.467051902756019e-126
+            },
+            {
+              "gene_id": "ENSG00000167077",
+              "discovery_sign": 1,
+              "bulk_coef": 0.15294977430049264,
+              "bulk_q": 0.002380515863664123
+            }
+          ]
+        },
+        "other_pathology_controls_only": {
+          "same_direction": 7,
+          "evaluable": 20,
+          "selected": 20,
+          "missing_bounds": [
+            0.35,
+            0.35
+          ],
+          "matched_percentile": 20.78,
+          "matched_reference_mean": 8.001,
+          "label": "does_not_transfer",
+          "genes": [
+            {
+              "gene_id": "ENSG00000138496",
+              "discovery_sign": 1,
+              "bulk_coef": -0.5826044401793117,
+              "bulk_q": 1.2169649986339435e-25
+            },
+            {
+              "gene_id": "ENSG00000180592",
+              "discovery_sign": -1,
+              "bulk_coef": 0.08807114242988512,
+              "bulk_q": 0.16532449731184184
+            },
+            {
+              "gene_id": "ENSG00000132406",
+              "discovery_sign": -1,
+              "bulk_coef": -0.206868187388508,
+              "bulk_q": 0.00034837854351146505
+            },
+            {
+              "gene_id": "ENSG00000197785",
+              "discovery_sign": 1,
+              "bulk_coef": -0.2808410735816107,
+              "bulk_q": 8.026402015590917e-07
+            },
+            {
+              "gene_id": "ENSG00000180900",
+              "discovery_sign": 1,
+              "bulk_coef": -0.3054521495287372,
+              "bulk_q": 7.228491925195763e-08
+            },
+            {
+              "gene_id": "ENSG00000168268",
+              "discovery_sign": 1,
+              "bulk_coef": -0.434069205926438,
+              "bulk_q": 9.772474386002593e-15
+            },
+            {
+              "gene_id": "ENSG00000182195",
+              "discovery_sign": -1,
+              "bulk_coef": -0.10698568305746985,
+              "bulk_q": 0.08277535250053006
+            },
+            {
+              "gene_id": "ENSG00000168589",
+              "discovery_sign": -1,
+              "bulk_coef": -0.2722742375080467,
+              "bulk_q": 1.7738385474076872e-06
+            },
+            {
+              "gene_id": "ENSG00000184979",
+              "discovery_sign": 1,
+              "bulk_coef": -0.4679045130919537,
+              "bulk_q": 6.161391612825899e-17
+            },
+            {
+              "gene_id": "ENSG00000104870",
+              "discovery_sign": -1,
+              "bulk_coef": -0.03314874042758823,
+              "bulk_q": 0.6881366216882436
+            },
+            {
+              "gene_id": "ENSG00000183508",
+              "discovery_sign": -1,
+              "bulk_coef": -0.2199394592321832,
+              "bulk_q": 0.00013527192051058625
+            },
+            {
+              "gene_id": "ENSG00000138036",
+              "discovery_sign": -1,
+              "bulk_coef": 0.15212248503448325,
+              "bulk_q": 0.010209963643993219
+            },
+            {
+              "gene_id": "ENSG00000247077",
+              "discovery_sign": 1,
+              "bulk_coef": -0.00706182508046041,
+              "bulk_q": 0.9945240787106033
+            },
+            {
+              "gene_id": "ENSG00000143549",
+              "discovery_sign": 1,
+              "bulk_coef": -0.3960643757930979,
+              "bulk_q": 1.8429299448308608e-12
+            },
+            {
+              "gene_id": "ENSG00000086015",
+              "discovery_sign": 1,
+              "bulk_coef": -0.23093339310114852,
+              "bulk_q": 5.848603666185009e-05
+            },
+            {
+              "gene_id": "ENSG00000176014",
+              "discovery_sign": 1,
+              "bulk_coef": -0.8850804334942548,
+              "bulk_q": 6.95755359055249e-58
+            },
+            {
+              "gene_id": "ENSG00000129250",
+              "discovery_sign": 1,
+              "bulk_coef": -0.1514483695770125,
+              "bulk_q": 0.01058345600419245
+            },
+            {
+              "gene_id": "ENSG00000183048",
+              "discovery_sign": 1,
+              "bulk_coef": 0.16207964739080383,
+              "bulk_q": 0.005922368402879943
+            },
+            {
+              "gene_id": "ENSG00000115267",
+              "discovery_sign": 1,
+              "bulk_coef": -0.14342589309195175,
+              "bulk_q": 0.01604219878965205
+            },
+            {
+              "gene_id": "ENSG00000167077",
+              "discovery_sign": 1,
+              "bulk_coef": 0.034746433386207684,
+              "bulk_q": 0.6682578860792587
+            }
+          ]
+        }
+      },
+      "E3": {
+        "all_non_ENDO": {
+          "n_ENDO": 29,
+          "n_non_ENDO": 35,
+          "df_residual": 62,
+          "prior_df": 503625644684287.1,
+          "genes_BH_q_lt_0_05": 14311,
+          "min_q": 0.0,
+          "median_mde_log2": 0.13575917916840977,
+          "median_mde_fold": 1.0986708074355345,
+          "ci_within_1_log2_share": 0.8310548352923371,
+          "shared_with_pooled_single_cell": 14202,
+          "spearman_t_vs_pooled": 0.13214295503260312,
+          "sign_agreement_with_pooled": 0.55210533727644
+        },
+        "other_pathology_controls_only": {
+          "n_ENDO": 29,
+          "n_non_ENDO": 15,
+          "df_residual": 42,
+          "prior_df": 504446498752647.0,
+          "genes_BH_q_lt_0_05": 11209,
+          "min_q": 0.0,
+          "median_mde_log2": 0.1522795135356764,
+          "median_mde_fold": 1.1113240201809813,
+          "ci_within_1_log2_share": 0.9822932956666498,
+          "shared_with_pooled_single_cell": 14202,
+          "spearman_t_vs_pooled": -0.21323710429279677,
+          "sign_agreement_with_pooled": 0.43198141106886356
+        }
+      },
+      "excluded_samples": 4,
+      "log2_range": [
+        2.236067195,
+        16.48241051
+      ]
+    },
+    "GSE6364": {
+      "series": "GSE6364",
+      "role": "secondary",
+      "n_genes": 19823,
+      "n_samples": 20,
+      "groups": {
+        "proliferative_ENDO": 6,
+        "proliferative_non_ENDO": 5,
+        "secretory_ENDO": 6,
+        "secretory_non_ENDO": 3
+      },
+      "E1": {
+        "heca_program": {
+          "genes_in_program": 3986,
+          "genes_in_family": 3574,
+          "gate": {
+            "status": "ESTIMATED",
+            "n": 20,
+            "df": 17,
+            "estimate": 0.3040813800900705,
+            "se": 0.039658206708680824,
+            "t": 7.667552451974835,
+            "p": 6.473434938527203e-07,
+            "ci_low": 0.22040987778716736,
+            "ci_high": 0.3877528823929737,
+            "auc": 1.0,
+            "pass": true
+          },
+          "score_means": {
+            "proliferative_non_ENDO": 1.1449174941446926e-17,
+            "proliferative_ENDO": 0.03313177129072943,
+            "secretory_non_ENDO": 0.45283803169765496,
+            "secretory_ENDO": 0.24424024412605946
+          },
+          "projection_vs_mean_signed_shift_correlation": 0.9990708093483143,
+          "M1_theta": {
+            "status": "ESTIMATED",
+            "n": 20,
+            "df": 16,
+            "estimate": -0.24172955886232472,
+            "se": 0.058379826838680274,
+            "t": -4.140635078111671,
+            "p": 0.0007682557838527094,
+            "ci_low": -0.36548926314524804,
+            "ci_high": -0.1179698545794014,
+            "mde": 0.17423711221119975,
+            "relative_to_shift": {
+              "ci_low_share": -1.2019455549596236,
+              "ci_high_share": -0.3879548775543511
+            }
+          },
+          "M2_secretory_delta": {
+            "status": "ESTIMATED",
+            "n": 9,
+            "df": 7,
+            "estimate": -0.20859778757159558,
+            "se": 0.05973330399944253,
+            "t": -3.4921521765068,
+            "p": 0.010099303652670432,
+            "ci_low": -0.34984460683644164,
+            "ci_high": -0.06735096830674953
+          },
+          "M2_subphase_adjusted": {
+            "status": "NOT_EVALUABLE",
+            "reason": "no sub-phase split"
+          },
+          "label": "attenuation_detected"
+        },
+        "discovery_program": {
+          "genes_in_program": 7367,
+          "genes_in_family": 6537,
+          "gate": {
+            "status": "ESTIMATED",
+            "n": 20,
+            "df": 17,
+            "estimate": 0.21804665261844566,
+            "se": 0.034729303794331076,
+            "t": 6.278463107401473,
+            "p": 8.326905185693908e-06,
+            "ci_low": 0.14477422646586496,
+            "ci_high": 0.29131907877102636,
+            "auc": 0.9797979797979798,
+            "pass": true
+          },
+          "score_means": {
+            "proliferative_non_ENDO": -1.3877787807814458e-18,
+            "proliferative_ENDO": 0.030677196008308445,
+            "secretory_non_ENDO": 0.35836374521006914,
+            "secretory_ENDO": 0.16102566575698934
+          },
+          "projection_vs_mean_signed_shift_correlation": 0.9976892465159696,
+          "M1_theta": {
+            "status": "ESTIMATED",
+            "n": 20,
+            "df": 16,
+            "estimate": -0.2280152754613882,
+            "se": 0.046528841450904135,
+            "t": -4.9005147850496815,
+            "p": 0.00016003510328788304,
+            "ci_low": -0.3266520130197741,
+            "ci_high": -0.12937853790300227,
+            "mde": 0.13886733496727124,
+            "relative_to_shift": {
+              "ci_low_share": -1.4980831354076056,
+              "ci_high_share": -0.5933525525356196
+            }
+          },
+          "M2_secretory_delta": {
+            "status": "ESTIMATED",
+            "n": 9,
+            "df": 7,
+            "estimate": -0.19733807945307993,
+            "se": 0.04637652495732537,
+            "t": -4.255128637487737,
+            "p": 0.003769183295605808,
+            "ci_low": -0.3070011350717695,
+            "ci_high": -0.08767502383439035
+          },
+          "M2_subphase_adjusted": {
+            "status": "NOT_EVALUABLE",
+            "reason": "no sub-phase split"
+          },
+          "label": "attenuation_detected"
+        }
+      },
+      "E2": {
+        "all_non_ENDO": {
+          "same_direction": 4,
+          "evaluable": 20,
+          "selected": 20,
+          "missing_bounds": [
+            0.2,
+            0.2
+          ],
+          "matched_percentile": 0.25,
+          "matched_reference_mean": 9.5619,
+          "label": "does_not_transfer",
+          "genes": [
+            {
+              "gene_id": "ENSG00000138496",
+              "discovery_sign": 1,
+              "bulk_coef": 0.02796937128004234,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000180592",
+              "discovery_sign": -1,
+              "bulk_coef": 0.6506907881550157,
+              "bulk_q": 0.23680907621638347
+            },
+            {
+              "gene_id": "ENSG00000132406",
+              "discovery_sign": -1,
+              "bulk_coef": 0.08664027361043931,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000197785",
+              "discovery_sign": 1,
+              "bulk_coef": -0.21465587640124625,
+              "bulk_q": 0.9907911457742358
+            },
+            {
+              "gene_id": "ENSG00000180900",
+              "discovery_sign": 1,
+              "bulk_coef": -0.017290388411050912,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000168268",
+              "discovery_sign": 1,
+              "bulk_coef": -0.3133594737400869,
+              "bulk_q": 0.8725533184256709
+            },
+            {
+              "gene_id": "ENSG00000182195",
+              "discovery_sign": -1,
+              "bulk_coef": 0.04261160790198471,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000168589",
+              "discovery_sign": -1,
+              "bulk_coef": 0.09850560815202379,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000184979",
+              "discovery_sign": 1,
+              "bulk_coef": -0.34002696166992197,
+              "bulk_q": 0.8248768727999766
+            },
+            {
+              "gene_id": "ENSG00000104870",
+              "discovery_sign": -1,
+              "bulk_coef": -0.0782561689443227,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000183508",
+              "discovery_sign": -1,
+              "bulk_coef": -2.6643136614709365e-05,
+              "bulk_q": 0.9999476894519764
+            },
+            {
+              "gene_id": "ENSG00000138036",
+              "discovery_sign": -1,
+              "bulk_coef": 0.2405085751781124,
+              "bulk_q": 0.9674318481478179
+            },
+            {
+              "gene_id": "ENSG00000247077",
+              "discovery_sign": 1,
+              "bulk_coef": -0.23066433440888878,
+              "bulk_q": 0.9753875397685677
+            },
+            {
+              "gene_id": "ENSG00000143549",
+              "discovery_sign": 1,
+              "bulk_coef": -0.043093696278538166,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000086015",
+              "discovery_sign": 1,
+              "bulk_coef": -0.06336496876551045,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000176014",
+              "discovery_sign": 1,
+              "bulk_coef": -0.2523602776206611,
+              "bulk_q": 0.955016529209418
+            },
+            {
+              "gene_id": "ENSG00000129250",
+              "discovery_sign": 1,
+              "bulk_coef": -0.044806452376680135,
+              "bulk_q": 0.999844832230397
+            },
+            {
+              "gene_id": "ENSG00000183048",
+              "discovery_sign": 1,
+              "bulk_coef": -0.4556250477587692,
+              "bulk_q": 0.5922555365291613
+            },
+            {
+              "gene_id": "ENSG00000115267",
+              "discovery_sign": 1,
+              "bulk_coef": 0.48717420377730264,
+              "bulk_q": 0.5255596882929627
+            },
+            {
+              "gene_id": "ENSG00000167077",
+              "discovery_sign": 1,
+              "bulk_coef": -0.050356688555319655,
+              "bulk_q": 0.999844832230397
+            }
+          ]
+        }
+      },
+      "E3": {
+        "all_non_ENDO": {
+          "n_ENDO": 6,
+          "n_non_ENDO": 5,
+          "df_residual": 9,
+          "prior_df": 198575004650457.44,
+          "genes_BH_q_lt_0_05": 1135,
+          "min_q": 7.004982498888069e-45,
+          "median_mde_log2": 0.8208627424713872,
+          "median_mde_fold": 1.7664620343548671,
+          "ci_within_1_log2_share": 0.7778338293901024,
+          "shared_with_pooled_single_cell": 14202,
+          "spearman_t_vs_pooled": -0.06638594186271672,
+          "sign_agreement_with_pooled": 0.47479228277707364
+        }
+      },
+      "excluded_samples": 17,
+      "log2_range": [
+        0.2630344058337938,
+        16.611602647431415
+      ]
+    },
+    "GSE141549": {
+      "series": "GSE141549",
+      "role": "secondary",
+      "status": "not_analyzed",
+      "reason": "xlsx cohort parsing not attempted in this frozen version"
+    }
+  },
+  "E1_across_series": {
+    "primary_series": "GSE51981",
+    "labels": {
+      "GSE51981": "no_detectable_difference",
+      "GSE6364": "attenuation_detected",
+      "GSE141549": null
+    },
+    "label": "not_replicated"
+  },
+  "software": {
+    "python": "3.10.22",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "finished_utc": "2026-11-02T03:05:43.290514+00:00"
+}

@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from followon_freeze import verify, sha  # noqa: E402
 
-CONFIG = 'config/bulk_replication.json'
+CONFIG = 'config/bulk_replication.json'   # a correction run passes its own configuration with --config
 SCRIPT_REL = 'scripts/bulk_replication_analysis.py'
 
 
@@ -148,13 +148,20 @@ def squeeze_var(s2, df):
     """limma-style empirical Bayes moderation of residual variances (Smyth 2004, fitFDist by moments)."""
     s2 = np.asarray(s2, float); ok = s2 > 0; z = np.log(s2[ok]); e = z - special.digamma(df / 2) + np.log(df / 2)
     emean = e.mean(); evar = max(np.var(e, ddof=1) - special.polygamma(1, df / 2), 1e-8)
-    # trigamma inverse by Newton (limma::trigammaInverse)
-    x = 0.5 + 1 / evar
-    for _ in range(50):
-        tri = special.polygamma(1, x); d = tri * (1 - tri / evar) / special.polygamma(2, x); x = x - d
-        if abs(d) < 1e-8 * x: break
+    x = trigamma_inverse(evar)
     d0 = 2 * x; s0 = np.exp(emean + special.digamma(d0 / 2) - np.log(d0 / 2))
     return (d0 * s0 + df * s2) / (d0 + df), float(d0), float(s0)
+
+
+def trigamma_inverse(y):
+    """Solve trigamma(x) = y by Newton's method (limma::trigammaInverse): the update is x + dif."""
+    if y > 1e7: return 1 / np.sqrt(y)
+    if y < 1e-6: return 1 / y
+    x = 0.5 + 1 / y
+    for _ in range(50):
+        tri = special.polygamma(1, x); dif = tri * (1 - tri / y) / special.polygamma(2, x); x = x + dif
+        if abs(-dif / x) < 1e-8: break
+    return float(x)
 
 
 def bh(p):
@@ -255,8 +262,8 @@ def analyze_series(gse, spec, genes, M, samples, programs, b0, pooled, P, rng):
 
 
 # ----- main ------------------------------------------------------------------------
-def main(root):
-    root = Path(root); cfg, freeze, freeze_sha = verify(root, CONFIG, SCRIPT_REL); P = cfg['parameters']; out = cfg['outputs']
+def main(root, config=CONFIG):
+    root = Path(root); cfg, freeze, freeze_sha = verify(root, config, SCRIPT_REL); P = cfg['parameters']; out = cfg['outputs']
     ddir = root / cfg['downloads']['directory']; drec = json.loads((root / cfg['downloads']['data_receipt']).read_text(encoding='utf-8'))
     for name, rec in drec['files'].items():
         if hashlib.sha256((ddir / name).read_bytes()).hexdigest() != rec['sha256']: sys.exit(f'downloaded file differs from the data receipt: {name}')
@@ -333,8 +340,8 @@ def main(root):
 
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser(description=__doc__); ap.add_argument('--root'); a = ap.parse_args()
-    r = main(Path(a.root).resolve() if a.root else ROOT)
+    ap = argparse.ArgumentParser(description=__doc__); ap.add_argument('--root'); ap.add_argument('--config', default=CONFIG); a = ap.parse_args()
+    r = main(Path(a.root).resolve() if a.root else ROOT, a.config)
     print(json.dumps({g: {'status': s.get('status', 'analyzed'), 'groups': s.get('groups'), 'E1_heca': {k: s.get('E1', {}).get('heca_program', {}).get(k) for k in ('label',)} | {'theta': s.get('E1', {}).get('heca_program', {}).get('M1_theta', {}).get('estimate'), 'p': s.get('E1', {}).get('heca_program', {}).get('M1_theta', {}).get('p')},
                            'E2': {c: (v.get('same_direction'), v.get('evaluable'), v.get('matched_percentile'), v.get('label')) for c, v in s.get('E2', {}).items() if isinstance(v, dict)},
                            'E3_sig': {c: v.get('genes_BH_q_lt_0_05') for c, v in s.get('E3', {}).items()}} for g, s in r['series'].items()} | {'across': r['E1_across_series']['label']}, default=str))

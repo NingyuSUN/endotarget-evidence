@@ -1,0 +1,45 @@
+{
+  "note": "post-hoc, descriptive; frozen E3 numbers stand as reported",
+  "series": {
+    "GSE51981": {
+      "all_non_ENDO": {
+        "n_ENDO": 29,
+        "n_non_ENDO": 35,
+        "pooled_t_q_lt_0_05": 10206,
+        "welch_t_q_lt_0_05": 9807,
+        "median_abs_diff_log2": 0.38718489241379217,
+        "genes_abs_diff_ge_1_and_pooled_q_lt_0_05": 2288,
+        "eb_prior_df": 503425816353146.0,
+        "var_log_s2_observed": 119.9115496568153,
+        "var_log_s2_expected_if_common": 0.03278394924662884,
+        "global_mean_shift_log2": -0.10956221164344093
+      },
+      "other_pathology_controls_only": {
+        "n_ENDO": 29,
+        "n_non_ENDO": 15,
+        "pooled_t_q_lt_0_05": 663,
+        "welch_t_q_lt_0_05": 789,
+        "median_abs_diff_log2": 0.15356941859769968,
+        "genes_abs_diff_ge_1_and_pooled_q_lt_0_05": 21,
+        "eb_prior_df": 504446498752647.0,
+        "var_log_s2_observed": 137.869816061592,
+        "var_log_s2_expected_if_common": 0.04877082293520312,
+        "global_mean_shift_log2": -0.11155746228896923
+      }
+    },
+    "GSE6364": {
+      "all_non_ENDO": {
+        "n_ENDO": 6,
+        "n_non_ENDO": 5,
+        "pooled_t_q_lt_0_05": 0,
+        "welch_t_q_lt_0_05": 0,
+        "median_abs_diff_log2": 50.530000000000655,
+        "genes_abs_diff_ge_1_and_pooled_q_lt_0_05": 0,
+        "eb_prior_df": 360721311407085.75,
+        "var_log_s2_observed": 4.954201453944224,
+        "var_log_s2_expected_if_common": 0.24872510303901035,
+        "global_mean_shift_log2": -16.75929089105216
+      }
+    }
+  }
+}

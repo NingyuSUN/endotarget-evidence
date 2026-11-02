@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "phase": "BULK_REPLICATION_COMPLETED",
+  "created_utc": "2026-11-02T03:05:43.295986+00:00",
+  "synthetic": false,
+  "protocol": "docs/BULK_REPLICATION_PROTOCOL.md",
+  "freeze_receipt": "receipts/bulk_replication_freeze.json",
+  "freeze_sha256": "8744fc254b77c23bf922b00e51302ed53614f861f5c41026842ac338969d5ce6",
+  "data_receipt": "receipts/bulk_replication_data.json",
+  "data_receipt_sha256": "8f6d08b1c0d0c267c147b61b67abf0301e32766a9b308203e596c73fbee44eb9",
+  "input_sha256": {
+    "reports/bulk_replication_feasibility.json": "4ecc56a0da607a2a4e22c5d8f3165295462fda443fbab1c7bede202eace01785",
+    "manifests/bulk_replication_GSE51981_samples.tsv": "393eb018b4a61016bda19984084d2f20f72794ffb19800e0c2017b583fcc4f83",
+    "manifests/bulk_replication_GSE6364_samples.tsv": "dbaee330e4e1834591e37f3d7be43c72f08394a690f412306a25ca9312624391",
+    "manifests/bulk_replication_GSE141549_samples.tsv": "70c412271639ac31b7921dc2f690ca8e3701bd10f7069a9c9b11adae7d853ad8",
+    "reports/phase_positive_control_f1/de_all.tsv.gz": "26d9a7e5bef2cd0eefe1b349aa0cfb961137e6347d7fc77dc2826a6a9f529e4d",
+    "reports/phase_positive_control_f2/heca_de_all.tsv.gz": "33d99dbdaef9743eae4eb71bd8eb6e20a5fe64644f92535682410156bb8a2d0d",
+    "reports/replication_v2_dossier_pool.tsv": "7d6a35f4d89cf66dc6c0c44fd024e4801edc3329869f964d19015ffc6123678d",
+    "reports/combined_bound/combined_per_gene.tsv.gz": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b"
+  },
+  "script_sha256": "6ff3354e80bca104b58f82e22fd764c489e76474a3ac98ee84b1f50b3e9aaf4c",
+  "output_sha256": {
+    "reports/bulk_replication/summary.json": "3bd96db7f82a9944065fb8a625db389248da961233a3e41974184cb135746dac",
+    "reports/bulk_replication/samples_used.tsv": "eb37637100064d7b6ca70495da54f6d948b86ae70090f353754dd75bdc4b7418",
+    "reports/bulk_replication/program_scores_GSE51981_discovery_program.tsv": "ded77aa274639c70a903423c3aae1f042bcf7472ac8ec6cebb5d709ae3c9f0af",
+    "reports/bulk_replication/program_scores_GSE51981_heca_program.tsv": "df01fb0f0ee27d82da23ce93b75c0ce8305c3f2317c52e57ddeb3e8ecd3f89b0",
+    "reports/bulk_replication/program_scores_GSE6364_discovery_program.tsv": "02b1b7bff84e3c7a19823c9e3b43060b85906e11d3fe8c3753f7e20a1f5acc65",
+    "reports/bulk_replication/program_scores_GSE6364_heca_program.tsv": "f6e3ba255aed57c470e1791b57cd97549fb8b4a5e78b06cdb39d93d2a142c86f",
+    "reports/bulk_replication/proliferative_de_GSE51981_all_non_ENDO.tsv.gz": "6dae55e52333d7bc302ca1fefa816081426466696eec1fd390ca14332cf3113b",
+    "reports/bulk_replication/proliferative_de_GSE51981_other_pathology_controls_only.tsv.gz": "a2c481e55f6590f406bf55299e709475ccb4304b16920ab821aabee3487ec9f5",
+    "reports/bulk_replication/proliferative_de_GSE6364_all_non_ENDO.tsv.gz": "91ad5ae88b41486ee614ede7e3632b602c12f83bf9e2903884c068812d3b35dd"
+  },
+  "labels": {
+    "GSE51981": {
+      "E1_heca_program": "no_detectable_difference",
+      "E2": {
+        "all_non_ENDO": "does_not_transfer",
+        "other_pathology_controls_only": "does_not_transfer"
+      }
+    },
+    "GSE6364": {
+      "E1_heca_program": "attenuation_detected",
+      "E2": {
+        "all_non_ENDO": "does_not_transfer"
+      }
+    },
+    "GSE141549": {
+      "E1_heca_program": null,
+      "E2": {}
+    },
+    "E1_across_series": "not_replicated"
+  },
+  "software": {
+    "python": "3.10.22",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  }
+}

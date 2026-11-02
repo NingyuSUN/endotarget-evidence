@@ -122,8 +122,16 @@ class BulkFixture(unittest.TestCase):
         annot = bulk.read_annot(self.root / 'data/bulk_replication/GPL570.annot.gz'); self.assertEqual(len(annot), 1200)
         genes, M = bulk.probes_to_genes(probes, vals, annot, bulk.hgnc_maps(self.root / 'data/hgnc.tsv'))
         self.assertEqual(len(genes), 600); self.assertTrue(np.all(M.mean(axis=1) > vals.mean()))   # brighter probe kept
+        # trigamma inverse: trigamma(2) = pi^2/6 - 1
+        self.assertAlmostEqual(bulk.trigamma_inverse(np.pi ** 2 / 6 - 1), 2.0, places=5)
+        self.assertAlmostEqual(bulk.trigamma_inverse(0.1), 10.42, delta=0.1)   # trigamma(10.42) ~ 0.1
+        # homogeneous true variances: chi-square sampling noise only -> large prior df, strong shrinkage
         s2 = np.random.default_rng(0).chisquare(10, 500) / 10 * 0.5; mod, d0, s0 = bulk.squeeze_var(s2, 10)
-        self.assertGreater(d0, 1); self.assertLess(np.var(mod), np.var(s2))
+        self.assertGreater(d0, 20); self.assertLess(np.var(mod), np.var(s2)); self.assertAlmostEqual(s0, 0.5, delta=0.1)
+        # strongly heterogeneous true variances (log-normal spread) -> small finite prior df, weak shrinkage
+        rng = np.random.default_rng(1); true = np.exp(rng.normal(0, 1.5, 2000)); s2h = true * rng.chisquare(10, 2000) / 10
+        modh, d0h, _ = bulk.squeeze_var(s2h, 10)
+        self.assertLess(d0h, 5); self.assertGreater(np.corrcoef(modh, s2h)[0, 1], 0.95)
 
 
 if __name__ == '__main__':
