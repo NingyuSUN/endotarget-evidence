@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "phase": "COMBINED_BOUND_COMPLETED",
+  "created_utc": "2026-11-02T00:50:58.850469+00:00",
+  "synthetic": false,
+  "protocol": "docs/COMBINED_BOUND_PROTOCOL.md",
+  "freeze_receipt": "receipts/combined_bound_freeze.json",
+  "freeze_sha256": "ec075b2217d695587e27ca315b9ec375f0d58066e18f417caf34145fa55e4960",
+  "input_sha256": {
+    "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a",
+    "reports/mde_analysis/v1_heca_mde_per_gene.tsv.gz": "4912a9b057d736dc5be6870c33f2711dbebda2d9a027c6093756b17d68774b8c"
+  },
+  "script_sha256": "726c5ea629a3a19a6a7561c83c4661263bf764752e90dbed1af0cdf2ae1a4d56",
+  "output_sha256": {
+    "reports/combined_bound/combined_per_gene.tsv.gz": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b",
+    "reports/combined_bound/cohort_only_genes.tsv": "d1744cc709cfaf2e981b0f8c851e8fe79ff5d5ad662ca5a2064a31291fce24f7",
+    "reports/combined_bound/top20_by_abs_t.tsv": "f0ca5a49e4ce472a2c2b5e075657ff5148475194d7e27adf732d3c8494aff853",
+    "reports/combined_bound/summary.json": "ad3237a2f1f2c6b077d43ce81d8912b60a68b6c40e3e678175451cb53eb2a5ad",
+    "reports/combined_bound/combined_mde_ecdf.svg": "87aba84cd56eb23f5799237d4970ed8f28325a3af04fa9429d5e1ca971245124"
+  },
+  "label": "no_combined_discovery",
+  "family_size": 15435,
+  "genes_BH_q_lt_0_05": 0,
+  "software": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  }
+}

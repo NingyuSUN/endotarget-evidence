@@ -94,6 +94,14 @@ research brief present the completed study.
   `tests/test_check_markdown_links.py`) can exercise them on temporary copies;
   the renderer refuses inputs that disagree with each other or with the frozen
   results. No scientific value changed.
+- **2 November 2026.** The two-cohort combined bound was added as a fifth follow-on
+  analysis: protocol, configuration, code and tests committed first (51f35a5),
+  freeze receipt second, then one local run on the pinned per-gene MDE tables with
+  the v1 runtime's NumPy and SciPy versions, with results receipt, report and
+  documentation updates. No v1 or earlier follow-on artifact changed; the research
+  brief keeps its 27 October wording and date.
+
+Some frozen documents
 
 Some frozen documents include status statements and relative links appropriate to
 their original version; they are not current execution instructions. The

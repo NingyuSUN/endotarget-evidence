@@ -144,10 +144,12 @@ confirmation, and a missing mapping is not a negative genetic test. See the
 
 ## Follow-on analyses (October 2026)
 
-Four analyses were added on 26–27 October 2026 under rules frozen and hashed before
-any new value was computed. They reuse the v1 estimator unchanged, refit no disease
-model and leave every v1 artifact byte-identical; each ran once on the analysis host
-in the v1 runtime. Numbers are copied from the linked results reports.
+Four analyses were added on 26–27 October 2026 and a fifth on 2 November 2026 under
+rules frozen and hashed before any new value was computed. They reuse the v1
+estimator or its saved fit quantities unchanged, refit no disease model and leave
+every v1 artifact byte-identical; the first four ran once on the analysis host in
+the v1 runtime, the fifth once locally with the runtime's NumPy and SciPy versions.
+Numbers are copied from the linked results reports.
 
 ### Phase positive control
 
@@ -260,6 +262,30 @@ by rule changes no label.
 
 ![Program scores by phase and disease, HECA](secretory_program/heca_scores.png)
 
+### Two-cohort combined bound (2 November 2026)
+
+Fixed-effect inverse-variance combination of the two saved v1 disease fits over the
+15,435 genes estimable in both cohorts, with Welch–Satterthwaite degrees of freedom
+(13.1–27.9), BH over the combined family and exact non-central t detectable effects;
+inputs are the pinned per-gene MDE tables only; rules frozen before computation
+([protocol](../docs/COMBINED_BOUND_PROTOCOL.md), [results](combined_bound_results.md)).
+
+| Quantity | Combined | Discovery alone | HECA alone |
+|---|---|---|---|
+| Genes at BH q < 0.05 | **0** (minimum q 0.145) | 0 | 0 |
+| Median MDE, α 0.05 | **1.27×** | 1.42× | 1.48× |
+| Median MDE, BH boundary for 100 discoveries | **1.52×** | 1.98× | 2.09× |
+| Median MDE, BH boundary for one discovery | **1.79×** | 2.88× | 2.99× |
+| Per-gene 95% intervals within ±1 log2 | 93.7% | 76.0% | 82.4% |
+| Family-wide (Bonferroni) intervals within ±1 log2 | 59.9% | — | — |
+
+Label `no_combined_discovery`. Same sign in 53% of genes, Spearman correlation 0.03;
+Cochran Q p < 0.05 for 7% of genes. The Stouffer sensitivity also gives 0 genes; a
+normal-approximation test would give 50, which shows that the degrees-of-freedom
+correction, not the pooling, decides the outcome. Single-cohort values here are
+computed on the 15,435 shared genes and therefore differ slightly from the
+full-family values of the MDE report.
+
 ### Cohort extension feasibility
 
 Metadata-only audit of GSE213216 (Fonseca et al. 2023) and GSE179640 (Tan et al.
@@ -283,7 +309,9 @@ HECA. They remain lesion-context resources for a differently designed study.
   designs, so the primary fits are reused; this is not three independent
   validations. All 44 donors have complete ages.
 - The follow-on analyses are bounds and controls, not disease evidence: the MDE
-  values are conditional on the realized variance estimates of the original fits;
+  values (single-cohort and pooled) are conditional on the realized variance
+  estimates of the original fits; the pooled estimate is a precision-weighted
+  average across a single-cell and a single-nucleus platform, not a common effect;
   the subsampling levels stop at 13 and 20 per arm; the secretory program contrast
   rests on 13 and 20 secretory donors (6 and 4 non-ENDO) and on the authors'
   sub-phase labels; the extension audit relies on the HECA authors' curation of

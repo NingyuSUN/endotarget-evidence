@@ -5,6 +5,17 @@ are described in the [method card](docs/METHOD_CARD.md) and the
 [publication history](docs/PUBLICATION_HISTORY.md); this file lists what each
 tagged version contains.
 
+## Unreleased
+
+- **Two-cohort combined bound (2026-11-02).** Prespecified fixed-effect combination
+  of the two saved v1 disease fits over 15,435 shared genes: 0 genes at BH q < 0.05;
+  median detectable effect 1.27-fold at α 0.05 and 1.5–1.8-fold at the multiplicity
+  faced; twofold differences excluded family-wide for 60% of genes. Protocol, freeze
+  and results receipts, per-gene table, figure and report; tests; CI installs the
+  v1 runtime's NumPy and SciPy versions.
+- Summary figure of the follow-on analyses with receipt and boundary tests; Markdown
+  link checker with tests; changelog and citation sections (2026-10-30).
+
 ## 1.0.0 — 2026-10-28
 
 First tagged release of the public repository.

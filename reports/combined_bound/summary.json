@@ -1,0 +1,187 @@
+{
+  "analysis": "COMBINED_BOUND",
+  "synthetic": false,
+  "label": "no_combined_discovery",
+  "family_size": 15435,
+  "cohort_only": {
+    "discovery": 2298,
+    "heca": 2208
+  },
+  "estimable_per_cohort": {
+    "discovery": 17733,
+    "heca": 17643
+  },
+  "primary": {
+    "genes_BH_q_lt_0_05": 0,
+    "min_p": 9.401485669088014e-06,
+    "min_q": 0.1451119313023735,
+    "max_abs_t": 6.080537654742689,
+    "df_satterthwaite_range": [
+      13.064078082343043,
+      27.939308042424912
+    ],
+    "se_quantiles": {
+      "q0.05": 0.06346800732947185,
+      "q0.25": 0.08450916583473723,
+      "q0.5": 0.11787077424120304,
+      "q0.75": 0.1990068656760039,
+      "q0.95": 0.36940608660373253
+    },
+    "significant_genes": []
+  },
+  "heterogeneity": {
+    "genes_Q_p_lt_0_05": 1085,
+    "share": 0.07029478458049887,
+    "I2_median": 0.0,
+    "primary_significant_among_Q_p_ge_0_05": 0
+  },
+  "agreement": {
+    "same_sign": 8208,
+    "same_sign_share": 0.5317784256559767,
+    "pearson_logFC": -0.12637523387910035,
+    "spearman_logFC": 0.027654415691429193
+  },
+  "scenarios": {
+    "alpha_0.05": {
+      "alpha": 0.05,
+      "mde_log2_quantiles": {
+        "q0.05": 0.18506532043220614,
+        "q0.25": 0.24679722205578442,
+        "q0.5": 0.3446529862106997,
+        "q0.75": 0.580787746087052,
+        "q0.95": 1.0760440178040869
+      },
+      "mde_fold_median": 1.269845507792676,
+      "share_le_1": 0.9357304826692582,
+      "share_le_0.585": 0.7542597991577583,
+      "approx_max_abs_diff": 0.0011622761056049313,
+      "single_cohort_mde_log2_median": {
+        "discovery": 0.5052520068221983,
+        "heca": 0.5650136902574382
+      }
+    },
+    "bh_k1": {
+      "alpha": 3.2393909944930354e-06,
+      "mde_log2_quantiles": {
+        "q0.05": 0.4427372515992422,
+        "q0.25": 0.5956658775335087,
+        "q0.5": 0.837041705115276,
+        "q0.75": 1.3960317574029242,
+        "q0.95": 2.5885347516252617
+      },
+      "mde_fold_median": 1.7863833443413188,
+      "share_le_1": 0.5955296404275996,
+      "share_le_0.585": 0.23666990605766117,
+      "approx_max_abs_diff": 0.3749588670059829,
+      "single_cohort_mde_log2_median": {
+        "discovery": 1.5281040306997065,
+        "heca": 1.5814752904052336
+      }
+    },
+    "bh_k10": {
+      "alpha": 3.239390994493035e-05,
+      "mde_log2_quantiles": {
+        "q0.05": 0.38331277834154587,
+        "q0.25": 0.5134273874485961,
+        "q0.5": 0.7197895258875718,
+        "q0.75": 1.2056163831117575,
+        "q0.95": 2.2286942921588637
+      },
+      "mde_fold_median": 1.6469417454380266,
+      "share_le_1": 0.6697116942014901,
+      "share_le_0.585": 0.35406543569808874,
+      "approx_max_abs_diff": 0.25551221485905096,
+      "single_cohort_mde_log2_median": {
+        "discovery": 1.2387065535432498,
+        "heca": 1.309427563615854
+      }
+    },
+    "bh_k100": {
+      "alpha": 0.00032393909944930353,
+      "mde_log2_quantiles": {
+        "q0.05": 0.32397080776377396,
+        "q0.25": 0.4331385533858755,
+        "q0.5": 0.6059837657622036,
+        "q0.75": 1.0168344495409438,
+        "q0.95": 1.88012344828375
+      },
+      "mde_fold_median": 1.5220162539261042,
+      "share_le_1": 0.7429219306770327,
+      "share_le_0.585": 0.47923550372529966,
+      "approx_max_abs_diff": 0.15526100091064698,
+      "single_cohort_mde_log2_median": {
+        "discovery": 0.9865843133464648,
+        "heca": 1.0637863817333857
+      }
+    },
+    "bh_k1000": {
+      "alpha": 0.003239390994493035,
+      "mde_log2_quantiles": {
+        "q0.05": 0.26348658275437825,
+        "q0.25": 0.3517975134674993,
+        "q0.5": 0.491537175721514,
+        "q0.75": 0.8272273871305085,
+        "q0.95": 1.530585300657805
+      },
+      "mde_fold_median": 1.4059420938216967,
+      "share_le_1": 0.8268221574344023,
+      "share_le_0.585": 0.590217039196631,
+      "approx_max_abs_diff": 0.07305910831447449,
+      "single_cohort_mde_log2_median": {
+        "discovery": 0.760644230038846,
+        "heca": 0.8350544400743692
+      }
+    }
+  },
+  "interval_exclusion": {
+    "thresholds_log2": [
+      0.585,
+      1.0,
+      2.0
+    ],
+    "counts": {
+      "within_0.585": {
+        "per_gene": 11563,
+        "family_bonferroni": 3765,
+        "single_cohort_per_gene": {
+          "discovery": 8328,
+          "heca": 8181
+        }
+      },
+      "within_1.0": {
+        "per_gene": 14468,
+        "family_bonferroni": 9250,
+        "single_cohort_per_gene": {
+          "discovery": 11724,
+          "heca": 12726
+        }
+      },
+      "within_2.0": {
+        "per_gene": 15398,
+        "family_bonferroni": 13863,
+        "single_cohort_per_gene": {
+          "discovery": 14667,
+          "heca": 15080
+        }
+      }
+    },
+    "ci_level": 0.95,
+    "bonferroni_alpha": 3.2393909944930354e-06
+  },
+  "sensitivities": {
+    "stouffer_weighted_z": {
+      "genes_BH_q_lt_0_05": 0,
+      "min_p": 1.3966178871897911e-05
+    },
+    "normal_approximation": {
+      "genes_BH_q_lt_0_05": 50,
+      "min_p": 1.197802179184192e-09
+    }
+  },
+  "software": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "finished_utc": "2026-11-02T00:50:58.640483+00:00"
+}
