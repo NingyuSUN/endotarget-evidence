@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "phase": "GENETIC_SET_TEST_RULES_FROZEN_PRE_ANALYSIS",
+  "analysis": "GENETIC_SET_TEST",
+  "created_utc": "2026-11-02T01:16:22.952790+00:00",
+  "synthetic": false,
+  "protocol": "docs/GENETIC_SET_TEST_PROTOCOL.md",
+  "configuration": "config/genetic_set_test.json",
+  "git_head": "3b6f84f973d25ec97b06cf40d2cc958ad9e12340",
+  "frozen_sha256": {
+    "scripts/genetic_set_test_analysis.py": "0cffc21e773f844729dcb8a97dede476e713d4a093ccccbd3101bda5926d802b",
+    "scripts/genetic_set_build.py": "23b9130c1f80abffbd224adeb7984ab5cb770789105758e9e25837047ecbd736",
+    "scripts/followon_freeze.py": "4eb9eccfad3c7a85b5544401a799a75c0186b9690bf4204097c1811eaa651f9b",
+    "tests/test_genetic_set_test.py": "586b762f8151789796e4cd913f083a2abf296ad8ed1a439ac0a40d5ff0e8bc00",
+    "receipts/genetic_set_build.json": "86b20dc6ba5a8369a04f68c8ec011753b2baf608eb3cc1a2d1c35d814b30e915",
+    "config/genetic_set_test.json": "e1a84ee089b9ec2ce5203c685693a7478ead6cf3e46a15b30a2e69b2d5c928d0",
+    "docs/GENETIC_SET_TEST_PROTOCOL.md": "838fcf53222da4323afece314bab7e3066641c20bfcf37118fcab78a0b67ec46"
+  },
+  "pinned_inputs": {
+    "reports/genetic_set_test/gene_sets.tsv": "73ac9d5cd5712a103394ed7898c48c61c1ff6d6e4a565017c786c15ef9e206db",
+    "reports/combined_bound/combined_per_gene.tsv.gz": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b",
+    "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a"
+  },
+  "supersedes": null,
+  "attestations": [
+    "the gene sets were built and published before this receipt; no set-level statistic had been computed",
+    "the family and the per-gene statistics are the published combined-bound table; nothing is refitted",
+    "the label uses the pooled statistic only; per-cohort tests and sign agreement are secondary"
+  ]
+}
