@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "phase": "COMBINED_BOUND_RULES_FROZEN_PRE_ANALYSIS",
+  "created_utc": "2026-11-02T00:46:50.250168+00:00",
+  "synthetic": false,
+  "protocol": "docs/COMBINED_BOUND_PROTOCOL.md",
+  "git_head": "51f35a5acd8eb38db71f1d5bbefe5dd0a05a5b65",
+  "frozen_sha256": {
+    "config/combined_bound.json": "9e41f21decaaed4ee6d02bd95b40c315c9c9276441f6c9c0834cc465871e4fb6",
+    "scripts/combined_bound_analysis.py": "726c5ea629a3a19a6a7561c83c4661263bf764752e90dbed1af0cdf2ae1a4d56",
+    "scripts/combined_bound_freeze.py": "ff29e8e4c25d6f3b72b04de981d59e1d808e5f49c0571d64f1eb29998111ea08",
+    "tests/test_combined_bound.py": "39981aaa7e915f3f348412e852b07313b0c2576e3e2ac777b9f275adf2c19dd0",
+    "docs/COMBINED_BOUND_PROTOCOL.md": "b7486e9dcda253e5c542db799686b5670c43c9b480ce8ed6e2e6aab60cfafa5e"
+  },
+  "pinned_inputs": {
+    "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a",
+    "reports/mde_analysis/v1_heca_mde_per_gene.tsv.gz": "4912a9b057d736dc5be6870c33f2711dbebda2d9a027c6093756b17d68774b8c"
+  },
+  "pinning_receipt_check": {
+    "receipt": "receipts/mde_analysis_results.json",
+    "receipt_sha256": "e1c0036b90931828cabe15707947e908c1d0f955604aed5186dd99aa6bbe8bcf",
+    "inputs_listed_with_matching_hash": true
+  },
+  "supersedes": null,
+  "attestations": [
+    "no combined estimate, p value, count or minimum detectable effect had been computed when this receipt was written",
+    "the analysis reads only the two pinned per-gene tables; no count matrix, design or model is touched",
+    "labels and sensitivities are those of the protocol; sensitivities never change a label"
+  ]
+}
