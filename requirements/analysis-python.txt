@@ -1,0 +1,4 @@
+# Python packages of the v1 statistical runtime used by the locally executed follow-on
+# analyses (two-cohort combined bound); same versions as requirements/statistical-runtime.yml.
+numpy==2.2.6
+scipy==1.15.2

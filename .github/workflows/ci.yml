@@ -29,7 +29,7 @@ jobs:
       - name: Install the pinned Python dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements/metadata-probe.txt
+          python -m pip install -r requirements/metadata-probe.txt -r requirements/analysis-python.txt
           python -m pip freeze
       - name: Mount the checkout at the documented project path
         # The scripts retain /home/analyst/te as their required project path and the

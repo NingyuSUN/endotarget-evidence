@@ -1,0 +1,57 @@
+{
+  "analysis": "COMBINED_BOUND",
+  "protocol": "docs/COMBINED_BOUND_PROTOCOL.md",
+  "synthetic": false,
+  "inputs": {
+    "discovery": {
+      "path": "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz",
+      "sha256": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a",
+      "coefficient": "ENDO_minus_non_ENDO",
+      "expected_rows": 17733
+    },
+    "heca": {
+      "path": "reports/mde_analysis/v1_heca_mde_per_gene.tsv.gz",
+      "sha256": "4912a9b057d736dc5be6870c33f2711dbebda2d9a027c6093756b17d68774b8c",
+      "coefficient": "ENDO_minus_non_ENDO",
+      "expected_rows": 17643
+    },
+    "pinning_receipt": {
+      "path": "receipts/mde_analysis_results.json",
+      "must_list_inputs": true
+    }
+  },
+  "columns": {
+    "gene_id": "gene_id",
+    "estimate": "logFC",
+    "se": "moderated_SE",
+    "df": "df_total",
+    "estimable": "fit_estimable"
+  },
+  "primary": {
+    "method": "fixed_effect_inverse_variance",
+    "df_method": "welch_satterthwaite",
+    "alpha": 0.05,
+    "ci_level": 0.95,
+    "bh_boundaries_k": [1, 10, 100, 1000],
+    "mde_power": 0.8,
+    "exclusion_thresholds_log2": [0.585, 1.0, 2.0],
+    "heterogeneity_flag_p": 0.05
+  },
+  "sensitivities": ["stouffer_weighted_z", "normal_approximation", "exclude_heterogeneous"],
+  "labels": {
+    "no_combined_discovery": "0 genes at BH q < 0.05 in the primary test",
+    "combined_discovery": "at least one gene at BH q < 0.05 in the primary test; listed, not nominated"
+  },
+  "software": {"python": "3.10", "numpy": "2.2.6", "scipy": "1.15.2"},
+  "outputs": {
+    "directory": "reports/combined_bound",
+    "per_gene": "reports/combined_bound/combined_per_gene.tsv.gz",
+    "cohort_only": "reports/combined_bound/cohort_only_genes.tsv",
+    "top20": "reports/combined_bound/top20_by_abs_t.tsv",
+    "summary": "reports/combined_bound/summary.json",
+    "figure": "reports/combined_bound/combined_mde_ecdf.svg",
+    "results_receipt": "receipts/combined_bound_results.json",
+    "freeze_receipt": "receipts/combined_bound_freeze.json",
+    "report": "reports/combined_bound_results.md"
+  }
+}
