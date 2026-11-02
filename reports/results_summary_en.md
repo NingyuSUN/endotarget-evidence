@@ -144,12 +144,13 @@ confirmation, and a missing mapping is not a negative genetic test. See the
 
 ## Follow-on analyses (October 2026)
 
-Four analyses were added on 26–27 October 2026 and a fifth on 2 November 2026 under
-rules frozen and hashed before any new value was computed. They reuse the v1
-estimator or its saved fit quantities unchanged, refit no disease model and leave
-every v1 artifact byte-identical; the first four ran once on the analysis host in
-the v1 runtime, the fifth once locally with the runtime's NumPy and SciPy versions.
-Numbers are copied from the linked results reports.
+Four analyses were added on 26–27 October 2026 and three more on 2 November 2026
+under rules frozen and hashed before any new value was computed. They reuse the v1
+estimator, its saved fit quantities or its design matrices unchanged, refit no
+disease model and leave every v1 artifact byte-identical; the first four ran once
+on the analysis host in the v1 runtime, the November analyses once locally with the
+runtime's NumPy and SciPy versions. Numbers are copied from the linked results
+reports.
 
 ### Phase positive control
 
@@ -285,6 +286,41 @@ normal-approximation test would give 50, which shows that the degrees-of-freedom
 correction, not the pooling, decides the outcome. Single-cohort values here are
 computed on the 15,435 shared genes and therefore differ slightly from the
 full-family values of the MDE report.
+
+### Stromal-state composition test (2 November 2026)
+
+Per cohort, the logit of the decidualized-like share of each donor's primary stromal
+cells (authors' `dS*` / `dStromal_*` states) regressed on the v1 primary design; CLR per
+author state with BH within cohort; rules frozen before any model was fitted on the
+composition grids ([protocol](../docs/COMPOSITION_TEST_PROTOCOL.md),
+[results](composition_test_results.md)).
+
+| Cohort | Mean decidualized-like share, ENDO / non-ENDO | Odds ratio [95%] | p (df) | Detectable odds ratio | States at q < 0.05 | Label |
+|---|---|---|---|---|---|---|
+| Discovery | 12.8% / 13.2% | 0.75 [0.48, 1.17] | 0.18 (10) | 1.86 | 0 of 12 (smallest q 0.16) | `no_detectable_shift` |
+| HECA | 7.6% / 7.4% | 1.08 [0.64, 1.80] | 0.75 (12) | 2.06 | 0 of 7 (smallest q 0.21) | `no_detectable_shift` |
+
+Pair label `no_replicated_shift`. The discovery estimate stays negative in every
+leave-one-donor-out refit and reaches p 0.053 with adenomyosis donors excluded; HECA shows
+nothing in that direction. Within-state expression change is not addressed.
+
+### Genetic set-level test (2 November 2026)
+
+Four fixed gene sets, built and published before the freeze, tested on the pooled |t| of
+the 15,435-gene combined family with a one-sided Wilcoxon test and an expression-matched
+reference of 10,000 random sets ([protocol](../docs/GENETIC_SET_TEST_PROTOCOL.md),
+[results](genetic_set_test_results.md)).
+
+| Set | Family genes | Mean \|t\| set / matched | Matched percentile | Wilcoxon p | Label |
+|---|---:|---|---:|---:|---|
+| Rahmioglu 2023 credible-set nearest genes | 83 | 0.86 / 0.96 | 11 | 0.95 | `no_enrichment` |
+| Rahmioglu 2023 SMR genes | 14 | 0.96 / 0.96 | 51 | 0.42 | `no_enrichment` |
+| Open Targets genetic association > 0 | 289 | 0.90 / 0.96 | 6 | 0.98 | `no_enrichment` |
+| Open Targets genetic association ≥ 0.5 | 48 | 0.92 / 0.95 | 39 | 0.70 | `no_enrichment` |
+
+Sign agreement across cohorts among set genes is 43–50% against 53% for matched genes.
+The sub-threshold stromal disease signal is not concentrated among genetically implicated
+genes.
 
 ### Cohort extension feasibility
 

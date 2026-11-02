@@ -37,6 +37,10 @@ summarizes them.
 - [Cohort extension feasibility](../reports/cohort_extension_feasibility.md) — metadata only, 2026-10-27: GSE213216 and GSE179640 cannot extend the eutopic donor-level contrasts (natural-cycle eutopic donors 5 ENDO / 0 non-ENDO and 0 / 1); lesion-context resources only; nothing downloaded
 - [Two-cohort combined bound protocol](COMBINED_BOUND_PROTOCOL.md) — frozen 2026-11-02 before computation; fixed-effect combination of the two saved v1 disease fits with Satterthwaite df, BH over the shared family, exact MDE and interval exclusion
 - [Two-cohort combined bound results](../reports/combined_bound_results.md) — 0 genes at q < 0.05 over 15,435 shared genes; median detectable effect 1.27-fold at α 0.05 and 1.5–1.8-fold at the multiplicity faced; twofold differences excluded family-wide for 60% of genes
+- [Stromal-state composition test protocol](COMPOSITION_TEST_PROTOCOL.md) — frozen 2026-11-02 before any model was fitted on the composition grids; decidualized-like share on the v1 design, CLR per author state
+- [Stromal-state composition test results](../reports/composition_test_results.md) — no detectable shift: odds ratio 0.75 [0.48, 1.17] and 1.08 [0.64, 1.80]; detectable odds ratio 1.9 / 2.1; no state at q < 0.05
+- [Genetic set-level test protocol](GENETIC_SET_TEST_PROTOCOL.md) — frozen 2026-11-02 after the four gene sets were built and published; competitive Wilcoxon and expression-matched reference on the pooled statistics
+- [Genetic set-level test results](../reports/genetic_set_test_results.md) — no enrichment for any set (matched percentiles 6–51); genetically implicated genes look like expression-matched genes in the stromal disease contrast
 - [Secretory program disease contrast results](../reports/secretory_program_results.md) — no detectable difference in either cohort: θ +0.04 [−0.18, +0.25] (discovery) and −0.11 [−0.40, +0.19] (HECA) program units; detectable attenuation 0.31 and 0.42 units; gene-level set tests agree; signature transfers at AUC 1.00 / 0.99
 
 ## Reproduction

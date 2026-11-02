@@ -7,6 +7,14 @@ tagged version contains.
 
 ## Unreleased
 
+- **Stromal-state composition test (2026-11-02).** Prespecified per-cohort test of the
+  decidualized-like share of primary stromal cells on the v1 design: odds ratio 0.75
+  [0.48, 1.17] and 1.08 [0.64, 1.80], no author state at q < 0.05; labels
+  `no_detectable_shift`, pair `no_replicated_shift`.
+- **Genetic set-level test (2026-11-02).** Four fixed gene sets (Rahmioglu 2023
+  nearest and SMR genes; Open Targets 26.09 genetic association > 0 and ≥ 0.5) show no
+  enrichment of the pooled stromal disease statistics against expression-matched
+  genes. Generic freeze/verify module `scripts/followon_freeze.py`.
 - **Two-cohort combined bound (2026-11-02).** Prespecified fixed-effect combination
   of the two saved v1 disease fits over 15,435 shared genes: 0 genes at BH q < 0.05;
   median detectable effect 1.27-fold at α 0.05 and 1.5–1.8-fold at the multiplicity

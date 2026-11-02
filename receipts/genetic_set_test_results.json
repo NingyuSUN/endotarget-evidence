@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "phase": "GENETIC_SET_TEST_COMPLETED",
+  "created_utc": "2026-11-02T01:18:08.082222+00:00",
+  "synthetic": false,
+  "protocol": "docs/GENETIC_SET_TEST_PROTOCOL.md",
+  "freeze_receipt": "receipts/genetic_set_test_freeze.json",
+  "freeze_sha256": "35ffef4173ba6d21a1efa3610121c569594e1ff4efdbc45f0b719ece11e25ae7",
+  "input_sha256": {
+    "reports/genetic_set_test/gene_sets.tsv": "73ac9d5cd5712a103394ed7898c48c61c1ff6d6e4a565017c786c15ef9e206db",
+    "reports/combined_bound/combined_per_gene.tsv.gz": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b",
+    "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a"
+  },
+  "script_sha256": "0cffc21e773f844729dcb8a97dede476e713d4a093ccccbd3101bda5926d802b",
+  "output_sha256": {
+    "reports/genetic_set_test/set_results.tsv": "80f5ad530cc75c1ff54d15e713860bd505b8460a74542d0801a4d273eb361637",
+    "reports/genetic_set_test/set_members.tsv": "827e395499f31502c30c4f6e4db92098affdf406db8b406c99381a1e1ab92030",
+    "reports/genetic_set_test/summary.json": "a22c8655fb087ecb36ba7522d9db8116f5ea9b5665a84a95a57088a4eddfdb4c"
+  },
+  "labels": {
+    "rahmioglu_nearest": "no_enrichment",
+    "rahmioglu_smr": "no_enrichment",
+    "opentargets_genetic_any": "no_enrichment",
+    "opentargets_genetic_0.5": "no_enrichment"
+  },
+  "software": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  }
+}

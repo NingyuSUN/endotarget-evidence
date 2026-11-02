@@ -100,6 +100,16 @@ research brief present the completed study.
   the v1 runtime's NumPy and SciPy versions, with results receipt, report and
   documentation updates. No v1 or earlier follow-on artifact changed; the research
   brief keeps its 27 October wording and date.
+- **2 November 2026, later.** Two further prespecified analyses: the stromal-state
+  composition test and the genetic set-level test. Order: protocols, configurations,
+  code, tests and the published gene sets committed (3b6f84f; the composition
+  configuration's design-matrix pins corrected to line-ending-normalized hashes in
+  aae7faf), freeze receipts committed (c8eb0db), one local run each, then results
+  receipts, reports and documentation. Hashes of text inputs in these analyses are
+  computed with CRLF normalized to LF (`scripts/followon_freeze.py`) so that pins agree
+  between Windows and Linux checkouts.
+
+Some frozen documents
 
 Some frozen documents
 

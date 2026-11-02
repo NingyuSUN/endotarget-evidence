@@ -1,0 +1,159 @@
+{
+  "analysis": "GENETIC_SET_TEST",
+  "synthetic": false,
+  "family_size": 15435,
+  "matched_draws": 10000,
+  "seed": 20261102,
+  "sets": {
+    "rahmioglu_nearest": {
+      "set_size_source": 100,
+      "set_size_in_family": 83,
+      "tests": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.9506209448230248,
+          "mean_abs_t_set": 0.8601660073848068,
+          "mean_abs_t_rest": 0.9556227122358959,
+          "matched_reference_mean": 0.9596921381879352,
+          "matched_percentile": 11.200000000000001,
+          "matched_p_one_sided": 0.888011198880112
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 0.9272585363031345,
+          "mean_abs_t_set": 0.9556496622760661,
+          "mean_abs_t_rest": 1.0397933519713831,
+          "matched_reference_mean": 1.041490509691488,
+          "matched_percentile": 15.4,
+          "matched_p_one_sided": 0.846015398460154
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 0.8739963438057896,
+          "mean_abs_t_set": 0.7467405836323042,
+          "mean_abs_t_rest": 0.8053611865931718,
+          "matched_reference_mean": 0.8109486010959327,
+          "matched_percentile": 14.49,
+          "matched_p_one_sided": 0.8551144885511449
+        }
+      },
+      "sign_agreement": {
+        "set_share": 0.46987951807228917,
+        "matched_reference_mean": 0.533033734939759,
+        "matched_percentile": 9.58
+      },
+      "label": "no_enrichment"
+    },
+    "rahmioglu_smr": {
+      "set_size_source": 18,
+      "set_size_in_family": 14,
+      "tests": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.42241728785285365,
+          "mean_abs_t_set": 0.9606954200973311,
+          "mean_abs_t_rest": 0.9551043331156898,
+          "matched_reference_mean": 0.9640973478320805,
+          "matched_percentile": 51.06,
+          "matched_p_one_sided": 0.4894510548945106
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 0.7706163508221684,
+          "mean_abs_t_set": 0.9453522650452012,
+          "mean_abs_t_rest": 1.0394262064537294,
+          "matched_reference_mean": 1.0243154001040842,
+          "matched_percentile": 36.07,
+          "matched_p_one_sided": 0.6393360663933607
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 0.3030419716461446,
+          "mean_abs_t_set": 0.8781178671806078,
+          "mean_abs_t_rest": 0.80497962226051,
+          "matched_reference_mean": 0.8295994598193293,
+          "matched_percentile": 63.85999999999999,
+          "matched_p_one_sided": 0.36146385361463856
+        }
+      },
+      "sign_agreement": {
+        "set_share": 0.42857142857142855,
+        "matched_reference_mean": 0.5400285714285714,
+        "matched_percentile": 13.41
+      },
+      "label": "no_enrichment"
+    },
+    "opentargets_genetic_any": {
+      "set_size_source": 356,
+      "set_size_in_family": 289,
+      "tests": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.9833093795984346,
+          "mean_abs_t_set": 0.8949745995757629,
+          "mean_abs_t_rest": 0.9562568333276784,
+          "matched_reference_mean": 0.9639884691819709,
+          "matched_percentile": 5.88,
+          "matched_p_one_sided": 0.9412058794120588
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 0.7131407347279468,
+          "mean_abs_t_set": 1.0152193432921968,
+          "mean_abs_t_rest": 1.0398011403157366,
+          "matched_reference_mean": 1.0401951730121066,
+          "matched_percentile": 29.32,
+          "matched_p_one_sided": 0.7068293170682932
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 0.6403981748235573,
+          "mean_abs_t_set": 0.8068683040333172,
+          "mean_abs_t_rest": 0.8050111887728921,
+          "matched_reference_mean": 0.8155257022800161,
+          "matched_percentile": 39.15,
+          "matched_p_one_sided": 0.6085391460853915
+        }
+      },
+      "sign_agreement": {
+        "set_share": 0.49480968858131485,
+        "matched_reference_mean": 0.5364176470588236,
+        "matched_percentile": 6.569999999999999
+      },
+      "label": "no_enrichment"
+    },
+    "opentargets_genetic_0.5": {
+      "set_size_source": 55,
+      "set_size_in_family": 48,
+      "tests": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.7023075581903074,
+          "mean_abs_t_set": 0.9187337472820972,
+          "mean_abs_t_rest": 0.9552228788580538,
+          "matched_reference_mean": 0.9521321931946674,
+          "matched_percentile": 38.76,
+          "matched_p_one_sided": 0.6124387561243876
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 0.8289165648154553,
+          "mean_abs_t_set": 0.9288650016494988,
+          "mean_abs_t_rest": 1.039685509933997,
+          "matched_reference_mean": 1.0300271922309114,
+          "matched_percentile": 18.83,
+          "matched_p_one_sided": 0.8117188281171883
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 0.6742196709724866,
+          "mean_abs_t_set": 0.8000659875469958,
+          "mean_abs_t_rest": 0.8050614959132772,
+          "matched_reference_mean": 0.8125973713773459,
+          "matched_percentile": 44.18,
+          "matched_p_one_sided": 0.5582441755824418
+        }
+      },
+      "sign_agreement": {
+        "set_share": 0.4791666666666667,
+        "matched_reference_mean": 0.5349,
+        "matched_percentile": 17.98
+      },
+      "label": "no_enrichment"
+    }
+  },
+  "software": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "finished_utc": "2026-11-02T01:18:08.005341+00:00"
+}

@@ -1,0 +1,870 @@
+{
+  "analysis": "COMPOSITION_TEST",
+  "synthetic": false,
+  "cohorts": {
+    "discovery": {
+      "donors": 22,
+      "disease_counts": {
+        "ENDO": 12,
+        "non-ENDO": 10
+      },
+      "author_states": [
+        "dS1-myofibroblast",
+        "dS2",
+        "dS3",
+        "dS4",
+        "eF1",
+        "eF2",
+        "eF3",
+        "eF4-CXCL14",
+        "fib C7",
+        "fib C7 secretory",
+        "fib C7 secretory_late",
+        "fib C7-SFRP2"
+      ],
+      "partition_sizes": {
+        "decidualized": 4,
+        "non_decidualized": 4,
+        "other": 4
+      },
+      "decidualized_share_mean": {
+        "ENDO": 0.12820575012749086,
+        "non-ENDO": 0.13219252950304813
+      },
+      "primary": {
+        "status": "ESTIMATED",
+        "n": 22,
+        "df": 10,
+        "estimate": -0.28638587304541974,
+        "se": 0.20000568332762939,
+        "t": -1.4318886757647329,
+        "p": 0.18268118475864129,
+        "ci_low": -0.7320263066815069,
+        "ci_high": 0.15925456059066745,
+        "mde_log_odds": 0.6220112952786563,
+        "odds_ratio": 0.7509727798769205,
+        "mde_odds_ratio": 1.8626706575312282
+      },
+      "label": "no_detectable_shift",
+      "secondary_shares": {
+        "non_decidualized": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.4052932558126977,
+          "se": 0.23878179891767795,
+          "t": 1.697337308160686,
+          "p": 0.12048323486532232,
+          "ci_low": -0.12674574749786005,
+          "ci_high": 0.9373322591232555,
+          "mde_log_odds": 0.7426037778659204,
+          "odds_ratio": 1.4997422437054397,
+          "mde_odds_ratio": 2.1013999760301343
+        },
+        "other": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -0.8953978868559758,
+          "se": 0.4528800033481775,
+          "t": -1.9771195023764103,
+          "p": 0.07623695195050736,
+          "ci_low": -1.9044774175940615,
+          "ci_high": 0.11368164388211,
+          "mde_log_odds": 1.4084423642449948,
+          "odds_ratio": 0.4084450513879496,
+          "mde_odds_ratio": 4.0895803637671895
+        }
+      },
+      "per_state_clr": [
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.24536290690852638,
+          "se": 0.18854558778352692,
+          "t": 1.301345259748176,
+          "p": 0.22232264803530802,
+          "ci_low": -0.17474284259851583,
+          "ci_high": 0.6654686564155686,
+          "state": "dS1-myofibroblast",
+          "group": "decidualized",
+          "mean_share_endo": 0.029375780256922904,
+          "mean_share_non_endo": 0.024755834847600914,
+          "q_bh_within_cohort": 0.5335743552847393
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -0.15337716333466933,
+          "se": 0.31863925530814213,
+          "t": -0.4813504952060755,
+          "p": 0.6406267496153107,
+          "ci_low": -0.8633496678479161,
+          "ci_high": 0.5565953411785775,
+          "state": "dS2",
+          "group": "decidualized",
+          "mean_share_endo": 0.09782375898428529,
+          "mean_share_non_endo": 0.1071735641204015,
+          "q_bh_within_cohort": 0.8541689994870809
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -1.1045884041277685,
+          "se": 0.6123157901727698,
+          "t": -1.8039521793421331,
+          "p": 0.10139719977946288,
+          "ci_low": -2.468913005883328,
+          "ci_high": 0.259736197627791,
+          "state": "dS3",
+          "group": "decidualized",
+          "mean_share_endo": 0.0007653631020822638,
+          "mean_share_non_endo": 0.00021467040188760564,
+          "q_bh_within_cohort": 0.3984936519321156
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.024593849232492027,
+          "se": 0.44743722899394306,
+          "t": 0.05496603241485065,
+          "p": 0.9572481912368325,
+          "ci_low": -0.9723584245044457,
+          "ci_high": 1.0215461229694296,
+          "state": "dS4",
+          "group": "decidualized",
+          "mean_share_endo": 0.00024084778420038535,
+          "mean_share_non_endo": 4.846013315814415e-05,
+          "q_bh_within_cohort": 0.9572481912368325
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.5798251625364176,
+          "se": 0.2524520617445684,
+          "t": 2.2967733300712196,
+          "p": 0.04449796735638308,
+          "ci_low": 0.01732691550469312,
+          "ci_high": 1.142323409568142,
+          "state": "eF1",
+          "group": "non_decidualized",
+          "mean_share_endo": 0.03513367049360273,
+          "mean_share_non_endo": 0.014843586916427773,
+          "q_bh_within_cohort": 0.2669878041382985
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.2481257652074807,
+          "se": 0.3815203612104694,
+          "t": 0.6503604798974273,
+          "p": 0.5301168115793916,
+          "ci_low": -0.6019545744212633,
+          "ci_high": 1.0982061048362246,
+          "state": "eF2",
+          "group": "non_decidualized",
+          "mean_share_endo": 0.7704507695180697,
+          "mean_share_non_endo": 0.7742251482605045,
+          "q_bh_within_cohort": 0.7951752173690874
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.05521096154459282,
+          "se": 0.24682609251314466,
+          "t": 0.22368365103722807,
+          "p": 0.82750696956933,
+          "ci_low": -0.494751844862637,
+          "ci_high": 0.6051737679518226,
+          "state": "eF3",
+          "group": "non_decidualized",
+          "mean_share_endo": 0.013036049751755374,
+          "mean_share_non_endo": 0.008978661913471723,
+          "q_bh_within_cohort": 0.9194537104394459
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -0.11758256346667517,
+          "se": 0.577827259521778,
+          "t": -0.20349085566504593,
+          "p": 0.8428325679028253,
+          "ci_low": -1.4050619301315763,
+          "ci_high": 1.169896803198226,
+          "state": "eF4-CXCL14",
+          "group": "non_decidualized",
+          "mean_share_endo": 0.017347936420807425,
+          "mean_share_non_endo": 0.020868609662207497,
+          "q_bh_within_cohort": 0.9194537104394459
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -0.6935301850745783,
+          "se": 0.23133169220482064,
+          "t": -2.9979903681356723,
+          "p": 0.013389556898230792,
+          "ci_low": -1.208969316166934,
+          "ci_high": -0.1780910539822227,
+          "state": "fib C7",
+          "group": "other",
+          "mean_share_endo": 0.03560994291017298,
+          "mean_share_non_endo": 0.04877718048206871,
+          "q_bh_within_cohort": 0.1606746827787695
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -0.1714021823489667,
+          "se": 0.21479489500943605,
+          "t": -0.7979807077884087,
+          "p": 0.44341852581135466,
+          "ci_low": -0.649995033123221,
+          "ci_high": 0.30719066842528764,
+          "state": "fib C7 secretory",
+          "group": "other",
+          "mean_share_endo": 6.409809588243301e-05,
+          "mean_share_non_endo": 2.6961867506292494e-05,
+          "q_bh_within_cohort": 0.7951752173690874
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.14796722710406918,
+          "se": 0.22744090862799277,
+          "t": 0.6505743755451115,
+          "p": 0.5299842804946991,
+          "ci_low": -0.35880269793616915,
+          "ci_high": 0.6547371521443075,
+          "state": "fib C7 secretory_late",
+          "group": "other",
+          "mean_share_endo": 0.0,
+          "mean_share_non_endo": 0.0,
+          "q_bh_within_cohort": 0.7951752173690874
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": 0.9393946258190797,
+          "se": 0.5741153899084694,
+          "t": 1.6362470721588676,
+          "p": 0.1328312173107052,
+          "ci_low": -0.3398141799469805,
+          "ci_high": 2.21860343158514,
+          "state": "fib C7-SFRP2",
+          "group": "other",
+          "mean_share_endo": 0.00015178268221847926,
+          "mean_share_non_endo": 8.732139476548513e-05,
+          "q_bh_within_cohort": 0.3984936519321156
+        }
+      ],
+      "sensitivities": {
+        "arcsine_sqrt": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -0.04516031155798648,
+          "se": 0.03318274113819767,
+          "t": -1.3609578355779974,
+          "p": 0.20340675851769682,
+          "ci_low": -0.11909606630269998,
+          "ci_high": 0.028775443186727014,
+          "mde_log_odds": 0.10319726646195462,
+          "odds_ratio": 0.9558442366711696,
+          "mde_odds_ratio": 1.10871009882375
+        },
+        "reduced_design": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 19,
+          "estimate": -0.10458291857656206,
+          "se": 0.11664293165320232,
+          "t": -0.8966074248502552,
+          "p": 0.38114863442628943,
+          "ci_low": -0.3487193803034135,
+          "ci_high": 0.1395535431502894,
+          "mde_log_odds": 0.3445147981022304,
+          "odds_ratio": 0.9007001095394278,
+          "mde_odds_ratio": 1.4113049856580828
+        },
+        "depth_at_least_500": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 10,
+          "estimate": -0.28638587304541974,
+          "se": 0.20000568332762939,
+          "t": -1.4318886757647329,
+          "p": 0.18268118475864129,
+          "ci_low": -0.7320263066815069,
+          "ci_high": 0.15925456059066745,
+          "mde_log_odds": 0.6220112952786563,
+          "odds_ratio": 0.7509727798769205,
+          "mde_odds_ratio": 1.8626706575312282,
+          "donors_excluded": 0
+        },
+        "adenomyosis_excluded": {
+          "status": "ESTIMATED",
+          "n": 18,
+          "df": 7,
+          "estimate": -0.424530009046691,
+          "se": 0.18226685055468025,
+          "t": -2.329167414451656,
+          "p": 0.05267844275344921,
+          "ci_low": -0.8555226241297257,
+          "ci_high": 0.006462606036343632,
+          "mde_log_odds": 0.5959688281776095,
+          "odds_ratio": 0.6540771232318114,
+          "mde_odds_ratio": 1.8147883115822034,
+          "donors_excluded": 4
+        }
+      },
+      "leave_one_donor_out": {
+        "fits": [
+          {
+            "left_out": "sample70",
+            "status": "ESTIMATED",
+            "estimate": -0.2863858730454197,
+            "p": 0.2028471032540676
+          },
+          {
+            "left_out": "sample71",
+            "status": "ESTIMATED",
+            "estimate": -0.2863858730454194,
+            "p": 0.20284710325406774
+          },
+          {
+            "left_out": "sample76",
+            "status": "ESTIMATED",
+            "estimate": -0.3469058897559575,
+            "p": 0.17826256929130038
+          },
+          {
+            "left_out": "sample82",
+            "status": "ESTIMATED",
+            "estimate": -0.34690588975595527,
+            "p": 0.17826256929130277
+          },
+          {
+            "left_out": "sample83",
+            "status": "ESTIMATED",
+            "estimate": -0.27272913879611616,
+            "p": 0.20574534753122511
+          },
+          {
+            "left_out": "sample84",
+            "status": "ESTIMATED",
+            "estimate": -0.27272913879611704,
+            "p": 0.20574534753122356
+          },
+          {
+            "left_out": "sample91",
+            "status": "ESTIMATED",
+            "estimate": -0.3088721518777747,
+            "p": 0.15800188629886674
+          },
+          {
+            "left_out": "sample94",
+            "status": "ESTIMATED",
+            "estimate": -0.11199603962251947,
+            "p": 0.6236133782509791
+          },
+          {
+            "left_out": "sample95",
+            "status": "ESTIMATED",
+            "estimate": -0.2815962903768345,
+            "p": 0.22659448640906812
+          },
+          {
+            "left_out": "sample96",
+            "status": "ESTIMATED",
+            "estimate": -0.2540945799913095,
+            "p": 0.3081511147699448
+          },
+          {
+            "left_out": "sample106",
+            "status": "ESTIMATED",
+            "estimate": -0.2863858730454204,
+            "p": 0.18268118475864026
+          },
+          {
+            "left_out": "sample110",
+            "status": "ESTIMATED",
+            "estimate": -0.3186439342199602,
+            "p": 0.1250246150486714
+          },
+          {
+            "left_out": "sample111",
+            "status": "ESTIMATED",
+            "estimate": -0.279004900750602,
+            "p": 0.24100242316627388
+          },
+          {
+            "left_out": "sample112",
+            "status": "ESTIMATED",
+            "estimate": -0.2850559611523814,
+            "p": 0.1765443523724208
+          },
+          {
+            "left_out": "sample114",
+            "status": "ESTIMATED",
+            "estimate": -0.2702189069979492,
+            "p": 0.2339107679061354
+          },
+          {
+            "left_out": "sample116",
+            "status": "ESTIMATED",
+            "estimate": -0.2863858730454195,
+            "p": 0.18268118475864134
+          },
+          {
+            "left_out": "sample123",
+            "status": "ESTIMATED",
+            "estimate": -0.28993964360854085,
+            "p": 0.2374829980888586
+          },
+          {
+            "left_out": "sample125",
+            "status": "ESTIMATED",
+            "estimate": -0.1781137095447206,
+            "p": 0.44229492059968145
+          },
+          {
+            "left_out": "sample126",
+            "status": "ESTIMATED",
+            "estimate": -0.2683791453569889,
+            "p": 0.20741056753981843
+          },
+          {
+            "left_out": "sample130",
+            "status": "ESTIMATED",
+            "estimate": -0.30264005980365744,
+            "p": 0.16656607342012023
+          },
+          {
+            "left_out": "sample134",
+            "status": "ESTIMATED",
+            "estimate": -0.3539587128811364,
+            "p": 0.11867671815118593
+          },
+          {
+            "left_out": "sample135",
+            "status": "ESTIMATED",
+            "estimate": -0.45912416938519923,
+            "p": 0.01999854565329114
+          }
+        ],
+        "estimate_range": [
+          -0.45912416938519923,
+          -0.11199603962251947
+        ],
+        "sign_constant": true,
+        "min_p": 0.01999854565329114
+      }
+    },
+    "heca": {
+      "donors": 22,
+      "disease_counts": {
+        "ENDO": 15,
+        "non-ENDO": 7
+      },
+      "author_states": [
+        "Fibroblast_basalis",
+        "dStromal_early",
+        "dStromal_late",
+        "dStromal_mid",
+        "eStromal",
+        "eStromal_MMPs",
+        "eStromal_cycling"
+      ],
+      "partition_sizes": {
+        "decidualized": 3,
+        "non_decidualized": 3,
+        "other": 1
+      },
+      "decidualized_share_mean": {
+        "ENDO": 0.07620177496733863,
+        "non-ENDO": 0.07417369893676574
+      },
+      "primary": {
+        "status": "ESTIMATED",
+        "n": 22,
+        "df": 12,
+        "estimate": 0.07558613230733775,
+        "se": 0.23618739210897444,
+        "t": 0.3200261099138733,
+        "p": 0.7544520179454761,
+        "ci_low": -0.4390219878244401,
+        "ci_high": 0.5901942524391156,
+        "mde_log_odds": 0.7209992061445508,
+        "odds_ratio": 1.0785161187993455,
+        "mde_odds_ratio": 2.056487038859538
+      },
+      "label": "no_detectable_shift",
+      "secondary_shares": {
+        "non_decidualized": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": -0.041484038349660246,
+          "se": 0.22076473001731034,
+          "t": -0.18791062479231826,
+          "p": 0.8540867877285658,
+          "ci_low": -0.5224890644485567,
+          "ci_high": 0.43952098774923615,
+          "mde_log_odds": 0.673919101548642,
+          "odds_ratio": 0.9593646482623261,
+          "mde_odds_ratio": 1.9619112026850138
+        },
+        "other": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": -0.3812781891295036,
+          "se": 0.7286515587575509,
+          "t": -0.5232654545879711,
+          "p": 0.6103162750537019,
+          "ci_low": -1.9688735537047033,
+          "ci_high": 1.206317175445696,
+          "mde_log_odds": 2.2243236217189333,
+          "odds_ratio": 0.6829878633903315,
+          "mde_odds_ratio": 9.247226065313685
+        }
+      },
+      "per_state_clr": [
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": -0.2854496086147953,
+          "se": 0.6198880896553056,
+          "t": -0.46048571246710374,
+          "p": 0.6534006722362025,
+          "ci_low": -1.6360697313113222,
+          "ci_high": 1.0651705140817316,
+          "state": "Fibroblast_basalis",
+          "group": "other",
+          "mean_share_endo": 0.0015918135304150084,
+          "mean_share_non_endo": 0.0,
+          "q_bh_within_cohort": 0.6935398707336196
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": -0.11562385062139813,
+          "se": 0.2864156044312848,
+          "t": -0.4036925671385267,
+          "p": 0.6935398707336196,
+          "ci_low": -0.7396698441720838,
+          "ci_high": 0.5084221429292876,
+          "state": "dStromal_early",
+          "group": "decidualized",
+          "mean_share_endo": 0.0335493402050037,
+          "mean_share_non_endo": 0.039879649468037306,
+          "q_bh_within_cohort": 0.6935398707336196
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": 0.2578921131070796,
+          "se": 0.43572376014667497,
+          "t": 0.5918706682882453,
+          "p": 0.5649218658208228,
+          "ci_low": -0.6914684056896816,
+          "ci_high": 1.2072526319038408,
+          "state": "dStromal_late",
+          "group": "decidualized",
+          "mean_share_endo": 0.019576723837740444,
+          "mean_share_non_endo": 0.01686255475799352,
+          "q_bh_within_cohort": 0.6935398707336196
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": 0.5120578174613877,
+          "se": 0.2090747246746579,
+          "t": 2.449161744721669,
+          "p": 0.03064014860908291,
+          "ci_low": 0.05652312498189632,
+          "ci_high": 0.9675925099408791,
+          "state": "dStromal_mid",
+          "group": "decidualized",
+          "mean_share_endo": 0.023075710924594477,
+          "mean_share_non_endo": 0.017431494710734918,
+          "q_bh_within_cohort": 0.2144810402635804
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": -0.5949712605699109,
+          "se": 0.6853264983163004,
+          "t": -0.8681573848838869,
+          "p": 0.40233687590060074,
+          "ci_low": -2.088169427609771,
+          "ci_high": 0.8982269064699491,
+          "state": "eStromal",
+          "group": "non_decidualized",
+          "mean_share_endo": 0.5683830096362487,
+          "mean_share_non_endo": 0.7715861384024737,
+          "q_bh_within_cohort": 0.6935398707336196
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": 0.8132767712373519,
+          "se": 1.121592254201274,
+          "t": 0.7251091189253223,
+          "p": 0.48228605856371376,
+          "ci_low": -1.6304628218674972,
+          "ci_high": 3.257016364342201,
+          "state": "eStromal_MMPs",
+          "group": "non_decidualized",
+          "mean_share_endo": 0.23973963492192146,
+          "mean_share_non_endo": 0.020004292434661213,
+          "q_bh_within_cohort": 0.6935398707336196
+        },
+        {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": -0.5871819819997159,
+          "se": 0.7922153669909447,
+          "t": -0.7411898411286784,
+          "p": 0.47283432269117875,
+          "ci_low": -2.3132709874560993,
+          "ci_high": 1.1389070234566674,
+          "state": "eStromal_cycling",
+          "group": "non_decidualized",
+          "mean_share_endo": 0.11408376694407622,
+          "mean_share_non_endo": 0.13423587022609934,
+          "q_bh_within_cohort": 0.6935398707336196
+        }
+      ],
+      "sensitivities": {
+        "arcsine_sqrt": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 12,
+          "estimate": 0.008535269155220234,
+          "se": 0.03378089542802929,
+          "t": 0.2526655687207805,
+          "p": 0.8048027720540918,
+          "ci_low": -0.06506697920088828,
+          "ci_high": 0.08213751751132875,
+          "mde_log_odds": 0.10312150267201223,
+          "odds_ratio": 1.0085717984200682,
+          "mde_odds_ratio": 1.1086261019267174
+        },
+        "reduced_design": {
+          "status": "ESTIMATED",
+          "n": 22,
+          "df": 19,
+          "estimate": -0.10897419142914899,
+          "se": 0.207198937418169,
+          "t": -0.5259399144949147,
+          "p": 0.6050151142795683,
+          "ci_low": -0.5426465514932091,
+          "ci_high": 0.324698168634911,
+          "mde_log_odds": 0.6119796466008784,
+          "odds_ratio": 0.8967535611274005,
+          "mde_odds_ratio": 1.8440784112512514
+        },
+        "depth_at_least_500": {
+          "status": "ESTIMATED",
+          "n": 20,
+          "df": 10,
+          "estimate": 0.184740721529657,
+          "se": 0.24780325321458604,
+          "t": 0.7455137054624548,
+          "p": 0.4731203940276185,
+          "ci_low": -0.36739933460106766,
+          "ci_high": 0.7368807776603817,
+          "mde_log_odds": 0.7706602129589416,
+          "odds_ratio": 1.202906511930931,
+          "mde_odds_ratio": 2.161192630258254,
+          "donors_excluded": 2
+        },
+        "adenomyosis_excluded": {
+          "status": "ESTIMATED",
+          "n": 19,
+          "df": 10,
+          "estimate": -0.003288561827730338,
+          "se": 0.24490007152156368,
+          "t": -0.01342817830676206,
+          "p": 0.9895503119232089,
+          "ci_low": -0.5489599260339185,
+          "ci_high": 0.5423828023784579,
+          "mde_log_odds": 0.7616314105006233,
+          "odds_ratio": 0.9967168395691522,
+          "mde_odds_ratio": 2.1417674738355177,
+          "donors_excluded": 3
+        }
+      },
+      "leave_one_donor_out": {
+        "fits": [
+          {
+            "left_out": "EX0045",
+            "status": "ESTIMATED",
+            "estimate": 0.08160550891644142,
+            "p": 0.7461903347816478
+          },
+          {
+            "left_out": "EX0288",
+            "status": "ESTIMATED",
+            "estimate": 0.03913784690686091,
+            "p": 0.8784485786009149
+          },
+          {
+            "left_out": "EX0540",
+            "status": "ESTIMATED",
+            "estimate": 0.0035798986122913302,
+            "p": 0.9884610455255589
+          },
+          {
+            "left_out": "EX0795",
+            "status": "ESTIMATED",
+            "estimate": 0.11939401719891368,
+            "p": 0.6199017397067992
+          },
+          {
+            "left_out": "FX0011",
+            "status": "ESTIMATED",
+            "estimate": 0.02202260274886844,
+            "p": 0.9458984634122433
+          },
+          {
+            "left_out": "FX0052",
+            "status": "ESTIMATED",
+            "estimate": 0.07558613230733711,
+            "p": 0.7544520179454779
+          },
+          {
+            "left_out": "FX0060",
+            "status": "ESTIMATED",
+            "estimate": 0.08179302866735746,
+            "p": 0.7463848163823401
+          },
+          {
+            "left_out": "FX1097",
+            "status": "ESTIMATED",
+            "estimate": 0.022022602748871942,
+            "p": 0.9458984634122347
+          },
+          {
+            "left_out": "FX1101",
+            "status": "NOT_ESTIMABLE",
+            "estimate": null,
+            "p": null
+          },
+          {
+            "left_out": "FX1104",
+            "status": "ESTIMATED",
+            "estimate": 0.1330903500188322,
+            "p": 0.6103402652344752
+          },
+          {
+            "left_out": "FX1119",
+            "status": "ESTIMATED",
+            "estimate": 0.1740222701849167,
+            "p": 0.49291283973990563
+          },
+          {
+            "left_out": "FX1125",
+            "status": "ESTIMATED",
+            "estimate": 0.08704420041184881,
+            "p": 0.7380647477387492
+          },
+          {
+            "left_out": "FX1129",
+            "status": "ESTIMATED",
+            "estimate": -0.033351322245528045,
+            "p": 0.871603331056721
+          },
+          {
+            "left_out": "FX1136",
+            "status": "ESTIMATED",
+            "estimate": 0.1272074502372403,
+            "p": 0.6052399287444892
+          },
+          {
+            "left_out": "FX1146",
+            "status": "ESTIMATED",
+            "estimate": 0.0035798986122941925,
+            "p": 0.9884610455255497
+          },
+          {
+            "left_out": "FX1150",
+            "status": "ESTIMATED",
+            "estimate": 0.06842719135368337,
+            "p": 0.7849393961782881
+          },
+          {
+            "left_out": "FX1160",
+            "status": "ESTIMATED",
+            "estimate": 0.10135039177466801,
+            "p": 0.6434650810152589
+          },
+          {
+            "left_out": "FX1236",
+            "status": "ESTIMATED",
+            "estimate": 0.031223940509857204,
+            "p": 0.8954384790234955
+          },
+          {
+            "left_out": "FX9005",
+            "status": "ESTIMATED",
+            "estimate": 0.14598016182817097,
+            "p": 0.56074075386481
+          },
+          {
+            "left_out": "FX9020",
+            "status": "ESTIMATED",
+            "estimate": 0.0871846996788539,
+            "p": 0.736008521984826
+          },
+          {
+            "left_out": "FX9024",
+            "status": "ESTIMATED",
+            "estimate": 0.038667090086578905,
+            "p": 0.8818126213547159
+          },
+          {
+            "left_out": "FX9027",
+            "status": "ESTIMATED",
+            "estimate": 0.03419676961712481,
+            "p": 0.9011940847986155
+          }
+        ],
+        "estimate_range": [
+          -0.033351322245528045,
+          0.1740222701849167
+        ],
+        "sign_constant": false,
+        "min_p": 0.49291283973990563
+      }
+    }
+  },
+  "pair_label": "no_replicated_shift",
+  "software": {
+    "python": "3.10.21",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "finished_utc": "2026-11-02T01:17:18.922488+00:00"
+}
