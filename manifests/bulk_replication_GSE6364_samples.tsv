@@ -1,0 +1,38 @@
+gsm	title	source	platform	characteristics	phase_guess	disease_guess	tissue_guess	stage_text	hormone_mention
+GSM150190	PE_D_26A	uterus - Proliferative endometrium from patient with  endometriosis	GPL570	Proliferative Phase Endometriosis	proliferative	endometriosis	eutopic_endometrium		
+GSM150191	PE_D_508	uterus - Proliferative endometrium from patient with  endometriosis	GPL570	Proliferative Phase Endometriosis	proliferative	endometriosis	eutopic_endometrium		
+GSM150192	PE_D_587	uterus - Proliferative endometrium from patient with  endometriosis	GPL570	Proliferative Phase Endometriosis	proliferative	endometriosis	eutopic_endometrium		
+GSM150193	PE_D_594	uterus - Proliferative endometrium from patient with  endometriosis	GPL570	Proliferative Phase Endometriosis	proliferative	endometriosis	eutopic_endometrium		
+GSM150194	PE_D_647	uterus - Proliferative endometrium from patient with  endometriosis	GPL570	Proliferative Phase Endometriosis	proliferative	endometriosis	eutopic_endometrium		
+GSM150195	PE_D_651	uterus - Proliferative endometrium from patient with  endometriosis	GPL570	Proliferative Phase Endometriosis	proliferative	endometriosis	eutopic_endometrium		
+GSM150196	PE_N_562	uterus - Proliferative endometrium from normal patient	GPL570	Proliferative Phase Normal	proliferative	control	eutopic_endometrium		
+GSM150197	PE_N_598	uterus - Proliferative endometrium from normal patient	GPL570	Proliferative Phase Normal	proliferative	control	eutopic_endometrium		
+GSM150198	PE_N_M165	uterus - Proliferative endometrium from normal patient	GPL570	Proliferative Phase Normal	proliferative	control	eutopic_endometrium		
+GSM150199	PE_N_M169	uterus - Proliferative endometrium from normal patient	GPL570	Proliferative Phase Normal	proliferative	control	eutopic_endometrium		
+GSM150201	PE_N_M182	uterus - Proliferative endometrium from normal patient	GPL570	Proliferative Phase Normal	proliferative	control	eutopic_endometrium		
+GSM150202	ESE_D_27A	uterus - Early secretory endometrium from patient with endometriosis	GPL570	Early Secretory Phase Endometriosis	early_secretory	endometriosis	eutopic_endometrium		
+GSM150203	ESE_D_489	uterus - Early secretory endometrium from patient with endometriosis	GPL570	Early Secretory Phase Endometriosis	early_secretory	endometriosis	eutopic_endometrium		
+GSM150204	ESE_D_496	uterus - Early secretory endometrium from patient with endometriosis	GPL570	Early Secretory Phase Endometriosis	early_secretory	endometriosis	eutopic_endometrium		
+GSM150205	ESE_D_517	uterus - Early secretory endometrium from patient with endometriosis	GPL570	Early Secretory Phase Endometriosis	early_secretory	endometriosis	eutopic_endometrium		
+GSM150206	ESE_D_575	uterus - Early secretory endometrium from patient with endometriosis	GPL570	Early Secretory Phase Endometriosis	early_secretory	endometriosis	eutopic_endometrium		
+GSM150207	ESE_D_599	uterus - Early secretory endometrium from patient with endometriosis	GPL570	Early Secretory Phase Endometriosis	early_secretory	endometriosis	eutopic_endometrium		
+GSM150208	ESE_N_629	uterus - Early secretory endometrium from normal patient	GPL570	Early Secretory Phase Normal	early_secretory	control	eutopic_endometrium		
+GSM150209	ESE_N_650	uterus - Early secretory endometrium from normal patient	GPL570	Early Secretory Phase Normal	early_secretory	control	eutopic_endometrium		
+GSM150210	ESE_N_664	uterus - Early secretory endometrium from normal patient	GPL570	Early Secretory Phase Normal	early_secretory	control	eutopic_endometrium		
+GSM150211	MSE_D_33A	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150212	MSE_D_516	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150213	MSE_D_540	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150214	MSE_D_543	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150215	MSE_D_645	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150216	MSE_D_678	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150217	MSE_D_97A	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150218	MSE_D_G72A	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150219	MSE_D_G73A	uterus - Mid secretory endometrium from patient with  endometriosis	GPL570	Mid Secretory Phase Endometriosis	mid_secretory	endometriosis	eutopic_endometrium		
+GSM150220	MSE_N_610	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		
+GSM150221	MSE_N_617	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		
+GSM150222	MSE_N_626	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		
+GSM150223	MSE_N_659	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		
+GSM150224	MSE_N_G98A	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		
+GSM150225	MSE_N_M153	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		
+GSM150226	MSE_N_M158	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		
+GSM150227	MSE_N_M163	uterus - Mid secretory endometrium from normal patient	GPL570	Mid Secretory Phase Normal	mid_secretory	control	eutopic_endometrium		

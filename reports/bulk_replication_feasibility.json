@@ -1,0 +1,96 @@
+{
+  "created_utc": "2026-11-02T02:55:11.454840+00:00",
+  "series": {
+    "GSE51981": {
+      "title": "Molecular Classification of Endometriosis and Disease Stage Using High-Dimensional Genomic Data",
+      "platforms": [
+        "GPL570"
+      ],
+      "samples": 148,
+      "eutopic_strata_phase|disease": {},
+      "soft_sha256": "9d527922c9989973cf351cd05203c73b73fb4d45778686c32d57a6a195a506ab",
+      "soft_bytes": 69965987,
+      "series_matrix_files": [
+        {
+          "file": "GSE51981_series_matrix.txt.gz",
+          "size": "26M"
+        }
+      ],
+      "pubmed_ids": [
+        "25243856"
+      ],
+      "summary": "Endometriosis, an estrogen-dependent, progesterone-resistant, inflammatory disorder affects 10% of reproductive-age women. It is diagnosed and staged at surgery, resulting in an 11-year latency from symptom onset to diagnosis, underscoring the need for less invasive, less expensive approaches. Since the uterine lining (endometrium) in women with endometriosis has altered molecular profiles, we tested whether molecular classification of this tissue can distinguish and stage disease. We developed classifiers using genomic data from n=148 archived endometrial samples from women with endometriosis"
+    },
+    "GSE6364": {
+      "title": "Gene Profiling of Endometrium Reveals Progesterone Resistance and Candidate Genetic Loci in Women with Endometriosis",
+      "platforms": [
+        "GPL570"
+      ],
+      "samples": 37,
+      "eutopic_strata_phase|disease": {
+        "early_secretory|control": 3,
+        "early_secretory|endometriosis": 6,
+        "mid_secretory|control": 8,
+        "mid_secretory|endometriosis": 9,
+        "proliferative|control": 5,
+        "proliferative|endometriosis": 6
+      },
+      "soft_sha256": "9816f58f24c2c6855c8570d14d884575cc664e18600dc0df2381b4eb0da71abe",
+      "soft_bytes": 25588525,
+      "series_matrix_files": [
+        {
+          "file": "GSE6364_series_matrix.txt.gz",
+          "size": "4.4M"
+        }
+      ],
+      "pubmed_ids": [
+        "17510236"
+      ],
+      "summary": "The transition of regularly cycling endometrium from the proliferative or Estrogen-dominant phase of the menstrual cycle to the Progesterone-dominant Early and Mid Secretory phases requires wide-spread changes in gene expression that shift the endometrium from a proliferative capacity to a differentiated 'decidual' phenotype in preparation for implantation.  This process appears delayed in women with severe endometriosis, suggestive of a progesterone resistant endometrium in this disease."
+    },
+    "GSE141549": {
+      "title": "Transcriptome analysis of differential gene expression of endometrium, peritoneum, and endometriosis lesions",
+      "platforms": [
+        "GPL10558",
+        "GPL13376"
+      ],
+      "samples": 408,
+      "eutopic_strata_phase|disease": {
+        "proliferative|control": 7,
+        "proliferative|unknown": 104,
+        "secretory|control": 17,
+        "unknown|control": 19
+      },
+      "soft_sha256": "fbcada2cfe1cc7a936cde76871c5dc60500550dfd2fa29784abfa1b0889dfa0b",
+      "soft_bytes": 28031451,
+      "series_matrix_files": [],
+      "pubmed_ids": [
+        "32859947"
+      ],
+      "summary": "Analysis of endometriosis disease associated tissues, endometrium and peritoneum at gene expression level. In this study we present, an interactive web-based user interface for browsing gene expression patterns in the normal endometrium, peritoneum and endometriotic lesions. This tool allows users to explore gene expression profiles of genes of interests in the endometrium and different lesion types without the requirement of advanced computational skills."
+    },
+    "GSE25628": {
+      "title": "Endometriosis transcription profiling",
+      "platforms": [
+        "GPL571"
+      ],
+      "samples": 22,
+      "eutopic_strata_phase|disease": {
+        "unknown|control": 14
+      },
+      "soft_sha256": "ee8ca9eef61e4a27ee353631b2f53ca2e64aa68f26f009057b1574d9e702a75b",
+      "soft_bytes": 10475907,
+      "series_matrix_files": [
+        {
+          "file": "GSE25628_series_matrix.txt.gz",
+          "size": "2.7M"
+        }
+      ],
+      "pubmed_ids": [
+        "23460397"
+      ],
+      "summary": "Endometriosis is a complex pathological condition in which multiple components are involved in the disease development and clinical outcome. Endometriosis is mainly an inflammatory codition estrogen-dependent, with unknown pathogenesis, that is characterized by dissemination of edometrium tissue in ectopic position (ovary or pelvic peritoneum).  Two main theories rise the pathologic onset: the presence of retrograde menstruation and celomic metaplasia in the pelvic peritoneum, that can occur for development defects. Endometriosis is related not only to genetic or immunological changes and to e"
+    }
+  },
+  "note": "metadata only; guesses are regex classifications of GEO characteristics and must be confirmed against the primary publication before use"
+}

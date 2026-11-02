@@ -1,0 +1,23 @@
+gsm	title	source	platform	characteristics	phase_guess	disease_guess	tissue_guess	stage_text	hormone_mention
+GSM629719	Ectopic endometrium_g	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		
+GSM629720	Eutopic endometrium_s	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629721	Ectopic endometrium_i	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		
+GSM629722	Normal endometrium_d	Endometrium	GPL571	donor: healthy donor | tissue: endometrium | disease state: Normal (control)		control	eutopic_endometrium		
+GSM629723	Ectopic endometrium_m	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		
+GSM629724	Normal endometrium_f	Endometrium	GPL571	donor: healthy donor | tissue: endometrium | disease state: Normal (control)		control	eutopic_endometrium		
+GSM629725	Normal endometrium_a	Endometrium	GPL571	donor: healthy donor | tissue: endometrium | disease state: Normal (control)		control	eutopic_endometrium		
+GSM629726	Ectopic endometrium_h	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		
+GSM629727	Normal endometrium_c	Endometrium	GPL571	donor: healthy donor | tissue: endometrium | disease state: Normal (control)		control	eutopic_endometrium		
+GSM629728	Ectopic endometrium_l	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		
+GSM629729	Normal endometrium_e	Endometrium	GPL571	donor: healthy donor | tissue: endometrium | disease state: Normal (control)		control	eutopic_endometrium		
+GSM629730	Ectopic endometrium_n	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		
+GSM629731	Eutopic endometrium_y	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629732	Ectopic endometrium_p	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		
+GSM629733	Eutopic endometrium_q	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629734	Eutopic endometrium_r	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629735	Normal endometrium_b	Endometrium	GPL571	donor: healthy donor | tissue: endometrium | disease state: Normal (control)		control	eutopic_endometrium		
+GSM629736	Eutopic endometrium_t	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629737	Eutopic endometrium_u	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629738	Eutopic endometrium_v	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629739	Eutopic endometrium_z	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Normal (eutopic)		control	eutopic_endometrium		
+GSM629740	Ectopic endometrium_o	Endometrium	GPL571	donor: patient | tissue: endometrium | disease state: Pathological (ectopic)			lesion		

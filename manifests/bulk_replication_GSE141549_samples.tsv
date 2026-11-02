@@ -1,0 +1,409 @@
+gsm	title	source	platform	characteristics	phase_guess	disease_guess	tissue_guess	stage_text	hormone_mention
+GSM4205957	SAMPLE 1 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 22 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4205958	SAMPLE 2 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 23 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4205959	SAMPLE 3 PE	Endometrium	GPL13376	tissue: Endometrium | age: 45 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4205960	SAMPLE 4 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 45 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4205961	SAMPLE 5 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 22 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4205962	SAMPLE 6 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 36 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4205963	SAMPLE 7 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 22 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4205964	SAMPLE 8 PE	Endometrium	GPL13376	tissue: Endometrium | age: 23 | disease stage: 3 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4205965	SAMPLE 9 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 22 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4205966	SAMPLE 10 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 45 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4205967	SAMPLE 11 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 22 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4205968	SAMPLE 12 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 44 | disease stage: Healthy | cycle phase: secretory	secretory	control	lesion		
+GSM4205969	SAMPLE 13 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 45 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4205970	SAMPLE 14 PE	Endometrium	GPL13376	tissue: Endometrium | age: 22 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4205971	SAMPLE 15 CE	Endometrium	GPL13376	tissue: Endometrium | age: 35 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4205972	SAMPLE 16 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4205973	SAMPLE 17 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4205974	SAMPLE 18 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 31 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4205975	SAMPLE 19 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 40 | disease stage: Healthy | cycle phase: secretory	secretory	control	lesion		
+GSM4205976	SAMPLE 20 CE	Endometrium	GPL13376	tissue: Endometrium | age: 44 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4205977	SAMPLE 21 PE	Endometrium	GPL13376	tissue: Endometrium | age: 25 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4205978	SAMPLE 22 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 38 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4205979	SAMPLE 23 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4205980	SAMPLE 24 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 22 | disease stage: 2 | cycle phase: medication			lesion		
+GSM4205981	SAMPLE 25 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 44 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4205982	SAMPLE 26 CE	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4205983	SAMPLE 27 PE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4205984	SAMPLE 28 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 22 | disease stage: 2 | cycle phase: medication			lesion		
+GSM4205985	SAMPLE 29 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4205986	SAMPLE 30 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 38 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4205987	SAMPLE 31 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 37 | disease stage: Healthy | cycle phase: unknown		control	lesion		
+GSM4205988	SAMPLE 32 CE	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4205989	SAMPLE 32 CE Replicate	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4205990	SAMPLE 33 PE	Endometrium	GPL13376	tissue: Endometrium | age: 22 | disease stage: 2 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4205991	SAMPLE 34 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 25 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4205992	SAMPLE 35 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4205993	SAMPLE 36 PE	Endometrium	GPL13376	tissue: Endometrium | age: 48 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4205994	SAMPLE 37 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 38 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4205995	SAMPLE 38 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 36 | disease stage: 3 | cycle phase: unknown		endometriosis	lesion		
+GSM4205996	SAMPLE 39 CE	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	eutopic_endometrium		
+GSM4205997	SAMPLE 40 CE	Endometrium	GPL13376	tissue: Endometrium | age: 43 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4205998	SAMPLE 41 PE	Endometrium	GPL13376	tissue: Endometrium | age: 41 | disease stage: 1 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4205999	SAMPLE 42 PE	Endometrium	GPL13376	tissue: Endometrium | age: 27 | disease stage: 1 | cycle phase: menstruation	proliferative		eutopic_endometrium		
+GSM4206000	SAMPLE 43 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 36 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206001	SAMPLE 44 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 47 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206002	SAMPLE 45 CE	Endometrium	GPL13376	tissue: Endometrium | age: 43 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206003	SAMPLE 46 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 48 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206004	SAMPLE 47 CE	Endometrium	GPL13376	tissue: Endometrium | age: 44 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206005	SAMPLE 48 PE	Endometrium	GPL13376	tissue: Endometrium | age: 30 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206006	SAMPLE 49 CE	Endometrium	GPL13376	tissue: Endometrium | age: 42 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206007	SAMPLE 50 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 41 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206008	SAMPLE 51 CE	Endometrium	GPL13376	tissue: Endometrium | age: 48 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	eutopic_endometrium		
+GSM4206009	SAMPLE 52 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 26 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206010	SAMPLE 53 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 24 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206011	SAMPLE 54 PE	Endometrium	GPL13376	tissue: Endometrium | age: 26 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206012	SAMPLE 55 CE	Endometrium	GPL13376	tissue: Endometrium | age: 36 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206013	SAMPLE 56 CE	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	eutopic_endometrium		
+GSM4206014	SAMPLE 57 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 41 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206015	SAMPLE 58 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 22 | disease stage: 4 | cycle phase: unknown		endometriosis	lesion		
+GSM4206016	SAMPLE 59 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 47 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206017	SAMPLE 60 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206018	SAMPLE 61 PE	Endometrium	GPL13376	tissue: Endometrium | age: 31 | disease stage: 3 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206019	SAMPLE 62 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 22 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4206020	SAMPLE 63 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 26 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206021	SAMPLE 64 PE	Endometrium	GPL13376	tissue: Endometrium | age: 23 | disease stage: 3 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206022	SAMPLE 65 PE	Endometrium	GPL13376	tissue: Endometrium | age: 47 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206023	SAMPLE 66 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 32 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206024	SAMPLE 67 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 36 | disease stage: Healthy | cycle phase: unknown		control	lesion		
+GSM4206025	SAMPLE 68 PE	Endometrium	GPL13376	tissue: Endometrium | age: 36 | disease stage: 3 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206026	SAMPLE 69 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 31 | disease stage: 3 | cycle phase: proliferative	proliferative		lesion		
+GSM4206027	SAMPLE 70 PE	Endometrium	GPL13376	tissue: Endometrium | age: 35 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206028	SAMPLE 71 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 34 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206029	SAMPLE 72 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 38 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4206030	SAMPLE 73 PE	Endometrium	GPL13376	tissue: Endometrium | age: 31 | disease stage: 4 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206031	SAMPLE 74 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206032	SAMPLE 75 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 36 | cycle phase: medication		endometriosis	lesion		
+GSM4206033	SAMPLE 76 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 31 | disease stage: 3 | cycle phase: secretory	secretory		lesion		
+GSM4206034	SAMPLE 77 PE	Endometrium	GPL13376	tissue: Endometrium | age: 32 | disease stage: 3 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206035	SAMPLE 78 PE	Endometrium	GPL13376	tissue: Endometrium | age: 31 | disease stage: 3 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206036	SAMPLE 79 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 30 | cycle phase: secretory	secretory		lesion		
+GSM4206037	SAMPLE 80 CE	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206038	SAMPLE 81 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 1 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206039	SAMPLE 82 PE	Endometrium	GPL13376	tissue: Endometrium | age: 34 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206040	SAMPLE 83 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 26 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206041	SAMPLE 84 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 38 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206042	SAMPLE 85 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206043	SAMPLE 86 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 48 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206044	SAMPLE 87 CE	Endometrium	GPL13376	tissue: Endometrium | age: 35 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206045	SAMPLE 88 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 26 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206046	SAMPLE 89 PE	Endometrium	GPL13376	tissue: Endometrium | age: 24 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206047	SAMPLE 90 CE	Endometrium	GPL13376	tissue: Endometrium | age: 46 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206048	SAMPLE 91 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 35 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206049	SAMPLE 92 PE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206050	SAMPLE 93 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 26 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206051	SAMPLE 94 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 27 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206052	SAMPLE 95 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 30 | cycle phase: secretory	secretory		lesion		
+GSM4206053	SAMPLE 96 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 32 | disease stage: 3 | cycle phase: unknown		endometriosis	lesion		
+GSM4206054	SAMPLE 97 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 34 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206055	SAMPLE 98 CE	Endometrium	GPL13376	tissue: Endometrium | age: 36 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206056	SAMPLE 99 PE	Endometrium	GPL13376	tissue: Endometrium | age: 41 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206057	SAMPLE 100 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 22 | disease stage: 2 | cycle phase: medication		endometriosis	lesion		
+GSM4206058	SAMPLE 101 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 23 | disease stage: 3 | cycle phase: secretory	secretory		lesion		
+GSM4206059	SAMPLE 102 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206060	SAMPLE 103 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206061	SAMPLE 104 PE	Endometrium	GPL13376	tissue: Endometrium | age: 32 | disease stage: 3 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206062	SAMPLE 105 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 36 | cycle phase: medication		endometriosis	lesion		
+GSM4206063	SAMPLE 106 CE	Endometrium	GPL13376	tissue: Endometrium | age: 32 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4206064	SAMPLE 107 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: unknown		endometriosis	lesion		
+GSM4206065	SAMPLE 108 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 31 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4206066	SAMPLE 109 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 46 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206067	SAMPLE 110 CE	Endometrium	GPL13376	tissue: Endometrium | age: 24 | disease stage: Healthy | cycle phase: No disease		control	eutopic_endometrium		
+GSM4206068	SAMPLE 111 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 36 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206069	SAMPLE 112 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 41 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206070	SAMPLE 113 CE	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206071	SAMPLE 114 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 32 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206072	SAMPLE 115 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 32 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206073	SAMPLE 116 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 27 | disease stage: 1 | cycle phase: menstruation			lesion		
+GSM4206074	SAMPLE 117 CE	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206075	SAMPLE 118 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206076	SAMPLE 119 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 32 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206077	SAMPLE 120 PE	Endometrium	GPL13376	tissue: Endometrium | age: 26 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206078	SAMPLE 121 CE	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206079	SAMPLE 121 CE Replicate	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206080	SAMPLE 122 PE	Endometrium	GPL13376	tissue: Endometrium | age: 33 | disease stage: 2 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206081	SAMPLE 123 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 42 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206082	SAMPLE 124 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 2 | cycle phase: medication		endometriosis	lesion		
+GSM4206083	SAMPLE 125 CE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: 3 | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206084	SAMPLE 126 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 37 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206085	SAMPLE 127 PE	Endometrium	GPL13376	tissue: Endometrium | age: 29 | disease stage: 2 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206086	SAMPLE 128 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 40 | disease stage: 2 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206087	SAMPLE 129 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 25 | disease stage: 2 | cycle phase: medication			lesion		
+GSM4206088	SAMPLE 130 PE	Endometrium	GPL13376	tissue: Endometrium | age: 42 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206089	SAMPLE 131 PE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: 3 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206090	SAMPLE 132 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 42 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206091	SAMPLE 133 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 33 | disease stage: 2 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206092	SAMPLE 134 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 41 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4206093	SAMPLE 135 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 33 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206094	SAMPLE 136 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 32 | disease stage: 4 | cycle phase: menstruation			lesion		
+GSM4206095	SAMPLE 137 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 38 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206096	SAMPLE 138 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 37 | disease stage: Healthy | cycle phase: secretory	secretory	control	lesion		
+GSM4206097	SAMPLE 139 PE	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: 4 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206098	SAMPLE 140 PE	Endometrium	GPL13376	tissue: Endometrium | age: 36 | disease stage: 1 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206099	SAMPLE 141 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 42 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206100	SAMPLE 142 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 41 | disease stage: Healthy | cycle phase: secretory	secretory	control	lesion		
+GSM4206101	SAMPLE 143 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 39 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206102	SAMPLE 144 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 25 | disease stage: 2 | cycle phase: medication			lesion		
+GSM4206103	SAMPLE 145 CE	Endometrium	GPL13376	tissue: Endometrium | age: 33 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206104	SAMPLE 146 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 32 | disease stage: 2 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206105	SAMPLE 147 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 40 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4206106	SAMPLE 148 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 35 | disease stage: 1 | cycle phase: secretory	secretory		lesion		
+GSM4206107	SAMPLE 149 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 33 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206108	SAMPLE 150 DiEB	bladder	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 28 | disease stage: 2 | cycle phase: medication		endometriosis	lesion		
+GSM4206109	SAMPLE 151 PE	Endometrium	GPL13376	tissue: Endometrium | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206110	SAMPLE 152 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 42 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206111	SAMPLE 153 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 40 | disease stage: 2 | cycle phase: secretory	secretory		lesion		
+GSM4206112	SAMPLE 154 DiEB	bladder	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206113	SAMPLE 155 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 38 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206114	SAMPLE 156 CE	Endometrium	GPL13376	tissue: Endometrium | age: 34 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	eutopic_endometrium		
+GSM4206115	SAMPLE 157 PE	Endometrium	GPL13376	tissue: Endometrium | age: 28 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206116	SAMPLE 158 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 27 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4206117	SAMPLE 159 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206118	SAMPLE 160 CE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	eutopic_endometrium		
+GSM4206119	SAMPLE 161 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 37 | cycle phase: unknown		endometriosis	lesion		
+GSM4206120	SAMPLE 162 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 28 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4206121	SAMPLE 163 PE	Endometrium	GPL13376	tissue: Endometrium | age: 33 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206122	SAMPLE 164 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 33 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206123	SAMPLE 165 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 39 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206124	SAMPLE 166 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 39 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206125	SAMPLE 167 PE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: 3 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206126	SAMPLE 168 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 27 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206127	SAMPLE 169 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: unknown		endometriosis	lesion		
+GSM4206128	SAMPLE 170 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 44 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206129	SAMPLE 171 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 41 | disease stage: 1 | cycle phase: medication		endometriosis	lesion		
+GSM4206130	SAMPLE 172 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 27 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206131	SAMPLE 173 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 24 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206132	SAMPLE 174 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 24 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206133	SAMPLE 175 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 29 | disease stage: 3 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206134	SAMPLE 176 PE	Endometrium	GPL13376	tissue: Endometrium | age: 27 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206135	SAMPLE 177 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 37 | disease stage: 3 | cycle phase: secretory	secretory		lesion		
+GSM4206136	SAMPLE 178 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 26 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206137	SAMPLE 179 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 34 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206138	SAMPLE 180 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 22 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206139	SAMPLE 181 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 37 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206140	SAMPLE 182 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206141	SAMPLE 183 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 24 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206142	SAMPLE 184 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 37 | disease stage: 1 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206143	SAMPLE 185 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206144	SAMPLE 186 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 2 | cycle phase: medication		endometriosis	lesion		
+GSM4206145	SAMPLE 187 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206146	SAMPLE 188 CE	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4206147	SAMPLE 189 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 32 | disease stage: 2 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206148	SAMPLE 190 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 34 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206149	SAMPLE 191 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206150	SAMPLE 192 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 30 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4206151	SAMPLE 193 PE	Endometrium	GPL13376	tissue: Endometrium | age: 32 | disease stage: 2 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206152	SAMPLE 194 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 40 | disease stage: 2 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206153	SAMPLE 195 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 27 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206154	SAMPLE 196 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 32 | disease stage: 2 | cycle phase: secretory	secretory		lesion		
+GSM4206155	SAMPLE 197 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 29 | disease stage: 3 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206156	SAMPLE 198 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206157	SAMPLE 199 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 40 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4206158	SAMPLE 200 PE	Endometrium	GPL13376	tissue: Endometrium | age: 28 | disease stage: 3 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206159	SAMPLE 201 CE	Endometrium	GPL13376	tissue: Endometrium | age: 46 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4206160	SAMPLE 202 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 36 | disease stage: 1 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206161	SAMPLE 203 PE	Endometrium	GPL13376	tissue: Endometrium | age: 29 | disease stage: 3 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206162	SAMPLE 204 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206163	SAMPLE 205 PE	Endometrium	GPL13376	tissue: Endometrium | age: 25 | disease stage: 2 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206164	SAMPLE 206 CE	Endometrium	GPL13376	tissue: Endometrium | age: 33 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206165	SAMPLE 207 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 29 | disease stage: 3 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206166	SAMPLE 208 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 31 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4206167	SAMPLE 209 PE	Endometrium	GPL13376	tissue: Endometrium | age: 41 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206168	SAMPLE 210 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206169	SAMPLE 211 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 25 | disease stage: 2 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206170	SAMPLE 212 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 43 | disease stage: 2 | cycle phase: medication			lesion		
+GSM4206171	SAMPLE 213 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 36 | disease stage: 1 | cycle phase: proliferative	proliferative		lesion		
+GSM4206172	SAMPLE 214 PE	Endometrium	GPL13376	tissue: Endometrium | age: 31 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206173	SAMPLE 215 PE	Endometrium	GPL13376	tissue: Endometrium | age: 48 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206174	SAMPLE 216 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 39 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206175	SAMPLE 217 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 33 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206176	SAMPLE 218 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 33 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206177	SAMPLE 219 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 32 | disease stage: 4 | cycle phase: menstruation			lesion		
+GSM4206178	SAMPLE 220 CE	Endometrium	GPL13376	tissue: Endometrium | age: 42 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4206179	SAMPLE 220 CE Replicate	Endometrium	GPL13376	tissue: Endometrium | age: 42 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4206180	SAMPLE 221 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 27 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206181	SAMPLE 222 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 25 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206182	SAMPLE 223 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 22 | disease stage: 1 | cycle phase: medication		endometriosis	lesion		
+GSM4206183	SAMPLE 224 PE	Endometrium	GPL13376	tissue: Endometrium | age: 21 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206184	SAMPLE 225 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 40 | disease stage: 1 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206185	SAMPLE 226 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 33 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206186	SAMPLE 227 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 34 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	lesion		
+GSM4206187	SAMPLE 228 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 33 | disease stage: 1 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206188	SAMPLE 229 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 26 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206189	SAMPLE 230 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 2 | cycle phase: medication		endometriosis	lesion		
+GSM4206190	SAMPLE 231 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 31 | disease stage: 3 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206191	SAMPLE 232 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 24 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206192	SAMPLE 233 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206193	SAMPLE 234 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 36 | disease stage: 1 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206194	SAMPLE 235 PE	Endometrium	GPL13376	tissue: Endometrium | age: 39 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206195	SAMPLE 236 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative		lesion		
+GSM4206196	SAMPLE 237 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 41 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	lesion		
+GSM4206197	SAMPLE 238 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 42 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206198	SAMPLE 239 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 46 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206199	SAMPLE 240 PE	Endometrium	GPL13376	tissue: Endometrium | age: 27 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206200	SAMPLE 241 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 41 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206201	SAMPLE 242 PE	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206202	SAMPLE 243 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 32 | disease stage: 2 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206203	SAMPLE 244 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206204	SAMPLE 245 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 34 | disease stage: 1 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206205	SAMPLE 246 PE	Endometrium	GPL13376	tissue: Endometrium | age: 20 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206206	SAMPLE 247 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206207	SAMPLE 248 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 35 | disease stage: 4 | cycle phase: proliferative	proliferative		lesion		
+GSM4206208	SAMPLE 249 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 34 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206209	SAMPLE 250 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 24 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206210	SAMPLE 251 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 40 | disease stage: 2 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206211	SAMPLE 252 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 30 | disease stage: 1 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206212	SAMPLE 253 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 36 | disease stage: Healthy | cycle phase: menstruation		control	lesion		
+GSM4206213	SAMPLE 254 CE	Endometrium	GPL13376	tissue: Endometrium | age: 41 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206214	SAMPLE 254 CE Replicate	Endometrium	GPL13376	tissue: Endometrium | age: 41 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206215	SAMPLE 255 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 33 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206216	SAMPLE 256 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 29 | disease stage: 2 | cycle phase: medication			lesion		
+GSM4206217	SAMPLE 257 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 29 | disease stage: 2 | cycle phase: medication		endometriosis	lesion		
+GSM4206218	SAMPLE 258 PE	Endometrium	GPL13376	tissue: Endometrium | age: 33 | disease stage: 1 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206219	SAMPLE 259 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 33 | disease stage: 1 | cycle phase: proliferative	proliferative		lesion		
+GSM4206220	SAMPLE 260 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 38 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206221	SAMPLE 261 CE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206222	SAMPLE 262 CE	Endometrium	GPL13376	tissue: Endometrium | age: 41 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	eutopic_endometrium		
+GSM4206223	SAMPLE 263 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206224	SAMPLE 264 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 22 | disease stage: 1 | cycle phase: medication		endometriosis	lesion		
+GSM4206225	SAMPLE 265 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 22 | disease stage: 1 | cycle phase: medication		endometriosis	lesion		
+GSM4206226	SAMPLE 266 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 34 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206227	SAMPLE 267 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 22 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4206228	SAMPLE 268 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 48 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206229	SAMPLE 269 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 32 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206230	SAMPLE 270 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 39 | disease stage: 4 | cycle phase: proliferative	proliferative		lesion		
+GSM4206231	SAMPLE 271 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 35 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206232	SAMPLE 272 PE	Endometrium	GPL13376	tissue: Endometrium | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206233	SAMPLE 273 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 33 | disease stage: 2 | cycle phase: secretory	secretory		lesion		
+GSM4206234	SAMPLE 274 PE	Endometrium	GPL13376	tissue: Endometrium | age: 31 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206235	SAMPLE 275 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206236	SAMPLE 276 PE	Endometrium	GPL13376	tissue: Endometrium | age: 41 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206237	SAMPLE 277 PE	Endometrium	GPL13376	tissue: Endometrium | age: 46 | disease stage: 3 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206238	SAMPLE 278 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 46 | disease stage: 3 | cycle phase: unknown		endometriosis	lesion		
+GSM4206239	SAMPLE 279 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 38 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206240	SAMPLE 280 PE	Endometrium	GPL13376	tissue: Endometrium | age: 22 | disease stage: 1 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206241	SAMPLE 281 PE	Endometrium	GPL13376	tissue: Endometrium | age: 29 | disease stage: 3 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206242	SAMPLE 282 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 42 | disease stage: 3 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206243	SAMPLE 283 PE	Endometrium	GPL13376	tissue: Endometrium | age: 26 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206244	SAMPLE 284 PeLR	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 25 | disease stage: 2 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206245	SAMPLE 285 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 30 | disease stage: 3 | cycle phase: proliferative	proliferative		lesion		
+GSM4206246	SAMPLE 286 PE	Endometrium	GPL13376	tissue: Endometrium | age: 29 | disease stage: 3 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206247	SAMPLE 287 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206248	SAMPLE 288 DiEB	bladder	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 39 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206249	SAMPLE 289 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 47 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206250	SAMPLE 290 PE	Endometrium	GPL13376	tissue: Endometrium | age: 39 | disease stage: 3 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206251	SAMPLE 291 CE	Endometrium	GPL13376	tissue: Endometrium | age: 36 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206252	SAMPLE 291 CE Replicate	Endometrium	GPL13376	tissue: Endometrium | age: 36 | disease stage: Healthy | cycle phase: secretory	secretory	control	eutopic_endometrium		
+GSM4206253	SAMPLE 292 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 38 | disease stage: Healthy | cycle phase: secretory	secretory	control	lesion		
+GSM4206254	SAMPLE 293 PE	Endometrium	GPL13376	tissue: Endometrium | age: 21 | disease stage: 3 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206255	SAMPLE 294 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 33 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206256	SAMPLE 295 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 34 | disease stage: Healthy | cycle phase: secretory	secretory	control	lesion		
+GSM4206257	SAMPLE 296 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 47 | disease stage: Healthy | cycle phase: medication		control	lesion		
+GSM4206258	SAMPLE 297 CE	Endometrium	GPL13376	tissue: Endometrium | age: 42 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	eutopic_endometrium		
+GSM4206259	SAMPLE 298 CP	Peritoneum	GPL13376	tissue: Peritoneum | age: 42 | disease stage: Healthy | cycle phase: proliferative	proliferative	control	lesion		
+GSM4206260	SAMPLE 299 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 26 | disease stage: 2 | cycle phase: unknown			lesion		
+GSM4206261	SAMPLE 300 REV	Rectovaginal septum	GPL13376	tissue: Rectovaginal lesion | age: 25 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206262	SAMPLE 301 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 38 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206263	SAMPLE 302 PeLW	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 38 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206264	SAMPLE 303 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 29 | disease stage: 3 | cycle phase: proliferative	proliferative		lesion		
+GSM4206265	SAMPLE 304 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 29 | disease stage: 3 | cycle phase: proliferative	proliferative		lesion		
+GSM4206266	SAMPLE 305 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 37 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206267	SAMPLE 306 PE	Endometrium	GPL13376	tissue: Endometrium | age: 35 | disease stage: 1 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206268	SAMPLE 307 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 22 | disease stage: 1 | cycle phase: medication		endometriosis	lesion		
+GSM4206269	SAMPLE 308 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 38 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206270	SAMPLE 309 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 38 | disease stage: 3 | cycle phase: secretory	secretory		lesion		
+GSM4206271	SAMPLE 310 CE	Endometrium	GPL13376	tissue: Endometrium | age: 38 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206272	SAMPLE 311 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 37 | cycle phase: unknown			lesion		
+GSM4206273	SAMPLE 312 CE	Endometrium	GPL13376	tissue: Endometrium | age: 36 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4206274	SAMPLE 313 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 36 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206275	SAMPLE 314 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 46 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206276	SAMPLE 315 CE	Endometrium	GPL13376	tissue: Endometrium | age: 43 | disease stage: Healthy | cycle phase: medication		control	eutopic_endometrium		
+GSM4206277	SAMPLE 316 PP	Peritoneum	GPL13376	tissue: Peritoneum | age: 40 | disease stage: 2 | cycle phase: secretory	secretory		lesion		
+GSM4206278	SAMPLE 317 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 40 | disease stage: 4 | cycle phase: proliferative	proliferative		lesion		
+GSM4206279	SAMPLE 318 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative		lesion		
+GSM4206280	SAMPLE 319 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206281	SAMPLE 320 SuL	Sacrouterine ligament	GPL13376	tissue: Sacrouterine ligament lesion | age: 29 | disease stage: 3 | cycle phase: secretory	secretory		lesion		
+GSM4206282	SAMPLE 321 PE	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: 2 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206283	SAMPLE 322 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 27 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206284	SAMPLE 323 CE	Endometrium	GPL13376	tissue: Endometrium | age: 37 | disease stage: Healthy | cycle phase: unknown		control	eutopic_endometrium		
+GSM4206285	SAMPLE 324 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 29 | disease stage: 3 | cycle phase: proliferative	proliferative		lesion		
+GSM4206286	SAMPLE 325 PeLB	Peritoneal	GPL13376	tissue: Peritoneal endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206287	SAMPLE 326 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 42 | disease stage: 3 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206288	SAMPLE 327 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206289	SAMPLE 328 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: proliferative	proliferative	endometriosis	lesion		
+GSM4206290	SAMPLE 329 PE	Endometrium	GPL13376	tissue: Endometrium | age: 40 | disease stage: 1 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206291	SAMPLE 330 OMA	Ovary	GPL13376	tissue: Ovarian endometrioma | age: 46 | disease stage: 3 | cycle phase: unknown			lesion		
+GSM4206292	SAMPLE 331 DiEIn	Intestine	GPL13376	tissue: Deep infiltrating endometriosis lesion | age: 23 | disease stage: 3 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206293	SAMPLE 332 PE	Endometrium	GPL10558	tissue: Endometrium | age: 31 | disease stage: 3 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206294	SAMPLE 333 DiEIn	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion | age: 36 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206295	SAMPLE 334 PE	Endometrium	GPL10558	tissue: Endometrium | age: 27 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206296	SAMPLE 335 PeLB	Peritoneal	GPL10558	tissue: Peritoneal endometriosis lesion | age: 45 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206297	SAMPLE 335 PeLB Replicate	Peritoneal	GPL10558	tissue: Peritoneal endometriosis lesion Replicate | age: 45 | disease stage: 4 | cycle phase: secretory	secretory	endometriosis	lesion		
+GSM4206298	SAMPLE 336 PE	Endometrium	GPL10558	tissue: Endometrium | age: 23 | disease stage: 4 | cycle phase: menstruation	proliferative		eutopic_endometrium		
+GSM4206299	SAMPLE 337 PE	Endometrium	GPL10558	tissue: Endometrium | age: 27 | disease stage: 2 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206300	SAMPLE 338 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 22 | disease stage: 4 | cycle phase: medication			lesion		
+GSM4206301	SAMPLE 339 SuL	Sacrouterine ligament	GPL10558	tissue: Sacrouterine ligament lesion | age: 24 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206302	SAMPLE 339 SuL Replicate	Sacrouterine ligament	GPL10558	tissue: Sacrouterine ligament lesion Replicate | age: 24 | disease stage: 3 | cycle phase: medication			lesion		
+GSM4206303	SAMPLE 340 PE	Endometrium	GPL10558	tissue: Endometrium | age: 30 | disease stage: 1 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206304	SAMPLE 341 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 31 | disease stage: 4 | cycle phase: unknown			lesion		
+GSM4206305	SAMPLE 342 PE	Endometrium	GPL10558	tissue: Endometrium | age: 43 | disease stage: 2 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206306	SAMPLE 343 PE	Endometrium	GPL10558	tissue: Endometrium | age: 34 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206307	SAMPLE 344 PE	Endometrium	GPL10558	tissue: Endometrium | age: 37 | disease stage: 1 | cycle phase: menstruation	proliferative		eutopic_endometrium		
+GSM4206308	SAMPLE 344 PE Replicate	Endometrium	GPL10558	tissue: Endometrium Replicate | age: 37 | disease stage: 1 | cycle phase: menstruation	proliferative		eutopic_endometrium		
+GSM4206309	SAMPLE 345 PeLR	Peritoneal	GPL10558	tissue: Peritoneal endometriosis lesion | age: 39 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206310	SAMPLE 345 PeLR Replicate	Peritoneal	GPL10558	tissue: Peritoneal endometriosis lesion Replicate | age: 39 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206311	SAMPLE 346 PE	Endometrium	GPL10558	tissue: Endometrium | age: 25 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206312	SAMPLE 346 PE Replicate	Endometrium	GPL10558	tissue: Endometrium Replicate | age: 25 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206313	SAMPLE 347 PE	Endometrium	GPL10558	tissue: Endometrium | age: 26 | disease stage: 2 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206314	SAMPLE 348 PE	Endometrium	GPL10558	tissue: Endometrium | age: 40 | disease stage: 2 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206315	SAMPLE 349 DiEIn	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion | age: 24 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206316	SAMPLE 349 DiEIn Replicate	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion Replicate | age: 24 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206317	SAMPLE 350 PE	Endometrium	GPL10558	tissue: Endometrium | age: 22 | disease stage: 1 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206318	SAMPLE 351 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 32 | disease stage: 4 | cycle phase: menstruation			lesion		
+GSM4206319	SAMPLE 352 PE	Endometrium	GPL10558	tissue: Endometrium | age: 28 | disease stage: 3 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206320	SAMPLE 353 PE	Endometrium	GPL10558	tissue: Endometrium | age: 39 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206321	SAMPLE 354 PE	Endometrium	GPL10558	tissue: Endometrium | age: 27 | disease stage: 1 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206322	SAMPLE 355 PE	Endometrium	GPL10558	tissue: Endometrium | age: 27 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206323	SAMPLE 356 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 26 | disease stage: 2 | cycle phase: unknown			lesion		
+GSM4206324	SAMPLE 357 DiEIn	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion | age: 24 | disease stage: 3 | cycle phase: medication		endometriosis	lesion		
+GSM4206325	SAMPLE 358 PE	Endometrium	GPL10558	tissue: Endometrium | age: 25 | disease stage: 2 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206326	SAMPLE 359 PE	Endometrium	GPL10558	tissue: Endometrium | age: 42 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206327	SAMPLE 360 PE	Endometrium	GPL10558	tissue: Endometrium | age: 28 | disease stage: 1 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206328	SAMPLE 361 PE	Endometrium	GPL10558	tissue: Endometrium | age: 25 | disease stage: 2 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206329	SAMPLE 362 PE	Endometrium	GPL10558	tissue: Endometrium | age: 30 | disease stage: 4 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206330	SAMPLE 363 PeLW	Peritoneal	GPL10558	tissue: Peritoneal endometriosis lesion | age: 24 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206331	SAMPLE 364 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 22 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206332	SAMPLE 365 PE	Endometrium	GPL10558	tissue: Endometrium | age: 35 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206333	SAMPLE 366 DiEIn	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion | age: 25 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206334	SAMPLE 367 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 37 | disease stage: 3 | cycle phase: secretory	secretory		lesion		
+GSM4206335	SAMPLE 367 PP Replicate	Peritoneum	GPL10558	tissue: Peritoneum Replicate | age: 37 | disease stage: 3 | cycle phase: secretory	secretory		lesion		
+GSM4206336	SAMPLE 368 PE	Endometrium	GPL10558	tissue: Endometrium | age: 24 | disease stage: 3 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206337	SAMPLE 369 DiEIn	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion | age: 39 | disease stage: 4 | cycle phase: medication		endometriosis	lesion		
+GSM4206338	SAMPLE 370 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 27 | disease stage: 4 | cycle phase: proliferative	proliferative		lesion		
+GSM4206339	SAMPLE 371 PE	Endometrium	GPL10558	tissue: Endometrium | age: 32 | disease stage: 4 | cycle phase: menstruation	proliferative		eutopic_endometrium		
+GSM4206340	SAMPLE 371 PE Replicate	Endometrium	GPL10558	tissue: Endometrium | age: 32 | disease stage: 4 | cycle phase: menstruation	proliferative		eutopic_endometrium		
+GSM4206341	SAMPLE 372 PE	Endometrium	GPL10558	tissue: Endometrium | age: 22 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206342	SAMPLE 373 PE	Endometrium	GPL10558	tissue: Endometrium | age: 28 | disease stage: 2 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206343	SAMPLE 374 PE	Endometrium	GPL10558	tissue: Endometrium | age: 29 | disease stage: 4 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206344	SAMPLE 375 PeLB	Peritoneal	GPL10558	tissue: Peritoneal endometriosis lesion | age: 26 | disease stage: 2 | cycle phase: unknown		endometriosis	lesion		
+GSM4206345	SAMPLE 375 PeLB Replicate	Peritoneal	GPL10558	tissue: Peritoneal endometriosis lesion Replicate | age: 26 | disease stage: 2 | cycle phase: unknown		endometriosis	lesion		
+GSM4206346	SAMPLE 376 PE	Endometrium	GPL10558	tissue: Endometrium | age: 27 | disease stage: 4 | cycle phase: proliferative	proliferative		eutopic_endometrium		
+GSM4206347	SAMPLE 377 DiEIn	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion | age: 37 | disease stage: 1 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206348	SAMPLE 377 DiEIn Replicate	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion Replicate | age: 37 | disease stage: 1 | cycle phase: menstruation		endometriosis	lesion		
+GSM4206349	SAMPLE 378 PE	Endometrium	GPL10558	tissue: Endometrium | age: 30 | disease stage: 1 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206350	SAMPLE 379 PE	Endometrium	GPL10558	tissue: Endometrium | age: 31 | disease stage: 3 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206351	SAMPLE 380 PE	Endometrium	GPL10558	tissue: Endometrium | age: 35 | disease stage: 4 | cycle phase: unknown	proliferative		eutopic_endometrium		
+GSM4206352	SAMPLE 381 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 30 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206353	SAMPLE 381 PP Replicate	Peritoneum	GPL10558	tissue: Peritoneum Replicate | age: 30 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206354	SAMPLE 382 PE	Endometrium	GPL10558	tissue: Endometrium | age: 32 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206355	SAMPLE 383 PE	Endometrium	GPL10558	tissue: Endometrium | age: 37 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206356	SAMPLE 384 PE	Endometrium	GPL10558	tissue: Endometrium | age: 34 | disease stage: 1 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206357	SAMPLE 385 SuL	Sacrouterine ligament	GPL10558	tissue: Sacrouterine ligament lesion | age: 22 | disease stage: 1 | cycle phase: medication			lesion		
+GSM4206358	SAMPLE 386 PE	Endometrium	GPL10558	tissue: Endometrium | age: 32 | disease stage: 2 | cycle phase: menstruation	proliferative		eutopic_endometrium		
+GSM4206359	SAMPLE 387 DiEIn	Intestine	GPL10558	tissue: Deep infiltrating endometriosis lesion | age: 31 | disease stage: 4 | cycle phase: unknown		endometriosis	lesion		
+GSM4206360	SAMPLE 388 PE	Endometrium	GPL10558	tissue: Endometrium | age: 37 | disease stage: 3 | cycle phase: secretory	proliferative		eutopic_endometrium		
+GSM4206361	SAMPLE 389 PP	Peritoneum	GPL10558	tissue: Peritoneum | age: 31 | disease stage: 4 | cycle phase: secretory	secretory		lesion		
+GSM4206362	SAMPLE 390 PE	Endometrium	GPL10558	tissue: Endometrium | age: 38 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206363	SAMPLE 391 PE	Endometrium	GPL10558	tissue: Endometrium | age: 32 | disease stage: 3 | cycle phase: medication	proliferative		eutopic_endometrium		
+GSM4206364	SAMPLE 392 PE	Endometrium	GPL10558	tissue: Endometrium | age: 37 | disease stage: 4 | cycle phase: medication	proliferative		eutopic_endometrium		
