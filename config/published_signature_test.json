@@ -1,0 +1,139 @@
+{
+  "analysis": "PUBLISHED_SIGNATURE_TEST",
+  "protocol": "docs/PUBLISHED_SIGNATURE_PROTOCOL.md",
+  "synthetic": false,
+  "inputs": {
+    "signature_sets": {
+      "path": "reports/published_signature_test/signature_sets.tsv",
+      "sha256": "8fba9bf7053d9791709989f6dd959691bddf020d15c3bebf6b10dc66f5c18821",
+      "built_by": "scripts/published_signature_build.py",
+      "build_receipt": "receipts/published_signature_build.json"
+    },
+    "combined_per_gene": {
+      "path": "reports/combined_bound/combined_per_gene.tsv.gz",
+      "sha256": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b",
+      "listed_in": "receipts/combined_bound_results.json"
+    },
+    "discovery_mde_table": {
+      "path": "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz",
+      "sha256": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a",
+      "listed_in": "receipts/mde_analysis_results.json",
+      "use": "expression_bin per gene"
+    },
+    "discovery_expression_filter": {
+      "path": "reports/phase_positive_control_f1/de_expression_filter.tsv",
+      "sha256": "7e2a94c18bc972c00f933c56811cd5edd9ef4f6093245e11dba9b97effaa32ee",
+      "listed_in": "receipts/phase_positive_control_f1_discovery_freeze.json"
+    },
+    "discovery_normalization": {
+      "path": "reports/phase_positive_control_f1/de_normalization.tsv",
+      "sha256": "58c55c7129191d4407b63f9798dc47700f281290ca02af2d7d521f385a5d91b3",
+      "listed_in": "receipts/phase_positive_control_f1_discovery_freeze.json",
+      "use": "effective_library_size per donor"
+    },
+    "discovery_design": {
+      "path": "reports/final_clinical_design_discovery_primary.tsv",
+      "sha256": "819d1940da709f06ac6691884c62a44e28284b6f03e77ca6fce24ed02b5476e1",
+      "use": "v1 primary design, 22 proliferative donors"
+    },
+    "heca_expression_filter": {
+      "path": "reports/phase_positive_control_f2/heca_de_expression_filter.tsv",
+      "sha256": "c66e3250ffd871e01a6731d04cc2fce66c18160cc0fab516fcb28c06441e43b7",
+      "listed_in": "receipts/phase_positive_control_evaluation.json"
+    },
+    "heca_normalization": {
+      "path": "reports/phase_positive_control_f2/heca_de_normalization.tsv",
+      "sha256": "62812494cfba5198865a33e11de336de360bf2523bd0cc201d86f3b3d30ea5a0",
+      "listed_in": "receipts/phase_positive_control_evaluation.json",
+      "use": "effective_library_size per donor"
+    },
+    "heca_design": {
+      "path": "reports/final_clinical_design_heca_primary.tsv",
+      "sha256": "ad52d56c93673e82e63e52c7936a7696fc67102a7459d07bde7ff244fa4ee9c9",
+      "use": "v1 primary design, 22 proliferative donors"
+    }
+  },
+  "host_inputs": {
+    "discovery_counts": {
+      "path": "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz",
+      "sha256": "a0fe7e0e7b71a9d1290368154a64e3756e2c7ada4185a8df9f8d01d1a2cc85ad",
+      "listed_in": "config/secretory_program.json (inputs.discovery.counts_sha256); receipts/phase_positive_control_f1_discovery_freeze.json",
+      "note": "pseudobulk counts per donor of the stable stromal lineage, on the analysis host only"
+    },
+    "heca_counts": {
+      "path": "data/processed/phase_positive_control/heca/counts_stable.tsv.gz",
+      "sha256": "6d7f2092b59d28e52c3569febdeebbca0bb191f6fa877acf4ccb53c890a5a7d5",
+      "listed_in": "config/secretory_program.json (inputs.heca.counts_sha256); receipts/phase_positive_control_evaluation.json",
+      "note": "as above for the HECA nuclei"
+    }
+  },
+  "hash_note": "SHA-256 of file bytes with CRLF normalized to LF for text files (scripts/followon_freeze.py); host inputs are hashed as raw bytes at run time",
+  "cohorts": {
+    "discovery": {
+      "expression_filter": "discovery_expression_filter",
+      "normalization": "discovery_normalization",
+      "design": "discovery_design",
+      "counts": "discovery_counts"
+    },
+    "heca": {
+      "expression_filter": "heca_expression_filter",
+      "normalization": "heca_normalization",
+      "design": "heca_design",
+      "counts": "heca_counts"
+    }
+  },
+  "set_order": [
+    "polineto2020_proliferative_stage_I_II",
+    "polineto2020_proliferative_stage_III_IV",
+    "bunis2022_proliferative_disease_vs_control",
+    "consensus_proliferative"
+  ],
+  "parameters": {
+    "seed": 20261102,
+    "matched_draws": 10000,
+    "minimum_family_genes": 10,
+    "label_alpha": 0.01,
+    "label_percentile": 99,
+    "alpha": 0.05,
+    "per_cohort_alpha": 0.025,
+    "replication_alpha_each": 0.05,
+    "mde_power": 0.8,
+    "minimum_residual_df": 5
+  },
+  "software": {
+    "python": "3.10",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "freeze": {
+    "phase": "PUBLISHED_SIGNATURE_TEST_RULES_FROZEN_PRE_ANALYSIS",
+    "files": [
+      "scripts/published_signature_test_analysis.py",
+      "scripts/published_signature_build.py",
+      "scripts/followon_freeze.py",
+      "tests/test_published_signature_test.py",
+      "receipts/published_signature_build.json",
+      "reports/published_signature_test/unmapped_or_conflicting.tsv"
+    ],
+    "attestations": [
+      "the signature sets were built from the downloaded supplements and published before this receipt; no single-cell statistic had been read for them",
+      "the family, the per-gene statistics, the expression filters, normalization factors, designs and pseudobulk counts are the published or receipted v1 and positive-control artifacts; nothing is refitted",
+      "T2 on the pooled statistic is the primary transfer test; T1 and the per-cohort T3 scores are labelled separately; sensitivities never change a label"
+    ]
+  },
+  "results_phase": "PUBLISHED_SIGNATURE_TEST_COMPLETED",
+  "outputs": {
+    "directory": "reports/published_signature_test",
+    "set_results": "reports/published_signature_test/set_results.tsv",
+    "set_members": "reports/published_signature_test/set_members.tsv",
+    "donor_scores": "reports/published_signature_test/donor_scores.tsv",
+    "summary": "reports/published_signature_test/summary.json",
+    "results_receipt": "receipts/published_signature_test_results.json",
+    "freeze_receipt": "receipts/published_signature_test_freeze.json",
+    "report": "reports/published_signature_test_results.md",
+    "refuse_if_exists": [
+      "receipts/published_signature_test_results.json",
+      "reports/published_signature_test/summary.json"
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "phase": "PUBLISHED_SIGNATURE_SETS_BUILT",
+  "created_utc": "2026-11-02T03:48:02.518920+00:00",
+  "hgnc": {
+    "path": "data/reference/gene_annotation/hgnc_complete_set_2026-10-06.tsv",
+    "sha256_lf": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d"
+  },
+  "sources": {
+    "polineto2020_proliferative_stage_I_II": {
+      "pmid": "31941945",
+      "file": "reference/papers/PMID31941945/supplementary/41598_2019_57207_MOESM3_ESM.xlsx",
+      "sheet_prefix": "DEG stage I-II endometriosis - proliferative",
+      "layout": "polineto",
+      "description": "Poli-Neto et al. 2020, Dataset 2A: differentially expressed genes, eutopic endometrium, stage I-II endometriosis versus healthy controls, proliferative phase (limma meta-analysis of GSE4888, GSE6364, GSE7305, GSE51981; adjusted p < 0.05 and twofold); logFC = endometriosis minus healthy",
+      "sheet": "DEG stage I-II endometriosis - proliferative phase",
+      "sha256": "d38e6dcf8a92b9b6e8df630bf1c99655de4c8fc8026274b4464c623b5af643f4",
+      "bytes": 476501,
+      "rows_read": 4783,
+      "symbols": 4783,
+      "genes_published": 4757,
+      "direction_split": {
+        "up_in_disease": 2097,
+        "down_in_disease": 2660
+      },
+      "europepmc_receipt": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6962450/supplementaryFiles",
+        "http_status": "200",
+        "bytes": "1430418",
+        "sha256": "36d9081c58321049017a165aa9f0aad0c1d098380d578281a4f03d70164e288a",
+        "utc": "2026-11-02T02:50:39.571517+00:00"
+      }
+    },
+    "polineto2020_proliferative_stage_III_IV": {
+      "pmid": "31941945",
+      "file": "reference/papers/PMID31941945/supplementary/41598_2019_57207_MOESM6_ESM.xlsx",
+      "sheet_prefix": "DEG stage III-IV endometriosis - proliferative",
+      "layout": "polineto",
+      "description": "Poli-Neto et al. 2020, Dataset 2D: as above for stage III-IV endometriosis",
+      "sheet": "DEG stage III-IV endometriosis - proliferative phase",
+      "sha256": "b78e60974ae2741e729e855d2593b0d176bbfb7d5a1f9c55d9998e533ed05706",
+      "bytes": 30051,
+      "rows_read": 238,
+      "symbols": 238,
+      "genes_published": 237,
+      "direction_split": {
+        "up_in_disease": 64,
+        "down_in_disease": 173
+      },
+      "europepmc_receipt": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6962450/supplementaryFiles",
+        "http_status": "200",
+        "bytes": "1430418",
+        "sha256": "36d9081c58321049017a165aa9f0aad0c1d098380d578281a4f03d70164e288a",
+        "utc": "2026-11-02T02:50:39.571517+00:00"
+      }
+    },
+    "bunis2022_proliferative_disease_vs_control": {
+      "pmid": "35069565",
+      "file": "reference/papers/PMID35069565/supplementary/Table_1.xlsx",
+      "sheet_prefix": "DvC_PEsamples",
+      "layout": "bunis",
+      "description": "Bunis et al. 2022, Supplementary Table 1 sheet DvC_PEsamples: proliferative-phase endometrium, disease versus control (GSE51981 reanalysis, limma on Brainarray Entrez probe sets, adjusted p < 0.05 and twofold); the published logFC is control over disease, so the direction is its negative",
+      "sheet": "DvC_PEsamples",
+      "sha256": "43dcbfe0f082611f7ca9c7ce46492d9fdf30577279d5d52e06f1ea0881221ec6",
+      "bytes": 904093,
+      "rows_read": 2572,
+      "symbols": 2570,
+      "genes_published": 2547,
+      "direction_split": {
+        "up_in_disease": 667,
+        "down_in_disease": 1880
+      },
+      "europepmc_receipt": {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8766492/supplementaryFiles",
+        "http_status": "200",
+        "bytes": "14160351",
+        "sha256": "0d5b86c463f4c2f1832856e05be7e0356132f42023895b135179db68ac36d4f2",
+        "utc": "2026-11-02T02:56:48.496164+00:00"
+      }
+    },
+    "consensus_proliferative": {
+      "description": "genes in both the Poli-Neto stage I-II and the Bunis proliferative sets with the same published direction",
+      "genes_published": 1630,
+      "shared_genes": 1630,
+      "same_direction_share_among_shared": 1.0,
+      "direction_split": {
+        "up_in_disease": 390,
+        "down_in_disease": 1240
+      }
+    }
+  },
+  "problems": 49,
+  "outputs": {
+    "reports/published_signature_test/signature_sets.tsv": "8fba9bf7053d9791709989f6dd959691bddf020d15c3bebf6b10dc66f5c18821",
+    "reports/published_signature_test/unmapped_or_conflicting.tsv": "b4555c1c12057a5b6212b891ba913f5586ef16f0711fb901327bce2f73571224"
+  },
+  "note": "built from locally downloaded supplements with receipts in manifests/literature_receipts.tsv; no single-cell statistic was read"
+}
