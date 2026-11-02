@@ -123,6 +123,13 @@ research brief present the completed study.
   phase regular expression that had dropped 17 mid-secretory samples (code a606ade, freeze
   020b48a, outputs cd81934). All three runs' outputs and receipts are published; the
   results report states which numbers come from which run.
+- **2 November 2026, published signatures.** The reverse test: four whole-tissue disease
+  signatures from publisher supplements (downloaded on the analysis host through Europe PMC
+  with receipts in `manifests/literature_receipts.tsv`, built into Ensembl gene sets with the
+  pinned HGNC set) tested in the single-cell stromal results. Order: supplement receipts, built
+  sets, protocol, configuration, code and tests committed (a185b41), freeze receipt (fb82ac3),
+  one run on the analysis host against the receipted pseudobulk counts, outputs and results
+  receipt (92cade0), report and documentation.
 
 Some frozen documents
 
