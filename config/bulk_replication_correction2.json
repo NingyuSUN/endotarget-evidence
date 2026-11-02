@@ -1,0 +1,193 @@
+{
+  "analysis": "BULK_REPLICATION_CORRECTION2",
+  "protocol": "docs/BULK_REPLICATION_PROTOCOL.md",
+  "synthetic": false,
+  "inputs": {
+    "metadata_audit": {
+      "path": "reports/bulk_replication_feasibility.json",
+      "sha256": "4ecc56a0da607a2a4e22c5d8f3165295462fda443fbab1c7bede202eace01785",
+      "note": "SOFT hashes, strata, file listings of the audited series"
+    },
+    "samples_GSE51981": {
+      "path": "manifests/bulk_replication_GSE51981_samples.tsv",
+      "sha256": "393eb018b4a61016bda19984084d2f20f72794ffb19800e0c2017b583fcc4f83"
+    },
+    "samples_GSE6364": {
+      "path": "manifests/bulk_replication_GSE6364_samples.tsv",
+      "sha256": "dbaee330e4e1834591e37f3d7be43c72f08394a690f412306a25ca9312624391"
+    },
+    "samples_GSE141549": {
+      "path": "manifests/bulk_replication_GSE141549_samples.tsv",
+      "sha256": "70c412271639ac31b7921dc2f690ca8e3701bd10f7069a9c9b11adae7d853ad8"
+    },
+    "phase_program_discovery": {
+      "path": "reports/phase_positive_control_f1/de_all.tsv.gz",
+      "sha256": "26d9a7e5bef2cd0eefe1b349aa0cfb961137e6347d7fc77dc2826a6a9f529e4d",
+      "listed_in": "receipts/phase_positive_control_f1_discovery_freeze.json"
+    },
+    "phase_program_heca": {
+      "path": "reports/phase_positive_control_f2/heca_de_all.tsv.gz",
+      "sha256": "33d99dbdaef9743eae4eb71bd8eb6e20a5fe64644f92535682410156bb8a2d0d",
+      "listed_in": "receipts/phase_positive_control_evaluation.json"
+    },
+    "dossier_pool": {
+      "path": "reports/replication_v2_dossier_pool.tsv",
+      "sha256": "7d6a35f4d89cf66dc6c0c44fd024e4801edc3329869f964d19015ffc6123678d",
+      "use": "frozen B0 top-20 and discovery signs"
+    },
+    "combined_per_gene": {
+      "path": "reports/combined_bound/combined_per_gene.tsv.gz",
+      "sha256": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b",
+      "use": "pooled single-cell t for E3"
+    }
+  },
+  "hash_note": "SHA-256 of file bytes with CRLF normalized to LF for text files (scripts/followon_freeze.py); FILL_AT_FREEZE values are written by scripts/bulk_replication_pin.py before the freeze",
+  "downloads": {
+    "directory": "data/bulk_replication",
+    "data_receipt": "receipts/bulk_replication_data.json",
+    "files": {
+      "GSE51981_series_matrix.txt.gz": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE51nnn/GSE51981/matrix/GSE51981_series_matrix.txt.gz",
+      "GSE6364_series_matrix.txt.gz": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE6nnn/GSE6364/matrix/GSE6364_series_matrix.txt.gz",
+      "GPL570.annot.gz": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPLnnn/GPL570/annot/GPL570.annot.gz",
+      "GSE141549_batchCorrectednormalizedArrayscombined.xlsx": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141549/suppl/GSE141549_batchCorrectednormalizedArrayscombined.xlsx",
+      "GSE141549_Sample_link.xlsx": "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141549/suppl/GSE141549_Sample_link.xlsx",
+      "GPL10558.annot.gz": "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/annot/GPL10558.annot.gz"
+    },
+    "hgnc": {
+      "path": "data/reference/gene_annotation/hgnc_complete_set_2026-10-06.tsv",
+      "sha256_lf": "8bf6f686e640dbc864a346484626953621b0500d900d26cd085a35c2782d725d"
+    }
+  },
+  "cohorts": {
+    "GSE51981": {
+      "role": "primary",
+      "platform": "GPL570",
+      "expression": "GSE51981_series_matrix.txt.gz",
+      "annotation": "GPL570.annot.gz",
+      "phase_field": "tissue",
+      "phase_map": {
+        "Proliferative Endometrial tissue": "proliferative",
+        "Early Secretory Endometrial tissue": "early_secretory",
+        "Mid-Secretory Endometrial tissue": "mid_secretory"
+      },
+      "disease_field": "endometriosis/no endometriosis",
+      "disease_map": {
+        "Endometriosis": "ENDO",
+        "Non-Endometriosis": "non-ENDO"
+      },
+      "subgroup_field": "presence or absence of uterine/pelvic pathology",
+      "other_pathology_value": "Uterine Pelvic Pathology",
+      "age_field": null
+    },
+    "GSE6364": {
+      "role": "secondary",
+      "platform": "GPL570",
+      "expression": "GSE6364_series_matrix.txt.gz",
+      "annotation": "GPL570.annot.gz",
+      "phase_regex": {
+        "proliferative": "proliferative|\\bPE\\b",
+        "early_secretory": "early[- ]?secretory|\\bESE\\b",
+        "mid_secretory": "mid[- ]?secretory|\\bMSE\\b"
+      },
+      "disease_regex": {
+        "ENDO": "endometriosis(?! free)|\\bendo\\b",
+        "non-ENDO": "no endometriosis|without endometriosis|normal|control|disease free"
+      },
+      "age_field": null
+    },
+    "GSE141549": {
+      "role": "secondary",
+      "platform": "GPL10558+GPL13376",
+      "expression": "GSE141549_batchCorrectednormalizedArrayscombined.xlsx",
+      "sample_link": "GSE141549_Sample_link.xlsx",
+      "annotation": "GPL10558.annot.gz",
+      "phase_field": "cycle phase",
+      "phase_map": {
+        "proliferative": "proliferative",
+        "secretory": "secretory"
+      },
+      "exclude_phase_values": [
+        "medication",
+        "menstruation",
+        "unknown"
+      ],
+      "tissue_field": "tissue",
+      "tissue_value": "Endometrium",
+      "control_title_token": "CE",
+      "patient_title_token": "PE",
+      "replicate_token": "Replicate",
+      "age_field": "age"
+    }
+  },
+  "parameters": {
+    "log2_expected_range": [
+      2.0,
+      20.0
+    ],
+    "program_q_threshold": 0.05,
+    "gate_auc_min": 0.9,
+    "gate_p_max": 0.001,
+    "alpha": 0.05,
+    "per_series_alpha": 0.025,
+    "replication_alpha_each": 0.05,
+    "mde_power": 0.8,
+    "minimum_residual_df": 5,
+    "transfer_same_direction_min": 16,
+    "transfer_percentile_min": 95,
+    "matched_draws": 10000,
+    "seed": 20261102,
+    "expression_bins": 5
+  },
+  "software": {
+    "python": "3.10",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "freeze": {
+    "phase": "BULK_REPLICATION_CORRECTION2_RULES_FROZEN_PRE_ANALYSIS",
+    "files": [
+      "scripts/bulk_replication_fetch.py",
+      "scripts/bulk_replication_analysis.py",
+      "scripts/bulk_replication_pin.py",
+      "scripts/followon_freeze.py",
+      "tests/test_bulk_replication.py",
+      "scripts/bulk_replication_metadata_audit.py"
+    ],
+    "attestations": [
+      "identical protocol, cohorts, estimands and labels to the first run; the changes are the corrected trigamma inverse (first correction) and the GSE6364 phase regex accepting a space, both covered by unit tests",
+      "the downloaded data and the data receipt are those of the first run, unchanged",
+      "GSE51981 E1/E2/E3 and GSE6364 E2/E3 are expected to reproduce the first correction run exactly (same seed, same code paths); GSE6364 E1 and the across-series E1 label change because 17 mid-secretory samples enter"
+    ]
+  },
+  "results_phase": "BULK_REPLICATION_CORRECTION2_COMPLETED",
+  "outputs": {
+    "directory": "reports/bulk_replication_correction2",
+    "summary": "reports/bulk_replication_correction2/summary.json",
+    "sample_table": "reports/bulk_replication_correction2/samples_used.tsv",
+    "per_gene_prefix": "reports/bulk_replication_correction2/proliferative_de_",
+    "scores_prefix": "reports/bulk_replication_correction2/program_scores_",
+    "results_receipt": "receipts/bulk_replication_correction2_results.json",
+    "freeze_receipt": "receipts/bulk_replication_correction2_freeze.json",
+    "report": "reports/bulk_replication_results.md",
+    "refuse_if_exists": [
+      "receipts/bulk_replication_correction2_results.json",
+      "reports/bulk_replication_correction2/summary.json"
+    ]
+  },
+  "correction_of": {
+    "freeze_receipts": [
+      "receipts/bulk_replication_freeze.json",
+      "receipts/bulk_replication_correction_freeze.json"
+    ],
+    "results_receipts": [
+      "receipts/bulk_replication_results.json",
+      "receipts/bulk_replication_correction_results.json"
+    ],
+    "defects": [
+      "scripts/bulk_replication_analysis.py squeeze_var: the Newton update of the trigamma inverse had the wrong sign (x - dif instead of x + dif), so the empirical-Bayes prior degrees of freedom diverged to ~5e14 and every gene was tested against a common pooled variance; E3 moderated t, p, q and MDE of the first run are invalid. E1 (ordinary least squares on program scores) and E2 (signs of coefficients) do not use the moderated variance and are unaffected.",
+      "config/bulk_replication.json cohorts.GSE6364.phase_regex.mid_secretory (the pattern allowed an optional hyphen but no space between 'mid' and 'secretory') does not match the GEO text 'Mid secretory' (space, no hyphen), so the 17 mid-secretory samples of GSE6364 (9 endometriosis, 8 control) were silently dropped and the first two runs' GSE6364 secretory arm held only the 9 early-secretory samples (6 / 3). The protocol table lists mid-secretory 9 / 8 as part of the GSE6364 secretory stratum. GSE6364 E1 (program scores, theta, delta, label) and the across-series E1 label are affected; GSE6364 E2 and E3 use proliferative samples only and are unaffected; GSE51981 (phase_map parsing) is unaffected."
+    ],
+    "found": "2026-11-02, after the correction run, from excluded_samples = 17 in the GSE6364 summary against the 37 samples of the metadata audit; the first two runs' outputs stand as reported and are superseded for GSE6364 E1 by this run",
+    "change": "phase_regex of GSE6364 accepts a hyphen or a space ('mid[- ]?secretory', 'early[- ]?secretory'); a unit test checks the configured regexes against every row of the committed GSE6364 sample manifest; squeeze_var keeps the corrected trigamma inverse"
+  }
+}

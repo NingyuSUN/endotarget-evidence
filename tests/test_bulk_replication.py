@@ -3,6 +3,7 @@
 # the freeze and data-receipt refusals. Fixtures are invented; no real expression data.
 import csv, gzip, hashlib, importlib.util, json, pathlib, shutil, subprocess, sys, tempfile, unittest
 import numpy as np
+TAB = chr(9)
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 FILES = ['scripts/bulk_replication_analysis.py', 'scripts/bulk_replication_fetch.py', 'scripts/bulk_replication_pin.py', 'scripts/followon_freeze.py',
@@ -132,6 +133,29 @@ class BulkFixture(unittest.TestCase):
         rng = np.random.default_rng(1); true = np.exp(rng.normal(0, 1.5, 2000)); s2h = true * rng.chisquare(10, 2000) / 10
         modh, d0h, _ = bulk.squeeze_var(s2h, 10)
         self.assertLess(d0h, 5); self.assertGreater(np.corrcoef(modh, s2h)[0, 1], 0.95)
+
+    def test_gse6364_regexes_classify_every_manifest_row(self):
+        """The frozen GSE6364 phase and disease regexes must reproduce the audited phase/disease of every manifest row.
+
+        Added for the second correction: the first configuration's mid-secretory regex required a hyphen or no
+        separator and did not match the GEO text 'Mid secretory', silently dropping 17 samples."""
+        import re
+        repo = pathlib.Path(__file__).resolve().parents[1]
+        cfg = json.loads((repo / 'config/bulk_replication_correction2.json').read_text(encoding='utf-8'))['cohorts']['GSE6364']
+        with (repo / 'manifests/bulk_replication_GSE6364_samples.tsv').open(encoding='utf-8') as fh:
+            rows = list(csv.DictReader(fh, delimiter=TAB))
+        self.assertEqual(len(rows), 37)
+        counts = {}
+        for r in rows:
+            text = (r['characteristics'] + ' ' + r['title'] + ' ' + r['source']).lower()
+            ph = next((k for k, rx in cfg['phase_regex'].items() if re.search(rx, text, re.I)), '')
+            dz = 'non-ENDO' if re.search(cfg['disease_regex']['non-ENDO'], text, re.I) else ('ENDO' if re.search(cfg['disease_regex']['ENDO'], text, re.I) else '')
+            self.assertEqual(ph, r['phase_guess'], r['title']); self.assertEqual(dz, {'endometriosis': 'ENDO', 'control': 'non-ENDO'}[r['disease_guess']], r['title'])
+            counts[(ph, dz)] = counts.get((ph, dz), 0) + 1
+        self.assertEqual(counts[('mid_secretory', 'ENDO')], 9); self.assertEqual(counts[('mid_secretory', 'non-ENDO')], 8)
+        self.assertEqual(counts[('early_secretory', 'ENDO')], 6); self.assertEqual(counts[('proliferative', 'non-ENDO')], 5)
+        old = json.loads((repo / 'config/bulk_replication.json').read_text(encoding='utf-8'))['cohorts']['GSE6364']['phase_regex']['mid_secretory']
+        self.assertIsNone(re.search(old, 'mid secretory phase endometriosis', re.I))   # the defect, pinned
 
 
 if __name__ == '__main__':
