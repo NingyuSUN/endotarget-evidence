@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "phase": "BULK_REPLICATION_CORRECTION2_RULES_FROZEN_PRE_ANALYSIS",
+  "analysis": "BULK_REPLICATION_CORRECTION2",
+  "created_utc": "2026-11-02T03:33:06.239035+00:00",
+  "synthetic": false,
+  "protocol": "docs/BULK_REPLICATION_PROTOCOL.md",
+  "configuration": "config/bulk_replication_correction2.json",
+  "git_head": "a606ade3142fd3a383598a917f09b8754d441d65",
+  "frozen_sha256": {
+    "scripts/bulk_replication_fetch.py": "b861cd41c8cb8d7f13646af19662c917aae38dd48d670aa1456d2e702bdcad1e",
+    "scripts/bulk_replication_analysis.py": "be974fff137f6246e0e1c45f695992568d11c0c010c7456649f74951c741ec40",
+    "scripts/bulk_replication_pin.py": "6836dd2afdc38146ac0d481f793d229fdc8a187c975a8437c6d1d4968cc89d30",
+    "scripts/followon_freeze.py": "4eb9eccfad3c7a85b5544401a799a75c0186b9690bf4204097c1811eaa651f9b",
+    "tests/test_bulk_replication.py": "45ba4e16a9761df366579761806395783360dc70ed48ee2a6c8c5ad5464a2ab5",
+    "scripts/bulk_replication_metadata_audit.py": "01c86f84a53c220cd814b2f4051c7b0aa5d0b6879feba5872d2aa2860f67adac",
+    "config/bulk_replication_correction2.json": "1dd17d859af599fa59db089a2d00a03b938b6b46b4e877d71791e5d96cdd56d6",
+    "docs/BULK_REPLICATION_PROTOCOL.md": "6f917b47f46a42c24dc0c4f6d7ed486dda285768dd8061c8204fafb45e724d48"
+  },
+  "pinned_inputs": {
+    "reports/bulk_replication_feasibility.json": "4ecc56a0da607a2a4e22c5d8f3165295462fda443fbab1c7bede202eace01785",
+    "manifests/bulk_replication_GSE51981_samples.tsv": "393eb018b4a61016bda19984084d2f20f72794ffb19800e0c2017b583fcc4f83",
+    "manifests/bulk_replication_GSE6364_samples.tsv": "dbaee330e4e1834591e37f3d7be43c72f08394a690f412306a25ca9312624391",
+    "manifests/bulk_replication_GSE141549_samples.tsv": "70c412271639ac31b7921dc2f690ca8e3701bd10f7069a9c9b11adae7d853ad8",
+    "reports/phase_positive_control_f1/de_all.tsv.gz": "26d9a7e5bef2cd0eefe1b349aa0cfb961137e6347d7fc77dc2826a6a9f529e4d",
+    "reports/phase_positive_control_f2/heca_de_all.tsv.gz": "33d99dbdaef9743eae4eb71bd8eb6e20a5fe64644f92535682410156bb8a2d0d",
+    "reports/replication_v2_dossier_pool.tsv": "7d6a35f4d89cf66dc6c0c44fd024e4801edc3329869f964d19015ffc6123678d",
+    "reports/combined_bound/combined_per_gene.tsv.gz": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b"
+  },
+  "supersedes": null,
+  "attestations": [
+    "identical protocol, cohorts, estimands and labels to the first run; the changes are the corrected trigamma inverse (first correction) and the GSE6364 phase regex accepting a space, both covered by unit tests",
+    "the downloaded data and the data receipt are those of the first run, unchanged",
+    "GSE51981 E1/E2/E3 and GSE6364 E2/E3 are expected to reproduce the first correction run exactly (same seed, same code paths); GSE6364 E1 and the across-series E1 label change because 17 mid-secretory samples enter"
+  ]
+}
