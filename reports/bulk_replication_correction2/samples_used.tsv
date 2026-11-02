@@ -1,0 +1,182 @@
+series	gsm	phase	disease	subgroup	age
+GSE51981	GSM1256653	early_secretory	ENDO		
+GSE51981	GSM1256654	early_secretory	ENDO		
+GSE51981	GSM1256655	proliferative	ENDO		
+GSE51981	GSM1256656	mid_secretory	ENDO		
+GSE51981	GSM1256657	early_secretory	ENDO		
+GSE51981	GSM1256658	mid_secretory	ENDO		
+GSE51981	GSM1256659	mid_secretory	ENDO		
+GSE51981	GSM1256660	proliferative	ENDO		
+GSE51981	GSM1256661	early_secretory	ENDO		
+GSE51981	GSM1256662	mid_secretory	ENDO		
+GSE51981	GSM1256663	proliferative	ENDO		
+GSE51981	GSM1256664	proliferative	ENDO		
+GSE51981	GSM1256665	mid_secretory	ENDO		
+GSE51981	GSM1256666	proliferative	ENDO		
+GSE51981	GSM1256667	early_secretory	ENDO		
+GSE51981	GSM1256668	mid_secretory	ENDO		
+GSE51981	GSM1256669	mid_secretory	ENDO		
+GSE51981	GSM1256670	mid_secretory	ENDO		
+GSE51981	GSM1256671	mid_secretory	ENDO		
+GSE51981	GSM1256672	mid_secretory	ENDO		
+GSE51981	GSM1256673	proliferative	ENDO		
+GSE51981	GSM1256674	mid_secretory	ENDO		
+GSE51981	GSM1256675	mid_secretory	ENDO		
+GSE51981	GSM1256676	mid_secretory	ENDO		
+GSE51981	GSM1256677	mid_secretory	ENDO		
+GSE51981	GSM1256678	proliferative	ENDO		
+GSE51981	GSM1256679	proliferative	ENDO		
+GSE51981	GSM1256680	proliferative	ENDO		
+GSE51981	GSM1256681	early_secretory	ENDO		
+GSE51981	GSM1256682	proliferative	ENDO		
+GSE51981	GSM1256683	proliferative	ENDO		
+GSE51981	GSM1256684	proliferative	ENDO		
+GSE51981	GSM1256685	proliferative	ENDO		
+GSE51981	GSM1256686	proliferative	ENDO		
+GSE51981	GSM1256687	early_secretory	ENDO		
+GSE51981	GSM1256688	mid_secretory	ENDO		
+GSE51981	GSM1256689	proliferative	ENDO		
+GSE51981	GSM1256690	mid_secretory	ENDO		
+GSE51981	GSM1256691	proliferative	ENDO		
+GSE51981	GSM1256692	mid_secretory	ENDO		
+GSE51981	GSM1256693	proliferative	ENDO		
+GSE51981	GSM1256694	mid_secretory	ENDO		
+GSE51981	GSM1256695	early_secretory	ENDO		
+GSE51981	GSM1256696	mid_secretory	ENDO		
+GSE51981	GSM1256697	mid_secretory	ENDO		
+GSE51981	GSM1256698	proliferative	ENDO		
+GSE51981	GSM1256699	proliferative	ENDO		
+GSE51981	GSM1256700	mid_secretory	ENDO		
+GSE51981	GSM1256701	early_secretory	ENDO		
+GSE51981	GSM1256702	proliferative	ENDO		
+GSE51981	GSM1256703	proliferative	ENDO		
+GSE51981	GSM1256704	mid_secretory	ENDO		
+GSE51981	GSM1256705	early_secretory	ENDO		
+GSE51981	GSM1256706	proliferative	ENDO		
+GSE51981	GSM1256707	proliferative	ENDO		
+GSE51981	GSM1256708	early_secretory	ENDO		
+GSE51981	GSM1256709	proliferative	ENDO		
+GSE51981	GSM1256710	mid_secretory	ENDO		
+GSE51981	GSM1256711	mid_secretory	ENDO		
+GSE51981	GSM1256712	early_secretory	ENDO		
+GSE51981	GSM1256713	early_secretory	ENDO		
+GSE51981	GSM1256714	mid_secretory	ENDO		
+GSE51981	GSM1256715	mid_secretory	ENDO		
+GSE51981	GSM1256716	early_secretory	ENDO		
+GSE51981	GSM1256717	early_secretory	ENDO		
+GSE51981	GSM1256718	proliferative	ENDO		
+GSE51981	GSM1256719	proliferative	ENDO		
+GSE51981	GSM1256720	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256721	early_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256722	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256723	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256724	early_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256725	early_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256726	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256727	early_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256728	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256729	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256730	early_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256731	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256732	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256733	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256734	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256735	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256736	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256737	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256738	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256739	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256740	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256741	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256742	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256743	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256744	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256745	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256746	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256747	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256748	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256749	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256750	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256751	early_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256752	early_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256753	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256754	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256755	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256756	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256757	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256758	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256759	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256760	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256761	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256762	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256763	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256764	early_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256765	early_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256766	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256767	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256768	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256769	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256770	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256771	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256772	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256774	early_secretory	ENDO		
+GSE51981	GSM1256776	early_secretory	ENDO		
+GSE51981	GSM1256777	proliferative	ENDO		
+GSE51981	GSM1256778	early_secretory	ENDO		
+GSE51981	GSM1256779	proliferative	ENDO		
+GSE51981	GSM1256780	mid_secretory	ENDO		
+GSE51981	GSM1256781	mid_secretory	ENDO		
+GSE51981	GSM1256782	proliferative	ENDO		
+GSE51981	GSM1256784	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256785	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256786	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256787	early_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256788	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256789	mid_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256790	early_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256791	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256792	early_secretory	non-ENDO	other_pathology	
+GSE51981	GSM1256793	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256794	proliferative	non-ENDO	other_pathology	
+GSE51981	GSM1256796	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256797	mid_secretory	non-ENDO	no_pathology	
+GSE51981	GSM1256798	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256799	proliferative	non-ENDO	no_pathology	
+GSE51981	GSM1256800	proliferative	non-ENDO	no_pathology	
+GSE6364	GSM150190	proliferative	ENDO		
+GSE6364	GSM150191	proliferative	ENDO		
+GSE6364	GSM150192	proliferative	ENDO		
+GSE6364	GSM150193	proliferative	ENDO		
+GSE6364	GSM150194	proliferative	ENDO		
+GSE6364	GSM150195	proliferative	ENDO		
+GSE6364	GSM150196	proliferative	non-ENDO		
+GSE6364	GSM150197	proliferative	non-ENDO		
+GSE6364	GSM150198	proliferative	non-ENDO		
+GSE6364	GSM150199	proliferative	non-ENDO		
+GSE6364	GSM150201	proliferative	non-ENDO		
+GSE6364	GSM150202	early_secretory	ENDO		
+GSE6364	GSM150203	early_secretory	ENDO		
+GSE6364	GSM150204	early_secretory	ENDO		
+GSE6364	GSM150205	early_secretory	ENDO		
+GSE6364	GSM150206	early_secretory	ENDO		
+GSE6364	GSM150207	early_secretory	ENDO		
+GSE6364	GSM150208	early_secretory	non-ENDO		
+GSE6364	GSM150209	early_secretory	non-ENDO		
+GSE6364	GSM150210	early_secretory	non-ENDO		
+GSE6364	GSM150211	mid_secretory	ENDO		
+GSE6364	GSM150212	mid_secretory	ENDO		
+GSE6364	GSM150213	mid_secretory	ENDO		
+GSE6364	GSM150214	mid_secretory	ENDO		
+GSE6364	GSM150215	mid_secretory	ENDO		
+GSE6364	GSM150216	mid_secretory	ENDO		
+GSE6364	GSM150217	mid_secretory	ENDO		
+GSE6364	GSM150218	mid_secretory	ENDO		
+GSE6364	GSM150219	mid_secretory	ENDO		
+GSE6364	GSM150220	mid_secretory	non-ENDO		
+GSE6364	GSM150221	mid_secretory	non-ENDO		
+GSE6364	GSM150222	mid_secretory	non-ENDO		
+GSE6364	GSM150223	mid_secretory	non-ENDO		
+GSE6364	GSM150224	mid_secretory	non-ENDO		
+GSE6364	GSM150225	mid_secretory	non-ENDO		
+GSE6364	GSM150226	mid_secretory	non-ENDO		
+GSE6364	GSM150227	mid_secretory	non-ENDO		
