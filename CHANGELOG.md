@@ -7,6 +7,15 @@ tagged version contains.
 
 ## Unreleased
 
+- **Published bulk signatures in stroma (2026-11-02).** Four fixed whole-tissue disease
+  signatures (Poli-Neto 2020 proliferative stage I–II and III–IV, Bunis 2022 proliferative
+  disease versus control, their consensus), built from publisher supplements downloaded with
+  receipts, tested under a frozen protocol in the pooled stromal statistics (directional
+  concordance with expression-matched references carrying the same direction labels; unsigned
+  enrichment) and as donor-level signature scores on the v1 primary design with MDE. Two sets
+  `concordant` (58% and 55% sign agreement versus 48% and 47% matched), none enriched, no
+  detectable donor-level score difference (−0.01 [−0.08, +0.07] and +0.08 [−0.06, +0.23] log2
+  units for the largest set). Supplement fetch script with receipts; standard-library xlsx reader.
 - **Bulk program-level replication (2026-11-02).** The frozen single-cell phase programs
   and B0 top-20 taken into public bulk eutopic cohorts GSE51981 (144 natural-cycle samples)
   and GSE6364 (37) under a protocol frozen before any expression value was read; data

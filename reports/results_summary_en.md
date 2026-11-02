@@ -144,13 +144,13 @@ confirmation, and a missing mapping is not a negative genetic test. See the
 
 ## Follow-on analyses (October 2026)
 
-Four analyses were added on 26–27 October 2026 and four more on 2 November 2026
+Four analyses were added on 26–27 October 2026 and five more on 2 November 2026
 under rules frozen and hashed before any new value was computed. They reuse the v1
 estimator, its saved fit quantities or its design matrices unchanged, refit no
 disease model and leave every v1 artifact byte-identical; the first four ran once
 on the analysis host in the v1 runtime, the November single-cell analyses once locally with
-the runtime's NumPy and SciPy versions, and the bulk replication once on the analysis
-host after its expression matrices were downloaded there. Numbers are copied from the linked results
+the runtime's NumPy and SciPy versions, and the bulk replication and the published-signature test once each on the
+analysis host, where the bulk expression matrices and the pseudobulk counts reside. Numbers are copied from the linked results
 reports.
 
 ### Phase positive control
@@ -346,6 +346,27 @@ genes at q < 0.05 against all non-ENDO samples of GSE51981 and 0 against its oth
 controls (1 in GSE6364); bulk and pooled single-cell t are uncorrelated (Spearman 0.08 and
 −0.22). The large contrast is the no-pathology control group's published pattern, not a
 replication of the stromal estimand.
+
+### Published bulk signatures in the stromal results (2 November 2026)
+
+The reverse direction of the bulk replication: four fixed whole-tissue disease signatures
+from publisher supplements (Poli-Neto 2020 proliferative stage I–II, 4,757 genes, and stage
+III–IV, 237; Bunis 2022 proliferative disease versus control, 2,547; their consensus, 1,630)
+tested in the pooled stromal statistics and as donor-level scores on the v1 primary design
+([protocol](../docs/PUBLISHED_SIGNATURE_PROTOCOL.md), [results](published_signature_test_results.md)).
+
+| Set | Family genes | T2 sign agreement vs matched | T2 label | T1 label | T3 score difference, discovery / HECA (log2 units; 1 = full published effect) | T3 labels |
+|---|---:|---|---|---|---|---|
+| Poli-Neto stage I–II | 4,661 | 58.4% vs 48.2%, percentile 100 | `concordant` | `no_enrichment` | −0.007 [−0.081, +0.066] / +0.085 [−0.055, +0.225] | `no_detectable_difference`, pair `not_replicated` |
+| Poli-Neto stage III–IV | 224 | 61.2% vs 50.6%, percentile 95 | `no_detectable_concordance` | `no_enrichment` | −0.35 [−1.09, +0.40] / +0.40 [−0.25, +1.05] | as above |
+| Bunis proliferative | 2,383 | 54.8% vs 47.2%, percentile 100 | `concordant` | `no_enrichment` | −0.052 [−0.167, +0.062] / +0.072 [−0.046, +0.191] | as above |
+| Consensus | 1,599 | 52.8% vs 46.5%, percentile 100 | `no_detectable_concordance` | `no_enrichment` | −0.060 [−0.176, +0.057] / +0.079 [−0.046, +0.203] | as above |
+
+The published directions are weakly shared within stroma (about ten points above the matched
+expectation, rank correlation below 0.2), but the donor-level stromal score moves by hundredths
+of a log2 unit, with intervals excluding about a fifth of the published per-gene effect for the
+two large sets; the two cohorts lean opposite ways. Whole-tissue composition and the
+healthy-versus-surgical control definition remain the likely carriers of the published signal.
 
 ### Cohort extension feasibility
 

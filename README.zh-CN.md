@@ -71,7 +71,7 @@ G1 是固定图算法，没有模型训练或参数搜索。无法在外部评�
 
 ## 零结果意味着什么：后续分析
 
-2026 年 10 月 26–27 日新增四项预先规定的分析，11 月 2 日又新增四项（两队列合并边界、基质状态构成检验、遗传集合水平检验、公开 bulk 队列的程序级重复），每项都在计算任何新数值之前冻结并哈希记录规则、输入和阈值。它们原样复用 v1 估计流程、其已保存的拟合量或其设计矩阵，不重新拟合疾病模型，所有 v1 产物逐字节不变，也不提名任何基因或细胞状态。分泌期基因不是内异症基因；阳性对照名单是周期生物学，不是候选名单。
+2026 年 10 月 26–27 日新增四项预先规定的分析，11 月 2 日又新增五项（两队列合并边界、基质状态构成检验、遗传集合水平检验、公开 bulk 队列的程序级重复、已发表 bulk 签名在基质中的检验），每项都在计算任何新数值之前冻结并哈希记录规则、输入和阈值。它们原样复用 v1 估计流程、其已保存的拟合量或其设计矩阵，不重新拟合疾病模型，所有 v1 产物逐字节不变，也不提名任何基因或细胞状态。分泌期基因不是内异症基因；阳性对照名单是周期生物学，不是候选名单。
 
 ![后续分析一览图：疾病对比与周期分期对比各检出多少基因、分期程序随供者数的召回曲线、分泌期程序的疾病交互项及其可检出效应](reports/figures/follow_on_summary_v1.svg)
 
@@ -86,9 +86,10 @@ G1 是固定图算法，没有模型训练或参数搜索。无法在外部评�
 | **基质状态构成检验**（2026 年 11 月 2 日）：蜕膜化样状态在基质原发细胞中的占比，用 v1 设计建模 | 比值比 **0.75** [0.48, 1.17]，p 0.18（发现队列）；**1.08** [0.64, 1.80]，p 0.75（HECA）；可检出比值比 1.9 / 2.1；没有作者状态达到 q < 0.05 | 在这一供者数下，疾病没有可检出地改变谱系内基质状态的构成，零结果不是这种规模的构成伪影；状态内部的表达变化未检验。 |
 | **遗传集合水平检验**（2026 年 11 月 2 日）：Rahmioglu 2023 与 Open Targets 的四个固定基因集，在合并统计量上检验 | 四个集合均为 `no_enrichment`：匹配百分位 11、51、6、39；Wilcoxon p 0.42–0.98；跨队列同号比例 43–50%，匹配基因 53% | 低于阈值的基质疾病信号并不集中在遗传学提示的基因上。 |
 | **公开 bulk 队列的程序级重复**（2026 年 11 月 2 日）：把冻结的单细胞分期程序和前 20 名列表带入公开 bulk 在位内膜队列 GSE51981（144 个样本）与 GSE6364（37 个） | 分泌期程序的疾病交互项 θ **−0.09** [−0.21, +0.03]，p 0.16；**−0.15** [−0.34, +0.04]，p 0.13：两队列均 `no_detectable_difference`；前 20 名方向一致 12 / 20、7 / 20、4 / 20：`does_not_transfer`；组织水平对全部对照 9,593 个基因 q < 0.05，对其他盆腔病变对照 0 个 | 在 144 名供者的组织水平上，基质分泌期程序的减弱不超过其周期变化的 40%；单细胞列表的方向不能迁移到全组织；对全部对照的巨大差异是该系列已发表的“病变 vs 正常”模式。一次运行加两次公开更正。 |
+| **已发表 bulk 签名在基质中的检验**（2026 年 11 月 2 日）：四个固定的全组织疾病签名（Poli-Neto 2020、Bunis 2022 及其共识集）在合并基质统计量中检验，并在 v1 设计下作供者水平打分 | 方向弱一致：两个大集合的同号比例 **58%** 与 **55%**，匹配基因 48% 与 47%（`concordant`）；\|t\| 无富集；供者水平打分差 **−0.01** [−0.08, +0.07] 与 **+0.08** [−0.06, +0.23] log2 单位（1 = 完整的已发表效应）：`no_detectable_difference`、`not_replicated` | v1 供者的基质只带有组织签名方向的痕迹，不带其幅度；基质所占份额被限定在已发表效应的约五分之一以下，且两队列方向相反。 |
 | **队列扩展审计：** GSE213216 与 GSE179640，仅元数据 | 自然周期在位内膜供者 **5 内异症 / 0 非内异症** 与 **0 / 1**；配对的在位–病灶样本 4 对与 8 对；两项研究都已包含在 HECA 细胞图谱中 | 没有公开单细胞队列能够扩展在位内膜的供者级对比；未下载任何表达数据。其余符合条件的公开供者已在上述分析中。 |
 
-报告（英文）：[阳性对照](reports/phase_positive_control_results.md)、[最小可检出效应量](reports/mde_results.md)、[分泌期程序](reports/secretory_program_results.md)、[两队列合并边界](reports/combined_bound_results.md)、[构成检验](reports/composition_test_results.md)、[遗传集合检验](reports/genetic_set_test_results.md)、[bulk 重复](reports/bulk_replication_results.md)、[队列扩展](reports/cohort_extension_feasibility.md)。协议、冻结回执和图表见[方法卡](docs/METHOD_CARD.md#follow-on-analyses-what-the-null-resolves)，汇总见[英文结果摘要](reports/results_summary_en.md#follow-on-analyses-october-2026)。
+报告（英文）：[阳性对照](reports/phase_positive_control_results.md)、[最小可检出效应量](reports/mde_results.md)、[分泌期程序](reports/secretory_program_results.md)、[两队列合并边界](reports/combined_bound_results.md)、[构成检验](reports/composition_test_results.md)、[遗传集合检验](reports/genetic_set_test_results.md)、[bulk 重复](reports/bulk_replication_results.md)、[已发表签名在基质中](reports/published_signature_test_results.md)、[队列扩展](reports/cohort_extension_feasibility.md)。协议、冻结回执和图表见[方法卡](docs/METHOD_CARD.md#follow-on-analyses-what-the-null-resolves)，汇总见[英文结果摘要](reports/results_summary_en.md#follow-on-analyses-october-2026)。
 
 ## 方法与工程实现
 
