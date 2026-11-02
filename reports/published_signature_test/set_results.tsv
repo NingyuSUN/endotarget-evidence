@@ -1,0 +1,29 @@
+set	set_size_published	set_size_in_family	test	statistic_or_cohort	value	matched_reference_mean	matched_percentile	p	label
+polineto2020_proliferative_stage_I_II	4757	4661	T1_mean_abs_t	pooled	0.9616505369688796	0.9838852394603737	0.45999999999999996	0.35753130673866074	no_enrichment
+polineto2020_proliferative_stage_I_II	4757	4661	T1_mean_abs_t	discovery	1.0349406993102712	1.0516263052994423	3.36	0.7567142689066659	no_enrichment
+polineto2020_proliferative_stage_I_II	4757	4661	T1_mean_abs_t	heca	0.8365559042345307	0.8337906543029036	66.75999999999999	6.622761548059862e-09	no_enrichment
+polineto2020_proliferative_stage_I_II	4757	4661	T2_signed_mean_t	pooled	0.24598882689619722	-0.053109644400398906	100.0	0.00019998000199980003	concordant
+polineto2020_proliferative_stage_I_II	4757	4661	T2_sign_agreement	pooled	0.5839948508903668	0.4817377172280627	100.0	8.199284970852084e-31	concordant
+polineto2020_proliferative_stage_I_II	4757	4661	T3_disease_coefficient	discovery	-0.007224319745680073			0.8311538043437116	no_detectable_difference
+polineto2020_proliferative_stage_I_II	4757	4661	T3_disease_coefficient	heca	0.0849365525889444			0.21139863726205643	no_detectable_difference
+polineto2020_proliferative_stage_III_IV	237	224	T1_mean_abs_t	pooled	0.798590763769564	0.9762535284627043	0.0	0.9995477780942673	no_enrichment
+polineto2020_proliferative_stage_III_IV	237	224	T1_mean_abs_t	discovery	1.2101649991465127	1.0517790059598784	99.83	1.0440850791690437e-05	no_enrichment
+polineto2020_proliferative_stage_III_IV	237	224	T1_mean_abs_t	heca	0.9141573335964276	0.8232481758952545	99.33	0.0002597606759240005	no_enrichment
+polineto2020_proliferative_stage_III_IV	237	224	T2_signed_mean_t	pooled	0.1419633672235485	0.005802931606508602	95.32000000000001	0.09379062093790622	no_detectable_concordance
+polineto2020_proliferative_stage_III_IV	237	224	T2_sign_agreement	pooled	0.6116071428571429	0.5056334821428572	99.92	0.0005081140977907287	no_detectable_concordance
+polineto2020_proliferative_stage_III_IV	237	224	T3_disease_coefficient	discovery	-0.3472333965698036			0.32198728773026697	no_detectable_difference
+polineto2020_proliferative_stage_III_IV	237	224	T3_disease_coefficient	heca	0.39797511012286596			0.20682434848417355	no_detectable_difference
+bunis2022_proliferative_disease_vs_control	2547	2383	T1_mean_abs_t	pooled	0.9103327626598555	0.9818383892144535	0.0	0.9966664150624636	no_enrichment
+bunis2022_proliferative_disease_vs_control	2547	2383	T1_mean_abs_t	discovery	1.0352184736133705	1.0518010904377437	12.540000000000001	0.2563880429229892	no_enrichment
+bunis2022_proliferative_disease_vs_control	2547	2383	T1_mean_abs_t	heca	0.8259785940162224	0.8312981340543538	30.070000000000004	0.002602918870807305	no_enrichment
+bunis2022_proliferative_disease_vs_control	2547	2383	T2_signed_mean_t	pooled	0.10964082699512914	-0.08886246647465391	100.0	0.00019998000199980003	concordant
+bunis2022_proliferative_disease_vs_control	2547	2383	T2_sign_agreement	pooled	0.5476290390264372	0.47197645824590856	100.0	1.8024549386888755e-06	concordant
+bunis2022_proliferative_disease_vs_control	2547	2383	T3_disease_coefficient	discovery	-0.052048770114404695			0.3347813876551573	no_detectable_difference
+bunis2022_proliferative_disease_vs_control	2547	2383	T3_disease_coefficient	heca	0.07229418877518488			0.20892820674151696	no_detectable_difference
+consensus_proliferative	1630	1599	T1_mean_abs_t	pooled	0.9131269184214392	0.9883524594882807	0.0	0.984165301170209	no_enrichment
+consensus_proliferative	1630	1599	T1_mean_abs_t	discovery	1.0467163149211909	1.0502341411406553	42.54	0.17004487348266012	no_enrichment
+consensus_proliferative	1630	1599	T1_mean_abs_t	heca	0.8265037172812715	0.8414965925577853	11.4	0.006699111023130211	no_enrichment
+consensus_proliferative	1630	1599	T2_signed_mean_t	pooled	0.06365671620564352	-0.10780623124221035	100.0	0.00019998000199980003	no_detectable_concordance
+consensus_proliferative	1630	1599	T2_sign_agreement	pooled	0.5278298936835523	0.4649475922451533	100.0	0.013863446316364488	no_detectable_concordance
+consensus_proliferative	1630	1599	T3_disease_coefficient	discovery	-0.059630601043506794			0.27993425032373703	no_detectable_difference
+consensus_proliferative	1630	1599	T3_disease_coefficient	heca	0.07866015539642161			0.19298200791738107	no_detectable_difference

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "phase": "PUBLISHED_SIGNATURE_TEST_COMPLETED",
+  "created_utc": "2026-11-02T03:52:57.956084+00:00",
+  "synthetic": false,
+  "protocol": "docs/PUBLISHED_SIGNATURE_PROTOCOL.md",
+  "freeze_receipt": "receipts/published_signature_test_freeze.json",
+  "freeze_sha256": "b458a23a0833cb6cfa0b44458a24e14f81ed4fe9bef9b5a1852b811e227596f3",
+  "input_sha256": {
+    "reports/published_signature_test/signature_sets.tsv": "8fba9bf7053d9791709989f6dd959691bddf020d15c3bebf6b10dc66f5c18821",
+    "reports/combined_bound/combined_per_gene.tsv.gz": "742bc73b14ea52d0bf8431097cc09ae9d59763077a3747bc042140d4cb263b2b",
+    "reports/mde_analysis/v1_discovery_mde_per_gene.tsv.gz": "b876fa3c7f84f74ca2c6116b54a17b7a1496035f7358e97b21d1cdec7061be3a",
+    "reports/phase_positive_control_f1/de_expression_filter.tsv": "7e2a94c18bc972c00f933c56811cd5edd9ef4f6093245e11dba9b97effaa32ee",
+    "reports/phase_positive_control_f1/de_normalization.tsv": "58c55c7129191d4407b63f9798dc47700f281290ca02af2d7d521f385a5d91b3",
+    "reports/final_clinical_design_discovery_primary.tsv": "819d1940da709f06ac6691884c62a44e28284b6f03e77ca6fce24ed02b5476e1",
+    "reports/phase_positive_control_f2/heca_de_expression_filter.tsv": "c66e3250ffd871e01a6731d04cc2fce66c18160cc0fab516fcb28c06441e43b7",
+    "reports/phase_positive_control_f2/heca_de_normalization.tsv": "62812494cfba5198865a33e11de336de360bf2523bd0cc201d86f3b3d30ea5a0",
+    "reports/final_clinical_design_heca_primary.tsv": "ad52d56c93673e82e63e52c7936a7696fc67102a7459d07bde7ff244fa4ee9c9"
+  },
+  "host_input_sha256": {
+    "data/processed/phase_positive_control/discovery/counts_stable.tsv.gz": "a0fe7e0e7b71a9d1290368154a64e3756e2c7ada4185a8df9f8d01d1a2cc85ad",
+    "data/processed/phase_positive_control/heca/counts_stable.tsv.gz": "6d7f2092b59d28e52c3569febdeebbca0bb191f6fa877acf4ccb53c890a5a7d5"
+  },
+  "script_sha256": "78f72bee4105afbe6dc4c4dad5c9784f4b317e2fdcfc612de6bdf2f611495d48",
+  "output_sha256": {
+    "reports/published_signature_test/set_results.tsv": "6ea90cb6e65a8b2a1adf43d7d3c0ebc8d40ab18897cf77a830b8c7e3b42b58fc",
+    "reports/published_signature_test/set_members.tsv": "07eada6475d2919b35ea4997ce46b31d8b646b1c4b4953dfce2b10d8ea551dac",
+    "reports/published_signature_test/donor_scores.tsv": "80dee8f32ca963a55c5f8e00466c68e58768bf4778d36989f32130dee6d70e2e",
+    "reports/published_signature_test/summary.json": "84bdd195c8778a51b5f800cdaf766570f8305a0f4281940b6d97fed265784a09"
+  },
+  "labels": {
+    "polineto2020_proliferative_stage_I_II": {
+      "T1": "no_enrichment",
+      "T2": "concordant",
+      "T3": {
+        "discovery": "no_detectable_difference",
+        "heca": "no_detectable_difference"
+      },
+      "T3_pair": "not_replicated"
+    },
+    "polineto2020_proliferative_stage_III_IV": {
+      "T1": "no_enrichment",
+      "T2": "no_detectable_concordance",
+      "T3": {
+        "discovery": "no_detectable_difference",
+        "heca": "no_detectable_difference"
+      },
+      "T3_pair": "not_replicated"
+    },
+    "bunis2022_proliferative_disease_vs_control": {
+      "T1": "no_enrichment",
+      "T2": "concordant",
+      "T3": {
+        "discovery": "no_detectable_difference",
+        "heca": "no_detectable_difference"
+      },
+      "T3_pair": "not_replicated"
+    },
+    "consensus_proliferative": {
+      "T1": "no_enrichment",
+      "T2": "no_detectable_concordance",
+      "T3": {
+        "discovery": "no_detectable_difference",
+        "heca": "no_detectable_difference"
+      },
+      "T3_pair": "not_replicated"
+    }
+  },
+  "software": {
+    "python": "3.10.22",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  }
+}

@@ -1,0 +1,791 @@
+{
+  "analysis": "PUBLISHED_SIGNATURE_TEST",
+  "synthetic": false,
+  "family_size": 15435,
+  "matched_draws": 10000,
+  "seed": 20261102,
+  "cohorts": {
+    "discovery": {
+      "donors": 22,
+      "n_endo": 12,
+      "n_non_endo": 10,
+      "expression_passing_genes": 17341,
+      "genes_in_matrix": 17341
+    },
+    "heca": {
+      "donors": 22,
+      "n_endo": 15,
+      "n_non_endo": 7,
+      "expression_passing_genes": 17243,
+      "genes_in_matrix": 17243
+    }
+  },
+  "sets": {
+    "polineto2020_proliferative_stage_I_II": {
+      "set_size_published": 4757,
+      "set_size_in_family": 4661,
+      "direction_split_in_family": {
+        "up_in_disease": 2022,
+        "down_in_disease": 2639
+      },
+      "T1_enrichment": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.35753130673866074,
+          "mean_abs_t_set": 0.9616505369688796,
+          "mean_abs_t_rest": 0.9522796086918939,
+          "matched_reference_mean": 0.9838852394603737,
+          "matched_percentile": 0.45999999999999996,
+          "matched_p_one_sided": 0.9954004599540046
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 0.7567142689066659,
+          "mean_abs_t_set": 1.0349406993102712,
+          "mean_abs_t_rest": 1.0412444646323016,
+          "matched_reference_mean": 1.0516263052994423,
+          "matched_percentile": 3.36,
+          "matched_p_one_sided": 0.9664033596640336
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 6.622761548059862e-09,
+          "mean_abs_t_set": 0.8365559042345307,
+          "mean_abs_t_rest": 0.7914142691092171,
+          "matched_reference_mean": 0.8337906543029036,
+          "matched_percentile": 66.75999999999999,
+          "matched_p_one_sided": 0.3324667533246675
+        }
+      },
+      "T2_direction": {
+        "signed_mean_t": 0.24598882689619722,
+        "matched_reference_mean": -0.053109644400398906,
+        "matched_percentile": 100.0,
+        "matched_p_two_sided": 0.00019998000199980003,
+        "sign_agreement_share": 0.5839948508903668,
+        "sign_agreement_n": 4661,
+        "sign_agreement_matched_mean": 0.4817377172280627,
+        "sign_agreement_matched_percentile": 100.0,
+        "binomial_p_greater": 8.199284970852084e-31,
+        "binomial_p_less": 1.0,
+        "spearman_published_logfc_vs_pooled_t": 0.18682195283332542
+      },
+      "label_T1": "no_enrichment",
+      "label_T2": "concordant",
+      "T3_donor_score": {
+        "discovery": {
+          "genes_in_cohort_family": 4709,
+          "cohort_family_size": 17341,
+          "n_endo": 12,
+          "n_non_endo": 10,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.007224319745680073,
+            "se": 0.033007368655922784,
+            "t": -0.21886990814045862,
+            "p": 0.8311538043437116,
+            "ci_low": -0.08076932024907135,
+            "ci_high": 0.06632068075771122,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.10265186363618917
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.008196202480550344,
+            "se": 0.024590556268823373,
+            "t": -0.33330691631981213,
+            "p": 0.7457856845747259,
+            "ci_low": -0.06298737629454568,
+            "ci_high": 0.04659497133344499,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.07647584559553625
+          },
+          "score_auc_for_disease": 0.5583333333333333,
+          "score_means": {
+            "ENDO": 0.005151364892103952,
+            "non_ENDO": -0.006181637870524733
+          },
+          "leave_one_donor_out_range": [
+            -0.031669230093719206,
+            0.024205693638751365
+          ],
+          "label": "no_detectable_difference"
+        },
+        "heca": {
+          "genes_in_cohort_family": 4676,
+          "cohort_family_size": 17243,
+          "n_endo": 15,
+          "n_non_endo": 7,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.0849365525889444,
+            "se": 0.06433640838592983,
+            "t": 1.3201941905031764,
+            "p": 0.21139863726205643,
+            "ci_low": -0.055240439416784595,
+            "ci_high": 0.22511354459467342,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.1963970174624934
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.06579737278949985,
+            "se": 0.049043037807457245,
+            "t": 1.3416251466277447,
+            "p": 0.2045549797544747,
+            "ci_low": -0.04105822719105605,
+            "ci_high": 0.17265297277005576,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.14971159556975475
+          },
+          "score_auc_for_disease": 0.5619047619047619,
+          "score_means": {
+            "ENDO": 0.01440374061705004,
+            "non_ENDO": -0.030865158465107186
+          },
+          "leave_one_donor_out_range": [
+            0.04673945280579712,
+            0.08899997254932979
+          ],
+          "label": "no_detectable_difference"
+        }
+      },
+      "label_T3_pair": "not_replicated"
+    },
+    "polineto2020_proliferative_stage_III_IV": {
+      "set_size_published": 237,
+      "set_size_in_family": 224,
+      "direction_split_in_family": {
+        "up_in_disease": 55,
+        "down_in_disease": 169
+      },
+      "T1_enrichment": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.9995477780942673,
+          "mean_abs_t_set": 0.798590763769564,
+          "mean_abs_t_rest": 0.9574143268538579,
+          "matched_reference_mean": 0.9762535284627043,
+          "matched_percentile": 0.0,
+          "matched_p_one_sided": 1.0
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 1.0440850791690437e-05,
+          "mean_abs_t_set": 1.2101649991465127,
+          "mean_abs_t_rest": 1.036825291014711,
+          "matched_reference_mean": 1.0517790059598784,
+          "matched_percentile": 99.83,
+          "matched_p_one_sided": 0.0017998200179982
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 0.0002597606759240005,
+          "mean_abs_t_set": 0.9141573335964276,
+          "mean_abs_t_rest": 0.8034391665435708,
+          "matched_reference_mean": 0.8232481758952545,
+          "matched_percentile": 99.33,
+          "matched_p_one_sided": 0.006799320067993201
+        }
+      },
+      "T2_direction": {
+        "signed_mean_t": 0.1419633672235485,
+        "matched_reference_mean": 0.005802931606508602,
+        "matched_percentile": 95.32000000000001,
+        "matched_p_two_sided": 0.09379062093790622,
+        "sign_agreement_share": 0.6116071428571429,
+        "sign_agreement_n": 224,
+        "sign_agreement_matched_mean": 0.5056334821428572,
+        "sign_agreement_matched_percentile": 99.92,
+        "binomial_p_greater": 0.0005081140977907287,
+        "binomial_p_less": 0.9996883756860044,
+        "spearman_published_logfc_vs_pooled_t": 0.1760356609011318
+      },
+      "label_T1": "no_enrichment",
+      "label_T2": "no_detectable_concordance",
+      "T3_donor_score": {
+        "discovery": {
+          "genes_in_cohort_family": 230,
+          "cohort_family_size": 17341,
+          "n_endo": 12,
+          "n_non_endo": 10,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.3472333965698036,
+            "se": 0.3332659336448221,
+            "t": -1.0419108631123015,
+            "p": 0.32198728773026697,
+            "ci_low": -1.089796171360201,
+            "ci_high": 0.3953293782205937,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 1.036446422970372
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.28038908492569903,
+            "se": 0.2671065883336713,
+            "t": -1.049727326738325,
+            "p": 0.3185502617302993,
+            "ci_low": -0.8755396520077569,
+            "ci_high": 0.3147614821563588,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.8306929694329247
+          },
+          "score_auc_for_disease": 0.5,
+          "score_means": {
+            "ENDO": 0.029001708467330287,
+            "non_ENDO": -0.03480205016079636
+          },
+          "leave_one_donor_out_range": [
+            -0.5120453141319634,
+            -0.16241851050329772
+          ],
+          "label": "no_detectable_difference"
+        },
+        "heca": {
+          "genes_in_cohort_family": 228,
+          "cohort_family_size": 17243,
+          "n_endo": 15,
+          "n_non_endo": 7,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.39797511012286596,
+            "se": 0.29823057509743006,
+            "t": 1.3344544233697366,
+            "p": 0.20682434848417355,
+            "ci_low": -0.251813493097314,
+            "ci_high": 1.047763713343046,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.9103957919738157
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.3362708492242836,
+            "se": 0.25263745045856556,
+            "t": 1.331041176254407,
+            "p": 0.2079117849367961,
+            "ci_low": -0.21417886908829514,
+            "ci_high": 0.8867205675368623,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.77121559959884
+          },
+          "score_auc_for_disease": 0.7047619047619048,
+          "score_means": {
+            "ENDO": 0.11300825627283356,
+            "non_ENDO": -0.24216054915607182
+          },
+          "leave_one_donor_out_range": [
+            0.12004600424321274,
+            0.3979751101228654
+          ],
+          "label": "no_detectable_difference"
+        }
+      },
+      "label_T3_pair": "not_replicated"
+    },
+    "bunis2022_proliferative_disease_vs_control": {
+      "set_size_published": 2547,
+      "set_size_in_family": 2383,
+      "direction_split_in_family": {
+        "up_in_disease": 524,
+        "down_in_disease": 1859
+      },
+      "T1_enrichment": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.9966664150624636,
+          "mean_abs_t_set": 0.9103327626598555,
+          "mean_abs_t_rest": 0.9632846064541816,
+          "matched_reference_mean": 0.9818383892144535,
+          "matched_percentile": 0.0,
+          "matched_p_one_sided": 1.0
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 0.2563880429229892,
+          "mean_abs_t_set": 1.0352184736133705,
+          "mean_abs_t_rest": 1.0400935365317907,
+          "matched_reference_mean": 1.0518010904377437,
+          "matched_percentile": 12.540000000000001,
+          "matched_p_one_sided": 0.8746125387461254
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 0.002602918870807305,
+          "mean_abs_t_set": 0.8259785940162224,
+          "mean_abs_t_rest": 0.8012241354182651,
+          "matched_reference_mean": 0.8312981340543538,
+          "matched_percentile": 30.070000000000004,
+          "matched_p_one_sided": 0.6993300669933007
+        }
+      },
+      "T2_direction": {
+        "signed_mean_t": 0.10964082699512914,
+        "matched_reference_mean": -0.08886246647465391,
+        "matched_percentile": 100.0,
+        "matched_p_two_sided": 0.00019998000199980003,
+        "sign_agreement_share": 0.5476290390264372,
+        "sign_agreement_n": 2383,
+        "sign_agreement_matched_mean": 0.47197645824590856,
+        "sign_agreement_matched_percentile": 100.0,
+        "binomial_p_greater": 1.8024549386888755e-06,
+        "binomial_p_less": 0.9999985231437484,
+        "spearman_published_logfc_vs_pooled_t": 0.08503528889307017
+      },
+      "label_T1": "no_enrichment",
+      "label_T2": "concordant",
+      "T3_donor_score": {
+        "discovery": {
+          "genes_in_cohort_family": 2431,
+          "cohort_family_size": 17341,
+          "n_endo": 12,
+          "n_non_endo": 10,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.052048770114404695,
+            "se": 0.05136283884347011,
+            "t": -1.0133546214808138,
+            "p": 0.3347813876551573,
+            "ci_low": -0.16649230688875433,
+            "ci_high": 0.06239476665994494,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.15973679040850677
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.050053807906332314,
+            "se": 0.04773611353531104,
+            "t": -1.0485522217745449,
+            "p": 0.3190651956180831,
+            "ci_low": -0.15641649711616823,
+            "ci_high": 0.056308881303503595,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.14845779038702953
+          },
+          "score_auc_for_disease": 0.5916666666666667,
+          "score_means": {
+            "ENDO": 0.011361479758831334,
+            "non_ENDO": -0.013633775710597595
+          },
+          "leave_one_donor_out_range": [
+            -0.08707504037717423,
+            -0.027110707079719448
+          ],
+          "label": "no_detectable_difference"
+        },
+        "heca": {
+          "genes_in_cohort_family": 2402,
+          "cohort_family_size": 17243,
+          "n_endo": 15,
+          "n_non_endo": 7,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.07229418877518488,
+            "se": 0.054443970261069494,
+            "t": 1.327864011910228,
+            "p": 0.20892820674151696,
+            "ci_low": -0.046329032127446906,
+            "ci_high": 0.19091740967781667,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.16619879235330742
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.06260485891051548,
+            "se": 0.048320239883004296,
+            "t": 1.2956239261663005,
+            "p": 0.21947335279962443,
+            "ci_low": -0.042675899678988244,
+            "ci_high": 0.1678856175000192,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.14750514108850515
+          },
+          "score_auc_for_disease": 0.6190476190476191,
+          "score_means": {
+            "ENDO": 0.013612717218247887,
+            "non_ENDO": -0.029170108324816958
+          },
+          "leave_one_donor_out_range": [
+            0.03693574030493766,
+            0.07229418877518484
+          ],
+          "label": "no_detectable_difference"
+        }
+      },
+      "label_T3_pair": "not_replicated"
+    },
+    "consensus_proliferative": {
+      "set_size_published": 1630,
+      "set_size_in_family": 1599,
+      "direction_split_in_family": {
+        "up_in_disease": 368,
+        "down_in_disease": 1231
+      },
+      "T1_enrichment": {
+        "pooled": {
+          "wilcoxon_p_one_sided": 0.984165301170209,
+          "mean_abs_t_set": 0.9131269184214392,
+          "mean_abs_t_rest": 0.9599612398310591,
+          "matched_reference_mean": 0.9883524594882807,
+          "matched_percentile": 0.0,
+          "matched_p_one_sided": 1.0
+        },
+        "discovery": {
+          "wilcoxon_p_one_sided": 0.17004487348266012,
+          "mean_abs_t_set": 1.0467163149211909,
+          "mean_abs_t_rest": 1.0384885135786792,
+          "matched_reference_mean": 1.0502341411406553,
+          "matched_percentile": 42.54,
+          "matched_p_one_sided": 0.5746425357464253
+        },
+        "heca": {
+          "wilcoxon_p_one_sided": 0.006699111023130211,
+          "mean_abs_t_set": 0.8265037172812715,
+          "mean_abs_t_rest": 0.8025661290175703,
+          "matched_reference_mean": 0.8414965925577853,
+          "matched_percentile": 11.4,
+          "matched_p_one_sided": 0.886011398860114
+        }
+      },
+      "T2_direction": {
+        "signed_mean_t": 0.06365671620564352,
+        "matched_reference_mean": -0.10780623124221035,
+        "matched_percentile": 100.0,
+        "matched_p_two_sided": 0.00019998000199980003,
+        "sign_agreement_share": 0.5278298936835523,
+        "sign_agreement_n": 1599,
+        "sign_agreement_matched_mean": 0.4649475922451533,
+        "sign_agreement_matched_percentile": 100.0,
+        "binomial_p_greater": 0.013863446316364488,
+        "binomial_p_less": 0.9878129567544769,
+        "spearman_published_logfc_vs_pooled_t": 0.07846621197286546
+      },
+      "label_T1": "no_enrichment",
+      "label_T2": "no_detectable_concordance",
+      "T3_donor_score": {
+        "discovery": {
+          "genes_in_cohort_family": 1616,
+          "cohort_family_size": 17341,
+          "n_endo": 12,
+          "n_non_endo": 10,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.059630601043506794,
+            "se": 0.05220131323421125,
+            "t": -1.1423199408023055,
+            "p": 0.27993425032373703,
+            "ci_low": -0.17594237518424438,
+            "ci_high": 0.0566811730972308,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.16234441901768254
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 10,
+            "estimate": -0.05004444341203857,
+            "se": 0.04287569470543481,
+            "t": -1.1671984268909135,
+            "p": 0.2702082427964232,
+            "ci_low": -0.14557744459020527,
+            "ci_high": 0.04548855776612814,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "capture_batch:batch12_vs_batch11",
+              "capture_batch:batch13_vs_batch11",
+              "capture_batch:batch14_vs_batch11",
+              "capture_batch:batch15_vs_batch11",
+              "capture_batch:batch16_vs_batch11",
+              "capture_batch:batch17_vs_batch11",
+              "capture_batch:batch18_vs_batch11",
+              "capture_batch:batch19_vs_batch11",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.13334204286591672
+          },
+          "score_auc_for_disease": 0.5833333333333334,
+          "score_means": {
+            "ENDO": 0.010504582377921394,
+            "non_ENDO": -0.012605498853505643
+          },
+          "leave_one_donor_out_range": [
+            -0.09384019847721747,
+            -0.037655665230290174
+          ],
+          "label": "no_detectable_difference"
+        },
+        "heca": {
+          "genes_in_cohort_family": 1605,
+          "cohort_family_size": 17243,
+          "n_endo": 15,
+          "n_non_endo": 7,
+          "status": "ESTIMATED",
+          "primary_sign_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.07866015539642161,
+            "se": 0.057031291960786705,
+            "t": 1.379245545594625,
+            "p": 0.19298200791738107,
+            "ci_low": -0.045600355220020594,
+            "ci_high": 0.20292066601286382,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.17409699925960992
+          },
+          "sensitivity_logfc_weighted": {
+            "status": "ESTIMATED",
+            "n": 22,
+            "df": 12,
+            "estimate": 0.0639825148936466,
+            "se": 0.04574968177417702,
+            "t": 1.398534643573432,
+            "p": 0.18726173626209006,
+            "ci_low": -0.03569747870894892,
+            "ci_high": 0.16366250849624214,
+            "columns": [
+              "intercept",
+              "ENDO_minus_non_ENDO",
+              "age_centered_years",
+              "library_group_Lane:42058_vs_20",
+              "library_group_Lane:42196_vs_20",
+              "library_group_Lane:43103_vs_20",
+              "library_group_Lane:43281_vs_20",
+              "library_group_Lane:43937_vs_20",
+              "library_group_Lane:43996_vs_20",
+              "adenomyosis"
+            ],
+            "dropped_constant_columns": [],
+            "mde": 0.13965810768310738
+          },
+          "score_auc_for_disease": 0.6095238095238096,
+          "score_means": {
+            "ENDO": 0.014676092075181968,
+            "non_ENDO": -0.031448768732532814
+          },
+          "leave_one_donor_out_range": [
+            0.0384292252976464,
+            0.0786601553964215
+          ],
+          "label": "no_detectable_difference"
+        }
+      },
+      "label_T3_pair": "not_replicated"
+    }
+  },
+  "software": {
+    "python": "3.10.22",
+    "numpy": "2.2.6",
+    "scipy": "1.15.2"
+  },
+  "finished_utc": "2026-11-02T03:52:57.753002+00:00"
+}
