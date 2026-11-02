@@ -144,12 +144,13 @@ confirmation, and a missing mapping is not a negative genetic test. See the
 
 ## Follow-on analyses (October 2026)
 
-Four analyses were added on 26–27 October 2026 and three more on 2 November 2026
+Four analyses were added on 26–27 October 2026 and four more on 2 November 2026
 under rules frozen and hashed before any new value was computed. They reuse the v1
 estimator, its saved fit quantities or its design matrices unchanged, refit no
 disease model and leave every v1 artifact byte-identical; the first four ran once
-on the analysis host in the v1 runtime, the November analyses once locally with the
-runtime's NumPy and SciPy versions. Numbers are copied from the linked results
+on the analysis host in the v1 runtime, the November single-cell analyses once locally with
+the runtime's NumPy and SciPy versions, and the bulk replication once on the analysis
+host after its expression matrices were downloaded there. Numbers are copied from the linked results
 reports.
 
 ### Phase positive control
@@ -321,6 +322,30 @@ reference of 10,000 random sets ([protocol](../docs/GENETIC_SET_TEST_PROTOCOL.md
 Sign agreement across cohorts among set genes is 43–50% against 53% for matched genes.
 The sub-threshold stromal disease signal is not concentrated among genetically implicated
 genes.
+
+### Bulk program-level replication (2 November 2026)
+
+The frozen single-cell programs and lists taken into public bulk microarray cohorts of
+natural-cycle eutopic endometrium, expression read only after the freeze
+([protocol](../docs/BULK_REPLICATION_PROTOCOL.md), [results](bulk_replication_results.md)).
+Whole tissue, not stroma, is the estimand. One run and two published corrections (variance
+moderation; GSE6364 phase parsing that had dropped 17 mid-secretory samples); the numbers
+below are from the second correction.
+
+| Series | Samples (P ENDO / non-ENDO; S ENDO / non-ENDO) | Gate: tissue shift along the HECA program, AUC | θ secretory × ENDO [95% CI], p | MDE | Label |
+|---|---|---|---|---:|---|
+| GSE51981 (primary) | 144 (29 / 35; 46 / 34) | 0.52, 0.96 | −0.087 [−0.209, +0.035], 0.16 | 0.17 | `no_detectable_difference` |
+| GSE6364 | 37 (6 / 5; 15 / 11) | 0.49, 1.00 | −0.148 [−0.341, +0.045], 0.13 | 0.27 | `no_detectable_difference` |
+
+Across series `not_replicated`. In GSE51981 the interval excludes an attenuation larger than
+40% and an enhancement larger than 7% of the tissue-level shift (discovery program: 35% and
+12%). The frozen B0 top-20 keeps its single-cell directions in 12 / 20 (all non-ENDO
+controls), 7 / 20 (other-pathology controls) and 4 / 20 (GSE6364) genes, matched percentiles
+81, 21 and 0.3: `does_not_transfer`. The moderated per-gene proliferative contrast finds 9,593
+genes at q < 0.05 against all non-ENDO samples of GSE51981 and 0 against its other-pathology
+controls (1 in GSE6364); bulk and pooled single-cell t are uncorrelated (Spearman 0.08 and
+−0.22). The large contrast is the no-pathology control group's published pattern, not a
+replication of the stromal estimand.
 
 ### Cohort extension feasibility
 

@@ -113,6 +113,16 @@ research brief present the completed study.
   and NCBI PMC into the git-ignored `reference/papers/` folders with per-attempt receipts in
   `manifests/literature_receipts.tsv`; claims are marked as read from a local full text or
   from a PubMed abstract only. Third-party copies are not committed.
+- **2 November 2026, bulk replication.** The frozen single-cell programs and lists were taken
+  into public bulk eutopic cohorts (GSE51981, GSE6364; GSE141549 downloaded, not analyzed).
+  Order: metadata audit and sample manifests, protocol, configuration, code and tests
+  committed (fabaa25), freeze receipt (6ec376d), expression matrices downloaded on the
+  analysis host with a data receipt, one run (ba9af24). Two defects found afterwards were
+  each handled by a separately frozen correction run rather than by altering the published
+  run: the variance-moderation sign error (freeze dd640c5, outputs 68a6ded) and the GSE6364
+  phase regular expression that had dropped 17 mid-secretory samples (code a606ade, freeze
+  020b48a, outputs cd81934). All three runs' outputs and receipts are published; the
+  results report states which numbers come from which run.
 
 Some frozen documents
 

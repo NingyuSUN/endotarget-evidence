@@ -7,6 +7,16 @@ tagged version contains.
 
 ## Unreleased
 
+- **Bulk program-level replication (2026-11-02).** The frozen single-cell phase programs
+  and B0 top-20 taken into public bulk eutopic cohorts GSE51981 (144 natural-cycle samples)
+  and GSE6364 (37) under a protocol frozen before any expression value was read; data
+  downloaded on the analysis host with a receipt. Secretory program disease interaction
+  θ −0.09 [−0.21, +0.03] and −0.15 [−0.34, +0.04], `no_detectable_difference` in both;
+  top-20 `does_not_transfer`; 9,593 tissue-level genes against all controls, 0 against
+  other-pathology controls. One run plus two published corrections (variance moderation
+  sign error; GSE6364 phase regex that dropped 17 mid-secretory samples), each with its own
+  freeze and results receipts; the earlier outputs stand as reported. Metadata audit, fetch,
+  pin and analysis scripts with tests.
 - **Stromal-state composition test (2026-11-02).** Prespecified per-cohort test of the
   decidualized-like share of primary stromal cells on the v1 design: odds ratio 0.75
   [0.48, 1.17] and 1.08 [0.64, 1.80], no author state at q < 0.05; labels

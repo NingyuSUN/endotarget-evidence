@@ -42,6 +42,8 @@ summarizes them.
 - [Stromal-state composition test results](../reports/composition_test_results.md) — no detectable shift: odds ratio 0.75 [0.48, 1.17] and 1.08 [0.64, 1.80]; detectable odds ratio 1.9 / 2.1; no state at q < 0.05
 - [Genetic set-level test protocol](GENETIC_SET_TEST_PROTOCOL.md) — frozen 2026-11-02 after the four gene sets were built and published; competitive Wilcoxon and expression-matched reference on the pooled statistics
 - [Genetic set-level test results](../reports/genetic_set_test_results.md) — no enrichment for any set (matched percentiles 6–51); genetically implicated genes look like expression-matched genes in the stromal disease contrast
+- [Bulk program-level replication protocol](BULK_REPLICATION_PROTOCOL.md) — frozen 2026-11-02 before any bulk expression value was read; frozen single-cell programs and lists scored in GSE51981 and GSE6364 with fixed estimands and labels
+- [Bulk program-level replication results](../reports/bulk_replication_results.md) — no detectable disease change of the secretory program at tissue level (θ −0.09 [−0.21, +0.03] in 144 samples; −0.15 [−0.34, +0.04] in 37); the single-cell top-20 does not transfer; one run plus two published corrections
 - [Secretory program disease contrast results](../reports/secretory_program_results.md) — no detectable difference in either cohort: θ +0.04 [−0.18, +0.25] (discovery) and −0.11 [−0.40, +0.19] (HECA) program units; detectable attenuation 0.31 and 0.42 units; gene-level set tests agree; signature transfers at AUC 1.00 / 0.99
 
 ## Reproduction
