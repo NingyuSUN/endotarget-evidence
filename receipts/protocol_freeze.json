@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "phase": "STAGE1_PROTOCOL_V2_FREEZE",
+  "frozen_utc": "2026-11-20T04:52:04.492161+00:00",
+  "protocol_title": "Host-decontaminated lesion single-cell transcriptomics, niche crosstalk, and human genetics for causal target prioritization in endometriosis",
+  "random_seed": 20261120,
+  "max_threads": 8,
+  "attestations": {
+    "discovery_expression_downloaded": false,
+    "external_expression_downloaded": false,
+    "heca_annotations_used": false,
+    "parameters_locked_before_expression": true
+  },
+  "locked_artifacts": {
+    "configs/protocol_v2.yaml": {
+      "sha256": "962b4dcb524c1f407e2e10f948118c0d39757034d9029474e057b775da42295c",
+      "bytes": 7799
+    },
+    "manifests/m0_GSE179640_samples.tsv": {
+      "sha256": "ef98eea9eb4d105d64f5413c2e14363a798aedfeb338a2e21e3a4dc800683273",
+      "bytes": 15854
+    },
+    "manifests/m0_GSE179640_donor_design.tsv": {
+      "sha256": "c9b0c4d21d43f6519076b53dcbc76b4a1ad62d84afb20dfc40b8ae275d0b008f",
+      "bytes": 995
+    },
+    "manifests/m0_GSE213216_samples.tsv": {
+      "sha256": "3a085247614066e56129c60c2075df90ea8c496f9162995e3b44493a8102b8a2",
+      "bytes": 13947
+    },
+    "manifests/m0_GSE213216_locked_selection.tsv": {
+      "sha256": "6c3182d75e1e648ddfe89a7c2020feac107e9678385bf2c0b397f41fd9ec6400",
+      "bytes": 6989
+    },
+    "manifests/m0_GSE141549_samples.tsv": {
+      "sha256": "f3b64f6ed482495cd357b2ee525bf9c5f3ccd079c5a0b7c62da5f2f64961f62a",
+      "bytes": 46969
+    },
+    "manifests/m0_GSE141549_subjects.tsv": {
+      "sha256": "45267c9927a20ed6115f5d77181b2157aa0dfa0faf596cf2e349f7769b4aea32",
+      "bytes": 7351
+    },
+    "manifests/human_genetics_prior_v2.tsv": {
+      "sha256": "014bbb172220b564e0af26b67b432571352e1f609476e5362d768712b1a74db4",
+      "bytes": 413028
+    },
+    "manifests/canonical_lineage_markers.tsv": {
+      "sha256": "ab9f747bbaab4deba64099dad57ed12a3a2f6e782013570b83a2d95a30fe2fde",
+      "bytes": 5805
+    },
+    "manifests/curated_niche_lr_pairs.tsv": {
+      "sha256": "e5764d2adb3520542cf61354482c2257097e05d7bd3e493d0f33b9027115b560",
+      "bytes": 12757
+    },
+    "manifests/string_network_summary.json": {
+      "sha256": "7db8f7e83ea16496458e9f9f731373e92b3f3f51d55ff4965db23b722e29e197",
+      "bytes": 506
+    },
+    "receipts/m0_inputs_and_priors.json": {
+      "sha256": "8be236b2ddd718cb4983d2b5ff026e8b14272a9bf45684db0ea538f7b654b930",
+      "bytes": 8244
+    }
+  },
+  "interim_string_network": {
+    "relpath": "data/interim/string_v12_5_direct_gene_edges.tsv.gz",
+    "sha256": "dcc4b477bee548d990cc0f59baae60d457cd48bb264f2c36cdcdd101bd5ab383",
+    "bytes": 845633
+  }
+}

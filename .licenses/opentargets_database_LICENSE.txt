@@ -1,0 +1,4 @@
+Open Targets Platform License Notification
+Timestamp: 2026-11-20T04:38:00Z
+License URL: https://platform-docs.opentargets.org/licence
+Note: Open Targets Platform data queried programmatically via the official Open Targets GraphQL API wrapper for EndoTarget v2 (EFO_0001065 / MONDO_0005133 endometriosis genetic association, tractability, and known drug evidence). Users should review Open Targets license terms at https://platform-docs.opentargets.org/licence.

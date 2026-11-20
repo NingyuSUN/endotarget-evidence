@@ -1,0 +1,15 @@
+donor_id	group	Ctrl_EuE_gsms	EuE_gsms	EcP_gsms	AdjP_gsms	EcO_gsms	matched_EuE_EcP_pair	matched_EuE_EcP_AdjP_triplet	matched_EuE_EcP_EcO_triplet
+C01	Control	GSM6102532					False	False	False
+C02	Control	GSM6102533					False	False	False
+C03	Control	GSM6102534					False	False	False
+E01	Endometriosis		GSM6102537	GSM6595248	GSM6595249		True	True	False
+E02	Endometriosis		GSM6102540	GSM6595250	GSM6595251		True	True	False
+E03	Endometriosis		GSM6102543	GSM6595252	GSM6595253		True	True	False
+E04	Endometriosis		GSM6102546	GSM6595254	GSM6595255		True	True	False
+E05	Endometriosis		GSM6102549	GSM6595256	GSM6595257		True	True	False
+E06	Endometriosis		GSM6102551	GSM6102550			True	False	False
+E07	Endometriosis		GSM6102554	GSM6102553		GSM6102552	True	False	True
+E08	Endometriosis		GSM6102555				False	False	False
+E09	Endometriosis		GSM6102560	GSM6595258	GSM6595259;GSM6595260	GSM6102556	True	True	True
+E10	Endometriosis					GSM6595261	False	False	False
+E11	Endometriosis					GSM6102562	False	False	False

@@ -1,0 +1,409 @@
+gsm	subject_id	sample_title	platform_id	tissue_code	major_group	disease_status	disease_stage	cycle_phase	age	is_technical_replicate	description
+GSM4205957	SL 017	SAMPLE 1 OMA	GPL13376	OMA	OMA	Endometriosis	4	secretory	22	False	Ovarian endometrioma
+GSM4205958	SL 001	SAMPLE 2 PP	GPL13376	PP	PP	Endometriosis	3	medication	23	False	Patient peritoneum
+GSM4205959	SL 005	SAMPLE 3 PE	GPL13376	PE	PE	Endometriosis	4	secretory	45	False	Patient endometrium
+GSM4205960	SL 005	SAMPLE 4 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	secretory	45	False	Deep infiltrating endometriosis lesion intestine
+GSM4205961	SL 017	SAMPLE 5 REV	GPL13376	REV	DIE	Endometriosis	4	secretory	22	False	Rectovaginal lesion
+GSM4205962	SL 140	SAMPLE 6 CP	GPL13376	CP	CP	Control	Healthy	medication	36	False	Control peritoneum
+GSM4205963	SL 017	SAMPLE 7 PP	GPL13376	PP	PP	Endometriosis	4	secretory	22	False	Patient peritoneum
+GSM4205964	SL 001	SAMPLE 8 PE	GPL13376	PE	PE	Endometriosis	3	medication	23	False	Patient endometrium
+GSM4205965	SL 017	SAMPLE 9 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	secretory	22	False	Deep infiltrating endometriosis lesion intestine
+GSM4205966	SL 005	SAMPLE 10 OMA	GPL13376	OMA	OMA	Endometriosis	4	secretory	45	False	Ovarian endometrioma
+GSM4205967	SL 110	SAMPLE 11 REV	GPL13376	REV	DIE	Endometriosis	4	unknown	22	False	Rectovaginal lesion
+GSM4205968	SL 090	SAMPLE 12 CP	GPL13376	CP	CP	Control	Healthy	secretory	44	False	Control peritoneum
+GSM4205969	SL 005	SAMPLE 13 PP	GPL13376	PP	PP	Endometriosis	4	secretory	45	False	Patient peritoneum
+GSM4205970	SL 017	SAMPLE 14 PE	GPL13376	PE	PE	Endometriosis	4	secretory	22	False	Patient endometrium
+GSM4205971	SL 140	SAMPLE 15 CE	GPL13376	CE	CE	Control	Healthy	medication	35	False	Control endometrium
+GSM4205972	SL 001	SAMPLE 16 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	3	medication	23	False	Peritoneal endometriosis red lesion
+GSM4205973	SL 001	SAMPLE 17 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	3	medication	23	False	Peritoneal endometriosis red lesion
+GSM4205974	SL 012	SAMPLE 18 OMA	GPL13376	OMA	OMA	Endometriosis	4	unknown	31	False	Ovarian endometrioma
+GSM4205975	SL 030	SAMPLE 19 CP	GPL13376	CP	CP	Control	Healthy	secretory	40	False	Control peritoneum
+GSM4205976	SL 106	SAMPLE 20 CE	GPL13376	CE	CE	Control	Healthy	medication	44	False	Control endometrium
+GSM4205977	SL 039	SAMPLE 21 PE	GPL13376	PE	PE	Endometriosis	4	medication	25	False	Patient endometrium
+GSM4205978	SL 018	SAMPLE 22 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	secretory	38	False	Peritoneal endometriosis black lesion
+GSM4205979	SL 039	SAMPLE 23 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	25	False	Deep infiltrating endometriosis lesion intestine
+GSM4205980	SL 051	SAMPLE 24 PP	GPL13376	PP	PP	Endometriosis	2	medication	22	False	Patient peritoneum
+GSM4205981	SL 106	SAMPLE 25 CP	GPL13376	CP	CP	Control	Healthy	medication	44	False	Control peritoneum
+GSM4205982	SL 118	SAMPLE 26 CE	GPL13376	CE	CE	Control	Healthy	unknown	37	False	Control endometrium
+GSM4205983	SL 018	SAMPLE 27 PE	GPL13376	PE	PE	Endometriosis	4	secretory	38	False	Patient endometrium
+GSM4205984	SL 051	SAMPLE 28 REV	GPL13376	REV	DIE	Endometriosis	2	medication	22	False	Rectovaginal lesion
+GSM4205985	SL 039	SAMPLE 29 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	25	False	Peritoneal endometriosis red lesion
+GSM4205986	SL 018	SAMPLE 30 OMA	GPL13376	OMA	OMA	Endometriosis	4	secretory	38	False	Ovarian endometrioma
+GSM4205987	SL 118	SAMPLE 31 CP	GPL13376	CP	CP	Control	Healthy	unknown	37	False	Control peritoneum
+GSM4205988	SL 030	SAMPLE 32 CE	GPL13376	CE	CE	Control	Healthy	secretory	40	False	Control endometrium
+GSM4205989	SL 030	SAMPLE 32 CE Replicate	GPL13376	CE	CE	Control	Healthy	secretory	40	True	Control endometrium
+GSM4205990	SL 051	SAMPLE 33 PE	GPL13376	PE	PE	Endometriosis	2	medication	22	False	Patient endometrium
+GSM4205991	SL 039	SAMPLE 34 PP	GPL13376	PP	PP	Endometriosis	4	medication	25	False	Patient peritoneum
+GSM4205992	SL 040	SAMPLE 35 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	27	False	Peritoneal endometriosis red lesion
+GSM4205993	SL 059	SAMPLE 36 PE	GPL13376	PE	PE	Endometriosis	4	medication	48	False	Patient endometrium
+GSM4205994	SL 016	SAMPLE 37 PP	GPL13376	PP	PP	Endometriosis	4	medication	38	False	Patient peritoneum
+GSM4205995	SL 042	SAMPLE 38 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	3	unknown	36	False	Peritoneal endometriosis black lesion
+GSM4205996	SL 131	SAMPLE 39 CE	GPL13376	CE	CE	Control	Healthy	proliferative	37	False	Control endometrium
+GSM4205997	SL 090	SAMPLE 40 CE	GPL13376	CE	CE	Control	Healthy	secretory	43	False	Control endometrium
+GSM4205998	SL 066	SAMPLE 41 PE	GPL13376	PE	PE	Endometriosis	1	medication	41	False	Patient endometrium
+GSM4205999	SL 133	SAMPLE 42 PE	GPL13376	PE	PE	Endometriosis	1	menstruation	27	False	Patient endometrium
+GSM4206000	SL 042	SAMPLE 43 PP	GPL13376	PP	PP	Endometriosis	3	unknown	36	False	Patient peritoneum
+GSM4206001	SL 087	SAMPLE 44 CP	GPL13376	CP	CP	Control	Healthy	medication	47	False	Control peritoneum
+GSM4206002	SL 025	SAMPLE 45 CE	GPL13376	CE	CE	Control	Healthy	medication	43	False	Control endometrium
+GSM4206003	SL 059	SAMPLE 46 PP	GPL13376	PP	PP	Endometriosis	4	medication	48	False	Patient peritoneum
+GSM4206004	SL 134	SAMPLE 47 CE	GPL13376	CE	CE	Control	Healthy	secretory	44	False	Control endometrium
+GSM4206005	SL 135	SAMPLE 48 PE	GPL13376	PE	PE	Endometriosis	NA	secretory	30	False	Patient endometrium
+GSM4206006	SL 136	SAMPLE 49 CE	GPL13376	CE	CE	Control	Healthy	medication	42	False	Control endometrium
+GSM4206007	SL 066	SAMPLE 50 PP	GPL13376	PP	PP	Endometriosis	1	medication	41	False	Patient peritoneum
+GSM4206008	SL 079	SAMPLE 51 CE	GPL13376	CE	CE	Control	Healthy	proliferative	48	False	Control endometrium
+GSM4206009	SL 037	SAMPLE 52 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	26	False	Deep infiltrating endometriosis lesion intestine
+GSM4206010	SL 010	SAMPLE 53 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	medication	24	False	Peritoneal endometriosis black lesion
+GSM4206011	SL 037	SAMPLE 54 PE	GPL13376	PE	PE	Endometriosis	4	medication	26	False	Patient endometrium
+GSM4206012	SL 137	SAMPLE 55 CE	GPL13376	CE	CE	Control	Healthy	secretory	36	False	Control endometrium
+GSM4206013	SL 138	SAMPLE 56 CE	GPL13376	CE	CE	Control	Healthy	proliferative	40	False	Control endometrium
+GSM4206014	SL 041	SAMPLE 57 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	medication	41	False	Peritoneal endometriosis black lesion
+GSM4206015	SL 110	SAMPLE 58 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	unknown	22	False	Peritoneal endometriosis black lesion
+GSM4206016	SL 139	SAMPLE 59 SuL	GPL13376	SuL	DIE	Endometriosis	4	medication	47	False	Sacrouterine ligament lesion
+GSM4206017	SL 040	SAMPLE 60 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	27	False	Deep infiltrating endometriosis lesion intestine
+GSM4206018	SL 060	SAMPLE 61 PE	GPL13376	PE	PE	Endometriosis	3	proliferative	31	False	Patient endometrium
+GSM4206019	SL 110	SAMPLE 62 PP	GPL13376	PP	PP	Endometriosis	4	unknown	22	False	Patient peritoneum
+GSM4206020	SL 037	SAMPLE 63 PP	GPL13376	PP	PP	Endometriosis	4	medication	26	False	Patient peritoneum
+GSM4206021	SL 068	SAMPLE 64 PE	GPL13376	PE	PE	Endometriosis	3	secretory	23	False	Patient endometrium
+GSM4206022	SL 139	SAMPLE 65 PE	GPL13376	PE	PE	Endometriosis	4	medication	47	False	Patient endometrium
+GSM4206023	SL 141	SAMPLE 66 PP	GPL13376	PP	PP	Endometriosis	3	unknown	32	False	Patient peritoneum
+GSM4206024	SL 088	SAMPLE 67 CP	GPL13376	CP	CP	Control	Healthy	unknown	36	False	Control peritoneum
+GSM4206025	SL 042	SAMPLE 68 PE	GPL13376	PE	PE	Endometriosis	3	unknown	36	False	Patient endometrium
+GSM4206026	SL 060	SAMPLE 69 OMA	GPL13376	OMA	OMA	Endometriosis	3	proliferative	31	False	Ovarian endometrioma
+GSM4206027	SL 009	SAMPLE 70 PE	GPL13376	PE	PE	Endometriosis	4	proliferative	35	False	Patient endometrium
+GSM4206028	SL 142	SAMPLE 71 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	34	False	Deep infiltrating endometriosis lesion intestine
+GSM4206029	SL 018	SAMPLE 72 PP	GPL13376	PP	PP	Endometriosis	4	secretory	38	False	Patient peritoneum
+GSM4206030	SL 012	SAMPLE 73 PE	GPL13376	PE	PE	Endometriosis	4	unknown	31	False	Patient endometrium
+GSM4206031	SL 001	SAMPLE 74 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	3	medication	23	False	Peritoneal endometriosis black lesion
+GSM4206032	SL 028	SAMPLE 75 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	NA	medication	36	False	Deep infiltrating endometriosis lesion intestine
+GSM4206033	SL 143	SAMPLE 76 OMA	GPL13376	OMA	OMA	Endometriosis	3	secretory	31	False	Ovarian endometrioma
+GSM4206034	SL 160	SAMPLE 77 PE	GPL13376	PE	PE	Endometriosis	3	medication	32	False	Patient endometrium
+GSM4206035	SL 143	SAMPLE 78 PE	GPL13376	PE	PE	Endometriosis	3	secretory	31	False	Patient endometrium
+GSM4206036	SL 135	SAMPLE 79 PP	GPL13376	PP	PP	Endometriosis	NA	secretory	30	False	Patient peritoneum
+GSM4206037	SL 155	SAMPLE 80 CE	GPL13376	CE	CE	Control	Healthy	secretory	37	False	Control endometrium
+GSM4206038	SL 133	SAMPLE 81 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	1	menstruation	27	False	Peritoneal endometriosis black lesion
+GSM4206039	SL 142	SAMPLE 82 PE	GPL13376	PE	PE	Endometriosis	4	medication	34	False	Patient endometrium
+GSM4206040	SL 037	SAMPLE 83 REV	GPL13376	REV	DIE	Endometriosis	4	medication	26	False	Rectovaginal lesion
+GSM4206041	SL 016	SAMPLE 84 OMA	GPL13376	OMA	OMA	Endometriosis	4	medication	38	False	Ovarian endometrioma
+GSM4206042	SL 001	SAMPLE 85 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	3	medication	23	False	Peritoneal endometriosis red lesion
+GSM4206043	SL 059	SAMPLE 86 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	48	False	Deep infiltrating endometriosis lesion intestine
+GSM4206044	SL 089	SAMPLE 87 CE	GPL13376	CE	CE	Control	Healthy	medication	35	False	Control endometrium
+GSM4206045	SL 037	SAMPLE 88 OMA	GPL13376	OMA	OMA	Endometriosis	4	medication	26	False	Ovarian endometrioma
+GSM4206046	SL 010	SAMPLE 89 PE	GPL13376	PE	PE	Endometriosis	4	medication	24	False	Patient endometrium
+GSM4206047	SL 033	SAMPLE 90 CE	GPL13376	CE	CE	Control	Healthy	secretory	46	False	Control endometrium
+GSM4206048	SL 009	SAMPLE 91 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	proliferative	35	False	Peritoneal endometriosis red lesion
+GSM4206049	SL 016	SAMPLE 92 PE	GPL13376	PE	PE	Endometriosis	4	medication	38	False	Patient endometrium
+GSM4206050	SL 043	SAMPLE 93 OMA	GPL13376	OMA	OMA	Endometriosis	4	medication	26	False	Ovarian endometrioma
+GSM4206051	SL 040	SAMPLE 94 SuL	GPL13376	SuL	DIE	Endometriosis	4	medication	27	False	Sacrouterine ligament lesion
+GSM4206052	SL 135	SAMPLE 95 OMA	GPL13376	OMA	OMA	Endometriosis	NA	secretory	30	False	Ovarian endometrioma
+GSM4206053	SL 141	SAMPLE 96 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	3	unknown	32	False	Deep infiltrating endometriosis lesion intestine
+GSM4206054	SL 142	SAMPLE 97 REV	GPL13376	REV	DIE	Endometriosis	4	medication	34	False	Rectovaginal lesion
+GSM4206055	SL 067	SAMPLE 98 CE	GPL13376	CE	CE	Control	Healthy	medication	36	False	Control endometrium
+GSM4206056	SL 041	SAMPLE 99 PE	GPL13376	PE	PE	Endometriosis	4	medication	41	False	Patient endometrium
+GSM4206057	SL 051	SAMPLE 100 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	2	medication	22	False	Peritoneal endometriosis red lesion
+GSM4206058	SL 068	SAMPLE 101 PP	GPL13376	PP	PP	Endometriosis	3	secretory	23	False	Patient peritoneum
+GSM4206059	SL 040	SAMPLE 102 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	27	False	Deep infiltrating endometriosis lesion intestine
+GSM4206060	SL 001	SAMPLE 103 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	3	medication	23	False	Peritoneal endometriosis white lesion
+GSM4206061	SL 141	SAMPLE 104 PE	GPL13376	PE	PE	Endometriosis	3	unknown	32	False	Patient endometrium
+GSM4206062	SL 028	SAMPLE 105 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	NA	medication	36	False	Deep infiltrating endometriosis lesion intestine
+GSM4206063	SL 159	SAMPLE 106 CE	GPL13376	CE	CE	Control	Healthy	unknown	32	False	Control endometrium
+GSM4206064	SL 012	SAMPLE 107 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	unknown	31	False	Peritoneal endometriosis black lesion
+GSM4206065	SL 012	SAMPLE 108 SuL	GPL13376	SuL	DIE	Endometriosis	4	unknown	31	False	Sacrouterine ligament lesion
+GSM4206066	SL 080	SAMPLE 109 PP	GPL13376	PP	PP	Endometriosis	1	medication	46	False	Patient peritoneum
+GSM4206067	SL 061	SAMPLE 110 CE	GPL13376	CE	CE	Control	Healthy	unknown	24	False	Control endometrium
+GSM4206068	SL 042	SAMPLE 111 REV	GPL13376	REV	DIE	Endometriosis	3	unknown	36	False	Rectovaginal lesion
+GSM4206069	SL 041	SAMPLE 112 PP	GPL13376	PP	PP	Endometriosis	4	medication	41	False	Patient peritoneum
+GSM4206070	SL 070	SAMPLE 113 CE	GPL13376	CE	CE	Control	Healthy	medication	40	False	Control endometrium
+GSM4206071	SL 160	SAMPLE 114 OMA	GPL13376	OMA	OMA	Endometriosis	3	medication	32	False	Ovarian endometrioma
+GSM4206072	SL 141	SAMPLE 115 REV	GPL13376	REV	DIE	Endometriosis	3	unknown	32	False	Rectovaginal lesion
+GSM4206073	SL 133	SAMPLE 116 PP	GPL13376	PP	PP	Endometriosis	1	menstruation	27	False	Patient peritoneum
+GSM4206074	SL 111	SAMPLE 117 CE	GPL13376	CE	CE	Control	Healthy	medication	37	False	Control endometrium
+GSM4206075	SL 068	SAMPLE 118 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	3	secretory	23	False	Peritoneal endometriosis red lesion
+GSM4206076	SL 160	SAMPLE 119 PP	GPL13376	PP	PP	Endometriosis	3	medication	32	False	Patient peritoneum
+GSM4206077	SL 043	SAMPLE 120 PE	GPL13376	PE	PE	Endometriosis	4	medication	26	False	Patient endometrium
+GSM4206078	SL 054	SAMPLE 121 CE	GPL13376	CE	CE	Control	Healthy	secretory	37	False	Control endometrium
+GSM4206079	SL 054	SAMPLE 121 CE Replicate	GPL13376	CE	CE	Control	Healthy	secretory	37	True	Control endometrium
+GSM4206080	SL 021	SAMPLE 122 PE	GPL13376	PE	PE	Endometriosis	2	secretory	33	False	Patient endometrium
+GSM4206081	SL 036	SAMPLE 123 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	medication	42	False	Peritoneal endometriosis black lesion
+GSM4206082	SL 112	SAMPLE 124 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	2	medication	27	False	Peritoneal endometriosis black lesion
+GSM4206083	SL 029	SAMPLE 125 CE	GPL13376	CE	CE	Control	3	secretory	38	False	Control endometrium
+GSM4206084	SL 111	SAMPLE 126 CP	GPL13376	CP	CP	Control	Healthy	medication	37	False	Control peritoneum
+GSM4206085	SL 152	SAMPLE 127 PE	GPL13376	PE	PE	Endometriosis	2	medication	29	False	Patient endometrium
+GSM4206086	SL 047	SAMPLE 128 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	2	secretory	40	False	Peritoneal endometriosis red lesion
+GSM4206087	SL 071	SAMPLE 129 REV	GPL13376	REV	DIE	Endometriosis	2	medication	25	False	Rectovaginal lesion
+GSM4206088	SL 036	SAMPLE 130 PE	GPL13376	PE	PE	Endometriosis	4	medication	42	False	Patient endometrium
+GSM4206089	SL 062	SAMPLE 131 PE	GPL13376	PE	PE	Endometriosis	3	unknown	38	False	Patient endometrium
+GSM4206090	SL 091	SAMPLE 132 CP	GPL13376	CP	CP	Control	Healthy	medication	42	False	Control peritoneum
+GSM4206091	SL 021	SAMPLE 133 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	2	secretory	33	False	Peritoneal endometriosis white lesion
+GSM4206092	SL 124	SAMPLE 134 OMA	GPL13376	OMA	OMA	Endometriosis	4	secretory	41	False	Ovarian endometrioma
+GSM4206093	SL 011	SAMPLE 135 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	33	False	Deep infiltrating endometriosis lesion intestine
+GSM4206094	SL 032	SAMPLE 136 REV	GPL13376	REV	DIE	Endometriosis	4	menstruation	32	False	Rectovaginal lesion
+GSM4206095	SL 081	SAMPLE 137 SuL	GPL13376	SuL	DIE	Endometriosis	3	medication	38	False	Sacrouterine ligament lesion
+GSM4206096	SL 054	SAMPLE 138 CP	GPL13376	CP	CP	Control	Healthy	secretory	37	False	Control peritoneum
+GSM4206097	SL 161	SAMPLE 139 PE	GPL13376	PE	PE	Endometriosis	4	unknown	40	False	Patient endometrium
+GSM4206098	SL 048	SAMPLE 140 PE	GPL13376	PE	PE	Endometriosis	1	proliferative	36	False	Patient endometrium
+GSM4206099	SL 136	SAMPLE 141 CP	GPL13376	CP	CP	Control	Healthy	medication	42	False	Control peritoneum
+GSM4206100	SL 053	SAMPLE 142 CP	GPL13376	CP	CP	Control	Healthy	secretory	41	False	Control peritoneum
+GSM4206101	SL 003	SAMPLE 143 SuL	GPL13376	SuL	DIE	Endometriosis	4	medication	39	False	Sacrouterine ligament lesion
+GSM4206102	SL 144	SAMPLE 144 REV	GPL13376	REV	DIE	Endometriosis	2	medication	25	False	Rectovaginal lesion
+GSM4206103	SL 097	SAMPLE 145 CE	GPL13376	CE	CE	Control	Healthy	secretory	33	False	Control endometrium
+GSM4206104	SL 020	SAMPLE 146 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	2	menstruation	32	False	Deep infiltrating endometriosis lesion intestine
+GSM4206105	SL 161	SAMPLE 147 OMA	GPL13376	OMA	OMA	Endometriosis	4	unknown	40	False	Ovarian endometrioma
+GSM4206106	SL 031	SAMPLE 148 REV	GPL13376	REV	DIE	Endometriosis	1	secretory	35	False	Rectovaginal lesion
+GSM4206107	SL 011	SAMPLE 149 PP	GPL13376	PP	PP	Endometriosis	4	medication	33	False	Patient peritoneum
+GSM4206108	SL 069	SAMPLE 150 DiEB	GPL13376	DiEB	DIE	Endometriosis	2	medication	28	False	Deep infiltrating endometriosis lesion bladder
+GSM4206109	SL 026	SAMPLE 151 PE	GPL13376	PE	PE	Endometriosis	4	proliferative	31	False	Patient endometrium
+GSM4206110	SL 036	SAMPLE 152 OMA	GPL13376	OMA	OMA	Endometriosis	4	medication	42	False	Ovarian endometrioma
+GSM4206111	SL 072	SAMPLE 153 SuL	GPL13376	SuL	DIE	Endometriosis	2	secretory	40	False	Sacrouterine ligament lesion
+GSM4206112	SL 002	SAMPLE 154 DiEB	GPL13376	DiEB	DIE	Endometriosis	4	proliferative	31	False	Deep infiltrating endometriosis lesion bladder
+GSM4206113	SL 062	SAMPLE 155 OMA	GPL13376	OMA	OMA	Endometriosis	3	unknown	38	False	Ovarian endometrioma
+GSM4206114	SL 098	SAMPLE 156 CE	GPL13376	CE	CE	Control	Healthy	proliferative	34	False	Control endometrium
+GSM4206115	SL 145	SAMPLE 157 PE	GPL13376	PE	PE	Endometriosis	4	secretory	28	False	Patient endometrium
+GSM4206116	SL 035	SAMPLE 158 OMA	GPL13376	OMA	OMA	Endometriosis	4	secretory	27	False	Ovarian endometrioma
+GSM4206117	SL 006	SAMPLE 159 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	25	False	Deep infiltrating endometriosis lesion intestine
+GSM4206118	SL 092	SAMPLE 160 CE	GPL13376	CE	CE	Control	Healthy	proliferative	38	False	Control endometrium
+GSM4206119	SL 082	SAMPLE 161 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	NA	unknown	37	False	Peritoneal endometriosis red lesion
+GSM4206120	SL 145	SAMPLE 162 OMA	GPL13376	OMA	OMA	Endometriosis	4	secretory	28	False	Ovarian endometrioma
+GSM4206121	SL 011	SAMPLE 163 PE	GPL13376	PE	PE	Endometriosis	4	medication	33	False	Patient endometrium
+GSM4206122	SL 011	SAMPLE 164 REV	GPL13376	REV	DIE	Endometriosis	4	medication	33	False	Rectovaginal lesion
+GSM4206123	SL 003	SAMPLE 165 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	39	False	Peritoneal endometriosis red lesion
+GSM4206124	SL 003	SAMPLE 166 REV	GPL13376	REV	DIE	Endometriosis	4	medication	39	False	Rectovaginal lesion
+GSM4206125	SL 081	SAMPLE 167 PE	GPL13376	PE	PE	Endometriosis	3	medication	38	False	Patient endometrium
+GSM4206126	SL 146	SAMPLE 168 REV	GPL13376	REV	DIE	Endometriosis	4	medication	27	False	Rectovaginal lesion
+GSM4206127	SL 099	SAMPLE 169 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	unknown	31	False	Peritoneal endometriosis black lesion
+GSM4206128	SL 100	SAMPLE 170 CP	GPL13376	CP	CP	Control	Healthy	medication	44	False	Control peritoneum
+GSM4206129	SL 066	SAMPLE 171 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	1	medication	41	False	Peritoneal endometriosis white lesion
+GSM4206130	SL 038	SAMPLE 172 SuL	GPL13376	SuL	DIE	Endometriosis	3	medication	27	False	Sacrouterine ligament lesion
+GSM4206131	SL 010	SAMPLE 173 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	medication	24	False	Peritoneal endometriosis black lesion
+GSM4206132	SL 010	SAMPLE 174 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	4	medication	24	False	Peritoneal endometriosis white lesion
+GSM4206133	SL 101	SAMPLE 175 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	3	proliferative	29	False	Peritoneal endometriosis white lesion
+GSM4206134	SL 035	SAMPLE 176 PE	GPL13376	PE	PE	Endometriosis	4	secretory	27	False	Patient endometrium
+GSM4206135	SL 046	SAMPLE 177 REV	GPL13376	REV	DIE	Endometriosis	3	secretory	37	False	Rectovaginal lesion
+GSM4206136	SL 024	SAMPLE 178 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	secretory	26	False	Deep infiltrating endometriosis lesion intestine
+GSM4206137	SL 063	SAMPLE 179 SuL	GPL13376	SuL	DIE	Endometriosis	1	medication	34	False	Sacrouterine ligament lesion
+GSM4206138	SL 093	SAMPLE 180 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	3	medication	22	False	Peritoneal endometriosis white lesion
+GSM4206139	SL 064	SAMPLE 181 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	4	medication	37	False	Peritoneal endometriosis white lesion
+GSM4206140	SL 102	SAMPLE 182 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	secretory	25	False	Peritoneal endometriosis red lesion
+GSM4206141	SL 073	SAMPLE 183 OMA	GPL13376	OMA	OMA	Endometriosis	4	medication	24	False	Ovarian endometrioma
+GSM4206142	SL 007	SAMPLE 184 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	1	menstruation	37	False	Deep infiltrating endometriosis lesion intestine
+GSM4206143	SL 006	SAMPLE 185 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	4	medication	25	False	Peritoneal endometriosis white lesion
+GSM4206144	SL 112	SAMPLE 186 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	2	medication	27	False	Peritoneal endometriosis black lesion
+GSM4206145	SL 027	SAMPLE 187 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	27	False	Peritoneal endometriosis red lesion
+GSM4206146	SL 103	SAMPLE 188 CE	GPL13376	CE	CE	Control	Healthy	unknown	37	False	Control endometrium
+GSM4206147	SL 020	SAMPLE 189 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	2	menstruation	32	False	Peritoneal endometriosis white lesion
+GSM4206148	SL 063	SAMPLE 190 SuL	GPL13376	SuL	DIE	Endometriosis	1	medication	34	False	Sacrouterine ligament lesion
+GSM4206149	SL 006	SAMPLE 191 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	4	medication	25	False	Peritoneal endometriosis white lesion
+GSM4206150	SL 104	SAMPLE 192 REV	GPL13376	REV	DIE	Endometriosis	4	unknown	30	False	Rectovaginal lesion
+GSM4206151	SL 105	SAMPLE 193 PE	GPL13376	PE	PE	Endometriosis	2	secretory	32	False	Patient endometrium
+GSM4206152	SL 072	SAMPLE 194 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	2	secretory	40	False	Peritoneal endometriosis white lesion
+GSM4206153	SL 038	SAMPLE 195 REV	GPL13376	REV	DIE	Endometriosis	3	medication	27	False	Rectovaginal lesion
+GSM4206154	SL 105	SAMPLE 196 SuL	GPL13376	SuL	DIE	Endometriosis	2	secretory	32	False	Sacrouterine ligament lesion
+GSM4206155	SL 055	SAMPLE 197 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	3	secretory	29	False	Peritoneal endometriosis black lesion
+GSM4206156	SL 049	SAMPLE 198 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	secretory	31	False	Deep infiltrating endometriosis lesion intestine
+GSM4206157	SL 161	SAMPLE 199 PP	GPL13376	PP	PP	Endometriosis	4	unknown	40	False	Patient peritoneum
+GSM4206158	SL 014	SAMPLE 200 PE	GPL13376	PE	PE	Endometriosis	3	medication	28	False	Patient endometrium
+GSM4206159	SL 083	SAMPLE 201 CE	GPL13376	CE	CE	Control	Healthy	unknown	46	False	Control endometrium
+GSM4206160	SL 048	SAMPLE 202 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	1	proliferative	36	False	Peritoneal endometriosis black lesion
+GSM4206161	SL 056	SAMPLE 203 PE	GPL13376	PE	PE	Endometriosis	3	proliferative	29	False	Patient endometrium
+GSM4206162	SL 038	SAMPLE 204 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	3	medication	27	False	Peritoneal endometriosis red lesion
+GSM4206163	SL 050	SAMPLE 205 PE	GPL13376	PE	PE	Endometriosis	2	secretory	25	False	Patient endometrium
+GSM4206164	SL 107	SAMPLE 206 CE	GPL13376	CE	CE	Control	Healthy	secretory	33	False	Control endometrium
+GSM4206165	SL 055	SAMPLE 207 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	3	secretory	29	False	Peritoneal endometriosis red lesion
+GSM4206166	SL 049	SAMPLE 208 REV	GPL13376	REV	DIE	Endometriosis	4	secretory	31	False	Rectovaginal lesion
+GSM4206167	SL 094	SAMPLE 209 PE	GPL13376	PE	PE	Endometriosis	4	proliferative	41	False	Patient endometrium
+GSM4206168	SL 038	SAMPLE 210 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	3	medication	27	False	Peritoneal endometriosis red lesion
+GSM4206169	SL 050	SAMPLE 211 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	2	secretory	25	False	Peritoneal endometriosis red lesion
+GSM4206170	SL 108	SAMPLE 212 SuL	GPL13376	SuL	DIE	Endometriosis	2	medication	43	False	Sacrouterine ligament lesion
+GSM4206171	SL 048	SAMPLE 213 PP	GPL13376	PP	PP	Endometriosis	1	proliferative	36	False	Patient peritoneum
+GSM4206172	SL 049	SAMPLE 214 PE	GPL13376	PE	PE	Endometriosis	4	secretory	31	False	Patient endometrium
+GSM4206173	SL 109	SAMPLE 215 PE	GPL13376	PE	PE	Endometriosis	4	proliferative	48	False	Patient endometrium
+GSM4206174	SL 045	SAMPLE 216 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	proliferative	39	False	Peritoneal endometriosis black lesion
+GSM4206175	SL 011	SAMPLE 217 SuL	GPL13376	SuL	DIE	Endometriosis	4	medication	33	False	Sacrouterine ligament lesion
+GSM4206176	SL 011	SAMPLE 218 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	33	False	Deep infiltrating endometriosis lesion intestine
+GSM4206177	SL 032	SAMPLE 219 SuL	GPL13376	SuL	DIE	Endometriosis	4	menstruation	32	False	Sacrouterine ligament lesion
+GSM4206178	SL 023	SAMPLE 220 CE	GPL13376	CE	CE	Control	Healthy	unknown	42	False	Control endometrium
+GSM4206179	SL 023	SAMPLE 220 CE Replicate	GPL13376	CE	CE	Control	Healthy	unknown	42	True	Control endometrium
+GSM4206180	SL 027	SAMPLE 221 REV	GPL13376	REV	DIE	Endometriosis	4	medication	27	False	Rectovaginal lesion
+GSM4206181	SL 074	SAMPLE 222 SuL	GPL13376	SuL	DIE	Endometriosis	3	medication	25	False	Sacrouterine ligament lesion
+GSM4206182	SL 013	SAMPLE 223 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	1	medication	22	False	Peritoneal endometriosis red lesion
+GSM4206183	SL 147	SAMPLE 224 PE	GPL13376	PE	PE	Endometriosis	4	medication	21	False	Patient endometrium
+GSM4206184	SL 148	SAMPLE 225 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	1	secretory	40	False	Peritoneal endometriosis black lesion
+GSM4206185	SL 149	SAMPLE 226 CP	GPL13376	CP	CP	Control	Healthy	medication	33	False	Control peritoneum
+GSM4206186	SL 095	SAMPLE 227 CP	GPL13376	CP	CP	Control	Healthy	proliferative	34	False	Control peritoneum
+GSM4206187	SL 057	SAMPLE 228 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	1	proliferative	33	False	Peritoneal endometriosis black lesion
+GSM4206188	SL 043	SAMPLE 229 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	26	False	Peritoneal endometriosis red lesion
+GSM4206189	SL 150	SAMPLE 230 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	2	medication	23	False	Peritoneal endometriosis white lesion
+GSM4206190	SL 060	SAMPLE 231 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	3	proliferative	31	False	Peritoneal endometriosis white lesion
+GSM4206191	SL 084	SAMPLE 232 SuL	GPL13376	SuL	DIE	Endometriosis	3	medication	24	False	Sacrouterine ligament lesion
+GSM4206192	SL 001	SAMPLE 233 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	3	medication	23	False	Peritoneal endometriosis white lesion
+GSM4206193	SL 048	SAMPLE 234 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	1	proliferative	36	False	Peritoneal endometriosis white lesion
+GSM4206194	SL 045	SAMPLE 235 PE	GPL13376	PE	PE	Endometriosis	4	proliferative	39	False	Patient endometrium
+GSM4206195	SL 002	SAMPLE 236 SuL	GPL13376	SuL	DIE	Endometriosis	4	proliferative	31	False	Sacrouterine ligament lesion
+GSM4206196	SL 113	SAMPLE 237 CP	GPL13376	CP	CP	Control	Healthy	proliferative	41	False	Control peritoneum
+GSM4206197	SL 114	SAMPLE 238 CP	GPL13376	CP	CP	Control	Healthy	medication	42	False	Control peritoneum
+GSM4206198	SL 096	SAMPLE 239 CP	GPL13376	CP	CP	Control	Healthy	medication	46	False	Control peritoneum
+GSM4206199	SL 146	SAMPLE 240 PE	GPL13376	PE	PE	Endometriosis	4	medication	27	False	Patient endometrium
+GSM4206200	SL 041	SAMPLE 241 SuL	GPL13376	SuL	DIE	Endometriosis	4	medication	41	False	Sacrouterine ligament lesion
+GSM4206201	SL 019	SAMPLE 242 PE	GPL13376	PE	PE	Endometriosis	4	proliferative	40	False	Patient endometrium
+GSM4206202	SL 020	SAMPLE 243 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	2	menstruation	32	False	Peritoneal endometriosis white lesion
+GSM4206203	SL 065	SAMPLE 244 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	proliferative	27	False	Peritoneal endometriosis red lesion
+GSM4206204	SL 034	SAMPLE 245 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	1	proliferative	34	False	Peritoneal endometriosis black lesion
+GSM4206205	SL 115	SAMPLE 246 PE	GPL13376	PE	PE	Endometriosis	4	medication	20	False	Patient endometrium
+GSM4206206	SL 038	SAMPLE 247 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	3	medication	27	False	Peritoneal endometriosis black lesion
+GSM4206207	SL 009	SAMPLE 248 REV	GPL13376	REV	DIE	Endometriosis	4	proliferative	35	False	Rectovaginal lesion
+GSM4206208	SL 116	SAMPLE 249 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	34	False	Peritoneal endometriosis red lesion
+GSM4206209	SL 004	SAMPLE 250 SuL	GPL13376	SuL	DIE	Endometriosis	3	medication	24	False	Sacrouterine ligament lesion
+GSM4206210	SL 047	SAMPLE 251 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	2	secretory	40	False	Peritoneal endometriosis red lesion
+GSM4206211	SL 075	SAMPLE 252 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	1	secretory	30	False	Peritoneal endometriosis white lesion
+GSM4206212	SL 117	SAMPLE 253 CP	GPL13376	CP	CP	Control	Healthy	menstruation	36	False	Control peritoneum
+GSM4206213	SL 053	SAMPLE 254 CE	GPL13376	CE	CE	Control	Healthy	secretory	41	False	Control endometrium
+GSM4206214	SL 053	SAMPLE 254 CE Replicate	GPL13376	CE	CE	Control	Healthy	secretory	41	True	Control endometrium
+GSM4206215	SL 011	SAMPLE 255 OMA	GPL13376	OMA	OMA	Endometriosis	4	medication	33	False	Ovarian endometrioma
+GSM4206216	SL 152	SAMPLE 256 SuL	GPL13376	SuL	DIE	Endometriosis	2	medication	29	False	Sacrouterine ligament lesion
+GSM4206217	SL 152	SAMPLE 257 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	2	medication	29	False	Deep infiltrating endometriosis lesion intestine
+GSM4206218	SL 057	SAMPLE 258 PE	GPL13376	PE	PE	Endometriosis	1	proliferative	33	False	Patient endometrium
+GSM4206219	SL 057	SAMPLE 259 OMA	GPL13376	OMA	OMA	Endometriosis	1	proliferative	33	False	Ovarian endometrioma
+GSM4206220	SL 016	SAMPLE 260 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	38	False	Peritoneal endometriosis red lesion
+GSM4206221	SL 119	SAMPLE 261 CE	GPL13376	CE	CE	Control	Healthy	secretory	38	False	Control endometrium
+GSM4206222	SL 113	SAMPLE 262 CE	GPL13376	CE	CE	Control	Healthy	proliferative	41	False	Control endometrium
+GSM4206223	SL 120	SAMPLE 263 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	4	secretory	27	False	Peritoneal endometriosis white lesion
+GSM4206224	SL 013	SAMPLE 264 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	1	medication	22	False	Peritoneal endometriosis red lesion
+GSM4206225	SL 013	SAMPLE 265 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	1	medication	22	False	Peritoneal endometriosis red lesion
+GSM4206226	SL 142	SAMPLE 266 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	34	False	Deep infiltrating endometriosis lesion intestine
+GSM4206227	SL 017	SAMPLE 267 OMA	GPL13376	OMA	OMA	Endometriosis	4	secretory	22	False	Ovarian endometrioma
+GSM4206228	SL 109	SAMPLE 268 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	proliferative	48	False	Deep infiltrating endometriosis lesion intestine
+GSM4206229	SL 085	SAMPLE 269 REV	GPL13376	REV	DIE	Endometriosis	4	medication	32	False	Rectovaginal lesion
+GSM4206230	SL 045	SAMPLE 270 PP	GPL13376	PP	PP	Endometriosis	4	proliferative	39	False	Patient peritoneum
+GSM4206231	SL 009	SAMPLE 271 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	proliferative	35	False	Deep infiltrating endometriosis lesion intestine
+GSM4206232	SL 002	SAMPLE 272 PE	GPL13376	PE	PE	Endometriosis	4	proliferative	31	False	Patient endometrium
+GSM4206233	SL 021	SAMPLE 273 SuL	GPL13376	SuL	DIE	Endometriosis	2	secretory	33	False	Sacrouterine ligament lesion
+GSM4206234	SL 022	SAMPLE 274 PE	GPL13376	PE	PE	Endometriosis	4	secretory	31	False	Patient endometrium
+GSM4206235	SL 022	SAMPLE 275 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	secretory	31	False	Deep infiltrating endometriosis lesion intestine
+GSM4206236	SL 124	SAMPLE 276 PE	GPL13376	PE	PE	Endometriosis	4	secretory	41	False	Patient endometrium
+GSM4206237	SL 044	SAMPLE 277 PE	GPL13376	PE	PE	Endometriosis	3	unknown	46	False	Patient endometrium
+GSM4206238	SL 044	SAMPLE 278 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	3	unknown	46	False	Peritoneal endometriosis black lesion
+GSM4206239	SL 081	SAMPLE 279 PP	GPL13376	PP	PP	Endometriosis	3	medication	38	False	Patient peritoneum
+GSM4206240	SL 013	SAMPLE 280 PE	GPL13376	PE	PE	Endometriosis	1	medication	22	False	Patient endometrium
+GSM4206241	SL 055	SAMPLE 281 PE	GPL13376	PE	PE	Endometriosis	3	secretory	29	False	Patient endometrium
+GSM4206242	SL 121	SAMPLE 282 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	3	proliferative	42	False	Peritoneal endometriosis white lesion
+GSM4206243	SL 024	SAMPLE 283 PE	GPL13376	PE	PE	Endometriosis	4	secretory	26	False	Patient endometrium
+GSM4206244	SL 050	SAMPLE 284 PeLR	GPL13376	PeLR	Peritoneal_Lesion	Endometriosis	2	secretory	25	False	Peritoneal endometriosis red lesion
+GSM4206245	SL 122	SAMPLE 285 OMA	GPL13376	OMA	OMA	Endometriosis	3	proliferative	30	False	Ovarian endometrioma
+GSM4206246	SL 101	SAMPLE 286 PE	GPL13376	PE	PE	Endometriosis	3	proliferative	29	False	Patient endometrium
+GSM4206247	SL 123	SAMPLE 287 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	menstruation	27	False	Peritoneal endometriosis black lesion
+GSM4206248	SL 045	SAMPLE 288 DiEB	GPL13376	DiEB	DIE	Endometriosis	4	proliferative	39	False	Deep infiltrating endometriosis lesion bladder
+GSM4206249	SL 139	SAMPLE 289 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	4	medication	47	False	Peritoneal endometriosis white lesion
+GSM4206250	SL 151	SAMPLE 290 PE	GPL13376	PE	PE	Endometriosis	3	proliferative	39	False	Patient endometrium
+GSM4206251	SL 058	SAMPLE 291 CE	GPL13376	CE	CE	Control	Healthy	secretory	36	False	Control endometrium
+GSM4206252	SL 058	SAMPLE 291 CE Replicate	GPL13376	CE	CE	Control	Healthy	secretory	36	True	Control endometrium
+GSM4206253	SL 058	SAMPLE 292 CP	GPL13376	CP	CP	Control	Healthy	secretory	38	False	Control peritoneum
+GSM4206254	SL 153	SAMPLE 293 PE	GPL13376	PE	PE	Endometriosis	3	proliferative	21	False	Patient endometrium
+GSM4206255	SL 158	SAMPLE 294 CP	GPL13376	CP	CP	Control	Healthy	medication	33	False	Control peritoneum
+GSM4206256	SL 107	SAMPLE 295 CP	GPL13376	CP	CP	Control	Healthy	secretory	34	False	Control peritoneum
+GSM4206257	SL 157	SAMPLE 296 CP	GPL13376	CP	CP	Control	Healthy	medication	47	False	Control peritoneum
+GSM4206258	SL 076	SAMPLE 297 CE	GPL13376	CE	CE	Control	Healthy	proliferative	42	False	Control endometrium
+GSM4206259	SL 076	SAMPLE 298 CP	GPL13376	CP	CP	Control	Healthy	proliferative	42	False	Control peritoneum
+GSM4206260	SL 008	SAMPLE 299 SuL	GPL13376	SuL	DIE	Endometriosis	2	unknown	26	False	Sacrouterine ligament lesion
+GSM4206261	SL 039	SAMPLE 300 REV	GPL13376	REV	DIE	Endometriosis	4	medication	25	False	Rectovaginal lesion
+GSM4206262	SL 162	SAMPLE 301 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	proliferative	38	False	Peritoneal endometriosis black lesion
+GSM4206263	SL 162	SAMPLE 302 PeLW	GPL13376	PeLW	Peritoneal_Lesion	Endometriosis	4	proliferative	38	False	Peritoneal endometriosis white lesion
+GSM4206264	SL 056	SAMPLE 303 PP	GPL13376	PP	PP	Endometriosis	3	proliferative	29	False	Patient peritoneum
+GSM4206265	SL 056	SAMPLE 304 OMA	GPL13376	OMA	OMA	Endometriosis	3	proliferative	29	False	Ovarian endometrioma
+GSM4206266	SL 064	SAMPLE 305 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	37	False	Deep infiltrating endometriosis lesion intestine
+GSM4206267	SL 031	SAMPLE 306 PE	GPL13376	PE	PE	Endometriosis	1	secretory	35	False	Patient endometrium
+GSM4206268	SL 013	SAMPLE 307 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	1	medication	22	False	Peritoneal endometriosis black lesion
+GSM4206269	SL 062	SAMPLE 308 PP	GPL13376	PP	PP	Endometriosis	3	unknown	38	False	Patient peritoneum
+GSM4206270	SL 029	SAMPLE 309 SuL	GPL13376	SuL	DIE	Endometriosis	3	secretory	38	False	Sacrouterine ligament lesion
+GSM4206271	SL 156	SAMPLE 310 CE	GPL13376	CE	CE	Control	Healthy	medication	38	False	Control endometrium
+GSM4206272	SL 082	SAMPLE 311 PP	GPL13376	PP	PP	Endometriosis	NA	unknown	37	False	Patient peritoneum
+GSM4206273	SL 088	SAMPLE 312 CE	GPL13376	CE	CE	Control	Healthy	unknown	36	False	Control endometrium
+GSM4206274	SL 042	SAMPLE 313 SuL	GPL13376	SuL	DIE	Endometriosis	3	unknown	36	False	Sacrouterine ligament lesion
+GSM4206275	SL 044	SAMPLE 314 OMA	GPL13376	OMA	OMA	Endometriosis	3	unknown	46	False	Ovarian endometrioma
+GSM4206276	SL 086	SAMPLE 315 CE	GPL13376	CE	CE	Control	Healthy	medication	43	False	Control endometrium
+GSM4206277	SL 047	SAMPLE 316 PP	GPL13376	PP	PP	Endometriosis	2	secretory	40	False	Patient peritoneum
+GSM4206278	SL 019	SAMPLE 317 OMA	GPL13376	OMA	OMA	Endometriosis	4	proliferative	40	False	Ovarian endometrioma
+GSM4206279	SL 002	SAMPLE 318 OMA	GPL13376	OMA	OMA	Endometriosis	4	proliferative	31	False	Ovarian endometrioma
+GSM4206280	SL 002	SAMPLE 319 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	proliferative	31	False	Deep infiltrating endometriosis lesion intestine
+GSM4206281	SL 055	SAMPLE 320 SuL	GPL13376	SuL	DIE	Endometriosis	3	secretory	29	False	Sacrouterine ligament lesion
+GSM4206282	SL 047	SAMPLE 321 PE	GPL13376	PE	PE	Endometriosis	2	secretory	40	False	Patient endometrium
+GSM4206283	SL 120	SAMPLE 322 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	secretory	27	False	Deep infiltrating endometriosis lesion intestine
+GSM4206284	SL 154	SAMPLE 323 CE	GPL13376	CE	CE	Control	Healthy	unknown	37	False	Control endometrium
+GSM4206285	SL 056	SAMPLE 324 OMA	GPL13376	OMA	OMA	Endometriosis	3	proliferative	29	False	Ovarian endometrioma
+GSM4206286	SL 002	SAMPLE 325 PeLB	GPL13376	PeLB	Peritoneal_Lesion	Endometriosis	4	proliferative	31	False	Peritoneal endometriosis black lesion
+GSM4206287	SL 121	SAMPLE 326 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	3	proliferative	42	False	Deep infiltrating endometriosis lesion intestine
+GSM4206288	SL 006	SAMPLE 327 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	medication	25	False	Deep infiltrating endometriosis lesion intestine
+GSM4206289	SL 002	SAMPLE 328 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	4	proliferative	31	False	Deep infiltrating endometriosis lesion intestine
+GSM4206290	SL 148	SAMPLE 329 PE	GPL13376	PE	PE	Endometriosis	1	secretory	40	False	Patient endometrium
+GSM4206291	SL 044	SAMPLE 330 OMA	GPL13376	OMA	OMA	Endometriosis	3	unknown	46	False	Ovarian endometrioma
+GSM4206292	SL 068	SAMPLE 331 DiEIn	GPL13376	DiEIn	DIE	Endometriosis	3	secretory	23	False	Deep infiltrating endometriosis lesion intestine
+GSM4206293	SL 060	SAMPLE 332 PE	GPL10558	PE	PE	Endometriosis	3	proliferative	31	False	Patient endometrium
+GSM4206294	SL 125	SAMPLE 333 DiEIn	GPL10558	DiEIn	DIE	Endometriosis	4	medication	36	False	Deep infiltrating endometriosis lesion intestine
+GSM4206295	SL 120	SAMPLE 334 PE	GPL10558	PE	PE	Endometriosis	4	secretory	27	False	Patient endometrium
+GSM4206296	SL 005	SAMPLE 335 PeLB	GPL10558	PeLB	Peritoneal_Lesion	Endometriosis	4	secretory	45	False	Peritoneal endometriosis black lesion
+GSM4206297	SL 005	SAMPLE 335 PeLB Replicate	GPL10558	PeLB	Peritoneal_Lesion	Endometriosis	4	secretory	45	True	Peritoneal endometriosis black lesion
+GSM4206298	SL 126	SAMPLE 336 PE	GPL10558	PE	PE	Endometriosis	4	menstruation	23	False	Patient endometrium
+GSM4206299	SL 112	SAMPLE 337 PE	GPL10558	PE	PE	Endometriosis	2	medication	27	False	Patient endometrium
+GSM4206300	SL 077	SAMPLE 338 PP	GPL10558	PP	PP	Endometriosis	4	medication	22	False	Patient peritoneum
+GSM4206301	SL 004	SAMPLE 339 SuL	GPL10558	SuL	DIE	Endometriosis	3	medication	24	False	Sacrouterine ligament lesion
+GSM4206302	SL 004	SAMPLE 339 SuL Replicate	GPL10558	SuL	DIE	Endometriosis	3	medication	24	True	Sacrouterine ligament lesion
+GSM4206303	SL 075	SAMPLE 340 PE	GPL10558	PE	PE	Endometriosis	1	secretory	30	False	Endometrium
+GSM4206304	SL 012	SAMPLE 341 PP	GPL10558	PP	PP	Endometriosis	4	unknown	31	False	Patient peritoneum
+GSM4206305	SL 108	SAMPLE 342 PE	GPL10558	PE	PE	Endometriosis	2	medication	43	False	Patient endometrium
+GSM4206306	SL 116	SAMPLE 343 PE	GPL10558	PE	PE	Endometriosis	4	medication	34	False	Patient endometrium
+GSM4206307	SL 007	SAMPLE 344 PE	GPL10558	PE	PE	Endometriosis	1	menstruation	37	False	Patient endometrium
+GSM4206308	SL 007	SAMPLE 344 PE Replicate	GPL10558	PE	PE	Endometriosis	1	menstruation	37	True	Patient endometrium
+GSM4206309	SL 003	SAMPLE 345 PeLR	GPL10558	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	39	False	Peritoneal endometriosis red lesion
+GSM4206310	SL 003	SAMPLE 345 PeLR Replicate	GPL10558	PeLR	Peritoneal_Lesion	Endometriosis	4	medication	39	True	Peritoneal endometriosis red lesion
+GSM4206311	SL 006	SAMPLE 346 PE	GPL10558	PE	PE	Endometriosis	4	medication	25	False	Patient endometrium
+GSM4206312	SL 006	SAMPLE 346 PE Replicate	GPL10558	PE	PE	Endometriosis	4	medication	25	True	Patient endometrium
+GSM4206313	SL 008	SAMPLE 347 PE	GPL10558	PE	PE	Endometriosis	2	unknown	26	False	Patient endometrium
+GSM4206314	SL 072	SAMPLE 348 PE	GPL10558	PE	PE	Endometriosis	2	secretory	40	False	Patient endometrium
+GSM4206315	SL 004	SAMPLE 349 DiEIn	GPL10558	DiEIn	DIE	Endometriosis	3	medication	24	False	Deep infiltrating endometriosis lesion intestine
+GSM4206316	SL 004	SAMPLE 349 DiEIn Replicate	GPL10558	DiEIn	DIE	Endometriosis	3	medication	24	True	Deep infiltrating endometriosis lesion intestine
+GSM4206317	SL 013	SAMPLE 350 PE	GPL10558	PE	PE	Endometriosis	1	medication	22	False	Patient endometrium
+GSM4206318	SL 032	SAMPLE 351 PP	GPL10558	PP	PP	Endometriosis	4	menstruation	32	False	Patient peritoneum
+GSM4206319	SL 127	SAMPLE 352 PE	GPL10558	PE	PE	Endometriosis	3	medication	28	False	Patient endometrium
+GSM4206320	SL 003	SAMPLE 353 PE	GPL10558	PE	PE	Endometriosis	4	medication	39	False	Patient endometrium
+GSM4206321	SL 015	SAMPLE 354 PE	GPL10558	PE	PE	Endometriosis	1	unknown	27	False	Patient endometrium
+GSM4206322	SL 035	SAMPLE 355 PE	GPL10558	PE	PE	Endometriosis	4	secretory	27	False	Patient endometrium
+GSM4206323	SL 008	SAMPLE 356 PP	GPL10558	PP	PP	Endometriosis	2	unknown	26	False	Patient peritoneum
+GSM4206324	SL 004	SAMPLE 357 DiEIn	GPL10558	DiEIn	DIE	Endometriosis	3	medication	24	False	Deep infiltrating endometriosis lesion intestine
+GSM4206325	SL 050	SAMPLE 358 PE	GPL10558	PE	PE	Endometriosis	2	secretory	25	False	Patient endometrium
+GSM4206326	SL 036	SAMPLE 359 PE	GPL10558	PE	PE	Endometriosis	4	medication	42	False	Patient endometrium
+GSM4206327	SL 128	SAMPLE 360 PE	GPL10558	PE	PE	Endometriosis	1	medication	28	False	Patient endometrium
+GSM4206328	SL 144	SAMPLE 361 PE	GPL10558	PE	PE	Endometriosis	2	medication	25	False	Patient endometrium
+GSM4206329	SL 104	SAMPLE 362 PE	GPL10558	PE	PE	Endometriosis	4	unknown	30	False	Patient endometrium
+GSM4206330	SL 010	SAMPLE 363 PeLW	GPL10558	PeLW	Peritoneal_Lesion	Endometriosis	4	medication	24	False	Peritoneal endometriosis white lesion
+GSM4206331	SL 013	SAMPLE 364 PP	GPL10558	PP	PP	Endometriosis	1	medication	22	False	Patient peritoneum
+GSM4206332	SL 009	SAMPLE 365 PE	GPL10558	PE	PE	Endometriosis	4	proliferative	35	False	Patient endometrium
+GSM4206333	SL 006	SAMPLE 366 DiEIn	GPL10558	DiEIn	DIE	Endometriosis	4	medication	25	False	Deep infiltrating endometriosis lesion intestine
+GSM4206334	SL 046	SAMPLE 367 PP	GPL10558	PP	PP	Endometriosis	3	secretory	37	False	Patient peritoneum
+GSM4206335	SL 046	SAMPLE 367 PP Replicate	GPL10558	PP	PP	Endometriosis	3	secretory	37	True	Patient peritoneum
+GSM4206336	SL 084	SAMPLE 368 PE	GPL10558	PE	PE	Endometriosis	3	medication	24	False	Patient endometrium
+GSM4206337	SL 003	SAMPLE 369 DiEIn	GPL10558	DiEIn	DIE	Endometriosis	4	medication	39	False	Deep infiltrating endometriosis lesion intestine
+GSM4206338	SL 065	SAMPLE 370 PP	GPL10558	PP	PP	Endometriosis	4	proliferative	27	False	Patient peritoneum
+GSM4206339	SL 032	SAMPLE 371 PE	GPL10558	PE	PE	Endometriosis	4	menstruation	32	False	Patient endometrium
+GSM4206340	SL 032	SAMPLE 371 PE Replicate	GPL10558	PE	PE	Endometriosis	4	menstruation	32	True	Patient endometrium
+GSM4206341	SL 077	SAMPLE 372 PE	GPL10558	PE	PE	Endometriosis	4	medication	22	False	Patient endometrium
+GSM4206342	SL 069	SAMPLE 373 PE	GPL10558	PE	PE	Endometriosis	2	medication	28	False	Patient endometrium
+GSM4206343	SL 129	SAMPLE 374 PE	GPL10558	PE	PE	Endometriosis	4	secretory	29	False	Patient endometrium
+GSM4206344	SL 008	SAMPLE 375 PeLB	GPL10558	PeLB	Peritoneal_Lesion	Endometriosis	2	unknown	26	False	Peritoneal endometriosis black lesion
+GSM4206345	SL 008	SAMPLE 375 PeLB Replicate	GPL10558	PeLB	Peritoneal_Lesion	Endometriosis	2	unknown	26	True	Peritoneal endometriosis black lesion
+GSM4206346	SL 065	SAMPLE 376 PE	GPL10558	PE	PE	Endometriosis	4	proliferative	27	False	Patient endometrium
+GSM4206347	SL 007	SAMPLE 377 DiEIn	GPL10558	DiEIn	DIE	Endometriosis	1	menstruation	37	False	Deep infiltrating endometriosis lesion intestine
+GSM4206348	SL 007	SAMPLE 377 DiEIn Replicate	GPL10558	DiEIn	DIE	Endometriosis	1	menstruation	37	True	Deep infiltrating endometriosis lesion intestine
+GSM4206349	SL 052	SAMPLE 378 PE	GPL10558	PE	PE	Endometriosis	1	medication	30	False	Patient endometrium
+GSM4206350	SL 143	SAMPLE 379 PE	GPL10558	PE	PE	Endometriosis	3	secretory	31	False	Patient endometrium
+GSM4206351	SL 078	SAMPLE 380 PE	GPL10558	PE	PE	Endometriosis	4	unknown	35	False	Patient endometrium
+GSM4206352	SL 052	SAMPLE 381 PP	GPL10558	PP	PP	Endometriosis	1	medication	30	False	Patient peritoneum
+GSM4206353	SL 052	SAMPLE 381 PP Replicate	GPL10558	PP	PP	Endometriosis	1	medication	30	True	Patient peritoneum
+GSM4206354	SL 130	SAMPLE 382 PE	GPL10558	PE	PE	Endometriosis	4	medication	32	False	Patient endometrium
+GSM4206355	SL 064	SAMPLE 383 PE	GPL10558	PE	PE	Endometriosis	4	medication	37	False	Patient endometrium
+GSM4206356	SL 063	SAMPLE 384 PE	GPL10558	PE	PE	Endometriosis	1	medication	34	False	Patient endometrium
+GSM4206357	SL 013	SAMPLE 385 SuL	GPL10558	SuL	DIE	Endometriosis	1	medication	22	False	Sacrouterine ligament lesion
+GSM4206358	SL 020	SAMPLE 386 PE	GPL10558	PE	PE	Endometriosis	2	menstruation	32	False	Patient endometrium
+GSM4206359	SL 012	SAMPLE 387 DiEIn	GPL10558	DiEIn	DIE	Endometriosis	4	unknown	31	False	Deep infiltrating endometriosis lesion intestine
+GSM4206360	SL 046	SAMPLE 388 PE	GPL10558	PE	PE	Endometriosis	3	secretory	37	False	Patient endometrium
+GSM4206361	SL 049	SAMPLE 389 PP	GPL10558	PP	PP	Endometriosis	4	secretory	31	False	Patient peritoneum
+GSM4206362	SL 016	SAMPLE 390 PE	GPL10558	PE	PE	Endometriosis	4	medication	38	False	Patient endometrium
+GSM4206363	SL 160	SAMPLE 391 PE	GPL10558	PE	PE	Endometriosis	3	medication	32	False	Patient endometrium
+GSM4206364	SL 132	SAMPLE 392 PE	GPL10558	PE	PE	Endometriosis	4	medication	37	False	Patient endometrium
