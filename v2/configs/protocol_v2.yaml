@@ -1,0 +1,163 @@
+schema_version: 2
+project: endotarget-v2
+title: "Host-decontaminated lesion single-cell transcriptomics, niche crosstalk, and human genetics for causal target prioritization in endometriosis"
+author: "Ningyu Sun"
+frozen_before_expression_download: true
+
+runtime_policy:
+  max_threads: 8
+  random_seed: 20261120
+  zero_leakage_commit_chain:
+    commit_1: "M0 metadata/genetics audit and protocol_v2.yaml freeze (zero cohort expression read)"
+    commit_2: "GSE179640 discovery de novo pseudobulk, 4-method rankings, and prediction_seal.json (before external expression download/eval)"
+    commit_3: "Locked external evaluation on GSE213216 scRNA + GSE141549 408-sample bulk double-difference, target dossiers, and figures"
+    commit_4: "Bilingual documentation and automated pytest contract/integrity verification"
+
+cohorts:
+  discovery_scrna:
+    accession: GSE179640
+    citation: "Tan et al., Nat Cell Biol 2022 (DOI: 10.1038/s41556-022-00961-5)"
+    manifest: "manifests/m0_GSE179640_samples.tsv"
+    donor_design: "manifests/m0_GSE179640_donor_design.tsv"
+    included_libraries: 31
+    matched_EuE_EcP_pairs: 8
+    matched_EuE_EcP_AdjP_triplets: 6
+    multi_library_donor_site_policy: "sum_raw_integer_counts_within_donor_site_lineage_before_normalization"
+
+  external_scrna:
+    accession: GSE213216
+    citation: "Fonseca et al., Nat Genet 2023 (DOI: 10.1038/s41588-022-01254-1)"
+    manifest_all: "manifests/m0_GSE213216_samples.tsv"
+    manifest_locked_selection: "manifests/m0_GSE213216_locked_selection.tsv"
+    selection_rule: "1_library_per_patient_and_site_class_by_ascending_GSM_excluding_spatial_missing_whole_ovary_and_contradictory_labels"
+    compartments_expected:
+      EuE_donors: 9
+      EcP_donors: 12
+      EcO_donors: 6
+      Unaffected_Peritoneum_donors: 2
+      matched_EuE_EcP_pairs: 4
+
+  external_bulk:
+    accession: GSE141549
+    citation: "Gabriel et al., Hum Reprod 2020 / GSE141549 (408 arrays across 162 linked subjects)"
+    manifest_samples: "manifests/m0_GSE141549_samples.tsv"
+    manifest_subjects: "manifests/m0_GSE141549_subjects.tsv"
+    expression_url: "https://ftp.ncbi.nlm.nih.gov/geo/series/GSE141nnn/GSE141549/suppl/GSE141549_batchCorrectednormalizedArrayscombined.xlsx"
+    annotation_gpl10558_url: "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL10nnn/GPL10558/annot/GPL10558.annot.gz"
+    annotation_gpl13376_url: "https://ftp.ncbi.nlm.nih.gov/geo/platforms/GPL13nnn/GPL13376/annot/GPL13376.annot.gz"
+    subject_aggregation_rule: "collapse_technical_replicates_then_mean_within_subject_and_tissue_group_for_exact_1_observation_per_subject_per_group"
+
+single_cell_processing:
+  heca_annotations_permitted: false
+  qc_filters:
+    min_genes_by_counts: 250
+    min_total_counts: 500
+    max_pct_counts_mt: 25.0
+  de_novo_lineage_annotation:
+    marker_manifest: "manifests/canonical_lineage_markers.tsv"
+    lineages:
+      - stromal_fibroblast
+      - perivascular_mural
+      - epithelial
+      - endothelial
+      - myeloid_macrophage
+      - lymphoid
+      - mesothelial
+    normalization_target_sum: 10000.0
+    hvg_n_top_genes: 2000
+    pca_n_comps: 30
+    neighbors_n: 15
+    leiden_resolution: 1.2
+    gene_zscore_clip: [-3.0, 6.0]
+    min_cluster_top_z: 0.15
+    cell_cross_lineage_margin_max: 0.50
+  pseudobulk:
+    unit: "donor_x_site_x_lineage"
+    aggregation: "exact_raw_count_sum"
+    min_cells_per_sample: 20
+
+ranking_methods:
+  primary_compartment: "stromal_fibroblast"
+  niche_partner_compartments:
+    - endothelial
+    - myeloid_macrophage
+  ambient_audit_compartment: "mesothelial"
+  gene_universe_rule:
+    stable_id_regex: "^ENSG[0-9]{11}$"
+    min_cpm: 1.0
+    min_sample_fraction_in_paired_EuE_EcP: 0.25
+    network_reference: "data/interim/string_v12_5_direct_gene_edges.tsv.gz"
+    network_summary: "manifests/string_network_summary.json"
+    require_non_isolated_in_induced_string_graph: true
+  shortlist_sizes: [20, 50]
+  tie_breaker: "ascending_ensembl_gene_id"
+  discovery_direction_rule: "sign_of_EcP_vs_EuE_logFC"
+
+  methods:
+    B0:
+      name: "Naive Paired Lesion DE"
+      formula: "abs(z_EcP_vs_EuE)"
+      description: "Paired donor-blocked limma-voom moderated contrast of EcP vs EuE (n=8 pairs), ignoring host peritoneal background."
+    G1:
+      name: "Global STRING RWR (v1 Baseline)"
+      formula: "RWR(seed = abs(t_EcP_vs_EuE) / sum(abs(t_EcP_vs_EuE)), restart = 0.5, tol = 1e-10)"
+      description: "v1 global random walk with restart on symmetric column-normalized STRING v12.5 direct graph."
+    M1:
+      name: "Host-Decontaminated Dual-Contrast Lesion Score"
+      formula: "w_ambient * min(abs(z_EcP_vs_EuE), max(0, sign(t_EcP_vs_EuE) * z_EcP_vs_AdjP)) + 1e-4 * (abs(z_EcP_vs_EuE) + sign(t_EcP_vs_EuE) * z_EcP_vs_AdjP)"
+      ambient_penalty: "1 / (1 + exp((mean_log2CPM_mesothelial - mean_log2CPM_EcP_stroma) - 2.0))"
+      description: "Dual-contrast conjunction requiring concordant pathological divergence from BOTH uterine origin (EuE, n=8 pairs) AND adjacent host peritoneum (AdjP, n=6 triplets), with mesothelial soup penalty."
+    M2:
+      name: "Genetics & Niche Crosstalk-Anchored Target Score"
+      formula: "M1_core * (1.0 + 1.0 * G_prior + 0.5 * N_LR) + 1e-4 * (abs(z_EcP_vs_EuE) + sign(t_EcP_vs_EuE) * z_EcP_vs_AdjP)"
+      genetics_manifest: "manifests/human_genetics_prior_v2.tsv"
+      lr_manifest: "manifests/curated_niche_lr_pairs.tsv"
+      alpha_genetics: 1.0
+      alpha_niche_lr: 0.5
+      niche_partner_min_log2cpm1: 2.5
+      description: "Multiplicative causal target prioritization gated by M1_core > 0 so transcriptionally inactive loci cannot enter shortlists, boosting active vascular/myeloid <-> stromal L-R axes and human endometriosis GWAS/L2G/SMR targets."
+
+external_evaluation:
+  alpha_fdr: 0.05
+  bootstrap_draws: 2000
+  bootstrap_unit: "donor_or_subject_cluster"
+  primary_comparisons:
+    - "M1_minus_B0"
+    - "M1_minus_G1"
+    - "M2_minus_B0"
+    - "M2_minus_G1"
+
+  endpoints_GSE213216_scrna:
+    primary_contrast: "EcP_vs_EuE_donor_blocked_GLS_limma_voom"
+    sensitivity_contrasts:
+      - "EcP_vs_ENDO_only_EuE_donor_blocked"
+      - "Matched_4pair_within_patient_EcP_vs_EuE"
+      - "Donor_disjoint_unpaired_EcP_vs_EuE"
+      - "EcO_vs_EuE_donor_blocked"
+      - "Endothelial_and_Myeloid_EcP_vs_EuE"
+    metrics:
+      - "replicated_rate_BH_q_lt_0.05_same_sign"
+      - "direction_concordance_rate"
+      - "program_projection_AUC_and_effect_theta"
+      - "mean_directional_external_z"
+
+  endpoints_GSE141549_bulk:
+    co_primary_contrasts:
+      - "Paired_Peritoneal_Lesion_vs_PE_within_subject"
+      - "Paired_Peritoneal_Lesion_vs_PP_within_subject_host_controlled"
+      - "Joint_Dual_Contrast_Replication_PE_and_PP_both_BH_q_lt_0.05_same_sign"
+      - "Host_Peritoneal_False_Positive_Rate_among_PE_hits"
+    secondary_contrasts:
+      - "Triplet_18subject_Double_Difference_Peritoneal_PE_PP"
+      - "All_subject_Peritoneal_Lesion_vs_PE_and_vs_PP_CP_adjusted"
+      - "Paired_DIE_vs_PP_and_All_subject_DIE_vs_PP_CP"
+      - "All_subject_OMA_vs_PE_and_vs_PP_CP"
+      - "Eutopic_PE_vs_CE_negative_control_check"
+
+  genetics_and_dossiers:
+    enrichment_tests:
+      - "Compartment_resolved_Mann_Whitney_and_matched_permutation_enrichment_of_OpenTargets_and_Rahmioglu_genetics"
+      - "Shortlist_genetic_and_tractable_target_enrichment_M2_vs_M1_B0_G1"
+    dossier_tiers:
+      Tier_1_Multi_Modal_Validated: "Human genetic support (G_prior > 0) + Discovery M1 dual-contrast concordant + External scRNA GSE213216 concordant (q < 0.05 or nominal p < 0.05) + External Host-Controlled Bulk GSE141549 Lesion vs PP BH q < 0.05 same sign"
+      Tier_2_Replicated_Niche_Tractable: "Discovery M1 dual-contrast concordant + Replicated BH q < 0.05 same sign in GSE213216 scRNA AND GSE141549 Host-Controlled Lesion vs PP + Active L-R or SM/AB tractability"

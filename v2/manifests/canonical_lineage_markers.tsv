@@ -1,0 +1,57 @@
+lineage	symbol	ensembl_gene_id	mapping_method	rationale
+stromal_fibroblast	DCN	ENSG00000011465	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+stromal_fibroblast	LUM	ENSG00000139329	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+stromal_fibroblast	PDGFRA	ENSG00000134853	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+stromal_fibroblast	COL1A1	ENSG00000108821	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+stromal_fibroblast	COL1A2	ENSG00000164692	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+stromal_fibroblast	COL3A1	ENSG00000168542	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+stromal_fibroblast	COL6A1	ENSG00000142156	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+stromal_fibroblast	MMP2	ENSG00000087245	approved	Canonical pan-stromal ECM/PDGFRA+ fibroblast identity
+perivascular_mural	RGS5	ENSG00000143248	approved	Canonical pericyte and vascular smooth muscle mural identity
+perivascular_mural	NOTCH3	ENSG00000074181	approved	Canonical pericyte and vascular smooth muscle mural identity
+perivascular_mural	MYH11	ENSG00000133392	approved	Canonical pericyte and vascular smooth muscle mural identity
+perivascular_mural	MCAM	ENSG00000076706	approved	Canonical pericyte and vascular smooth muscle mural identity
+perivascular_mural	TAGLN	ENSG00000149591	approved	Canonical pericyte and vascular smooth muscle mural identity
+perivascular_mural	ACTA2	ENSG00000107796	approved	Canonical pericyte and vascular smooth muscle mural identity
+perivascular_mural	CNN1	ENSG00000130176	approved	Canonical pericyte and vascular smooth muscle mural identity
+perivascular_mural	CSPG4	ENSG00000173546	approved	Canonical pericyte and vascular smooth muscle mural identity
+epithelial	EPCAM	ENSG00000119888	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+epithelial	KRT8	ENSG00000170421	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+epithelial	KRT18	ENSG00000111057	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+epithelial	PAX8	ENSG00000125618	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+epithelial	WFDC2	ENSG00000101443	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+epithelial	MUC1	ENSG00000185499	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+epithelial	CDH1	ENSG00000039068	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+epithelial	FOXJ1	ENSG00000129654	approved	Canonical Mullerian glandular/luminal/ciliated epithelial identity
+endothelial	PECAM1	ENSG00000261371	approved	Canonical vascular endothelial identity
+endothelial	VWF	ENSG00000110799	approved	Canonical vascular endothelial identity
+endothelial	CLDN5	ENSG00000184113	approved	Canonical vascular endothelial identity
+endothelial	CDH5	ENSG00000179776	approved	Canonical vascular endothelial identity
+endothelial	KDR	ENSG00000128052	approved	Canonical vascular endothelial identity
+endothelial	ACKR1	ENSG00000213088	approved	Canonical vascular endothelial identity
+endothelial	ERG	ENSG00000157554	approved	Canonical vascular endothelial identity
+endothelial	EMCN	ENSG00000164035	approved	Canonical vascular endothelial identity
+myeloid_macrophage	LYZ	ENSG00000090382	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+myeloid_macrophage	AIF1	ENSG00000204472	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+myeloid_macrophage	CD68	ENSG00000129226	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+myeloid_macrophage	C1QA	ENSG00000173372	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+myeloid_macrophage	C1QB	ENSG00000173369	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+myeloid_macrophage	TYROBP	ENSG00000011600	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+myeloid_macrophage	FCER1G	ENSG00000158869	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+myeloid_macrophage	CD14	ENSG00000170458	approved	Canonical monocyte/macrophage/dendritic myeloid identity
+lymphoid	CD3D	ENSG00000167286	approved	Canonical T/NK/B lymphoid identity
+lymphoid	CD3E	ENSG00000198851	approved	Canonical T/NK/B lymphoid identity
+lymphoid	TRBC1	ENSG00000211751	approved	Canonical T/NK/B lymphoid identity
+lymphoid	IL7R	ENSG00000168685	approved	Canonical T/NK/B lymphoid identity
+lymphoid	NKG7	ENSG00000105374	approved	Canonical T/NK/B lymphoid identity
+lymphoid	GNLY	ENSG00000115523	approved	Canonical T/NK/B lymphoid identity
+lymphoid	MS4A1	ENSG00000156738	approved	Canonical T/NK/B lymphoid identity
+lymphoid	CD79A	ENSG00000105369	approved	Canonical T/NK/B lymphoid identity
+mesothelial	MSLN	ENSG00000102854	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)
+mesothelial	UPK3B	ENSG00000243566	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)
+mesothelial	CALB2	ENSG00000172137	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)
+mesothelial	LRRN4	ENSG00000125872	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)
+mesothelial	ITLN1	ENSG00000179914	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)
+mesothelial	PRG4	ENSG00000116690	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)
+mesothelial	KRT5	ENSG00000186081	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)
+mesothelial	BNC1	ENSG00000169594	approved	Canonical serosal peritoneal mesothelial identity (ambient host-tissue audit & isolation)

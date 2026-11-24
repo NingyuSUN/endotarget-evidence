@@ -1,0 +1,47 @@
+{
+  "schema_version": 2,
+  "phase": "STAGE3_FIGURES_RENDER",
+  "rendered_utc": "2026-11-20T05:29:57.726581+00:00",
+  "source_artifacts": {
+    "reports/discovery/discovery_summary_v2.json": "f8ead6a2256975c26a7474aba17e128260116a2d0ddae80058bcc2752b3bdbdc",
+    "reports/locked_evaluation_summary_v2.json": "2c7bd7c2222948242dfa256efe938b23797cd5f6303f817e1e9a62723fe3e1cc",
+    "reports/discovery/GSE179640_stromal_rankings_full.tsv.gz": "dcd1c1873abe4ced6b0344ede45f6ad18b6476ff580a9b3fca5739c4d3b96dbe",
+    "manifests/frozen_candidates_v2.tsv": "b74ac5b7b8a0b348967e08aca7d138543c55449acee4053c15512d676e0d5b33",
+    "reports/target_dossiers_extended_panel.tsv": "becd21522fecdb1aa3a8f7174129f502d4057cdee04b92c36a1dc097db9b0226"
+  },
+  "script_sha256": "1b68291cb7071ba0dd0523c1088775768ebd79926757d65f75d086d3e055d211",
+  "figures": {
+    "reports/figures/fig1_discovery_dual_contrast_and_shortlist_audit.png": {
+      "sha256": "cee7916d59767cebcb3ed9d3de1097c579d60303005b210e568c529eeb476741",
+      "bytes": 380874
+    },
+    "reports/figures/fig1_discovery_dual_contrast_and_shortlist_audit.svg": {
+      "sha256": "36f8bc45b3b381e5bae904a9f24f3eded9bb9ab3424b1a4ec1cbd5fdbee301b7",
+      "bytes": 239547
+    },
+    "reports/figures/fig2_external_scrna_replication_GSE213216.png": {
+      "sha256": "1ae7e5acffdb24d399ce0846ff8769857d8f721344535dc06bc795f0a171e06d",
+      "bytes": 232788
+    },
+    "reports/figures/fig2_external_scrna_replication_GSE213216.svg": {
+      "sha256": "7cbe23a3f5f3c65afcb0576eda133ba0a8cb04dc40c78401c55d5039de423859",
+      "bytes": 125360
+    },
+    "reports/figures/fig3_bulk_double_difference_and_subtypes_GSE141549.png": {
+      "sha256": "1389ed07ec29cf2c78a140ec277d1a01edf5a27bac8f50503a6bf4fdd2153c3a",
+      "bytes": 213385
+    },
+    "reports/figures/fig3_bulk_double_difference_and_subtypes_GSE141549.svg": {
+      "sha256": "01830f84a434bb0b5f9ac2d7d735b4eeff7ecc17a8e7c62c85d7ee26a7de9ca0",
+      "bytes": 115316
+    },
+    "reports/figures/fig4_genetics_enrichment_and_target_dossiers.png": {
+      "sha256": "52d1a714d209565e21aba870fe9821cfad1c574d461f82fd73efed4eef736dfd",
+      "bytes": 311523
+    },
+    "reports/figures/fig4_genetics_enrichment_and_target_dossiers.svg": {
+      "sha256": "e2c7ae683d753be9291dc86458ed3155f40a55f0ed3375fb518fa259a138b24f",
+      "bytes": 161431
+    }
+  }
+}

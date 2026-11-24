@@ -1,0 +1,13 @@
+# Raw and bulky intermediate files (re-fetchable via SHA-256 receipts)
+data/raw/
+data/interim/
+
+# Virtual environment & caches
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.partial
+*.part
+.DS_Store

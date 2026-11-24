@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "phase": "STAGE3_LOCKED_EXTERNAL_EVALUATION",
+  "completed_utc": "2026-11-20T05:21:58.781709+00:00",
+  "protocol_freeze_sha256": "d05e7a20852bce9dd54d6ff39f466b1482e141378aa2ce4c9055e457b3f31996",
+  "prediction_seal_sha256": "37d98e8c49e3e7242dbc5752503779b5e68b0c8d116148994cbd8222a5b7e73f",
+  "external_cohorts_data_sha256": "d6596269675c884406215bf7d7094547c7144846893709a1cf86818616326512",
+  "evaluate_script_sha256": "dc57919d19f0e5eb7b02e110afe38ab72b3929510a10c2a47e3b7de42bb57df1",
+  "outputs": {
+    "reports/locked_evaluation_summary_v2.json": {
+      "sha256": "2c7bd7c2222948242dfa256efe938b23797cd5f6303f817e1e9a62723fe3e1cc",
+      "bytes": 94352
+    },
+    "reports/top20_external_audit_v2.tsv": {
+      "sha256": "aebb5fde82d36645fc7a8a19f71651abaac84254e82c5dcecc8ce054c4376fa8",
+      "bytes": 9586
+    },
+    "reports/target_dossiers.tsv": {
+      "sha256": "f529b1fff1c959830980450f07691672a099ef707862470384d49a6ca212a953",
+      "bytes": 965
+    },
+    "reports/target_dossiers.md": {
+      "sha256": "046e77d18f122f8a9a4ffa5d10e0be843b4dd840ecf6757f9859a37bcf74795c",
+      "bytes": 1687
+    },
+    "reports/external_scrna/GSE213216_library_qc.tsv": {
+      "sha256": "9a0f0d43fbd837370f90b2752ef5f65835ef142229dcb58546e81c63a49f7a11",
+      "bytes": 1545
+    },
+    "reports/external_scrna/GSE213216_cluster_annotations.tsv": {
+      "sha256": "60d547dc2e0a30c8abd7de97d9e05bb417b0675763d05ce95294dc1165dfff8b",
+      "bytes": 2982
+    },
+    "reports/external_scrna/GSE213216_pseudobulk_samples.tsv": {
+      "sha256": "320cb76f165a06306a0569736b6fe2e46cbe3029ae6a4250eeccd8314d8729a9",
+      "bytes": 9924
+    },
+    "reports/external_scrna/GSE213216_stromal_DE_EcP_vs_EuE.tsv": {
+      "sha256": "f222d43c1b11f6b2fae876c1c990da5cfc33aad6fc37a49f1a6310d34e19269c",
+      "bytes": 1421636
+    },
+    "reports/external_bulk/GSE141549_Paired_Peritoneal_Lesion_vs_PE.tsv": {
+      "sha256": "1a5a91cd8062937fb499bb969dc057e1aa90c48e6f30662149f2c6f52f03924e",
+      "bytes": 1761706
+    },
+    "reports/external_bulk/GSE141549_Paired_Peritoneal_Lesion_vs_PP_HostControlled.tsv": {
+      "sha256": "b3582c7fb7ed63776d0f74589f36aa84364b384606146fb810c770159bd3d30f",
+      "bytes": 1727005
+    }
+  }
+}

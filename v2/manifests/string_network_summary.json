@@ -1,0 +1,17 @@
+{
+  "string_version": "12.5",
+  "species_taxid": 9606,
+  "channels_permitted": [
+    "experiments",
+    "database"
+  ],
+  "minimum_score": 700,
+  "source_protein_rows": 10826054,
+  "qualifying_directed_protein_rows": 323096,
+  "mapped_proteins": 19301,
+  "undirected_gene_edges": 159312,
+  "unique_gene_nodes": 14554,
+  "output_relpath": "data/interim/string_v12_5_direct_gene_edges.tsv.gz",
+  "output_sha256": "dcc4b477bee548d990cc0f59baae60d457cd48bb264f2c36cdcdd101bd5ab383",
+  "output_bytes": 845633
+}

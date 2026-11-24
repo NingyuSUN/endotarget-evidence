@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "EndoTarget v2: Host-decontaminated lesion single-cell transcriptomics, niche crosstalk, and human genetics for target prioritization in endometriosis"
+message: "If you use this software or benchmark, please cite this release."
+type: software
+authors:
+  - family-names: Sun
+    given-names: Ningyu
+    email: woshiwosunny@gmail.com
+version: 2.0.0
+date-released: "2026-11-20"
+license: MIT
+repository-code: "https://github.com/NingyuSUN/endotarget-v2"
+keywords:
+  - endometriosis
+  - single-cell RNA-seq
+  - pseudobulk
+  - host decontamination
+  - human genetics
+  - target prioritization

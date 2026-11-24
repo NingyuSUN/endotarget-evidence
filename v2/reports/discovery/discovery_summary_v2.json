@@ -1,0 +1,249 @@
+{
+  "schema_version": 2,
+  "cohort": "GSE179640",
+  "libraries_processed": 31,
+  "raw_cells_total": 140433,
+  "qc_pass_cells_total": 115402,
+  "lineage_cell_counts": {
+    "epithelial": 19519,
+    "myeloid_macrophage": 13489,
+    "lymphoid": 22200,
+    "endothelial": 11725,
+    "stromal_fibroblast": 37691,
+    "ambiguous_doublet": 2405,
+    "perivascular_mural": 6065,
+    "unassigned_low_score": 1088,
+    "mesothelial": 1220
+  },
+  "pseudobulk_conservation": {
+    "total_qc_passing_umi_sum": 1411712651,
+    "retained_pseudobulk_umi_sum": 1358543298,
+    "dropped_below_min_cells_umi_sum": 2561961,
+    "excluded_ambiguous_or_unassigned_umi_sum": 50607392,
+    "exact_conservation": true
+  },
+  "paired_stromal_models": {
+    "EcP_vs_EuE": {
+      "n_pairs": 8,
+      "paired_donors": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E06",
+        "E07",
+        "E09"
+      ],
+      "df_residual": 7,
+      "prior_df": 3.6477,
+      "sig_BH_q_lt_0.05_expressed": 569,
+      "sig_BH_q_lt_0.05_universe": 429
+    },
+    "EcP_vs_AdjP": {
+      "n_pairs": 6,
+      "paired_donors": [
+        "E01",
+        "E02",
+        "E03",
+        "E04",
+        "E05",
+        "E09"
+      ],
+      "df_residual": 5,
+      "prior_df": 5.7443,
+      "sig_BH_q_lt_0.05_expressed": 0,
+      "sig_BH_q_lt_0.05_universe": 0
+    }
+  },
+  "gene_universe": {
+    "expressed_stromal_genes": 15281,
+    "shared_string_universe_genes": 10972,
+    "induced_string_edges": 119806,
+    "dual_contrast_q05_both_genes": 0
+  },
+  "rwr_propagation": {
+    "iterations": 28,
+    "final_l1_diff": 5.634095981202235e-11,
+    "mass_sum": 1.0,
+    "converged": true
+  },
+  "method_shortlist_diagnostics": {
+    "B0": {
+      "top20": {
+        "k": 20,
+        "top10_symbols": [
+          "LCN2",
+          "GSTO2",
+          "TNFAIP6",
+          "PITX1",
+          "SKAP2",
+          "KLF6",
+          "ANXA1",
+          "ATF3",
+          "SFRP2",
+          "S100A10"
+        ],
+        "dual_concordant_count": 8,
+        "ambient_meso_enriched_gt2_count": 6,
+        "human_genetics_supported_count": 0,
+        "active_niche_lr_count": 1,
+        "tractable_sm_or_ab_count": 7,
+        "median_string_degree": 5.24
+      },
+      "top50": {
+        "k": 50,
+        "top10_symbols": [
+          "LCN2",
+          "GSTO2",
+          "TNFAIP6",
+          "PITX1",
+          "SKAP2",
+          "KLF6",
+          "ANXA1",
+          "ATF3",
+          "SFRP2",
+          "S100A10"
+        ],
+        "dual_concordant_count": 28,
+        "ambient_meso_enriched_gt2_count": 8,
+        "human_genetics_supported_count": 1,
+        "active_niche_lr_count": 6,
+        "tractable_sm_or_ab_count": 20,
+        "median_string_degree": 4.7
+      }
+    },
+    "G1": {
+      "top20": {
+        "k": 20,
+        "top10_symbols": [
+          "TRIM28",
+          "ANLN",
+          "TP53",
+          "MAPT",
+          "NUDCD1",
+          "UBC",
+          "GNB1",
+          "ACTB",
+          "GNG2",
+          "EGFR"
+        ],
+        "dual_concordant_count": 13,
+        "ambient_meso_enriched_gt2_count": 0,
+        "human_genetics_supported_count": 1,
+        "active_niche_lr_count": 1,
+        "tractable_sm_or_ab_count": 12,
+        "median_string_degree": 224.53
+      },
+      "top50": {
+        "k": 50,
+        "top10_symbols": [
+          "TRIM28",
+          "ANLN",
+          "TP53",
+          "MAPT",
+          "NUDCD1",
+          "UBC",
+          "GNB1",
+          "ACTB",
+          "GNG2",
+          "EGFR"
+        ],
+        "dual_concordant_count": 26,
+        "ambient_meso_enriched_gt2_count": 1,
+        "human_genetics_supported_count": 3,
+        "active_niche_lr_count": 2,
+        "tractable_sm_or_ab_count": 30,
+        "median_string_degree": 161.8
+      }
+    },
+    "M1": {
+      "top20": {
+        "k": 20,
+        "top10_symbols": [
+          "HMGA2",
+          "KCNK3",
+          "MMP1",
+          "SPHK1",
+          "TREM1",
+          "CXCL8",
+          "PFKFB4",
+          "MMP9",
+          "CP",
+          "CCL19"
+        ],
+        "dual_concordant_count": 20,
+        "ambient_meso_enriched_gt2_count": 0,
+        "human_genetics_supported_count": 0,
+        "active_niche_lr_count": 3,
+        "tractable_sm_or_ab_count": 11,
+        "median_string_degree": 6.33
+      },
+      "top50": {
+        "k": 50,
+        "top10_symbols": [
+          "HMGA2",
+          "KCNK3",
+          "MMP1",
+          "SPHK1",
+          "TREM1",
+          "CXCL8",
+          "PFKFB4",
+          "MMP9",
+          "CP",
+          "CCL19"
+        ],
+        "dual_concordant_count": 50,
+        "ambient_meso_enriched_gt2_count": 0,
+        "human_genetics_supported_count": 2,
+        "active_niche_lr_count": 6,
+        "tractable_sm_or_ab_count": 27,
+        "median_string_degree": 8.1
+      }
+    },
+    "M2": {
+      "top20": {
+        "k": 20,
+        "top10_symbols": [
+          "CXCL8",
+          "HMGA2",
+          "KCNK3",
+          "MMP1",
+          "SPHK1",
+          "CDKN2B",
+          "TREM1",
+          "CCL19",
+          "ITGA1",
+          "PFKFB4"
+        ],
+        "dual_concordant_count": 20,
+        "ambient_meso_enriched_gt2_count": 0,
+        "human_genetics_supported_count": 3,
+        "active_niche_lr_count": 8,
+        "tractable_sm_or_ab_count": 13,
+        "median_string_degree": 9.82
+      },
+      "top50": {
+        "k": 50,
+        "top10_symbols": [
+          "CXCL8",
+          "HMGA2",
+          "KCNK3",
+          "MMP1",
+          "SPHK1",
+          "CDKN2B",
+          "TREM1",
+          "CCL19",
+          "ITGA1",
+          "PFKFB4"
+        ],
+        "dual_concordant_count": 50,
+        "ambient_meso_enriched_gt2_count": 0,
+        "human_genetics_supported_count": 6,
+        "active_niche_lr_count": 13,
+        "tractable_sm_or_ab_count": 32,
+        "median_string_degree": 9.1
+      }
+    }
+  }
+}

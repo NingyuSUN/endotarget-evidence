@@ -1,0 +1,5 @@
+GTEx Portal API License Notification
+Timestamp: 2026-11-20T04:38:00Z
+License URL: https://gtexportal.org/home/license
+API Documentation: https://gtexportal.org/home/documentationPage#gtexApi
+Note: GTEx Portal API V2 queried programmatically via the official GTEx CLI wrapper for EndoTarget v2 (Uterus, Cultured Fibroblasts, and Ovary baseline expression and eQTL context). Users should review GTEx license and API terms at https://gtexportal.org/home/license.

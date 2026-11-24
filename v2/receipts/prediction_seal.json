@@ -1,0 +1,71 @@
+{
+  "schema_version": 2,
+  "phase": "STAGE2_PREDICTION_SEAL",
+  "sealed_utc": "2026-11-20T05:03:37.916931+00:00",
+  "protocol_freeze_sha256": "d05e7a20852bce9dd54d6ff39f466b1482e141378aa2ce4c9055e457b3f31996",
+  "discovery_data_receipt_sha256": "0431c4e501231e0a68bd5827b97188e4bdf8748fe0557a992bf548300640a881",
+  "attestations": {
+    "external_GSE213216_downloaded_or_read": false,
+    "external_GSE141549_expression_downloaded_or_read": false,
+    "heca_annotations_used": false,
+    "pseudobulk_umi_conservation_exact": true
+  },
+  "sealed_artifacts": {
+    "configs/protocol_v2.yaml": {
+      "sha256": "962b4dcb524c1f407e2e10f948118c0d39757034d9029474e057b775da42295c",
+      "bytes": 7799
+    },
+    "receipts/protocol_freeze.json": {
+      "sha256": "d05e7a20852bce9dd54d6ff39f466b1482e141378aa2ce4c9055e457b3f31996",
+      "bytes": 2646
+    },
+    "receipts/discovery_GSE179640_data.json": {
+      "sha256": "0431c4e501231e0a68bd5827b97188e4bdf8748fe0557a992bf548300640a881",
+      "bytes": 15437
+    },
+    "manifests/frozen_candidates_v2.tsv": {
+      "sha256": "b74ac5b7b8a0b348967e08aca7d138543c55449acee4053c15512d676e0d5b33",
+      "bytes": 49943
+    },
+    "reports/discovery/GSE179640_stromal_rankings_full.tsv.gz": {
+      "sha256": "dcd1c1873abe4ced6b0344ede45f6ad18b6476ff580a9b3fca5739c4d3b96dbe",
+      "bytes": 1146581
+    },
+    "reports/discovery/GSE179640_niche_lr_scores.tsv": {
+      "sha256": "5ac0823a68c2655ce50ff9a5bec67ebf5874e88aa6ac1f0f9b8c6a4c1dbdd4a0",
+      "bytes": 46061
+    },
+    "reports/discovery/GSE179640_library_qc.tsv": {
+      "sha256": "cca3f80fbfd47a8da6a6dbe12a3136d34675651a9c1dab87c71c4bc74ac76397",
+      "bytes": 3209
+    },
+    "reports/discovery/GSE179640_cluster_annotations.tsv": {
+      "sha256": "19ef4f943bf52bdd41d8da81ba9ff153091011de0bab47fdc84cd37a7d0350e3",
+      "bytes": 4642
+    },
+    "reports/discovery/GSE179640_donor_site_lineage_counts.tsv": {
+      "sha256": "7fa196bc08b07466fd662ffeb3d9518a25dc0747263fce8534702acf606b1447",
+      "bytes": 9219
+    },
+    "reports/discovery/GSE179640_pseudobulk_samples.tsv": {
+      "sha256": "dfa8ade86282610c9babd7c36a15b9cc9ff9f01e9c82c644acf03d2ce7cb54cc",
+      "bytes": 11075
+    },
+    "reports/discovery/GSE179640_marker_purity_audit.tsv": {
+      "sha256": "c6f681c9bf0c95b4406b23bed5fef3b65285b9da76ed67b4d988bcb1634e384c",
+      "bytes": 4433
+    },
+    "reports/discovery/discovery_summary_v2.json": {
+      "sha256": "f8ead6a2256975c26a7474aba17e128260116a2d0ddae80058bcc2752b3bdbdc",
+      "bytes": 5858
+    },
+    "scripts/endotarget_lib.py": {
+      "sha256": "e08f7d5bb178f489a776ee85b6a87b8a7e619ec3455af6bb4107a3a3a6afc272",
+      "bytes": 30310
+    },
+    "scripts/run_discovery_v2.py": {
+      "sha256": "8ff3fda4619e7c7bec8f57eb726b3c120e116172ae64952de3c3ace2b2736a68",
+      "bytes": 29850
+    }
+  }
+}
