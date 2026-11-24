@@ -60,3 +60,24 @@ jobs:
         run: Rscript tests/test_donor_de.R
       - name: Clinical sensitivity selection checks
         run: Rscript tests/test_clinical_sensitivities.R
+
+  lesion-module-contracts:
+    name: Ectopic lesion & genetics contracts (Python 3.11)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: Install minimal Python contract dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy pyyaml pytest
+      - name: Run lesion module SHA-256 chain and synthetic estimator contracts
+        env:
+          OMP_NUM_THREADS: "4"
+          OPENBLAS_NUM_THREADS: "4"
+          MKL_NUM_THREADS: "4"
+        run: pytest v2/tests -q

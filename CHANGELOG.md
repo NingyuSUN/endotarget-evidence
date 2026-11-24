@@ -7,6 +7,23 @@ tagged version contains.
 
 ## Unreleased
 
+- **Host-controlled ectopic lesion, niche crosstalk, and human genetics module (`v2/`, 2026-11).**
+  Four-stage cryptographically sealed protocol (`v2/receipts/protocol_freeze.json` →
+  `prediction_seal.json` → `locked_evaluation_v2.json` → `figures_v2.json`) across paired
+  discovery scRNA (`GSE179640`, 31 libraries, 115,402 QC cells, 8 `EuE–EcP` pairs, 6 `EuE–EcP–AdjP`
+  triplets), donor-deduplicated external scRNA (`GSE213216`, 29 libraries, 242,430 QC cells), and
+  multi-subtype / host-peritoneum bulk (`GSE141549`, 408 arrays mapped 100% to 162 subjects),
+  integrated with 404 human endometriosis genetic targets (Open Targets `MONDO_0005133` /
+  `EFO_0001065` and Rahmioglu et al. 2023 *Nat Genet*) and 168 curated vascular/myeloid–stromal
+  ligand–receptor pairs. Demonstrates 100% (13/13) peritoneal host-background false-positive
+  collapse in naive lesion-versus-eutopic DE (`B0`), reverses the ranking hierarchy under
+  host-peritoneum control (`M2 − B0 = +31.4` percentage points `[+8.2, +46.5]` in paired
+  `PeL vs PP`; `AUC = 0.684, p = 0.0045` across all peritoneal lesions versus host peritoneum;
+  `88.9%` direction agreement in `DIE vs PP`), establishes germline genetic enrichment in
+  host-controlled lesions (`p = 2.9e-5`), documents hormonal suppression confounding in
+  uncontrolled `GSE213216` `EcP vs EuE`, and locks `RUNX1` (`ENSG00000159216`, `L2G = 0.653`) as
+  the Tier-1 multi-modal target alongside contextual niche/GWAS candidates (`CXCR4`, `ESR1`,
+  `PDLIM5`, `F5`). Unified bilingual top-level READMEs and clean-checkout CI contract job.
 - **Published bulk signatures in stroma (2026-11-02).** Four fixed whole-tissue disease
   signatures (Poli-Neto 2020 proliferative stage I–II and III–IV, Bunis 2022 proliferative
   disease versus control, their consensus), built from publisher supplements downloaded with

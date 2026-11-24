@@ -21,3 +21,8 @@ tmp/
 # Third-party papers and tools for literature work (copyright); receipts are tracked in manifests/
 reference/papers/
 reference/tools/
+
+# Ectopic lesion and genetics module working directories
+v2/.venv/
+v2/data/raw/
+v2/data/interim/

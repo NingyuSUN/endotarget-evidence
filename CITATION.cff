@@ -1,19 +1,22 @@
 cff-version: 1.2.0
 message: "If you use this repository, please cite it using the metadata below."
 type: software
-title: "EndoTarget Evidence: cross-study target prioritization in endometriosis using donor-level transcriptomics and network analysis"
+title: "EndoTarget Evidence: cross-study target prioritization in endometriosis using donor-level transcriptomics, host-controlled lesion modeling, and human genetics"
 abstract: >-
-  Public-data endometriosis target-evidence benchmark. Donor-level pseudobulk
-  modeling of proliferative-phase eutopic endometrial stromal fibroblasts in
-  two public single-cell cohorts (GSE266265 discovery, HECA E-MTAB-14039
-  external), expression ranking against two network baselines on a frozen
-  STRING functional-association graph, external-cohort evaluation of frozen
-  lists, a separate genetic-evidence layer, and verified Nextflow/Docker
-  reproduction. The completed analysis found no statistically supported
-  cross-study target shortlist and no advantage for network propagation.
-  Prespecified follow-on analyses (October 2026) add a cycle-phase positive
-  control, minimum-detectable-effect bounds, a secretory-phase program-level
-  disease contrast and a public-cohort extension audit.
+  Public-data endometriosis target-evidence study spanning cross-sectional eutopic
+  endometrium and host-controlled ectopic lesions. Combines donor-level pseudobulk
+  modeling across four single-cell/single-nucleus cohorts (GSE266265, HECA E-MTAB-14039,
+  GSE179640, GSE213216; 561,364 retained cells/nuclei) and three tissue microarray cohorts
+  (GSE51981, GSE6364, and 408-array / 162-subject multi-lesion and host-peritoneum cohort
+  GSE141549), controlled comparisons of differential expression, global STRING network
+  propagation, dual-contrast host-tissue decontamination, and vascular/myeloid niche
+  ligand-receptor integration, plus germline genetics from Open Targets and Rahmioglu et al.
+  (2023) under pre-external SHA-256 freezes and Nextflow/Docker replay checks. Cross-sectional
+  eutopic stromal fibroblasts yield zero cross-study targets (median bound < 1.5-1.8x),
+  whereas host-controlled lesion modeling exposes 100% peritoneal host-background false
+  positives in naive lesion DE, establishes significant cross-cohort lesion transfer and
+  germline genetic enrichment, and prioritizes RUNX1 alongside contextual niche and GWAS
+  candidates.
 authors:
   - family-names: Sun
     given-names: Ningyu
@@ -27,6 +30,8 @@ keywords:
   - endometriosis
   - single-cell
   - pseudobulk
+  - ectopic-lesions
+  - human-genetics
   - target-prioritization
   - network-propagation
   - reproducibility
